@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.stock.analyzer.data.model.Recommendation
+import com.stock.analyzer.data.model.StockRecommendation
 import com.stock.analyzer.data.repository.StockInfoRepository
 import com.stock.analyzer.data.model.StockInfo
 import kotlinx.coroutines.launch
