@@ -186,8 +186,14 @@ fun AdviceSection(advice: PositionAdvice) {
             }
             Spacer(modifier = Modifier.height(8.dp))
             Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
-                advice.addPriceRange?.let { r -> Column(horizontalAlignment = Alignment.CenterHorizontally) { Text("加仓区间", fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant); Text("${String.format("%.2f", r.low)} - ${String.format("%.2f", r.high)}", fontSize = 14.sp, fontWeight = FontWeight.Medium, color = Color(0xFFE53935)) } }
-                advice.reducePriceRange?.let { r -> Column(horizontalAlignment = Alignment.CenterHorizontally) { Text("减仓区间", fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant); Text("${String.format("%.2f", r.low)} - ${String.format("%.2f", r.high)}", fontSize = 14.sp, fontWeight = FontWeight.Medium, color = Color(0xFF43A047)) } }
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text("加仓区间", fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text("${String.format("%.2f", advice.addPriceRange.low)} - ${String.format("%.2f", advice.addPriceRange.high)}", fontSize = 14.sp, fontWeight = FontWeight.Medium, color = Color(0xFFE53935))
+                }
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text("减仓区间", fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text("${String.format("%.2f", advice.reducePriceRange.low)} - ${String.format("%.2f", advice.reducePriceRange.high)}", fontSize = 14.sp, fontWeight = FontWeight.Medium, color = Color(0xFF43A047))
+                }
             }
         }
     }

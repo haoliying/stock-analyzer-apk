@@ -94,7 +94,7 @@ fun StockDetailScreen(
 
                     // K线图
                     if (klineData.isNotEmpty()) {
-                        KLineChartCard(klineData = klineData)
+                        KLineChartCard(klineData = klineData, period = period)
                         Spacer(modifier = Modifier.height(16.dp))
                     }
 
@@ -206,7 +206,7 @@ fun PeriodTabs(
 }
 
 @Composable
-fun KLineChartCard(klineData: List<KLineData>) {
+fun KLineChartCard(klineData: List<KLineData>, period: StockDetailViewModel.ChartPeriod = StockDetailViewModel.ChartPeriod.DAILY) {
     Card(
         modifier = Modifier.fillMaxWidth(),
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
@@ -270,6 +270,69 @@ fun KLineChartCard(klineData: List<KLineData>) {
                         }
                     }
                 }
+
+                // 日期/时间标签
+                Spacer(modifier = Modifier.height(4.dp))
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ) {
+                    val dates = displayData.map { it.date }
+                    if (dates.isNotEmpty()) {
+                        Text(
+                            text = formatDateLabel(dates.first(), period),
+                            fontSize = 10.sp,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                        if (dates.size > 2) {
+                            val midIndex = dates.size / 2
+                            Text(
+                                text = formatDateLabel(dates[midIndex], period),
+                                fontSize = 10.sp,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
+                        Text(
+                            text = formatDateLabel(dates.last(), period),
+                            fontSize = 10.sp,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**
+ * 根据周期格式化日期标签
+ */
+fun formatDateLabel(dateStr: String, period: StockDetailViewModel.ChartPeriod): String {
+    return when (period) {
+        StockDetailViewModel.ChartPeriod.TIMELINE, StockDetailViewModel.ChartPeriod.FIVE_DAY -> {
+            // 分时数据：显示时间 MM-dd HH:mm
+            if (dateStr.contains(" ") && dateStr.length > 10) {
+                dateStr.substring(5, 16)
+            } else if (dateStr.contains(":")) {
+                dateStr
+            } else {
+                dateStr
+            }
+        }
+        StockDetailViewModel.ChartPeriod.DAILY, StockDetailViewModel.ChartPeriod.WEEKLY -> {
+            // 日线/周线：显示 MM-dd
+            if (dateStr.length >= 10) {
+                dateStr.substring(5, 10)
+            } else {
+                dateStr
+            }
+        }
+        StockDetailViewModel.ChartPeriod.MONTHLY -> {
+            // 月线：显示 YYYY-MM
+            if (dateStr.length >= 7) {
+                dateStr.substring(0, 7)
+            } else {
+                dateStr
             }
         }
     }

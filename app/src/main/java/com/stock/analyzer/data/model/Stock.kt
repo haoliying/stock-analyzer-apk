@@ -84,8 +84,8 @@ data class PositionAdvice(
     val buyPrice: Double,
     val quantity: Int,
     val advice: AdviceType,           // 建议类型
-    val addPriceRange: PriceRange?,   // 加仓价格区间
-    val reducePriceRange: PriceRange?, // 减仓价格区间
+    val addPriceRange: PriceRange,   // 加仓价格区间
+    val reducePriceRange: PriceRange, // 减仓价格区间
     val reason: String                // 建议原因
 )
 

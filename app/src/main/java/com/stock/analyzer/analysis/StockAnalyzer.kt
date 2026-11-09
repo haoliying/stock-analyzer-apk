@@ -273,15 +273,13 @@ class StockAnalyzer {
             else -> AdviceType.STRONG_SELL
         }
 
-        val addRange = if (advice == AdviceType.STRONG_BUY || advice == AdviceType.BUY) {
-            val support = klineData.takeLast(20).minOfOrNull { it.low } ?: currentPrice * 0.95
-            PriceRange(low = support * 0.98, high = support * 1.02)
-        } else null
+        // 加仓区间：基于支撑位（近期低点）
+        val support = klineData.takeLast(20).minOfOrNull { it.low } ?: currentPrice * 0.95
+        val addRange = PriceRange(low = support * 0.98, high = support * 1.02)
 
-        val reduceRange = if (advice == AdviceType.SELL || advice == AdviceType.STRONG_SELL) {
-            val resistance = klineData.takeLast(20).maxOfOrNull { it.high } ?: currentPrice * 1.05
-            PriceRange(low = resistance * 0.98, high = resistance * 1.02)
-        } else null
+        // 减仓区间：基于阻力位（近期高点）
+        val resistance = klineData.takeLast(20).maxOfOrNull { it.high } ?: currentPrice * 1.05
+        val reduceRange = PriceRange(low = resistance * 0.98, high = resistance * 1.02)
 
         val reason = buildString {
             append("评分${analysis.score}分")
