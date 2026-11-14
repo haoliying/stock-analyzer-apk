@@ -5,7 +5,15 @@
 ## 下载
 
 - **APK（v4.5.0，最新）**: [StockAnalyzer-v4.5.0.apk](https://github.com/haoliying/stock-analyzer-apk/releases/download/v4.5.0/StockAnalyzer-v4.5.0.apk)
-- 历史版本：v4.4.0 / v4.3.1 / v4.3.0 / v4.2.0 / v4.1.0 / v4.0.1 / v4.0.0 / v3.0 / v2.0 / v1.0 见 Releases 页面
+- 历史版本：v4.4.0 / v4.3.1 / v4.3.0 / v4.2.0 / v4.1.0 / v4.0.1 / v4.0.0 / v3.x / v2.0 / v1.0 见 Releases 页面
+
+## 文档
+
+| 文件 | 内容 |
+|---|---|
+| **[USAGE.md](USAGE.md)** | **操作说明**：三个页面怎么用、K 线图点/拖/箭头/缩放的操作表、竖线浮层每行含义、分数与两条区间怎么读、数据源与缓存、常见现象对照、使用边界 |
+| **[CHANGELOG.md](CHANGELOG.md)** | **版本更新**：v1.0.0 → v4.5.0 每一版改了什么、为什么、验证到什么程度，含 versionCode/versionName 对照，也如实记下早期版本号没同步、v4.1.0 入库文件是 base64 文本这两处疏漏 |
+| [backtest/README.md](backtest/README.md) | 回测结论与实验记录（iter2 ~ iter37） |
 
 安装：手机上直接用浏览器下载上面链接，允许"安装未知来源应用"。已装过旧版可直接覆盖安装，持仓数据不丢。
 
@@ -298,6 +306,8 @@ Kotlin、Jetpack Compose、Material 3、MVVM、Retrofit/OkHttp、Coroutines & Fl
 实时行情：新浪财经（主）+ 腾讯财经（备，逐只补齐）；历史K线：东方财富（前复权，主）+ 腾讯前复权（备），本地文件缓存保底 260 根日线不随调用方截断。
 
 ## 使用说明
+
+> 下面是概览，**逐项操作说明在 [USAGE.md](USAGE.md)**。
 
 1. 下载 APK 安装；首次启动授予网络权限
 2. "我的持仓"添加股票（代码自动填充名称、拼音首字母搜索）
