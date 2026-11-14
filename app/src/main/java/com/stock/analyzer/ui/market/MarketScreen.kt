@@ -79,9 +79,12 @@ fun MarketScreen(
                                     color = MaterialTheme.colorScheme.onSurfaceVariant
                                 )
                             }
+                            val perWeight = if (recommendations.isEmpty()) "" else
+                                "（单只约 ${String.format("%.1f", 100.0 / recommendations.size)}%）"
                             Text(
-                                text = "顺序不代表好坏：这是分位池的分层取样，20 只等权（单只约 5%），" +
-                                    "不要因为排名靠前就加注",
+                                text = "顺序不代表好坏：这是分位池的分层取样，${recommendations.size} 只等权$perWeight，" +
+                                    "不要因为排名靠前就加注；本金凑不齐这么多手时，" +
+                                    "按同样的间隔每隔 2~3 只挑 1 只（12~15 只即可），别改成只买前几名",
                                 fontSize = 12.sp,
                                 color = MaterialTheme.colorScheme.error.copy(alpha = 0.8f)
                             )

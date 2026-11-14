@@ -159,9 +159,10 @@ class MarketViewModel(application: Application) : AndroidViewModel(application) 
                 }
 
                 // 关键：不按评分排序取前几名。
-                // iter31 在同一批信号日上实测：池内"分数最高的 20 只"日均超额 −0.807%（20 个换仓相位
-                // 只有 2 个跑赢基准），"按分位等距取 20 只"+0.747%（t_HAC +1.52，18/20 相位跑赢）。
-                // 入池不再用 ≥68 这个绝对门槛：门槛本身每 20 日要付出 0.26 个百分点的超额。
+                // iter36（30 只口径，同一批信号日）实测：池内"分数最高的 30 只"日均超额 −0.430%
+                // （20 个换仓相位只有 4 个跑赢基准），"按分位等距取 30 只"+0.669%（t_HAC +1.51，
+                // 19/20 相位跑赢），两者配对差 +1.100%、块自助 p 0.035 —— 这是全模型最硬的一条结论。
+                // 入池不再用 ≥68 这个绝对门槛：门槛的代价见 StockAnalyzer 类注释（iter32 / iter37）。
                 val eligible = analyzer.eligibleCount(results)
                 val picks = analyzer.selectDailyCandidates(results)
                     .mapIndexed { i, rec -> rec.copy(rank = i + 1) }

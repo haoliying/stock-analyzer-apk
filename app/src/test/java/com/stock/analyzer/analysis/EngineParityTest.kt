@@ -137,29 +137,30 @@ class EngineParityTest {
                 buyPriceRange = null, sellPriceRange = null
             )
         }
-        val all = (99 downTo 40).map { mk(it) }            // 60 只，分数 99..40 递减
-        // 池 = ceil(60 × 0.50) = 30 只，即 99..70；低于 68 的那一半靠"排名"出局，不靠绝对门槛
-        assertEquals(30, analyzer.dailyPool(all).size)
-        assertEquals(30, analyzer.eligibleCount(all))
-        assertEquals(70, analyzer.dailyPool(all).last().analysis.score)
+        val all = (0 until 100).map { mk(100 - it) }         // 100 只，分数 100..1 递减
+        // 池 = ceil(100 × 0.50) = 50 只，即 100..51；低于中位的那一半靠"排名"出局，不靠绝对门槛
+        assertEquals(50, analyzer.dailyPool(all).size)
+        assertEquals(50, analyzer.eligibleCount(all))
+        assertEquals(51, analyzer.dailyPool(all).last().analysis.score)
 
-        val scores = analyzer.selectDailyCandidates(all, 20).map { it.analysis.score }
-        assertEquals(20, scores.size)
-        assertEquals("首名仍是池内最高分", 99, scores.first())
-        // 池内 30 只按 pool[i*(q-1)/20] 取样 → index 0,1,2,4,...,27 → 最低 72 分（池底 70、71 不在名单里）
+        val scores = analyzer.selectDailyCandidates(all, 30).map { it.analysis.score }
+        assertEquals(30, scores.size)
+        assertEquals("默认只数就是上线的 30 只", StockAnalyzer.DAILY_PICKS, scores.size)
+        assertEquals("首名仍是池内最高分", 100, scores.first())
+        // 池内 50 只按 pool[i*(q-1)/30] 取样 → index 0,1,3,4,...,47 → 最低 53 分（池底 51、52 不在名单里）
         assertEquals("取样应单调递减且不重复", scores.size, scores.toSet().size)
-        assertTrue("取样应覆盖池子大部: $scores", scores.first() - scores.last() >= 20)
-        assertTrue("末名应来自池中后段，证明不是 top-N", scores.last() < 80)
-        assertEquals(72, scores.last())
+        assertTrue("取样应覆盖池子大部: $scores", scores.first() - scores.last() >= 40)
+        assertTrue("末名应来自池子中后段，证明不是 top-N: $scores", scores.last() < 70)
+        assertEquals(53, scores.last())
 
         // 奇数只：ceil(41 × 0.50) = 21
         assertEquals(21, analyzer.dailyPool((0 until 41).map { mk(100 - it) }).size)
         // 全场都在加仓线以下也必须给出名单（旧规则此时会空）
         val weak = (20..29).map { mk(it) }                 // 10 只，分数全部 < 68
         assertEquals(5, analyzer.dailyPool(weak).size)
-        assertEquals(5, analyzer.selectDailyCandidates(weak, 20).size)
+        assertEquals(5, analyzer.selectDailyCandidates(weak, 30).size)
         // 池子不足 picks 只时全给
-        assertTrue(analyzer.selectDailyCandidates((0 until 8).map { mk(90 - it) }, 20).size == 4)
+        assertTrue(analyzer.selectDailyCandidates((0 until 8).map { mk(90 - it) }, 30).size == 4)
         // K 线不足的不入池
         val shortBar = com.stock.analyzer.data.model.AnalysisResult(
             null, null, null, null, null, null,
