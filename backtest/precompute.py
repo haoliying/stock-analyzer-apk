@@ -1,1 +1,112 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJQcmVjb21wdXRlIGV2ZXJ5IGluZGljYXRvciBwZXIgc3RvY2sgb25jZSwgY2FjaGUgdG8gLm5weiBmb3IgZmFzdCBzdHJhdGVneSBzd2VlcHMuIiIiCmltcG9ydCBnbG9iLCBqc29uLCBvcwppbXBvcnQgbnVtcHkgYXMgbnAKaW1wb3J0IHBhbmRhcyBhcyBwZApmcm9tIGluZGljYXRvcnMgaW1wb3J0IChlbWEsIHJvbGxpbmdfc21hLCByc2lfc2ltcGxlLCByc2lfd2lsZGVyLCBtYWNkX3NlcmllcywKICAgICAgICAgICAgICAgICAgICAgICAga2RqX2FwcCwga2RqX2l0ZXIsIGF0cl9zZXJpZXMsIGFkeF9zZXJpZXMsIGJvbGwsCiAgICAgICAgICAgICAgICAgICAgICAgIHZvbF9yYXRpbywgb2J2X3NlcmllcykKCl9CQVNFID0gb3MuZW52aXJvbi5nZXQoIkJUX0hPTUUiLCBvcy5wYXRoLmRpcm5hbWUob3MucGF0aC5hYnNwYXRoKF9fZmlsZV9fKSkpCkRBVEEsIENBQ0hFID0gZiJ7X0JBU0V9L2RhdGEiLCBmIntfQkFTRX0vY2FjaGUiCm9zLm1ha2VkaXJzKENBQ0hFLCBleGlzdF9vaz1UcnVlKQoKCmRlZiBjcm9zc191cChhLCBiKToKICAgIHJldHVybiAoYSA+IGIpICYgKG5wLnJvbGwoYSwgMSkgPD0gbnAucm9sbChiLCAxKSkKCgpkZWYgY3Jvc3NfZG4oYSwgYik6CiAgICByZXR1cm4gKGEgPCBiKSAmIChucC5yb2xsKGEsIDEpID49IG5wLnJvbGwoYiwgMSkpCgoKZGVmIHJvbGxpbmdfcGN0X3JhbmsoeCwgbik6CiAgICByZXR1cm4gcGQuU2VyaWVzKHgsIGR0eXBlPSJmbG9hdDY0Iikucm9sbGluZyhuKS5hcHBseSgKICAgICAgICBsYW1iZGEgdzogKHdbLTFdID49IHcpLm1lYW4oKSBpZiBub3QgbnAuaXNuYW4od1stMV0pIGVsc2UgbnAubmFuLCByYXc9VHJ1ZSkudG9fbnVtcHkoKQoKCmRlZiBwY3RfY2hhbmdlKHgsIGspOgogICAgIiIib3V0W2ldID0geFtpXS94W2kta10gLSAxIGZvciBpPj1rLCBuYW4gYmVmb3JlLiBObyBsb29rLWFoZWFkLiIiIgogICAgb3V0ID0gbnAuZnVsbChsZW4oeCksIG5wLm5hbikKICAgIHdpdGggbnAuZXJyc3RhdGUoZGl2aWRlPSJpZ25vcmUiLCBpbnZhbGlkPSJpZ25vcmUiKToKICAgICAgICBvdXRbazpdID0geFtrOl0gLyB4Wzota10gLSAxLjAKICAgIG91dFt+bnAuaXNmaW5pdGUob3V0KV0gPSBucC5uYW4KICAgIHJldHVybiBvdXQKCgpkZWYgYnVpbGQoY29kZSk6CiAgICBkID0ganNvbi5sb2FkKG9wZW4oZiJ7REFUQX0ve2NvZGV9Lmpzb24iKSkKICAgIHIgPSBwZC5EYXRhRnJhbWUoZFsicm93cyJdKQogICAgYywgaCwgbCwgdiA9IChyWyJjbG9zZSJdLnRvX251bXB5KGZsb2F0KSwgclsiaGlnaCJdLnRvX251bXB5KGZsb2F0KSwKICAgICAgICAgICAgICAgICAgclsibG93Il0udG9fbnVtcHkoZmxvYXQpLCByWyJ2b2wiXS50b19udW1weShmbG9hdCkpCiAgICBtID0gbGVuKGMpCiAgICBGID0geyJuIjogbX0KICAgIEZbImNsb3NlIl0sIEZbImhpZ2giXSwgRlsibG93Il0sIEZbInZvbCJdLCBGWyJwY3QiXSA9IGMsIGgsIGwsIHYsIHJbInBjdCJdLnRvX251bXB5KGZsb2F0KQogICAgRlsib3BlbiJdID0gclsib3BlbiJdLnRvX251bXB5KGZsb2F0KQogICAgRlsidHVybm92ZXIiXSA9IHJbInR1cm5vdmVyIl0udG9fbnVtcHkoZmxvYXQpCiAgICBmb3Igbl8gaW4gKDUsIDEwLCAyMCwgNjApOgogICAgICAgIEZbZiJtYXtuX30iXSA9IHJvbGxpbmdfc21hKGMsIG5fKQogICAgRlsiZW1hMTIiXSwgRlsiZW1hMjYiXSA9IGVtYShjLCAxMiksIGVtYShjLCAyNikKICAgIEZbInJzaV9hcHAiXSA9IHJzaV9zaW1wbGUoYywgMTQpCiAgICBGWyJyc2kiXSA9IHJzaV93aWxkZXIoYywgMTQpCiAgICBkaWYsIGRlYSwgaGlzdCA9IG1hY2Rfc2VyaWVzKGMpCiAgICBGWyJkaWYiXSwgRlsiZGVhIl0sIEZbImhpc3QiXSA9IGRpZiwgZGVhLCBoaXN0CiAgICBGWyJoaXN0X2QiXSA9IG5wLmRpZmYoaGlzdCwgcHJlcGVuZD1oaXN0WzBdKQogICAgRlsiZGlmX3hfdXAiXSA9IGNyb3NzX3VwKGRpZiwgZGVhKQogICAgRlsiZGlmX3hfZG4iXSA9IGNyb3NzX2RuKGRpZiwgZGVhKQogICAga2EsIGRhLCBqYSA9IGtkal9hcHAoaCwgbCwgYykKICAgIEZbImtkal9hcHBfayJdLCBGWyJrZGpfYXBwX2QiXSwgRlsia2RqX2FwcF9qIl0gPSBrYSwgZGEsIGphCiAgICBrLCBkZCwgaiA9IGtkal9pdGVyKGgsIGwsIGMpCiAgICBGWyJrZGpfayJdLCBGWyJrZGpfZCJdLCBGWyJrZGpfaiJdID0gaywgZGQsIGoKICAgIEZbImtkal94X3VwIl0gPSBjcm9zc191cChrLCBkZCkKICAgIEZbImtkal94X2RuIl0gPSBjcm9zc19kbihrLCBkZCkKICAgIEZbImF0ciJdID0gYXRyX3NlcmllcyhoLCBsLCBjKQogICAgRlsiYXRyX3BjdCJdID0gbnAud2hlcmUoYyA+IDAsIEZbImF0ciJdIC8gYywgbnAubmFuKQogICAgYWR4LCBwZGksIG1kaSA9IGFkeF9zZXJpZXMoaCwgbCwgYykKICAgIEZbImFkeCJdLCBGWyJwZGkiXSwgRlsibWRpIl0gPSBhZHgsIHBkaSwgbWRpCiAgICBtaWQsIGJ1LCBibCwgYncsIGJwID0gYm9sbChjKQogICAgRlsiYm9sbF9taWQiXSwgRlsiYm9sbF91cCJdLCBGWyJib2xsX2xvIl0sIEZbImJvbGxfdyJdLCBGWyJib2xsX3BvcyJdID0gbWlkLCBidSwgYmwsIGJ3LCBicAogICAgRlsiYm9sbF93X3BjdCJdID0gcm9sbGluZ19wY3RfcmFuayhidywgMTIwKQogICAgRlsidm9scjUiXSA9IHZvbF9yYXRpbyh2LCA1KQogICAgRlsidm9scjIwIl0gPSB2b2xfcmF0aW8odiwgMjApCiAgICBGWyJvYnYiXSA9IG9idl9zZXJpZXMoYywgdikKICAgIG92ID0gRlsib2J2Il0KICAgIG9idnMgPSBucC5mdWxsKG0sIG5wLm5hbikKICAgIG9idnNbMTA6XSA9IG92WzEwOl0gLSBvdls6LTEwXQogICAgRlsib2J2X3Nsb3BlIl0gPSBvYnZzCiAgICBmb3Igbl8gaW4gKDIwLCA1NSk6CiAgICAgICAgcyA9IHBkLlNlcmllcyhjKQogICAgICAgIGhpID0gcy5yb2xsaW5nKG5fKS5tYXgoKS5zaGlmdCgxKS50b19udW1weSgpCiAgICAgICAgbG8gPSBzLnJvbGxpbmcobl8pLm1pbigpLnNoaWZ0KDEpLnRvX251bXB5KCkKICAgICAgICBGW2YiaGl7bl99Il0sIEZbZiJsb3tuX30iXSA9IGhpLCBsbwogICAgICAgIEZbZiJicmt7bl99Il0gPSBjID49IGhpCiAgICAgICAgRltmImJya2Rue25ffSJdID0gYyA8PSBsbwogICAgICAgIHJuZyA9IGhpIC0gbG8KICAgICAgICBGW2YicG9ze25ffSJdID0gbnAud2hlcmUocm5nID4gMCwgKGMgLSBsbykgLyBybmcsIG5wLm5hbikKICAgIGZvciBuXyBpbiAoNSwgMTAsIDIwLCA2MCk6CiAgICAgICAgRltmInJldHtuX30iXSA9IHBjdF9jaGFuZ2UoYywgbl8pCiAgICBGWyJtYTIwX3Nsb3BlIl0gPSBwY3RfY2hhbmdlKEZbIm1hMjAiXSwgMTApCiAgICBGWyJtYTYwX3Nsb3BlIl0gPSBwY3RfY2hhbmdlKEZbIm1hNjAiXSwgMTApCiAgICBGWyJ2b2xfdXAiXSA9IChucC5kaWZmKGMsIHByZXBlbmQ9Y1swXSkgPiAwKQogICAgRlsiZGF0ZSJdID0gclsiZGF0ZSJdLnRvX251bXB5KCkKICAgIEZbImNvZGUiXSA9IGNvZGUKICAgIEZbIm5hbWUiXSA9IGRbIm5hbWUiXQogICAgcmV0dXJuIEYKCgpkZWYgbWFpbigpOgogICAgY29kZXMgPSBzb3J0ZWQob3MucGF0aC5iYXNlbmFtZShwKVs6LTVdIGZvciBwIGluIGdsb2IuZ2xvYihmIntEQVRBfS8qLmpzb24iKSkKICAgIGZvciBpLCBjIGluIGVudW1lcmF0ZShjb2RlcywgMSk6CiAgICAgICAgb3V0ID0gZiJ7Q0FDSEV9L3tjfS5ucHoiCiAgICAgICAgaWYgbm90IG9zLnBhdGguZXhpc3RzKG91dCk6CiAgICAgICAgICAgIHRyeToKICAgICAgICAgICAgICAgIG5wLnNhdmV6X2NvbXByZXNzZWQob3V0LCAqKmJ1aWxkKGMpKQogICAgICAgICAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgICAgICAgICBwcmludChmIiAge2N9OiB7dHlwZShlKS5fX25hbWVfX30ge2V9IikKICAgICAgICBpZiBpICUgNTAgPT0gMDoKICAgICAgICAgICAgcHJpbnQoZiJwcmVjb21wdXRlZCB7aX0ve2xlbihjb2Rlcyl9IiwgZmx1c2g9VHJ1ZSkKICAgIHByaW50KGYiY2FjaGUgcmVhZHk6IHtsZW4oZ2xvYi5nbG9iKGYne0NBQ0hFfS8qLm5weicpKX0gc3RvY2tzIiwgZmx1c2g9VHJ1ZSkKCgppZiBfX25hbWVfXyA9PSAiX19tYWluX18iOgogICAgbWFpbigpCg==
+#!/usr/bin/env python3
+"""Precompute every indicator per stock once, cache to .npz for fast strategy sweeps."""
+import glob, json, os
+import numpy as np
+import pandas as pd
+from indicators import (ema, rolling_sma, rsi_simple, rsi_wilder, macd_series,
+                        kdj_app, kdj_iter, atr_series, adx_series, boll,
+                        vol_ratio, obv_series)
+
+_BASE = os.environ.get("BT_HOME", os.path.dirname(os.path.abspath(__file__)))
+DATA, CACHE = f"{_BASE}/data", f"{_BASE}/cache"
+os.makedirs(CACHE, exist_ok=True)
+
+
+def cross_up(a, b):
+    return (a > b) & (np.roll(a, 1) <= np.roll(b, 1))
+
+
+def cross_dn(a, b):
+    return (a < b) & (np.roll(a, 1) >= np.roll(b, 1))
+
+
+def rolling_pct_rank(x, n):
+    return pd.Series(x, dtype="float64").rolling(n).apply(
+        lambda w: (w[-1] >= w).mean() if not np.isnan(w[-1]) else np.nan, raw=True).to_numpy()
+
+
+def pct_change(x, k):
+    """out[i] = x[i]/x[i-k] - 1 for i>=k, nan before. No look-ahead."""
+    out = np.full(len(x), np.nan)
+    with np.errstate(divide="ignore", invalid="ignore"):
+        out[k:] = x[k:] / x[:-k] - 1.0
+    out[~np.isfinite(out)] = np.nan
+    return out
+
+
+def build(code):
+    d = json.load(open(f"{DATA}/{code}.json"))
+    r = pd.DataFrame(d["rows"])
+    c, h, l, v = (r["close"].to_numpy(float), r["high"].to_numpy(float),
+                  r["low"].to_numpy(float), r["vol"].to_numpy(float))
+    m = len(c)
+    F = {"n": m}
+    F["close"], F["high"], F["low"], F["vol"], F["pct"] = c, h, l, v, r["pct"].to_numpy(float)
+    F["open"] = r["open"].to_numpy(float)
+    F["turnover"] = r["turnover"].to_numpy(float)
+    for n_ in (5, 10, 20, 60):
+        F[f"ma{n_}"] = rolling_sma(c, n_)
+    F["ema12"], F["ema26"] = ema(c, 12), ema(c, 26)
+    F["rsi_app"] = rsi_simple(c, 14)
+    F["rsi"] = rsi_wilder(c, 14)
+    dif, dea, hist = macd_series(c)
+    F["dif"], F["dea"], F["hist"] = dif, dea, hist
+    F["hist_d"] = np.diff(hist, prepend=hist[0])
+    F["dif_x_up"] = cross_up(dif, dea)
+    F["dif_x_dn"] = cross_dn(dif, dea)
+    ka, da, ja = kdj_app(h, l, c)
+    F["kdj_app_k"], F["kdj_app_d"], F["kdj_app_j"] = ka, da, ja
+    k, dd, j = kdj_iter(h, l, c)
+    F["kdj_k"], F["kdj_d"], F["kdj_j"] = k, dd, j
+    F["kdj_x_up"] = cross_up(k, dd)
+    F["kdj_x_dn"] = cross_dn(k, dd)
+    F["atr"] = atr_series(h, l, c)
+    F["atr_pct"] = np.where(c > 0, F["atr"] / c, np.nan)
+    adx, pdi, mdi = adx_series(h, l, c)
+    F["adx"], F["pdi"], F["mdi"] = adx, pdi, mdi
+    mid, bu, bl, bw, bp = boll(c)
+    F["boll_mid"], F["boll_up"], F["boll_lo"], F["boll_w"], F["boll_pos"] = mid, bu, bl, bw, bp
+    F["boll_w_pct"] = rolling_pct_rank(bw, 120)
+    F["volr5"] = vol_ratio(v, 5)
+    F["volr20"] = vol_ratio(v, 20)
+    F["obv"] = obv_series(c, v)
+    ov = F["obv"]
+    obvs = np.full(m, np.nan)
+    obvs[10:] = ov[10:] - ov[:-10]
+    F["obv_slope"] = obvs
+    for n_ in (20, 55):
+        s = pd.Series(c)
+        hi = s.rolling(n_).max().shift(1).to_numpy()
+        lo = s.rolling(n_).min().shift(1).to_numpy()
+        F[f"hi{n_}"], F[f"lo{n_}"] = hi, lo
+        F[f"brk{n_}"] = c >= hi
+        F[f"brkdn{n_}"] = c <= lo
+        rng = hi - lo
+        F[f"pos{n_}"] = np.where(rng > 0, (c - lo) / rng, np.nan)
+    for n_ in (5, 10, 20, 60):
+        F[f"ret{n_}"] = pct_change(c, n_)
+    F["ma20_slope"] = pct_change(F["ma20"], 10)
+    F["ma60_slope"] = pct_change(F["ma60"], 10)
+    F["vol_up"] = (np.diff(c, prepend=c[0]) > 0)
+    F["date"] = r["date"].to_numpy()
+    F["code"] = code
+    F["name"] = d["name"]
+    return F
+
+
+def main():
+    codes = sorted(os.path.basename(p)[:-5] for p in glob.glob(f"{DATA}/*.json"))
+    for i, c in enumerate(codes, 1):
+        out = f"{CACHE}/{c}.npz"
+        if not os.path.exists(out):
+            try:
+                np.savez_compressed(out, **build(c))
+            except Exception as e:
+                print(f"  {c}: {type(e).__name__} {e}")
+        if i % 50 == 0:
+            print(f"precomputed {i}/{len(codes)}", flush=True)
+    print(f"cache ready: {len(glob.glob(f'{CACHE}/*.npz'))} stocks", flush=True)
+
+
+if __name__ == "__main__":
+    main()

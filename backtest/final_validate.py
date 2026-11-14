@@ -1,1 +1,134 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJGSU5BTCBWQUxJREFUSU9OIOKAlCBvbGQgYXBwIHZzIHRoZSBjb25maWcgYmVpbmcgc2hpcHBlZC4KClNoaXBwZWQgY29uZmlnOiB0cmVuZC1zdHJ1Y3R1cmUgc2NvcmUgKyB2b2xhdGlsaXR5IHBlbmFsdHkgKGtuZWUgMi4wJSBBVFIvZGF5LAoyMDAgcHRzIHBlciBwb2ludCBvZiBleGNlc3MpLCDliqDku5MgbGluZSA2OCwg5YeP5LuTIGxpbmUgNDIuCgpFdmVyeXRoaW5nIGlzIG1lYXN1cmVkIGFzOiBzaWduYWwgb24gY2xvc2UodCkgLT4gYnV5IGF0IG9wZW4odCsxKSAtPiBob2xkIDIwCnRyYWRpbmcgc2Vzc2lvbnMsIG5ldCBvZiAwLjEyJSBjb3N0LCBFWENFU1MgdnMgdGhlIHNhbWUtZGF5IHVuaXZlcnNlIG1lYW4sCmRhdGUtZXF1YWwtd2VpZ2h0ZWQsIHNwbGl0IGludG8gaW4tc2FtcGxlIC8gb3V0LW9mLXNhbXBsZSAoY3V0b2ZmIDIwMjYtMDQtMjMpLgoiIiIKaW1wb3J0IG51bXB5IGFzIG5wCmZyb20gY29sbGVjdGlvbnMgaW1wb3J0IGRlZmF1bHRkaWN0CmZyb20gbW9kZWwgaW1wb3J0IENVVE9GRiwgQkFTRUxJTkUsIF9uYW4sIGcsIHN0b2NrcywgTUlOX0hJU1QsIENPU1QsIEgKZnJvbSBzdHJhdGVneSBpbXBvcnQgdl9vbGQKCktORUUsIFBFTiwgQlVZLCBTRUxMID0gMC4wMjAsIDIwMC4wLCA2OC4wLCA0Mi4wCgoKZGVmIG5ld19mbihGLCB0KToKICAgIGMgPSBGWyJjbG9zZSJdW3RdCiAgICBtYTEwLCBtYTIwLCBtYTYwLCBzbCA9IGcoRiwgIm1hMTAiLCB0KSwgZyhGLCAibWEyMCIsIHQpLCBnKEYsICJtYTYwIiwgdCksIGcoRiwgIm1hMjBfc2xvcGUiLCB0KQogICAgaWYgX25hbihtYTIwKSBvciBfbmFuKG1hNjApIG9yIF9uYW4oc2wpIG9yIF9uYW4obWExMCk6CiAgICAgICAgcmV0dXJuIDAuMCwgRmFsc2UKICAgIHMgPSA1MC4wCiAgICB1cCA9IGMgPiBtYTIwID4gbWE2MAogICAgZG4gPSBjIDwgbWEyMCA8IG1hNjAKICAgIGlmIHVwOgogICAgICAgIHMgKz0gMjIgaWYgc2wgPiAwLjAxNSBlbHNlICgxNCBpZiBzbCA+IDAuMCBlbHNlIDYpCiAgICBlbGlmIGRuOgogICAgICAgIHMgLT0gMjIgaWYgc2wgPCAtMC4wMTUgZWxzZSAoMTQgaWYgc2wgPCAwLjAgZWxzZSA2KQogICAgZWxzZToKICAgICAgICBzIC09IDMKICAgIHMgKz0gNCBpZiBjID4gbWExMCA+IG1hMjAgZWxzZSAtMgogICAgYSA9IGcoRiwgImF0cl9wY3QiLCB0KQogICAgaWYgbm90IF9uYW4oYSk6CiAgICAgICAgcyAtPSBtYXgoMC4wLCBhIC0gS05FRSkgKiBQRU4KICAgIHJldHVybiBmbG9hdChucC5jbGlwKHMsIDAsIDEwMCkpLCBUcnVlCgoKZGVmIG9sZF9mbihGLCB0KToKICAgIHNjLCBvayA9IHZfb2xkKEYsIHQpCiAgICByZXR1cm4gZmxvYXQoc2MpLCBib29sKG9rKQoKCmRlZiBidWlsZChmbik6CiAgICByb3dzID0gW10KICAgIGZvciBGIGluIHN0b2NrczoKICAgICAgICBuID0gaW50KEZbIm4iXSkKICAgICAgICBjLCBvID0gRlsiY2xvc2UiXSwgRlsib3BlbiJdCiAgICAgICAgbGltID0gMC4wOTcgaWYgRlsiY29kZSJdLnN0YXJ0c3dpdGgoKCIzMCIsICI2OCIpKSBlbHNlIDAuMDQ3CiAgICAgICAgZm9yIHQgaW4gcmFuZ2UoTUlOX0hJU1QsIG4gLSAxKToKICAgICAgICAgICAgcywgb2sgPSBmbihGLCB0KQogICAgICAgICAgICBpZiBub3Qgb2s6CiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICBrID0gdCArIDEgKyBICiAgICAgICAgICAgIGVvID0gb1t0ICsgMV0KICAgICAgICAgICAgaWYgayA+PSBuIG9yIGVvIDw9IDA6CiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICBkID0gc3RyKEZbImRhdGUiXVt0XSkKICAgICAgICAgICAgYiA9IEJBU0VMSU5FLmdldCgoZCwgSCkpCiAgICAgICAgICAgIGlmIGIgaXMgTm9uZToKICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgIHJhdyA9IChjW2tdIC8gZW8gLSAxLjApIC0gQ09TVAogICAgICAgICAgICByb3dzLmFwcGVuZCgocywgZCwgcmF3LCByYXcgLSBiLAogICAgICAgICAgICAgICAgICAgICAgICAgRlsicGN0Il1bdF0gPiAwIGFuZCBlbyA+PSBjW3RdICogKDEgKyBsaW0pICogMC45OTUpKQogICAgcmV0dXJuIHJvd3MKCgpkZWYgc3VtbWFyaXplKHJvd3MsIGJ1eV90aCwgc2VsbF90aCwgbmFtZSk6CiAgICB0b3QgPSBsZW4ocm93cykKICAgIG5iID0gc3VtKDEgZm9yIHggaW4gcm93cyBpZiB4WzBdID49IGJ1eV90aCkKICAgIG5zID0gc3VtKDEgZm9yIHggaW4gcm93cyBpZiB4WzBdIDw9IHNlbGxfdGgpCiAgICBiZCA9IGRlZmF1bHRkaWN0KGxpc3QpCiAgICBzZCA9IGRlZmF1bHRkaWN0KGxpc3QpCiAgICBmb3IgcywgZCwgcmF3LCBleGMsIHVuYiBpbiByb3dzOgogICAgICAgIGlmIHMgPj0gYnV5X3RoIGFuZCBub3QgdW5iOgogICAgICAgICAgICBiZFtkXS5hcHBlbmQoKHJhdywgZXhjKSkKICAgICAgICBlbGlmIHMgPD0gc2VsbF90aDoKICAgICAgICAgICAgc2RbZF0uYXBwZW5kKGV4YykKICAgIHBlciA9IFtucC5tZWFuKFt4WzFdIGZvciB4IGluIHZdKSBmb3IgdiBpbiBiZC52YWx1ZXMoKSBpZiBsZW4odikgPj0gM10KICAgIHBlcl9zID0gW25wLm1lYW4odikgZm9yIHYgaW4gc2QudmFsdWVzKCkgaWYgbGVuKHYpID49IDNdCiAgICBkYXRlcyA9IHNvcnRlZCh7eFsxXSBmb3IgeCBpbiByb3dzfSkKICAgIGgxID0gc2V0KGRhdGVzWzpsZW4oZGF0ZXMpIC8vIDJdKQogICAgcDEgPSBbbnAubWVhbihbeFsxXSBmb3IgeCBpbiB2XSkgZm9yIGQsIHYgaW4gYmQuaXRlbXMoKSBpZiBsZW4odikgPj0gMyBhbmQgZCBpbiBoMV0KICAgIHAyID0gW25wLm1lYW4oW3hbMV0gZm9yIHggaW4gdl0pIGZvciBkLCB2IGluIGJkLml0ZW1zKCkgaWYgbGVuKHYpID49IDMgYW5kIGQgbm90IGluIGgxXQogICAgb29zID0gW3ggZm9yIGQsIHYgaW4gYmQuaXRlbXMoKSBpZiBkID49IENVVE9GRiBmb3IgeCBpbiB2XQogICAgbW8gPSBkZWZhdWx0ZGljdChsaXN0KQogICAgZm9yIGQsIHYgaW4gYmQuaXRlbXMoKToKICAgICAgICBpZiBsZW4odikgPj0gMzoKICAgICAgICAgICAgbW9bZFs6N11dLmFwcGVuZChucC5tZWFuKFt4WzFdIGZvciB4IGluIHZdKSkKICAgIG1wID0gbnAuYXJyYXkoW25wLm1lYW4odikgZm9yIHYgaW4gbW8udmFsdWVzKCldKQogICAgcHJpbnQoZiJcbiMjIyB7bmFtZX0gICAo5Yqg5LuTIHNjb3JlPj17YnV5X3RoOi4wZn0sIOWHj+S7kzw9e3NlbGxfdGg6LjBmfSkiKQogICAgcHJpbnQoZiIgIOWPkeWjsOmikeeOhzog5Yqg5LuTIHtuYi90b3QqMTAwOjQuMWZ9JSB8IOWHj+S7kyB7bnMvdG90KjEwMDo0LjFmfSUgfCAiCiAgICAgICAgICBmIuWQiOiuoSB7KG5iK25zKS90b3QqMTAwOjQuMWZ9JSBvZiBzdG9jay1kYXlzIikKICAgIGlmIGxlbihwZXIpID49IDIwOgogICAgICAgIFIgPSBucC5hcnJheShbeFswXSBmb3IgeCBpbiBvb3NdKSBpZiBvb3MgZWxzZSBucC5hcnJheShbbnAubmFuXSkKICAgICAgICBwcmludChmIiAg5Yqg5LuT5ZCOMjDml6Ug6LaF6aKdOiDlhajnqIsge25wLm1lYW4ocGVyKSoxMDA6KzUuMmZ9JSAgIgogICAgICAgICAgICAgIGYi5YmN5Y2KIHtucC5tZWFuKHAxKSoxMDA6KzUuMmZ9JSAg5ZCO5Y2KIHtucC5tZWFuKHAyKSoxMDA6KzUuMmZ9JSAgIgogICAgICAgICAgICAgIGYi5qC35pys5aSWIHtucC5tZWFuKFt4WzFdIGZvciB4IGluIG9vc10pKjEwMDorNS4yZn0lIikKICAgICAgICBwcmludChmIiAg5Yqg5LuT5a6e55uY5YiG5biDKOagt+acrOWklik6IOWdh+WAvCB7Ui5tZWFuKCkqMTAwOis1LjJmfSUgIOiDnOeOhyB7KFI+MCkubWVhbigpKjEwMDo0LjFmfSUgICIKICAgICAgICAgICAgICBmIjUl5YiG5L2NIHtucC5wZXJjZW50aWxlKFIsNSkqMTAwOis1LjFmfSUgIDI1JeWIhuS9jSB7bnAucGVyY2VudGlsZShSLDI1KSoxMDA6KzUuMWZ9JSAgIgogICAgICAgICAgICAgIGYi5LqPPjEwJeavlOS+iyB7KFI8LTAuMTApLm1lYW4oKSoxMDA6NC4xZn0lICDmnIDlt64ge1IubWluKCkqMTAwOis1LjFmfSUiKQogICAgICAgIHByaW50KGYiICDmnIjluqbnqLPlrprmgKc6IHtsZW4obXApfeS4quaciCAg6LeR6LWi5b2T5pyI5Z+65YeGIHtucC5tZWFuKG1wPjApKjEwMDo0LjBmfSUgICIKICAgICAgICAgICAgICBmIuacgOW3ruaciCB7bXAubWluKCkqMTAwOis1LjJmfSUgIOS4reS9jeaciCB7bnAubWVkaWFuKG1wKSoxMDA6KzUuMmZ9JSIpCiAgICAgICAgbmQgPSBucC5tZWFuKFtsZW4odikgZm9yIHYgaW4gYmQudmFsdWVzKCkgaWYgbGVuKHYpID49IDNdKQogICAgICAgIHByaW50KGYiICDmr4/ml6XlubPlnYflgJnpgInmlbA6IHtuZDouMWZ9IOWPqiAo5YWxe2xlbihzdG9ja3MpfeWPqikiKQogICAgZWxzZToKICAgICAgICBwcmludCgiICDliqDku5PmoLfmnKzov4flsJEiKQogICAgaWYgcGVyX3M6CiAgICAgICAgcHJpbnQoZiIgIOWHj+S7k+WQjjIw5pelIOi2heminToge25wLm1lYW4ocGVyX3MpKjEwMDorNS4yZn0lICjlupTkuLrotJ895Yik5pat5q2j56GuKSIpCgoKZGVmIG1haW4oKToKICAgIHN1bW1hcml6ZShidWlsZChuZXdfZm4pLCBCVVksIFNFTEwsICJORVcg6LaL5Yq/57uT5p6EK+azouWKqOaDqee9miAodjQuMS4wIOS4iue6vykiKQogICAgc3VtbWFyaXplKGJ1aWxkKG9sZF9mbiksIDYwLCA0MCwgIk9MRCBBcHAg5Y6f566X5rOVICh2NC4wLjEpIikKCiAgICBwcmludCgiXG49PT0g5YiG5qGj5Y2V6LCD5oCnIChkYXRlLWVxdWFsIGV4Y2VzcywgMjBkKSA9PT0iKQogICAgcm93cyA9IGJ1aWxkKG5ld19mbikKICAgIGZvciBsbywgaGksIGxhYiBpbiAoKDAsIDMwLCAi5by654OI5YeP5LuTIDw9MjkiKSwgKDMwLCA0MiwgIuW7uuiuruWHj+S7kyAzMC00MSIpLCAoNDIsIDU1LCAi6KeC5pybIDQyLTU0IiksCiAgICAgICAgICAgICAgICAgICAgICAgICg1NSwgNjgsICLmjIHmnIkgNTUtNjciKSwgKDY4LCA3NiwgIuW7uuiuruWKoOS7kyA2OC03NSIpLCAoNzYsIDEwMSwgIuW8uueDiOWKoOS7kyA+PTc2IikpOgogICAgICAgIGJkID0gZGVmYXVsdGRpY3QobGlzdCkKICAgICAgICBmb3IgcywgZCwgcmF3LCBleGMsIHVuYiBpbiByb3dzOgogICAgICAgICAgICBpZiBsbyA8PSBzIDwgaGkgYW5kIG5vdCB1bmI6CiAgICAgICAgICAgICAgICBiZFtkXS5hcHBlbmQoZXhjKQogICAgICAgIHBlciA9IFtucC5tZWFuKHYpIGZvciB2IGluIGJkLnZhbHVlcygpIGlmIGxlbih2KSA+PSAzXQogICAgICAgIG4gPSBzdW0obGVuKHYpIGZvciB2IGluIGJkLnZhbHVlcygpKQogICAgICAgIGlmIGxlbihwZXIpIDwgMTU6CiAgICAgICAgICAgIHByaW50KGYiICB7bGFiOjE4c30gbj17bjo8NmR9ICjmoLfmnKzkuI3otrMpIikKICAgICAgICAgICAgY29udGludWUKICAgICAgICBwcmludChmIiAge2xhYjoxOHN9IG49e246PDZkfSBkYXRlcz17bGVuKHBlcik6PDRkfSBleGNlc3M9e25wLm1lYW4ocGVyKSoxMDA6KzUuMmZ9JSIpCgoKaWYgX19uYW1lX18gPT0gIl9fbWFpbl9fIjoKICAgIG1haW4oKQo=
+#!/usr/bin/env python3
+"""FINAL VALIDATION — old app vs the config being shipped.
+
+Shipped config: trend-structure score + volatility penalty (knee 2.0% ATR/day,
+200 pts per point of excess), 加仓 line 68, 减仓 line 42.
+
+Everything is measured as: signal on close(t) -> buy at open(t+1) -> hold 20
+trading sessions, net of 0.12% cost, EXCESS vs the same-day universe mean,
+date-equal-weighted, split into in-sample / out-of-sample (cutoff 2026-04-23).
+"""
+import numpy as np
+from collections import defaultdict
+from model import CUTOFF, BASELINE, _nan, g, stocks, MIN_HIST, COST, H
+from strategy import v_old
+
+KNEE, PEN, BUY, SELL = 0.020, 200.0, 68.0, 42.0
+
+
+def new_fn(F, t):
+    c = F["close"][t]
+    ma10, ma20, ma60, sl = g(F, "ma10", t), g(F, "ma20", t), g(F, "ma60", t), g(F, "ma20_slope", t)
+    if _nan(ma20) or _nan(ma60) or _nan(sl) or _nan(ma10):
+        return 0.0, False
+    s = 50.0
+    up = c > ma20 > ma60
+    dn = c < ma20 < ma60
+    if up:
+        s += 22 if sl > 0.015 else (14 if sl > 0.0 else 6)
+    elif dn:
+        s -= 22 if sl < -0.015 else (14 if sl < 0.0 else 6)
+    else:
+        s -= 3
+    s += 4 if c > ma10 > ma20 else -2
+    a = g(F, "atr_pct", t)
+    if not _nan(a):
+        s -= max(0.0, a - KNEE) * PEN
+    return float(np.clip(s, 0, 100)), True
+
+
+def old_fn(F, t):
+    sc, ok = v_old(F, t)
+    return float(sc), bool(ok)
+
+
+def build(fn):
+    rows = []
+    for F in stocks:
+        n = int(F["n"])
+        c, o = F["close"], F["open"]
+        lim = 0.097 if F["code"].startswith(("30", "68")) else 0.047
+        for t in range(MIN_HIST, n - 1):
+            s, ok = fn(F, t)
+            if not ok:
+                continue
+            k = t + 1 + H
+            eo = o[t + 1]
+            if k >= n or eo <= 0:
+                continue
+            d = str(F["date"][t])
+            b = BASELINE.get((d, H))
+            if b is None:
+                continue
+            raw = (c[k] / eo - 1.0) - COST
+            rows.append((s, d, raw, raw - b,
+                         F["pct"][t] > 0 and eo >= c[t] * (1 + lim) * 0.995))
+    return rows
+
+
+def summarize(rows, buy_th, sell_th, name):
+    tot = len(rows)
+    nb = sum(1 for x in rows if x[0] >= buy_th)
+    ns = sum(1 for x in rows if x[0] <= sell_th)
+    bd = defaultdict(list)
+    sd = defaultdict(list)
+    for s, d, raw, exc, unb in rows:
+        if s >= buy_th and not unb:
+            bd[d].append((raw, exc))
+        elif s <= sell_th:
+            sd[d].append(exc)
+    per = [np.mean([x[1] for x in v]) for v in bd.values() if len(v) >= 3]
+    per_s = [np.mean(v) for v in sd.values() if len(v) >= 3]
+    dates = sorted({x[1] for x in rows})
+    h1 = set(dates[:len(dates) // 2])
+    p1 = [np.mean([x[1] for x in v]) for d, v in bd.items() if len(v) >= 3 and d in h1]
+    p2 = [np.mean([x[1] for x in v]) for d, v in bd.items() if len(v) >= 3 and d not in h1]
+    oos = [x for d, v in bd.items() if d >= CUTOFF for x in v]
+    mo = defaultdict(list)
+    for d, v in bd.items():
+        if len(v) >= 3:
+            mo[d[:7]].append(np.mean([x[1] for x in v]))
+    mp = np.array([np.mean(v) for v in mo.values()])
+    print(f"\n### {name}   (加仓 score>={buy_th:.0f}, 减仓<={sell_th:.0f})")
+    print(f"  发声频率: 加仓 {nb/tot*100:4.1f}% | 减仓 {ns/tot*100:4.1f}% | "
+          f"合计 {(nb+ns)/tot*100:4.1f}% of stock-days")
+    if len(per) >= 20:
+        R = np.array([x[0] for x in oos]) if oos else np.array([np.nan])
+        print(f"  加仓后20日 超额: 全程 {np.mean(per)*100:+5.2f}%  "
+              f"前半 {np.mean(p1)*100:+5.2f}%  后半 {np.mean(p2)*100:+5.2f}%  "
+              f"样本外 {np.mean([x[1] for x in oos])*100:+5.2f}%")
+        print(f"  加仓实盘分布(样本外): 均值 {R.mean()*100:+5.2f}%  胜率 {(R>0).mean()*100:4.1f}%  "
+              f"5%分位 {np.percentile(R,5)*100:+5.1f}%  25%分位 {np.percentile(R,25)*100:+5.1f}%  "
+              f"亏>10%比例 {(R<-0.10).mean()*100:4.1f}%  最差 {R.min()*100:+5.1f}%")
+        print(f"  月度稳定性: {len(mp)}个月  跑赢当月基准 {np.mean(mp>0)*100:4.0f}%  "
+              f"最差月 {mp.min()*100:+5.2f}%  中位月 {np.median(mp)*100:+5.2f}%")
+        nd = np.mean([len(v) for v in bd.values() if len(v) >= 3])
+        print(f"  每日平均候选数: {nd:.1f} 只 (共{len(stocks)}只)")
+    else:
+        print("  加仓样本过少")
+    if per_s:
+        print(f"  减仓后20日 超额: {np.mean(per_s)*100:+5.2f}% (应为负=判断正确)")
+
+
+def main():
+    summarize(build(new_fn), BUY, SELL, "NEW 趋势结构+波动惩罚 (v4.1.0 上线)")
+    summarize(build(old_fn), 60, 40, "OLD App 原算法 (v4.0.1)")
+
+    print("\n=== 分档单调性 (date-equal excess, 20d) ===")
+    rows = build(new_fn)
+    for lo, hi, lab in ((0, 30, "强烈减仓 <=29"), (30, 42, "建议减仓 30-41"), (42, 55, "观望 42-54"),
+                        (55, 68, "持有 55-67"), (68, 76, "建议加仓 68-75"), (76, 101, "强烈加仓 >=76")):
+        bd = defaultdict(list)
+        for s, d, raw, exc, unb in rows:
+            if lo <= s < hi and not unb:
+                bd[d].append(exc)
+        per = [np.mean(v) for v in bd.values() if len(v) >= 3]
+        n = sum(len(v) for v in bd.values())
+        if len(per) < 15:
+            print(f"  {lab:18s} n={n:<6d} (样本不足)")
+            continue
+        print(f"  {lab:18s} n={n:<6d} dates={len(per):<4d} excess={np.mean(per)*100:+5.2f}%")
+
+
+if __name__ == "__main__":
+    main()

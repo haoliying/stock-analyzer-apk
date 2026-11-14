@@ -1,1 +1,192 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJJdGVyYXRpb24gMzogdHVuZSB0aGUgQVRSIHJpc2sgZmlsdGVyLCBzd2VlcCBzZWxlY3Rpdml0eSwgYW5kIHRlc3Qgd2hldGhlciBhbgpBVFIgc3RvcC1sb3NzIGltcHJvdmVzIHRoZSBvdXRjb21lIGEgcmVhbCB1c2VyIHdvdWxkIGZlZWwuCgpTaWduYWxzIGFyZSBjb21wdXRlZCBPTkNFIHBlciBtb2RlbCBhbmQgcmV1c2VkIGFjcm9zcyBldmVyeSBleGl0IHJ1bGUsIHNvIHRoZQpjb21wYXJpc29ucyBhcmUgc3RyaWN0bHkgYXBwbGVzLXRvLWFwcGxlcy4KIiIiCmltcG9ydCBudW1weSBhcyBucApmcm9tIHN0cmF0ZWd5IGltcG9ydCBsb2FkX2FsbCwgYnVpbGRfYmFzZWxpbmUsIE1JTl9ISVNULCBDT1NULCBfbmFuLCBnLCB2X29sZApmcm9tIGl0ZXIyIGltcG9ydCBWX2NvcmUsIFZfZnVsbCwgVl9mdWxsX2F0ciwgVl9mdWxsX2JyawoKSCA9IDIwCkxJTUlUID0gbGFtYmRhIGNvZGU6IDAuMDk3IGlmIGNvZGUuc3RhcnRzd2l0aCgoIjMwIiwgIjY4IikpIGVsc2UgMC4wNDcKc3RvY2tzID0gbG9hZF9hbGwoKQpEQVRFUyA9IHNvcnRlZCh7c3RyKGQpIGZvciBGIGluIHN0b2NrcyBmb3IgZCBpbiBGWyJkYXRlIl1bTUlOX0hJU1Q6XX0pCkNVVE9GRiA9IERBVEVTW2ludChsZW4oREFURVMpICogMC43KV0KTUlEID0gREFURVNbbGVuKERBVEVTKSAvLyAyXQpCQVNFTElORSA9IGJ1aWxkX2Jhc2VsaW5lKHN0b2NrcykKCgpkZWYgYXRyX3Njb3JlKG11bHQsIGJhc2U9Vl9jb3JlLCBrbmVlPTAuMDIwKToKICAgIGRlZiBmbihGLCB0KToKICAgICAgICBzLCBvayA9IGJhc2UoRiwgdCkKICAgICAgICBpZiBub3Qgb2s6CiAgICAgICAgICAgIHJldHVybiAwLjAsIEZhbHNlCiAgICAgICAgYSA9IGcoRiwgImF0cl9wY3QiLCB0KQogICAgICAgIGlmIG11bHQgYW5kIG5vdCBfbmFuKGEpOgogICAgICAgICAgICBzIC09IG1heCgwLjAsIChhIC0ga25lZSkpICogbXVsdAogICAgICAgIHJldHVybiBmbG9hdChucC5jbGlwKHMsIDAsIDEwMCkpLCBUcnVlCiAgICByZXR1cm4gZm4KCgpkZWYgZ2VuX3NpZ25hbHMoZm4sIGJ1eT03MC4wLCBzZWxsPTM1LjApOgogICAgIiIiKHN0b2NrX2luZGV4LCB0LCBkYXRlLCBzY29yZSwgc2lkZSkgZm9yIGV2ZXJ5IHNpZ25hbCwgcGx1cyBmaXhlZC1ob3Jpem9uIHJldHVybnMuIiIiCiAgICBvdXQgPSBbXQogICAgZm9yIHNpLCBGIGluIGVudW1lcmF0ZShzdG9ja3MpOgogICAgICAgIG4gPSBpbnQoRlsibiJdKQogICAgICAgIGMsIG8gPSBGWyJjbG9zZSJdLCBGWyJvcGVuIl0KICAgICAgICBsaW0gPSBMSU1JVChGWyJjb2RlIl0pCiAgICAgICAgZm9yIHQgaW4gcmFuZ2UoTUlOX0hJU1QsIG4gLSAxKToKICAgICAgICAgICAgc2MsIG9rID0gZm4oRiwgdCkKICAgICAgICAgICAgaWYgbm90IG9rOgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgc2lkZSA9IDEgaWYgc2MgPj0gYnV5IGVsc2UgKC0xIGlmIHNjIDw9IHNlbGwgZWxzZSAwKQogICAgICAgICAgICBpZiBzaWRlID09IDA6CiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICBlbyA9IG9bdCArIDFdCiAgICAgICAgICAgIGlmIGVvIDw9IDA6CiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICBpZiBzaWRlID4gMCBhbmQgRlsicGN0Il1bdF0gPiAwIGFuZCBlbyA+PSBjW3RdICogKDEgKyBsaW0pICogMC45OTU6CiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICByZXQgPSB7fQogICAgICAgICAgICBmb3IgaCBpbiAoNSwgMTAsIDIwKToKICAgICAgICAgICAgICAgIGsgPSB0ICsgMSArIGgKICAgICAgICAgICAgICAgIHJldFtoXSA9IChjW2tdIC8gZW8gLSAxLjApIC0gQ09TVCBpZiBrIDwgbiBlbHNlIG5wLm5hbgogICAgICAgICAgICBvdXQuYXBwZW5kKChzaSwgdCwgc3RyKEZbImRhdGUiXVt0XSksIHNjLCBzaWRlLCByZXQpKQogICAgcmV0dXJuIG91dAoKCmRlZiBzdW1tKHNpZ3MsIGg9SCwgb29zX29ubHk9RmFsc2UsIGZpcnN0X29ubHk9RmFsc2UpOgogICAgc2VsID0gW3MgZm9yIHMgaW4gc2lncyBpZiBzWzRdID4gMCBhbmQgbm90IG5wLmlzbmFuKHNbNV1baF0pCiAgICAgICAgICAgYW5kIChzWzJdID49IENVVE9GRiBpZiBvb3Nfb25seSBlbHNlIChzWzJdIDwgTUlEIGlmIGZpcnN0X29ubHkgZWxzZSBUcnVlKSldCiAgICBpZiBsZW4oc2VsKSA8IDQwOgogICAgICAgIHJldHVybiBOb25lCiAgICB2ID0gbnAuYXJyYXkoW3NbNV1baF0gZm9yIHMgaW4gc2VsXSkKICAgIGUgPSBucC5hcnJheShbc1s1XVtoXSAtIEJBU0VMSU5FLmdldCgoc1syXSwgaCksIG5wLm5hbikgZm9yIHMgaW4gc2VsCiAgICAgICAgICAgICAgICAgIGlmIChzWzJdLCBoKSBpbiBCQVNFTElORV0pCiAgICByZXR1cm4gZGljdChuPWxlbihzZWwpLCBhdmc9di5tZWFuKCkgKiAxMDAsIGV4Yz1lLm1lYW4oKSAqIDEwMCBpZiBlLnNpemUgZWxzZSBucC5uYW4sCiAgICAgICAgICAgICAgICB3aW49KHYgPiAwKS5tZWFuKCkgKiAxMDAsIHAwNT1ucC5wZXJjZW50aWxlKHYsIDUpICogMTAwLAogICAgICAgICAgICAgICAgcDI1PW5wLnBlcmNlbnRpbGUodiwgMjUpICogMTAwLCBibD0odiA8IC0wLjEwKS5tZWFuKCkgKiAxMDApCgoKZGVmIHJvdyhsYWJlbCwgcyk6CiAgICBpZiBub3QgczoKICAgICAgICBwcmludChmIiAge2xhYmVsOjMwc30gKHRvbyBmZXcpIikKICAgICAgICByZXR1cm4KICAgIHByaW50KGYiICB7bGFiZWw6MzBzfSBuPXtzWyduJ106PDZkfSBleGM9e3NbJ2V4YyddOis1LjJmfSUgYXZnPXtzWydhdmcnXTorNS4yZn0lICIKICAgICAgICAgIGYid2luPXtzWyd3aW4nXTo0LjFmfSUgcDA1PXtzWydwMDUnXTorNS4xZn0lIHAyNT17c1sncDI1J106KzUuMWZ9JSA+MTAlbG9zcz17c1snYmwnXTo0LjFmfSUiKQoKCnByaW50KCI9PT0gMS4gQVRSICh2b2xhdGlsaXR5KSBwZW5hbHR5IHN3ZWVwIOKAlCBjb3JlIHRyZW5kIG1vZGVsLCBCVVk+PTcwID09PSIpCnByaW50KGYiICB7J2NvbmZpZyc6MzBzfSB7J24nOj42c30geydleGMnOj43c30geydhdmcnOj43c30geyd3aW4nOj42c30geydwMDUnOj42c30geyc+MTAlJzo+NnN9IHwgIgogICAgICBmInsnb29zTic6PjVzfSB7J29vc0V4Yyc6PjdzfSB7J29vc1dpbic6PjZzfSB7J29vc1AwNSc6PjdzfSB7J29vcz4xMCUnOj43c30iKQpjYWNoZSA9IHt9CmZvciBtdWx0IGluICgwLCAxMDAsIDE1MCwgMjI1LCAzMDAsIDQ1MCwgNjAwKToKICAgIHNpZ3MgPSBnZW5fc2lnbmFscyhhdHJfc2NvcmUobXVsdCkpCiAgICBjYWNoZVttdWx0XSA9IHNpZ3MKICAgIGZfLCBvXyA9IHN1bW0oc2lncyksIHN1bW0oc2lncywgb29zX29ubHk9VHJ1ZSkKICAgIGlmIGZfIGFuZCBvXzoKICAgICAgICBwcmludChmIiAgQVRScGVuPXttdWx0Ojw2ZH17Jyc6MTZzfSB7Zl9bJ24nXTo+NmR9IHtmX1snZXhjJ106Pis2LjJmfSUge2ZfWydhdmcnXTo+KzYuMmZ9JSAiCiAgICAgICAgICAgICAgZiJ7Zl9bJ3dpbiddOj41LjFmfSUge2ZfWydwMDUnXTo+KzUuMWZ9JSB7Zl9bJ2JsJ106PjUuMWZ9JSB8ICIKICAgICAgICAgICAgICBmIntvX1snbiddOj41ZH0ge29fWydleGMnXTo+KzYuMmZ9JSB7b19bJ3dpbiddOj41LjFmfSUge29fWydwMDUnXTo+KzYuMWZ9JSB7b19bJ2JsJ106PjYuMWZ9JSIpCgpwcmludCgiXG49PT0gMi4ga25lZSB0ZXN0OiB3aGVyZSBzaG91bGQgdGhlIEFUUiBwZW5hbHR5IHN0YXJ0PyAocGVuPTMwMCkgPT09IikKZm9yIGtuZWUgaW4gKDAuMDE1LCAwLjAyMCwgMC4wMjUsIDAuMDMwKToKICAgIHNpZ3MgPSBnZW5fc2lnbmFscyhhdHJfc2NvcmUoMzAwLCBrbmVlPWtuZWUpKQogICAgZl8sIG9fID0gc3VtbShzaWdzKSwgc3VtbShzaWdzLCBvb3Nfb25seT1UcnVlKQogICAgaWYgZl8gYW5kIG9fOgogICAgICAgIHByaW50KGYiICBrbmVlPXtrbmVlOi4zZn0gIGZ1bGwgZXhjPXtmX1snZXhjJ106KzUuMmZ9JSB3aW49e2ZfWyd3aW4nXTo0LjFmfSUgcDA1PXtmX1sncDA1J106KzUuMWZ9JSAiCiAgICAgICAgICAgICAgZiI+MTAlPXtmX1snYmwnXTo0LjFmfSUgfCBvb3MgZXhjPXtvX1snZXhjJ106KzUuMmZ9JSB3aW49e29fWyd3aW4nXTo0LjFmfSUgIgogICAgICAgICAgICAgIGYicDA1PXtvX1sncDA1J106KzUuMWZ9JSA+MTAlPXtvX1snYmwnXTo0LjFmfSUiKQoKcHJpbnQoIlxuPT09IDMuIHNlbGVjdGl2aXR5IHN3ZWVwIG9uIHRoZSByaXNrLWZpbHRlcmVkIG1vZGVsID09PSIpCnByaW50KGYiICB7J21vZGVsL3RocmVzaCc6MzBzfSB7J24nOj42c30geydleGMnOj43c30geyd3aW4nOj42c30geydwMDUnOj42c30gfCAiCiAgICAgIGYieydvb3NOJzo+NXN9IHsnb29zRXhjJzo+N3N9IHsnb29zV2luJzo+NnN9IHsnb29zUDA1Jzo+N3N9IikKZm9yIG5tLCBmbiBpbiAoKCJjb3JlK0FUUjMwMCIsIGF0cl9zY29yZSgzMDApKSwgKCJmdWxsK0FUUnNjb3JlcyIsIFZfZnVsbF9hdHIpLAogICAgICAgICAgICAgICAoImZ1bGwrQVRSK2Jya1ZldG8iLCBWX2Z1bGxfYnJrKSk6CiAgICBmb3IgYnQgaW4gKDcwLCA3NSwgODAsIDg1KToKICAgICAgICBzaWdzID0gZ2VuX3NpZ25hbHMoZm4sIGJ1eT1mbG9hdChidCkpCiAgICAgICAgZl8sIG9fID0gc3VtbShzaWdzKSwgc3VtbShzaWdzLCBvb3Nfb25seT1UcnVlKQogICAgICAgIGlmIGZfIGFuZCBvXzoKICAgICAgICAgICAgcHJpbnQoZiIgIHtubSArIGYnIEJVWT49e2J0fSc6MzBzfSB7Zl9bJ24nXTo+NmR9IHtmX1snZXhjJ106Pis2LjJmfSUge2ZfWyd3aW4nXTo+NS4xZn0lICIKICAgICAgICAgICAgICAgICAgZiJ7Zl9bJ3AwNSddOj4rNS4xZn0lIHwge29fWyduJ106PjVkfSB7b19bJ2V4YyddOj4rNi4yZn0lIHtvX1snd2luJ106PjUuMWZ9JSAiCiAgICAgICAgICAgICAgICAgIGYie29fWydwMDUnXTo+KzYuMWZ9JSIpCgpwcmludCgiXG49PT0gNC4gc3RvcC1sb3NzIC8gdHJlbmQtZXhpdCBzaW11bGF0aW9uIG9uIGlkZW50aWNhbCBlbnRyaWVzID09PSIpCgoKZGVmIHNpbV9leGl0KEYsIHQsIGF0cl9tdWx0PU5vbmUsIHRyYWlsPU5vbmUsIGJyZWFrX21hPU5vbmUsIG1heF9kYXlzPTQwKToKICAgICIiIlJldHVybiBuZXQgaG9sZGluZy1wZXJpb2QgcmV0dXJuIHdpdGggYW4gZXhpdCBydWxlIGFwcGxpZWQuIiIiCiAgICBuID0gaW50KEZbIm4iXSkKICAgIGVvID0gRlsib3BlbiJdW3QgKyAxXQogICAgYSA9IGcoRiwgImF0cl9wY3QiLCB0KQogICAgaWYgZW8gPD0gMCBvciB0ICsgMiA+PSBuOgogICAgICAgIHJldHVybiBOb25lCiAgICBzdG9wID0gTm9uZQogICAgaWYgYXRyX211bHQgYW5kIG5vdCBfbmFuKGEpOgogICAgICAgIHN0b3AgPSBlbyAqICgxIC0gYXRyX211bHQgKiBhKQogICAgYmVzdF9leGl0ID0gTm9uZQogICAgZW5kID0gbWluKHQgKyAxICsgbWF4X2RheXMsIG4gLSAxKQogICAgZm9yIGsgaW4gcmFuZ2UodCArIDEsIGVuZCArIDEpOgogICAgICAgIG9wLCBsbywgaGksIGNsID0gRlsib3BlbiJdW2tdLCBGWyJsb3ciXVtrXSwgRlsiaGlnaCJdW2tdLCBGWyJjbG9zZSJdW2tdCiAgICAgICAgaWYgc3RvcCBpcyBub3QgTm9uZToKICAgICAgICAgICAgaWYgdHJhaWwgYW5kIG5vdCBfbmFuKGEpOgogICAgICAgICAgICAgICAgc3RvcCA9IG1heChzdG9wLCBoaSAqICgxIC0gYXRyX211bHQgKiBhKSkKICAgICAgICAgICAgaWYgbG8gPD0gc3RvcDoKICAgICAgICAgICAgICAgIHJldHVybiAobWluKG9wLCBzdG9wKSAvIGVvKSAtIDEuMCAtIENPU1QKICAgICAgICBpZiBicmVha19tYSBpcyBub3QgTm9uZToKICAgICAgICAgICAgbSA9IGcoRiwgIm1hMjAiLCBrKQogICAgICAgICAgICBpZiBub3QgX25hbihtKSBhbmQgY2wgPCBtICogKDEgLSBicmVha19tYSk6CiAgICAgICAgICAgICAgICByZXR1cm4gY2wgLyBlbyAtIDEuMCAtIENPU1QKICAgICAgICBpZiBrID09IG1pbih0ICsgMSArIEgsIG4gLSAxKToKICAgICAgICAgICAgYmVzdF9leGl0ID0gY2wgLyBlbyAtIDEuMCAtIENPU1QKICAgIHJldHVybiBiZXN0X2V4aXQgaWYgYmVzdF9leGl0IGlzIG5vdCBOb25lIGVsc2UgRlsiY2xvc2UiXVtlbmRdIC8gZW8gLSAxLjAgLSBDT1NUCgoKZGVmIGV2YWxfZXhpdChzaWdzLCAqKmt3KToKICAgIHYgPSBbXQogICAgZm9yIHMgaW4gc2lnczoKICAgICAgICBpZiBzWzJdID49IHN0cigyMDI0KTogICAgICAgICAgIyBuZWVkIHJvb20gZm9yIHRoZSBleGl0IHdpbmRvdwogICAgICAgICAgICBGID0gc3RvY2tzW3NbMF1dCiAgICAgICAgICAgIGlmIGludChGWyJuIl0pIC0gc1sxXSA8IDQ1OgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgciA9IHNpbV9leGl0KEYsIHNbMV0sICoqa3cpCiAgICAgICAgICAgIGlmIHIgaXMgbm90IE5vbmU6CiAgICAgICAgICAgICAgICB2LmFwcGVuZCgoc1syXSwgcikpCiAgICByZXR1cm4gdgoKCmRlZiBlc3VtKGxhYmVsLCBhcnIsIGN1dG9mZj1Ob25lKToKICAgIGlmIG5vdCBhcnI6CiAgICAgICAgcHJpbnQoZiIgIHtsYWJlbDozNHN9IChub25lKSIpCiAgICAgICAgcmV0dXJuCiAgICBhID0gbnAuYXJyYXkoW3hbMV0gZm9yIHggaW4gYXJyXSkKICAgIGQgPSBbeFswXSBmb3IgeCBpbiBhcnJdCiAgICBvID0gYVtbaSBmb3IgaSwgeCBpbiBlbnVtZXJhdGUoZCkgaWYgeCA+PSBDVVRPRkZdXSBpZiBjdXRvZmYgZWxzZSBhCiAgICB0YWlsID0gZiIgfCBvb3MgYXZnPXtvLm1lYW4oKSoxMDA6KzUuMmZ9JSB3aW49eyhvPjApLm1lYW4oKSoxMDA6NC4xZn0lIHAwNT17bnAucGVyY2VudGlsZShvLDUpKjEwMDorNS4xZn0lIG1heGxvc3M9e28ubWluKCkqMTAwOis2LjFmfSUiIGlmIG8uc2l6ZSA+IDQwIGVsc2UgIiIKICAgIHByaW50KGYiICB7bGFiZWw6MzRzfSBuPXthLnNpemU6PDZkfSBhdmc9e2EubWVhbigpKjEwMDorNS4yZn0lIHdpbj17KGE+MCkubWVhbigpKjEwMDo0LjFmfSUgIgogICAgICAgICAgZiJwMDU9e25wLnBlcmNlbnRpbGUoYSw1KSoxMDA6KzUuMWZ9JSB3b3JzdD17YS5taW4oKSoxMDA6KzYuMWZ9JXt0YWlsfSIpCgoKcmVmID0gZ2VuX3NpZ25hbHMoYXRyX3Njb3JlKDMwMCkpCnByaW50KCIgIChlbnRyaWVzID0gY29yZSB0cmVuZCArIEFUUjMwMCwgQlVZPj03MDsgZXhpdCBydWxlIHZhcmllcykiKQplc3VtKCJob2xkIDIwZCwgbm8gc3RvcCIsIGV2YWxfZXhpdChyZWYpLCBjdXRvZmY9VHJ1ZSkKZm9yIG0gaW4gKDEuNSwgMi4wLCAyLjUsIDMuMCk6CiAgICBlc3VtKGYic3RvcCB7bX14QVRSIiwgZXZhbF9leGl0KHJlZiwgYXRyX211bHQ9bSksIGN1dG9mZj1UcnVlKQogICAgZXN1bShmInRyYWlsIHN0b3Age219eEFUUiIsIGV2YWxfZXhpdChyZWYsIGF0cl9tdWx0PW0sIHRyYWlsPVRydWUpLCBjdXRvZmY9VHJ1ZSkKZm9yIGIgaW4gKDAuMDIsIDAuMDQpOgogICAgZXN1bShmImV4aXQgaWYgY2xvc2U8TUEyMCooMS17YjouMmZ9KSIsIGV2YWxfZXhpdChyZWYsIGJyZWFrX21hPWIpLCBjdXRvZmY9VHJ1ZSkKZXN1bSgic3RvcCAyLjV4ICsgTUEyMCBicmVhayIsIGV2YWxfZXhpdChyZWYsIGF0cl9tdWx0PTIuNSwgYnJlYWtfbWE9MC4wMyksIGN1dG9mZj1UcnVlKQplc3VtKCJ0cmFpbCAyLjV4ICsgTUEyMCBicmVhayIsIGV2YWxfZXhpdChyZWYsIGF0cl9tdWx0PTIuNSwgdHJhaWw9VHJ1ZSwgYnJlYWtfbWE9MC4wMyksIGN1dG9mZj1UcnVlKQoKcHJpbnQoIlxuPT09IDUuIHNwbGl0LWhhbGYgc3RhYmlsaXR5LCBjaG9zZW4gbW9kZWwgdnMgb2xkIGFwcCA9PT0iKQpwcmludCgiICBjaG9zZW46IGNvcmUgdHJlbmQgKyBBVFIzMDAsIEJVWT49NzAsIDIwZCBob2xkIikKZm9yIGxhYiwga3cgaW4gKCgiZmlyc3QgaGFsZiIsIGRpY3QoZmlyc3Rfb25seT1UcnVlKSksICgic2Vjb25kIGhhbGYvT09TIiwgZGljdChvb3Nfb25seT1UcnVlKSkpOgogICAgcm93KGxhYiwgc3VtbShyZWYsICoqa3cpKQpvbGQgPSBnZW5fc2lnbmFscyh2X29sZCkKcHJpbnQoIiAgb2xkX2FwcDoiKQpmb3IgbGFiLCBrdyBpbiAoKCJmaXJzdCBoYWxmIiwgZGljdChmaXJzdF9vbmx5PVRydWUpKSwgKCJzZWNvbmQgaGFsZi9PT1MiLCBkaWN0KG9vc19vbmx5PVRydWUpKSk6CiAgICByb3cobGFiLCBzdW1tKG9sZCwgKiprdykpCnJvdygib2xkX2FwcCBmdWxsIiwgc3VtbShvbGQpKQpyb3coImNob3NlbiBmdWxsIiwgc3VtbShyZWYpKQo=
+#!/usr/bin/env python3
+"""Iteration 3: tune the ATR risk filter, sweep selectivity, and test whether an
+ATR stop-loss improves the outcome a real user would feel.
+
+Signals are computed ONCE per model and reused across every exit rule, so the
+comparisons are strictly apples-to-apples.
+"""
+import numpy as np
+from strategy import load_all, build_baseline, MIN_HIST, COST, _nan, g, v_old
+from iter2 import V_core, V_full, V_full_atr, V_full_brk
+
+H = 20
+LIMIT = lambda code: 0.097 if code.startswith(("30", "68")) else 0.047
+stocks = load_all()
+DATES = sorted({str(d) for F in stocks for d in F["date"][MIN_HIST:]})
+CUTOFF = DATES[int(len(DATES) * 0.7)]
+MID = DATES[len(DATES) // 2]
+BASELINE = build_baseline(stocks)
+
+
+def atr_score(mult, base=V_core, knee=0.020):
+    def fn(F, t):
+        s, ok = base(F, t)
+        if not ok:
+            return 0.0, False
+        a = g(F, "atr_pct", t)
+        if mult and not _nan(a):
+            s -= max(0.0, (a - knee)) * mult
+        return float(np.clip(s, 0, 100)), True
+    return fn
+
+
+def gen_signals(fn, buy=70.0, sell=35.0):
+    """(stock_index, t, date, score, side) for every signal, plus fixed-horizon returns."""
+    out = []
+    for si, F in enumerate(stocks):
+        n = int(F["n"])
+        c, o = F["close"], F["open"]
+        lim = LIMIT(F["code"])
+        for t in range(MIN_HIST, n - 1):
+            sc, ok = fn(F, t)
+            if not ok:
+                continue
+            side = 1 if sc >= buy else (-1 if sc <= sell else 0)
+            if side == 0:
+                continue
+            eo = o[t + 1]
+            if eo <= 0:
+                continue
+            if side > 0 and F["pct"][t] > 0 and eo >= c[t] * (1 + lim) * 0.995:
+                continue
+            ret = {}
+            for h in (5, 10, 20):
+                k = t + 1 + h
+                ret[h] = (c[k] / eo - 1.0) - COST if k < n else np.nan
+            out.append((si, t, str(F["date"][t]), sc, side, ret))
+    return out
+
+
+def summ(sigs, h=H, oos_only=False, first_only=False):
+    sel = [s for s in sigs if s[4] > 0 and not np.isnan(s[5][h])
+           and (s[2] >= CUTOFF if oos_only else (s[2] < MID if first_only else True))]
+    if len(sel) < 40:
+        return None
+    v = np.array([s[5][h] for s in sel])
+    e = np.array([s[5][h] - BASELINE.get((s[2], h), np.nan) for s in sel
+                  if (s[2], h) in BASELINE])
+    return dict(n=len(sel), avg=v.mean() * 100, exc=e.mean() * 100 if e.size else np.nan,
+                win=(v > 0).mean() * 100, p05=np.percentile(v, 5) * 100,
+                p25=np.percentile(v, 25) * 100, bl=(v < -0.10).mean() * 100)
+
+
+def row(label, s):
+    if not s:
+        print(f"  {label:30s} (too few)")
+        return
+    print(f"  {label:30s} n={s['n']:<6d} exc={s['exc']:+5.2f}% avg={s['avg']:+5.2f}% "
+          f"win={s['win']:4.1f}% p05={s['p05']:+5.1f}% p25={s['p25']:+5.1f}% >10%loss={s['bl']:4.1f}%")
+
+
+print("=== 1. ATR (volatility) penalty sweep — core trend model, BUY>=70 ===")
+print(f"  {'config':30s} {'n':>6s} {'exc':>7s} {'avg':>7s} {'win':>6s} {'p05':>6s} {'>10%':>6s} | "
+      f"{'oosN':>5s} {'oosExc':>7s} {'oosWin':>6s} {'oosP05':>7s} {'oos>10%':>7s}")
+cache = {}
+for mult in (0, 100, 150, 225, 300, 450, 600):
+    sigs = gen_signals(atr_score(mult))
+    cache[mult] = sigs
+    f_, o_ = summ(sigs), summ(sigs, oos_only=True)
+    if f_ and o_:
+        print(f"  ATRpen={mult:<6d}{'':16s} {f_['n']:>6d} {f_['exc']:>+6.2f}% {f_['avg']:>+6.2f}% "
+              f"{f_['win']:>5.1f}% {f_['p05']:>+5.1f}% {f_['bl']:>5.1f}% | "
+              f"{o_['n']:>5d} {o_['exc']:>+6.2f}% {o_['win']:>5.1f}% {o_['p05']:>+6.1f}% {o_['bl']:>6.1f}%")
+
+print("\n=== 2. knee test: where should the ATR penalty start? (pen=300) ===")
+for knee in (0.015, 0.020, 0.025, 0.030):
+    sigs = gen_signals(atr_score(300, knee=knee))
+    f_, o_ = summ(sigs), summ(sigs, oos_only=True)
+    if f_ and o_:
+        print(f"  knee={knee:.3f}  full exc={f_['exc']:+5.2f}% win={f_['win']:4.1f}% p05={f_['p05']:+5.1f}% "
+              f">10%={f_['bl']:4.1f}% | oos exc={o_['exc']:+5.2f}% win={o_['win']:4.1f}% "
+              f"p05={o_['p05']:+5.1f}% >10%={o_['bl']:4.1f}%")
+
+print("\n=== 3. selectivity sweep on the risk-filtered model ===")
+print(f"  {'model/thresh':30s} {'n':>6s} {'exc':>7s} {'win':>6s} {'p05':>6s} | "
+      f"{'oosN':>5s} {'oosExc':>7s} {'oosWin':>6s} {'oosP05':>7s}")
+for nm, fn in (("core+ATR300", atr_score(300)), ("full+ATRscores", V_full_atr),
+               ("full+ATR+brkVeto", V_full_brk)):
+    for bt in (70, 75, 80, 85):
+        sigs = gen_signals(fn, buy=float(bt))
+        f_, o_ = summ(sigs), summ(sigs, oos_only=True)
+        if f_ and o_:
+            print(f"  {nm + f' BUY>={bt}':30s} {f_['n']:>6d} {f_['exc']:>+6.2f}% {f_['win']:>5.1f}% "
+                  f"{f_['p05']:>+5.1f}% | {o_['n']:>5d} {o_['exc']:>+6.2f}% {o_['win']:>5.1f}% "
+                  f"{o_['p05']:>+6.1f}%")
+
+print("\n=== 4. stop-loss / trend-exit simulation on identical entries ===")
+
+
+def sim_exit(F, t, atr_mult=None, trail=None, break_ma=None, max_days=40):
+    """Return net holding-period return with an exit rule applied."""
+    n = int(F["n"])
+    eo = F["open"][t + 1]
+    a = g(F, "atr_pct", t)
+    if eo <= 0 or t + 2 >= n:
+        return None
+    stop = None
+    if atr_mult and not _nan(a):
+        stop = eo * (1 - atr_mult * a)
+    best_exit = None
+    end = min(t + 1 + max_days, n - 1)
+    for k in range(t + 1, end + 1):
+        op, lo, hi, cl = F["open"][k], F["low"][k], F["high"][k], F["close"][k]
+        if stop is not None:
+            if trail and not _nan(a):
+                stop = max(stop, hi * (1 - atr_mult * a))
+            if lo <= stop:
+                return (min(op, stop) / eo) - 1.0 - COST
+        if break_ma is not None:
+            m = g(F, "ma20", k)
+            if not _nan(m) and cl < m * (1 - break_ma):
+                return cl / eo - 1.0 - COST
+        if k == min(t + 1 + H, n - 1):
+            best_exit = cl / eo - 1.0 - COST
+    return best_exit if best_exit is not None else F["close"][end] / eo - 1.0 - COST
+
+
+def eval_exit(sigs, **kw):
+    v = []
+    for s in sigs:
+        if s[2] >= str(2024):          # need room for the exit window
+            F = stocks[s[0]]
+            if int(F["n"]) - s[1] < 45:
+                continue
+            r = sim_exit(F, s[1], **kw)
+            if r is not None:
+                v.append((s[2], r))
+    return v
+
+
+def esum(label, arr, cutoff=None):
+    if not arr:
+        print(f"  {label:34s} (none)")
+        return
+    a = np.array([x[1] for x in arr])
+    d = [x[0] for x in arr]
+    o = a[[i for i, x in enumerate(d) if x >= CUTOFF]] if cutoff else a
+    tail = f" | oos avg={o.mean()*100:+5.2f}% win={(o>0).mean()*100:4.1f}% p05={np.percentile(o,5)*100:+5.1f}% maxloss={o.min()*100:+6.1f}%" if o.size > 40 else ""
+    print(f"  {label:34s} n={a.size:<6d} avg={a.mean()*100:+5.2f}% win={(a>0).mean()*100:4.1f}% "
+          f"p05={np.percentile(a,5)*100:+5.1f}% worst={a.min()*100:+6.1f}%{tail}")
+
+
+ref = gen_signals(atr_score(300))
+print("  (entries = core trend + ATR300, BUY>=70; exit rule varies)")
+esum("hold 20d, no stop", eval_exit(ref), cutoff=True)
+for m in (1.5, 2.0, 2.5, 3.0):
+    esum(f"stop {m}xATR", eval_exit(ref, atr_mult=m), cutoff=True)
+    esum(f"trail stop {m}xATR", eval_exit(ref, atr_mult=m, trail=True), cutoff=True)
+for b in (0.02, 0.04):
+    esum(f"exit if close<MA20*(1-{b:.2f})", eval_exit(ref, break_ma=b), cutoff=True)
+esum("stop 2.5x + MA20 break", eval_exit(ref, atr_mult=2.5, break_ma=0.03), cutoff=True)
+esum("trail 2.5x + MA20 break", eval_exit(ref, atr_mult=2.5, trail=True, break_ma=0.03), cutoff=True)
+
+print("\n=== 5. split-half stability, chosen model vs old app ===")
+print("  chosen: core trend + ATR300, BUY>=70, 20d hold")
+for lab, kw in (("first half", dict(first_only=True)), ("second half/OOS", dict(oos_only=True))):
+    row(lab, summ(ref, **kw))
+old = gen_signals(v_old)
+print("  old_app:")
+for lab, kw in (("first half", dict(first_only=True)), ("second half/OOS", dict(oos_only=True))):
+    row(lab, summ(old, **kw))
+row("old_app full", summ(old))
+row("chosen full", summ(ref))

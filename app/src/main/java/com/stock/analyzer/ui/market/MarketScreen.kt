@@ -1,1 +1,428 @@
-cGFja2FnZSBjb20uc3RvY2suYW5hbHl6ZXIudWkubWFya2V0CgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5mb3VuZGF0aW9uLmNsaWNrYWJsZQppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5mb3VuZGF0aW9uLmxheW91dC4qCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLmZvdW5kYXRpb24ubGF6eS5MYXp5Q29sdW1uCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLmZvdW5kYXRpb24ubGF6eS5pdGVtcwppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbC5pY29ucy5JY29ucwppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbC5pY29ucy5maWxsZWQuUmVmcmVzaAppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbC5pY29ucy5maWxsZWQuU2VhcmNoCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsLmljb25zLmZpbGxlZC5TdGFyCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsLmljb25zLmZpbGxlZC5DbG9zZQppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbDMuKgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5ydW50aW1lLioKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UudWkuQWxpZ25tZW50CmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLk1vZGlmaWVyCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLmdyYXBoaWNzLkNvbG9yCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLnRleHQuZm9udC5Gb250V2VpZ2h0CmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLnVuaXQuZHAKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UudWkudW5pdC5zcAppbXBvcnQgYW5kcm9pZHgubGlmZWN5Y2xlLnZpZXdtb2RlbC5jb21wb3NlLnZpZXdNb2RlbAppbXBvcnQgY29tLnN0b2NrLmFuYWx5emVyLmRhdGEubW9kZWwuUmVjb21tZW5kYXRpb24KaW1wb3J0IGNvbS5zdG9jay5hbmFseXplci5kYXRhLm1vZGVsLlN0b2NrUmVjb21tZW5kYXRpb24KaW1wb3J0IGNvbS5zdG9jay5hbmFseXplci5kYXRhLnJlcG9zaXRvcnkuU3RvY2tJbmZvUmVwb3NpdG9yeQppbXBvcnQgY29tLnN0b2NrLmFuYWx5emVyLmRhdGEubW9kZWwuU3RvY2tJbmZvCmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMubGF1bmNoCmltcG9ydCBqYXZhLnRleHQuU2ltcGxlRGF0ZUZvcm1hdAppbXBvcnQgamF2YS51dGlsLioKCkBPcHRJbihFeHBlcmltZW50YWxNYXRlcmlhbDNBcGk6OmNsYXNzKQpAQ29tcG9zYWJsZQpmdW4gTWFya2V0U2NyZWVuKAogICAgb25TdG9ja0NsaWNrOiAoU3RyaW5nKSAtPiBVbml0LAogICAgdmlld01vZGVsOiBNYXJrZXRWaWV3TW9kZWwgPSB2aWV3TW9kZWwoKQopIHsKICAgIHZhbCByZWNvbW1lbmRhdGlvbnMgYnkgdmlld01vZGVsLnJlY29tbWVuZGF0aW9ucy5jb2xsZWN0QXNTdGF0ZSgpCiAgICB2YWwgaXNMb2FkaW5nIGJ5IHZpZXdNb2RlbC5pc0xvYWRpbmcuY29sbGVjdEFzU3RhdGUoKQogICAgdmFsIHByb2dyZXNzIGJ5IHZpZXdNb2RlbC5wcm9ncmVzcy5jb2xsZWN0QXNTdGF0ZSgpCiAgICB2YWwgZXJyb3IgYnkgdmlld01vZGVsLmVycm9yLmNvbGxlY3RBc1N0YXRlKCkKICAgIHZhbCBsYXN0VXBkYXRlVGltZSBieSB2aWV3TW9kZWwubGFzdFVwZGF0ZVRpbWUuY29sbGVjdEFzU3RhdGUoKQogICAgdmFsIHBvb2xJbmZvIGJ5IHZpZXdNb2RlbC5wb29sSW5mby5jb2xsZWN0QXNTdGF0ZSgpCiAgICAKICAgIFNjYWZmb2xkKAogICAgICAgIHRvcEJhciA9IHsKICAgICAgICAgICAgVG9wQXBwQmFyKAogICAgICAgICAgICAgICAgdGl0bGUgPSB7IFRleHQoIuS7iuaXpeWAmemAieaxoCIpIH0sCiAgICAgICAgICAgICAgICBhY3Rpb25zID0gewogICAgICAgICAgICAgICAgICAgIEljb25CdXR0b24ob25DbGljayA9IHsgdmlld01vZGVsLnJlZnJlc2goKSB9KSB7CiAgICAgICAgICAgICAgICAgICAgICAgIEljb24oSWNvbnMuRGVmYXVsdC5SZWZyZXNoLCBjb250ZW50RGVzY3JpcHRpb24gPSAi5Yi35pawIikKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICkKICAgICAgICB9CiAgICApIHsgcGFkZGluZ1ZhbHVlcyAtPgogICAgICAgIEJveCgKICAgICAgICAgICAgbW9kaWZpZXIgPSBNb2RpZmllcgogICAgICAgICAgICAgICAgLmZpbGxNYXhTaXplKCkKICAgICAgICAgICAgICAgIC5wYWRkaW5nKHBhZGRpbmdWYWx1ZXMpCiAgICAgICAgKSB7CiAgICAgICAgICAgIENvbHVtbihtb2RpZmllciA9IE1vZGlmaWVyLmZpbGxNYXhTaXplKCkpIHsKICAgICAgICAgICAgICAgIC8vIOabtOaWsOaXtumXtAogICAgICAgICAgICAgICAgbGFzdFVwZGF0ZVRpbWU/LmxldCB7IHRpbWUgLT4KICAgICAgICAgICAgICAgICAgICBTdXJmYWNlKAogICAgICAgICAgICAgICAgICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAuZmlsbE1heFdpZHRoKCkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIC5wYWRkaW5nKGhvcml6b250YWwgPSAxNi5kcCwgdmVydGljYWwgPSA0LmRwKSwKICAgICAgICAgICAgICAgICAgICAgICAgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLnByaW1hcnlDb250YWluZXIuY29weShhbHBoYSA9IDAuM2YpLAogICAgICAgICAgICAgICAgICAgICAgICBzaGFwZSA9IE1hdGVyaWFsVGhlbWUuc2hhcGVzLnNtYWxsCiAgICAgICAgICAgICAgICAgICAgKSB7CiAgICAgICAgICAgICAgICAgICAgICAgIENvbHVtbihtb2RpZmllciA9IE1vZGlmaWVyLnBhZGRpbmcoaG9yaXpvbnRhbCA9IDEyLmRwLCB2ZXJ0aWNhbCA9IDYuZHApKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0KAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRleHQgPSAi5pu05paw5pe26Ze0OiAke1NpbXBsZURhdGVGb3JtYXQoIkhIOm1tOnNzIiwgTG9jYWxlLmdldERlZmF1bHQoKSkuZm9ybWF0KERhdGUodGltZSkpfSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udFNpemUgPSAxMi5zcCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb2xvciA9IE1hdGVyaWFsVGhlbWUuY29sb3JTY2hlbWUub25TdXJmYWNlVmFyaWFudAogICAgICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKHBvb2xJbmZvLmlzTm90RW1wdHkoKSkgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFRleHQoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRleHQgPSBwb29sSW5mbywKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udFNpemUgPSAxMi5zcCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0KAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRleHQgPSAi6aG65bqP5LiN5Luj6KGo5aW95Z2P77ya6L+Z5piv5YiG5L2N5rGg55qE5YiG5bGC5Y+W5qC377yMMjAg5Y+q562J5p2D77yI5Y2V5Y+q57qmIDUl77yJ77yMIiArCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICLkuI3opoHlm6DkuLrmjpLlkI3pnaDliY3lsLHliqDms6giLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZvbnRTaXplID0gMTIuc3AsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLmVycm9yLmNvcHkoYWxwaGEgPSAwLjhmKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICB3aGVuIHsKICAgICAgICAgICAgICAgICAgICBpc0xvYWRpbmcgJiYgcmVjb21tZW5kYXRpb25zLmlzRW1wdHkoKSAtPiB7CiAgICAgICAgICAgICAgICAgICAgICAgIENvbHVtbigKICAgICAgICAgICAgICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAuYWxpZ24oQWxpZ25tZW50LkNlbnRlckhvcml6b250YWxseSkKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAucGFkZGluZyh0b3AgPSAxMDAuZHApLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgaG9yaXpvbnRhbEFsaWdubWVudCA9IEFsaWdubWVudC5DZW50ZXJIb3Jpem9udGFsbHkKICAgICAgICAgICAgICAgICAgICAgICAgKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBDaXJjdWxhclByb2dyZXNzSW5kaWNhdG9yKCkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIFNwYWNlcihtb2RpZmllciA9IE1vZGlmaWVyLmhlaWdodCgxNi5kcCkpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0KHRleHQgPSBwcm9ncmVzcywgZm9udFNpemUgPSAxNC5zcCwgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQpCiAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgZXJyb3IgIT0gbnVsbCAmJiByZWNvbW1lbmRhdGlvbnMuaXNFbXB0eSgpIC0+IHsKICAgICAgICAgICAgICAgICAgICAgICAgQ29sdW1uKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgbW9kaWZpZXIgPSBNb2RpZmllcgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC5hbGlnbihBbGlnbm1lbnQuQ2VudGVySG9yaXpvbnRhbGx5KQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC5wYWRkaW5nKHRvcCA9IDEwMC5kcCksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBob3Jpem9udGFsQWxpZ25tZW50ID0gQWxpZ25tZW50LkNlbnRlckhvcml6b250YWxseQogICAgICAgICAgICAgICAgICAgICAgICApIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIFRleHQodGV4dCA9IGVycm9yID86ICLmnKrnn6XplJnor68iLCBjb2xvciA9IE1hdGVyaWFsVGhlbWUuY29sb3JTY2hlbWUuZXJyb3IpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBTcGFjZXIobW9kaWZpZXIgPSBNb2RpZmllci5oZWlnaHQoMTYuZHApKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgQnV0dG9uKG9uQ2xpY2sgPSB7IHZpZXdNb2RlbC5yZWZyZXNoKCkgfSkgeyBUZXh0KCLph43or5UiKSB9CiAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgcmVjb21tZW5kYXRpb25zLmlzRW1wdHkoKSAtPiB7CiAgICAgICAgICAgICAgICAgICAgICAgIEJveChtb2RpZmllciA9IE1vZGlmaWVyLmZpbGxNYXhTaXplKCksIGNvbnRlbnRBbGlnbm1lbnQgPSBBbGlnbm1lbnQuQ2VudGVyKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0KAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRleHQgPSAi5LuK5pel5peg6IKh56Wo5ZCM5pe25ruh6Laz6LaL5Yq/57uT5p6E5LiO5rOi5Yqo6KaB5rGC77yI5LiN5YuJ5by65Lmw5YWl77yJIiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdHlsZSA9IE1hdGVyaWFsVGhlbWUudHlwb2dyYXBoeS5ib2R5TGFyZ2UKICAgICAgICAgICAgICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICBlbHNlIC0+IHsKICAgICAgICAgICAgICAgICAgICAgICAgTGF6eUNvbHVtbigKICAgICAgICAgICAgICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIuZmlsbE1heFNpemUoKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbnRlbnRQYWRkaW5nID0gUGFkZGluZ1ZhbHVlcyh2ZXJ0aWNhbCA9IDguZHApCiAgICAgICAgICAgICAgICAgICAgICAgICkgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgaXRlbXMocmVjb21tZW5kYXRpb25zKSB7IHJlYyAtPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFJlY29tbWVuZGF0aW9uQ2FyZCgKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcmVjb21tZW5kYXRpb24gPSByZWMsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG9uQ2xpY2sgPSB7IG9uU3RvY2tDbGljayhyZWMuc3RvY2suY29kZSkgfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgLy8g5bqV6YOo6L+b5bqm5p2hCiAgICAgICAgICAgICAgICBpZiAoaXNMb2FkaW5nICYmIHJlY29tbWVuZGF0aW9ucy5pc05vdEVtcHR5KCkpIHsKICAgICAgICAgICAgICAgICAgICBDb2x1bW4oCiAgICAgICAgICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIC5maWxsTWF4V2lkdGgoKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgLnBhZGRpbmcoMTYuZHApLAogICAgICAgICAgICAgICAgICAgICAgICBob3Jpem9udGFsQWxpZ25tZW50ID0gQWxpZ25tZW50LkNlbnRlckhvcml6b250YWxseQogICAgICAgICAgICAgICAgICAgICkgewogICAgICAgICAgICAgICAgICAgICAgICBMaW5lYXJQcm9ncmVzc0luZGljYXRvcihtb2RpZmllciA9IE1vZGlmaWVyLmZpbGxNYXhXaWR0aCgpKQogICAgICAgICAgICAgICAgICAgICAgICBTcGFjZXIobW9kaWZpZXIgPSBNb2RpZmllci5oZWlnaHQoOC5kcCkpCiAgICAgICAgICAgICAgICAgICAgICAgIFRleHQodGV4dCA9IHByb2dyZXNzLCBmb250U2l6ZSA9IDEyLnNwLCBjb2xvciA9IE1hdGVyaWFsVGhlbWUuY29sb3JTY2hlbWUub25TdXJmYWNlVmFyaWFudCkKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9Cn0KCkBPcHRJbihFeHBlcmltZW50YWxNYXRlcmlhbDNBcGk6OmNsYXNzKQpAQ29tcG9zYWJsZQpmdW4gUmVjb21tZW5kYXRpb25DYXJkKAogICAgcmVjb21tZW5kYXRpb246IFN0b2NrUmVjb21tZW5kYXRpb24sCiAgICBvbkNsaWNrOiAoKSAtPiBVbml0CikgewogICAgLy8g6L+Z5piv5LiA5Liq5YiG5bGC5Y+W5qC355qE5YCZ6YCJ5rGg77yM5LiN5piv5o6S6KGM5qacIOKAlOKAlCDnvJblj7flj6rmmK/luo/lj7fvvIzkuI3nu5nph5Hpk7bpk5wKICAgIHZhbCByYW5rQ29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLnByaW1hcnkKICAgIAogICAgQ2FyZCgKICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyCiAgICAgICAgICAgIC5maWxsTWF4V2lkdGgoKQogICAgICAgICAgICAucGFkZGluZyhob3Jpem9udGFsID0gMTYuZHAsIHZlcnRpY2FsID0gNC5kcCkKICAgICAgICAgICAgLmNsaWNrYWJsZShvbkNsaWNrID0gb25DbGljayksCiAgICAgICAgZWxldmF0aW9uID0gQ2FyZERlZmF1bHRzLmNhcmRFbGV2YXRpb24oZGVmYXVsdEVsZXZhdGlvbiA9IDIuZHApCiAgICApIHsKICAgICAgICBDb2x1bW4oCiAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIKICAgICAgICAgICAgICAgIC5maWxsTWF4V2lkdGgoKQogICAgICAgICAgICAgICAgLnBhZGRpbmcoMTYuZHApCiAgICAgICAgKSB7CiAgICAgICAgICAgIFJvdygKICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIuZmlsbE1heFdpZHRoKCksCiAgICAgICAgICAgICAgICBob3Jpem9udGFsQXJyYW5nZW1lbnQgPSBBcnJhbmdlbWVudC5TcGFjZUJldHdlZW4sCiAgICAgICAgICAgICAgICB2ZXJ0aWNhbEFsaWdubWVudCA9IEFsaWdubWVudC5DZW50ZXJWZXJ0aWNhbGx5CiAgICAgICAgICAgICkgewogICAgICAgICAgICAgICAgLy8g5o6S5ZCN5ZKM6IKh56Wo5L+h5oGvCiAgICAgICAgICAgICAgICBSb3codmVydGljYWxBbGlnbm1lbnQgPSBBbGlnbm1lbnQuQ2VudGVyVmVydGljYWxseSkgewogICAgICAgICAgICAgICAgICAgIFN1cmZhY2UoCiAgICAgICAgICAgICAgICAgICAgICAgIHNoYXBlID0gTWF0ZXJpYWxUaGVtZS5zaGFwZXMuc21hbGwsCiAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yID0gcmFua0NvbG9yLAogICAgICAgICAgICAgICAgICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyLnNpemUoMzYuZHApCiAgICAgICAgICAgICAgICAgICAgKSB7CiAgICAgICAgICAgICAgICAgICAgICAgIEJveChjb250ZW50QWxpZ25tZW50ID0gQWxpZ25tZW50LkNlbnRlcikgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgVGV4dCgKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0ZXh0ID0gIiMke3JlY29tbWVuZGF0aW9uLnJhbmt9IiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb2xvciA9IENvbG9yLldoaXRlLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZvbnRXZWlnaHQgPSBGb250V2VpZ2h0LkJvbGQsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udFNpemUgPSAxNC5zcAogICAgICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIFNwYWNlcihtb2RpZmllciA9IE1vZGlmaWVyLndpZHRoKDEyLmRwKSkKICAgICAgICAgICAgICAgICAgICBDb2x1bW4gewogICAgICAgICAgICAgICAgICAgICAgICBUZXh0KAogICAgICAgICAgICAgICAgICAgICAgICAgICAgdGV4dCA9IHJlY29tbWVuZGF0aW9uLnN0b2NrLm5hbWUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250U2l6ZSA9IDE4LnNwLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udFdlaWdodCA9IEZvbnRXZWlnaHQuQm9sZAogICAgICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAgICAgICAgIFRleHQoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICB0ZXh0ID0gcmVjb21tZW5kYXRpb24uc3RvY2suY29kZSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZvbnRTaXplID0gMTIuc3AsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb2xvciA9IE1hdGVyaWFsVGhlbWUuY29sb3JTY2hlbWUub25TdXJmYWNlVmFyaWFudAogICAgICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAvLyDor4TliIYKICAgICAgICAgICAgICAgIENvbHVtbihob3Jpem9udGFsQWxpZ25tZW50ID0gQWxpZ25tZW50LkVuZCkgewogICAgICAgICAgICAgICAgICAgIFJvdyh2ZXJ0aWNhbEFsaWdubWVudCA9IEFsaWdubWVudC5DZW50ZXJWZXJ0aWNhbGx5KSB7CiAgICAgICAgICAgICAgICAgICAgICAgIEljb24oCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBJY29ucy5EZWZhdWx0LlN0YXIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb250ZW50RGVzY3JpcHRpb24gPSBudWxsLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgdGludCA9IHJhbmtDb2xvciwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIuc2l6ZSgxNi5kcCkKICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgICAgICBUZXh0KAogICAgICAgICAgICAgICAgICAgICAgICAgICAgdGV4dCA9ICIgJHtyZWNvbW1lbmRhdGlvbi5hbmFseXNpcy5zY29yZX0iLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udFNpemUgPSAxOC5zcCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZvbnRXZWlnaHQgPSBGb250V2VpZ2h0LkJvbGQsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb2xvciA9IHJhbmtDb2xvcgogICAgICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIFRleHQoCiAgICAgICAgICAgICAgICAgICAgICAgIHRleHQgPSBnZXRSZWNvbW1lbmRhdGlvbkxhYmVsKHJlY29tbWVuZGF0aW9uLmFuYWx5c2lzLnJlY29tbWVuZGF0aW9uKSwKICAgICAgICAgICAgICAgICAgICAgICAgZm9udFNpemUgPSAxMi5zcCwKICAgICAgICAgICAgICAgICAgICAgICAgY29sb3IgPSBnZXRSZWNvbW1lbmRhdGlvbkNvbG9yKHJlY29tbWVuZGF0aW9uLmFuYWx5c2lzLnJlY29tbWVuZGF0aW9uKQogICAgICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgU3BhY2VyKG1vZGlmaWVyID0gTW9kaWZpZXIuaGVpZ2h0KDEyLmRwKSkKICAgICAgICAgICAgRGl2aWRlcigpCiAgICAgICAgICAgIFNwYWNlcihtb2RpZmllciA9IE1vZGlmaWVyLmhlaWdodCgxMi5kcCkpCiAgICAgICAgICAgIAogICAgICAgICAgICAvLyDku7fmoLzlkozmtqjot4wKICAgICAgICAgICAgUm93KAogICAgICAgICAgICAgICAgbW9kaWZpZXIgPSBNb2RpZmllci5maWxsTWF4V2lkdGgoKSwKICAgICAgICAgICAgICAgIGhvcml6b250YWxBcnJhbmdlbWVudCA9IEFycmFuZ2VtZW50LlNwYWNlQmV0d2VlbgogICAgICAgICAgICApIHsKICAgICAgICAgICAgICAgIENvbHVtbiB7CiAgICAgICAgICAgICAgICAgICAgVGV4dCgi5b2T5YmN5Lu3IiwgZm9udFNpemUgPSAxMi5zcCwgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQpCiAgICAgICAgICAgICAgICAgICAgVGV4dCgKICAgICAgICAgICAgICAgICAgICAgICAgdGV4dCA9IFN0cmluZy5mb3JtYXQoIiUuMmYiLCByZWNvbW1lbmRhdGlvbi5zdG9jay5wcmljZSksCiAgICAgICAgICAgICAgICAgICAgICAgIGZvbnRTaXplID0gMjAuc3AsCiAgICAgICAgICAgICAgICAgICAgICAgIGZvbnRXZWlnaHQgPSBGb250V2VpZ2h0LkJvbGQsCiAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yID0gaWYgKHJlY29tbWVuZGF0aW9uLnN0b2NrLmlzUmlzZSkgQ29sb3IoMHhGRkU1MzkzNSkgZWxzZSBDb2xvcigweEZGNDNBMDQ3KQogICAgICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIENvbHVtbihob3Jpem9udGFsQWxpZ25tZW50ID0gQWxpZ25tZW50LkVuZCkgewogICAgICAgICAgICAgICAgICAgIFRleHQoIua2qOi3jOW5hSIsIGZvbnRTaXplID0gMTIuc3AsIGNvbG9yID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5vblN1cmZhY2VWYXJpYW50KQogICAgICAgICAgICAgICAgICAgIFRleHQoCiAgICAgICAgICAgICAgICAgICAgICAgIHRleHQgPSBTdHJpbmcuZm9ybWF0KCIlKy4yZiUlIiwgcmVjb21tZW5kYXRpb24uc3RvY2suY2hhbmdlUGVyY2VudCksCiAgICAgICAgICAgICAgICAgICAgICAgIGZvbnRTaXplID0gMjAuc3AsCiAgICAgICAgICAgICAgICAgICAgICAgIGZvbnRXZWlnaHQgPSBGb250V2VpZ2h0LkJvbGQsCiAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yID0gaWYgKHJlY29tbWVuZGF0aW9uLnN0b2NrLmlzUmlzZSkgQ29sb3IoMHhGRkU1MzkzNSkgZWxzZSBDb2xvcigweEZGNDNBMDQ3KQogICAgICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgLy8g5Lmw5YWl5Lu35qC85Yy66Ze0CiAgICAgICAgICAgIHJlY29tbWVuZGF0aW9uLmJ1eVByaWNlUmFuZ2U/LmxldCB7IHJhbmdlIC0+CiAgICAgICAgICAgICAgICBTcGFjZXIobW9kaWZpZXIgPSBNb2RpZmllci5oZWlnaHQoMTIuZHApKQogICAgICAgICAgICAgICAgU3VyZmFjZSgKICAgICAgICAgICAgICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyLmZpbGxNYXhXaWR0aCgpLAogICAgICAgICAgICAgICAgICAgIGNvbG9yID0gQ29sb3IoMHhGRkU1MzkzNSkuY29weShhbHBoYSA9IDAuMWYpLAogICAgICAgICAgICAgICAgICAgIHNoYXBlID0gTWF0ZXJpYWxUaGVtZS5zaGFwZXMuc21hbGwKICAgICAgICAgICAgICAgICkgewogICAgICAgICAgICAgICAgICAgIFJvdygKICAgICAgICAgICAgICAgICAgICAgICAgbW9kaWZpZXIgPSBNb2RpZmllcgogICAgICAgICAgICAgICAgICAgICAgICAgICAgLmZpbGxNYXhXaWR0aCgpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAucGFkZGluZyhob3Jpem9udGFsID0gMTIuZHAsIHZlcnRpY2FsID0gOC5kcCksCiAgICAgICAgICAgICAgICAgICAgICAgIGhvcml6b250YWxBcnJhbmdlbWVudCA9IEFycmFuZ2VtZW50LlNwYWNlQmV0d2VlbiwKICAgICAgICAgICAgICAgICAgICAgICAgdmVydGljYWxBbGlnbm1lbnQgPSBBbGlnbm1lbnQuQ2VudGVyVmVydGljYWxseQogICAgICAgICAgICAgICAgICAgICkgewogICAgICAgICAgICAgICAgICAgICAgICBUZXh0KAogICAgICAgICAgICAgICAgICAgICAgICAgICAgdGV4dCA9ICLlm57ouKnliqDku5PljLrpl7QiLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udFNpemUgPSAxMy5zcCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZvbnRXZWlnaHQgPSBGb250V2VpZ2h0Lk1lZGl1bSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yID0gQ29sb3IoMHhGRkU1MzkzNSkKICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgICAgICBUZXh0KAogICAgICAgICAgICAgICAgICAgICAgICAgICAgdGV4dCA9ICIke1N0cmluZy5mb3JtYXQoIiUuMmYiLCByYW5nZS5sb3cpfSAtICR7U3RyaW5nLmZvcm1hdCgiJS4yZiIsIHJhbmdlLmhpZ2gpfSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250U2l6ZSA9IDE0LnNwLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udFdlaWdodCA9IEZvbnRXZWlnaHQuQm9sZCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yID0gQ29sb3IoMHhGRkU1MzkzNSkKICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgLy8g5Y2W5Ye65Lu35qC85Yy66Ze0CiAgICAgICAgICAgIHJlY29tbWVuZGF0aW9uLnNlbGxQcmljZVJhbmdlPy5sZXQgeyByYW5nZSAtPgogICAgICAgICAgICAgICAgU3BhY2VyKG1vZGlmaWVyID0gTW9kaWZpZXIuaGVpZ2h0KDYuZHApKQogICAgICAgICAgICAgICAgU3VyZmFjZSgKICAgICAgICAgICAgICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyLmZpbGxNYXhXaWR0aCgpLAogICAgICAgICAgICAgICAgICAgIGNvbG9yID0gQ29sb3IoMHhGRjQzQTA0NykuY29weShhbHBoYSA9IDAuMWYpLAogICAgICAgICAgICAgICAgICAgIHNoYXBlID0gTWF0ZXJpYWxUaGVtZS5zaGFwZXMuc21hbGwKICAgICAgICAgICAgICAgICkgewogICAgICAgICAgICAgICAgICAgIFJvdygKICAgICAgICAgICAgICAgICAgICAgICAgbW9kaWZpZXIgPSBNb2RpZmllcgogICAgICAgICAgICAgICAgICAgICAgICAgICAgLmZpbGxNYXhXaWR0aCgpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAucGFkZGluZyhob3Jpem9udGFsID0gMTIuZHAsIHZlcnRpY2FsID0gOC5kcCksCiAgICAgICAgICAgICAgICAgICAgICAgIGhvcml6b250YWxBcnJhbmdlbWVudCA9IEFycmFuZ2VtZW50LlNwYWNlQmV0d2VlbiwKICAgICAgICAgICAgICAgICAgICAgICAgdmVydGljYWxBbGlnbm1lbnQgPSBBbGlnbm1lbnQuQ2VudGVyVmVydGljYWxseQogICAgICAgICAgICAgICAgICAgICkgewogICAgICAgICAgICAgICAgICAgICAgICBUZXh0KAogICAgICAgICAgICAgICAgICAgICAgICAgICAgdGV4dCA9ICLlh4/ku5MgLyDmraLnm4jljLrpl7QiLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udFNpemUgPSAxMy5zcCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZvbnRXZWlnaHQgPSBGb250V2VpZ2h0Lk1lZGl1bSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yID0gQ29sb3IoMHhGRjQzQTA0NykKICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgICAgICBUZXh0KAogICAgICAgICAgICAgICAgICAgICAgICAgICAgdGV4dCA9ICIke1N0cmluZy5mb3JtYXQoIiUuMmYiLCByYW5nZS5sb3cpfSAtICR7U3RyaW5nLmZvcm1hdCgiJS4yZiIsIHJhbmdlLmhpZ2gpfSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250U2l6ZSA9IDE0LnNwLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udFdlaWdodCA9IEZvbnRXZWlnaHQuQm9sZCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yID0gQ29sb3IoMHhGRjQzQTA0NykKICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgU3BhY2VyKG1vZGlmaWVyID0gTW9kaWZpZXIuaGVpZ2h0KDEyLmRwKSkKICAgICAgICAgICAgCiAgICAgICAgICAgIC8vIOWFs+mUruaMh+aghwogICAgICAgICAgICBSb3coCiAgICAgICAgICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyLmZpbGxNYXhXaWR0aCgpLAogICAgICAgICAgICAgICAgaG9yaXpvbnRhbEFycmFuZ2VtZW50ID0gQXJyYW5nZW1lbnQuU3BhY2VFdmVubHkKICAgICAgICAgICAgKSB7CiAgICAgICAgICAgICAgICByZWNvbW1lbmRhdGlvbi5hbmFseXNpcy5yc2k/LmxldCB7CiAgICAgICAgICAgICAgICAgICAgTWluaUluZGljYXRvcigiUlNJIiwgU3RyaW5nLmZvcm1hdCgiJS4xZiIsIGl0KSwgZ2V0UlNJQ29sb3IoaXQpKQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgcmVjb21tZW5kYXRpb24uYW5hbHlzaXMubWEyMD8ubGV0IHsKICAgICAgICAgICAgICAgICAgICBNaW5pSW5kaWNhdG9yKCJNQTIwIiwgU3RyaW5nLmZvcm1hdCgiJS4yZiIsIGl0KSwgTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5vblN1cmZhY2UpCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICByZWNvbW1lbmRhdGlvbi5hbmFseXNpcy5tYTYwPy5sZXQgewogICAgICAgICAgICAgICAgICAgIE1pbmlJbmRpY2F0b3IoIk1BNjAiLCBTdHJpbmcuZm9ybWF0KCIlLjJmIiwgaXQpLCBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZSkKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIC8vIOaXpeazouW5he+8iEFUUi/njrDku7fvvInvvJror4TliIbph4zllK/kuIDnmoQi6aOO6ZmpIumhue+8jOi2iuWkp+aJo+WIhui2iuWkmgogICAgICAgICAgICAgICAgcmVjb21tZW5kYXRpb24uYW5hbHlzaXMuYXRyUGVyY2VudD8ubGV0IHsKICAgICAgICAgICAgICAgICAgICB2YWwgYyA9IHdoZW4gewogICAgICAgICAgICAgICAgICAgICAgICBpdCA+IDAuMDM1IC0+IENvbG9yKDB4RkY0M0EwNDcpCiAgICAgICAgICAgICAgICAgICAgICAgIGl0IDwgMC4wMjAgLT4gQ29sb3IoMHhGRkU1MzkzNSkKICAgICAgICAgICAgICAgICAgICAgICAgZWxzZSAtPiBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICBNaW5pSW5kaWNhdG9yKCLml6Xms6LluYUiLCBTdHJpbmcuZm9ybWF0KCIlLjJmJSUiLCBpdCAqIDEwMCksIGMpCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgIC8vIOS/oeWPt+aRmOimgQogICAgICAgICAgICBpZiAocmVjb21tZW5kYXRpb24uYW5hbHlzaXMuc2lnbmFscy5pc05vdEVtcHR5KCkpIHsKICAgICAgICAgICAgICAgIFNwYWNlcihtb2RpZmllciA9IE1vZGlmaWVyLmhlaWdodCg4LmRwKSkKICAgICAgICAgICAgICAgIHZhbCB0b3BTaWduYWxzID0gcmVjb21tZW5kYXRpb24uYW5hbHlzaXMuc2lnbmFscy50YWtlKDMpCiAgICAgICAgICAgICAgICB0b3BTaWduYWxzLmZvckVhY2ggeyBzaWduYWwgLT4KICAgICAgICAgICAgICAgICAgICBSb3coCiAgICAgICAgICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIKICAgICAgICAgICAgICAgICAgICAgICAgICAgIC5maWxsTWF4V2lkdGgoKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgLnBhZGRpbmcodmVydGljYWwgPSAyLmRwKSwKICAgICAgICAgICAgICAgICAgICAgICAgdmVydGljYWxBbGlnbm1lbnQgPSBBbGlnbm1lbnQuQ2VudGVyVmVydGljYWxseQogICAgICAgICAgICAgICAgICAgICkgewogICAgICAgICAgICAgICAgICAgICAgICBTdXJmYWNlKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgc2hhcGUgPSBNYXRlcmlhbFRoZW1lLnNoYXBlcy5zbWFsbCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yID0gZ2V0U2lnbmFsQ29sb3Ioc2lnbmFsLnR5cGUpLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgbW9kaWZpZXIgPSBNb2RpZmllci5zaXplKDYuZHApCiAgICAgICAgICAgICAgICAgICAgICAgICkge30KICAgICAgICAgICAgICAgICAgICAgICAgU3BhY2VyKG1vZGlmaWVyID0gTW9kaWZpZXIud2lkdGgoNi5kcCkpCiAgICAgICAgICAgICAgICAgICAgICAgIFRleHQoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICB0ZXh0ID0gc2lnbmFsLm1lc3NhZ2UsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250U2l6ZSA9IDEyLnNwLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQKICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KfQoKQENvbXBvc2FibGUKZnVuIE1pbmlJbmRpY2F0b3IobGFiZWw6IFN0cmluZywgdmFsdWU6IFN0cmluZywgY29sb3I6IENvbG9yKSB7CiAgICBDb2x1bW4oaG9yaXpvbnRhbEFsaWdubWVudCA9IEFsaWdubWVudC5DZW50ZXJIb3Jpem9udGFsbHkpIHsKICAgICAgICBUZXh0KHRleHQgPSBsYWJlbCwgZm9udFNpemUgPSAxMC5zcCwgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQpCiAgICAgICAgVGV4dCh0ZXh0ID0gdmFsdWUsIGZvbnRTaXplID0gMTQuc3AsIGZvbnRXZWlnaHQgPSBGb250V2VpZ2h0Lk1lZGl1bSwgY29sb3IgPSBjb2xvcikKICAgIH0KfQoKZnVuIGdldFJTSUNvbG9yKHJzaTogRG91YmxlKTogQ29sb3IgewogICAgcmV0dXJuIHdoZW4gewogICAgICAgIHJzaSA+IDcwIC0+IENvbG9yKDB4RkY0M0EwNDcpCiAgICAgICAgcnNpIDwgMzAgLT4gQ29sb3IoMHhGRkU1MzkzNSkKICAgICAgICBlbHNlIC0+IENvbG9yKDB4RkY3NTc1NzUpCiAgICB9Cn0KCmZ1biBnZXRTaWduYWxDb2xvcih0eXBlOiBjb20uc3RvY2suYW5hbHl6ZXIuZGF0YS5tb2RlbC5TaWduYWxUeXBlKTogQ29sb3IgewogICAgcmV0dXJuIHdoZW4gKHR5cGUpIHsKICAgICAgICBjb20uc3RvY2suYW5hbHl6ZXIuZGF0YS5tb2RlbC5TaWduYWxUeXBlLkdPTERFTl9DUk9TUywKICAgICAgICBjb20uc3RvY2suYW5hbHl6ZXIuZGF0YS5tb2RlbC5TaWduYWxUeXBlLk9WRVJTT0xELAogICAgICAgIGNvbS5zdG9jay5hbmFseXplci5kYXRhLm1vZGVsLlNpZ25hbFR5cGUuVFJFTkRfVVAsCiAgICAgICAgY29tLnN0b2NrLmFuYWx5emVyLmRhdGEubW9kZWwuU2lnbmFsVHlwZS5CUkVBS09VVCAtPiBDb2xvcigweEZGRTUzOTM1KQogICAgICAgIGVsc2UgLT4gQ29sb3IoMHhGRjQzQTA0NykKICAgIH0KfQoKZnVuIGdldFJlY29tbWVuZGF0aW9uTGFiZWwocmVjOiBSZWNvbW1lbmRhdGlvbik6IFN0cmluZyB7CiAgICByZXR1cm4gd2hlbiAocmVjKSB7CiAgICAgICAgUmVjb21tZW5kYXRpb24uQlVZIC0+ICLovr7liLDliqDku5Pnur8iCiAgICAgICAgUmVjb21tZW5kYXRpb24uU0VMTCAtPiAi5bu66K6u5Y2W5Ye6IgogICAgICAgIFJlY29tbWVuZGF0aW9uLkhPTEQgLT4gIuW7uuiuruaMgeaciSIKICAgICAgICBSZWNvbW1lbmRhdGlvbi5XQVRDSCAtPiAi5bu66K6u6KeC5pybIgogICAgfQp9CgpmdW4gZ2V0UmVjb21tZW5kYXRpb25Db2xvcihyZWM6IFJlY29tbWVuZGF0aW9uKTogQ29sb3IgewogICAgcmV0dXJuIHdoZW4gKHJlYykgewogICAgICAgIFJlY29tbWVuZGF0aW9uLkJVWSAtPiBDb2xvcigweEZGRTUzOTM1KQogICAgICAgIFJlY29tbWVuZGF0aW9uLlNFTEwgLT4gQ29sb3IoMHhGRjQzQTA0NykKICAgICAgICBSZWNvbW1lbmRhdGlvbi5IT0xEIC0+IENvbG9yKDB4RkZGRkE3MjYpCiAgICAgICAgUmVjb21tZW5kYXRpb24uV0FUQ0ggLT4gQ29sb3IoMHhGRjc1NzU3NSkKICAgIH0KfQo=
+package com.stock.analyzer.ui.market
+
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Refresh
+import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.icons.filled.Star
+import androidx.compose.material.icons.filled.Close
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.stock.analyzer.data.model.Recommendation
+import com.stock.analyzer.data.model.StockRecommendation
+import com.stock.analyzer.data.repository.StockInfoRepository
+import com.stock.analyzer.data.model.StockInfo
+import kotlinx.coroutines.launch
+import java.text.SimpleDateFormat
+import java.util.*
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun MarketScreen(
+    onStockClick: (String) -> Unit,
+    viewModel: MarketViewModel = viewModel()
+) {
+    val recommendations by viewModel.recommendations.collectAsState()
+    val isLoading by viewModel.isLoading.collectAsState()
+    val progress by viewModel.progress.collectAsState()
+    val error by viewModel.error.collectAsState()
+    val lastUpdateTime by viewModel.lastUpdateTime.collectAsState()
+    val poolInfo by viewModel.poolInfo.collectAsState()
+    
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text("今日候选池") },
+                actions = {
+                    IconButton(onClick = { viewModel.refresh() }) {
+                        Icon(Icons.Default.Refresh, contentDescription = "刷新")
+                    }
+                }
+            )
+        }
+    ) { paddingValues ->
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(paddingValues)
+        ) {
+            Column(modifier = Modifier.fillMaxSize()) {
+                // 更新时间
+                lastUpdateTime?.let { time ->
+                    Surface(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 16.dp, vertical = 4.dp),
+                        color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.3f),
+                        shape = MaterialTheme.shapes.small
+                    ) {
+                        Column(modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp)) {
+                            Text(
+                                text = "更新时间: ${SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(Date(time))}",
+                                fontSize = 12.sp,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                            if (poolInfo.isNotEmpty()) {
+                                Text(
+                                    text = poolInfo,
+                                    fontSize = 12.sp,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                                )
+                            }
+                            Text(
+                                text = "顺序不代表好坏：这是分位池的分层取样，20 只等权（单只约 5%），" +
+                                    "不要因为排名靠前就加注",
+                                fontSize = 12.sp,
+                                color = MaterialTheme.colorScheme.error.copy(alpha = 0.8f)
+                            )
+                        }
+                    }
+                }
+                
+                when {
+                    isLoading && recommendations.isEmpty() -> {
+                        Column(
+                            modifier = Modifier
+                                .align(Alignment.CenterHorizontally)
+                                .padding(top = 100.dp),
+                            horizontalAlignment = Alignment.CenterHorizontally
+                        ) {
+                            CircularProgressIndicator()
+                            Spacer(modifier = Modifier.height(16.dp))
+                            Text(text = progress, fontSize = 14.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        }
+                    }
+                    error != null && recommendations.isEmpty() -> {
+                        Column(
+                            modifier = Modifier
+                                .align(Alignment.CenterHorizontally)
+                                .padding(top = 100.dp),
+                            horizontalAlignment = Alignment.CenterHorizontally
+                        ) {
+                            Text(text = error ?: "未知错误", color = MaterialTheme.colorScheme.error)
+                            Spacer(modifier = Modifier.height(16.dp))
+                            Button(onClick = { viewModel.refresh() }) { Text("重试") }
+                        }
+                    }
+                    recommendations.isEmpty() -> {
+                        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                            Text(
+                                text = "今日无股票同时满足趋势结构与波动要求（不勉强买入）",
+                                style = MaterialTheme.typography.bodyLarge
+                            )
+                        }
+                    }
+                    else -> {
+                        LazyColumn(
+                            modifier = Modifier.fillMaxSize(),
+                            contentPadding = PaddingValues(vertical = 8.dp)
+                        ) {
+                            items(recommendations) { rec ->
+                                RecommendationCard(
+                                    recommendation = rec,
+                                    onClick = { onStockClick(rec.stock.code) }
+                                )
+                            }
+                        }
+                    }
+                }
+                
+                // 底部进度条
+                if (isLoading && recommendations.isNotEmpty()) {
+                    Column(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(16.dp),
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                        LinearProgressIndicator(modifier = Modifier.fillMaxWidth())
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Text(text = progress, fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                }
+            }
+        }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun RecommendationCard(
+    recommendation: StockRecommendation,
+    onClick: () -> Unit
+) {
+    // 这是一个分层取样的候选池，不是排行榜 —— 编号只是序号，不给金银铜
+    val rankColor = MaterialTheme.colorScheme.primary
+    
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp, vertical = 4.dp)
+            .clickable(onClick = onClick),
+        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp)
+        ) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                // 排名和股票信息
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Surface(
+                        shape = MaterialTheme.shapes.small,
+                        color = rankColor,
+                        modifier = Modifier.size(36.dp)
+                    ) {
+                        Box(contentAlignment = Alignment.Center) {
+                            Text(
+                                text = "#${recommendation.rank}",
+                                color = Color.White,
+                                fontWeight = FontWeight.Bold,
+                                fontSize = 14.sp
+                            )
+                        }
+                    }
+                    Spacer(modifier = Modifier.width(12.dp))
+                    Column {
+                        Text(
+                            text = recommendation.stock.name,
+                            fontSize = 18.sp,
+                            fontWeight = FontWeight.Bold
+                        )
+                        Text(
+                            text = recommendation.stock.code,
+                            fontSize = 12.sp,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
+                
+                // 评分
+                Column(horizontalAlignment = Alignment.End) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Icon(
+                            Icons.Default.Star,
+                            contentDescription = null,
+                            tint = rankColor,
+                            modifier = Modifier.size(16.dp)
+                        )
+                        Text(
+                            text = " ${recommendation.analysis.score}",
+                            fontSize = 18.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = rankColor
+                        )
+                    }
+                    Text(
+                        text = getRecommendationLabel(recommendation.analysis.recommendation),
+                        fontSize = 12.sp,
+                        color = getRecommendationColor(recommendation.analysis.recommendation)
+                    )
+                }
+            }
+            
+            Spacer(modifier = Modifier.height(12.dp))
+            Divider()
+            Spacer(modifier = Modifier.height(12.dp))
+            
+            // 价格和涨跌
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Column {
+                    Text("当前价", fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text(
+                        text = String.format("%.2f", recommendation.stock.price),
+                        fontSize = 20.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = if (recommendation.stock.isRise) Color(0xFFE53935) else Color(0xFF43A047)
+                    )
+                }
+                Column(horizontalAlignment = Alignment.End) {
+                    Text("涨跌幅", fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text(
+                        text = String.format("%+.2f%%", recommendation.stock.changePercent),
+                        fontSize = 20.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = if (recommendation.stock.isRise) Color(0xFFE53935) else Color(0xFF43A047)
+                    )
+                }
+            }
+            
+            // 买入价格区间
+            recommendation.buyPriceRange?.let { range ->
+                Spacer(modifier = Modifier.height(12.dp))
+                Surface(
+                    modifier = Modifier.fillMaxWidth(),
+                    color = Color(0xFFE53935).copy(alpha = 0.1f),
+                    shape = MaterialTheme.shapes.small
+                ) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 12.dp, vertical = 8.dp),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text(
+                            text = "回踩加仓区间",
+                            fontSize = 13.sp,
+                            fontWeight = FontWeight.Medium,
+                            color = Color(0xFFE53935)
+                        )
+                        Text(
+                            text = "${String.format("%.2f", range.low)} - ${String.format("%.2f", range.high)}",
+                            fontSize = 14.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = Color(0xFFE53935)
+                        )
+                    }
+                }
+            }
+            
+            // 卖出价格区间
+            recommendation.sellPriceRange?.let { range ->
+                Spacer(modifier = Modifier.height(6.dp))
+                Surface(
+                    modifier = Modifier.fillMaxWidth(),
+                    color = Color(0xFF43A047).copy(alpha = 0.1f),
+                    shape = MaterialTheme.shapes.small
+                ) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 12.dp, vertical = 8.dp),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text(
+                            text = "减仓 / 止盈区间",
+                            fontSize = 13.sp,
+                            fontWeight = FontWeight.Medium,
+                            color = Color(0xFF43A047)
+                        )
+                        Text(
+                            text = "${String.format("%.2f", range.low)} - ${String.format("%.2f", range.high)}",
+                            fontSize = 14.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = Color(0xFF43A047)
+                        )
+                    }
+                }
+            }
+            
+            Spacer(modifier = Modifier.height(12.dp))
+            
+            // 关键指标
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                recommendation.analysis.rsi?.let {
+                    MiniIndicator("RSI", String.format("%.1f", it), getRSIColor(it))
+                }
+                recommendation.analysis.ma20?.let {
+                    MiniIndicator("MA20", String.format("%.2f", it), MaterialTheme.colorScheme.onSurface)
+                }
+                recommendation.analysis.ma60?.let {
+                    MiniIndicator("MA60", String.format("%.2f", it), MaterialTheme.colorScheme.onSurface)
+                }
+                // 日波幅（ATR/现价）：评分里唯一的"风险"项，越大扣分越多
+                recommendation.analysis.atrPercent?.let {
+                    val c = when {
+                        it > 0.035 -> Color(0xFF43A047)
+                        it < 0.020 -> Color(0xFFE53935)
+                        else -> MaterialTheme.colorScheme.onSurface
+                    }
+                    MiniIndicator("日波幅", String.format("%.2f%%", it * 100), c)
+                }
+            }
+            
+            // 信号摘要
+            if (recommendation.analysis.signals.isNotEmpty()) {
+                Spacer(modifier = Modifier.height(8.dp))
+                val topSignals = recommendation.analysis.signals.take(3)
+                topSignals.forEach { signal ->
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = 2.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Surface(
+                            shape = MaterialTheme.shapes.small,
+                            color = getSignalColor(signal.type),
+                            modifier = Modifier.size(6.dp)
+                        ) {}
+                        Spacer(modifier = Modifier.width(6.dp))
+                        Text(
+                            text = signal.message,
+                            fontSize = 12.sp,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun MiniIndicator(label: String, value: String, color: Color) {
+    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+        Text(text = label, fontSize = 10.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        Text(text = value, fontSize = 14.sp, fontWeight = FontWeight.Medium, color = color)
+    }
+}
+
+fun getRSIColor(rsi: Double): Color {
+    return when {
+        rsi > 70 -> Color(0xFF43A047)
+        rsi < 30 -> Color(0xFFE53935)
+        else -> Color(0xFF757575)
+    }
+}
+
+fun getSignalColor(type: com.stock.analyzer.data.model.SignalType): Color {
+    return when (type) {
+        com.stock.analyzer.data.model.SignalType.GOLDEN_CROSS,
+        com.stock.analyzer.data.model.SignalType.OVERSOLD,
+        com.stock.analyzer.data.model.SignalType.TREND_UP,
+        com.stock.analyzer.data.model.SignalType.BREAKOUT -> Color(0xFFE53935)
+        else -> Color(0xFF43A047)
+    }
+}
+
+fun getRecommendationLabel(rec: Recommendation): String {
+    return when (rec) {
+        Recommendation.BUY -> "达到加仓线"
+        Recommendation.SELL -> "建议卖出"
+        Recommendation.HOLD -> "建议持有"
+        Recommendation.WATCH -> "建议观望"
+    }
+}
+
+fun getRecommendationColor(rec: Recommendation): Color {
+    return when (rec) {
+        Recommendation.BUY -> Color(0xFFE53935)
+        Recommendation.SELL -> Color(0xFF43A047)
+        Recommendation.HOLD -> Color(0xFFFFA726)
+        Recommendation.WATCH -> Color(0xFF757575)
+    }
+}

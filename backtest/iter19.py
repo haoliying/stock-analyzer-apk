@@ -1,1 +1,73 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJpdGVyMTkg4oCUIOebruagh++8muWcqCLnnJ/lrp7otYTph5Hmm7Lnur8i5LiK6LeR6LWi5aSn55uY77yM5ZCM5pe25LiN5oqK5bC+6YOo5pCe5Z2P44CCCgrln7rlh4bkuKTkuKrvvIzpg73opoHnnIvvvJoKICDln7rlh4ZCID0g5YWo5biC5Zy6562J5p2D44CB5ZCM5qC35q+PIEgg5aSp5o2i5LuT77yI5YmU6Zmk6YCJ6IKh5LmL5aSW55qE5beu5byC77yM57qv55yLIGFscGhh77yJCiAg5aSn55uYQSA9IOWFqOW4guWcuuetieadg+OAgeavj+aXpeS5sOWFpeaMgeacie+8iOeUqOaIt+ivtOeahCLlpKfnm5gi77yM5Lmf5piv5pWj5oi355yf6IO95Lmw5Yiw55qE5Lic6KW/77yJCuaMh+agh++8mue0r+iuoeOAgeW5tOWMluOAgeacgOWkp+WbnuaSpOOAgeacgOW3ruWNleacn+OAgeaMgeS7k+eOh+OAgei2heWkp+ebmCBwcOOAgeacn+i2hemineOAgei3kei1ouacn+avlOS+i+OAggrlhajnqIsgLyDmoLfmnKzlhoUoPENVVE9GRikgLyDmoLfmnKzlpJYoPj1DVVRPRkYpIOS4ieauteWIhuWIq+eci++8jOmAieWPguaVsOWPqueci+agt+acrOWGhSvlhajnqIvvvIzmoLfmnKzlpJblj6rpqozor4HkuIDmrKHjgIIKIiIiCmltcG9ydCBzeXMKCmltcG9ydCBudW1weSBhcyBucAoKc3lzLnBhdGguaW5zZXJ0KDAsICIvZGF0YS9iYWNrdGVzdCIpCmltcG9ydCBwb3J0c2ltIGFzIFAgICMgbm9xYTogRTQwMgoKQkFTRSA9IGRpY3Qoc2NvcmU9Im5ldyIsIHRoPTY4LjAsIEs9MTAsIG1vZGU9InN0cmF0IiwgSD0yMCkKCgpkZWYgcnVuKGNmZywgbGFiZWwpOgogICAgb3V0ID0ge30KICAgIGZvciB0YWcsIGt3IGluICgoImZ1bGwiLCB7fSksICgiaXMiLCB7InVudGlsIjogUC5DVVRPRkZ9KSwgKCJvb3MiLCB7InNpbmNlIjogUC5DVVRPRkZ9KSk6CiAgICAgICAgb3V0W3RhZ10gPSBQLnN0YXRzKGNmZywgZiJ7bGFiZWx9IFt7dGFnfV0iLCAqKmt3KQogICAgcmV0dXJuIG91dAoKCmRlZiB0YWJsZShyZXMpOgogICAgcmV0dXJuICIgfCAiLmpvaW4oZiJ7a306IOe0r3t2WydjdW0nXSoxMDA6KzYuMWZ9IOi2heebmHt2Wyd2c19iaCddKjEwMDorNi4xZn1wcCDlm57mkqR7dlsnZGQnXSoxMDA6NS4xZn0gIgogICAgICAgICAgICAgICAgICAgICAgZiLotoXpop17dlsnZXhjJ10qMTAwOis1LjJmfSIgZm9yIGssIHYgaW4gcmVzLml0ZW1zKCkpCgoKZGVmIG1haW4oKToKICAgIGNmZ3MgPSBbCiAgICAgICAgKCLkuIrnur8gNjjCt+WIhuS9jeWPljEwIiwgZGljdChCQVNFKSksCiAgICAgICAgKCI2OMK35YWo6YOo5ZCI5qC8562J5p2DIiwgZGljdChCQVNFLCBLPU5vbmUpKSwKICAgICAgICAoIjY4wrflj5YyMOWIhuS9jSIsIGRpY3QoQkFTRSwgSz0yMCkpLAogICAgICAgICgiNjjCt+WPljE15YiG5L2NIiwgZGljdChCQVNFLCBLPTE1KSksCiAgICAgICAgKCI2OMK35Y+WMzDliIbkvY0iLCBkaWN0KEJBU0UsIEs9MzApKSwKICAgICAgICAoIjY4wrflj5YxMOmaj+acuiIsIGRpY3QoQkFTRSwgbW9kZT0icmFuZCIpKSwKICAgICAgICAoIjY0wrflhajpg6jlkIjmoLwiLCBkaWN0KEJBU0UsIHRoPTY0LjAsIEs9Tm9uZSkpLAogICAgICAgICgiNjDCt+WFqOmDqOWQiOagvCIsIGRpY3QoQkFTRSwgdGg9NjAuMCwgSz1Ob25lKSksCiAgICAgICAgKCI3MsK35YWo6YOo5ZCI5qC8IiwgZGljdChCQVNFLCB0aD03Mi4wLCBLPU5vbmUpKSwKICAgICAgICAoIjY4wrflhajpg6gr56m65LuT6KGlSE9MRCg1NSkiLCBkaWN0KEJBU0UsIEs9Tm9uZSwgZmlsbD01NS4wKSksCiAgICAgICAgKCI2OMK35YWo6YOowrfmjInms6LliqjlgJLmlbDliqDmnYMiLCBkaWN0KEJBU0UsIEs9Tm9uZSwgd2VpZ2h0PSJpdm9sYSIpKSwKICAgICAgICAoIjY4wrflj5YyMMK35oyJ5rOi5Yqo5YCS5pWw5Yqg5p2DIiwgZGljdChCQVNFLCBLPTIwLCB3ZWlnaHQ9Iml2b2xhIikpLAogICAgICAgICgiNjjCt+WFqOmDqMK35oyBMTDlpKkiLCBkaWN0KEJBU0UsIEs9Tm9uZSwgSD0xMCkpLAogICAgICAgICgiNjjCt+WFqOmDqMK35oyBMzDlpKkiLCBkaWN0KEJBU0UsIEs9Tm9uZSwgSD0zMCkpLAogICAgICAgICgiNjjCt+WFqOmDqMK35oyBNDDlpKkiLCBkaWN0KEJBU0UsIEs9Tm9uZSwgSD00MCkpLAogICAgICAgICgiNjjCt+WFqOmDqMK3TUE0MOaLqeaXtiIsIGRpY3QoQkFTRSwgSz1Ob25lLCByZWdpbWU9eyJ0eXBlIjogImFib3ZlIiwgIm1hIjogNDB9KSksCiAgICAgICAgKCI2OMK35YWo6YOowrdNQTIw5oup5pe2IiwgZGljdChCQVNFLCBLPU5vbmUsIHJlZ2ltZT17InR5cGUiOiAiYWJvdmUiLCAibWEiOiAyMH0pKSwKICAgICAgICAoIjY4wrflhajpg6jCt01BNjDmi6nml7YiLCBkaWN0KEJBU0UsIEs9Tm9uZSwgcmVnaW1lPXsidHlwZSI6ICJhYm92ZSIsICJtYSI6IDYwfSkpLAogICAgICAgICgiNjjCt+WFqOmDqMK35q2i5o2fMS41QVRSIiwgZGljdChCQVNFLCBLPU5vbmUsIHN0b3A9MS41KSksCiAgICAgICAgKCI2OMK35YWo6YOowrfmraLmjZ8zQVRSIiwgZGljdChCQVNFLCBLPU5vbmUsIHN0b3A9My4wKSksCiAgICAgICAgKCI2OMK35Y+WMjDCt+atouaNnzJBVFIiLCBkaWN0KEJBU0UsIEs9MjAsIHN0b3A9Mi4wKSksCiAgICAgICAgKCLml6flvJXmk442MMK35YWo6YOoIiwgZGljdChCQVNFLCBzY29yZT0ib2xkIiwgdGg9NjAuMCwgSz1Ob25lKSksCiAgICBdCiAgICByZXMgPSB7fQogICAgcHJpbnQoIlxuPT09PSDnu4TlkIjnuqfvvIjnm7jkvY3lubPlnYfvvIxIPemFjee9ruaMgeacieacn++8iT09PT0iKQogICAgZm9yIGxhYiwgY2ZnIGluIGNmZ3M6CiAgICAgICAgciA9IHt9CiAgICAgICAgZm9yIHRhZywga3cgaW4gKCgiZnVsbCIsIHt9KSwgKCJpcyIsIHsidW50aWwiOiBQLkNVVE9GRn0pLCAoIm9vcyIsIHsic2luY2UiOiBQLkNVVE9GRn0pKToKICAgICAgICAgICAgclt0YWddID0gUC5zdGF0cyhjZmcsIGYie2xhYn0gW3t0YWd9XSIsICoqa3cpCiAgICAgICAgcmVzW2xhYl0gPSByCiAgICBwcmludCgiXG49PT09IOaOkuW6j++8muWFqOeoi+i2heWkp+ebmCBwcCA9PT09IikKICAgIGZvciBsYWIsIHIgaW4gc29ydGVkKHJlcy5pdGVtcygpLCBrZXk9bGFtYmRhIGt2OiAta3ZbMV1bImZ1bGwiXVsidnNfYmgiXSk6CiAgICAgICAgcHJpbnQoZiIgIHtsYWI6PDI2fSDotoXlpKfnm5gg5YWo56iLe3JbJ2Z1bGwnXVsndnNfYmgnXSoxMDA6KzcuMWZ9cHAgIOagt+acrOWGhXtyWydpcyddWyd2c19iaCddKjEwMDorNy4xZn1wcCAgIgogICAgICAgICAgICAgIGYi5qC35pys5aSWe3JbJ29vcyddWyd2c19iaCddKjEwMDorNy4xZn1wcCB8IOe0r+iuoSDlhajnqIt7clsnZnVsbCddWydjdW0nXSoxMDA6KzcuMWZ9IOagt+acrOWklntyWydvb3MnXVsnY3VtJ10qMTAwOis3LjFmfSB8ICIKICAgICAgICAgICAgICBmIuWbnuaSpCDlhajnqIt7clsnZnVsbCddWydkZCddKjEwMDo1LjFmfSDmoLfmnKzlpJZ7clsnb29zJ11bJ2RkJ10qMTAwOjUuMWZ9IHwg6LeR6LWi5Z+65YeGQiDlhajnqIt7clsnZnVsbCddWydiZWF0J10qMTAwOjMuMGZ9JSAiCiAgICAgICAgICAgICAgZiLmoLfmnKzlpJZ7clsnb29zJ11bJ2JlYXQnXSoxMDA6My4wZn0lIikKCgppZiBfX25hbWVfXyA9PSAiX19tYWluX18iOgogICAgbWFpbigpCg==
+#!/usr/bin/env python3
+"""iter19 — 目标：在"真实资金曲线"上跑赢大盘，同时不把尾部搞坏。
+
+基准两个，都要看：
+  基准B = 全市场等权、同样每 H 天换仓（剔除选股之外的差异，纯看 alpha）
+  大盘A = 全市场等权、每日买入持有（用户说的"大盘"，也是散户真能买到的东西）
+指标：累计、年化、最大回撤、最差单期、持仓率、超大盘 pp、期超额、跑赢期比例。
+全程 / 样本内(<CUTOFF) / 样本外(>=CUTOFF) 三段分别看，选参数只看样本内+全程，样本外只验证一次。
+"""
+import sys
+
+import numpy as np
+
+sys.path.insert(0, "/data/backtest")
+import portsim as P  # noqa: E402
+
+BASE = dict(score="new", th=68.0, K=10, mode="strat", H=20)
+
+
+def run(cfg, label):
+    out = {}
+    for tag, kw in (("full", {}), ("is", {"until": P.CUTOFF}), ("oos", {"since": P.CUTOFF})):
+        out[tag] = P.stats(cfg, f"{label} [{tag}]", **kw)
+    return out
+
+
+def table(res):
+    return " | ".join(f"{k}: 累{v['cum']*100:+6.1f} 超盘{v['vs_bh']*100:+6.1f}pp 回撤{v['dd']*100:5.1f} "
+                      f"超额{v['exc']*100:+5.2f}" for k, v in res.items())
+
+
+def main():
+    cfgs = [
+        ("上线 68·分位取10", dict(BASE)),
+        ("68·全部合格等权", dict(BASE, K=None)),
+        ("68·取20分位", dict(BASE, K=20)),
+        ("68·取15分位", dict(BASE, K=15)),
+        ("68·取30分位", dict(BASE, K=30)),
+        ("68·取10随机", dict(BASE, mode="rand")),
+        ("64·全部合格", dict(BASE, th=64.0, K=None)),
+        ("60·全部合格", dict(BASE, th=60.0, K=None)),
+        ("72·全部合格", dict(BASE, th=72.0, K=None)),
+        ("68·全部+空仓补HOLD(55)", dict(BASE, K=None, fill=55.0)),
+        ("68·全部·按波动倒数加权", dict(BASE, K=None, weight="ivola")),
+        ("68·取20·按波动倒数加权", dict(BASE, K=20, weight="ivola")),
+        ("68·全部·持10天", dict(BASE, K=None, H=10)),
+        ("68·全部·持30天", dict(BASE, K=None, H=30)),
+        ("68·全部·持40天", dict(BASE, K=None, H=40)),
+        ("68·全部·MA40择时", dict(BASE, K=None, regime={"type": "above", "ma": 40})),
+        ("68·全部·MA20择时", dict(BASE, K=None, regime={"type": "above", "ma": 20})),
+        ("68·全部·MA60择时", dict(BASE, K=None, regime={"type": "above", "ma": 60})),
+        ("68·全部·止损1.5ATR", dict(BASE, K=None, stop=1.5)),
+        ("68·全部·止损3ATR", dict(BASE, K=None, stop=3.0)),
+        ("68·取20·止损2ATR", dict(BASE, K=20, stop=2.0)),
+        ("旧引擎60·全部", dict(BASE, score="old", th=60.0, K=None)),
+    ]
+    res = {}
+    print("\n==== 组合级（相位平均，H=配置持有期）====")
+    for lab, cfg in cfgs:
+        r = {}
+        for tag, kw in (("full", {}), ("is", {"until": P.CUTOFF}), ("oos", {"since": P.CUTOFF})):
+            r[tag] = P.stats(cfg, f"{lab} [{tag}]", **kw)
+        res[lab] = r
+    print("\n==== 排序：全程超大盘 pp ====")
+    for lab, r in sorted(res.items(), key=lambda kv: -kv[1]["full"]["vs_bh"]):
+        print(f"  {lab:<26} 超大盘 全程{r['full']['vs_bh']*100:+7.1f}pp  样本内{r['is']['vs_bh']*100:+7.1f}pp  "
+              f"样本外{r['oos']['vs_bh']*100:+7.1f}pp | 累计 全程{r['full']['cum']*100:+7.1f} 样本外{r['oos']['cum']*100:+7.1f} | "
+              f"回撤 全程{r['full']['dd']*100:5.1f} 样本外{r['oos']['dd']*100:5.1f} | 跑赢基准B 全程{r['full']['beat']*100:3.0f}% "
+              f"样本外{r['oos']['beat']*100:3.0f}%")
+
+
+if __name__ == "__main__":
+    main()

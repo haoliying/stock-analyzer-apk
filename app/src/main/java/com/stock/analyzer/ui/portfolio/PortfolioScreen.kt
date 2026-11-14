@@ -1,1 +1,386 @@
-cGFja2FnZSBjb20uc3RvY2suYW5hbHl6ZXIudWkucG9ydGZvbGlvCgppbXBvcnQgYW5kcm9pZC5hcHAuQXBwbGljYXRpb24KaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5jbGlja2FibGUKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi5sYXlvdXQuKgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5mb3VuZGF0aW9uLmxhenkuTGF6eUNvbHVtbgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5mb3VuZGF0aW9uLmxhenkuaXRlbXMKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UuZm91bmRhdGlvbi50ZXh0LktleWJvYXJkT3B0aW9ucwppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbC5pY29ucy5JY29ucwppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbC5pY29ucy5maWxsZWQuKgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5tYXRlcmlhbDMuKgppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5ydW50aW1lLioKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UudWkuQWxpZ25tZW50CmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLk1vZGlmaWVyCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLmdyYXBoaWNzLkNvbG9yCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLnBsYXRmb3JtLkxvY2FsQ29udGV4dAppbXBvcnQgYW5kcm9pZHguY29tcG9zZS51aS50ZXh0LmZvbnQuRm9udFdlaWdodAppbXBvcnQgYW5kcm9pZHguY29tcG9zZS51aS50ZXh0LmlucHV0LktleWJvYXJkVHlwZQppbXBvcnQgYW5kcm9pZHguY29tcG9zZS51aS51bml0LmRwCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLnVuaXQuc3AKaW1wb3J0IGFuZHJvaWR4LmxpZmVjeWNsZS52aWV3bW9kZWwuY29tcG9zZS52aWV3TW9kZWwKaW1wb3J0IGNvbS5zdG9jay5hbmFseXplci5kYXRhLm1vZGVsLioKaW1wb3J0IGNvbS5zdG9jay5hbmFseXplci5kYXRhLnJlcG9zaXRvcnkuU3RvY2tJbmZvUmVwb3NpdG9yeQoKQE9wdEluKEV4cGVyaW1lbnRhbE1hdGVyaWFsM0FwaTo6Y2xhc3MpCkBDb21wb3NhYmxlCmZ1biBQb3J0Zm9saW9TY3JlZW4oCiAgICBvblN0b2NrQ2xpY2s6IChTdHJpbmcpIC0+IFVuaXQsCiAgICB2aWV3TW9kZWw6IFBvcnRmb2xpb1ZpZXdNb2RlbCA9IHZpZXdNb2RlbCgpCikgewogICAgdmFsIHBvcnRmb2xpbyBieSB2aWV3TW9kZWwucG9ydGZvbGlvLmNvbGxlY3RBc1N0YXRlKCkKICAgIHZhbCBhZHZpY2VzIGJ5IHZpZXdNb2RlbC5hZHZpY2VzLmNvbGxlY3RBc1N0YXRlKCkKICAgIHZhbCBpc0xvYWRpbmcgYnkgdmlld01vZGVsLmlzTG9hZGluZy5jb2xsZWN0QXNTdGF0ZSgpCiAgICB2YWwgc2hvd0FkZERpYWxvZyBieSB2aWV3TW9kZWwuc2hvd0FkZERpYWxvZy5jb2xsZWN0QXNTdGF0ZSgpCiAgICAKICAgIFNjYWZmb2xkKAogICAgICAgIHRvcEJhciA9IHsKICAgICAgICAgICAgVG9wQXBwQmFyKAogICAgICAgICAgICAgICAgdGl0bGUgPSB7IFRleHQoIuaIkeeahOaMgeS7kyIpIH0sCiAgICAgICAgICAgICAgICBhY3Rpb25zID0gewogICAgICAgICAgICAgICAgICAgIEljb25CdXR0b24ob25DbGljayA9IHsgdmlld01vZGVsLnJlZnJlc2hQcmljZXMoKSB9KSB7CiAgICAgICAgICAgICAgICAgICAgICAgIEljb24oSWNvbnMuRGVmYXVsdC5SZWZyZXNoLCBjb250ZW50RGVzY3JpcHRpb24gPSAi5Yi35pawIikKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICkKICAgICAgICB9LAogICAgICAgIGZsb2F0aW5nQWN0aW9uQnV0dG9uID0gewogICAgICAgICAgICBGbG9hdGluZ0FjdGlvbkJ1dHRvbihvbkNsaWNrID0geyB2aWV3TW9kZWwuc2hvd0FkZERpYWxvZygpIH0pIHsKICAgICAgICAgICAgICAgIEljb24oSWNvbnMuRGVmYXVsdC5BZGQsIGNvbnRlbnREZXNjcmlwdGlvbiA9ICLmt7vliqDmjIHku5MiKQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgKSB7IHBhZGRpbmdWYWx1ZXMgLT4KICAgICAgICBDb2x1bW4obW9kaWZpZXIgPSBNb2RpZmllci5maWxsTWF4U2l6ZSgpLnBhZGRpbmcocGFkZGluZ1ZhbHVlcykpIHsKICAgICAgICAgICAgaWYgKHBvcnRmb2xpby5pc05vdEVtcHR5KCkpIHsKICAgICAgICAgICAgICAgIFBvcnRmb2xpb1N1bW1hcnkoCiAgICAgICAgICAgICAgICAgICAgdG90YWxWYWx1ZSA9IHZpZXdNb2RlbC5nZXRUb3RhbFZhbHVlKCksCiAgICAgICAgICAgICAgICAgICAgdG90YWxQcm9maXQgPSB2aWV3TW9kZWwuZ2V0VG90YWxQcm9maXQoKSwKICAgICAgICAgICAgICAgICAgICB0b3RhbFByb2ZpdFBlcmNlbnQgPSB2aWV3TW9kZWwuZ2V0VG90YWxQcm9maXRQZXJjZW50KCkKICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgaWYgKGlzTG9hZGluZyAmJiBwb3J0Zm9saW8uaXNFbXB0eSgpKSB7CiAgICAgICAgICAgICAgICBCb3gobW9kaWZpZXIgPSBNb2RpZmllci5maWxsTWF4U2l6ZSgpLCBjb250ZW50QWxpZ25tZW50ID0gQWxpZ25tZW50LkNlbnRlcikgewogICAgICAgICAgICAgICAgICAgIENpcmN1bGFyUHJvZ3Jlc3NJbmRpY2F0b3IoKQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9IGVsc2UgaWYgKHBvcnRmb2xpby5pc0VtcHR5KCkpIHsKICAgICAgICAgICAgICAgIEJveChtb2RpZmllciA9IE1vZGlmaWVyLmZpbGxNYXhTaXplKCksIGNvbnRlbnRBbGlnbm1lbnQgPSBBbGlnbm1lbnQuQ2VudGVyKSB7CiAgICAgICAgICAgICAgICAgICAgQ29sdW1uKGhvcml6b250YWxBbGlnbm1lbnQgPSBBbGlnbm1lbnQuQ2VudGVySG9yaXpvbnRhbGx5KSB7CiAgICAgICAgICAgICAgICAgICAgICAgIEljb24oSWNvbnMuRGVmYXVsdC5BY2NvdW50QmFsYW5jZVdhbGxldCwgbnVsbCwgbW9kaWZpZXIgPSBNb2RpZmllci5zaXplKDY0LmRwKSwgdGludCA9IE1hdGVyaWFsVGhlbWUuY29sb3JTY2hlbWUub25TdXJmYWNlVmFyaWFudCkKICAgICAgICAgICAgICAgICAgICAgICAgU3BhY2VyKG1vZGlmaWVyID0gTW9kaWZpZXIuaGVpZ2h0KDE2LmRwKSkKICAgICAgICAgICAgICAgICAgICAgICAgVGV4dCgi5pqC5peg5oyB5LuTIiwgc3R5bGUgPSBNYXRlcmlhbFRoZW1lLnR5cG9ncmFwaHkuYm9keUxhcmdlKQogICAgICAgICAgICAgICAgICAgICAgICBTcGFjZXIobW9kaWZpZXIgPSBNb2RpZmllci5oZWlnaHQoOC5kcCkpCiAgICAgICAgICAgICAgICAgICAgICAgIFRleHQoIueCueWHu+WPs+S4i+inkiArIOa3u+WKoOiCoeelqCIsIGZvbnRTaXplID0gMTQuc3AsIGNvbG9yID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5vblN1cmZhY2VWYXJpYW50KQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgICAgIExhenlDb2x1bW4obW9kaWZpZXIgPSBNb2RpZmllci5maWxsTWF4U2l6ZSgpLCBjb250ZW50UGFkZGluZyA9IFBhZGRpbmdWYWx1ZXMoYm90dG9tID0gODAuZHApKSB7CiAgICAgICAgICAgICAgICAgICAgaXRlbXMocG9ydGZvbGlvKSB7IHN0b2NrIC0+CiAgICAgICAgICAgICAgICAgICAgICAgIHZhbCBhZHZpY2UgPSBhZHZpY2VzLmZpbmQgeyBpdC5jb2RlID09IHN0b2NrLmNvZGUgfQogICAgICAgICAgICAgICAgICAgICAgICBQb3J0Zm9saW9TdG9ja0NhcmQoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdG9jayA9IHN0b2NrLCBhZHZpY2UgPSBhZHZpY2UsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrID0geyBvblN0b2NrQ2xpY2soc3RvY2suY29kZSkgfSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIG9uRWRpdCA9IHsgdmlld01vZGVsLnVwZGF0ZVN0b2NrKGl0KSB9LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgb25EZWxldGUgPSB7IHZpZXdNb2RlbC5yZW1vdmVTdG9jayhzdG9jay5jb2RlKSB9CiAgICAgICAgICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAgICAgCiAgICAgICAgaWYgKHNob3dBZGREaWFsb2cpIHsKICAgICAgICAgICAgQWRkU3RvY2tEaWFsb2coCiAgICAgICAgICAgICAgICBvbkRpc21pc3MgPSB7IHZpZXdNb2RlbC5oaWRlQWRkRGlhbG9nKCkgfSwKICAgICAgICAgICAgICAgIG9uQ29uZmlybSA9IHsgY29kZSwgbmFtZSwgcHJpY2UsIHF1YW50aXR5IC0+IHZpZXdNb2RlbC5hZGRTdG9jayhjb2RlLCBuYW1lLCBwcmljZSwgcXVhbnRpdHkpIH0KICAgICAgICAgICAgKQogICAgICAgIH0KICAgIH0KfQoKQENvbXBvc2FibGUKZnVuIFBvcnRmb2xpb1N1bW1hcnkodG90YWxWYWx1ZTogRG91YmxlLCB0b3RhbFByb2ZpdDogRG91YmxlLCB0b3RhbFByb2ZpdFBlcmNlbnQ6IERvdWJsZSkgewogICAgdmFsIHByb2ZpdENvbG9yID0gd2hlbiB7IHRvdGFsUHJvZml0ID4gMCAtPiBDb2xvcigweEZGRTUzOTM1KTsgdG90YWxQcm9maXQgPCAwIC0+IENvbG9yKDB4RkY0M0EwNDcpOyBlbHNlIC0+IE1hdGVyaWFsVGhlbWUuY29sb3JTY2hlbWUub25TdXJmYWNlIH0KICAgIENhcmQoCiAgICAgICAgbW9kaWZpZXIgPSBNb2RpZmllci5maWxsTWF4V2lkdGgoKS5wYWRkaW5nKDE2LmRwKSwKICAgICAgICBjb2xvcnMgPSBDYXJkRGVmYXVsdHMuY2FyZENvbG9ycyhjb250YWluZXJDb2xvciA9IE1hdGVyaWFsVGhlbWUuY29sb3JTY2hlbWUucHJpbWFyeUNvbnRhaW5lci5jb3B5KGFscGhhID0gMC4zZikpCiAgICApIHsKICAgICAgICBDb2x1bW4obW9kaWZpZXIgPSBNb2RpZmllci5maWxsTWF4V2lkdGgoKS5wYWRkaW5nKDE2LmRwKSkgewogICAgICAgICAgICBUZXh0KCLmgLvotYTkuqfmpoLop4giLCBmb250U2l6ZSA9IDE0LnNwLCBjb2xvciA9IE1hdGVyaWFsVGhlbWUuY29sb3JTY2hlbWUub25TdXJmYWNlVmFyaWFudCkKICAgICAgICAgICAgU3BhY2VyKG1vZGlmaWVyID0gTW9kaWZpZXIuaGVpZ2h0KDguZHApKQogICAgICAgICAgICBSb3cobW9kaWZpZXIgPSBNb2RpZmllci5maWxsTWF4V2lkdGgoKSwgaG9yaXpvbnRhbEFycmFuZ2VtZW50ID0gQXJyYW5nZW1lbnQuU3BhY2VCZXR3ZWVuKSB7CiAgICAgICAgICAgICAgICBDb2x1bW4gewogICAgICAgICAgICAgICAgICAgIFRleHQoIuaAu+W4guWAvCIsIGZvbnRTaXplID0gMTIuc3AsIGNvbG9yID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5vblN1cmZhY2VWYXJpYW50KQogICAgICAgICAgICAgICAgICAgIFRleHQoU3RyaW5nLmZvcm1hdCgiwqUlLjJmIiwgdG90YWxWYWx1ZSksIGZvbnRTaXplID0gMjAuc3AsIGZvbnRXZWlnaHQgPSBGb250V2VpZ2h0LkJvbGQpCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBDb2x1bW4oaG9yaXpvbnRhbEFsaWdubWVudCA9IEFsaWdubWVudC5FbmQpIHsKICAgICAgICAgICAgICAgICAgICBUZXh0KCLmgLvnm4jkuo8iLCBmb250U2l6ZSA9IDEyLnNwLCBjb2xvciA9IE1hdGVyaWFsVGhlbWUuY29sb3JTY2hlbWUub25TdXJmYWNlVmFyaWFudCkKICAgICAgICAgICAgICAgICAgICBUZXh0KFN0cmluZy5mb3JtYXQoIiUrLjJmICglKy4yZiUlKSIsIHRvdGFsUHJvZml0LCB0b3RhbFByb2ZpdFBlcmNlbnQpLCBmb250U2l6ZSA9IDIwLnNwLCBmb250V2VpZ2h0ID0gRm9udFdlaWdodC5Cb2xkLCBjb2xvciA9IHByb2ZpdENvbG9yKQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQp9CgpAT3B0SW4oRXhwZXJpbWVudGFsTWF0ZXJpYWwzQXBpOjpjbGFzcykKQENvbXBvc2FibGUKZnVuIFBvcnRmb2xpb1N0b2NrQ2FyZCgKICAgIHN0b2NrOiBQb3J0Zm9saW9TdG9jaywgYWR2aWNlOiBQb3NpdGlvbkFkdmljZT8sCiAgICBvbkNsaWNrOiAoKSAtPiBVbml0LCBvbkVkaXQ6IChQb3J0Zm9saW9TdG9jaykgLT4gVW5pdCwgb25EZWxldGU6ICgpIC0+IFVuaXQKKSB7CiAgICB2YXIgc2hvd01lbnUgYnkgcmVtZW1iZXIgeyBtdXRhYmxlU3RhdGVPZihmYWxzZSkgfQogICAgdmFyIHNob3dFZGl0RGlhbG9nIGJ5IHJlbWVtYmVyIHsgbXV0YWJsZVN0YXRlT2YoZmFsc2UpIH0KICAgIHZhbCBwcm9maXRDb2xvciA9IHdoZW4geyBzdG9jay5wcm9maXQgPiAwIC0+IENvbG9yKDB4RkZFNTM5MzUpOyBzdG9jay5wcm9maXQgPCAwIC0+IENvbG9yKDB4RkY0M0EwNDcpOyBlbHNlIC0+IE1hdGVyaWFsVGhlbWUuY29sb3JTY2hlbWUub25TdXJmYWNlIH0KICAgIAogICAgQ2FyZCgKICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyLmZpbGxNYXhXaWR0aCgpLnBhZGRpbmcoaG9yaXpvbnRhbCA9IDE2LmRwLCB2ZXJ0aWNhbCA9IDQuZHApLAogICAgICAgIGVsZXZhdGlvbiA9IENhcmREZWZhdWx0cy5jYXJkRWxldmF0aW9uKGRlZmF1bHRFbGV2YXRpb24gPSAyLmRwKSwKICAgICAgICBvbkNsaWNrID0gb25DbGljawogICAgKSB7CiAgICAgICAgQ29sdW1uKG1vZGlmaWVyID0gTW9kaWZpZXIuZmlsbE1heFdpZHRoKCkucGFkZGluZygxNi5kcCkpIHsKICAgICAgICAgICAgUm93KG1vZGlmaWVyID0gTW9kaWZpZXIuZmlsbE1heFdpZHRoKCksIGhvcml6b250YWxBcnJhbmdlbWVudCA9IEFycmFuZ2VtZW50LlNwYWNlQmV0d2VlbiwgdmVydGljYWxBbGlnbm1lbnQgPSBBbGlnbm1lbnQuQ2VudGVyVmVydGljYWxseSkgewogICAgICAgICAgICAgICAgQ29sdW1uKG1vZGlmaWVyID0gTW9kaWZpZXIud2VpZ2h0KDFmKSkgewogICAgICAgICAgICAgICAgICAgIFRleHQodGV4dCA9IHN0b2NrLm5hbWUsIGZvbnRTaXplID0gMTguc3AsIGZvbnRXZWlnaHQgPSBGb250V2VpZ2h0LkJvbGQpCiAgICAgICAgICAgICAgICAgICAgVGV4dCh0ZXh0ID0gUG9ydGZvbGlvVmlld01vZGVsLmRpc3BsYXlDb2RlKHN0b2NrLmNvZGUpLCBmb250U2l6ZSA9IDEyLnNwLCBjb2xvciA9IE1hdGVyaWFsVGhlbWUuY29sb3JTY2hlbWUub25TdXJmYWNlVmFyaWFudCkKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIEJveCB7CiAgICAgICAgICAgICAgICAgICAgSWNvbkJ1dHRvbihvbkNsaWNrID0geyBzaG93TWVudSA9IHRydWUgfSkgeyBJY29uKEljb25zLkRlZmF1bHQuTW9yZVZlcnQsIG51bGwpIH0KICAgICAgICAgICAgICAgICAgICBEcm9wZG93bk1lbnUoZXhwYW5kZWQgPSBzaG93TWVudSwgb25EaXNtaXNzUmVxdWVzdCA9IHsgc2hvd01lbnUgPSBmYWxzZSB9KSB7CiAgICAgICAgICAgICAgICAgICAgICAgIERyb3Bkb3duTWVudUl0ZW0odGV4dCA9IHsgVGV4dCgi57yW6L6R5oyB5LuTIikgfSwgb25DbGljayA9IHsgc2hvd01lbnUgPSBmYWxzZTsgc2hvd0VkaXREaWFsb2cgPSB0cnVlIH0sIGxlYWRpbmdJY29uID0geyBJY29uKEljb25zLkRlZmF1bHQuRWRpdCwgbnVsbCkgfSkKICAgICAgICAgICAgICAgICAgICAgICAgRHJvcGRvd25NZW51SXRlbSh0ZXh0ID0geyBUZXh0KCLliKDpmaQiKSB9LCBvbkNsaWNrID0geyBzaG93TWVudSA9IGZhbHNlOyBvbkRlbGV0ZSgpIH0sIGxlYWRpbmdJY29uID0geyBJY29uKEljb25zLkRlZmF1bHQuRGVsZXRlLCBudWxsLCB0aW50ID0gQ29sb3IuUmVkKSB9KQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICBTcGFjZXIobW9kaWZpZXIgPSBNb2RpZmllci5oZWlnaHQoOC5kcCkpOyBEaXZpZGVyKCk7IFNwYWNlcihtb2RpZmllciA9IE1vZGlmaWVyLmhlaWdodCg4LmRwKSkKICAgICAgICAgICAgUm93KG1vZGlmaWVyID0gTW9kaWZpZXIuZmlsbE1heFdpZHRoKCksIGhvcml6b250YWxBcnJhbmdlbWVudCA9IEFycmFuZ2VtZW50LlNwYWNlQmV0d2VlbikgewogICAgICAgICAgICAgICAgQ29sdW1uIHsgVGV4dCgi5Lmw5YWl5Lu3IiwgZm9udFNpemUgPSAxMi5zcCwgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQpOyBUZXh0KFN0cmluZy5mb3JtYXQoIsKlJS4yZiIsIHN0b2NrLmJ1eVByaWNlKSwgZm9udFNpemUgPSAxNi5zcCwgZm9udFdlaWdodCA9IEZvbnRXZWlnaHQuTWVkaXVtKSB9CiAgICAgICAgICAgICAgICBDb2x1bW4oaG9yaXpvbnRhbEFsaWdubWVudCA9IEFsaWdubWVudC5DZW50ZXJIb3Jpem9udGFsbHkpIHsgVGV4dCgi546w5Lu3IiwgZm9udFNpemUgPSAxMi5zcCwgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQpOyBUZXh0KFN0cmluZy5mb3JtYXQoIsKlJS4yZiIsIHN0b2NrLmN1cnJlbnRQcmljZSksIGZvbnRTaXplID0gMTYuc3AsIGZvbnRXZWlnaHQgPSBGb250V2VpZ2h0Lk1lZGl1bSwgY29sb3IgPSBwcm9maXRDb2xvcikgfQogICAgICAgICAgICAgICAgQ29sdW1uKGhvcml6b250YWxBbGlnbm1lbnQgPSBBbGlnbm1lbnQuRW5kKSB7IFRleHQoIuebiOS6jyIsIGZvbnRTaXplID0gMTIuc3AsIGNvbG9yID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5vblN1cmZhY2VWYXJpYW50KTsgVGV4dChTdHJpbmcuZm9ybWF0KCIlKy4yZiAoJSsuMmYlJSkiLCBzdG9jay5wcm9maXQsIHN0b2NrLnByb2ZpdFBlcmNlbnQpLCBmb250U2l6ZSA9IDE2LnNwLCBmb250V2VpZ2h0ID0gRm9udFdlaWdodC5Cb2xkLCBjb2xvciA9IHByb2ZpdENvbG9yKSB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgVGV4dCgi5oyB5pyJICR7c3RvY2sucXVhbnRpdHl9IOiCoSIsIGZvbnRTaXplID0gMTIuc3AsIGNvbG9yID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5vblN1cmZhY2VWYXJpYW50KQogICAgICAgICAgICBpZiAoYWR2aWNlICE9IG51bGwpIHsKICAgICAgICAgICAgICAgIFNwYWNlcihtb2RpZmllciA9IE1vZGlmaWVyLmhlaWdodCg4LmRwKSk7IERpdmlkZXIoKTsgU3BhY2VyKG1vZGlmaWVyID0gTW9kaWZpZXIuaGVpZ2h0KDguZHApKQogICAgICAgICAgICAgICAgQWR2aWNlU2VjdGlvbihhZHZpY2UgPSBhZHZpY2UpCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CiAgICBpZiAoc2hvd0VkaXREaWFsb2cpIHsKICAgICAgICBFZGl0U3RvY2tEaWFsb2coc3RvY2sgPSBzdG9jaywgb25EaXNtaXNzID0geyBzaG93RWRpdERpYWxvZyA9IGZhbHNlIH0sIG9uQ29uZmlybSA9IHsgb25FZGl0KGl0KTsgc2hvd0VkaXREaWFsb2cgPSBmYWxzZSB9KQogICAgfQp9CgpAQ29tcG9zYWJsZQpmdW4gQWR2aWNlU2VjdGlvbihhZHZpY2U6IFBvc2l0aW9uQWR2aWNlKSB7CiAgICB2YWwgYWR2aWNlQ29sb3IgPSB3aGVuIChhZHZpY2UuYWR2aWNlKSB7CiAgICAgICAgQWR2aWNlVHlwZS5TVFJPTkdfQlVZIC0+IENvbG9yKDB4RkZEMzJGMkYpOyBBZHZpY2VUeXBlLkJVWSAtPiBDb2xvcigweEZGRTUzOTM1KQogICAgICAgIEFkdmljZVR5cGUuSE9MRCAtPiBDb2xvcigweEZGRkZBNzI2KTsgQWR2aWNlVHlwZS5TRUxMIC0+IENvbG9yKDB4RkY0M0EwNDcpOyBBZHZpY2VUeXBlLlNUUk9OR19TRUxMIC0+IENvbG9yKDB4RkYyRTdEMzIpCiAgICB9CiAgICB2YWwgYWR2aWNlVGV4dCA9IHdoZW4gKGFkdmljZS5hZHZpY2UpIHsKICAgICAgICBBZHZpY2VUeXBlLlNUUk9OR19CVVkgLT4gIuW8uueDiOWKoOS7kyI7IEFkdmljZVR5cGUuQlVZIC0+ICLlu7rorq7liqDku5MiCiAgICAgICAgQWR2aWNlVHlwZS5IT0xEIC0+ICLmjIHmnInop4LmnJsiOyBBZHZpY2VUeXBlLlNFTEwgLT4gIuW7uuiuruWHj+S7kyI7IEFkdmljZVR5cGUuU1RST05HX1NFTEwgLT4gIuW8uueDiOWHj+S7kyIKICAgIH0KICAgIFN1cmZhY2Uoc2hhcGUgPSBNYXRlcmlhbFRoZW1lLnNoYXBlcy5zbWFsbCwgY29sb3IgPSBhZHZpY2VDb2xvci5jb3B5KGFscGhhID0gMC4xZikpIHsKICAgICAgICBDb2x1bW4obW9kaWZpZXIgPSBNb2RpZmllci5wYWRkaW5nKDEyLmRwKSkgewogICAgICAgICAgICBSb3cobW9kaWZpZXIgPSBNb2RpZmllci5maWxsTWF4V2lkdGgoKSwgaG9yaXpvbnRhbEFycmFuZ2VtZW50ID0gQXJyYW5nZW1lbnQuU3BhY2VCZXR3ZWVuLCB2ZXJ0aWNhbEFsaWdubWVudCA9IEFsaWdubWVudC5DZW50ZXJWZXJ0aWNhbGx5KSB7CiAgICAgICAgICAgICAgICBUZXh0KHRleHQgPSBhZHZpY2VUZXh0LCBmb250U2l6ZSA9IDE2LnNwLCBmb250V2VpZ2h0ID0gRm9udFdlaWdodC5Cb2xkLCBjb2xvciA9IGFkdmljZUNvbG9yKQogICAgICAgICAgICAgICAgVGV4dCh0ZXh0ID0gYWR2aWNlLnJlYXNvbiwgZm9udFNpemUgPSAxMi5zcCwgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQsIG1vZGlmaWVyID0gTW9kaWZpZXIud2VpZ2h0KDFmKS5wYWRkaW5nKHN0YXJ0ID0gOC5kcCkpCiAgICAgICAgICAgIH0KICAgICAgICAgICAgU3BhY2VyKG1vZGlmaWVyID0gTW9kaWZpZXIuaGVpZ2h0KDguZHApKQogICAgICAgICAgICBSb3cobW9kaWZpZXIgPSBNb2RpZmllci5maWxsTWF4V2lkdGgoKSwgaG9yaXpvbnRhbEFycmFuZ2VtZW50ID0gQXJyYW5nZW1lbnQuU3BhY2VFdmVubHkpIHsKICAgICAgICAgICAgICAgIENvbHVtbihob3Jpem9udGFsQWxpZ25tZW50ID0gQWxpZ25tZW50LkNlbnRlckhvcml6b250YWxseSkgewogICAgICAgICAgICAgICAgICAgIFRleHQoIuWKoOS7k+WMuumXtCIsIGZvbnRTaXplID0gMTEuc3AsIGNvbG9yID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5vblN1cmZhY2VWYXJpYW50KQogICAgICAgICAgICAgICAgICAgIFRleHQoIiR7U3RyaW5nLmZvcm1hdCgiJS4yZiIsIGFkdmljZS5hZGRQcmljZVJhbmdlLmxvdyl9IC0gJHtTdHJpbmcuZm9ybWF0KCIlLjJmIiwgYWR2aWNlLmFkZFByaWNlUmFuZ2UuaGlnaCl9IiwgZm9udFNpemUgPSAxNC5zcCwgZm9udFdlaWdodCA9IEZvbnRXZWlnaHQuTWVkaXVtLCBjb2xvciA9IENvbG9yKDB4RkZFNTM5MzUpKQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgQ29sdW1uKGhvcml6b250YWxBbGlnbm1lbnQgPSBBbGlnbm1lbnQuQ2VudGVySG9yaXpvbnRhbGx5KSB7CiAgICAgICAgICAgICAgICAgICAgVGV4dCgi5YeP5LuT5Yy66Ze0IiwgZm9udFNpemUgPSAxMS5zcCwgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQpCiAgICAgICAgICAgICAgICAgICAgVGV4dCgiJHtTdHJpbmcuZm9ybWF0KCIlLjJmIiwgYWR2aWNlLnJlZHVjZVByaWNlUmFuZ2UubG93KX0gLSAke1N0cmluZy5mb3JtYXQoIiUuMmYiLCBhZHZpY2UucmVkdWNlUHJpY2VSYW5nZS5oaWdoKX0iLCBmb250U2l6ZSA9IDE0LnNwLCBmb250V2VpZ2h0ID0gRm9udFdlaWdodC5NZWRpdW0sIGNvbG9yID0gQ29sb3IoMHhGRjQzQTA0NykpCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgLy8g5q2i5o2f5Lu3ICsg6aOO6Zmp5o+Q56S677yIdjQuMS4wIOaWsOWinu+8mui/meWll+aooeWei+eahOS7t+WAvOS4u+imgeWcqOWwvumDqOmjjumZqeaOp+WItu+8iQogICAgICAgICAgICBhZHZpY2Uuc3RvcExvc3M/LmxldCB7CiAgICAgICAgICAgICAgICBTcGFjZXIobW9kaWZpZXIgPSBNb2RpZmllci5oZWlnaHQoNi5kcCkpCiAgICAgICAgICAgICAgICBSb3cobW9kaWZpZXIgPSBNb2RpZmllci5maWxsTWF4V2lkdGgoKSwgaG9yaXpvbnRhbEFycmFuZ2VtZW50ID0gQXJyYW5nZW1lbnQuU3BhY2VCZXR3ZWVuLCB2ZXJ0aWNhbEFsaWdubWVudCA9IEFsaWdubWVudC5DZW50ZXJWZXJ0aWNhbGx5KSB7CiAgICAgICAgICAgICAgICAgICAgVGV4dCgi5q2i5o2f5Lu377yIMsOXQVRS77yJIiwgZm9udFNpemUgPSAxMS5zcCwgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQpCiAgICAgICAgICAgICAgICAgICAgVGV4dChTdHJpbmcuZm9ybWF0KCLCpSUuMmYiLCBpdCksIGZvbnRTaXplID0gMTQuc3AsIGZvbnRXZWlnaHQgPSBGb250V2VpZ2h0LkJvbGQsIGNvbG9yID0gQ29sb3IoMHhGRjdCMUZBMikpCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgYWR2aWNlLnJpc2tOb3RlPy5sZXQgewogICAgICAgICAgICAgICAgU3BhY2VyKG1vZGlmaWVyID0gTW9kaWZpZXIuaGVpZ2h0KDYuZHApKQogICAgICAgICAgICAgICAgVGV4dChpdCwgZm9udFNpemUgPSAxMS5zcCwgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQsIGxpbmVIZWlnaHQgPSAxNi5zcCkKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KfQoKLyoqCiAqIOa3u+WKoOaMgeS7k+WvueivneahhiAtIOaUr+aMgeaLvOmfs+aQnOe0ouWSjOiHquWKqOWhq+WFhQogKi8KQENvbXBvc2FibGUKZnVuIEFkZFN0b2NrRGlhbG9nKAogICAgb25EaXNtaXNzOiAoKSAtPiBVbml0LAogICAgb25Db25maXJtOiAoY29kZTogU3RyaW5nLCBuYW1lOiBTdHJpbmcsIGJ1eVByaWNlOiBEb3VibGUsIHF1YW50aXR5OiBJbnQpIC0+IFVuaXQKKSB7CiAgICB2YWwgY29udGV4dCA9IExvY2FsQ29udGV4dC5jdXJyZW50CiAgICB2YWwgc3RvY2tJbmZvUmVwbyA9IHJlbWVtYmVyIHsgU3RvY2tJbmZvUmVwb3NpdG9yeShjb250ZXh0KSB9CiAgICAKICAgIHZhciBzZWFyY2hUZXh0IGJ5IHJlbWVtYmVyIHsgbXV0YWJsZVN0YXRlT2YoIiIpIH0KICAgIHZhciBzZWxlY3RlZFN0b2NrIGJ5IHJlbWVtYmVyIHsgbXV0YWJsZVN0YXRlT2Y8U3RvY2tJbmZvPz4obnVsbCkgfQogICAgdmFyIHNlYXJjaFJlc3VsdHMgYnkgcmVtZW1iZXIgeyBtdXRhYmxlU3RhdGVPZjxMaXN0PFN0b2NrSW5mbz4+KGVtcHR5TGlzdCgpKSB9CiAgICB2YXIgYnV5UHJpY2UgYnkgcmVtZW1iZXIgeyBtdXRhYmxlU3RhdGVPZigiIikgfQogICAgdmFyIHF1YW50aXR5IGJ5IHJlbWVtYmVyIHsgbXV0YWJsZVN0YXRlT2YoIiIpIH0KICAgIHZhciBlcnJvciBieSByZW1lbWJlciB7IG11dGFibGVTdGF0ZU9mPFN0cmluZz8+KG51bGwpIH0KICAgIAogICAgLy8g5pCc57Si6YC76L6RCiAgICBMYXVuY2hlZEVmZmVjdChzZWFyY2hUZXh0KSB7CiAgICAgICAgaWYgKHNlYXJjaFRleHQubGVuZ3RoID49IDEpIHsKICAgICAgICAgICAgc2VhcmNoUmVzdWx0cyA9IHN0b2NrSW5mb1JlcG8uc2VhcmNoQnlQaW55aW4oc2VhcmNoVGV4dCkKICAgICAgICAgICAgLy8g5aaC5p6c6L6T5YWl55qE5piv5a6M5pW05Luj56CB77yI5Y+v6IO95LiN5bim5YmN57yA77yJ77yM6Ieq5Yqo6YCJ5LitCiAgICAgICAgICAgIHZhbCBub3JtYWxpemVkQ29kZSA9IFBvcnRmb2xpb1ZpZXdNb2RlbC5ub3JtYWxpemVTdG9ja0NvZGUoc2VhcmNoVGV4dC50cmltKCkpCiAgICAgICAgICAgIHZhbCBleGFjdE1hdGNoID0gc3RvY2tJbmZvUmVwby5nZXRTdG9ja0J5Q29kZShub3JtYWxpemVkQ29kZSkKICAgICAgICAgICAgaWYgKGV4YWN0TWF0Y2ggIT0gbnVsbCkgewogICAgICAgICAgICAgICAgc2VsZWN0ZWRTdG9jayA9IGV4YWN0TWF0Y2gKICAgICAgICAgICAgICAgIHNlYXJjaFJlc3VsdHMgPSBlbXB0eUxpc3QoKQogICAgICAgICAgICB9CiAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgc2VhcmNoUmVzdWx0cyA9IGVtcHR5TGlzdCgpCiAgICAgICAgICAgIHNlbGVjdGVkU3RvY2sgPSBudWxsCiAgICAgICAgfQogICAgfQogICAgCiAgICBBbGVydERpYWxvZygKICAgICAgICBvbkRpc21pc3NSZXF1ZXN0ID0gb25EaXNtaXNzLAogICAgICAgIHRpdGxlID0geyBUZXh0KCLmt7vliqDmjIHku5MiKSB9LAogICAgICAgIHRleHQgPSB7CiAgICAgICAgICAgIENvbHVtbiB7CiAgICAgICAgICAgICAgICAvLyDmkJzntKLmoYYKICAgICAgICAgICAgICAgIE91dGxpbmVkVGV4dEZpZWxkKAogICAgICAgICAgICAgICAgICAgIHZhbHVlID0gc2VhcmNoVGV4dCwKICAgICAgICAgICAgICAgICAgICBvblZhbHVlQ2hhbmdlID0geyBzZWFyY2hUZXh0ID0gaXQ7IHNlbGVjdGVkU3RvY2sgPSBudWxsOyBlcnJvciA9IG51bGwgfSwKICAgICAgICAgICAgICAgICAgICBsYWJlbCA9IHsgVGV4dCgi6L6T5YWl5Luj56CBL+WQjeensC/mi7zpn7PpppblrZfmr40iKSB9LAogICAgICAgICAgICAgICAgICAgIGxlYWRpbmdJY29uID0geyBJY29uKEljb25zLkRlZmF1bHQuU2VhcmNoLCBudWxsKSB9LAogICAgICAgICAgICAgICAgICAgIHRyYWlsaW5nSWNvbiA9IHsKICAgICAgICAgICAgICAgICAgICAgICAgaWYgKHNlYXJjaFRleHQuaXNOb3RFbXB0eSgpKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBJY29uQnV0dG9uKG9uQ2xpY2sgPSB7IHNlYXJjaFRleHQgPSAiIjsgc2VsZWN0ZWRTdG9jayA9IG51bGw7IHNlYXJjaFJlc3VsdHMgPSBlbXB0eUxpc3QoKSB9KSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgSWNvbihJY29ucy5EZWZhdWx0LkNsZWFyLCBudWxsKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyLmZpbGxNYXhXaWR0aCgpLAogICAgICAgICAgICAgICAgICAgIHNpbmdsZUxpbmUgPSB0cnVlCiAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIC8vIOaQnOe0oue7k+aenOS4i+aLieWIl+ihqAogICAgICAgICAgICAgICAgaWYgKHNlYXJjaFJlc3VsdHMuaXNOb3RFbXB0eSgpICYmIHNlbGVjdGVkU3RvY2sgPT0gbnVsbCkgewogICAgICAgICAgICAgICAgICAgIFN1cmZhY2UoCiAgICAgICAgICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIuZmlsbE1heFdpZHRoKCkuaGVpZ2h0SW4obWF4ID0gMjAwLmRwKSwKICAgICAgICAgICAgICAgICAgICAgICAgc2hhZG93RWxldmF0aW9uID0gNC5kcCwKICAgICAgICAgICAgICAgICAgICAgICAgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLnN1cmZhY2UKICAgICAgICAgICAgICAgICAgICApIHsKICAgICAgICAgICAgICAgICAgICAgICAgTGF6eUNvbHVtbiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBpdGVtcyhzZWFyY2hSZXN1bHRzKSB7IHN0b2NrIC0+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTGlzdEl0ZW0oCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGhlYWRsaW5lQ29udGVudCA9IHsgVGV4dChzdG9jay5uYW1lLCBmb250U2l6ZSA9IDE0LnNwKSB9LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdXBwb3J0aW5nQ29udGVudCA9IHsgVGV4dCgiJHtzdG9jay5jb2RlfSAgJHtzdG9jay5waW55aW59IiwgZm9udFNpemUgPSAxMi5zcCwgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQpIH0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG1vZGlmaWVyID0gTW9kaWZpZXIuY2xpY2thYmxlIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNlbGVjdGVkU3RvY2sgPSBzdG9jawogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc2VhcmNoVGV4dCA9IHN0b2NrLm5hbWUKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNlYXJjaFJlc3VsdHMgPSBlbXB0eUxpc3QoKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAvLyDlt7LpgInkuK3nmoTogqHnpagKICAgICAgICAgICAgICAgIHNlbGVjdGVkU3RvY2s/LmxldCB7IHN0b2NrIC0+CiAgICAgICAgICAgICAgICAgICAgU3BhY2VyKG1vZGlmaWVyID0gTW9kaWZpZXIuaGVpZ2h0KDguZHApKQogICAgICAgICAgICAgICAgICAgIFN1cmZhY2UoCiAgICAgICAgICAgICAgICAgICAgICAgIHNoYXBlID0gTWF0ZXJpYWxUaGVtZS5zaGFwZXMuc21hbGwsCiAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5wcmltYXJ5Q29udGFpbmVyLmNvcHkoYWxwaGEgPSAwLjNmKSwKICAgICAgICAgICAgICAgICAgICAgICAgbW9kaWZpZXIgPSBNb2RpZmllci5maWxsTWF4V2lkdGgoKQogICAgICAgICAgICAgICAgICAgICkgewogICAgICAgICAgICAgICAgICAgICAgICBSb3coCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyLnBhZGRpbmcoMTIuZHApLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgdmVydGljYWxBbGlnbm1lbnQgPSBBbGlnbm1lbnQuQ2VudGVyVmVydGljYWxseQogICAgICAgICAgICAgICAgICAgICAgICApIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIEljb24oSWNvbnMuRGVmYXVsdC5DaGVja0NpcmNsZSwgbnVsbCwgdGludCA9IE1hdGVyaWFsVGhlbWUuY29sb3JTY2hlbWUucHJpbWFyeSwgbW9kaWZpZXIgPSBNb2RpZmllci5zaXplKDIwLmRwKSkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIFNwYWNlcihtb2RpZmllciA9IE1vZGlmaWVyLndpZHRoKDguZHApKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgQ29sdW1uIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0KCIke3N0b2NrLm5hbWV9IiwgZm9udFdlaWdodCA9IEZvbnRXZWlnaHQuQm9sZCwgZm9udFNpemUgPSAxNC5zcCkKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBUZXh0KHN0b2NrLmNvZGUsIGZvbnRTaXplID0gMTIuc3AsIGNvbG9yID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5vblN1cmZhY2VWYXJpYW50KQogICAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBTcGFjZXIobW9kaWZpZXIgPSBNb2RpZmllci5oZWlnaHQoOC5kcCkpCiAgICAgICAgICAgICAgICBPdXRsaW5lZFRleHRGaWVsZCgKICAgICAgICAgICAgICAgICAgICB2YWx1ZSA9IGJ1eVByaWNlLCBvblZhbHVlQ2hhbmdlID0geyBidXlQcmljZSA9IGl0OyBlcnJvciA9IG51bGwgfSwKICAgICAgICAgICAgICAgICAgICBsYWJlbCA9IHsgVGV4dCgi5Lmw5YWl5Lu35qC8IikgfSwKICAgICAgICAgICAgICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyLmZpbGxNYXhXaWR0aCgpLCBzaW5nbGVMaW5lID0gdHJ1ZSwKICAgICAgICAgICAgICAgICAgICBrZXlib2FyZE9wdGlvbnMgPSBLZXlib2FyZE9wdGlvbnMoa2V5Ym9hcmRUeXBlID0gS2V5Ym9hcmRUeXBlLkRlY2ltYWwpCiAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICBTcGFjZXIobW9kaWZpZXIgPSBNb2RpZmllci5oZWlnaHQoOC5kcCkpCiAgICAgICAgICAgICAgICBPdXRsaW5lZFRleHRGaWVsZCgKICAgICAgICAgICAgICAgICAgICB2YWx1ZSA9IHF1YW50aXR5LCBvblZhbHVlQ2hhbmdlID0geyBxdWFudGl0eSA9IGl0OyBlcnJvciA9IG51bGwgfSwKICAgICAgICAgICAgICAgICAgICBsYWJlbCA9IHsgVGV4dCgi5oyB5pyJ5pWw6YeP77yI6IKh77yJIikgfSwKICAgICAgICAgICAgICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyLmZpbGxNYXhXaWR0aCgpLCBzaW5nbGVMaW5lID0gdHJ1ZSwKICAgICAgICAgICAgICAgICAgICBrZXlib2FyZE9wdGlvbnMgPSBLZXlib2FyZE9wdGlvbnMoa2V5Ym9hcmRUeXBlID0gS2V5Ym9hcmRUeXBlLk51bWJlcikKICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICAgIGVycm9yPy5sZXQgewogICAgICAgICAgICAgICAgICAgIFNwYWNlcihtb2RpZmllciA9IE1vZGlmaWVyLmhlaWdodCg0LmRwKSkKICAgICAgICAgICAgICAgICAgICBUZXh0KGl0LCBjb2xvciA9IE1hdGVyaWFsVGhlbWUuY29sb3JTY2hlbWUuZXJyb3IsIGZvbnRTaXplID0gMTIuc3ApCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9LAogICAgICAgIGNvbmZpcm1CdXR0b24gPSB7CiAgICAgICAgICAgIFRleHRCdXR0b24ob25DbGljayA9IHsKICAgICAgICAgICAgICAgIHZhbCBzdG9jayA9IHNlbGVjdGVkU3RvY2sKICAgICAgICAgICAgICAgIHZhbCBwcmljZSA9IGJ1eVByaWNlLnRvRG91YmxlT3JOdWxsKCkKICAgICAgICAgICAgICAgIHZhbCBxdHkgPSBxdWFudGl0eS50b0ludE9yTnVsbCgpCiAgICAgICAgICAgICAgICB3aGVuIHsKICAgICAgICAgICAgICAgICAgICBzdG9jayA9PSBudWxsIC0+IGVycm9yID0gIuivt+WFiOaQnOe0ouW5tumAieaLqeiCoeelqCIKICAgICAgICAgICAgICAgICAgICBwcmljZSA9PSBudWxsIHx8IHByaWNlIDw9IDAgLT4gZXJyb3IgPSAi6K+36L6T5YWl5pyJ5pWI55qE5Lmw5YWl5Lu35qC8IgogICAgICAgICAgICAgICAgICAgIHF0eSA9PSBudWxsIHx8IHF0eSA8PSAwIC0+IGVycm9yID0gIuivt+i+k+WFpeacieaViOeahOaMgeacieaVsOmHjyIKICAgICAgICAgICAgICAgICAgICBlbHNlIC0+IG9uQ29uZmlybShzdG9jay5jb2RlLCBzdG9jay5uYW1lLCBwcmljZSwgcXR5KQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9KSB7IFRleHQoIuehruiupCIpIH0KICAgICAgICB9LAogICAgICAgIGRpc21pc3NCdXR0b24gPSB7IFRleHRCdXR0b24ob25DbGljayA9IG9uRGlzbWlzcykgeyBUZXh0KCLlj5bmtogiKSB9IH0KICAgICkKfQoKQENvbXBvc2FibGUKZnVuIEVkaXRTdG9ja0RpYWxvZygKICAgIHN0b2NrOiBQb3J0Zm9saW9TdG9jaywgb25EaXNtaXNzOiAoKSAtPiBVbml0LCBvbkNvbmZpcm06IChQb3J0Zm9saW9TdG9jaykgLT4gVW5pdAopIHsKICAgIHZhciBidXlQcmljZSBieSByZW1lbWJlciB7IG11dGFibGVTdGF0ZU9mKHN0b2NrLmJ1eVByaWNlLnRvU3RyaW5nKCkpIH0KICAgIHZhciBxdWFudGl0eSBieSByZW1lbWJlciB7IG11dGFibGVTdGF0ZU9mKHN0b2NrLnF1YW50aXR5LnRvU3RyaW5nKCkpIH0KICAgIHZhciBlcnJvciBieSByZW1lbWJlciB7IG11dGFibGVTdGF0ZU9mPFN0cmluZz8+KG51bGwpIH0KICAgIAogICAgQWxlcnREaWFsb2coCiAgICAgICAgb25EaXNtaXNzUmVxdWVzdCA9IG9uRGlzbWlzcywKICAgICAgICB0aXRsZSA9IHsgVGV4dCgi57yW6L6R5oyB5LuTIC0gJHtzdG9jay5uYW1lfSIpIH0sCiAgICAgICAgdGV4dCA9IHsKICAgICAgICAgICAgQ29sdW1uIHsKICAgICAgICAgICAgICAgIFRleHQoIuiCoeelqOS7o+eggTogJHtQb3J0Zm9saW9WaWV3TW9kZWwuZGlzcGxheUNvZGUoc3RvY2suY29kZSl9IiwgZm9udFNpemUgPSAxNC5zcCwgY29sb3IgPSBNYXRlcmlhbFRoZW1lLmNvbG9yU2NoZW1lLm9uU3VyZmFjZVZhcmlhbnQpCiAgICAgICAgICAgICAgICBTcGFjZXIobW9kaWZpZXIgPSBNb2RpZmllci5oZWlnaHQoOC5kcCkpCiAgICAgICAgICAgICAgICBPdXRsaW5lZFRleHRGaWVsZCh2YWx1ZSA9IGJ1eVByaWNlLCBvblZhbHVlQ2hhbmdlID0geyBidXlQcmljZSA9IGl0OyBlcnJvciA9IG51bGwgfSwgbGFiZWwgPSB7IFRleHQoIuS5sOWFpeS7t+agvO+8iOWKoOS7k+WQjuS/ruaUueS4uuWdh+S7t++8iSIpIH0sIG1vZGlmaWVyID0gTW9kaWZpZXIuZmlsbE1heFdpZHRoKCksIHNpbmdsZUxpbmUgPSB0cnVlLCBrZXlib2FyZE9wdGlvbnMgPSBLZXlib2FyZE9wdGlvbnMoa2V5Ym9hcmRUeXBlID0gS2V5Ym9hcmRUeXBlLkRlY2ltYWwpKQogICAgICAgICAgICAgICAgU3BhY2VyKG1vZGlmaWVyID0gTW9kaWZpZXIuaGVpZ2h0KDguZHApKQogICAgICAgICAgICAgICAgT3V0bGluZWRUZXh0RmllbGQodmFsdWUgPSBxdWFudGl0eSwgb25WYWx1ZUNoYW5nZSA9IHsgcXVhbnRpdHkgPSBpdDsgZXJyb3IgPSBudWxsIH0sIGxhYmVsID0geyBUZXh0KCLmjIHmnInmlbDph4/vvIjogqHvvIkiKSB9LCBtb2RpZmllciA9IE1vZGlmaWVyLmZpbGxNYXhXaWR0aCgpLCBzaW5nbGVMaW5lID0gdHJ1ZSwga2V5Ym9hcmRPcHRpb25zID0gS2V5Ym9hcmRPcHRpb25zKGtleWJvYXJkVHlwZSA9IEtleWJvYXJkVHlwZS5OdW1iZXIpKQogICAgICAgICAgICAgICAgZXJyb3I/LmxldCB7IFNwYWNlcihtb2RpZmllciA9IE1vZGlmaWVyLmhlaWdodCg0LmRwKSk7IFRleHQoaXQsIGNvbG9yID0gTWF0ZXJpYWxUaGVtZS5jb2xvclNjaGVtZS5lcnJvciwgZm9udFNpemUgPSAxMi5zcCkgfQogICAgICAgICAgICB9CiAgICAgICAgfSwKICAgICAgICBjb25maXJtQnV0dG9uID0gewogICAgICAgICAgICBUZXh0QnV0dG9uKG9uQ2xpY2sgPSB7CiAgICAgICAgICAgICAgICB2YWwgcHJpY2UgPSBidXlQcmljZS50b0RvdWJsZU9yTnVsbCgpOyB2YWwgcXR5ID0gcXVhbnRpdHkudG9JbnRPck51bGwoKQogICAgICAgICAgICAgICAgd2hlbiB7CiAgICAgICAgICAgICAgICAgICAgcHJpY2UgPT0gbnVsbCB8fCBwcmljZSA8PSAwIC0+IGVycm9yID0gIuivt+i+k+WFpeacieaViOeahOS5sOWFpeS7t+agvCIKICAgICAgICAgICAgICAgICAgICBxdHkgPT0gbnVsbCB8fCBxdHkgPD0gMCAtPiBlcnJvciA9ICLor7fovpPlhaXmnInmlYjnmoTmjIHmnInmlbDph48iCiAgICAgICAgICAgICAgICAgICAgZWxzZSAtPiB7IHZhbCB1cGRhdGVkID0gc3RvY2suY29weShidXlQcmljZSA9IHByaWNlLCBxdWFudGl0eSA9IHF0eSk7IHVwZGF0ZWQudXBkYXRlQ3VycmVudFByaWNlKHN0b2NrLmN1cnJlbnRQcmljZSk7IG9uQ29uZmlybSh1cGRhdGVkKSB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0pIHsgVGV4dCgi5L+d5a2YIikgfQogICAgICAgIH0sCiAgICAgICAgZGlzbWlzc0J1dHRvbiA9IHsgVGV4dEJ1dHRvbihvbkNsaWNrID0gb25EaXNtaXNzKSB7IFRleHQoIuWPlua2iCIpIH0gfQogICAgKQp9Cg==
+package com.stock.analyzer.ui.portfolio
+
+import android.app.Application
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.*
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.stock.analyzer.data.model.*
+import com.stock.analyzer.data.repository.StockInfoRepository
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun PortfolioScreen(
+    onStockClick: (String) -> Unit,
+    viewModel: PortfolioViewModel = viewModel()
+) {
+    val portfolio by viewModel.portfolio.collectAsState()
+    val advices by viewModel.advices.collectAsState()
+    val isLoading by viewModel.isLoading.collectAsState()
+    val showAddDialog by viewModel.showAddDialog.collectAsState()
+    
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text("我的持仓") },
+                actions = {
+                    IconButton(onClick = { viewModel.refreshPrices() }) {
+                        Icon(Icons.Default.Refresh, contentDescription = "刷新")
+                    }
+                }
+            )
+        },
+        floatingActionButton = {
+            FloatingActionButton(onClick = { viewModel.showAddDialog() }) {
+                Icon(Icons.Default.Add, contentDescription = "添加持仓")
+            }
+        }
+    ) { paddingValues ->
+        Column(modifier = Modifier.fillMaxSize().padding(paddingValues)) {
+            if (portfolio.isNotEmpty()) {
+                PortfolioSummary(
+                    totalValue = viewModel.getTotalValue(),
+                    totalProfit = viewModel.getTotalProfit(),
+                    totalProfitPercent = viewModel.getTotalProfitPercent()
+                )
+            }
+            
+            if (isLoading && portfolio.isEmpty()) {
+                Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                    CircularProgressIndicator()
+                }
+            } else if (portfolio.isEmpty()) {
+                Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                        Icon(Icons.Default.AccountBalanceWallet, null, modifier = Modifier.size(64.dp), tint = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Spacer(modifier = Modifier.height(16.dp))
+                        Text("暂无持仓", style = MaterialTheme.typography.bodyLarge)
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Text("点击右下角 + 添加股票", fontSize = 14.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                }
+            } else {
+                LazyColumn(modifier = Modifier.fillMaxSize(), contentPadding = PaddingValues(bottom = 80.dp)) {
+                    items(portfolio) { stock ->
+                        val advice = advices.find { it.code == stock.code }
+                        PortfolioStockCard(
+                            stock = stock, advice = advice,
+                            onClick = { onStockClick(stock.code) },
+                            onEdit = { viewModel.updateStock(it) },
+                            onDelete = { viewModel.removeStock(stock.code) }
+                        )
+                    }
+                }
+            }
+        }
+        
+        if (showAddDialog) {
+            AddStockDialog(
+                onDismiss = { viewModel.hideAddDialog() },
+                onConfirm = { code, name, price, quantity -> viewModel.addStock(code, name, price, quantity) }
+            )
+        }
+    }
+}
+
+@Composable
+fun PortfolioSummary(totalValue: Double, totalProfit: Double, totalProfitPercent: Double) {
+    val profitColor = when { totalProfit > 0 -> Color(0xFFE53935); totalProfit < 0 -> Color(0xFF43A047); else -> MaterialTheme.colorScheme.onSurface }
+    Card(
+        modifier = Modifier.fillMaxWidth().padding(16.dp),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.3f))
+    ) {
+        Column(modifier = Modifier.fillMaxWidth().padding(16.dp)) {
+            Text("总资产概览", fontSize = 14.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Spacer(modifier = Modifier.height(8.dp))
+            Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                Column {
+                    Text("总市值", fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text(String.format("¥%.2f", totalValue), fontSize = 20.sp, fontWeight = FontWeight.Bold)
+                }
+                Column(horizontalAlignment = Alignment.End) {
+                    Text("总盈亏", fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text(String.format("%+.2f (%+.2f%%)", totalProfit, totalProfitPercent), fontSize = 20.sp, fontWeight = FontWeight.Bold, color = profitColor)
+                }
+            }
+        }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun PortfolioStockCard(
+    stock: PortfolioStock, advice: PositionAdvice?,
+    onClick: () -> Unit, onEdit: (PortfolioStock) -> Unit, onDelete: () -> Unit
+) {
+    var showMenu by remember { mutableStateOf(false) }
+    var showEditDialog by remember { mutableStateOf(false) }
+    val profitColor = when { stock.profit > 0 -> Color(0xFFE53935); stock.profit < 0 -> Color(0xFF43A047); else -> MaterialTheme.colorScheme.onSurface }
+    
+    Card(
+        modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 4.dp),
+        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
+        onClick = onClick
+    ) {
+        Column(modifier = Modifier.fillMaxWidth().padding(16.dp)) {
+            Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(text = stock.name, fontSize = 18.sp, fontWeight = FontWeight.Bold)
+                    Text(text = PortfolioViewModel.displayCode(stock.code), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+                Box {
+                    IconButton(onClick = { showMenu = true }) { Icon(Icons.Default.MoreVert, null) }
+                    DropdownMenu(expanded = showMenu, onDismissRequest = { showMenu = false }) {
+                        DropdownMenuItem(text = { Text("编辑持仓") }, onClick = { showMenu = false; showEditDialog = true }, leadingIcon = { Icon(Icons.Default.Edit, null) })
+                        DropdownMenuItem(text = { Text("删除") }, onClick = { showMenu = false; onDelete() }, leadingIcon = { Icon(Icons.Default.Delete, null, tint = Color.Red) })
+                    }
+                }
+            }
+            Spacer(modifier = Modifier.height(8.dp)); Divider(); Spacer(modifier = Modifier.height(8.dp))
+            Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                Column { Text("买入价", fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant); Text(String.format("¥%.2f", stock.buyPrice), fontSize = 16.sp, fontWeight = FontWeight.Medium) }
+                Column(horizontalAlignment = Alignment.CenterHorizontally) { Text("现价", fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant); Text(String.format("¥%.2f", stock.currentPrice), fontSize = 16.sp, fontWeight = FontWeight.Medium, color = profitColor) }
+                Column(horizontalAlignment = Alignment.End) { Text("盈亏", fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant); Text(String.format("%+.2f (%+.2f%%)", stock.profit, stock.profitPercent), fontSize = 16.sp, fontWeight = FontWeight.Bold, color = profitColor) }
+            }
+            Text("持有 ${stock.quantity} 股", fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            if (advice != null) {
+                Spacer(modifier = Modifier.height(8.dp)); Divider(); Spacer(modifier = Modifier.height(8.dp))
+                AdviceSection(advice = advice)
+            }
+        }
+    }
+    if (showEditDialog) {
+        EditStockDialog(stock = stock, onDismiss = { showEditDialog = false }, onConfirm = { onEdit(it); showEditDialog = false })
+    }
+}
+
+@Composable
+fun AdviceSection(advice: PositionAdvice) {
+    val adviceColor = when (advice.advice) {
+        AdviceType.STRONG_BUY -> Color(0xFFD32F2F); AdviceType.BUY -> Color(0xFFE53935)
+        AdviceType.HOLD -> Color(0xFFFFA726); AdviceType.SELL -> Color(0xFF43A047); AdviceType.STRONG_SELL -> Color(0xFF2E7D32)
+    }
+    val adviceText = when (advice.advice) {
+        AdviceType.STRONG_BUY -> "强烈加仓"; AdviceType.BUY -> "建议加仓"
+        AdviceType.HOLD -> "持有观望"; AdviceType.SELL -> "建议减仓"; AdviceType.STRONG_SELL -> "强烈减仓"
+    }
+    Surface(shape = MaterialTheme.shapes.small, color = adviceColor.copy(alpha = 0.1f)) {
+        Column(modifier = Modifier.padding(12.dp)) {
+            Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                Text(text = adviceText, fontSize = 16.sp, fontWeight = FontWeight.Bold, color = adviceColor)
+                Text(text = advice.reason, fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.weight(1f).padding(start = 8.dp))
+            }
+            Spacer(modifier = Modifier.height(8.dp))
+            Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text("加仓区间", fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text("${String.format("%.2f", advice.addPriceRange.low)} - ${String.format("%.2f", advice.addPriceRange.high)}", fontSize = 14.sp, fontWeight = FontWeight.Medium, color = Color(0xFFE53935))
+                }
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text("减仓区间", fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text("${String.format("%.2f", advice.reducePriceRange.low)} - ${String.format("%.2f", advice.reducePriceRange.high)}", fontSize = 14.sp, fontWeight = FontWeight.Medium, color = Color(0xFF43A047))
+                }
+            }
+            // 止损价 + 风险提示（v4.1.0 新增：这套模型的价值主要在尾部风险控制）
+            advice.stopLoss?.let {
+                Spacer(modifier = Modifier.height(6.dp))
+                Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                    Text("止损价（2×ATR）", fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text(String.format("¥%.2f", it), fontSize = 14.sp, fontWeight = FontWeight.Bold, color = Color(0xFF7B1FA2))
+                }
+            }
+            advice.riskNote?.let {
+                Spacer(modifier = Modifier.height(6.dp))
+                Text(it, fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant, lineHeight = 16.sp)
+            }
+        }
+    }
+}
+
+/**
+ * 添加持仓对话框 - 支持拼音搜索和自动填充
+ */
+@Composable
+fun AddStockDialog(
+    onDismiss: () -> Unit,
+    onConfirm: (code: String, name: String, buyPrice: Double, quantity: Int) -> Unit
+) {
+    val context = LocalContext.current
+    val stockInfoRepo = remember { StockInfoRepository(context) }
+    
+    var searchText by remember { mutableStateOf("") }
+    var selectedStock by remember { mutableStateOf<StockInfo?>(null) }
+    var searchResults by remember { mutableStateOf<List<StockInfo>>(emptyList()) }
+    var buyPrice by remember { mutableStateOf("") }
+    var quantity by remember { mutableStateOf("") }
+    var error by remember { mutableStateOf<String?>(null) }
+    
+    // 搜索逻辑
+    LaunchedEffect(searchText) {
+        if (searchText.length >= 1) {
+            searchResults = stockInfoRepo.searchByPinyin(searchText)
+            // 如果输入的是完整代码（可能不带前缀），自动选中
+            val normalizedCode = PortfolioViewModel.normalizeStockCode(searchText.trim())
+            val exactMatch = stockInfoRepo.getStockByCode(normalizedCode)
+            if (exactMatch != null) {
+                selectedStock = exactMatch
+                searchResults = emptyList()
+            }
+        } else {
+            searchResults = emptyList()
+            selectedStock = null
+        }
+    }
+    
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text("添加持仓") },
+        text = {
+            Column {
+                // 搜索框
+                OutlinedTextField(
+                    value = searchText,
+                    onValueChange = { searchText = it; selectedStock = null; error = null },
+                    label = { Text("输入代码/名称/拼音首字母") },
+                    leadingIcon = { Icon(Icons.Default.Search, null) },
+                    trailingIcon = {
+                        if (searchText.isNotEmpty()) {
+                            IconButton(onClick = { searchText = ""; selectedStock = null; searchResults = emptyList() }) {
+                                Icon(Icons.Default.Clear, null)
+                            }
+                        }
+                    },
+                    modifier = Modifier.fillMaxWidth(),
+                    singleLine = true
+                )
+                
+                // 搜索结果下拉列表
+                if (searchResults.isNotEmpty() && selectedStock == null) {
+                    Surface(
+                        modifier = Modifier.fillMaxWidth().heightIn(max = 200.dp),
+                        shadowElevation = 4.dp,
+                        color = MaterialTheme.colorScheme.surface
+                    ) {
+                        LazyColumn {
+                            items(searchResults) { stock ->
+                                ListItem(
+                                    headlineContent = { Text(stock.name, fontSize = 14.sp) },
+                                    supportingContent = { Text("${stock.code}  ${stock.pinyin}", fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant) },
+                                    modifier = Modifier.clickable {
+                                        selectedStock = stock
+                                        searchText = stock.name
+                                        searchResults = emptyList()
+                                    }
+                                )
+                            }
+                        }
+                    }
+                }
+                
+                // 已选中的股票
+                selectedStock?.let { stock ->
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Surface(
+                        shape = MaterialTheme.shapes.small,
+                        color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.3f),
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Row(
+                            modifier = Modifier.padding(12.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Icon(Icons.Default.CheckCircle, null, tint = MaterialTheme.colorScheme.primary, modifier = Modifier.size(20.dp))
+                            Spacer(modifier = Modifier.width(8.dp))
+                            Column {
+                                Text("${stock.name}", fontWeight = FontWeight.Bold, fontSize = 14.sp)
+                                Text(stock.code, fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            }
+                        }
+                    }
+                }
+                
+                Spacer(modifier = Modifier.height(8.dp))
+                OutlinedTextField(
+                    value = buyPrice, onValueChange = { buyPrice = it; error = null },
+                    label = { Text("买入价格") },
+                    modifier = Modifier.fillMaxWidth(), singleLine = true,
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal)
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+                OutlinedTextField(
+                    value = quantity, onValueChange = { quantity = it; error = null },
+                    label = { Text("持有数量（股）") },
+                    modifier = Modifier.fillMaxWidth(), singleLine = true,
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
+                )
+                error?.let {
+                    Spacer(modifier = Modifier.height(4.dp))
+                    Text(it, color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
+                }
+            }
+        },
+        confirmButton = {
+            TextButton(onClick = {
+                val stock = selectedStock
+                val price = buyPrice.toDoubleOrNull()
+                val qty = quantity.toIntOrNull()
+                when {
+                    stock == null -> error = "请先搜索并选择股票"
+                    price == null || price <= 0 -> error = "请输入有效的买入价格"
+                    qty == null || qty <= 0 -> error = "请输入有效的持有数量"
+                    else -> onConfirm(stock.code, stock.name, price, qty)
+                }
+            }) { Text("确认") }
+        },
+        dismissButton = { TextButton(onClick = onDismiss) { Text("取消") } }
+    )
+}
+
+@Composable
+fun EditStockDialog(
+    stock: PortfolioStock, onDismiss: () -> Unit, onConfirm: (PortfolioStock) -> Unit
+) {
+    var buyPrice by remember { mutableStateOf(stock.buyPrice.toString()) }
+    var quantity by remember { mutableStateOf(stock.quantity.toString()) }
+    var error by remember { mutableStateOf<String?>(null) }
+    
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text("编辑持仓 - ${stock.name}") },
+        text = {
+            Column {
+                Text("股票代码: ${PortfolioViewModel.displayCode(stock.code)}", fontSize = 14.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                Spacer(modifier = Modifier.height(8.dp))
+                OutlinedTextField(value = buyPrice, onValueChange = { buyPrice = it; error = null }, label = { Text("买入价格（加仓后修改为均价）") }, modifier = Modifier.fillMaxWidth(), singleLine = true, keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal))
+                Spacer(modifier = Modifier.height(8.dp))
+                OutlinedTextField(value = quantity, onValueChange = { quantity = it; error = null }, label = { Text("持有数量（股）") }, modifier = Modifier.fillMaxWidth(), singleLine = true, keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number))
+                error?.let { Spacer(modifier = Modifier.height(4.dp)); Text(it, color = MaterialTheme.colorScheme.error, fontSize = 12.sp) }
+            }
+        },
+        confirmButton = {
+            TextButton(onClick = {
+                val price = buyPrice.toDoubleOrNull(); val qty = quantity.toIntOrNull()
+                when {
+                    price == null || price <= 0 -> error = "请输入有效的买入价格"
+                    qty == null || qty <= 0 -> error = "请输入有效的持有数量"
+                    else -> { val updated = stock.copy(buyPrice = price, quantity = qty); updated.updateCurrentPrice(stock.currentPrice); onConfirm(updated) }
+                }
+            }) { Text("保存") }
+        },
+        dismissButton = { TextButton(onClick = onDismiss) { Text("取消") } }
+    )
+}

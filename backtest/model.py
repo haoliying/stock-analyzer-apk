@@ -1,1 +1,59 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJQcm9kdWN0aW9uIG1vZGVsIGRlZmluaXRpb24g4oCUIHRoZSBleGFjdCBmdW5jdGlvbiB0aGF0IHdpbGwgYmUgcG9ydGVkIHRvIEtvdGxpbi4KS2VwdCBpbiBpdHMgb3duIG1vZHVsZSBzbyBleHBlcmltZW50cyBjYW4gaW1wb3J0IGl0IHdpdGhvdXQgcnVubmluZyBhIHNjcmlwdC4iIiIKaW1wb3J0IG51bXB5IGFzIG5wCmZyb20gc3RyYXRlZ3kgaW1wb3J0IGxvYWRfYWxsLCBidWlsZF9iYXNlbGluZSwgTUlOX0hJU1QsIENPU1QsIF9uYW4sIGcKCkFUUl9LTkVFLCBBVFJfUEVOID0gMC4wMjAsIDE1MC4wCkggPSAyMAoKc3RvY2tzID0gbG9hZF9hbGwoKQpEQVRFUyA9IHNvcnRlZCh7c3RyKGQpIGZvciBGIGluIHN0b2NrcyBmb3IgZCBpbiBGWyJkYXRlIl1bTUlOX0hJU1Q6XX0pCkNVVE9GRiA9IERBVEVTW2ludChsZW4oREFURVMpICogMC43KV0KQkFTRUxJTkUgPSBidWlsZF9iYXNlbGluZShzdG9ja3MpCgoKZGVmIHByb2QoRiwgdCk6CiAgICBjID0gRlsiY2xvc2UiXVt0XQogICAgbWExMCwgbWEyMCwgbWE2MCwgc2wgPSBnKEYsICJtYTEwIiwgdCksIGcoRiwgIm1hMjAiLCB0KSwgZyhGLCAibWE2MCIsIHQpLCBnKEYsICJtYTIwX3Nsb3BlIiwgdCkKICAgIGlmIF9uYW4obWEyMCkgb3IgX25hbihtYTYwKSBvciBfbmFuKHNsKSBvciBfbmFuKG1hMTApOgogICAgICAgIHJldHVybiAwLjAsIEZhbHNlCiAgICBzID0gNTAuMAogICAgdXAgPSBjID4gbWEyMCA+IG1hNjAKICAgIGRuID0gYyA8IG1hMjAgPCBtYTYwCiAgICBpZiB1cDoKICAgICAgICBzICs9IDIyIGlmIHNsID4gMC4wMTUgZWxzZSAoMTQgaWYgc2wgPiAwLjAgZWxzZSA2KQogICAgZWxpZiBkbjoKICAgICAgICBzIC09IDIyIGlmIHNsIDwgLTAuMDE1IGVsc2UgKDE0IGlmIHNsIDwgMC4wIGVsc2UgNikKICAgIGVsc2U6CiAgICAgICAgcyAtPSAzCiAgICBzICs9IDQgaWYgYyA+IG1hMTAgPiBtYTIwIGVsc2UgLTIKICAgIGEgPSBnKEYsICJhdHJfcGN0IiwgdCkKICAgIGlmIG5vdCBfbmFuKGEpOgogICAgICAgIHMgLT0gbWF4KDAuMCwgYSAtIEFUUl9LTkVFKSAqIEFUUl9QRU4KICAgIHJldHVybiBmbG9hdChucC5jbGlwKHMsIDAsIDEwMCkpLCBUcnVlCgoKZGVmIHJvd3NfZm9yKGZuKToKICAgICIiIihzY29yZSwgZGF0ZSwgbmV0IDIwZCByZXR1cm4sIGV4Y2VzcywgdW5idXlhYmxlX2ZsYWcpIGZvciBldmVyeSB0IC0+IHQrMStILiIiIgogICAgb3V0ID0gW10KICAgIGZvciBGIGluIHN0b2NrczoKICAgICAgICBuID0gaW50KEZbIm4iXSkKICAgICAgICBjLCBvID0gRlsiY2xvc2UiXSwgRlsib3BlbiJdCiAgICAgICAgbGltID0gMC4wOTcgaWYgRlsiY29kZSJdLnN0YXJ0c3dpdGgoKCIzMCIsICI2OCIpKSBlbHNlIDAuMDQ3CiAgICAgICAgZm9yIHQgaW4gcmFuZ2UoTUlOX0hJU1QsIG4gLSAxKToKICAgICAgICAgICAgcywgb2sgPSBmbihGLCB0KQogICAgICAgICAgICBpZiBub3Qgb2s6CiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICBrID0gdCArIDEgKyBICiAgICAgICAgICAgIGlmIGsgPj0gbjoKICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgIGVvID0gb1t0ICsgMV0KICAgICAgICAgICAgaWYgZW8gPD0gMDoKICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgIHIgPSAoY1trXSAvIGVvIC0gMS4wKSAtIENPU1QKICAgICAgICAgICAgZCA9IHN0cihGWyJkYXRlIl1bdF0pCiAgICAgICAgICAgIGUgPSBCQVNFTElORS5nZXQoKGQsIEgpKQogICAgICAgICAgICBvdXQuYXBwZW5kKChzLCBkLCByLCByIC0gZSBpZiBlIGlzIG5vdCBOb25lIGVsc2UgbnAubmFuLAogICAgICAgICAgICAgICAgICAgICAgICBGWyJwY3QiXVt0XSA+IDAgYW5kIGVvID49IGNbdF0gKiAoMSArIGxpbSkgKiAwLjk5NSkpCiAgICByZXR1cm4gb3V0Cg==
+#!/usr/bin/env python3
+"""Production model definition — the exact function that will be ported to Kotlin.
+Kept in its own module so experiments can import it without running a script."""
+import numpy as np
+from strategy import load_all, build_baseline, MIN_HIST, COST, _nan, g
+
+ATR_KNEE, ATR_PEN = 0.020, 150.0
+H = 20
+
+stocks = load_all()
+DATES = sorted({str(d) for F in stocks for d in F["date"][MIN_HIST:]})
+CUTOFF = DATES[int(len(DATES) * 0.7)]
+BASELINE = build_baseline(stocks)
+
+
+def prod(F, t):
+    c = F["close"][t]
+    ma10, ma20, ma60, sl = g(F, "ma10", t), g(F, "ma20", t), g(F, "ma60", t), g(F, "ma20_slope", t)
+    if _nan(ma20) or _nan(ma60) or _nan(sl) or _nan(ma10):
+        return 0.0, False
+    s = 50.0
+    up = c > ma20 > ma60
+    dn = c < ma20 < ma60
+    if up:
+        s += 22 if sl > 0.015 else (14 if sl > 0.0 else 6)
+    elif dn:
+        s -= 22 if sl < -0.015 else (14 if sl < 0.0 else 6)
+    else:
+        s -= 3
+    s += 4 if c > ma10 > ma20 else -2
+    a = g(F, "atr_pct", t)
+    if not _nan(a):
+        s -= max(0.0, a - ATR_KNEE) * ATR_PEN
+    return float(np.clip(s, 0, 100)), True
+
+
+def rows_for(fn):
+    """(score, date, net 20d return, excess, unbuyable_flag) for every t -> t+1+H."""
+    out = []
+    for F in stocks:
+        n = int(F["n"])
+        c, o = F["close"], F["open"]
+        lim = 0.097 if F["code"].startswith(("30", "68")) else 0.047
+        for t in range(MIN_HIST, n - 1):
+            s, ok = fn(F, t)
+            if not ok:
+                continue
+            k = t + 1 + H
+            if k >= n:
+                continue
+            eo = o[t + 1]
+            if eo <= 0:
+                continue
+            r = (c[k] / eo - 1.0) - COST
+            d = str(F["date"][t])
+            e = BASELINE.get((d, H))
+            out.append((s, d, r, r - e if e is not None else np.nan,
+                        F["pct"][t] > 0 and eo >= c[t] * (1 + lim) * 0.995))
+    return out

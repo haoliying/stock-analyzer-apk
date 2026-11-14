@@ -1,1 +1,162 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJJdGVyYXRpb24gMTgg4oCUIExBU1Q6IGhvdyB0byBidWlsZCB0aGUg5q+P5pel5o6o6I2QIGxpc3QgZnJvbSB0aGUgZWxpZ2libGUgYm9vay4KCkZhY3RzIGVzdGFibGlzaGVkOiB0aGUgc2NvcmU+PTY4IGJvb2sgaXMgd29ydGggKzAuNjklIGRhdGUtZXF1YWwgZXhjZXNzLCBidXQgdGhlClRPUCAxMCBCWSBTQ09SRSBpcyB3b3J0aCAtMS41JS4gU28gcmFua2luZyBhIHNob3J0IGxpc3QgYnkgc2NvcmUgY29uY2VudHJhdGVzIHRoZQpjcm93ZGVkLCBleHRlbmRlZCBuYW1lcy4gVGVzdCBzZWxlY3Rpb24gcnVsZXMgaW5zaWRlIHRoZSBlbGlnaWJsZSBib29rLCB1c2luZyB0aGUKY29uZmlnIGJlaW5nIHNoaXBwZWQgKGtuZWUgMi4wJSwgQVRSIHBlbmFsdHkgMjAwLCBjYXBwZWQgMzAsIEJVWSA2OCkuCgpSZWZlcmVuY2UgcG9pbnRzOiAoYSkgdGhlIHdob2xlIGVsaWdpYmxlIGJvb2ssIChiKSAxMCBuYW1lcyBwaWNrZWQgYXQgcmFuZG9tIGZyb20KdGhlIGJvb2sg4oCUIGEgc2hvcnQgbGlzdCBtdXN0IGJlYXQgdGhhdCB0byBlYXJuIGl0cyBwbGFjZS4KIiIiCmltcG9ydCBudW1weSBhcyBucApmcm9tIGNvbGxlY3Rpb25zIGltcG9ydCBkZWZhdWx0ZGljdApmcm9tIG1vZGVsIGltcG9ydCBDVVRPRkYsIF9uYW4sIGcsIHN0b2NrcywgTUlOX0hJU1QsIENPU1QsIEgsIEJBU0VMSU5FCgpLTkVFLCBQRU4sIENBUCwgQlVZID0gMC4wMjAsIDIwMC4wLCAzMC4wLCA2OC4wCgoKZGVmIHNoaXAoRiwgdCk6CiAgICBjID0gRlsiY2xvc2UiXVt0XQogICAgbWExMCwgbWEyMCwgbWE2MCwgc2wgPSBnKEYsICJtYTEwIiwgdCksIGcoRiwgIm1hMjAiLCB0KSwgZyhGLCAibWE2MCIsIHQpLCBnKEYsICJtYTIwX3Nsb3BlIiwgdCkKICAgIGlmIF9uYW4obWEyMCkgb3IgX25hbihtYTYwKSBvciBfbmFuKG1hMTApIG9yIF9uYW4oc2wpOgogICAgICAgIHJldHVybiAwLjAsIEZhbHNlCiAgICBzID0gNTAuMAogICAgdXAgPSBjID4gbWEyMCA+IG1hNjAKICAgIGRuID0gYyA8IG1hMjAgPCBtYTYwCiAgICBpZiB1cDoKICAgICAgICBzICs9IDIyIGlmIHNsID4gMC4wMTUgZWxzZSAoMTQgaWYgc2wgPiAwLjAgZWxzZSA2KQogICAgZWxpZiBkbjoKICAgICAgICBzIC09IDIyIGlmIHNsIDwgLTAuMDE1IGVsc2UgKDE0IGlmIHNsIDwgMC4wIGVsc2UgNikKICAgIGVsc2U6CiAgICAgICAgcyAtPSAzCiAgICBzICs9IDQgaWYgYyA+IG1hMTAgPiBtYTIwIGVsc2UgLTIKICAgIGEgPSBnKEYsICJhdHJfcGN0IiwgdCkKICAgIGlmIG5vdCBfbmFuKGEpOgogICAgICAgIHMgLT0gbWluKG1heCgwLjAsIGEgLSBLTkVFKSAqIFBFTiwgQ0FQKQogICAgcmV0dXJuIGZsb2F0KG5wLmNsaXAocywgMCwgMTAwKSksIFRydWUKCgpybmcgPSBucC5yYW5kb20uZGVmYXVsdF9ybmcoNykKZGF5ID0gZGVmYXVsdGRpY3QobGlzdCkKZm9yIEYgaW4gc3RvY2tzOgogICAgbiA9IGludChGWyJuIl0pCiAgICBjLCBvID0gRlsiY2xvc2UiXSwgRlsib3BlbiJdCiAgICBsaW0gPSAwLjA5NyBpZiBGWyJjb2RlIl0uc3RhcnRzd2l0aCgoIjMwIiwgIjY4IikpIGVsc2UgMC4wNDcKICAgIGZvciB0IGluIHJhbmdlKE1JTl9ISVNULCBuIC0gMSk6CiAgICAgICAgcywgb2sgPSBzaGlwKEYsIHQpCiAgICAgICAgaWYgbm90IG9rIG9yIHMgPCBCVVk6CiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgayA9IHQgKyAxICsgSAogICAgICAgIGVvID0gb1t0ICsgMV0KICAgICAgICBpZiBrID49IG4gb3IgZW8gPD0gMDoKICAgICAgICAgICAgY29udGludWUKICAgICAgICBpZiBGWyJwY3QiXVt0XSA+IDAgYW5kIGVvID49IGNbdF0gKiAoMSArIGxpbSkgKiAwLjk5NToKICAgICAgICAgICAgY29udGludWUKICAgICAgICBkID0gc3RyKEZbImRhdGUiXVt0XSkKICAgICAgICBiID0gQkFTRUxJTkUuZ2V0KChkLCBIKSkKICAgICAgICBpZiBiIGlzIE5vbmU6CiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgbWExMCwgbWEyMCA9IGZsb2F0KGcoRiwgIm1hMTAiLCB0KSksIGZsb2F0KGcoRiwgIm1hMjAiLCB0KSkKICAgICAgICBweCA9IGZsb2F0KGNbdF0pCiAgICAgICAgY29kZSA9IHN0cihGWyJjb2RlIl0pCiAgICAgICAgc2VnID0gKCJrYiIgaWYgY29kZS5zdGFydHN3aXRoKCI2OCIpIGVsc2UgImN5IiBpZiBjb2RlLnN0YXJ0c3dpdGgoIjMwIikKICAgICAgICAgICAgICAgZWxzZSAic2giIGlmIGNvZGUuc3RhcnRzd2l0aCgiNiIpIGVsc2UgInN6IikKICAgICAgICBkYXlbZF0uYXBwZW5kKGRpY3Qocz1zLCBzZWc9c2VnLCBleD0oY1trXSAvIGVvIC0gMS4wKSAtIENPU1QgLSBiLAogICAgICAgICAgICAgICAgICAgICAgICAgICByYXc9KGNba10gLyBlbyAtIDEuMCkgLSBDT1NULAogICAgICAgICAgICAgICAgICAgICAgICAgICBhPWZsb2F0KGcoRiwgImF0cl9wY3QiLCB0KSksCiAgICAgICAgICAgICAgICAgICAgICAgICAgIHIyMD1mbG9hdChnKEYsICJyZXQyMCIsIHQpKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgc2w9ZmxvYXQoZyhGLCAibWEyMF9zbG9wZSIsIHQpKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgYmlhczEwPXB4IC8gbWExMCAtIDEuMCBpZiBtYTEwID4gMCBlbHNlIDkuOSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgYmlhczIwPXB4IC8gbWEyMCAtIDEuMCBpZiBtYTIwID4gMCBlbHNlIDkuOSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgdm9scj1mbG9hdChnKEYsICJ2b2xyMjAiLCB0KSksCiAgICAgICAgICAgICAgICAgICAgICAgICAgIHBvcz1mbG9hdChnKEYsICJwb3M1NSIsIHQpKSkpCgpkZWYgcm91bmRyb2Jpbih2LCBjYXApOgogICAgIiIic2NvcmUg5LyY5YWILCDkvYbmr4/kuKrmnb/lnZfmnIDlpJogY2FwIOWPqiAtPiDliIbmlaPpo47moLwsIOmBv+WFjeWQjOS4gOexu+aLpeaMpOiCoemcuOamnCIiIgogICAgYnkgPSB7fQogICAgZm9yIHggaW4gc29ydGVkKHYsIGtleT1sYW1iZGEgeTogLXlbInMiXSk6CiAgICAgICAgZyA9IGJ5LnNldGRlZmF1bHQoeFsic2VnIl0sIFtdKQogICAgICAgIGlmIGxlbihnKSA8IGNhcDoKICAgICAgICAgICAgZy5hcHBlbmQoeCkKICAgIG91dCwgaSA9IFtdLCAwCiAgICB3aGlsZSBUcnVlOgogICAgICAgIGFkZGVkID0gRmFsc2UKICAgICAgICBmb3Igc2VnIGluIHNvcnRlZChieSk6CiAgICAgICAgICAgIGlmIGkgPCBsZW4oYnlbc2VnXSk6CiAgICAgICAgICAgICAgICBvdXQuYXBwZW5kKGJ5W3NlZ11baV0pOyBhZGRlZCA9IFRydWUKICAgICAgICBpZiBub3QgYWRkZWQ6CiAgICAgICAgICAgIGJyZWFrCiAgICAgICAgaSArPSAxCiAgICByZXR1cm4gb3V0CgoKZGVmIHN0cmF0KHYsIGs9MTApOgogICAgIiIi5oyJIHNjb3JlIOWIhuS9jeetiei3neWPliBrIOWPqjog6KaG55uW5pW05Liq5YCZ6YCJ5rGg6ICM5LiN5piv5Y+q5Y+W5aS06YOoIiIiCiAgICB2ID0gc29ydGVkKHYsIGtleT1sYW1iZGEgeDogLXhbInMiXSkKICAgIGlmIGxlbih2KSA8PSBrOgogICAgICAgIHJldHVybiB2CiAgICByZXR1cm4gW3ZbaW50KHJvdW5kKGkgKiAobGVuKHYpIC0gMSkgLyAoayAtIDEpKSldIGZvciBpIGluIHJhbmdlKGspXQoKClJVTEVTID0gewogICAgIjAg5YWo6YOo5ZCI5qC8KOWPguiAgykiOiAobGFtYmRhIHY6IHYsIE5vbmUpLAogICAgIjEgc2NvcmUg6auYLT7kvY4iOiAobGFtYmRhIHY6IHNvcnRlZCh2LCBrZXk9bGFtYmRhIHg6IC14WyJzIl0pLCAxMCksCiAgICAiMiDnprtNQTEw5pyA6L+RKOWbnui4qSkiOiAobGFtYmRhIHY6IHNvcnRlZCh2LCBrZXk9bGFtYmRhIHg6IGFicyh4WyJiaWFzMTAiXSkpLCAxMCksCiAgICAiMyDnprtNQTIw5pyA6L+RIjogKGxhbWJkYSB2OiBzb3J0ZWQodiwga2V5PWxhbWJkYSB4OiBhYnMoeFsiYmlhczIwIl0pKSwgMTApLAogICAgIjQgQVRS6Z2g6L+RMy4zJSI6IChsYW1iZGEgdjogc29ydGVkKHYsIGtleT1sYW1iZGEgeDogYWJzKHhbImEiXSAtIDAuMDMzKSksIDEwKSwKICAgICI1IEFUUumdoOi/kTIuNSUiOiAobGFtYmRhIHY6IHNvcnRlZCh2LCBrZXk9bGFtYmRhIHg6IGFicyh4WyJhIl0gLSAwLjAyNSkpLCAxMCksCiAgICAiNiDlm57ouKkrc2NvcmUiOiAobGFtYmRhIHY6IHNvcnRlZCh2LCBrZXk9bGFtYmRhIHg6IGFicyh4WyJiaWFzMTAiXSkgLSAwLjAxICogeFsicyJdIC8gMTApLCAxMCksCiAgICAiNyBzY29yZSblm57ouKnlj4zmnaHku7YiOiAobGFtYmRhIHY6IHNvcnRlZCh2LCBrZXk9bGFtYmRhIHg6IChhYnMoeFsiYmlhczEwIl0pID4gMC4wNiwgLXhbInMiXSkpLCAxMCksCiAgICAiOCDpmo/mnLoxMOWPqijln7rlh4YpIjogKGxhbWJkYSB2OiBsaXN0KHJuZy5wZXJtdXRhdGlvbih2KVs6MTBdKSwgMTApLAogICAgIjkg6ZqP5py6MTDlj6oo5Z+65YeGMikiOiAobGFtYmRhIHY6IGxpc3Qocm5nLnBlcm11dGF0aW9uKHYpWzoxMF0pLCAxMCksCiAgICAiMTAgQVRSMi41LTQlK3Njb3JlIjogKGxhbWJkYSB2OiBzb3J0ZWQoW3ggZm9yIHggaW4gdiBpZiAwLjAyNSA8PSB4WyJhIl0gPD0gMC4wNDBdLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAga2V5PWxhbWJkYSB4OiAteFsicyJdKSwgMTApLAogICAgIjExIOaWnOeOh+mrmCblm57ouKnmtYUiOiAobGFtYmRhIHY6IHNvcnRlZCh2LCBrZXk9bGFtYmRhIHg6ICgteFsic2wiXSwgYWJzKHhbImJpYXMxMCJdKSkpLCAxMCksCiAgICAiMTIgNjgtNzR6b25lIHRvcDEwIjogKGxhbWJkYSB2OiBzb3J0ZWQoW3ggZm9yIHggaW4gdiBpZiB4WyJzIl0gPCA3NV0sIGtleT1sYW1iZGEgeDogLXhbInMiXSksIDEwKSwKICAgICIxMyA2OC03NHpvbmUgdG9wOCI6IChsYW1iZGEgdjogc29ydGVkKFt4IGZvciB4IGluIHYgaWYgeFsicyJdIDwgNzVdLCBrZXk9bGFtYmRhIHg6IC14WyJzIl0pLCA4KSwKICAgICIxNCA2OC03MnpvbmUgdG9wMTAiOiAobGFtYmRhIHY6IHNvcnRlZChbeCBmb3IgeCBpbiB2IGlmIHhbInMiXSA8IDcyXSwga2V5PWxhbWJkYSB4OiAteFsicyJdKSwgMTApLAogICAgIjE1IDY4LTc0ICvpmo/mnLoiOiAobGFtYmRhIHY6IGxpc3Qocm5nLnBlcm11dGF0aW9uKFt4IGZvciB4IGluIHYgaWYgeFsicyJdIDwgNzVdKSksIDEwKSwKICAgICIxNiDliIblsYIo5oyJc2NvcmXliIbkvY3lj5YxMCkiOiAobGFtYmRhIHY6IFtzb3J0ZWQodiwga2V5PWxhbWJkYSB4OiAteFsicyJdKVtpbnQoaSAqIG1heCgxLCBsZW4odikgLSAxKSAvIDEwKV0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9yIGkgaW4gcmFuZ2UoMTApXSBpZiBsZW4odikgPj0gMTAgZWxzZSB2LCAxMCksCiAgICAiMTcg5L2OQVRS55qEMTDlj6oo6Ziy5b6hKSI6IChsYW1iZGEgdjogc29ydGVkKHYsIGtleT1sYW1iZGEgeDogeFsiYSJdKSwgMTApLAogICAgIjE4IOmrmEFUUueahDEw5Y+qKOi/m+aUuykiOiAobGFtYmRhIHY6IHNvcnRlZCh2LCBrZXk9bGFtYmRhIHg6IC14WyJhIl0pLCAxMCksCiAgICAiMTkg5p2/5Z2X5Z2H6KGhKOavj+e7hDw9MykiOiAobGFtYmRhIHY6IHJvdW5kcm9iaW4odiwgMyksIDEwKSwKICAgICIyMCDmnb/lnZflnYfooaEo5q+P57uEPD0yKSI6IChsYW1iZGEgdjogcm91bmRyb2Jpbih2LCAyKSwgMTApLAogICAgIjIxIOadv+Wdl+Wdh+ihoSjmr4/nu4Q8PTQpIjogKGxhbWJkYSB2OiByb3VuZHJvYmluKHYsIDQpLCAxMCksCiAgICAiMjIg5p2/5Z2X5Z2H6KGhK+WIhuWxgua3t+WQiCI6IChsYW1iZGEgdjogc3RyYXQocm91bmRyb2Jpbih2LCAzKSksIDEwKSwKfQoKZGF0ZXMgPSBzb3J0ZWQoZGF5KQpoMSA9IHNldChkYXRlc1s6bGVuKGRhdGVzKSAvLyAyXSkKcHJpbnQoZiJ7J3J1bGUnOjIwc30geydkYXRlcyc6PjVzfSB7J24vZCc6PjVzfSB7J2RfZXhjJzo+N3N9IHsnaDEnOj43c30geydoMic6PjdzfSAiCiAgICAgIGYieydvb3NfZCc6PjZzfSB7J29vc19leGMnOj43c30geydwb3NNJSc6PjVzfSB7J3dvcnN0TW8nOj43c30geydwMDUnOj43c30geyc+MTBMJzo+NXN9IikKZm9yIGxhYiwgKGZuLCB0b3BuKSBpbiBSVUxFUy5pdGVtcygpOgogICAgcGVyLCBlMSwgZTIsIG9vcGVyLCByYXdzID0gW10sIFtdLCBbXSwgW10sIFtdCiAgICBtbyA9IGRlZmF1bHRkaWN0KGxpc3QpCiAgICBjbnQsIG9uZCA9IFtdLCBbXQogICAgZm9yIGQsIHYgaW4gZGF5Lml0ZW1zKCk6CiAgICAgICAgcGlja3MgPSBmbih2KQogICAgICAgIGlmIHRvcG46CiAgICAgICAgICAgIHBpY2tzID0gcGlja3NbOnRvcG5dCiAgICAgICAgaWYgbGVuKHBpY2tzKSA8IDM6CiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgY250LmFwcGVuZChsZW4ocGlja3MpKQogICAgICAgIG0gPSBmbG9hdChucC5tZWFuKFt4WyJleCJdIGZvciB4IGluIHBpY2tzXSkpCiAgICAgICAgcGVyLmFwcGVuZChtKQogICAgICAgIChlMSBpZiBkIGluIGgxIGVsc2UgZTIpLmFwcGVuZChtKQogICAgICAgIHJhd3MuZXh0ZW5kKFt4WyJyYXciXSBmb3IgeCBpbiBwaWNrc10pCiAgICAgICAgbW9bZFs6N11dLmFwcGVuZChtKQogICAgICAgIGlmIGQgPj0gQ1VUT0ZGOgogICAgICAgICAgICBvb3Blci5hcHBlbmQobSkKICAgICAgICAgICAgb25kLmFwcGVuZChsZW4ocGlja3MpKQogICAgcCA9IG5wLmFycmF5KHBlcikKICAgIG1wID0gbnAuYXJyYXkoW25wLm1lYW4odikgZm9yIHYgaW4gbW8udmFsdWVzKCldKQogICAgUiA9IG5wLmFycmF5KHJhd3MpCiAgICBwcmludChmIntsYWI6MjBzfSB7bGVuKHApOj41ZH0ge25wLm1lYW4oY250KTo+NS4xZn0ge3AubWVhbigpKjEwMDo+KzYuMmZ9JSAiCiAgICAgICAgICBmIntucC5tZWFuKGUxKSoxMDA6Pis2LjJmfSUge25wLm1lYW4oZTIpKjEwMDo+KzYuMmZ9JSB7bGVuKG9vcGVyKTo+NmR9ICIKICAgICAgICAgIGYie25wLm1lYW4ob29wZXIpKjEwMDo+KzYuMmZ9JSB7KG1wPjApLm1lYW4oKSoxMDA6PjQuMGZ9JSB7bXAubWluKCkqMTAwOj4rNi4yZn0lICIKICAgICAgICAgIGYie25wLnBlcmNlbnRpbGUoUiw1KSoxMDA6Pis2LjFmfSUgeyhSPC0wLjEwKS5tZWFuKCkqMTAwOj40LjBmfSUiKQpwcmludChmIlxuZWxpZ2libGUgc3RvY2stZGF5cz17c3VtKGxlbih2KSBmb3IgdiBpbiBkYXkudmFsdWVzKCkpfSwgIgogICAgICBmImRhdGVzIHdpdGggPj0zIHBpY2tzPXtsZW4oWzEgZm9yIHYgaW4gZGF5LnZhbHVlcygpIGlmIGxlbih2KT49M10pfSwgIgogICAgICBmIuW5s+Wdh+avj+aXpeWQiOagvOaVsD17bnAubWVhbihbbGVuKHYpIGZvciB2IGluIGRheS52YWx1ZXMoKSBpZiBsZW4odik+PTNdKTouMWZ9IikK
+#!/usr/bin/env python3
+"""Iteration 18 — LAST: how to build the 每日推荐 list from the eligible book.
+
+Facts established: the score>=68 book is worth +0.69% date-equal excess, but the
+TOP 10 BY SCORE is worth -1.5%. So ranking a short list by score concentrates the
+crowded, extended names. Test selection rules inside the eligible book, using the
+config being shipped (knee 2.0%, ATR penalty 200, capped 30, BUY 68).
+
+Reference points: (a) the whole eligible book, (b) 10 names picked at random from
+the book — a short list must beat that to earn its place.
+"""
+import numpy as np
+from collections import defaultdict
+from model import CUTOFF, _nan, g, stocks, MIN_HIST, COST, H, BASELINE
+
+KNEE, PEN, CAP, BUY = 0.020, 200.0, 30.0, 68.0
+
+
+def ship(F, t):
+    c = F["close"][t]
+    ma10, ma20, ma60, sl = g(F, "ma10", t), g(F, "ma20", t), g(F, "ma60", t), g(F, "ma20_slope", t)
+    if _nan(ma20) or _nan(ma60) or _nan(ma10) or _nan(sl):
+        return 0.0, False
+    s = 50.0
+    up = c > ma20 > ma60
+    dn = c < ma20 < ma60
+    if up:
+        s += 22 if sl > 0.015 else (14 if sl > 0.0 else 6)
+    elif dn:
+        s -= 22 if sl < -0.015 else (14 if sl < 0.0 else 6)
+    else:
+        s -= 3
+    s += 4 if c > ma10 > ma20 else -2
+    a = g(F, "atr_pct", t)
+    if not _nan(a):
+        s -= min(max(0.0, a - KNEE) * PEN, CAP)
+    return float(np.clip(s, 0, 100)), True
+
+
+rng = np.random.default_rng(7)
+day = defaultdict(list)
+for F in stocks:
+    n = int(F["n"])
+    c, o = F["close"], F["open"]
+    lim = 0.097 if F["code"].startswith(("30", "68")) else 0.047
+    for t in range(MIN_HIST, n - 1):
+        s, ok = ship(F, t)
+        if not ok or s < BUY:
+            continue
+        k = t + 1 + H
+        eo = o[t + 1]
+        if k >= n or eo <= 0:
+            continue
+        if F["pct"][t] > 0 and eo >= c[t] * (1 + lim) * 0.995:
+            continue
+        d = str(F["date"][t])
+        b = BASELINE.get((d, H))
+        if b is None:
+            continue
+        ma10, ma20 = float(g(F, "ma10", t)), float(g(F, "ma20", t))
+        px = float(c[t])
+        code = str(F["code"])
+        seg = ("kb" if code.startswith("68") else "cy" if code.startswith("30")
+               else "sh" if code.startswith("6") else "sz")
+        day[d].append(dict(s=s, seg=seg, ex=(c[k] / eo - 1.0) - COST - b,
+                           raw=(c[k] / eo - 1.0) - COST,
+                           a=float(g(F, "atr_pct", t)),
+                           r20=float(g(F, "ret20", t)),
+                           sl=float(g(F, "ma20_slope", t)),
+                           bias10=px / ma10 - 1.0 if ma10 > 0 else 9.9,
+                           bias20=px / ma20 - 1.0 if ma20 > 0 else 9.9,
+                           volr=float(g(F, "volr20", t)),
+                           pos=float(g(F, "pos55", t))))
+
+def roundrobin(v, cap):
+    """score 优先, 但每个板块最多 cap 只 -> 分散风格, 避免同一类拥挤股霸榜"""
+    by = {}
+    for x in sorted(v, key=lambda y: -y["s"]):
+        g = by.setdefault(x["seg"], [])
+        if len(g) < cap:
+            g.append(x)
+    out, i = [], 0
+    while True:
+        added = False
+        for seg in sorted(by):
+            if i < len(by[seg]):
+                out.append(by[seg][i]); added = True
+        if not added:
+            break
+        i += 1
+    return out
+
+
+def strat(v, k=10):
+    """按 score 分位等距取 k 只: 覆盖整个候选池而不是只取头部"""
+    v = sorted(v, key=lambda x: -x["s"])
+    if len(v) <= k:
+        return v
+    return [v[int(round(i * (len(v) - 1) / (k - 1)))] for i in range(k)]
+
+
+RULES = {
+    "0 全部合格(参考)": (lambda v: v, None),
+    "1 score 高->低": (lambda v: sorted(v, key=lambda x: -x["s"]), 10),
+    "2 离MA10最近(回踩)": (lambda v: sorted(v, key=lambda x: abs(x["bias10"])), 10),
+    "3 离MA20最近": (lambda v: sorted(v, key=lambda x: abs(x["bias20"])), 10),
+    "4 ATR靠近3.3%": (lambda v: sorted(v, key=lambda x: abs(x["a"] - 0.033)), 10),
+    "5 ATR靠近2.5%": (lambda v: sorted(v, key=lambda x: abs(x["a"] - 0.025)), 10),
+    "6 回踩+score": (lambda v: sorted(v, key=lambda x: abs(x["bias10"]) - 0.01 * x["s"] / 10), 10),
+    "7 score&回踩双条件": (lambda v: sorted(v, key=lambda x: (abs(x["bias10"]) > 0.06, -x["s"])), 10),
+    "8 随机10只(基准)": (lambda v: list(rng.permutation(v)[:10]), 10),
+    "9 随机10只(基准2)": (lambda v: list(rng.permutation(v)[:10]), 10),
+    "10 ATR2.5-4%+score": (lambda v: sorted([x for x in v if 0.025 <= x["a"] <= 0.040],
+                                           key=lambda x: -x["s"]), 10),
+    "11 斜率高&回踩浅": (lambda v: sorted(v, key=lambda x: (-x["sl"], abs(x["bias10"]))), 10),
+    "12 68-74zone top10": (lambda v: sorted([x for x in v if x["s"] < 75], key=lambda x: -x["s"]), 10),
+    "13 68-74zone top8": (lambda v: sorted([x for x in v if x["s"] < 75], key=lambda x: -x["s"]), 8),
+    "14 68-72zone top10": (lambda v: sorted([x for x in v if x["s"] < 72], key=lambda x: -x["s"]), 10),
+    "15 68-74 +随机": (lambda v: list(rng.permutation([x for x in v if x["s"] < 75])), 10),
+    "16 分层(按score分位取10)": (lambda v: [sorted(v, key=lambda x: -x["s"])[int(i * max(1, len(v) - 1) / 10)]
+                                          for i in range(10)] if len(v) >= 10 else v, 10),
+    "17 低ATR的10只(防御)": (lambda v: sorted(v, key=lambda x: x["a"]), 10),
+    "18 高ATR的10只(进攻)": (lambda v: sorted(v, key=lambda x: -x["a"]), 10),
+    "19 板块均衡(每组<=3)": (lambda v: roundrobin(v, 3), 10),
+    "20 板块均衡(每组<=2)": (lambda v: roundrobin(v, 2), 10),
+    "21 板块均衡(每组<=4)": (lambda v: roundrobin(v, 4), 10),
+    "22 板块均衡+分层混合": (lambda v: strat(roundrobin(v, 3)), 10),
+}
+
+dates = sorted(day)
+h1 = set(dates[:len(dates) // 2])
+print(f"{'rule':20s} {'dates':>5s} {'n/d':>5s} {'d_exc':>7s} {'h1':>7s} {'h2':>7s} "
+      f"{'oos_d':>6s} {'oos_exc':>7s} {'posM%':>5s} {'worstMo':>7s} {'p05':>7s} {'>10L':>5s}")
+for lab, (fn, topn) in RULES.items():
+    per, e1, e2, ooper, raws = [], [], [], [], []
+    mo = defaultdict(list)
+    cnt, ond = [], []
+    for d, v in day.items():
+        picks = fn(v)
+        if topn:
+            picks = picks[:topn]
+        if len(picks) < 3:
+            continue
+        cnt.append(len(picks))
+        m = float(np.mean([x["ex"] for x in picks]))
+        per.append(m)
+        (e1 if d in h1 else e2).append(m)
+        raws.extend([x["raw"] for x in picks])
+        mo[d[:7]].append(m)
+        if d >= CUTOFF:
+            ooper.append(m)
+            ond.append(len(picks))
+    p = np.array(per)
+    mp = np.array([np.mean(v) for v in mo.values()])
+    R = np.array(raws)
+    print(f"{lab:20s} {len(p):>5d} {np.mean(cnt):>5.1f} {p.mean()*100:>+6.2f}% "
+          f"{np.mean(e1)*100:>+6.2f}% {np.mean(e2)*100:>+6.2f}% {len(ooper):>6d} "
+          f"{np.mean(ooper)*100:>+6.2f}% {(mp>0).mean()*100:>4.0f}% {mp.min()*100:>+6.2f}% "
+          f"{np.percentile(R,5)*100:>+6.1f}% {(R<-0.10).mean()*100:>4.0f}%")
+print(f"\neligible stock-days={sum(len(v) for v in day.values())}, "
+      f"dates with >=3 picks={len([1 for v in day.values() if len(v)>=3])}, "
+      f"平均每日合格数={np.mean([len(v) for v in day.values() if len(v)>=3]):.1f}")

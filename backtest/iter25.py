@@ -1,1 +1,152 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJpdGVyMjUg4oCUIOWAmemAieS4iue6v+inhOWImeeahOWQjOWPsOWvueavlO+8iOWQjOS4gOWfuuWHhuOAgeWQjOS4gOatouaNn+i/keS8vOOAgeWQjOS4gOe7n+iuoeWPo+W+hO+8ieOAggoK6KeE5YiZ5b2i5oCB77ya5rGgID0g5b2T5pel5Y+v6K+E5YiG6IKh56Wo6YeMIuWIhuaVsOWJjSBmcSDlkI0gKirkuJQqKiDliIbmlbAgPj0gdGgi77yMCuiLpeaxoOS4jei2syBtaW5fcG9vbCDlj6rliJnnqbrku5PvvJvku47msaDph4zliIblsYLmir0gSyDlj6rnrYnmnYPvvIzmjIEgSCDkuKrkuqTmmJPml6XjgIIKUjAgPSDnjrDooYzkuIrnur/vvIjiiaU2OCDlhajpg6jnrYnmnYPvvIzlj6/nqbrku5PvvInvvIznlKjmnaXlvZPooqvmo4Dpqozlr7nosaHjgIIKIiIiCmltcG9ydCBvcwppbXBvcnQgc3lzCgppbXBvcnQgbnVtcHkgYXMgbnAKCkhFUkUgPSBvcy5wYXRoLmRpcm5hbWUob3MucGF0aC5hYnNwYXRoKF9fZmlsZV9fKSkKc3lzLnBhdGguaW5zZXJ0KDAsIEhFUkUpCmltcG9ydCBmYXN0IGFzIFggICMgbm9xYTogRTQwMgppbXBvcnQgaXRlcjIyIGFzIEkgICMgbm9xYTogRTQwMgppbXBvcnQgaXRlcjIzIGFzIEggICMgbm9xYTogRTQwMgppbXBvcnQgcG9ydHNpbSBhcyBQICAjIG5vcWE6IEU0MDIKZnJvbSBtb2RlbCBpbXBvcnQgQ1VUT0ZGLCBEQVRFUyAgIyBub3FhOiBFNDAyCgpORCwgTlMgPSBQLk5ELCBQLk5TClMwID0gUC5NQVRbIl9TIl1bIm5ldyJdCgoKZGVmIHJvd3NfcnVsZSh0aD02OC4wLCBmcT1Ob25lLCBLPTIwLCBIXz0yMCwgc3RvcD1Ob25lLCBtaW5fcG9vbD0zLCBtb2RlPSJzdHJhdCIsCiAgICAgICAgICAgICAgcmVnaW1lPU5vbmUsIGhhbGY9RmFsc2UsIFM9Tm9uZSwgb2ZmPTAsIHNlZWQ9MTcpOgogICAgUyA9IFMwIGlmIFMgaXMgTm9uZSBlbHNlIFMKICAgIHZhbGlkID0gWC52YWxpZF9tYXQoUywgSF8pCiAgICBSID0gWC5yZXRfbWF0KEhfKSBpZiBzdG9wIGlzIE5vbmUgZWxzZSBJLnN0b3BfcmV0KEhfLCBzdG9wLCB2YWxpZCkKICAgIGJlbmNoID0gbnAubmFubWVhbihucC53aGVyZSh2YWxpZCwgUiBpZiBzdG9wIGlzIE5vbmUgZWxzZSBYLnJldF9tYXQoSF8pLCBucC5uYW4pLCBheGlzPTEpCiAgICBiZW5jaCA9IG5wLndoZXJlKG5wLmlzbmFuKGJlbmNoKSwgMC4wLCBiZW5jaCkKICAgIG9yZGVyID0gbnAuYXJnc29ydChucC53aGVyZSh2YWxpZCwgUywgLW5wLmluZiksIGF4aXM9MSlbOiwgOjotMV0KICAgIG91dCA9IFtdCiAgICBmb3IgaSBpbiByYW5nZShORCAtIDEgLSBIXyk6CiAgICAgICAgZyA9IF9yZWdpbWVfdyhpLCByZWdpbWUsIGhhbGYpCiAgICAgICAgaWYgZyA8PSAwLjA6CiAgICAgICAgICAgIG91dC5hcHBlbmQoKERBVEVTW2ldLCAwLjAsIGZsb2F0KGJlbmNoW2ldKSwgMCkpCiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgcmFua2VkID0gb3JkZXJbaV0KICAgICAgICByYW5rZWQgPSByYW5rZWRbdmFsaWRbaSwgcmFua2VkXV0KICAgICAgICB0YWtlID0gbWluKGxlbihyYW5rZWQpLCBpbnQocm91bmQoZnEgKiBOUykpKSBpZiBmcSBlbHNlIGxlbihyYW5rZWQpCiAgICAgICAgcG9vbCA9IHJhbmtlZFs6dGFrZV0gaWYgdGFrZSBlbHNlIHJhbmtlZAogICAgICAgIHBvb2wgPSBbaiBmb3IgaiBpbiBwb29sIGlmIFNbaSwgal0gPj0gdGhdCiAgICAgICAgaWYgbGVuKHBvb2wpIDwgbWluX3Bvb2w6CiAgICAgICAgICAgIG91dC5hcHBlbmQoKERBVEVTW2ldLCAwLjAsIGZsb2F0KGJlbmNoW2ldKSwgMCkpCiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgcHAgPSBucC5hcnJheShwb29sKQogICAgICAgIGlmIEsgYW5kIGxlbihwcCkgPiBLOgogICAgICAgICAgICBpZiBtb2RlID09ICJzdHJhdCI6CiAgICAgICAgICAgICAgICBubiA9IGxlbihwcCkKICAgICAgICAgICAgICAgICMgb2ZmPTAg5LiOIEtvdGxpbiBzZWxlY3REYWlseUNhbmRpZGF0ZXMg55qE5YiG5bGC5oq95qC35a6M5YWo5LiA6Ie0CiAgICAgICAgICAgICAgICBwb3MgPSBzb3J0ZWQoeyhpbnQodCAqIChubiAtIDEpIC8gSykgKyBvZmYpICUgbm4gZm9yIHQgaW4gcmFuZ2UoSyl9KQogICAgICAgICAgICAgICAgc2VsID0gcHBbbnAuYXJyYXkocG9zKV0KICAgICAgICAgICAgZWxpZiBtb2RlID09ICJyYW5kIjoKICAgICAgICAgICAgICAgIHNlbCA9IG5wLnJhbmRvbS5kZWZhdWx0X3JuZyhzZWVkICogMTAwMDAzICsgaSkuY2hvaWNlKHBwLCBLLCByZXBsYWNlPUZhbHNlKQogICAgICAgICAgICBlbGlmIG1vZGUgPT0gInRvcCI6CiAgICAgICAgICAgICAgICBzZWwgPSBwcFs6S10KICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgIGtrID0gSS5LRVlNQVRbbW9kZV1baSwgcHBdCiAgICAgICAgICAgICAgICBzZWwgPSBwcFtucC5hcmdzb3J0KC1ucC5uYW5fdG9fbnVtKGtrLCBuYW49LTFlOSkpWzpLXV0KICAgICAgICBlbHNlOgogICAgICAgICAgICBzZWwgPSBwcAogICAgICAgIHJyID0gUltpLCBzZWxdCiAgICAgICAgcnIgPSBycltucC5pc2Zpbml0ZShycildCiAgICAgICAgb3V0LmFwcGVuZCgoREFURVNbaV0sIGcgKiAoZmxvYXQobnAubWVhbihycikpIGlmIHJyLnNpemUgZWxzZSAwLjApLCBmbG9hdChiZW5jaFtpXSksCiAgICAgICAgICAgICAgICAgICAgbGVuKHJyKSBpZiBnID49IDEuMCBlbHNlIGludChyb3VuZChsZW4ocnIpICogZykpIG9yIDEpKQogICAgcmV0dXJuIG91dAoKCmRlZiBfcmVnaW1lX3coaSwgbWEsIGhhbGYpOgogICAgIiIi6LeM56C05aSn55uYIDQwIOaXpeWdh+e6v+aXtueahOS7k+S9jeezu+aVsO+8muepuuS7kz0w77yM5Y2K5LuTPTAuNe+8jOS4jeaLqeaXtj0x44CCIiIiCiAgICBpZiBub3QgbWE6CiAgICAgICAgcmV0dXJuIDEuMAogICAgciwgbSA9IFAudW5pdmVyc2VfaW5kZXgobWEpCiAgICBpZiBucC5pc25hbihtW2ldKSBvciBucC5pc25hbihyW2ldKToKICAgICAgICByZXR1cm4gMS4wCiAgICByZXR1cm4gMS4wIGlmIHJbaV0gPj0gbVtpXSBlbHNlICgwLjUgaWYgaGFsZiBlbHNlIDAuMCkKCgpJRFggPSB7ZDogaSBmb3IgaSwgZCBpbiBlbnVtZXJhdGUoREFURVMpfQoKCmRlZiBwaGFzZV9jdW0ociwgZHMsIEhfLCBzaW5jZT1Ob25lKToKICAgICIiIuaMieebuOS9je+8iOavjyBIXyDlpKnmjaLku5PnmoQgOCDnp43nvZHmoLzvvInliIbliKvntK/kuZjlho3lj5blnYflgLwg4oCU4oCUIOavj+aXpeagt+acrOaYr+mHjeWPoOeahO+8jAogICAg55u05o6lIHByb2Qg5Lya5oqK5ZCM5LiA56yU5oyB5LuT6YeN5aSN6K6h5YWlIDIwIOasoe+8jOWbnuaSpOWSjOe0r+iuoemDveS8muiZmumrmOOAgiIiIgogICAgY3VtcyA9IFtdCiAgICBmb3IgcCBpbiByYW5nZShIXyk6CiAgICAgICAgamogPSBbaiBmb3IgaiwgZCBpbiBlbnVtZXJhdGUoZHMpCiAgICAgICAgICAgICAgaWYgKHNpbmNlIGlzIE5vbmUgb3IgZCA+PSBzaW5jZSkgYW5kIChJRFhbZF0gLSBwKSAlIEhfID09IDBdCiAgICAgICAgaWYgbGVuKGpqKSA8IDM6CiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgY3Vtcy5hcHBlbmQoZmxvYXQobnAucHJvZCgxICsgcltqal0pIC0gMSkpCiAgICByZXR1cm4gZmxvYXQobnAubWVhbihjdW1zKSkgaWYgY3VtcyBlbHNlIGZsb2F0KCJuYW4iKQoKCmRlZiByZXAobGFiZWwsIG91dCwgYmgsIEhfPTIwKToKICAgIHYgPSBILnN1bW1hcml6ZShvdXQsIGYie2xhYmVsOjwzMH0iLCBIPUhfLCBiaD1iaCkKICAgIGV4cG8gPSBucC5tZWFuKFsxIGlmIHhbM10gPiAwIGVsc2UgMCBmb3IgeCBpbiBvdXRdKQogICAgZHMgPSBbeFswXSBmb3IgeCBpbiBvdXRdCiAgICByID0gbnAuYXJyYXkoW3hbMV0gZm9yIHggaW4gb3V0XSkKICAgIHByaW50KGYiICAgICDilJQg5oyB5LuT546HIHtleHBvKjEwMDozLjBmfSUgIOaXpeWdh+WPquaVsCB7bnAubWVhbihbeFszXSBmb3IgeCBpbiBvdXRdKTo1LjFmfSAgIgogICAgICAgICAgZiLmoLfmnKzlpJbntK/orqEge3BoYXNlX2N1bShyLCBkcywgSF8sIENVVE9GRikqMTAwOis2LjFmfSUgIOacgOW3ruevruWtkCB7ci5taW4oKSoxMDA6KzUuMWZ9JSIpCiAgICByZXR1cm4gdgoKCmRlZiBtYWluKCk6CiAgICBiaCA9IFAuYmVuY2hfaG9sZCgwLCBORCkKICAgIHJpLCBfID0gUC51bml2ZXJzZV9pbmRleCg0MCkKICAgIGJoX2RkID0gZmxvYXQoKHJpIC8gbnAubWF4aW11bS5hY2N1bXVsYXRlKHJpKSAtIDEpLm1pbigpKQogICAgcHJpbnQoZiJcbuWfuuWHhu+8mjI4OCDlj6rnrYnmnYPkubDlhaXmjIHmnIkg57Sv6K6hIHtiaCoxMDA6Ky4xZn0lICDmnIDlpKflm57mkqQge2JoX2RkKjEwMDouMWZ9JSIpCgogICAgcHJpbnQoIlxuPT09PSDnjrDooYzkuIrnur/vvIhSMO+8iT09PT0iKQogICAgcmVwKCJSMCDnjrDooYwg4omlNjgg5YWo6YOo562J5p2DIiwKICAgICAgICBbKGQsIHgsIHksIG4pIGZvciBkLCB4LCB5LCBuIGluIFAuZGFpbHkoZGljdChzY29yZT0ibmV3IiwgdGg9NjguMCwgSz1Ob25lLCBIPTIwKSldLCBiaCkKCiAgICBwcmludCgiXG49PT09IOebuOWvueWuveW6puaxoO+8iOWAmemAieS4iue6v++8iT09PT0iKQogICAgZm9yIHRoLCBmcSwgSyBpbiAoKDYwLjAsIDAuNDAsIDIwKSwgKDYwLjAsIDAuMzUsIDIwKSwgKDYwLjAsIDAuMzAsIDE1KSwgKDYwLjAsIDAuNDAsIDMwKSwKICAgICAgICAgICAgICAgICAgICAgICg2OC4wLCAwLjQwLCAyMCksICg1NS4wLCAwLjQwLCAyMCksICg2MC4wLCAwLjUwLCAyMCkpOgogICAgICAgIHJlcChmIuKJpXt0aDouMGZ9IOS4lCDliY17ZnEqMTAwOi4wZn0lIMK3IOWIhuWxguWPlntLfSIsIHJvd3NfcnVsZSh0aCwgZnEsIEspLCBiaCkKCiAgICBwcmludCgiXG49PT09IOe7neWvuemXqOanm+WIsOW6leacieayoeacieeUqO+8iOWJjTQwJSDCtyDliIblsYIyMCDCtyDlj6rmjaIgdGjvvIk9PT09IikKICAgIGZvciB0aCBpbiAoMC4wLCA0My4wLCA1NS4wLCA2MC4wLCA2NS4wLCA2OC4wKToKICAgICAgICByZXAoZiJ0aD17dGg6LjBmfSDkuJQg5YmNNDAlIMK3IOWIhuWxgjIwIiwgcm93c19ydWxlKHRoLCAwLjQwLCAyMCksIGJoKQoKICAgIHByaW50KCJcbj09PT0g5ZCM5LiK77yM5YqgIDLDl0FUUiDmraLmjZ8gPT09PSIpCiAgICBmb3IgdGgsIGZxLCBLIGluICgoNjAuMCwgMC40MCwgMjApLCAoNjAuMCwgMC4zNSwgMjApLCAoNjAuMCwgMC4zMCwgMTUpKToKICAgICAgICByZXAoZiLiiaV7dGg6LjBmfcK35YmNe2ZxKjEwMDouMGZ9JcK35Y+We0t9wrfmraLmjZ8yQVRSIiwgcm93c19ydWxlKHRoLCBmcSwgSywgc3RvcD0yLjApLCBiaCkKCiAgICBwcmludCgiXG49PT09IOWQjOS4iu+8jOWKoCAzw5dBVFIg5q2i5o2fID09PT0iKQogICAgZm9yIHRoLCBmcSwgSyBpbiAoKDYwLjAsIDAuNDAsIDIwKSwgKDYwLjAsIDAuMzUsIDIwKSk6CiAgICAgICAgcmVwKGYi4omle3RoOi4wZn3Ct+WJjXtmcSoxMDA6LjBmfSXCt+WPlntLfcK35q2i5o2fM0FUUiIsIHJvd3NfcnVsZSh0aCwgZnEsIEssIHN0b3A9My4wKSwgYmgpCgogICAgcHJpbnQoIlxuPT09PSDmi6nml7bpmY3ku5PvvIjot4znoLTlpKfnm5ggNDAg5pel5Z2H57q/4oaS56m65LuTL+WNiuS7k++8iT09PT0iKQogICAgcmVwKCLliY00MCXCtzIw5Y+qwrdNQTQw56m65LuTIiwgcm93c19ydWxlKDYwLjAsIDAuNDAsIDIwLCByZWdpbWU9NDAsIGhhbGY9RmFsc2UpLCBiaCkKICAgIHJlcCgi5YmNNDAlwrcyMOWPqsK3TUE0MOWNiuS7kyIsIHJvd3NfcnVsZSg2MC4wLCAwLjQwLCAyMCwgcmVnaW1lPTQwLCBoYWxmPVRydWUpLCBiaCkKICAgIHJlcCgi5YmNNDAlwrcyMOWPqsK35q2i5o2fMitNQTQw5Y2K5LuTIiwgcm93c19ydWxlKDYwLjAsIDAuNDAsIDIwLCBzdG9wPTIuMCwgcmVnaW1lPTQwLCBoYWxmPVRydWUpLCBiaCkKCiAgICBwcmludCgiXG49PT09IOaOkuW6j+aWueW8j+WvueeFp++8iOWQjOS4gOaxoO+8iT09PT0iKQogICAgZm9yIG1vZGUgaW4gKCJzdHJhdCIsICJyYW5kIiwgInRvcCIsICLph4/mr5QiLCAi5L2O5rOi5YqoIik6CiAgICAgICAgcmVwKGYi5YmNNDAlwrcyMOWPqsK3bW9kZT17bW9kZX0iLCByb3dzX3J1bGUoNjAuMCwgMC40MCwgMjAsIG1vZGU9bW9kZSksIGJoKQoKICAgIHByaW50KCJcbj09PT0g5Y+q5pWw5a+554Wn77yI5YmNNDAlwrfiiaU2MMK35YiG5bGC77yJPT09PSIpCiAgICBmb3IgSyBpbiAoMTAsIDE1LCAyMCwgMjUsIDQwKToKICAgICAgICByZXAoZiLliY00MCXCt+KJpTYwwrfliIblsYLlj5Z7S30iLCByb3dzX3J1bGUoNjAuMCwgMC40MCwgSyksIGJoKQoKICAgIHByaW50KCJcbj09PT0g5oyB5pyJ5pyf5a+554Wn77yI5YmNNDAlwrcyMOWPqsK34omlNjDvvIzlkKsgMkFUUiDmraLmjZ/vvIk9PT09IikKICAgIGZvciBoIGluICgxMCwgMTUsIDIwLCAzMCk6CiAgICAgICAgcmVwKGYiSD17aH0iLCByb3dzX3J1bGUoNjAuMCwgMC40MCwgMjAsIEhfPWgsIHN0b3A9Mi4wKSwgYmgsIEhfPWgpCgoKaWYgX19uYW1lX18gPT0gIl9fbWFpbl9fIjoKICAgIG1haW4oKQo=
+#!/usr/bin/env python3
+"""iter25 — 候选上线规则的同台对比（同一基准、同一止损近似、同一统计口径）。
+
+规则形态：池 = 当日可评分股票里"分数前 fq 名 **且** 分数 >= th"，
+若池不足 min_pool 只则空仓；从池里分层抽 K 只等权，持 H 个交易日。
+R0 = 现行上线（≥68 全部等权，可空仓），用来当被检验对象。
+"""
+import os
+import sys
+
+import numpy as np
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+import fast as X  # noqa: E402
+import iter22 as I  # noqa: E402
+import iter23 as H  # noqa: E402
+import portsim as P  # noqa: E402
+from model import CUTOFF, DATES  # noqa: E402
+
+ND, NS = P.ND, P.NS
+S0 = P.MAT["_S"]["new"]
+
+
+def rows_rule(th=68.0, fq=None, K=20, H_=20, stop=None, min_pool=3, mode="strat",
+              regime=None, half=False, S=None, off=0, seed=17):
+    S = S0 if S is None else S
+    valid = X.valid_mat(S, H_)
+    R = X.ret_mat(H_) if stop is None else I.stop_ret(H_, stop, valid)
+    bench = np.nanmean(np.where(valid, R if stop is None else X.ret_mat(H_), np.nan), axis=1)
+    bench = np.where(np.isnan(bench), 0.0, bench)
+    order = np.argsort(np.where(valid, S, -np.inf), axis=1)[:, ::-1]
+    out = []
+    for i in range(ND - 1 - H_):
+        g = _regime_w(i, regime, half)
+        if g <= 0.0:
+            out.append((DATES[i], 0.0, float(bench[i]), 0))
+            continue
+        ranked = order[i]
+        ranked = ranked[valid[i, ranked]]
+        take = min(len(ranked), int(round(fq * NS))) if fq else len(ranked)
+        pool = ranked[:take] if take else ranked
+        pool = [j for j in pool if S[i, j] >= th]
+        if len(pool) < min_pool:
+            out.append((DATES[i], 0.0, float(bench[i]), 0))
+            continue
+        pp = np.array(pool)
+        if K and len(pp) > K:
+            if mode == "strat":
+                nn = len(pp)
+                # off=0 与 Kotlin selectDailyCandidates 的分层抽样完全一致
+                pos = sorted({(int(t * (nn - 1) / K) + off) % nn for t in range(K)})
+                sel = pp[np.array(pos)]
+            elif mode == "rand":
+                sel = np.random.default_rng(seed * 100003 + i).choice(pp, K, replace=False)
+            elif mode == "top":
+                sel = pp[:K]
+            else:
+                kk = I.KEYMAT[mode][i, pp]
+                sel = pp[np.argsort(-np.nan_to_num(kk, nan=-1e9))[:K]]
+        else:
+            sel = pp
+        rr = R[i, sel]
+        rr = rr[np.isfinite(rr)]
+        out.append((DATES[i], g * (float(np.mean(rr)) if rr.size else 0.0), float(bench[i]),
+                    len(rr) if g >= 1.0 else int(round(len(rr) * g)) or 1))
+    return out
+
+
+def _regime_w(i, ma, half):
+    """跌破大盘 40 日均线时的仓位系数：空仓=0，半仓=0.5，不择时=1。"""
+    if not ma:
+        return 1.0
+    r, m = P.universe_index(ma)
+    if np.isnan(m[i]) or np.isnan(r[i]):
+        return 1.0
+    return 1.0 if r[i] >= m[i] else (0.5 if half else 0.0)
+
+
+IDX = {d: i for i, d in enumerate(DATES)}
+
+
+def phase_cum(r, ds, H_, since=None):
+    """按相位（每 H_ 天换仓的 8 种网格）分别累乘再取均值 —— 每日样本是重叠的，
+    直接 prod 会把同一笔持仓重复计入 20 次，回撤和累计都会虚高。"""
+    cums = []
+    for p in range(H_):
+        jj = [j for j, d in enumerate(ds)
+              if (since is None or d >= since) and (IDX[d] - p) % H_ == 0]
+        if len(jj) < 3:
+            continue
+        cums.append(float(np.prod(1 + r[jj]) - 1))
+    return float(np.mean(cums)) if cums else float("nan")
+
+
+def rep(label, out, bh, H_=20):
+    v = H.summarize(out, f"{label:<30}", H=H_, bh=bh)
+    expo = np.mean([1 if x[3] > 0 else 0 for x in out])
+    ds = [x[0] for x in out]
+    r = np.array([x[1] for x in out])
+    print(f"     └ 持仓率 {expo*100:3.0f}%  日均只数 {np.mean([x[3] for x in out]):5.1f}  "
+          f"样本外累计 {phase_cum(r, ds, H_, CUTOFF)*100:+6.1f}%  最差篮子 {r.min()*100:+5.1f}%")
+    return v
+
+
+def main():
+    bh = P.bench_hold(0, ND)
+    ri, _ = P.universe_index(40)
+    bh_dd = float((ri / np.maximum.accumulate(ri) - 1).min())
+    print(f"\n基准：288 只等权买入持有 累计 {bh*100:+.1f}%  最大回撤 {bh_dd*100:.1f}%")
+
+    print("\n==== 现行上线（R0）====")
+    rep("R0 现行 ≥68 全部等权",
+        [(d, x, y, n) for d, x, y, n in P.daily(dict(score="new", th=68.0, K=None, H=20))], bh)
+
+    print("\n==== 相对宽度池（候选上线）====")
+    for th, fq, K in ((60.0, 0.40, 20), (60.0, 0.35, 20), (60.0, 0.30, 15), (60.0, 0.40, 30),
+                      (68.0, 0.40, 20), (55.0, 0.40, 20), (60.0, 0.50, 20)):
+        rep(f"≥{th:.0f} 且 前{fq*100:.0f}% · 分层取{K}", rows_rule(th, fq, K), bh)
+
+    print("\n==== 绝对门槛到底有没有用（前40% · 分层20 · 只换 th）====")
+    for th in (0.0, 43.0, 55.0, 60.0, 65.0, 68.0):
+        rep(f"th={th:.0f} 且 前40% · 分层20", rows_rule(th, 0.40, 20), bh)
+
+    print("\n==== 同上，加 2×ATR 止损 ====")
+    for th, fq, K in ((60.0, 0.40, 20), (60.0, 0.35, 20), (60.0, 0.30, 15)):
+        rep(f"≥{th:.0f}·前{fq*100:.0f}%·取{K}·止损2ATR", rows_rule(th, fq, K, stop=2.0), bh)
+
+    print("\n==== 同上，加 3×ATR 止损 ====")
+    for th, fq, K in ((60.0, 0.40, 20), (60.0, 0.35, 20)):
+        rep(f"≥{th:.0f}·前{fq*100:.0f}%·取{K}·止损3ATR", rows_rule(th, fq, K, stop=3.0), bh)
+
+    print("\n==== 择时降仓（跌破大盘 40 日均线→空仓/半仓）====")
+    rep("前40%·20只·MA40空仓", rows_rule(60.0, 0.40, 20, regime=40, half=False), bh)
+    rep("前40%·20只·MA40半仓", rows_rule(60.0, 0.40, 20, regime=40, half=True), bh)
+    rep("前40%·20只·止损2+MA40半仓", rows_rule(60.0, 0.40, 20, stop=2.0, regime=40, half=True), bh)
+
+    print("\n==== 排序方式对照（同一池）====")
+    for mode in ("strat", "rand", "top", "量比", "低波动"):
+        rep(f"前40%·20只·mode={mode}", rows_rule(60.0, 0.40, 20, mode=mode), bh)
+
+    print("\n==== 只数对照（前40%·≥60·分层）====")
+    for K in (10, 15, 20, 25, 40):
+        rep(f"前40%·≥60·分层取{K}", rows_rule(60.0, 0.40, K), bh)
+
+    print("\n==== 持有期对照（前40%·20只·≥60，含 2ATR 止损）====")
+    for h in (10, 15, 20, 30):
+        rep(f"H={h}", rows_rule(60.0, 0.40, 20, H_=h, stop=2.0), bh, H_=h)
+
+
+if __name__ == "__main__":
+    main()

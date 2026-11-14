@@ -1,1 +1,97 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJpdGVyMzIg4oCUIOWumueov+inhOWIme+8iOWJjTUwJeaxoMK35YiG5bGCMjDvvInkuYvkuIrvvIzov5jopoHkuI3opoHnlZnkuIDkuKoi5pyA5L2O5YiGIu+8nwoK5Yqo5py65piv5Lqn5ZOB5LiA6Ie05oCn77yM5LiN5piv5pS255uK77ya5ZCN5Y2V6YeM5Ye6546wIuW8uueDiOWHj+S7k++8iOKJpDMw77yJIueahOiCoeelqO+8jOeUqOaIt+S8muW9k+aIkOiHquebuOefm+ebvuOAggrmiYDku6Xmiornu53lr7npl6jmp5vnm7TmjqXliqDlnKjliIbkvY3msaDkuIrmtYvkuIDpgY3vvJrpl6jmp5vliZTmjonnmoTmmK/msaDlupXpgqPlh6Dlj6rvvIzlkIzml7bkuZ/kvJrmlLnlj5jliIblsYLlj5bmoLfnmoQK5L2N572u77yI6L+Z5Lya6K6p57uT5p6c5oqW5Yqo77yJ77yM5Zug5q2k5b+F6aG755yL6YWN5a+55qOA6aqM77yM6ICM5LiN5piv5Y+q55yL5Z2H5YC85beu44CCCiIiIgppbXBvcnQgb3MKaW1wb3J0IHN5cwoKaW1wb3J0IG51bXB5IGFzIG5wCgpIRVJFID0gb3MucGF0aC5kaXJuYW1lKG9zLnBhdGguYWJzcGF0aChfX2ZpbGVfXykpCnN5cy5wYXRoLmluc2VydCgwLCBIRVJFKQppbXBvcnQgaXRlcjIzIGFzIEgyMyAgIyBub3FhOiBFNDAyCmltcG9ydCBpdGVyMzEgYXMgQiAgIyBub3FhOiBFNDAyCmZyb20gbW9kZWwgaW1wb3J0IERBVEVTICAjIG5vcWE6IEU0MDIKCk5ELCBIUCA9IEIuTkQsIEIuSFAKCgpkZWYgcm93c19mKHRoPTAuMCwgZnE9Qi5GSU5BTF9GUSwgSz1CLkZJTkFMX0spOgogICAgb3V0ID0gW10KICAgIGZvciBpIGluIHJhbmdlKE5EIC0gMSAtIEhQKToKICAgICAgICByYW5rZWQgPSBCLlJBTktbaV0KICAgICAgICByYW5rZWQgPSByYW5rZWRbQi5WQUxJRFtpLCByYW5rZWRdXQogICAgICAgIG4gPSBsZW4ocmFua2VkKQogICAgICAgIHBvb2wgPSBbaiBmb3IgaiBpbiByYW5rZWRbOm1pbihuLCBpbnQobnAuY2VpbChmcSAqIG4pKSldIGlmIEIuU1tpLCBqXSA+PSB0aF0KICAgICAgICBpZiBub3QgcG9vbDoKICAgICAgICAgICAgb3V0LmFwcGVuZCgoREFURVNbaV0sIDAuMCwgZmxvYXQoQi5CTVtpXSksIDApKQogICAgICAgICAgICBjb250aW51ZQogICAgICAgIHBwID0gbnAuYXJyYXkocG9vbCkKICAgICAgICBxID0gbGVuKHBwKQogICAgICAgIHNlbCA9IHBwIGlmIHEgPD0gSyBlbHNlIHBwW25wLmFycmF5KHNvcnRlZCh7aW50KHQgKiAocSAtIDEpIC8gSykgZm9yIHQgaW4gcmFuZ2UoSyl9KSldCiAgICAgICAgdiA9IEIuUltpLCBzZWxdCiAgICAgICAgdiA9IHZbbnAuaXNmaW5pdGUodildCiAgICAgICAgb3V0LmFwcGVuZCgoREFURVNbaV0sIGZsb2F0KG5wLm1lYW4odikpIGlmIHYuc2l6ZSBlbHNlIDAuMCwgZmxvYXQoQi5CTVtpXSksIHYuc2l6ZSkpCiAgICByZXR1cm4gb3V0CgoKZGVmIF9zZWwoaSwgdGgpOgogICAgIiIi6Zeo5qebIHRoIOS4i+OAgeWIhuS9jeaxoOeahOWIhuWxguWPluagt+e7k+aenO+8iOS4jiByb3dzX2Yg5ZCM5LiA5p2h6Lev5b6E77yJ44CCIiIiCiAgICByYW5rZWQgPSBCLlJBTktbaV0KICAgIHJhbmtlZCA9IHJhbmtlZFtCLlZBTElEW2ksIHJhbmtlZF1dCiAgICBuID0gbGVuKHJhbmtlZCkKICAgIHBvb2wgPSBbaiBmb3IgaiBpbiByYW5rZWRbOm1pbihuLCBpbnQobnAuY2VpbChCLkZJTkFMX0ZRICogbikpKV0gaWYgQi5TW2ksIGpdID49IHRoXQogICAgaWYgbm90IHBvb2w6CiAgICAgICAgcmV0dXJuIG5wLmFycmF5KFtdLCBpbnQpCiAgICBwcCA9IG5wLmFycmF5KHBvb2wpCiAgICBxID0gbGVuKHBwKQogICAgcmV0dXJuIHBwIGlmIHEgPD0gQi5GSU5BTF9LIGVsc2UgcHBbbnAuYXJyYXkoc29ydGVkKHtpbnQodCAqIChxIC0gMSkgLyBCLkZJTkFMX0spIGZvciB0IGluIHJhbmdlKEIuRklOQUxfSyl9KSldCgoKZGVmIG1haW4oKToKICAgIHJyMCA9IEIucm93cygpCiAgICBiYXNlID0ge3hbMF06IHhbMV0gLSB4WzJdIGZvciB4IGluIHJyMH0gICAjIHJyMCA9IOWumueov++8iOaXoOmXqOanm++8iQogICAgcHJpbnQoZiIgIHsn6Zeo5qebJzo8MTJ9eyfml6XlnYflj6rmlbAnOj44fXsn5ZCN5Y2V5pyA5L2O5YiG5Lit5L2NJzo+MTR9eyfotoXpop0nOj45fXsndF9IQUMnOj43fXsncCc6Pjd9IgogICAgICAgICAgZiJ7J+i2hUInOj44fXsn55u45L2N6LWiJzo+OX17J+WbnuaSpCc6Pjd9eyfmnIDlt67ljZXmnJ8nOj45fXsn6YWN5a+55beuJzo+OH17J+mFjeWvuXQnOj43fXsn6YWN5a+5cCc6Pjd9IikKICAgIGZvciB0aCBpbiAoMC4wLCAxNS4wLCAzMS4wLCA0My4wLCA1NS4wLCA2OC4wKToKICAgICAgICByID0gcm93c19mKHRoKQogICAgICAgIHN0ID0gQi5zdGF0KCIiLCByLCBxdWlldD1UcnVlKQogICAgICAgIGUgPSBzdFsiZSJdCiAgICAgICAgbG8gPSBucC5hcnJheShbbWluKChCLlNbaSwgal0gZm9yIGogaW4gX3NlbChpLCB0aCkpLCBkZWZhdWx0PW5wLm5hbikKICAgICAgICAgICAgICAgICAgICAgICBmb3IgaSBpbiByYW5nZShORCAtIDEgLSBIUCldKQogICAgICAgIGxvID0gbG9bbnAuaXNmaW5pdGUobG8pXQogICAgICAgIGN1ciA9IHt4WzBdOiB4WzFdIC0geFsyXSBmb3IgeCBpbiByfQogICAgICAgIGQgPSBucC5hcnJheShbY3VyW2NdIC0gYmFzZVtjXSBmb3IgYyBpbiBjdXIgaWYgYyBpbiBiYXNlXSkKICAgICAgICBwcmludChmIiAg4omle3RoOjwxMS4wZn17bnAubWVhbihbeFszXSBmb3IgeCBpbiByXSk6OC4xZn17bnAubWVkaWFuKGxvKToxNC4xZn0iCiAgICAgICAgICAgICAgZiJ7ZS5tZWFuKCkqMTAwOis4LjNmfSV7SDIzLmhhY190KGUsIEhQKTorNy4yZn17SDIzLmJsb2NrX3AoZSwgSFApOjcuM2Z9IgogICAgICAgICAgICAgIGYieyhzdFsnY2EnXSAtIHN0WydjYiddKS5tZWFuKCkqMTAwOis3LjFmfXBwe2ludCgoc3RbJ2NhJ10gPiBzdFsnY2InXSkuc3VtKCkpOj41fS97bGVuKHN0WydjYSddKX0iCiAgICAgICAgICAgICAgZiJ7c3RbJ2NkJ10ubWVhbigpKjEwMDo2LjFmfSV7c3RbJ2ZsYXQnXS5taW4oKSoxMDA6KzguMWZ9JSIKICAgICAgICAgICAgICBmIntkLm1lYW4oKSoxMDA6KzcuM2Z9JXtIMjMuaGFjX3QoZCwgSFApOis3LjJmfXtIMjMuYmxvY2tfcChkLCBIUCk6Ny4zZn0iKQoKICAgICMg5ZCN5Y2V6YeM5Yiw5bqV5pyJ5aSa5bCR5Y+q6JC95Zyo5ZCE5qGj77ya5oyJ5a6a56i/6KeE5YiZ6LeR5LiA6YGN55yf5a6e5YiG5biDCiAgICBjb21wID0geyJCVVko4omlNjgpIjogMCwgIkhPTEQoNDMtNjcpIjogMCwgIlNFTEwoMzEtNDIpIjogMCwgIlNUUk9OR19TRUxMKOKJpDMwKSI6IDB9CiAgICB0b3QgPSAwCiAgICBmb3IgaSBpbiByYW5nZShORCAtIDEgLSBIUCk6CiAgICAgICAgc2VsID0gQi5iYXNrZXQoaSkKICAgICAgICBpZiBzZWwuc2l6ZSA9PSAwOgogICAgICAgICAgICBjb250aW51ZQogICAgICAgIGZvciBqIGluIHNlbDoKICAgICAgICAgICAgcyA9IEIuU1tpLCBqXQogICAgICAgICAgICB0b3QgKz0gMQogICAgICAgICAgICBpZiBzID49IDY4OgogICAgICAgICAgICAgICAgY29tcFsiQlVZKOKJpTY4KSJdICs9IDEKICAgICAgICAgICAgZWxpZiBzID49IDQzOgogICAgICAgICAgICAgICAgY29tcFsiSE9MRCg0My02NykiXSArPSAxCiAgICAgICAgICAgIGVsaWYgcyA+IDMwOgogICAgICAgICAgICAgICAgY29tcFsiU0VMTCgzMS00MikiXSArPSAxCiAgICAgICAgICAgIGVsc2U6CiAgICAgICAgICAgICAgICBjb21wWyJTVFJPTkdfU0VMTCjiiaQzMCkiXSArPSAxCiAgICBwcmludChmIlxuICDlrprnqL/lkI3ljZUge3RvdH0g5Liq5oyB5LuT5qe95L2N55qE5YiG5pWw5qGj5YiG5biD77yaIiArCiAgICAgICAgICAiICAiLmpvaW4oZiJ7a30ge3YvdG90KjEwMDouMWZ9JSIgZm9yIGssIHYgaW4gY29tcC5pdGVtcygpKSkKCgppZiBfX25hbWVfXyA9PSAiX19tYWluX18iOgogICAgbWFpbigpCg==
+#!/usr/bin/env python3
+"""iter32 — 定稿规则（前50%池·分层20）之上，还要不要留一个"最低分"？
+
+动机是产品一致性，不是收益：名单里出现"强烈减仓（≤30）"的股票，用户会当成自相矛盾。
+所以把绝对门槛直接加在分位池上测一遍：门槛剔掉的是池底那几只，同时也会改变分层取样的
+位置（这会让结果抖动），因此必须看配对检验，而不是只看均值差。
+"""
+import os
+import sys
+
+import numpy as np
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+import iter23 as H23  # noqa: E402
+import iter31 as B  # noqa: E402
+from model import DATES  # noqa: E402
+
+ND, HP = B.ND, B.HP
+
+
+def rows_f(th=0.0, fq=B.FINAL_FQ, K=B.FINAL_K):
+    out = []
+    for i in range(ND - 1 - HP):
+        ranked = B.RANK[i]
+        ranked = ranked[B.VALID[i, ranked]]
+        n = len(ranked)
+        pool = [j for j in ranked[:min(n, int(np.ceil(fq * n)))] if B.S[i, j] >= th]
+        if not pool:
+            out.append((DATES[i], 0.0, float(B.BM[i]), 0))
+            continue
+        pp = np.array(pool)
+        q = len(pp)
+        sel = pp if q <= K else pp[np.array(sorted({int(t * (q - 1) / K) for t in range(K)}))]
+        v = B.R[i, sel]
+        v = v[np.isfinite(v)]
+        out.append((DATES[i], float(np.mean(v)) if v.size else 0.0, float(B.BM[i]), v.size))
+    return out
+
+
+def _sel(i, th):
+    """门槛 th 下、分位池的分层取样结果（与 rows_f 同一条路径）。"""
+    ranked = B.RANK[i]
+    ranked = ranked[B.VALID[i, ranked]]
+    n = len(ranked)
+    pool = [j for j in ranked[:min(n, int(np.ceil(B.FINAL_FQ * n)))] if B.S[i, j] >= th]
+    if not pool:
+        return np.array([], int)
+    pp = np.array(pool)
+    q = len(pp)
+    return pp if q <= B.FINAL_K else pp[np.array(sorted({int(t * (q - 1) / B.FINAL_K) for t in range(B.FINAL_K)}))]
+
+
+def main():
+    rr0 = B.rows()
+    base = {x[0]: x[1] - x[2] for x in rr0}   # rr0 = 定稿（无门槛）
+    print(f"  {'门槛':<12}{'日均只数':>8}{'名单最低分中位':>14}{'超额':>9}{'t_HAC':>7}{'p':>7}"
+          f"{'超B':>8}{'相位赢':>9}{'回撤':>7}{'最差单期':>9}{'配对差':>8}{'配对t':>7}{'配对p':>7}")
+    for th in (0.0, 15.0, 31.0, 43.0, 55.0, 68.0):
+        r = rows_f(th)
+        st = B.stat("", r, quiet=True)
+        e = st["e"]
+        lo = np.array([min((B.S[i, j] for j in _sel(i, th)), default=np.nan)
+                       for i in range(ND - 1 - HP)])
+        lo = lo[np.isfinite(lo)]
+        cur = {x[0]: x[1] - x[2] for x in r}
+        d = np.array([cur[c] - base[c] for c in cur if c in base])
+        print(f"  ≥{th:<11.0f}{np.mean([x[3] for x in r]):8.1f}{np.median(lo):14.1f}"
+              f"{e.mean()*100:+8.3f}%{H23.hac_t(e, HP):+7.2f}{H23.block_p(e, HP):7.3f}"
+              f"{(st['ca'] - st['cb']).mean()*100:+7.1f}pp{int((st['ca'] > st['cb']).sum()):>5}/{len(st['ca'])}"
+              f"{st['cd'].mean()*100:6.1f}%{st['flat'].min()*100:+8.1f}%"
+              f"{d.mean()*100:+7.3f}%{H23.hac_t(d, HP):+7.2f}{H23.block_p(d, HP):7.3f}")
+
+    # 名单里到底有多少只落在各档：按定稿规则跑一遍真实分布
+    comp = {"BUY(≥68)": 0, "HOLD(43-67)": 0, "SELL(31-42)": 0, "STRONG_SELL(≤30)": 0}
+    tot = 0
+    for i in range(ND - 1 - HP):
+        sel = B.basket(i)
+        if sel.size == 0:
+            continue
+        for j in sel:
+            s = B.S[i, j]
+            tot += 1
+            if s >= 68:
+                comp["BUY(≥68)"] += 1
+            elif s >= 43:
+                comp["HOLD(43-67)"] += 1
+            elif s > 30:
+                comp["SELL(31-42)"] += 1
+            else:
+                comp["STRONG_SELL(≤30)"] += 1
+    print(f"\n  定稿名单 {tot} 个持仓槽位的分数档分布：" +
+          "  ".join(f"{k} {v/tot*100:.1f}%" for k, v in comp.items()))
+
+
+if __name__ == "__main__":
+    main()

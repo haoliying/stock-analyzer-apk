@@ -1,1 +1,103 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJJdGVyYXRpb24gMTA6IGFkZCB0aGUgb25lIGZhY3RvciB0aGUgZGF0YSBpbnNpc3RzIG9uIOKAlCAyMGQgbW9tZW50dW0g4oCUIGFuZCBtYWtlCnRoZSBBVFIgcGVuYWx0eSBkaXJlY3Rpb25hbCBpbnN0ZWFkIG9mIGdsb2JhbC4gSnVkZ2VkIG9uIGRhdGUtZXF1YWwgZXhjZXNzIGF0CmVhY2ggYmFuZCwgc3BsaXQtaGFsZiBzdGFiaWxpdHksIE9PUyB0YWlsLCBhbmQgaG93IG9mdGVuIHRoZSBhcHAgc3BlYWtzLiIiIgppbXBvcnQgbnVtcHkgYXMgbnAKZnJvbSBjb2xsZWN0aW9ucyBpbXBvcnQgZGVmYXVsdGRpY3QKZnJvbSBtb2RlbCBpbXBvcnQgcHJvZCwgcm93c19mb3IsIENVVE9GRiwgX25hbiwgZwoKQ0xJUCA9IGxhbWJkYSB4LCBhLCBiOiBtYXgoYSwgbWluKGIsIHgpKQoKCmRlZiBtb21fc3RlcChGLCB0LCBoaT0xMiwgbWlkPTcsIGZsYXQ9MCwgbmVnPS01LCBuZWcyPS0xMCk6CiAgICByID0gZyhGLCAicmV0MjAiLCB0KQogICAgaWYgX25hbihyKToKICAgICAgICByZXR1cm4gMC4wCiAgICBpZiByID49IDAuMjA6IHJldHVybiBoaQogICAgaWYgciA+PSAwLjEyOiByZXR1cm4gbWlkCiAgICBpZiByID49IDAuMDogIHJldHVybiBmbGF0CiAgICBpZiByID49IC0wLjA0OiByZXR1cm4gbmVnCiAgICByZXR1cm4gbmVnMgoKCmRlZiBtb21fbGluKEYsIHQsIHNjPTUwLjApOgogICAgciA9IGcoRiwgInJldDIwIiwgdCkKICAgIHJldHVybiAwLjAgaWYgX25hbihyKSBlbHNlIENMSVAociwgLTAuMTUsIDAuMzUpICogc2MKCgpkZWYgbWFrZShleHRyYT1Ob25lLCBhdHJfZGlyZWN0aW9uYWw9RmFsc2UpOgogICAgZGVmIGZuKEYsIHQpOgogICAgICAgIHMsIG9rID0gcHJvZChGLCB0KQogICAgICAgIGlmIG5vdCBvazoKICAgICAgICAgICAgcmV0dXJuIHMsIG9rCiAgICAgICAgaWYgYXRyX2RpcmVjdGlvbmFsOgogICAgICAgICAgICAjIHVuZG8gcHJvZCdzIGdsb2JhbCBwZW5hbHR5LCByZS1hcHBseSBvbmx5IG91dHNpZGUgY29uZmlybWVkIHVwdHJlbmQKICAgICAgICAgICAgYSA9IGcoRiwgImF0cl9wY3QiLCB0KQogICAgICAgICAgICBjLCBtYTIwLCBtYTYwID0gRlsiY2xvc2UiXVt0XSwgZyhGLCAibWEyMCIsIHQpLCBnKEYsICJtYTYwIiwgdCkKICAgICAgICAgICAgdXAgPSAobm90IF9uYW4obWEyMCkpIGFuZCAobm90IF9uYW4obWE2MCkpIGFuZCBjID4gbWEyMCA+IG1hNjAKICAgICAgICAgICAgcyArPSAwLjAgaWYgX25hbihhKSBlbHNlIG1heCgwLjAsIGEgLSAwLjAyMCkgKiAxNTAuMAogICAgICAgICAgICBpZiBub3QgdXAgYW5kIG5vdCBfbmFuKGEpOgogICAgICAgICAgICAgICAgcyAtPSBtYXgoMC4wLCBhIC0gMC4wMjApICogMTUwLjAKICAgICAgICBpZiBleHRyYSBpcyBub3QgTm9uZToKICAgICAgICAgICAgcyArPSBleHRyYShGLCB0KQogICAgICAgIHJldHVybiBmbG9hdChucC5jbGlwKHMsIDAsIDEwMCkpLCBUcnVlCiAgICByZXR1cm4gZm4KCgpkZWYgZXZhbHVhdGUoZm4sIGxhYmVsKToKICAgIHJvd3MgPSByb3dzX2ZvcihmbikKICAgIGJ5X2RhdGUgPSBkZWZhdWx0ZGljdChsaXN0KQogICAgZm9yIHMsIGQsIHIsIGUsIHVuYiBpbiByb3dzOgogICAgICAgIGJ5X2RhdGVbZF0uYXBwZW5kKChzLCByLCBlLCB1bmIpKQogICAgYWxsZGF0ZXMgPSBzb3J0ZWQoYnlfZGF0ZSkKICAgIGgxID0gc2V0KGFsbGRhdGVzWzpsZW4oYWxsZGF0ZXMpIC8vIDJdKQoKICAgIGRlZiBkZXhjKGxvPU5vbmUsIGhpPU5vbmUsIHNpZGVfYnV5PVRydWUpOgogICAgICAgIHBlciwgYSwgYiwgb29zLCBuID0gW10sIFtdLCBbXSwgW10sIDAKICAgICAgICBmb3IgZCwgbHN0IGluIGJ5X2RhdGUuaXRlbXMoKToKICAgICAgICAgICAgc2VsID0gW3hbMl0gZm9yIHggaW4gbHN0IGlmIG5vdCB4WzNdIGFuZAogICAgICAgICAgICAgICAgICAgKGxvIGlzIE5vbmUgb3IgeFswXSA+PSBsbykgYW5kIChoaSBpcyBOb25lIG9yIHhbMF0gPCBoaSldCiAgICAgICAgICAgIGlmIGxlbihzZWwpIDwgMzoKICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgIG0gPSBmbG9hdChucC5uYW5tZWFuKHNlbCkpCiAgICAgICAgICAgIGlmIG5vdCBucC5pc2Zpbml0ZShtKToKICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgIG4gKz0gbGVuKHNlbCkKICAgICAgICAgICAgcGVyLmFwcGVuZChtKQogICAgICAgICAgICAoYSBpZiBkIGluIGgxIGVsc2UgYikuYXBwZW5kKG0pCiAgICAgICAgICAgIGlmIGQgPj0gQ1VUT0ZGOgogICAgICAgICAgICAgICAgb29zLmFwcGVuZChtKQogICAgICAgIGlmIGxlbihwZXIpIDwgMjA6CiAgICAgICAgICAgIHJldHVybiBOb25lCiAgICAgICAgcmV0dXJuIChmbG9hdChucC5tZWFuKHBlcikpLCBmbG9hdChucC5tZWFuKGEpKSwgZmxvYXQobnAubWVhbihiKSksCiAgICAgICAgICAgICAgICBmbG9hdChucC5tZWFuKG9vcykpIGlmIG9vcyBlbHNlIG5wLm5hbiwgbGVuKHBlciksIG4pCgogICAgdG90ID0gc3VtKGxlbihsKSBmb3IgbCBpbiBieV9kYXRlLnZhbHVlcygpKQogICAgbmIgPSBzdW0oMSBmb3IgbCBpbiBieV9kYXRlLnZhbHVlcygpIGZvciB4IGluIGwgaWYgeFswXSA+PSA3MCkKICAgIG5zID0gc3VtKDEgZm9yIGwgaW4gYnlfZGF0ZS52YWx1ZXMoKSBmb3IgeCBpbiBsIGlmIHhbMF0gPD0gNDIpCiAgICAjIHRhaWwgb2YgdGhlIGJ1eSBib29rCiAgICBidXlzID0gW3hbMV0gZm9yIGwgaW4gYnlfZGF0ZS52YWx1ZXMoKSBmb3IgeCBpbiBsIGlmIHhbMF0gPj0gNzAgYW5kIG5vdCB4WzNdXQogICAgdGFpbCA9ICIiCiAgICBpZiBsZW4oYnV5cykgPiA1MDA6CiAgICAgICAgdiA9IG5wLmFycmF5KGJ1eXMpCiAgICAgICAgdGFpbCA9IGYiIHAwNT17bnAucGVyY2VudGlsZSh2LDUpKjEwMDorNS4xZn0lID4xMEw9eyh2PC0wLjEwKS5tZWFuKCkqMTAwOjQuMWZ9JSIKICAgIHI3MCA9IGRleGMoNzApCiAgICByNzQgPSBkZXhjKDc0KQogICAgcmJhbmQgPSBkZXhjKDcwLCA3NCkKICAgIHJzZWxsID0gZGV4YyhOb25lLCA0MiwgRmFsc2UpCiAgICBpZiBub3QgcjcwOgogICAgICAgIHByaW50KGYie2xhYmVsOjI2c30gdG9vIGZldyIpCiAgICAgICAgcmV0dXJuCiAgICBwcmludChmIntsYWJlbDoyNnN9IGJ1eT49NzAgZF9leGM9e3I3MFswXSoxMDA6KzUuMmZ9JSAoaDEge3I3MFsxXSoxMDA6KzUuMmZ9IGgyIHtyNzBbMl0qMTAwOis1LjJmfSAiCiAgICAgICAgICBmIm9vcyB7cjcwWzNdKjEwMDorNS4yZn0pIHwgNzAtNzMgZF9leGM9eyhyYmFuZFswXSoxMDAgaWYgcmJhbmQgZWxzZSBmbG9hdCgnbmFuJykpOis1LjJmfSUiKQogICAgcHJpbnQoZiJ7Jyc6MjZzfSA+PTc0IGRfZXhjPXsocjc0WzBdKjEwMCBpZiByNzQgZWxzZSBmbG9hdCgnbmFuJykpOis1LjJmfSUgIgogICAgICAgICAgZiJ8IOWHj+S7kzw9NDIgZF9leGM9e3JzZWxsWzBdKjEwMDorNS4yZn0lIChoMSB7cnNlbGxbMV0qMTAwOis1LjJmfSBoMiB7cnNlbGxbMl0qMTAwOis1LjJmfSkgIgogICAgICAgICAgZiJ8IHNwZWFrcyB7bmIvdG90KjEwMDouMWZ9JSBidXkgLyB7bnMvdG90KjEwMDouMWZ9JSBzZWxse3RhaWx9IikKCgpldmFsdWF0ZShwcm9kLCAicHJvZCAoYmFzZWxpbmUpIikKZXZhbHVhdGUobWFrZShleHRyYT1tb21fc3RlcCksICIrbW9tMjAgc3RlcCIpCmV2YWx1YXRlKG1ha2UoZXh0cmE9bGFtYmRhIEYsIHQ6IG1vbV9saW4oRiwgdCwgNDAuMCkpLCAiK21vbTIwIGxpbiB4NDAiKQpldmFsdWF0ZShtYWtlKGV4dHJhPWxhbWJkYSBGLCB0OiBtb21fbGluKEYsIHQsIDcwLjApKSwgIittb20yMCBsaW4geDcwIikKZXZhbHVhdGUobWFrZShhdHJfZGlyZWN0aW9uYWw9VHJ1ZSksICJBVFIgcGVuIG9ubHkgaWYgIXVwIikKZXZhbHVhdGUobWFrZShleHRyYT1tb21fc3RlcCwgYXRyX2RpcmVjdGlvbmFsPVRydWUpLCAibW9tMjAgc3RlcCArIGRpckFUUiIpCg==
+#!/usr/bin/env python3
+"""Iteration 10: add the one factor the data insists on — 20d momentum — and make
+the ATR penalty directional instead of global. Judged on date-equal excess at
+each band, split-half stability, OOS tail, and how often the app speaks."""
+import numpy as np
+from collections import defaultdict
+from model import prod, rows_for, CUTOFF, _nan, g
+
+CLIP = lambda x, a, b: max(a, min(b, x))
+
+
+def mom_step(F, t, hi=12, mid=7, flat=0, neg=-5, neg2=-10):
+    r = g(F, "ret20", t)
+    if _nan(r):
+        return 0.0
+    if r >= 0.20: return hi
+    if r >= 0.12: return mid
+    if r >= 0.0:  return flat
+    if r >= -0.04: return neg
+    return neg2
+
+
+def mom_lin(F, t, sc=50.0):
+    r = g(F, "ret20", t)
+    return 0.0 if _nan(r) else CLIP(r, -0.15, 0.35) * sc
+
+
+def make(extra=None, atr_directional=False):
+    def fn(F, t):
+        s, ok = prod(F, t)
+        if not ok:
+            return s, ok
+        if atr_directional:
+            # undo prod's global penalty, re-apply only outside confirmed uptrend
+            a = g(F, "atr_pct", t)
+            c, ma20, ma60 = F["close"][t], g(F, "ma20", t), g(F, "ma60", t)
+            up = (not _nan(ma20)) and (not _nan(ma60)) and c > ma20 > ma60
+            s += 0.0 if _nan(a) else max(0.0, a - 0.020) * 150.0
+            if not up and not _nan(a):
+                s -= max(0.0, a - 0.020) * 150.0
+        if extra is not None:
+            s += extra(F, t)
+        return float(np.clip(s, 0, 100)), True
+    return fn
+
+
+def evaluate(fn, label):
+    rows = rows_for(fn)
+    by_date = defaultdict(list)
+    for s, d, r, e, unb in rows:
+        by_date[d].append((s, r, e, unb))
+    alldates = sorted(by_date)
+    h1 = set(alldates[:len(alldates) // 2])
+
+    def dexc(lo=None, hi=None, side_buy=True):
+        per, a, b, oos, n = [], [], [], [], 0
+        for d, lst in by_date.items():
+            sel = [x[2] for x in lst if not x[3] and
+                   (lo is None or x[0] >= lo) and (hi is None or x[0] < hi)]
+            if len(sel) < 3:
+                continue
+            m = float(np.nanmean(sel))
+            if not np.isfinite(m):
+                continue
+            n += len(sel)
+            per.append(m)
+            (a if d in h1 else b).append(m)
+            if d >= CUTOFF:
+                oos.append(m)
+        if len(per) < 20:
+            return None
+        return (float(np.mean(per)), float(np.mean(a)), float(np.mean(b)),
+                float(np.mean(oos)) if oos else np.nan, len(per), n)
+
+    tot = sum(len(l) for l in by_date.values())
+    nb = sum(1 for l in by_date.values() for x in l if x[0] >= 70)
+    ns = sum(1 for l in by_date.values() for x in l if x[0] <= 42)
+    # tail of the buy book
+    buys = [x[1] for l in by_date.values() for x in l if x[0] >= 70 and not x[3]]
+    tail = ""
+    if len(buys) > 500:
+        v = np.array(buys)
+        tail = f" p05={np.percentile(v,5)*100:+5.1f}% >10L={(v<-0.10).mean()*100:4.1f}%"
+    r70 = dexc(70)
+    r74 = dexc(74)
+    rband = dexc(70, 74)
+    rsell = dexc(None, 42, False)
+    if not r70:
+        print(f"{label:26s} too few")
+        return
+    print(f"{label:26s} buy>=70 d_exc={r70[0]*100:+5.2f}% (h1 {r70[1]*100:+5.2f} h2 {r70[2]*100:+5.2f} "
+          f"oos {r70[3]*100:+5.2f}) | 70-73 d_exc={(rband[0]*100 if rband else float('nan')):+5.2f}%")
+    print(f"{'':26s} >=74 d_exc={(r74[0]*100 if r74 else float('nan')):+5.2f}% "
+          f"| 减仓<=42 d_exc={rsell[0]*100:+5.2f}% (h1 {rsell[1]*100:+5.2f} h2 {rsell[2]*100:+5.2f}) "
+          f"| speaks {nb/tot*100:.1f}% buy / {ns/tot*100:.1f}% sell{tail}")
+
+
+evaluate(prod, "prod (baseline)")
+evaluate(make(extra=mom_step), "+mom20 step")
+evaluate(make(extra=lambda F, t: mom_lin(F, t, 40.0)), "+mom20 lin x40")
+evaluate(make(extra=lambda F, t: mom_lin(F, t, 70.0)), "+mom20 lin x70")
+evaluate(make(atr_directional=True), "ATR pen only if !up")
+evaluate(make(extra=mom_step, atr_directional=True), "mom20 step + dirATR")

@@ -1,1 +1,61 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJJdGVyYXRpb24gNTogZmluYWxpemUgdGhlIHNjb3JlLT5hZHZpY2UgbWFwcGluZy4KVGhlIGNvcmUgbW9kZWwgaXMgZml4ZWQgKHByb2QgaW4gaXRlcjQpLiBIZXJlIHdlIG9ubHkgY2hvb3NlIHRoZSBiYW5kcywgdXNpbmcKKGEpIGhvdyBtdWNoIGJldHRlciB0aGUgQUREIGJhbmQgaXMgdGhhbiB0aGUgbWFya2V0LCAoYikgaG93IG11Y2ggV09SU0UgdGhlClJFRFVDRSBiYW5kIGlzLCAoYykgd2hldGhlciBzY29yZXMgPj03NSBhcmUgZXZlbiByZWFjaGFibGUuIiIiCmltcG9ydCBudW1weSBhcyBucApmcm9tIG1vZGVsIGltcG9ydCBwcm9kLCByb3dzX2ZvciwgREFURVMsIENVVE9GRiwgQkFTRUxJTkUKCkggPSAyMAojIC0tLS0gY29sbGVjdCBldmVyeSB2YWxpZCAoc2NvcmUsIGRhdGUsIGZvcndhcmQgbmV0IHJldHVybiwgZXhjZXNzKSBvbmNlCnJvd3MgPSByb3dzX2Zvcihwcm9kKQpTID0gbnAuYXJyYXkoW3hbMF0gZm9yIHggaW4gcm93c10pCkQgPSBucC5hcnJheShbeFsxXSBmb3IgeCBpbiByb3dzXSkKUiA9IG5wLmFycmF5KFt4WzJdIGZvciB4IGluIHJvd3NdKQpFID0gbnAuYXJyYXkoW3hbM10gZm9yIHggaW4gcm93c10pClVOQlVZID0gbnAuYXJyYXkoW3hbNF0gZm9yIHggaW4gcm93c10pCklTX09PUyA9IEQgPj0gQ1VUT0ZGCnByaW50KGYibj17bGVuKFMpfSAgc2NvcmUgcGN0OiAiICsgIiAiLmpvaW4oCiAgICBmInB7cH09e25wLnBlcmNlbnRpbGUoUyxwKTouMGZ9IiBmb3IgcCBpbiAoMSwgNSwgMTAsIDI1LCA1MCwgNzUsIDkwLCA5NSwgOTkpKSkKcHJpbnQoZiIgID49NzU6IHsoUz49NzUpLm1lYW4oKSoxMDA6LjJmfSUgICA+PTcwOiB7KFM+PTcwKS5tZWFuKCkqMTAwOi4yZn0lICAgIgogICAgICBmIj49Njg6IHsoUz49NjgpLm1lYW4oKSoxMDA6LjJmfSUgICA8PTM1OiB7KFM8PTM1KS5tZWFuKCkqMTAwOi4yZn0lIikKCgpkZWYgc3RhdChtYXNrKToKICAgIG0gPSBtYXNrICYgKH5VTkJVWSkKICAgIGlmIG0uc3VtKCkgPCAxMDA6CiAgICAgICAgcmV0dXJuIE5vbmUKICAgIHIsIGUgPSBSW21dLCBFW21dCiAgICBvID0gbSAmIElTX09PUwogICAgcmV0dXJuIGRpY3Qobj1pbnQobS5zdW0oKSksIGV4Yz1ucC5uYW5tZWFuKGUpLCBhdmc9ci5tZWFuKCksIHdpbj0ociA+IDApLm1lYW4oKSAqIDEwMCwKICAgICAgICAgICAgICAgIHAwNT1ucC5wZXJjZW50aWxlKHIsIDUpLCBiaWc9KHIgPCAtMC4xMCkubWVhbigpICogMTAwLAogICAgICAgICAgICAgICAgb29zX249aW50KG8uc3VtKCkpLCBvb3NfZXhjPW5wLm5hbm1lYW4oRVtvXSkgaWYgby5zdW0oKSA+IDEwMCBlbHNlIG5wLm5hbiwKICAgICAgICAgICAgICAgIG9vc19hdmc9UltvXS5tZWFuKCkgaWYgby5zdW0oKSA+IDEwMCBlbHNlIG5wLm5hbiwKICAgICAgICAgICAgICAgIG9vc19wMDU9bnAucGVyY2VudGlsZShSW29dLCA1KSBpZiBvLnN1bSgpID4gMTAwIGVsc2UgbnAubmFuKQoKCnByaW50KCJcbj09PSBBREQgc2lkZTogYnV5IHRocmVzaG9sZCBzd2VlcCA9PT0iKQpwcmludChmIiAgeyd0aCc6PjRzfSB7J24nOj43c30geydleGMnOj43c30geydhdmcnOj43c30geyd3aW4nOj42c30geydwMDUnOj43c30geyc+MTBMJzo+NnN9ICIKICAgICAgZiJ7J3wgb29zX24nOj44c30geydvb3NfZXhjJzo+OHN9IHsnb29zX2F2Zyc6PjhzfSB7J29vc19wMDUnOj44c30iKQpmb3IgdGggaW4gKDYwLCA2MiwgNjQsIDY2LCA2OCwgNzAsIDcyLCA3NSwgODApOgogICAgYSA9IHN0YXQoUyA+PSB0aCkKICAgIGlmIGE6CiAgICAgICAgcHJpbnQoZiIgIHt0aDo+NGR9IHthWyduJ106PjdkfSB7YVsnZXhjJ10qMTAwOj4rNi4yZn0lIHthWydhdmcnXSoxMDA6Pis2LjJmfSUgIgogICAgICAgICAgICAgIGYie2FbJ3dpbiddOj41LjFmfSUge2FbJ3AwNSddKjEwMDo+KzYuMWZ9JSB7YVsnYmlnJ106PjUuMWZ9JSB8ICIKICAgICAgICAgICAgICBmInthWydvb3NfbiddOj44ZH0ge2FbJ29vc19leGMnXSoxMDA6Pis3LjJmfSUge2FbJ29vc19hdmcnXSoxMDA6Pis3LjJmfSUge2FbJ29vc19wMDUnXSoxMDA6Pis3LjFmfSUiKQoKcHJpbnQoIlxuPT09IFJFRFVDRSBzaWRlOiBzZWxsIHRocmVzaG9sZCBzd2VlcCAod2FudCBhdmcvZXhjIHN0cm9uZ2x5IE5FR0FUSVZFKSA9PT0iKQpwcmludChmIiAgeyd0aCc6PjRzfSB7J24nOj43c30geydleGMnOj43c30geydhdmcnOj43c30geyd8IG9vc19leGMnOj45c30geydvb3NfYXZnJzo+OHN9IikKZm9yIHRoIGluICgyMCwgMjUsIDMwLCAzNSwgNDAsIDQyLCA0NSwgNTAsIDU1KToKICAgIGEgPSBzdGF0KFMgPD0gdGgpCiAgICBpZiBhOgogICAgICAgIHByaW50KGYiICB7dGg6PjRkfSB7YVsnbiddOj43ZH0ge2FbJ2V4YyddKjEwMDo+KzYuMmZ9JSB7YVsnYXZnJ10qMTAwOj4rNi4yZn0lIHwgIgogICAgICAgICAgICAgIGYie2FbJ29vc19leGMnXSoxMDA6Pis4LjJmfSUge2FbJ29vc19hdmcnXSoxMDA6Pis3LjJmfSUiKQoKcHJpbnQoIlxuPT09IHNwcmVhZCB0ZXN0OiBBREQgYmFuZCBtaW51cyBSRURVQ0UgYmFuZCAoc2tpbGwsIG5vdCBiZXRhKSA9PT0iKQpmb3IgaGksIGxvIGluICgoNjgsIDQyKSwgKDcwLCA0MCksICg3MCwgMzUpLCAoNzIsIDM1KSwgKDc1LCAzMCkpOgogICAgYSA9IHN0YXQoUyA+PSBoaSkKICAgIGIgPSBzdGF0KFMgPD0gbG8pCiAgICBpZiBhIGFuZCBiOgogICAgICAgIHByaW50KGYiICBidXk+PXtoaX0gdnMgc2VsbDw9e2xvfTogZnVsbCBzcHJlYWQ9eyhhWydleGMnXS1iWydleGMnXSkqMTAwOisuMmZ9JSAiCiAgICAgICAgICAgICAgZiJvb3Mgc3ByZWFkPXsoYVsnb29zX2V4YyddLWJbJ29vc19leGMnXSkqMTAwOisuMmZ9JSIpCg==
+#!/usr/bin/env python3
+"""Iteration 5: finalize the score->advice mapping.
+The core model is fixed (prod in iter4). Here we only choose the bands, using
+(a) how much better the ADD band is than the market, (b) how much WORSE the
+REDUCE band is, (c) whether scores >=75 are even reachable."""
+import numpy as np
+from model import prod, rows_for, DATES, CUTOFF, BASELINE
+
+H = 20
+# ---- collect every valid (score, date, forward net return, excess) once
+rows = rows_for(prod)
+S = np.array([x[0] for x in rows])
+D = np.array([x[1] for x in rows])
+R = np.array([x[2] for x in rows])
+E = np.array([x[3] for x in rows])
+UNBUY = np.array([x[4] for x in rows])
+IS_OOS = D >= CUTOFF
+print(f"n={len(S)}  score pct: " + " ".join(
+    f"p{p}={np.percentile(S,p):.0f}" for p in (1, 5, 10, 25, 50, 75, 90, 95, 99)))
+print(f"  >=75: {(S>=75).mean()*100:.2f}%   >=70: {(S>=70).mean()*100:.2f}%   "
+      f">=68: {(S>=68).mean()*100:.2f}%   <=35: {(S<=35).mean()*100:.2f}%")
+
+
+def stat(mask):
+    m = mask & (~UNBUY)
+    if m.sum() < 100:
+        return None
+    r, e = R[m], E[m]
+    o = m & IS_OOS
+    return dict(n=int(m.sum()), exc=np.nanmean(e), avg=r.mean(), win=(r > 0).mean() * 100,
+                p05=np.percentile(r, 5), big=(r < -0.10).mean() * 100,
+                oos_n=int(o.sum()), oos_exc=np.nanmean(E[o]) if o.sum() > 100 else np.nan,
+                oos_avg=R[o].mean() if o.sum() > 100 else np.nan,
+                oos_p05=np.percentile(R[o], 5) if o.sum() > 100 else np.nan)
+
+
+print("\n=== ADD side: buy threshold sweep ===")
+print(f"  {'th':>4s} {'n':>7s} {'exc':>7s} {'avg':>7s} {'win':>6s} {'p05':>7s} {'>10L':>6s} "
+      f"{'| oos_n':>8s} {'oos_exc':>8s} {'oos_avg':>8s} {'oos_p05':>8s}")
+for th in (60, 62, 64, 66, 68, 70, 72, 75, 80):
+    a = stat(S >= th)
+    if a:
+        print(f"  {th:>4d} {a['n']:>7d} {a['exc']*100:>+6.2f}% {a['avg']*100:>+6.2f}% "
+              f"{a['win']:>5.1f}% {a['p05']*100:>+6.1f}% {a['big']:>5.1f}% | "
+              f"{a['oos_n']:>8d} {a['oos_exc']*100:>+7.2f}% {a['oos_avg']*100:>+7.2f}% {a['oos_p05']*100:>+7.1f}%")
+
+print("\n=== REDUCE side: sell threshold sweep (want avg/exc strongly NEGATIVE) ===")
+print(f"  {'th':>4s} {'n':>7s} {'exc':>7s} {'avg':>7s} {'| oos_exc':>9s} {'oos_avg':>8s}")
+for th in (20, 25, 30, 35, 40, 42, 45, 50, 55):
+    a = stat(S <= th)
+    if a:
+        print(f"  {th:>4d} {a['n']:>7d} {a['exc']*100:>+6.2f}% {a['avg']*100:>+6.2f}% | "
+              f"{a['oos_exc']*100:>+8.2f}% {a['oos_avg']*100:>+7.2f}%")
+
+print("\n=== spread test: ADD band minus REDUCE band (skill, not beta) ===")
+for hi, lo in ((68, 42), (70, 40), (70, 35), (72, 35), (75, 30)):
+    a = stat(S >= hi)
+    b = stat(S <= lo)
+    if a and b:
+        print(f"  buy>={hi} vs sell<={lo}: full spread={(a['exc']-b['exc'])*100:+.2f}% "
+              f"oos spread={(a['oos_exc']-b['oos_exc'])*100:+.2f}%")

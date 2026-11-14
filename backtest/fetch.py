@@ -1,1 +1,98 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJGZXRjaCByZWFsIEEtc2hhcmUgZGFpbHkgSy1saW5lIGRhdGEgZnJvbSBFYXN0IE1vbmV5IGZvciBiYWNrdGVzdGluZy4iIiIKaW1wb3J0IGpzb24sIG9zLCBzeXMsIHRpbWUsIHVybGxpYi5yZXF1ZXN0CmZyb20gY29uY3VycmVudC5mdXR1cmVzIGltcG9ydCBUaHJlYWRQb29sRXhlY3V0b3IsIGFzX2NvbXBsZXRlZAoKT1VUID0gb3MuZW52aXJvbi5nZXQoIkJUX0RBVEEiLCBvcy5wYXRoLmpvaW4ob3MucGF0aC5kaXJuYW1lKG9zLnBhdGguYWJzcGF0aChfX2ZpbGVfXykpLCAiZGF0YSIpKQpvcy5tYWtlZGlycyhPVVQsIGV4aXN0X29rPVRydWUpCkhEUlMgPSB7IlVzZXItQWdlbnQiOiAiTW96aWxsYS81LjAiLCAiUmVmZXJlciI6ICJodHRwczovL3F1b3RlLmVhc3Rtb25leS5jb20ifQoKCmRlZiBnZXQodXJsLCB0cmllcz0zKToKICAgIGZvciBpIGluIHJhbmdlKHRyaWVzKToKICAgICAgICB0cnk6CiAgICAgICAgICAgIHJlcSA9IHVybGxpYi5yZXF1ZXN0LlJlcXVlc3QodXJsLCBoZWFkZXJzPUhEUlMpCiAgICAgICAgICAgIHdpdGggdXJsbGliLnJlcXVlc3QudXJsb3BlbihyZXEsIHRpbWVvdXQ9MjUpIGFzIHI6CiAgICAgICAgICAgICAgICByZXR1cm4ganNvbi5sb2FkcyhyLnJlYWQoKSkKICAgICAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgICAgIGlmIGkgPT0gdHJpZXMgLSAxOgogICAgICAgICAgICAgICAgcmV0dXJuIE5vbmUKICAgICAgICAgICAgdGltZS5zbGVlcCgxKQoKCmRlZiB1bml2ZXJzZShuPTMwMCk6CiAgICAiIiJUb3AtbiBBLXNoYXJlcyBieSB0b3RhbCBtYXJrZXQgY2FwIChmMjApLCBhbGwgYm9hcmRzLiIiIgogICAgY29kZXMsIHBhZ2UgPSBbXSwgMQogICAgd2hpbGUgbGVuKGNvZGVzKSA8IG46CiAgICAgICAgdSA9ICgiaHR0cHM6Ly9wdXNoMi5lYXN0bW9uZXkuY29tL2FwaS9xdC9jbGlzdC9nZXQ/IgogICAgICAgICAgICAgZiJwbj17cGFnZX0mcHo9MTAwJnBvPTEmbnA9MSZmbHR0PTImaW52dD0yJmZpZD1mMjAiCiAgICAgICAgICAgICAiJmZzPW06MCt0OjYsbTowK3Q6ODAsbToxK3Q6MixtOjErdDoyMyxtOjArdDo4MStzOjIwNDgiCiAgICAgICAgICAgICAiJmZpZWxkcz1mMTIsZjE0LGYyMCxmMiIpCiAgICAgICAgZCA9IGdldCh1KQogICAgICAgIGlmIG5vdCBkIG9yIG5vdCBkLmdldCgiZGF0YSIpOgogICAgICAgICAgICBicmVhawogICAgICAgIHJvd3MgPSBkWyJkYXRhIl1bImRpZmYiXQogICAgICAgIGlmIG5vdCByb3dzOgogICAgICAgICAgICBicmVhawogICAgICAgIGZvciByIGluIHJvd3M6CiAgICAgICAgICAgIGMsIG5hbWUsIGNhcCA9IHJbImYxMiJdLCByWyJmMTQiXSwgci5nZXQoImYyMCIpIG9yIDAKICAgICAgICAgICAgaWYgYy5zdGFydHN3aXRoKCgiNjgiLCAiMzAiLCAiNjAiLCAiMDAiKSkgYW5kIGNhcCBhbmQgY2FwID4gMmUxMDoKICAgICAgICAgICAgICAgIGNvZGVzLmFwcGVuZCgoYywgbmFtZSkpCiAgICAgICAgcGFnZSArPSAxCiAgICAgICAgdGltZS5zbGVlcCgwLjE1KQogICAgICAgIGlmIHBhZ2UgPiAzMDoKICAgICAgICAgICAgYnJlYWsKICAgIHJldHVybiBjb2Rlc1s6bl0KCgpkZWYgc2VjaWQoY29kZSk6CiAgICByZXR1cm4gKCIxLiIgaWYgY29kZS5zdGFydHN3aXRoKCgiNiIsICI5IikpIGVsc2UgIjAuIikgKyBjb2RlCgoKZGVmIGtsaW5lKGNvZGUsIGJhcnM9NTYwKToKICAgIHUgPSAoImh0dHBzOi8vcHVzaDJoaXMuZWFzdG1vbmV5LmNvbS9hcGkvcXQvc3RvY2sva2xpbmUvZ2V0PyIKICAgICAgICAgZiJzZWNpZD17c2VjaWQoY29kZSl9IgogICAgICAgICAiJmZpZWxkczE9ZjEsZjIsZjMsZjQsZjUsZjYiCiAgICAgICAgICImZmllbGRzMj1mNTEsZjUyLGY1MyxmNTQsZjU1LGY1NixmNTcsZjU4LGY1OSxmNjAsZjYxIgogICAgICAgICAiJmtsdD0xMDEmZnF0PTEmZW5kPTIwNTAwMTAxJmxtdD0lZCZyYW5kPSVkIiAlIChiYXJzLCBpbnQodGltZS50aW1lKCkgKiAxMDAwKSAlIDk5OTk5KSkKICAgIGQgPSBnZXQodSkKICAgIGlmIG5vdCBkIG9yIG5vdCBkLmdldCgiZGF0YSIpIG9yIG5vdCBkWyJkYXRhIl0uZ2V0KCJrbGluZXMiKToKICAgICAgICByZXR1cm4gTm9uZQogICAgcm93cyA9IFtdCiAgICBmb3IgbGluZSBpbiBkWyJkYXRhIl1bImtsaW5lcyJdOgogICAgICAgIHAgPSBsaW5lLnNwbGl0KCIsIikKICAgICAgICBpZiBsZW4ocCkgPCAxMToKICAgICAgICAgICAgY29udGludWUKICAgICAgICByb3dzLmFwcGVuZCh7CiAgICAgICAgICAgICJkYXRlIjogcFswXSwgIm9wZW4iOiBmbG9hdChwWzFdKSwgImNsb3NlIjogZmxvYXQocFsyXSksCiAgICAgICAgICAgICJoaWdoIjogZmxvYXQocFszXSksICJsb3ciOiBmbG9hdChwWzRdKSwgInZvbCI6IGZsb2F0KHBbNV0pLAogICAgICAgICAgICAiYW10IjogZmxvYXQocFs2XSksICJwY3QiOiBmbG9hdChwWzhdKSwgInR1cm5vdmVyIjogZmxvYXQocFsxMF0pLAogICAgICAgIH0pCiAgICByZXR1cm4geyJjb2RlIjogY29kZSwgIm5hbWUiOiBkWyJkYXRhIl0uZ2V0KCJuYW1lIiwgIiIpLCAicm93cyI6IHJvd3N9CgoKZGVmIG1haW4oKToKICAgIHVuaSA9IHVuaXZlcnNlKGludChzeXMuYXJndlsxXSkgaWYgbGVuKHN5cy5hcmd2KSA+IDEgZWxzZSAzMDApCiAgICBwcmludChmInVuaXZlcnNlOiB7bGVuKHVuaSl9IHN0b2NrcyIsIGZsdXNoPVRydWUpCiAgICBnb3QsIGZhaWxlZCA9IDAsIDAKICAgIHdpdGggVGhyZWFkUG9vbEV4ZWN1dG9yKG1heF93b3JrZXJzPTgpIGFzIGV4OgogICAgICAgIGZ1dHMgPSB7ZXguc3VibWl0KGtsaW5lLCBjKTogKGMsIG4pIGZvciBjLCBuIGluIHVuaX0KICAgICAgICBmb3IgaSwgZiBpbiBlbnVtZXJhdGUoYXNfY29tcGxldGVkKGZ1dHMpLCAxKToKICAgICAgICAgICAgYywgbiA9IGZ1dHNbZl0KICAgICAgICAgICAgdHJ5OgogICAgICAgICAgICAgICAgciA9IGYucmVzdWx0KCkKICAgICAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbjoKICAgICAgICAgICAgICAgIHIgPSBOb25lCiAgICAgICAgICAgIGlmIHIgYW5kIGxlbihyWyJyb3dzIl0pID49IDIwMDoKICAgICAgICAgICAgICAgIHdpdGggb3BlbihmIntPVVR9L3tjfS5qc29uIiwgInciKSBhcyBmaDoKICAgICAgICAgICAgICAgICAgICBqc29uLmR1bXAociwgZmgpCiAgICAgICAgICAgICAgICBnb3QgKz0gMQogICAgICAgICAgICBlbHNlOgogICAgICAgICAgICAgICAgZmFpbGVkICs9IDEKICAgICAgICAgICAgaWYgaSAlIDQwID09IDA6CiAgICAgICAgICAgICAgICBwcmludChmIiAge2l9L3tsZW4odW5pKX0gb2s9e2dvdH0gZmFpbD17ZmFpbGVkfSIsIGZsdXNoPVRydWUpCiAgICBwcmludChmIkRPTkUgb2s9e2dvdH0gZmFpbD17ZmFpbGVkfSIsIGZsdXNoPVRydWUpCgoKaWYgX19uYW1lX18gPT0gIl9fbWFpbl9fIjoKICAgIG1haW4oKQo=
+#!/usr/bin/env python3
+"""Fetch real A-share daily K-line data from East Money for backtesting."""
+import json, os, sys, time, urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+OUT = os.environ.get("BT_DATA", os.path.join(os.path.dirname(os.path.abspath(__file__)), "data"))
+os.makedirs(OUT, exist_ok=True)
+HDRS = {"User-Agent": "Mozilla/5.0", "Referer": "https://quote.eastmoney.com"}
+
+
+def get(url, tries=3):
+    for i in range(tries):
+        try:
+            req = urllib.request.Request(url, headers=HDRS)
+            with urllib.request.urlopen(req, timeout=25) as r:
+                return json.loads(r.read())
+        except Exception as e:
+            if i == tries - 1:
+                return None
+            time.sleep(1)
+
+
+def universe(n=300):
+    """Top-n A-shares by total market cap (f20), all boards."""
+    codes, page = [], 1
+    while len(codes) < n:
+        u = ("https://push2.eastmoney.com/api/qt/clist/get?"
+             f"pn={page}&pz=100&po=1&np=1&fltt=2&invt=2&fid=f20"
+             "&fs=m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23,m:0+t:81+s:2048"
+             "&fields=f12,f14,f20,f2")
+        d = get(u)
+        if not d or not d.get("data"):
+            break
+        rows = d["data"]["diff"]
+        if not rows:
+            break
+        for r in rows:
+            c, name, cap = r["f12"], r["f14"], r.get("f20") or 0
+            if c.startswith(("68", "30", "60", "00")) and cap and cap > 2e10:
+                codes.append((c, name))
+        page += 1
+        time.sleep(0.15)
+        if page > 30:
+            break
+    return codes[:n]
+
+
+def secid(code):
+    return ("1." if code.startswith(("6", "9")) else "0.") + code
+
+
+def kline(code, bars=560):
+    u = ("https://push2his.eastmoney.com/api/qt/stock/kline/get?"
+         f"secid={secid(code)}"
+         "&fields1=f1,f2,f3,f4,f5,f6"
+         "&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61"
+         "&klt=101&fqt=1&end=20500101&lmt=%d&rand=%d" % (bars, int(time.time() * 1000) % 99999))
+    d = get(u)
+    if not d or not d.get("data") or not d["data"].get("klines"):
+        return None
+    rows = []
+    for line in d["data"]["klines"]:
+        p = line.split(",")
+        if len(p) < 11:
+            continue
+        rows.append({
+            "date": p[0], "open": float(p[1]), "close": float(p[2]),
+            "high": float(p[3]), "low": float(p[4]), "vol": float(p[5]),
+            "amt": float(p[6]), "pct": float(p[8]), "turnover": float(p[10]),
+        })
+    return {"code": code, "name": d["data"].get("name", ""), "rows": rows}
+
+
+def main():
+    uni = universe(int(sys.argv[1]) if len(sys.argv) > 1 else 300)
+    print(f"universe: {len(uni)} stocks", flush=True)
+    got, failed = 0, 0
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        futs = {ex.submit(kline, c): (c, n) for c, n in uni}
+        for i, f in enumerate(as_completed(futs), 1):
+            c, n = futs[f]
+            try:
+                r = f.result()
+            except Exception:
+                r = None
+            if r and len(r["rows"]) >= 200:
+                with open(f"{OUT}/{c}.json", "w") as fh:
+                    json.dump(r, fh)
+                got += 1
+            else:
+                failed += 1
+            if i % 40 == 0:
+                print(f"  {i}/{len(uni)} ok={got} fail={failed}", flush=True)
+    print(f"DONE ok={got} fail={failed}", flush=True)
+
+
+if __name__ == "__main__":
+    main()

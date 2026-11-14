@@ -1,1 +1,171 @@
-cGFja2FnZSBjb20uc3RvY2suYW5hbHl6ZXIuYW5hbHlzaXMKCmltcG9ydCBjb20uc3RvY2suYW5hbHl6ZXIuZGF0YS5tb2RlbC5BZHZpY2VUeXBlCmltcG9ydCBjb20uc3RvY2suYW5hbHl6ZXIuZGF0YS5tb2RlbC5LTGluZURhdGEKaW1wb3J0IGNvbS5nb29nbGUuZ3Nvbi5Hc29uCmltcG9ydCBvcmcuanVuaXQuQXNzZXJ0LmFzc2VydEVxdWFscwppbXBvcnQgb3JnLmp1bml0LkFzc2VydC5hc3NlcnRUcnVlCmltcG9ydCBvcmcuanVuaXQuVGVzdAoKLyoqCiAqIOS4juWbnua1i+iEmuacrOeahOWPo+W+hOWvuem9kOa1i+ivleOAggogKgogKiBlbmdpbmVfcGFyaXR5Lmpzb24g55SxIGJhY2t0ZXN0L2V4cG9ydF9wYXJpdHkucHkg55Sf5oiQ77ya55yf5a6eQeiCoeaXpee6vyArIFB5dGhvbiDlm57mtYvlvJXmk44KICog77yIYmFja3Rlc3QvZmluYWxfdmFsaWRhdGUucHkg55qEIG5ld19mbu+8jOWNs+S4iue6v+eahOmCo+Wll+ivhOWIhu+8iemAkGJhcueul+WHuueahOacn+acm+WIhuaVsOOAggogKiDlj6ropoEgS290bGluIOW8leaTjuS4juWbnua1i+acieS4gOaguUvnur/nmoTliKTmlq3kuI3kuIDoh7TvvIzov5nkuKrmtYvor5XlsLHkvJrnuqLjgIIKICovCmNsYXNzIEVuZ2luZVBhcml0eVRlc3QgewoKICAgIHByaXZhdGUgY2xhc3MgQmFyIHsKICAgICAgICB2YXIgZDogU3RyaW5nID0gIiIKICAgICAgICB2YXIgbzogRG91YmxlID0gMC4wCiAgICAgICAgdmFyIGM6IERvdWJsZSA9IDAuMAogICAgICAgIHZhciBoOiBEb3VibGUgPSAwLjAKICAgICAgICB2YXIgbDogRG91YmxlID0gMC4wCiAgICAgICAgdmFyIHY6IExvbmcgPSAwCiAgICB9CgogICAgcHJpdmF0ZSBjbGFzcyBTdG9ja0Z4IHsKICAgICAgICB2YXIgY29kZTogU3RyaW5nID0gIiIKICAgICAgICB2YXIgYmFyczogTGlzdDxCYXI+ID0gZW1wdHlMaXN0KCkKICAgICAgICB2YXIgZXhwZWN0ZWQ6IExpc3Q8TGlzdDxEb3VibGU+PiA9IGVtcHR5TGlzdCgpCiAgICB9CgogICAgcHJpdmF0ZSBjbGFzcyBGaXh0dXJlIHsKICAgICAgICB2YXIgc3RvY2tzOiBMaXN0PFN0b2NrRng+ID0gZW1wdHlMaXN0KCkKICAgIH0KCiAgICBwcml2YXRlIGZ1biBsb2FkKCk6IEZpeHR1cmUgewogICAgICAgIHZhbCBzdHJlYW0gPSBqYXZhQ2xhc3MuY2xhc3NMb2FkZXIhIS5nZXRSZXNvdXJjZUFzU3RyZWFtKCJlbmdpbmVfcGFyaXR5Lmpzb24iKQogICAgICAgIGFzc2VydFRydWUoIue8uuWwkea1i+ivleWkueWFtyBlbmdpbmVfcGFyaXR5Lmpzb27vvIjlhYjot5EgYmFja3Rlc3QvZXhwb3J0X3Bhcml0eS5wee+8iSIsIHN0cmVhbSAhPSBudWxsKQogICAgICAgIHJldHVybiBHc29uKCkuZnJvbUpzb24oc3RyZWFtLnJlYWRlcigpLnJlYWRUZXh0KCksIEZpeHR1cmU6OmNsYXNzLmphdmEpCiAgICB9CgogICAgcHJpdmF0ZSBmdW4gdG9LKGJhcnM6IExpc3Q8QmFyPikgPSBiYXJzLm1hcCB7IEtMaW5lRGF0YShpdC5kLCBpdC5vLCBpdC5jLCBpdC5oLCBpdC5sLCBpdC52KSB9CgogICAgQFRlc3QKICAgIGZ1biBga290bGluIHNjb3JlIG1hdGNoZXMgYmFja3Rlc3QgYmFyIGJ5IGJhcmAoKSB7CiAgICAgICAgdmFsIGZ4ID0gbG9hZCgpCiAgICAgICAgdmFsIGFuYWx5emVyID0gU3RvY2tBbmFseXplcigpCiAgICAgICAgdmFyIGNoZWNrZWQgPSAwCiAgICAgICAgdmFyIGNvbXBhcmVkID0gMAogICAgICAgIHZhbCBkaWZmcyA9IEFycmF5TGlzdDxTdHJpbmc+KCkKCiAgICAgICAgZm9yIChzIGluIGZ4LnN0b2NrcykgewogICAgICAgICAgICB2YWwgayA9IHRvSyhzLmJhcnMpCiAgICAgICAgICAgIGZvciAodCBpbiBrLmluZGljZXMpIHsKICAgICAgICAgICAgICAgIHZhbCByZXMgPSBhbmFseXplci5hbmFseXplKGsuc3ViTGlzdCgwLCB0ICsgMSkpCiAgICAgICAgICAgICAgICB2YWwgZXhwID0gcy5leHBlY3RlZFt0XQogICAgICAgICAgICAgICAgdmFsIGV4cE9rID0gZXhwWzFdID09IDEuMAogICAgICAgICAgICAgICAgY2hlY2tlZCsrCiAgICAgICAgICAgICAgICBpZiAocmVzLmRhdGFTdWZmaWNpZW50ICE9IGV4cE9rKSB7CiAgICAgICAgICAgICAgICAgICAgZGlmZnMuYWRkKCIke3MuY29kZX0gJHtzLmJhcnNbdF0uZH06IOWPr+WIpOaWreaApyBrb3RsaW49JHtyZXMuZGF0YVN1ZmZpY2llbnR9IGJhY2t0ZXN0PSRleHBPayIpCiAgICAgICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIGlmICghZXhwT2spIGNvbnRpbnVlCiAgICAgICAgICAgICAgICBjb21wYXJlZCsrCiAgICAgICAgICAgICAgICB2YWwgZXhwU2NvcmUgPSBNYXRoLnJvdW5kKGV4cFswXSkudG9JbnQoKQogICAgICAgICAgICAgICAgaWYgKHJlcy5zY29yZSAhPSBleHBTY29yZSkgewogICAgICAgICAgICAgICAgICAgIGRpZmZzLmFkZCgiJHtzLmNvZGV9ICR7cy5iYXJzW3RdLmR9OiBrb3RsaW49JHtyZXMuc2NvcmV9IGJhY2t0ZXN0PSRleHBTY29yZSIpCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAgICAgcHJpbnRsbigicGFyaXR5OiBiYXJzPSRjaGVja2VkLCBzY29yZWQ9JGNvbXBhcmVkLCBtaXNtYXRjaGVzPSR7ZGlmZnMuc2l6ZX0iKQogICAgICAgIGRpZmZzLnRha2UoMjApLmZvckVhY2ggeyBwcmludGxuKCIgIE1JU01BVENIICRpdCIpIH0KICAgICAgICBhc3NlcnRUcnVlKCJLb3RsaW4g5byV5pOO5LiO5Zue5rWL5LiN5LiA6Ie077yaJHtkaWZmcy50YWtlKDUpfSIsIGRpZmZzLmlzRW1wdHkoKSkKICAgICAgICBhc3NlcnRUcnVlKCLlr7nmr5TmoLfmnKzlpKrlsJEiLCBjb21wYXJlZCA+IDIwMDApCiAgICB9CgogICAgQFRlc3QKICAgIGZ1biBgYWR2aWNlIHRocmVzaG9sZHMgYW5kIHByaWNlIHJhbmdlcyBhcmUgY29uc2lzdGVudGAoKSB7CiAgICAgICAgdmFsIGZ4ID0gbG9hZCgpCiAgICAgICAgdmFsIGFuYWx5emVyID0gU3RvY2tBbmFseXplcigpCiAgICAgICAgZm9yIChzIGluIGZ4LnN0b2NrcykgewogICAgICAgICAgICB2YWwgayA9IHRvSyhzLmJhcnMpCiAgICAgICAgICAgIGlmIChrLnNpemUgPCBTdG9ja0FuYWx5emVyLkJBUlNfTUlOKSBjb250aW51ZQogICAgICAgICAgICB2YWwgbGFzdCA9IGsubGFzdCgpCiAgICAgICAgICAgIHZhbCBzdG9jayA9IGNvbS5zdG9jay5hbmFseXplci5kYXRhLm1vZGVsLlBvcnRmb2xpb1N0b2NrKAogICAgICAgICAgICAgICAgY29kZSA9IHMuY29kZSwgbmFtZSA9IHMuY29kZSwgYnV5UHJpY2UgPSBsYXN0LmNsb3NlLCBxdWFudGl0eSA9IDEwMCwKICAgICAgICAgICAgICAgIGJ1eURhdGUgPSBTeXN0ZW0uY3VycmVudFRpbWVNaWxsaXMoKSwgY3VycmVudFByaWNlID0gbGFzdC5jbG9zZQogICAgICAgICAgICApCiAgICAgICAgICAgIHZhbCBhID0gYW5hbHl6ZXIuYW5hbHl6ZShrKQogICAgICAgICAgICB2YWwgYWR2aWNlID0gYW5hbHl6ZXIuZ2VuZXJhdGVQb3NpdGlvbkFkdmljZShzdG9jaywgaykKCiAgICAgICAgICAgIC8vIOWIhuaho+S4juWbnua1i+eahOmYiOWAvOW/hemhu+S4gOiHtO+8jOS4lOacgOmrmOWPquWIsCBCVVnvvIjiiaU3NiDliIbpgqPkuIDmoaPlm57mtYvkuLrotJ/vvIzkuI3lj5HlvLrng4jkubDlhaXvvIkKICAgICAgICAgICAgaWYgKGEuZGF0YVN1ZmZpY2llbnQpIHsKICAgICAgICAgICAgICAgIHdoZW4gewogICAgICAgICAgICAgICAgICAgIGEuc2NvcmUgPj0gU3RvY2tBbmFseXplci5CVVlfU0NPUkUgLT4gYXNzZXJ0RXF1YWxzKEFkdmljZVR5cGUuQlVZLCBhZHZpY2UuYWR2aWNlKQogICAgICAgICAgICAgICAgICAgIGEuc2NvcmUgPiBTdG9ja0FuYWx5emVyLlNFTExfU0NPUkUgLT4gYXNzZXJ0RXF1YWxzKEFkdmljZVR5cGUuSE9MRCwgYWR2aWNlLmFkdmljZSkKICAgICAgICAgICAgICAgICAgICBhLnNjb3JlID4gU3RvY2tBbmFseXplci5TVFJPTkdfU0VMTF9TQ09SRSAtPiBhc3NlcnRFcXVhbHMoQWR2aWNlVHlwZS5TRUxMLCBhZHZpY2UuYWR2aWNlKQogICAgICAgICAgICAgICAgICAgIGVsc2UgLT4gYXNzZXJ0RXF1YWxzKEFkdmljZVR5cGUuU1RST05HX1NFTEwsIGFkdmljZS5hZHZpY2UpCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBhc3NlcnRUcnVlKCLkuI3or6Xlj5Hlh7rlvLrng4jliqDku5MiLCBhZHZpY2UuYWR2aWNlICE9IEFkdmljZVR5cGUuU1RST05HX0JVWSkKICAgICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgICAgIGFzc2VydEVxdWFscyhBZHZpY2VUeXBlLkhPTEQsIGFkdmljZS5hZHZpY2UpCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIC8vIOS4pOS4quWMuumXtOawuOi/nOWPr+ingeS4lOacieW6jwogICAgICAgICAgICBhc3NlcnRUcnVlKGFkdmljZS5hZGRQcmljZVJhbmdlLmxvdyA+IDApCiAgICAgICAgICAgIGFzc2VydFRydWUoYWR2aWNlLmFkZFByaWNlUmFuZ2UubG93IDwgYWR2aWNlLmFkZFByaWNlUmFuZ2UuaGlnaCkKICAgICAgICAgICAgYXNzZXJ0VHJ1ZShhZHZpY2UucmVkdWNlUHJpY2VSYW5nZS5sb3cgPD0gYWR2aWNlLnJlZHVjZVByaWNlUmFuZ2UuaGlnaCkKCiAgICAgICAgICAgIC8vIOatouaNn+W/hemhu+S9juS6jueOsOS7t+OAgeS4lOS4jei2hei/hyAyMCUKICAgICAgICAgICAgYWR2aWNlLnN0b3BMb3NzPy5sZXQgewogICAgICAgICAgICAgICAgYXNzZXJ0VHJ1ZSgic3RvcD0kaXQgcHJpY2U9JHtsYXN0LmNsb3NlfSIsIGl0IDwgbGFzdC5jbG9zZSAmJiBpdCA+PSBsYXN0LmNsb3NlICogMC44MCkKICAgICAgICAgICAgfQogICAgICAgICAgICBhc3NlcnRUcnVlKGFkdmljZS5yaXNrTm90ZSEhLmlzTm90RW1wdHkoKSkKICAgICAgICB9CiAgICB9CgogICAgLyoqIOavj+aXpeWIl+ihqCA9IOWJjSA1MCUg5YiG5L2N5rGgICsg5YiG5L2N562J6Led5Y+W5qC377yM5LiN5piv6K+E5YiG5o6S6KGM5qac77yM5Lmf5rKh5pyJ57ud5a+56Zeo5qebICovCiAgICBAVGVzdAogICAgZnVuIGBkYWlseSBsaXN0IGlzIHN0cmF0aWZpZWQgYWNyb3NzIHRoZSByZWxhdGl2ZSB0b3AtNTAgcG9vbGAoKSB7CiAgICAgICAgdmFsIGFuYWx5emVyID0gU3RvY2tBbmFseXplcigpCiAgICAgICAgdmFsIG1rOiAoSW50KSAtPiBjb20uc3RvY2suYW5hbHl6ZXIuZGF0YS5tb2RlbC5TdG9ja1JlY29tbWVuZGF0aW9uID0geyBzY29yZSAtPgogICAgICAgICAgICB2YWwgc3QgPSBjb20uc3RvY2suYW5hbHl6ZXIuZGF0YS5tb2RlbC5TdG9jaygKICAgICAgICAgICAgICAgIGNvZGUgPSAiYyRzY29yZSIsIG5hbWUgPSAicyRzY29yZSIsIHByaWNlID0gMTAuMCwgY2hhbmdlID0gMC4wLCBjaGFuZ2VQZXJjZW50ID0gMC4wLAogICAgICAgICAgICAgICAgdm9sdW1lID0gMCwgdHVybm92ZXIgPSAwLjAsIGhpZ2ggPSAxMC4wLCBsb3cgPSAxMC4wLCBvcGVuID0gMTAuMCwgY2xvc2UgPSAxMC4wLAogICAgICAgICAgICAgICAgdGltZXN0YW1wID0gMEwKICAgICAgICAgICAgKQogICAgICAgICAgICBjb20uc3RvY2suYW5hbHl6ZXIuZGF0YS5tb2RlbC5TdG9ja1JlY29tbWVuZGF0aW9uKAogICAgICAgICAgICAgICAgcmFuayA9IDAsIHN0b2NrID0gc3QsCiAgICAgICAgICAgICAgICBhbmFseXNpcyA9IGNvbS5zdG9jay5hbmFseXplci5kYXRhLm1vZGVsLkFuYWx5c2lzUmVzdWx0KAogICAgICAgICAgICAgICAgICAgIG51bGwsIG51bGwsIG51bGwsIG51bGwsIG51bGwsIG51bGwsCiAgICAgICAgICAgICAgICAgICAgY29tLnN0b2NrLmFuYWx5emVyLmRhdGEubW9kZWwuUmVjb21tZW5kYXRpb24uQlVZLCBlbXB0eUxpc3QoKSwgc2NvcmUsCiAgICAgICAgICAgICAgICAgICAgZGF0YVN1ZmZpY2llbnQgPSB0cnVlCiAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgYnV5UHJpY2VSYW5nZSA9IG51bGwsIHNlbGxQcmljZVJhbmdlID0gbnVsbAogICAgICAgICAgICApCiAgICAgICAgfQogICAgICAgIHZhbCBhbGwgPSAoOTkgZG93blRvIDQwKS5tYXAgeyBtayhpdCkgfSAgICAgICAgICAgIC8vIDYwIOWPqu+8jOWIhuaVsCA5OS4uNDAg6YCS5YePCiAgICAgICAgLy8g5rGgID0gY2VpbCg2MCDDlyAwLjUwKSA9IDMwIOWPqu+8jOWNsyA5OS4uNzDvvJvkvY7kuo4gNjgg55qE6YKj5LiA5Y2K6Z2gIuaOkuWQjSLlh7rlsYDvvIzkuI3pnaDnu53lr7npl6jmp5sKICAgICAgICBhc3NlcnRFcXVhbHMoMzAsIGFuYWx5emVyLmRhaWx5UG9vbChhbGwpLnNpemUpCiAgICAgICAgYXNzZXJ0RXF1YWxzKDMwLCBhbmFseXplci5lbGlnaWJsZUNvdW50KGFsbCkpCiAgICAgICAgYXNzZXJ0RXF1YWxzKDcwLCBhbmFseXplci5kYWlseVBvb2woYWxsKS5sYXN0KCkuYW5hbHlzaXMuc2NvcmUpCgogICAgICAgIHZhbCBzY29yZXMgPSBhbmFseXplci5zZWxlY3REYWlseUNhbmRpZGF0ZXMoYWxsLCAyMCkubWFwIHsgaXQuYW5hbHlzaXMuc2NvcmUgfQogICAgICAgIGFzc2VydEVxdWFscygyMCwgc2NvcmVzLnNpemUpCiAgICAgICAgYXNzZXJ0RXF1YWxzKCLpppblkI3ku43mmK/msaDlhoXmnIDpq5jliIYiLCA5OSwgc2NvcmVzLmZpcnN0KCkpCiAgICAgICAgLy8g5rGg5YaFIDMwIOWPquaMiSBwb29sW2kqKHEtMSkvMjBdIOWPluagtyDihpIgaW5kZXggMCwxLDIsNCwuLi4sMjcg4oaSIOacgOS9jiA3MiDliIbvvIjmsaDlupUgNzDjgIE3MSDkuI3lnKjlkI3ljZXph4zvvIkKICAgICAgICBhc3NlcnRFcXVhbHMoIuWPluagt+W6lOWNleiwg+mAkuWHj+S4lOS4jemHjeWkjSIsIHNjb3Jlcy5zaXplLCBzY29yZXMudG9TZXQoKS5zaXplKQogICAgICAgIGFzc2VydFRydWUoIuWPluagt+W6lOimhuebluaxoOWtkOWkp+mDqDogJHNjb3JlcyIsIHNjb3Jlcy5maXJzdCgpIC0gc2NvcmVzLmxhc3QoKSA+PSAyMCkKICAgICAgICBhc3NlcnRUcnVlKCLmnKvlkI3lupTmnaXoh6rmsaDkuK3lkI7mrrXvvIzor4HmmI7kuI3mmK8gdG9wLU4iLCBzY29yZXMubGFzdCgpIDwgODApCiAgICAgICAgYXNzZXJ0RXF1YWxzKDcyLCBzY29yZXMubGFzdCgpKQoKICAgICAgICAvLyDlpYfmlbDlj6rvvJpjZWlsKDQxIMOXIDAuNTApID0gMjEKICAgICAgICBhc3NlcnRFcXVhbHMoMjEsIGFuYWx5emVyLmRhaWx5UG9vbCgoMCB1bnRpbCA0MSkubWFwIHsgbWsoMTAwIC0gaXQpIH0pLnNpemUpCiAgICAgICAgLy8g5YWo5Zy66YO95Zyo5Yqg5LuT57q/5Lul5LiL5Lmf5b+F6aG757uZ5Ye65ZCN5Y2V77yI5pen6KeE5YiZ5q2k5pe25Lya56m677yJCiAgICAgICAgdmFsIHdlYWsgPSAoMjAuLjI5KS5tYXAgeyBtayhpdCkgfSAgICAgICAgICAgICAgICAgLy8gMTAg5Y+q77yM5YiG5pWw5YWo6YOoIDwgNjgKICAgICAgICBhc3NlcnRFcXVhbHMoNSwgYW5hbHl6ZXIuZGFpbHlQb29sKHdlYWspLnNpemUpCiAgICAgICAgYXNzZXJ0RXF1YWxzKDUsIGFuYWx5emVyLnNlbGVjdERhaWx5Q2FuZGlkYXRlcyh3ZWFrLCAyMCkuc2l6ZSkKICAgICAgICAvLyDmsaDlrZDkuI3otrMgcGlja3Mg5Y+q5pe25YWo57uZCiAgICAgICAgYXNzZXJ0VHJ1ZShhbmFseXplci5zZWxlY3REYWlseUNhbmRpZGF0ZXMoKDAgdW50aWwgOCkubWFwIHsgbWsoOTAgLSBpdCkgfSwgMjApLnNpemUgPT0gNCkKICAgICAgICAvLyBLIOe6v+S4jei2s+eahOS4jeWFpeaxoAogICAgICAgIHZhbCBzaG9ydEJhciA9IGNvbS5zdG9jay5hbmFseXplci5kYXRhLm1vZGVsLkFuYWx5c2lzUmVzdWx0KAogICAgICAgICAgICBudWxsLCBudWxsLCBudWxsLCBudWxsLCBudWxsLCBudWxsLAogICAgICAgICAgICBjb20uc3RvY2suYW5hbHl6ZXIuZGF0YS5tb2RlbC5SZWNvbW1lbmRhdGlvbi5CVVksIGVtcHR5TGlzdCgpLCA5OSwgZGF0YVN1ZmZpY2llbnQgPSBmYWxzZQogICAgICAgICkKICAgICAgICB2YWwgd2l0aEJhZCA9IGFsbC50YWtlKDEwKSArIGFsbC5maXJzdCgpLmNvcHkoYW5hbHlzaXMgPSBzaG9ydEJhcikKICAgICAgICBhc3NlcnRFcXVhbHMoNSwgYW5hbHl6ZXIuZGFpbHlQb29sKHdpdGhCYWQpLnNpemUpCiAgICB9Cn0K
+package com.stock.analyzer.analysis
+
+import com.stock.analyzer.data.model.AdviceType
+import com.stock.analyzer.data.model.KLineData
+import com.google.gson.Gson
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertTrue
+import org.junit.Test
+
+/**
+ * 与回测脚本的口径对齐测试。
+ *
+ * engine_parity.json 由 backtest/export_parity.py 生成：真实A股日线 + Python 回测引擎
+ * （backtest/final_validate.py 的 new_fn，即上线的那套评分）逐bar算出的期望分数。
+ * 只要 Kotlin 引擎与回测有一根K线的判断不一致，这个测试就会红。
+ */
+class EngineParityTest {
+
+    private class Bar {
+        var d: String = ""
+        var o: Double = 0.0
+        var c: Double = 0.0
+        var h: Double = 0.0
+        var l: Double = 0.0
+        var v: Long = 0
+    }
+
+    private class StockFx {
+        var code: String = ""
+        var bars: List<Bar> = emptyList()
+        var expected: List<List<Double>> = emptyList()
+    }
+
+    private class Fixture {
+        var stocks: List<StockFx> = emptyList()
+    }
+
+    private fun load(): Fixture {
+        val stream = javaClass.classLoader!!.getResourceAsStream("engine_parity.json")
+        assertTrue("缺少测试夹具 engine_parity.json（先跑 backtest/export_parity.py）", stream != null)
+        return Gson().fromJson(stream.reader().readText(), Fixture::class.java)
+    }
+
+    private fun toK(bars: List<Bar>) = bars.map { KLineData(it.d, it.o, it.c, it.h, it.l, it.v) }
+
+    @Test
+    fun `kotlin score matches backtest bar by bar`() {
+        val fx = load()
+        val analyzer = StockAnalyzer()
+        var checked = 0
+        var compared = 0
+        val diffs = ArrayList<String>()
+
+        for (s in fx.stocks) {
+            val k = toK(s.bars)
+            for (t in k.indices) {
+                val res = analyzer.analyze(k.subList(0, t + 1))
+                val exp = s.expected[t]
+                val expOk = exp[1] == 1.0
+                checked++
+                if (res.dataSufficient != expOk) {
+                    diffs.add("${s.code} ${s.bars[t].d}: 可判断性 kotlin=${res.dataSufficient} backtest=$expOk")
+                    continue
+                }
+                if (!expOk) continue
+                compared++
+                val expScore = Math.round(exp[0]).toInt()
+                if (res.score != expScore) {
+                    diffs.add("${s.code} ${s.bars[t].d}: kotlin=${res.score} backtest=$expScore")
+                }
+            }
+        }
+        println("parity: bars=$checked, scored=$compared, mismatches=${diffs.size}")
+        diffs.take(20).forEach { println("  MISMATCH $it") }
+        assertTrue("Kotlin 引擎与回测不一致：${diffs.take(5)}", diffs.isEmpty())
+        assertTrue("对比样本太少", compared > 2000)
+    }
+
+    @Test
+    fun `advice thresholds and price ranges are consistent`() {
+        val fx = load()
+        val analyzer = StockAnalyzer()
+        for (s in fx.stocks) {
+            val k = toK(s.bars)
+            if (k.size < StockAnalyzer.BARS_MIN) continue
+            val last = k.last()
+            val stock = com.stock.analyzer.data.model.PortfolioStock(
+                code = s.code, name = s.code, buyPrice = last.close, quantity = 100,
+                buyDate = System.currentTimeMillis(), currentPrice = last.close
+            )
+            val a = analyzer.analyze(k)
+            val advice = analyzer.generatePositionAdvice(stock, k)
+
+            // 分档与回测的阈值必须一致，且最高只到 BUY（≥76 分那一档回测为负，不发强烈买入）
+            if (a.dataSufficient) {
+                when {
+                    a.score >= StockAnalyzer.BUY_SCORE -> assertEquals(AdviceType.BUY, advice.advice)
+                    a.score > StockAnalyzer.SELL_SCORE -> assertEquals(AdviceType.HOLD, advice.advice)
+                    a.score > StockAnalyzer.STRONG_SELL_SCORE -> assertEquals(AdviceType.SELL, advice.advice)
+                    else -> assertEquals(AdviceType.STRONG_SELL, advice.advice)
+                }
+                assertTrue("不该发出强烈加仓", advice.advice != AdviceType.STRONG_BUY)
+            } else {
+                assertEquals(AdviceType.HOLD, advice.advice)
+            }
+
+            // 两个区间永远可见且有序
+            assertTrue(advice.addPriceRange.low > 0)
+            assertTrue(advice.addPriceRange.low < advice.addPriceRange.high)
+            assertTrue(advice.reducePriceRange.low <= advice.reducePriceRange.high)
+
+            // 止损必须低于现价、且不超过 20%
+            advice.stopLoss?.let {
+                assertTrue("stop=$it price=${last.close}", it < last.close && it >= last.close * 0.80)
+            }
+            assertTrue(advice.riskNote!!.isNotEmpty())
+        }
+    }
+
+    /** 每日列表 = 前 50% 分位池 + 分位等距取样，不是评分排行榜，也没有绝对门槛 */
+    @Test
+    fun `daily list is stratified across the relative top-50 pool`() {
+        val analyzer = StockAnalyzer()
+        val mk: (Int) -> com.stock.analyzer.data.model.StockRecommendation = { score ->
+            val st = com.stock.analyzer.data.model.Stock(
+                code = "c$score", name = "s$score", price = 10.0, change = 0.0, changePercent = 0.0,
+                volume = 0, turnover = 0.0, high = 10.0, low = 10.0, open = 10.0, close = 10.0,
+                timestamp = 0L
+            )
+            com.stock.analyzer.data.model.StockRecommendation(
+                rank = 0, stock = st,
+                analysis = com.stock.analyzer.data.model.AnalysisResult(
+                    null, null, null, null, null, null,
+                    com.stock.analyzer.data.model.Recommendation.BUY, emptyList(), score,
+                    dataSufficient = true
+                ),
+                buyPriceRange = null, sellPriceRange = null
+            )
+        }
+        val all = (99 downTo 40).map { mk(it) }            // 60 只，分数 99..40 递减
+        // 池 = ceil(60 × 0.50) = 30 只，即 99..70；低于 68 的那一半靠"排名"出局，不靠绝对门槛
+        assertEquals(30, analyzer.dailyPool(all).size)
+        assertEquals(30, analyzer.eligibleCount(all))
+        assertEquals(70, analyzer.dailyPool(all).last().analysis.score)
+
+        val scores = analyzer.selectDailyCandidates(all, 20).map { it.analysis.score }
+        assertEquals(20, scores.size)
+        assertEquals("首名仍是池内最高分", 99, scores.first())
+        // 池内 30 只按 pool[i*(q-1)/20] 取样 → index 0,1,2,4,...,27 → 最低 72 分（池底 70、71 不在名单里）
+        assertEquals("取样应单调递减且不重复", scores.size, scores.toSet().size)
+        assertTrue("取样应覆盖池子大部: $scores", scores.first() - scores.last() >= 20)
+        assertTrue("末名应来自池中后段，证明不是 top-N", scores.last() < 80)
+        assertEquals(72, scores.last())
+
+        // 奇数只：ceil(41 × 0.50) = 21
+        assertEquals(21, analyzer.dailyPool((0 until 41).map { mk(100 - it) }).size)
+        // 全场都在加仓线以下也必须给出名单（旧规则此时会空）
+        val weak = (20..29).map { mk(it) }                 // 10 只，分数全部 < 68
+        assertEquals(5, analyzer.dailyPool(weak).size)
+        assertEquals(5, analyzer.selectDailyCandidates(weak, 20).size)
+        // 池子不足 picks 只时全给
+        assertTrue(analyzer.selectDailyCandidates((0 until 8).map { mk(90 - it) }, 20).size == 4)
+        // K 线不足的不入池
+        val shortBar = com.stock.analyzer.data.model.AnalysisResult(
+            null, null, null, null, null, null,
+            com.stock.analyzer.data.model.Recommendation.BUY, emptyList(), 99, dataSufficient = false
+        )
+        val withBad = all.take(10) + all.first().copy(analysis = shortBar)
+        assertEquals(5, analyzer.dailyPool(withBad).size)
+    }
+}

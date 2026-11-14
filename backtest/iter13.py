@@ -1,1 +1,132 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJJdGVyYXRpb24gMTM6IGZpbmFsIGNob2ljZSBhbW9uZyB0aHJlZSBzaGlwcGVkIGNhbmRpZGF0ZXMsIHdpdGggdGhlIHRhaWwKbWVhc3VyZWQgb24gUkFXIHJldHVybnMgKG5vdCBleGNlc3MpIGFuZCBhIHBlci1tb250aCBzdGFiaWxpdHkgdGFibGUuCgpVbml2ZXJzZSBjYXZlYXQgc3RhdGVkIHVwIGZyb250OiB0aGUgMjg4IG5hbWVzIHdlcmUgc2VsZWN0ZWQgYnkgQ1VSUkVOVCBtYXJrZXQKY2FwLCBzbyBhbnkgbW9tZW50dW0gdGlsdCBpcyBmbGF0dGVyZWQgYnkgc3Vydml2b3JzaGlwIOKAlCBhIGNyYXNoZWQtb3V0IGxlYWRlcgppcyBub3QgaW4gdGhlIHNhbXBsZS4gVGhhdCBpcyB3aHkgdGhlIGFnZ3Jlc3NpdmUgMjAlKyBtb21lbnR1bSBmaWx0ZXIgaXMKanVkZ2VkIG9uIGl0cyB0YWlsIGFuZCBpdHMgbW9udGgtYnktbW9udGggY29uc2lzdGVuY3ksIG5vdCBvbiBpdHMgaGVhZGxpbmUuCiIiIgppbXBvcnQgbnVtcHkgYXMgbnAKZnJvbSBjb2xsZWN0aW9ucyBpbXBvcnQgZGVmYXVsdGRpY3QKZnJvbSBtb2RlbCBpbXBvcnQgQ1VUT0ZGLCBfbmFuLCBnLCBzdG9ja3MsIE1JTl9ISVNULCBDT1NULCBILCBCQVNFTElORQoKQ0FORCA9IHsKICAgICJBIHByb2Qobm8gbW9tZW50dW0pIjogKDAuMDIwLCAxNTAuMCwgTm9uZSksCiAgICAiQiBzdGFsZTwxMiUgLTgiOiAoMC4wMjAsIDE1MC4wLCAwLjEyKSwKICAgICJDIHN0YWxlPDE2JSAtOCI6ICgwLjAyMCwgMTUwLjAsIDAuMTYpLAogICAgIkQgc3RhbGU8MjAlIC04IjogKDAuMDIwLCAxNTAuMCwgMC4yMCksCiAgICAiRSBzdGFsZTwxMiUgLTggK0FUUjMwMCI6ICgwLjAyMCwgMzAwLjAsIDAuMTIpLAp9CgoKZGVmIHNjb3JlKGtuZWUsIHBlbiwgc3RhbGVfdGgpOgogICAgZGVmIGZuKEYsIHQpOgogICAgICAgIGMgPSBGWyJjbG9zZSJdW3RdCiAgICAgICAgbWExMCwgbWEyMCwgbWE2MCwgc2wgPSBnKEYsICJtYTEwIiwgdCksIGcoRiwgIm1hMjAiLCB0KSwgZyhGLCAibWE2MCIsIHQpLCBnKEYsICJtYTIwX3Nsb3BlIiwgdCkKICAgICAgICBpZiBfbmFuKG1hMjApIG9yIF9uYW4obWE2MCkgb3IgX25hbihzbCkgb3IgX25hbihtYTEwKToKICAgICAgICAgICAgcmV0dXJuIDAuMCwgRmFsc2UKICAgICAgICBzID0gNTAuMAogICAgICAgIHVwID0gYyA+IG1hMjAgPiBtYTYwCiAgICAgICAgZG4gPSBjIDwgbWEyMCA8IG1hNjAKICAgICAgICBpZiB1cDoKICAgICAgICAgICAgcyArPSAyMiBpZiBzbCA+IDAuMDE1IGVsc2UgKDE0IGlmIHNsID4gMC4wIGVsc2UgNikKICAgICAgICBlbGlmIGRuOgogICAgICAgICAgICBzIC09IDIyIGlmIHNsIDwgLTAuMDE1IGVsc2UgKDE0IGlmIHNsIDwgMC4wIGVsc2UgNikKICAgICAgICBlbHNlOgogICAgICAgICAgICBzIC09IDMKICAgICAgICBzICs9IDQgaWYgYyA+IG1hMTAgPiBtYTIwIGVsc2UgLTIKICAgICAgICBhID0gZyhGLCAiYXRyX3BjdCIsIHQpCiAgICAgICAgaWYgbm90IF9uYW4oYSk6CiAgICAgICAgICAgIHMgLT0gbWF4KDAuMCwgYSAtIGtuZWUpICogcGVuCiAgICAgICAgaWYgc3RhbGVfdGggaXMgbm90IE5vbmU6CiAgICAgICAgICAgIHIgPSBnKEYsICJyZXQyMCIsIHQpCiAgICAgICAgICAgIGlmIG5vdCBfbmFuKHIpIGFuZCByIDwgc3RhbGVfdGg6CiAgICAgICAgICAgICAgICBzIC09IDguMAogICAgICAgIHJldHVybiBmbG9hdChucC5jbGlwKHMsIDAsIDEwMCkpLCBUcnVlCiAgICByZXR1cm4gZm4KCgpDQUNIRSA9IHt9CmZvciBsYWIsIGNmZyBpbiBDQU5ELml0ZW1zKCk6CiAgICByb3dzID0gW10KICAgIGZuID0gc2NvcmUoKmNmZykKICAgIGZvciBGIGluIHN0b2NrczoKICAgICAgICBuID0gaW50KEZbIm4iXSkKICAgICAgICBjLCBvID0gRlsiY2xvc2UiXSwgRlsib3BlbiJdCiAgICAgICAgbGltID0gMC4wOTcgaWYgRlsiY29kZSJdLnN0YXJ0c3dpdGgoKCIzMCIsICI2OCIpKSBlbHNlIDAuMDQ3CiAgICAgICAgZm9yIHQgaW4gcmFuZ2UoTUlOX0hJU1QsIG4gLSAxKToKICAgICAgICAgICAgcywgb2sgPSBmbihGLCB0KQogICAgICAgICAgICBpZiBub3Qgb2s6CiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICBrID0gdCArIDEgKyBICiAgICAgICAgICAgIGlmIGsgPj0gbjoKICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgIGVvID0gb1t0ICsgMV0KICAgICAgICAgICAgaWYgZW8gPD0gMDoKICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgIGQgPSBzdHIoRlsiZGF0ZSJdW3RdKQogICAgICAgICAgICBiID0gQkFTRUxJTkUuZ2V0KChkLCBIKSkKICAgICAgICAgICAgaWYgYiBpcyBOb25lOgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgcmF3ID0gKGNba10gLyBlbyAtIDEuMCkgLSBDT1NUCiAgICAgICAgICAgIHVuYiA9IEZbInBjdCJdW3RdID4gMCBhbmQgZW8gPj0gY1t0XSAqICgxICsgbGltKSAqIDAuOTk1CiAgICAgICAgICAgIHJvd3MuYXBwZW5kKChzLCBkLCByYXcsIHJhdyAtIGIsIHVuYikpCiAgICBDQUNIRVtsYWJdID0gcm93cwoKZGF0ZXNfYWxsID0gc29ydGVkKHtkIGZvciByIGluIENBQ0hFWyJBIHByb2Qobm8gbW9tZW50dW0pIl0gZm9yIGQgaW4gW3JbMV1dfSkKaDEgPSBzZXQoZGF0ZXNfYWxsWzpsZW4oZGF0ZXNfYWxsKSAvLyAyXSkKCnByaW50KGYieydjYW5kaWRhdGUnOjI2c30geydidXlzL2QnOj42c30geydkX2V4Yyc6PjdzfSB7J2gxJzo+N3N9IHsnaDInOj43c30geydvb3NfZXhjJzo+OHN9ICIKICAgICAgZiJ7J29vc19yYXcnOj44c30geydvb3NfcDA1Jzo+OHN9IHsnb29zPjEwTCc6PjhzfSB7J3dvcnN0Jzo+N3N9IHsn5YeP5LuTZXhjJzo+OHN9IikKZm9yIGxhYiwgcm93cyBpbiBDQUNIRS5pdGVtcygpOgogICAgYmQgPSBkZWZhdWx0ZGljdChsaXN0KQogICAgc2QgPSBkZWZhdWx0ZGljdChsaXN0KQogICAgZm9yIHMsIGQsIHJhdywgZXhjLCB1bmIgaW4gcm93czoKICAgICAgICBpZiBzID49IDcwIGFuZCBub3QgdW5iOgogICAgICAgICAgICBiZFtkXS5hcHBlbmQoKHJhdywgZXhjKSkKICAgICAgICBlbGlmIHMgPD0gNDI6CiAgICAgICAgICAgIHNkW2RdLmFwcGVuZChleGMpCiAgICBwZXIsIHBlcjEsIHBlcjIsIG9vc19yYXcsIG9vc19leGMsIHNlbGxzID0gW10sIFtdLCBbXSwgW10sIFtdLCBbXQogICAgZm9yIGQsIHYgaW4gYmQuaXRlbXMoKToKICAgICAgICBpZiBsZW4odikgPCAzOgogICAgICAgICAgICBjb250aW51ZQogICAgICAgIHBlci5hcHBlbmQobnAubWVhbihbeFsxXSBmb3IgeCBpbiB2XSkpCiAgICAgICAgKHBlcjEgaWYgZCBpbiBoMSBlbHNlIHBlcjIpLmFwcGVuZChucC5tZWFuKFt4WzFdIGZvciB4IGluIHZdKSkKICAgICAgICBpZiBkID49IENVVE9GRjoKICAgICAgICAgICAgb29zX3Jhdy5leHRlbmQoW3hbMF0gZm9yIHggaW4gdl0pCiAgICAgICAgICAgIG9vc19leGMuZXh0ZW5kKFt4WzFdIGZvciB4IGluIHZdKQogICAgZm9yIGQsIHYgaW4gc2QuaXRlbXMoKToKICAgICAgICBpZiBsZW4odikgPj0gMzoKICAgICAgICAgICAgc2VsbHMuYXBwZW5kKG5wLm1lYW4odikpCiAgICBpZiBsZW4ocGVyKSA8IDIwOgogICAgICAgIHByaW50KGYie2xhYjoyNnN9IHRvbyBmZXciKQogICAgICAgIGNvbnRpbnVlCiAgICBSID0gbnAuYXJyYXkob29zX3JhdykKICAgIG5kID0gc3VtKGxlbih2KSBmb3IgdiBpbiBiZC52YWx1ZXMoKSkgLyBtYXgoMSwgbGVuKFsxIGZvciB2IGluIGJkLnZhbHVlcygpIGlmIGxlbih2KSA+PSAzXSkpCiAgICBwcmludChmIntsYWI6MjZzfSB7bmQ6PjYuMWZ9IHtucC5tZWFuKHBlcikqMTAwOj4rNi4yZn0lIHtucC5tZWFuKHBlcjEpKjEwMDo+KzYuMmZ9JSAiCiAgICAgICAgICBmIntucC5tZWFuKHBlcjIpKjEwMDo+KzYuMmZ9JSB7bnAubWVhbihvb3NfZXhjKSoxMDA6Pis3LjJmfSUge1IubWVhbigpKjEwMDo+KzcuMmZ9JSAiCiAgICAgICAgICBmIntucC5wZXJjZW50aWxlKFIsNSkqMTAwOj4rNy4xZn0lIHsoUjwtMC4xMCkubWVhbigpKjEwMDo+Ny4xZn0lIHtSLm1pbigpKjEwMDo+KzYuMWZ9JSAiCiAgICAgICAgICBmIntucC5tZWFuKHNlbGxzKSoxMDA6Pis3LjJmfSUiKQoKcHJpbnQoIlxuPT09IG1vbnRoLWxldmVsOiBzaGFyZSBvZiBtb250aHMgd2hlcmUgdGhlIGJ1eSBib29rIGJlYXQgdGhlIHVuaXZlcnNlID09PSIpCmZvciBsYWIsIHJvd3MgaW4gQ0FDSEUuaXRlbXMoKToKICAgIGJtID0gZGVmYXVsdGRpY3QobGlzdCkKICAgIGZvciBzLCBkLCByYXcsIGV4YywgdW5iIGluIHJvd3M6CiAgICAgICAgaWYgcyA+PSA3MCBhbmQgbm90IHVuYjoKICAgICAgICAgICAgYm1bZFs6N11dLmFwcGVuZChleGMpCiAgICBwZXIgPSBbbnAubWVhbih2KSBmb3IgdiBpbiBibS52YWx1ZXMoKSBpZiBsZW4odikgPj0gNV0KICAgIGlmIHBlcjoKICAgICAgICBwID0gbnAuYXJyYXkocGVyKQogICAgICAgIHByaW50KGYiICB7bGFiOjI2c30gbW9udGhzPXtsZW4ocCk6M2R9IHBvcz17bnAubWVhbihwPjApKjEwMDo1LjFmfSUgIgogICAgICAgICAgICAgIGYibWVkaWFuPXtucC5tZWRpYW4ocCkqMTAwOis1LjJmfSUgd29yc3RfbW9udGg9e3AubWluKCkqMTAwOis1LjJmfSUiKQoKcHJpbnQoIlxuPT09IE9PUyB0YWlsIGJ5IHllYXItbW9udGggKHJhdyAyMGQgcmV0dXJuIG9mIHRoZSBidXkgYm9vaykgPT09IikKZm9yIGxhYiwgcm93cyBpbiBDQUNIRS5pdGVtcygpOgogICAgYm0gPSBkZWZhdWx0ZGljdChsaXN0KQogICAgZm9yIHMsIGQsIHJhdywgZXhjLCB1bmIgaW4gcm93czoKICAgICAgICBpZiBzID49IDcwIGFuZCBub3QgdW5iIGFuZCBkID49IENVVE9GRjoKICAgICAgICAgICAgYm1bZFs6N11dLmFwcGVuZChyYXcpCiAgICBrcyA9IHNvcnRlZChibSkKICAgIGxpbmUgPSAiICAiLmpvaW4oZiJ7a1syOl19OntucC5tZWFuKGJtW2tdKSoxMDA6KzUuMWZ9JSIgZm9yIGsgaW4ga3MgaWYgbGVuKGJtW2tdKSA+PSAyMCkKICAgIHByaW50KGYie2xhYjoyNHN9IHtsaW5lfSIpCg==
+#!/usr/bin/env python3
+"""Iteration 13: final choice among three shipped candidates, with the tail
+measured on RAW returns (not excess) and a per-month stability table.
+
+Universe caveat stated up front: the 288 names were selected by CURRENT market
+cap, so any momentum tilt is flattered by survivorship — a crashed-out leader
+is not in the sample. That is why the aggressive 20%+ momentum filter is
+judged on its tail and its month-by-month consistency, not on its headline.
+"""
+import numpy as np
+from collections import defaultdict
+from model import CUTOFF, _nan, g, stocks, MIN_HIST, COST, H, BASELINE
+
+CAND = {
+    "A prod(no momentum)": (0.020, 150.0, None),
+    "B stale<12% -8": (0.020, 150.0, 0.12),
+    "C stale<16% -8": (0.020, 150.0, 0.16),
+    "D stale<20% -8": (0.020, 150.0, 0.20),
+    "E stale<12% -8 +ATR300": (0.020, 300.0, 0.12),
+}
+
+
+def score(knee, pen, stale_th):
+    def fn(F, t):
+        c = F["close"][t]
+        ma10, ma20, ma60, sl = g(F, "ma10", t), g(F, "ma20", t), g(F, "ma60", t), g(F, "ma20_slope", t)
+        if _nan(ma20) or _nan(ma60) or _nan(sl) or _nan(ma10):
+            return 0.0, False
+        s = 50.0
+        up = c > ma20 > ma60
+        dn = c < ma20 < ma60
+        if up:
+            s += 22 if sl > 0.015 else (14 if sl > 0.0 else 6)
+        elif dn:
+            s -= 22 if sl < -0.015 else (14 if sl < 0.0 else 6)
+        else:
+            s -= 3
+        s += 4 if c > ma10 > ma20 else -2
+        a = g(F, "atr_pct", t)
+        if not _nan(a):
+            s -= max(0.0, a - knee) * pen
+        if stale_th is not None:
+            r = g(F, "ret20", t)
+            if not _nan(r) and r < stale_th:
+                s -= 8.0
+        return float(np.clip(s, 0, 100)), True
+    return fn
+
+
+CACHE = {}
+for lab, cfg in CAND.items():
+    rows = []
+    fn = score(*cfg)
+    for F in stocks:
+        n = int(F["n"])
+        c, o = F["close"], F["open"]
+        lim = 0.097 if F["code"].startswith(("30", "68")) else 0.047
+        for t in range(MIN_HIST, n - 1):
+            s, ok = fn(F, t)
+            if not ok:
+                continue
+            k = t + 1 + H
+            if k >= n:
+                continue
+            eo = o[t + 1]
+            if eo <= 0:
+                continue
+            d = str(F["date"][t])
+            b = BASELINE.get((d, H))
+            if b is None:
+                continue
+            raw = (c[k] / eo - 1.0) - COST
+            unb = F["pct"][t] > 0 and eo >= c[t] * (1 + lim) * 0.995
+            rows.append((s, d, raw, raw - b, unb))
+    CACHE[lab] = rows
+
+dates_all = sorted({d for r in CACHE["A prod(no momentum)"] for d in [r[1]]})
+h1 = set(dates_all[:len(dates_all) // 2])
+
+print(f"{'candidate':26s} {'buys/d':>6s} {'d_exc':>7s} {'h1':>7s} {'h2':>7s} {'oos_exc':>8s} "
+      f"{'oos_raw':>8s} {'oos_p05':>8s} {'oos>10L':>8s} {'worst':>7s} {'减仓exc':>8s}")
+for lab, rows in CACHE.items():
+    bd = defaultdict(list)
+    sd = defaultdict(list)
+    for s, d, raw, exc, unb in rows:
+        if s >= 70 and not unb:
+            bd[d].append((raw, exc))
+        elif s <= 42:
+            sd[d].append(exc)
+    per, per1, per2, oos_raw, oos_exc, sells = [], [], [], [], [], []
+    for d, v in bd.items():
+        if len(v) < 3:
+            continue
+        per.append(np.mean([x[1] for x in v]))
+        (per1 if d in h1 else per2).append(np.mean([x[1] for x in v]))
+        if d >= CUTOFF:
+            oos_raw.extend([x[0] for x in v])
+            oos_exc.extend([x[1] for x in v])
+    for d, v in sd.items():
+        if len(v) >= 3:
+            sells.append(np.mean(v))
+    if len(per) < 20:
+        print(f"{lab:26s} too few")
+        continue
+    R = np.array(oos_raw)
+    nd = sum(len(v) for v in bd.values()) / max(1, len([1 for v in bd.values() if len(v) >= 3]))
+    print(f"{lab:26s} {nd:>6.1f} {np.mean(per)*100:>+6.2f}% {np.mean(per1)*100:>+6.2f}% "
+          f"{np.mean(per2)*100:>+6.2f}% {np.mean(oos_exc)*100:>+7.2f}% {R.mean()*100:>+7.2f}% "
+          f"{np.percentile(R,5)*100:>+7.1f}% {(R<-0.10).mean()*100:>7.1f}% {R.min()*100:>+6.1f}% "
+          f"{np.mean(sells)*100:>+7.2f}%")
+
+print("\n=== month-level: share of months where the buy book beat the universe ===")
+for lab, rows in CACHE.items():
+    bm = defaultdict(list)
+    for s, d, raw, exc, unb in rows:
+        if s >= 70 and not unb:
+            bm[d[:7]].append(exc)
+    per = [np.mean(v) for v in bm.values() if len(v) >= 5]
+    if per:
+        p = np.array(per)
+        print(f"  {lab:26s} months={len(p):3d} pos={np.mean(p>0)*100:5.1f}% "
+              f"median={np.median(p)*100:+5.2f}% worst_month={p.min()*100:+5.2f}%")
+
+print("\n=== OOS tail by year-month (raw 20d return of the buy book) ===")
+for lab, rows in CACHE.items():
+    bm = defaultdict(list)
+    for s, d, raw, exc, unb in rows:
+        if s >= 70 and not unb and d >= CUTOFF:
+            bm[d[:7]].append(raw)
+    ks = sorted(bm)
+    line = "  ".join(f"{k[2:]}:{np.mean(bm[k])*100:+5.1f}%" for k in ks if len(bm[k]) >= 20)
+    print(f"{lab:24s} {line}")

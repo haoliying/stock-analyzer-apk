@@ -1,1 +1,117 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiLmjIkgQXBwIOe7meWHuueahOatouaNn+S7t++8iDJ4QVRS77yM5LiU5LiN6auY5LqO546w5Lu3OTgl77yJ55yf5a6e5omn6KGM77yM5Lya5pS55Y+Y5LuA5LmI77yfCgrliY3pnaLmiYDmnInlm57mtYvpg73msqHlu7rmqKHlnovmraLmjZ/vvIjlj6rnnIsyMOaXpeWIsOacn+aUtuebiu+8ieOAgui/memHjOeUqOaXpee6vyBoaWdoL2xvdyDov5HkvLzvvJoK5oyB5pyJ5pyf5YaF6Iul5b2T5aSpIG9wZW4gPD0g5q2i5o2f5Lu3IC0+IOaMiSBvcGVuIOaIkOS6pO+8iOi3s+epuuepv+i2iu+8jOa7keeCueWmguWunuiuoeWFpe+8ie+8mwroi6UgbG93IDw9IOatouaNn+S7tyAtPiDmjInmraLmjZ/ku7fmiJDkuqTjgILmsqHop6blj5HlsLHmjIHmu6EgMjAg5Liq5Lqk5piT5pel44CCCuaIkOacrOWQjOagtyAwLjEyJSDlvoDov5TjgIIKIiIiCmltcG9ydCBvcwppbXBvcnQgc3lzCgppbXBvcnQgbnVtcHkgYXMgbnAKCkhFUkUgPSBvcy5wYXRoLmRpcm5hbWUob3MucGF0aC5hYnNwYXRoKF9fZmlsZV9fKSkKc3lzLnBhdGguaW5zZXJ0KDAsIEhFUkUpCmZyb20gZmluYWxfdmFsaWRhdGUgaW1wb3J0IG5ld19mbiAgIyBub3FhOiBFNDAyCmZyb20gbW9kZWwgaW1wb3J0IENVVE9GRiwgQ09TVCwgTUlOX0hJU1QsIHN0b2NrcywgX25hbiwgZyAgIyBub3FhOiBFNDAyCgpCVVksIEggPSA2OC4wLCAyMAoKCmRlZiBzdG9wX2xldmVsKEYsIHQpOgogICAgIiIi6ZWc5YOPIEtvdGxpbiBzdG9wTG9zcygpOiBwcmljZS0yKkFUUiwg55SoIE1BMjAqMC45OTUg5oqs6auYLCDlpLnlnKggWzAuODAsIDAuOThdKnByaWNlIiIiCiAgICBjLCBhLCBtMjAgPSBGWyJjbG9zZSJdW3RdLCBnKEYsICJhdHIiLCB0KSwgZyhGLCAibWEyMCIsIHQpCiAgICBpZiBfbmFuKGEpIG9yIGEgPD0gMDoKICAgICAgICByZXR1cm4gTm9uZQogICAgcyA9IGMgLSAyICogYQogICAgaWYgbm90IF9uYW4obTIwKSBhbmQgbTIwIDwgYzoKICAgICAgICBzID0gbWF4KHMsIG0yMCAqIDAuOTk1KQogICAgcmV0dXJuIGZsb2F0KG1pbihjICogMC45OCwgbWF4KGMgKiAwLjgwLCBzKSkpCgoKZGVmIHJ1bigpOgogICAgcm93cyA9IFtdCiAgICBmb3IgRiBpbiBzdG9ja3M6CiAgICAgICAgbiA9IGludChGWyJuIl0pCiAgICAgICAgbywgYywgbG8gPSBGWyJvcGVuIl0sIEZbImNsb3NlIl0sIEZbImxvdyJdCiAgICAgICAgbGltID0gMC4wOTcgaWYgc3RyKEZbImNvZGUiXSkuc3RhcnRzd2l0aCgoIjMwIiwgIjY4IikpIGVsc2UgMC4wNDcKICAgICAgICBmb3IgdCBpbiByYW5nZShNSU5fSElTVCwgbiAtIDEpOgogICAgICAgICAgICBzLCBvayA9IG5ld19mbihGLCB0KQogICAgICAgICAgICBpZiBub3Qgb2sgb3IgcyA8IEJVWToKICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgIGUgPSBvW3QgKyAxXQogICAgICAgICAgICBpZiBlIDw9IDAgb3IgY1t0XSA8PSAwIG9yIHQgKyAxICsgSCA+PSBuOgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgaWYgRlsicGN0Il1bdF0gPiAwIGFuZCBlID49IGNbdF0gKiAoMSArIGxpbSkgKiAwLjk5NToKICAgICAgICAgICAgICAgIGNvbnRpbnVlICAjIOW8gOebmOa2qOWBnOS5sOS4jeWIsAogICAgICAgICAgICBkID0gc3RyKEZbImRhdGUiXVt0XSkKICAgICAgICAgICAgaG9sZCA9IChjW3QgKyAxICsgSF0gLyBlIC0gMS4wKSAtIENPU1QKICAgICAgICAgICAgcm93ID0geyJkYXRlIjogZCwgImhvbGQiOiBob2xkLCAic3RvcCI6IG5wLm5hbiwgImRheXMiOiBIICsgMSwgImhpdCI6IEZhbHNlfQogICAgICAgICAgICBTID0gc3RvcF9sZXZlbChGLCB0KQogICAgICAgICAgICBpZiBTIGlzIG5vdCBOb25lOgogICAgICAgICAgICAgICAgZm9yIGsgaW4gcmFuZ2UodCArIDEsIHQgKyAyICsgSCk6ICAjIOWIsOacn+WPo+W+hOS4jiBob2xkIOS4gOiHtO+8iOaUtuebmCA9IHQrMStI77yJCiAgICAgICAgICAgICAgICAgICAgaWYgb1trXSA8PSBTOgogICAgICAgICAgICAgICAgICAgICAgICByb3cudXBkYXRlKHN0b3A9b1trXSAvIGUgLSAxLjAgLSBDT1NULCBkYXlzPWsgLSB0LCBoaXQ9VHJ1ZSkKICAgICAgICAgICAgICAgICAgICAgICAgYnJlYWsKICAgICAgICAgICAgICAgICAgICBpZiBsb1trXSA8PSBTOgogICAgICAgICAgICAgICAgICAgICAgICByb3cudXBkYXRlKHN0b3A9UyAvIGUgLSAxLjAgLSBDT1NULCBkYXlzPWsgLSB0LCBoaXQ9VHJ1ZSkKICAgICAgICAgICAgICAgICAgICAgICAgYnJlYWsKICAgICAgICAgICAgICAgIGlmIG5vdCByb3dbImhpdCJdOgogICAgICAgICAgICAgICAgICAgIHJvd1sic3RvcCJdID0gaG9sZCAgIyDmjIHmu6HliLDmnJ/vvIzmraLmjZ/mnKrop6blj5EKICAgICAgICAgICAgcm93cy5hcHBlbmQocm93KQogICAgcmV0dXJuIHJvd3MKCgpkZWYgc2hvdyhhLCBsYWJlbCk6CiAgICBhID0gYVt+bnAuaXNuYW4oYSldCiAgICBpZiBhLnNpemUgPT0gMDoKICAgICAgICBwcmludChmIiAgICB7bGFiZWw6PDIwfSDml6DmoLfmnKwiKQogICAgICAgIHJldHVybgogICAgcHJpbnQoZiIgICAge2xhYmVsOjwyMH0gbj17YS5zaXplOjw2ZH0g5Z2H5YC8IHthLm1lYW4oKSoxMDA6KzUuMmZ9JSAg5Lit5L2NIHtucC5tZWRpYW4oYSkqMTAwOis1LjJmfSUgICIKICAgICAgICAgIGYi6IOc546HIHsoYT4wKS5tZWFuKCkqMTAwOjQuMWZ9JSAgcDUge25wLnBlcmNlbnRpbGUoYSw1KSoxMDA6KzUuMWZ9JSAgcDI1IHtucC5wZXJjZW50aWxlKGEsMjUpKjEwMDorNS4xZn0lICAiCiAgICAgICAgICBmIuacgOW3riB7YS5taW4oKSoxMDA6KzYuMWZ9JSAg5LqPPjEwJSB7KGE8LTAuMTApLm1lYW4oKSoxMDA6NC4xZn0lICDkuo8+MjAlIHsoYTwtMC4yMCkubWVhbigpKjEwMDo0LjFmfSUiKQoKCmRlZiBiYXNrZXQodmFsc19ieV9kYXkpOgogICAgcmV0dXJuIG5wLmFycmF5KFtucC5tZWFuKHgpIGZvciBrLCB4IGluIHNvcnRlZCh2YWxzX2J5X2RheS5pdGVtcygpKSBpZiB4XSkKCgpkZWYgYnlfZGF5KHJvd3MsIGtleSwgc2luY2U9Tm9uZSk6CiAgICBkID0ge30KICAgIGZvciByIGluIHJvd3M6CiAgICAgICAgaWYgc2luY2UgYW5kIHJbImRhdGUiXSA8IHNpbmNlOgogICAgICAgICAgICBjb250aW51ZQogICAgICAgIHYgPSByW2tleV0KICAgICAgICBpZiBub3QgbnAuaXNuYW4odik6CiAgICAgICAgICAgIGQuc2V0ZGVmYXVsdChyWyJkYXRlIl0sIFtdKS5hcHBlbmQodikKICAgIHJldHVybiBkCgoKZGVmIG1haW4oKToKICAgIHJvd3MgPSBydW4oKQogICAgaGl0ID0gbnAuYXJyYXkoW3JbImhpdCJdIGZvciByIGluIHJvd3NdKQogICAgcHJpbnQoZiJcbuagt+acrCB7bGVuKHJvd3MpfSDnrJTvvIjmlrDlvJXmk44gNjgg5YiG5Lul5LiK44CB5Y+v5Lmw5YWl77yJ44CC5q2i5o2f6Kem5Y+R5q+U5L6LIHtoaXQubWVhbigpKjEwMDouMWZ9JSIpCiAgICBmb3IgdGFnLCBzZWwgaW4gKCgi5YWo56iLIiwgbnAub25lcyhsZW4ocm93cyksIGJvb2wpKSwKICAgICAgICAgICAgICAgICAgICAgKCLmoLfmnKzlpJYiLCBucC5hcnJheShbclsiZGF0ZSJdID49IENVVE9GRiBmb3IgciBpbiByb3dzXSkpKToKICAgICAgICBwcmludChmIlxuICDigJTigJQge3RhZ30g4oCU4oCUIikKICAgICAgICBhcnIgPSBsYW1iZGEgazogbnAuYXJyYXkoW3Jba10gZm9yIHIgaW4gcm93c10pW3NlbF0gICMgbm9xYTogRTczMQogICAgICAgIHNob3coYXJyKCJob2xkIiksICLkuI3mraLmjZ8o5oyB5ruhMjDml6UpIikKICAgICAgICBzaG93KGFycigic3RvcCIpLCAi5omn6KGMMnhBVFLmraLmjZ8iKQogICAgICAgIGggPSBoaXRbc2VsXQogICAgICAgIHN0LCBoZCA9IGFycigic3RvcCIpLCBhcnIoImhvbGQiKQogICAgICAgIGR5ID0gbnAuYXJyYXkoW3JbImRheXMiXSBmb3IgciBpbiByb3dzXSlbc2VsXVtoXQogICAgICAgIHByaW50KGYiICAgIOiiq+atouaNn+eahCB7aC5tZWFuKCkqMTAwOjQuMWZ9JTog5a6e6ZmF5bmz5Z2HIHtucC5uYW5tZWFuKHN0W2hdKSoxMDA6KzUuMmZ9JeOAgeW5s+Wdh+aMgeS7kyB7ZHkubWVhbigpOjQuMWZ9IOWkqe+8myIKICAgICAgICAgICAgICBmIui/meaJueiLpeS4jeatouaNn+OAgeaMgea7oTIw5pel5bmz5Z2HIHtucC5uYW5tZWFuKGhkW2hdKSoxMDA6KzUuMmZ9JSIKICAgICAgICAgICAgICBmIiA9PiAg5q2i5o2f5bmz5Z2H5aSa6IqxIHtucC5uYW5tZWFuKGhkW2hdLXN0W2hdKSoxMDA6KzUuMmZ9Je+8iOS5sOS/nemZqeeahOmSse+8ie+8jOaNouadpeWwvumDqOWwgemhtiIpCiAgICAgICAgcHJpbnQoZiIgICAg5rKh5q2i5o2f55qE5Y2V5a2QOiDlubPlnYcge25wLm5hbm1lYW4oaGRbfmhdKSoxMDA6KzUuMmZ9JSAg6IOc546HIHsoaGRbfmhdPjApLm1lYW4oKSoxMDA6NC4xZn0lIikKICAgICAgICBmb3Iga2V5LCBsYWIgaW4gKCgiaG9sZCIsICLkuI3mraLmjZ/nr67lrZAiKSwgKCJzdG9wIiwgIuatouaNn+evruWtkCIpKToKICAgICAgICAgICAgYmsgPSBiYXNrZXQoYnlfZGF5KFtyIGZvciByLCBzIGluIHppcChyb3dzLCBzZWwpIGlmIHNdLCBrZXkpKQogICAgICAgICAgICBpZiBiay5zaXplOgogICAgICAgICAgICAgICAgcHJpbnQoZiIgICAge2xhYjo8MTJ9IOS6pOaYk+aXpSB7Ymsuc2l6ZTo+NH0g5aSpICDlnYflgLwge2JrLm1lYW4oKSoxMDA6KzUuMmZ9JSAg5Lit5L2NIHtucC5tZWRpYW4oYmspKjEwMDorNS4yZn0lICAiCiAgICAgICAgICAgICAgICAgICAgICBmIui1mumSseWkqeaVsCB7KGJrPjApLm1lYW4oKSoxMDA6NC4xZn0lICDmnIDlt64ge2JrLm1pbigpKjEwMDorNS4xZn0lICAiCiAgICAgICAgICAgICAgICAgICAgICBmIuS6jz41JeWkqeaVsCB7KGJrPC0wLjA1KS5tZWFuKCkqMTAwOjQuMWZ9JSIpCgoKaWYgX19uYW1lX18gPT0gIl9fbWFpbl9fIjoKICAgIG1haW4oKQo=
+#!/usr/bin/env python3
+"""按 App 给出的止损价（2xATR，且不高于现价98%）真实执行，会改变什么？
+
+前面所有回测都没建模型止损（只看20日到期收益）。这里用日线 high/low 近似：
+持有期内若当天 open <= 止损价 -> 按 open 成交（跳空穿越，滑点如实计入）；
+若 low <= 止损价 -> 按止损价成交。没触发就持满 20 个交易日。
+成本同样 0.12% 往返。
+"""
+import os
+import sys
+
+import numpy as np
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+from final_validate import new_fn  # noqa: E402
+from model import CUTOFF, COST, MIN_HIST, stocks, _nan, g  # noqa: E402
+
+BUY, H = 68.0, 20
+
+
+def stop_level(F, t):
+    """镜像 Kotlin stopLoss(): price-2*ATR, 用 MA20*0.995 抬高, 夹在 [0.80, 0.98]*price"""
+    c, a, m20 = F["close"][t], g(F, "atr", t), g(F, "ma20", t)
+    if _nan(a) or a <= 0:
+        return None
+    s = c - 2 * a
+    if not _nan(m20) and m20 < c:
+        s = max(s, m20 * 0.995)
+    return float(min(c * 0.98, max(c * 0.80, s)))
+
+
+def run():
+    rows = []
+    for F in stocks:
+        n = int(F["n"])
+        o, c, lo = F["open"], F["close"], F["low"]
+        lim = 0.097 if str(F["code"]).startswith(("30", "68")) else 0.047
+        for t in range(MIN_HIST, n - 1):
+            s, ok = new_fn(F, t)
+            if not ok or s < BUY:
+                continue
+            e = o[t + 1]
+            if e <= 0 or c[t] <= 0 or t + 1 + H >= n:
+                continue
+            if F["pct"][t] > 0 and e >= c[t] * (1 + lim) * 0.995:
+                continue  # 开盘涨停买不到
+            d = str(F["date"][t])
+            hold = (c[t + 1 + H] / e - 1.0) - COST
+            row = {"date": d, "hold": hold, "stop": np.nan, "days": H + 1, "hit": False}
+            S = stop_level(F, t)
+            if S is not None:
+                for k in range(t + 1, t + 2 + H):  # 到期口径与 hold 一致（收盘 = t+1+H）
+                    if o[k] <= S:
+                        row.update(stop=o[k] / e - 1.0 - COST, days=k - t, hit=True)
+                        break
+                    if lo[k] <= S:
+                        row.update(stop=S / e - 1.0 - COST, days=k - t, hit=True)
+                        break
+                if not row["hit"]:
+                    row["stop"] = hold  # 持满到期，止损未触发
+            rows.append(row)
+    return rows
+
+
+def show(a, label):
+    a = a[~np.isnan(a)]
+    if a.size == 0:
+        print(f"    {label:<20} 无样本")
+        return
+    print(f"    {label:<20} n={a.size:<6d} 均值 {a.mean()*100:+5.2f}%  中位 {np.median(a)*100:+5.2f}%  "
+          f"胜率 {(a>0).mean()*100:4.1f}%  p5 {np.percentile(a,5)*100:+5.1f}%  p25 {np.percentile(a,25)*100:+5.1f}%  "
+          f"最差 {a.min()*100:+6.1f}%  亏>10% {(a<-0.10).mean()*100:4.1f}%  亏>20% {(a<-0.20).mean()*100:4.1f}%")
+
+
+def basket(vals_by_day):
+    return np.array([np.mean(x) for k, x in sorted(vals_by_day.items()) if x])
+
+
+def by_day(rows, key, since=None):
+    d = {}
+    for r in rows:
+        if since and r["date"] < since:
+            continue
+        v = r[key]
+        if not np.isnan(v):
+            d.setdefault(r["date"], []).append(v)
+    return d
+
+
+def main():
+    rows = run()
+    hit = np.array([r["hit"] for r in rows])
+    print(f"\n样本 {len(rows)} 笔（新引擎 68 分以上、可买入）。止损触发比例 {hit.mean()*100:.1f}%")
+    for tag, sel in (("全程", np.ones(len(rows), bool)),
+                     ("样本外", np.array([r["date"] >= CUTOFF for r in rows]))):
+        print(f"\n  —— {tag} ——")
+        arr = lambda k: np.array([r[k] for r in rows])[sel]  # noqa: E731
+        show(arr("hold"), "不止损(持满20日)")
+        show(arr("stop"), "执行2xATR止损")
+        h = hit[sel]
+        st, hd = arr("stop"), arr("hold")
+        dy = np.array([r["days"] for r in rows])[sel][h]
+        print(f"    被止损的 {h.mean()*100:4.1f}%: 实际平均 {np.nanmean(st[h])*100:+5.2f}%、平均持仓 {dy.mean():4.1f} 天；"
+              f"这批若不止损、持满20日平均 {np.nanmean(hd[h])*100:+5.2f}%"
+              f" =>  止损平均多花 {np.nanmean(hd[h]-st[h])*100:+5.2f}%（买保险的钱），换来尾部封顶")
+        print(f"    没止损的单子: 平均 {np.nanmean(hd[~h])*100:+5.2f}%  胜率 {(hd[~h]>0).mean()*100:4.1f}%")
+        for key, lab in (("hold", "不止损篮子"), ("stop", "止损篮子")):
+            bk = basket(by_day([r for r, s in zip(rows, sel) if s], key))
+            if bk.size:
+                print(f"    {lab:<12} 交易日 {bk.size:>4} 天  均值 {bk.mean()*100:+5.2f}%  中位 {np.median(bk)*100:+5.2f}%  "
+                      f"赚钱天数 {(bk>0).mean()*100:4.1f}%  最差 {bk.min()*100:+5.1f}%  "
+                      f"亏>5%天数 {(bk<-0.05).mean()*100:4.1f}%")
+
+
+if __name__ == "__main__":
+    main()

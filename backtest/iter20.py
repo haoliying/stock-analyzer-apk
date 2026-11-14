@@ -1,1 +1,147 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJpdGVyMjAg4oCUIOiuqSLlj6rkubDor4TliIbmnIDpnaDliY0gMTB+MjAg5Y+qIuS5n+iDvei3kei1ouWkp+ebmOOAggoK6K+K5pat77yIZmFzdC5wee+8ie+8muS4iue6v+WIhuaVsOWcqCoq6Zeo5qebKirkuIrmnInkv6Hmga/ph4/vvIjiiaU2OCDnmoTpgqPkuIDnr67lrZAgMjAg5pel6LaF6aKdICswLjcxJe+8jHQ9My4w77yJ77yMCuS9huWcqCoq5aS06YOo5o6S5bqPKirkuIrmmK/otJ/nmoTvvJrmr4/lpKnlj6rkubDliIbmlbDliY0gNSXvvIgxNCDlj6rvvInotoXpop0g4oiSMS4wNiXvvIh0PeKIkjQuNe+8ie+8jOWJjSAxMCXvvIgyOSDlj6rvvIniiJIwLjQ5JeOAggrkuZ/lsLHmmK/or7TliIbmlbDotorpq5jlj43ogIzotorkuI3or6XkubAg4oCU4oCUIOWktOmDqOWFqOaYryLlt7Lnu4/mtqjkuobkuIDmrrUgKyDlnYfnur/lpJrlpLQgKyDmlpznjofmnIDpmaEi55qE5oul5oyk56Wo44CCCuacrOiEmuacrOWcqOS/neaMgee7k+aehOmXqOanm+eahOWJjeaPkOS4i++8jOaQnOe0ouiDveaUueWWhOWktOmDqOaOkuW6j+eahOWboOWtkOe7hOWQiOOAggoK57qq5b6L77yaCiAgLSDlj6rnlKjmoLfmnKzlhoUoPENVVE9GRinpgInlj4LmlbDvvIzlubbkuJTopoHmsYIgSVMg5YmN5Y2K5q615LiO5ZCO5Y2K5q616YO95Li65q2j77ybCiAgLSDmoLfmnKzlpJYoPj1DVVRPRkYp5Y+q5Zyo5pyA5ZCO6aqM6K+B5LiA5qyh77yM5LiN5Y+C5LiO5oyR6YCJ77ybCiAgLSDlm6DlrZDlv4XpobvmnInpmZDjgIHmnInnu4/mtY7lkKvkuYnvvIjkuI3ov73pq5jjgIHkuI3kubDms6LliqjlpLHmjqfnmoTjgIHph4/ku7fnoa7orqTvvInvvJsKICAtIOebruaghyA9IOWJjSA1JSDkuI7liY0gMTAlIOS4pOS4quWuveW6puS4iueahCB0IOWAvOS5i+WSjO+8iOWboOS4uiBBcHAg55qE5YiX6KGo5bCx5piv6L+Z5Lik5qGj77yJ44CCCiIiIgppbXBvcnQgb3MKaW1wb3J0IHN5cwoKaW1wb3J0IG51bXB5IGFzIG5wCgpIRVJFID0gb3MucGF0aC5kaXJuYW1lKG9zLnBhdGguYWJzcGF0aChfX2ZpbGVfXykpCnN5cy5wYXRoLmluc2VydCgwLCBIRVJFKQppbXBvcnQgZmFzdCBhcyBYICAjIG5vcWE6IEU0MDIKaW1wb3J0IHBvcnRzaW0gYXMgUCAgIyBub3FhOiBFNDAyCmZyb20gbW9kZWwgaW1wb3J0IENVVE9GRiAgIyBub3FhOiBFNDAyCgpGID0gbGFtYmRhIGs6IFAuRkFDW2tdIGlmIGsgaW4gUC5GQUMgZWxzZSBQLk1BVFtrXSAgIyBub3FhOiBFNzMxCkMsIE0xMCwgTTIwLCBNNjAgPSBGKCJjbG9zZSIpLCBGKCJtYTEwIiksIEYoIm1hMjAiKSwgRigibWE2MCIpClNMMjAsIFNMNjAgPSBGKCJtYTIwX3Nsb3BlIiksIEYoIm1hNjBfc2xvcGUiKQpBVFJQLCBBRFgsIFJTSSA9IEYoImF0cl9wY3QiKSwgRigiYWR4IiksIEYoInJzaV9hcHAiKQpWT0xSNSwgT0JWUyA9IEYoInZvbHI1IiksIEYoIm9idl9zbG9wZSIpClJFVDIwLCBSRVQ2MCA9IEYoInJldDIwIiksIEYoInJldDYwIikKUE9TMjAsIEJQT1MgPSBGKCJwb3MyMCIpLCBGKCJib2xsX3BvcyIpClBESU1ESSA9IEYoInBkaSIpIC0gRigibWRpIikKVFVSTk9WID0gRigidHVybm92ZXIiKQoKCmRlZiBibmQoeCwgc2NhbGUpOgogICAgIiIi5oqK5Zug5a2Q5Y6L5YiwIFstMSwxXe+8jOe8uuWkseW9kyAw77yI5Lit5oCn77yJ77yM5LiN5YGa5Lu75L2V5pyq5p2l5Y+Y5o2i44CCIiIiCiAgICB3aXRoIG5wLmVycnN0YXRlKGFsbD0iaWdub3JlIik6CiAgICAgICAgcmV0dXJuIG5wLm5hbl90b19udW0obnAuY2xpcCh4IC8gc2NhbGUsIC0xLjAsIDEuMCkpCgoKRkVBVCA9IHsKICAgICJleHQyMCI6IGJuZChDIC8gTTIwIC0gMS4wIC0gMC4wMiwgMC4wNiksICAgICAgICAjIOemuyBNQTIwIOWkmui/nO+8iD4wID0g6L+96auY77yJCiAgICAiZXh0NjAiOiBibmQoQyAvIE02MCAtIDEuMCAtIDAuMDUsIDAuMTUpLCAgICAgICAgIyDnprsgTUE2MCDlpJrov5wKICAgICJtb202MCI6IGJuZChSRVQ2MCwgMC4yMCksICAgICAgICAgICAgICAgICAgICAgICAgIyA2MCDml6Xliqjph48KICAgICJtb20yMCI6IGJuZChSRVQyMCwgMC4xNSksICAgICAgICAgICAgICAgICAgICAgICAgIyAyMCDml6Xliqjph4/vvIjlj6/og73lj43ovazvvIkKICAgICJwb3MyMCI6IGJuZChQT1MyMCAtIDAuNSwgMC41KSwgICAgICAgICAgICAgICAgICAgIyDlnKggMjAg5pel5Yy66Ze055qE55u45a+55L2N572uCiAgICAiYm9sbCI6IGJuZChCUE9TIC0gMC41LCAwLjUpLAogICAgImFkeCI6IGJuZChBRFggLSAyNS4wLCAxNS4wKSwKICAgICJkaW0iOiBibmQoUERJTURJLCAxNS4wKSwKICAgICJ2b2w1IjogYm5kKFZPTFI1IC0gMS4yLCAwLjgpLCAgICAgICAgICAgICAgICAgICAgIyA1IOaXpemHj+avlO+8iOaUvuWkpz3noa7orqTvvIkKICAgICJvYnYiOiBibmQoT0JWUywgMC4wMiksICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBPQlYg5pac546H77yI6LWE6YeR5rWB5ZCR77yJCiAgICAic2w2MCI6IGJuZChTTDYwLCAwLjAyKSwgICAgICAgICAgICAgICAgICAgICAgICAgICMgNjAg5pel5Z2H57q/5pac546HCiAgICAic2wyMCI6IGJuZChTTDIwLCAwLjAyKSwgICAgICAgICAgICAgICAgICAgICAgICAgICMgMjAg5pel5Z2H57q/5pac546H77yI5bey55So5Zyo57uT5p6E6YeM77yJCiAgICAidm9sIjogYm5kKEFUUlAgLSAwLjAyMCwgMC4wMjApLCAgICAgICAgICAgICAgICAgICMg5rOi5Yqo5oOp572a55qE6L+e57ut54mICiAgICAicnNpIjogYm5kKFJTSSAtIDU1LjAsIDI1LjApLCAgICAgICAgICAgICAgICAgICAgICMg6LaF5LmwCiAgICAidHVybiI6IGJuZChucC5sb2cobnAud2hlcmUoVFVSTk9WID4gMCwgVFVSTk9WLCBucC5uYW4pKSAtIDAuMywgMC44KSwKfQoKQkFTRSA9IFAuTUFUWyJfUyJdWyJuZXciXS5jb3B5KCkKR1JJRCA9IFstMTIuMCwgLTguMCwgLTUuMCwgLTMuMCwgMC4wLCAzLjAsIDUuMCwgOC4wLCAxMi4wXQpRUyA9ICgwLjA1LCAwLjEwKQoKCmRlZiB0c3BsaXQoUywgcSwgSD0yMCk6CiAgICAiIiLov5Tlm54gKElT5YmN5Y2KIHQsIElT5ZCO5Y2KIHQsIOagt+acrOWkliB0KSIiIgogICAgZHMsIGQgPSBYLmRhaWx5X3RvcHEoUywgcSwgSCkKICAgIGlmIGxlbihkKSA8IDQwOgogICAgICAgIHJldHVybiBOb25lCiAgICBlID0gZFs6LCAwXSAtIGRbOiwgMV0KICAgIGRtID0gbnAuYXJyYXkoZHMpCiAgICBpc21hc2sgPSBkbSA8IENVVE9GRgogICAgaXNkID0gbnAuc29ydChucC51bmlxdWUoZG1baXNtYXNrXSkpCiAgICBtaWQgPSBpc2RbbGVuKGlzZCkgLy8gMl0KICAgIG91dCA9IFtdCiAgICBmb3IgbSBpbiAoaXNtYXNrICYgKGRtIDwgbWlkKSwgaXNtYXNrICYgKGRtID49IG1pZCksIH5pc21hc2spOgogICAgICAgIGVlID0gZVttXQogICAgICAgIG91dC5hcHBlbmQoZWUubWVhbigpIC8gKGVlLnN0ZChkZG9mPTEpIC8gbnAuc3FydChtYXgoZWUuc2l6ZSwgMSkpKSBpZiBlZS5zaXplID4gMTAgZWxzZSBucC5uYW4pCiAgICByZXR1cm4gb3V0CgoKZGVmIG9iaihTLCBIPTIwKToKICAgICIiIumAieWPguaVsOebruagh++8muagt+acrOWGheS4pOWNiuOAgeS4pOS4quWuveW6pueahCB0IOWAvOmDveimgeato++8jOWPluacgOWwj+WAvO+8iG1heC1taW4g56iz5YGl77yJ44CCIiIiCiAgICB2YWxzID0gW10KICAgIGZvciBxIGluIFFTOgogICAgICAgIHRzID0gdHNwbGl0KFMsIHEsIEgpCiAgICAgICAgaWYgdHMgaXMgTm9uZToKICAgICAgICAgICAgcmV0dXJuIC05OQogICAgICAgIHZhbHMgKz0gdHNbOjJdCiAgICBpZiBhbnkobnAuaXNuYW4odikgZm9yIHYgaW4gdmFscyk6CiAgICAgICAgcmV0dXJuIC05OQogICAgcmV0dXJuIGZsb2F0KG1pbih2YWxzKSkKCgpkZWYgcmVwb3J0KFMsIGxhYmVsLCBIPTIwKToKICAgIGxpbmUgPSBbXQogICAgZm9yIHEgaW4gUVM6CiAgICAgICAgdHMgPSB0c3BsaXQoUywgcSwgSCkKICAgICAgICBkcywgZCA9IFguZGFpbHlfdG9wcShTLCBxLCBIKQogICAgICAgIGUgPSBkWzosIDBdIC0gZFs6LCAxXQogICAgICAgIG0gPSBucC5hcnJheShkcykgPCBDVVRPRkYKICAgICAgICBsaW5lLmFwcGVuZChmInF7cTouMmZ9OiBJU+WJjXt0c1swXTorNS4yZn0gSVPlkI57dHNbMV06KzUuMmZ9IE9PU3t0c1syXTorNS4yZn0gIgogICAgICAgICAgICAgICAgICAgIGYi6LaFe2UubWVhbigpKjEwMDorNS4yZn0lIikKICAgIHByaW50KGYiICB7bGFiZWw6PDQwfSAiICsgIiAgfCAgIi5qb2luKGxpbmUpKQoKCmRlZiBtYWluKCk6CiAgICBwcmludCgiXG49PT09IDAuIOS4iue6v+WIhuaVsO+8iOWfuue6v++8iT09PT0iKQogICAgcmVwb3J0KEJBU0UsICJzaGlwcGVkIikKICAgIGN1ciA9IEJBU0UuY29weSgpCiAgICB3ID0ge30KICAgIHByaW50KCJcbj09PT0gMS4g6LSq5b+D5pCc57Si77yI5Y+q55yL5qC35pys5YaF5Lik5Y2K55qEIHTvvIzmnIDlsI/lgLzmnIDlpKfvvIk9PT09IikKICAgIGZvciBybmQgaW4gcmFuZ2UoMyk6CiAgICAgICAgYmVzdCA9IE5vbmUKICAgICAgICBmb3IgbmFtZSwgZmN0IGluIEZFQVQuaXRlbXMoKToKICAgICAgICAgICAgZm9yIGcgaW4gR1JJRDoKICAgICAgICAgICAgICAgIGlmIGcgPT0gdy5nZXQobmFtZSwgMC4wKToKICAgICAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICAgICAgdHJpYWwgPSBjdXIgKyBnICogZmN0CiAgICAgICAgICAgICAgICBzYyA9IG9iaih0cmlhbCkKICAgICAgICAgICAgICAgIGlmIGJlc3QgaXMgTm9uZSBvciBzYyA+IGJlc3RbMF06CiAgICAgICAgICAgICAgICAgICAgYmVzdCA9IChzYywgbmFtZSwgZykKICAgICAgICBpZiBiZXN0IGlzIE5vbmUgb3IgYmVzdFswXSA8PSBvYmooY3VyKToKICAgICAgICAgICAgcHJpbnQoZiIgIOesrCB7cm5kKzF9IOi9ruaXoOaUueWWhO+8iOacgOS8mCB7YmVzdFswXTorLjJmfSB2cyDlvZPliY0ge29iaihjdXIpOisuMmZ977yJ77yM5YGc5q2iIikKICAgICAgICAgICAgYnJlYWsKICAgICAgICBzYywgbmFtZSwgZyA9IGJlc3QKICAgICAgICB3W25hbWVdID0gZwogICAgICAgIGN1ciA9IGN1ciArIGcgKiBGRUFUW25hbWVdCiAgICAgICAgcHJpbnQoZiIgIOesrCB7cm5kKzF9IOi9ruWKoOWFpSB7bmFtZX09e2c6Ky4wZn0g4oaSIOebruaghyB0KG1pbikge3NjOisuMmZ9IikKICAgICAgICByZXBvcnQoY3VyLCBmIiAgK3tuYW1lfSIpCiAgICBwcmludCgiXG49PT09IDIuIOacgOe7iOadg+mHjSA9PT09Iiwge2s6IHYgZm9yIGssIHYgaW4gdy5pdGVtcygpIGlmIHZ9KQogICAgbnAuc2F2ZShvcy5wYXRoLmpvaW4oSEVSRSwgInNlYXJjaF9pdGVyMjAubnB5IiksIGN1cikKICAgIHdpdGggb3Blbihvcy5wYXRoLmpvaW4oSEVSRSwgInNlYXJjaF9pdGVyMjAudHh0IiksICJ3IikgYXMgZmg6CiAgICAgICAgZmgud3JpdGUocmVwcih3KSArICJcbiIpCiAgICBwcmludCgiXG49PT09IDMuIOe7hOWQiOe6p+WvueeFpyA9PT09IikKICAgIGZvciBxIGluICgwLjAzLCAwLjA1LCAwLjA3NSwgMC4xMCwgMC4xNSk6CiAgICAgICAgWC5zY29yZV9zdGF0cyhjdXIsIHEsIDIwLCBmIuaQnOe0ouWQjiBxPXtxfSIpCiAgICBwcmludCgiXG49PT09IDQuIOi1hOmHkeabsue6v++8iOWni+e7iOa7oeS7k++8jOebuOS9jeW5s+Wdh++8iT09PT0iKQogICAgWC5jb21wb3VuZChCQVNFLCAwLjA1LCAyMCwgIuS4iue6v+WIhuaVsCB0b3A1JSjiiYgxNOWPqikiKQogICAgWC5jb21wb3VuZChjdXIsIDAuMDUsIDIwLCAi5pCc57Si5ZCOIHRvcDUlKOKJiDE05Y+qKSIpCiAgICBYLmNvbXBvdW5kKGN1ciwgMC4xMCwgMjAsICLmkJzntKLlkI4gdG9wMTAlKOKJiDI55Y+qKSIpCiAgICBwcmludChmIlxu5aSn55uY562J5p2D5Lmw5YWl5oyB5pyJ5YWo56iLID0ge1AuYmVuY2hfaG9sZCgwLCBQLk5EKSoxMDA6Ky4xZn0lIikKCgppZiBfX25hbWVfXyA9PSAiX19tYWluX18iOgogICAgbWFpbigpCg==
+#!/usr/bin/env python3
+"""iter20 — 让"只买评分最靠前 10~20 只"也能跑赢大盘。
+
+诊断（fast.py）：上线分数在**门槛**上有信息量（≥68 的那一篮子 20 日超额 +0.71%，t=3.0），
+但在**头部排序**上是负的：每天只买分数前 5%（14 只）超额 −1.06%（t=−4.5），前 10%（29 只）−0.49%。
+也就是说分数越高反而越不该买 —— 头部全是"已经涨了一段 + 均线多头 + 斜率最陡"的拥挤票。
+本脚本在保持结构门槛的前提下，搜索能改善头部排序的因子组合。
+
+纪律：
+  - 只用样本内(<CUTOFF)选参数，并且要求 IS 前半段与后半段都为正；
+  - 样本外(>=CUTOFF)只在最后验证一次，不参与挑选；
+  - 因子必须有限、有经济含义（不追高、不买波动失控的、量价确认）；
+  - 目标 = 前 5% 与前 10% 两个宽度上的 t 值之和（因为 App 的列表就是这两档）。
+"""
+import os
+import sys
+
+import numpy as np
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+import fast as X  # noqa: E402
+import portsim as P  # noqa: E402
+from model import CUTOFF  # noqa: E402
+
+F = lambda k: P.FAC[k] if k in P.FAC else P.MAT[k]  # noqa: E731
+C, M10, M20, M60 = F("close"), F("ma10"), F("ma20"), F("ma60")
+SL20, SL60 = F("ma20_slope"), F("ma60_slope")
+ATRP, ADX, RSI = F("atr_pct"), F("adx"), F("rsi_app")
+VOLR5, OBVS = F("volr5"), F("obv_slope")
+RET20, RET60 = F("ret20"), F("ret60")
+POS20, BPOS = F("pos20"), F("boll_pos")
+PDIMDI = F("pdi") - F("mdi")
+TURNOV = F("turnover")
+
+
+def bnd(x, scale):
+    """把因子压到 [-1,1]，缺失当 0（中性），不做任何未来变换。"""
+    with np.errstate(all="ignore"):
+        return np.nan_to_num(np.clip(x / scale, -1.0, 1.0))
+
+
+FEAT = {
+    "ext20": bnd(C / M20 - 1.0 - 0.02, 0.06),        # 离 MA20 多远（>0 = 追高）
+    "ext60": bnd(C / M60 - 1.0 - 0.05, 0.15),        # 离 MA60 多远
+    "mom60": bnd(RET60, 0.20),                        # 60 日动量
+    "mom20": bnd(RET20, 0.15),                        # 20 日动量（可能反转）
+    "pos20": bnd(POS20 - 0.5, 0.5),                   # 在 20 日区间的相对位置
+    "boll": bnd(BPOS - 0.5, 0.5),
+    "adx": bnd(ADX - 25.0, 15.0),
+    "dim": bnd(PDIMDI, 15.0),
+    "vol5": bnd(VOLR5 - 1.2, 0.8),                    # 5 日量比（放大=确认）
+    "obv": bnd(OBVS, 0.02),                           # OBV 斜率（资金流向）
+    "sl60": bnd(SL60, 0.02),                          # 60 日均线斜率
+    "sl20": bnd(SL20, 0.02),                          # 20 日均线斜率（已用在结构里）
+    "vol": bnd(ATRP - 0.020, 0.020),                  # 波动惩罚的连续版
+    "rsi": bnd(RSI - 55.0, 25.0),                     # 超买
+    "turn": bnd(np.log(np.where(TURNOV > 0, TURNOV, np.nan)) - 0.3, 0.8),
+}
+
+BASE = P.MAT["_S"]["new"].copy()
+GRID = [-12.0, -8.0, -5.0, -3.0, 0.0, 3.0, 5.0, 8.0, 12.0]
+QS = (0.05, 0.10)
+
+
+def tsplit(S, q, H=20):
+    """返回 (IS前半 t, IS后半 t, 样本外 t)"""
+    ds, d = X.daily_topq(S, q, H)
+    if len(d) < 40:
+        return None
+    e = d[:, 0] - d[:, 1]
+    dm = np.array(ds)
+    ismask = dm < CUTOFF
+    isd = np.sort(np.unique(dm[ismask]))
+    mid = isd[len(isd) // 2]
+    out = []
+    for m in (ismask & (dm < mid), ismask & (dm >= mid), ~ismask):
+        ee = e[m]
+        out.append(ee.mean() / (ee.std(ddof=1) / np.sqrt(max(ee.size, 1))) if ee.size > 10 else np.nan)
+    return out
+
+
+def obj(S, H=20):
+    """选参数目标：样本内两半、两个宽度的 t 值都要正，取最小值（max-min 稳健）。"""
+    vals = []
+    for q in QS:
+        ts = tsplit(S, q, H)
+        if ts is None:
+            return -99
+        vals += ts[:2]
+    if any(np.isnan(v) for v in vals):
+        return -99
+    return float(min(vals))
+
+
+def report(S, label, H=20):
+    line = []
+    for q in QS:
+        ts = tsplit(S, q, H)
+        ds, d = X.daily_topq(S, q, H)
+        e = d[:, 0] - d[:, 1]
+        m = np.array(ds) < CUTOFF
+        line.append(f"q{q:.2f}: IS前{ts[0]:+5.2f} IS后{ts[1]:+5.2f} OOS{ts[2]:+5.2f} "
+                    f"超{e.mean()*100:+5.2f}%")
+    print(f"  {label:<40} " + "  |  ".join(line))
+
+
+def main():
+    print("\n==== 0. 上线分数（基线）====")
+    report(BASE, "shipped")
+    cur = BASE.copy()
+    w = {}
+    print("\n==== 1. 贪心搜索（只看样本内两半的 t，最小值最大）====")
+    for rnd in range(3):
+        best = None
+        for name, fct in FEAT.items():
+            for g in GRID:
+                if g == w.get(name, 0.0):
+                    continue
+                trial = cur + g * fct
+                sc = obj(trial)
+                if best is None or sc > best[0]:
+                    best = (sc, name, g)
+        if best is None or best[0] <= obj(cur):
+            print(f"  第 {rnd+1} 轮无改善（最优 {best[0]:+.2f} vs 当前 {obj(cur):+.2f}），停止")
+            break
+        sc, name, g = best
+        w[name] = g
+        cur = cur + g * FEAT[name]
+        print(f"  第 {rnd+1} 轮加入 {name}={g:+.0f} → 目标 t(min) {sc:+.2f}")
+        report(cur, f"  +{name}")
+    print("\n==== 2. 最终权重 ====", {k: v for k, v in w.items() if v})
+    np.save(os.path.join(HERE, "search_iter20.npy"), cur)
+    with open(os.path.join(HERE, "search_iter20.txt"), "w") as fh:
+        fh.write(repr(w) + "\n")
+    print("\n==== 3. 组合级对照 ====")
+    for q in (0.03, 0.05, 0.075, 0.10, 0.15):
+        X.score_stats(cur, q, 20, f"搜索后 q={q}")
+    print("\n==== 4. 资金曲线（始终满仓，相位平均）====")
+    X.compound(BASE, 0.05, 20, "上线分数 top5%(≈14只)")
+    X.compound(cur, 0.05, 20, "搜索后 top5%(≈14只)")
+    X.compound(cur, 0.10, 20, "搜索后 top10%(≈29只)")
+    print(f"\n大盘等权买入持有全程 = {P.bench_hold(0, P.ND)*100:+.1f}%")
+
+
+if __name__ == "__main__":
+    main()

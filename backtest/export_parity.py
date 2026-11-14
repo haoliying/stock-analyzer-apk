@@ -1,1 +1,70 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJFeHBvcnQgYSBwYXJpdHkgZml4dHVyZTogcmVhbCBiYXJzICsgdGhlIHZhbGlkYXRlZCBQeXRob24gZW5naW5lJ3MgZXhwZWN0ZWQgc2NvcmVzLgoKVGhlIEtvdGxpbiBlbmdpbmUgKGFwcC9zcmMvbWFpbi9qYXZhL2NvbS9zdG9jay9hbmFseXplci9hbmFseXNpcy8pIGlzIHN1cHBvc2VkIHRvIGJlCmEgZmFpdGhmdWwgcG9ydCBvZiBgbmV3X2ZuYCBpbiBmaW5hbF92YWxpZGF0ZS5weS4gVGhpcyBmaWxlIGZyZWV6ZXMgdGhhdCBjb250cmFjdCBhcwpkYXRhIHNvIGEgSlZNIHVuaXQgdGVzdCBjYW4gY2hlY2sgaXQgYmFyIGJ5IGJhciBvbiByZWFsIHByaWNlcy4KIiIiCmltcG9ydCBnbG9iCmltcG9ydCBqc29uCmltcG9ydCBvcwppbXBvcnQgc3lzCgppbXBvcnQgbnVtcHkgYXMgbnAKCkhFUkUgPSBvcy5wYXRoLmRpcm5hbWUob3MucGF0aC5hYnNwYXRoKF9fZmlsZV9fKSkKc3lzLnBhdGguaW5zZXJ0KDAsIEhFUkUpCmZyb20gbW9kZWwgaW1wb3J0IF9uYW4sIGcgICMgbm9xYTogRTQwMgpmcm9tIGZpbmFsX3ZhbGlkYXRlIGltcG9ydCBuZXdfZm4gICMgbm9xYTogRTQwMiAgKHJ1bnMgaXRzIG93biByZXBvcnQgb24gaW1wb3J0OyBoYXJtbGVzcykKCk9VVCA9IG9zLmVudmlyb24uZ2V0KAogICAgIkJUX0ZJWFRVUkUiLAogICAgb3MucGF0aC5qb2luKG9zLnBhdGguZGlybmFtZShIRVJFKSwgIlN0b2NrQW5hbHl6ZXIiLCAiYXBwIiwgInNyYyIsICJ0ZXN0IiwgInJlc291cmNlcyIsICJlbmdpbmVfcGFyaXR5Lmpzb24iKSwKKQpOX1NUT0NLUyA9IDgKCgpkZWYgbWFpbigpOgogICAgZmlsZXMgPSBzb3J0ZWQoZ2xvYi5nbG9iKG9zLnBhdGguam9pbihIRVJFLCAiY2FjaGUiLCAiKi5ucHoiKSkpCiAgICAjIOWPluWOhuWPsuacgOmVv+eahOWHoOWPqu+8jOWkluWKoOWHoOWPquefreeahO+8jOaKiuaVsOaNruS4jei2s+WIhuaUr+S5n+imhuebluWIsAogICAgaW5mb3MgPSBbXQogICAgZm9yIHAgaW4gZmlsZXM6CiAgICAgICAgeiA9IG5wLmxvYWQocCwgYWxsb3dfcGlja2xlPVRydWUpCiAgICAgICAgaW5mb3MuYXBwZW5kKChpbnQoelsibiJdKSwgcCwgc3RyKHpbImNvZGUiXSkpKQogICAgaW5mb3Muc29ydChyZXZlcnNlPVRydWUpCiAgICBwaWNrcyA9IFtwIGZvciBfLCBwLCBfIGluIGluZm9zWzpOX1NUT0NLU11dICsgW3AgZm9yIF8sIHAsIF8gaW4gaW5mb3NbLTM6XV0KCiAgICBvdXQgPSBbXQogICAgZm9yIHAgaW4gcGlja3M6CiAgICAgICAgeiA9IG5wLmxvYWQocCwgYWxsb3dfcGlja2xlPVRydWUpCiAgICAgICAgbiA9IGludCh6WyJuIl0pCiAgICAgICAgRiA9IHtrOiB6W2tdIGZvciBrIGluIHouZmlsZXN9CiAgICAgICAgZm9yIGsgaW4gKCJjbG9zZSIsICJvcGVuIiwgImhpZ2giLCAibG93IiwgInZvbCIsICJtYTIwIiwgIm1hNjAiLCAibWExMCIsCiAgICAgICAgICAgICAgICAgICJtYTIwX3Nsb3BlIiwgImF0cl9wY3QiKToKICAgICAgICAgICAgRltrXSA9IEZba10uYXN0eXBlKGZsb2F0KQogICAgICAgIGJhcnMgPSBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICJkIjogc3RyKEZbImRhdGUiXVt0XSksCiAgICAgICAgICAgICAgICAibyI6IGZsb2F0KEZbIm9wZW4iXVt0XSksCiAgICAgICAgICAgICAgICAiYyI6IGZsb2F0KEZbImNsb3NlIl1bdF0pLAogICAgICAgICAgICAgICAgImgiOiBmbG9hdChGWyJoaWdoIl1bdF0pLAogICAgICAgICAgICAgICAgImwiOiBmbG9hdChGWyJsb3ciXVt0XSksCiAgICAgICAgICAgICAgICAidiI6IGludChGWyJ2b2wiXVt0XSksCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZm9yIHQgaW4gcmFuZ2UobikKICAgICAgICBdCiAgICAgICAgZXhwID0gW10KICAgICAgICBmb3IgdCBpbiByYW5nZShuKToKICAgICAgICAgICAgcywgb2sgPSBuZXdfZm4oRiwgdCkKICAgICAgICAgICAgZXhwLmFwcGVuZChbZmxvYXQocyksIDEgaWYgb2sgZWxzZSAwXSkKICAgICAgICBvdXQuYXBwZW5kKHsiY29kZSI6IHN0cihGWyJjb2RlIl0pLCAiYmFycyI6IGJhcnMsICJleHBlY3RlZCI6IGV4cH0pCiAgICAgICAgcHJpbnQoZiIgIHtzdHIoRlsnY29kZSddKX0gbj17bn0iKQoKICAgIG9zLm1ha2VkaXJzKG9zLnBhdGguZGlybmFtZShPVVQpLCBleGlzdF9vaz1UcnVlKQogICAgd2l0aCBvcGVuKE9VVCwgInciKSBhcyBmOgogICAgICAgIGpzb24uZHVtcCh7InN0b2NrcyI6IG91dH0sIGYsIGVuc3VyZV9hc2NpaT1GYWxzZSwgc2VwYXJhdG9ycz0oIiwiLCAiOiIpKQogICAgcHJpbnQoZiJmaXh0dXJlIC0+IHtPVVR9ICh7b3MucGF0aC5nZXRzaXplKE9VVCkvMWU2Oi4yZn0gTUIsIHtsZW4ob3V0KX0gc3RvY2tzKSIpCgoKaWYgX19uYW1lX18gPT0gIl9fbWFpbl9fIjoKICAgIG1haW4oKQo=
+#!/usr/bin/env python3
+"""Export a parity fixture: real bars + the validated Python engine's expected scores.
+
+The Kotlin engine (app/src/main/java/com/stock/analyzer/analysis/) is supposed to be
+a faithful port of `new_fn` in final_validate.py. This file freezes that contract as
+data so a JVM unit test can check it bar by bar on real prices.
+"""
+import glob
+import json
+import os
+import sys
+
+import numpy as np
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+from model import _nan, g  # noqa: E402
+from final_validate import new_fn  # noqa: E402  (runs its own report on import; harmless)
+
+OUT = os.environ.get(
+    "BT_FIXTURE",
+    os.path.join(os.path.dirname(HERE), "StockAnalyzer", "app", "src", "test", "resources", "engine_parity.json"),
+)
+N_STOCKS = 8
+
+
+def main():
+    files = sorted(glob.glob(os.path.join(HERE, "cache", "*.npz")))
+    # 取历史最长的几只，外加几只短的，把数据不足分支也覆盖到
+    infos = []
+    for p in files:
+        z = np.load(p, allow_pickle=True)
+        infos.append((int(z["n"]), p, str(z["code"])))
+    infos.sort(reverse=True)
+    picks = [p for _, p, _ in infos[:N_STOCKS]] + [p for _, p, _ in infos[-3:]]
+
+    out = []
+    for p in picks:
+        z = np.load(p, allow_pickle=True)
+        n = int(z["n"])
+        F = {k: z[k] for k in z.files}
+        for k in ("close", "open", "high", "low", "vol", "ma20", "ma60", "ma10",
+                  "ma20_slope", "atr_pct"):
+            F[k] = F[k].astype(float)
+        bars = [
+            {
+                "d": str(F["date"][t]),
+                "o": float(F["open"][t]),
+                "c": float(F["close"][t]),
+                "h": float(F["high"][t]),
+                "l": float(F["low"][t]),
+                "v": int(F["vol"][t]),
+            }
+            for t in range(n)
+        ]
+        exp = []
+        for t in range(n):
+            s, ok = new_fn(F, t)
+            exp.append([float(s), 1 if ok else 0])
+        out.append({"code": str(F["code"]), "bars": bars, "expected": exp})
+        print(f"  {str(F['code'])} n={n}")
+
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    with open(OUT, "w") as f:
+        json.dump({"stocks": out}, f, ensure_ascii=False, separators=(",", ":"))
+    print(f"fixture -> {OUT} ({os.path.getsize(OUT)/1e6:.2f} MB, {len(out)} stocks)")
+
+
+if __name__ == "__main__":
+    main()

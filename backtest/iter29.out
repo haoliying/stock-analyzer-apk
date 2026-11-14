@@ -1,1 +1,54 @@
-L2RhdGEvYmFja3Rlc3QvaXRlcjI3LnB5OjMzOiBSdW50aW1lV2FybmluZzogTWVhbiBvZiBlbXB0eSBzbGljZQogIF9CTSA9IG5wLm5hbm1lYW4obnAud2hlcmUoVkFMSUQsIFIyMCwgbnAubmFuKSwgYXhpcz0xKQovZGF0YS9iYWNrdGVzdC9wb3J0c2ltLnB5OjEyNDogUnVudGltZVdhcm5pbmc6IE1lYW4gb2YgZW1wdHkgc2xpY2UKICByciA9IG5wLm5hbm1lYW4ocmV0LCBheGlzPTEpCgrln7rlh4ZBIOWkp+ebmOS5sOWFpeaMgeaciSArMzguOSUgICDln7rlh4ZCIOWkp+ebmOavjzIw5pel5YaN5bmz6KGhICs2Mi42JcKxMTAuNSUKCj09PT0gUTEg5YiG5a2j5bqm5pel5Z2H6LaF6aKdIC8g6K+l5a2j6LeR6LWi5aSn55uY5aSp5pWw5Y2g5q+UID09PT0KL2RhdGEvYmFja3Rlc3QvaXRlcjI1LnB5OjMwOiBSdW50aW1lV2FybmluZzogTWVhbiBvZiBlbXB0eSBzbGljZQogIGJlbmNoID0gbnAubmFubWVhbihucC53aGVyZSh2YWxpZCwgUiBpZiBzdG9wIGlzIE5vbmUgZWxzZSBYLnJldF9tYXQoSF8pLCBucC5uYW4pLCBheGlzPTEpCiAg5YCZ6YCJ77ya5YmNNDAlIOaxoCDCtyDliIblsYIgMjAg5Y+qIMK3IOaMgSAyMCDml6Ugwrcg5LiN5q2i5o2fCiAgICAyMDI0LVE0ICswLjAvICAwJSAgMjAyNS1RMSAtMC4wLyA0MCUgIDIwMjUtUTIgKzAuMi8gNTAlICAyMDI1LVEzICsyLjIvIDY4JSAgMjAyNS1RNCAtMC40LyA0MCUgIDIwMjYtUTEgKzAuNi8gNTclICAyMDI2LVEyICsxLjUvIDYwJSAgMjAyNi1RMyArMC41LyA2MCUgIDIwMjYtUTQgKzUuMi8xMDAlCiAgICDlraPluqbmlbAgOe+8jOato+i2heminSA2IOS4qu+8iDY3Je+8iQogIOWAmemAie+8muWQjOS4iiArIDPDl0FUUiDmraLmjZ8KICAgIDIwMjQtUTQgKzEuMi8gODAlICAyMDI1LVExICswLjAvIDM5JSAgMjAyNS1RMiAtMC44LyA0MCUgIDIwMjUtUTMgLTAuMS8gNTAlICAyMDI1LVE0IC0xLjIvIDM3JSAgMjAyNi1RMSAtMC4yLyA0NiUgIDIwMjYtUTIgKzEuNC8gNTglICAyMDI2LVEzICsxLjkvIDYzJSAgMjAyNi1RNCArNC41LzEwMCUKICAgIOWto+W6puaVsCA577yM5q2j6LaF6aKdIDUg5Liq77yINTYl77yJCiAg546w6KGM77ya4omlNjgg5YWo6YOo562J5p2DCiAgICAyMDI0LVE0ICs5LjIvMTAwJSAgMjAyNS1RMSAtNC4zLyAyMSUgIDIwMjUtUTIgKzAuNC8gNzAlICAyMDI1LVEzICsyLjIvIDgzJSAgMjAyNS1RNCAtMC4wLyA1MCUgIDIwMjYtUTEgKzAuMy8gNjQlICAyMDI2LVEyICsxLjMvIDYwJSAgMjAyNi1RMyArMS44LyA3MSUgIDIwMjYtUTQgKzQuMi8xMDAlCiAgICDlraPluqbmlbAgOe+8jOato+i2heminSA3IOS4qu+8iDc4Je+8iQoKPT09PSBRMiDljZXmnJ/vvIgyMCDkuKrkuqTmmJPml6XvvInmlLbnm4rliIbluIPvvJrnlKjmiLfnnJ/lrp7kvJrnnIvliLDnmoTmlbDlrZcgPT09PQogIOWAmemAiSDliY00MCXCtzIw5Y+qCiAgICDljZXmnJ/vvIgyMOS4quS6pOaYk+aXpe+8ieaUtuebiiBuPTQzNSAgcDEgLTEzLjMlICBwNSAgLTcuNCUgIHAxMCAgLTUuMSUgIHAyNSAgLTEuNCUgIOS4reS9jSAgKzMuMCUgIHA3NSAgKzcuNCUgIHA5MCArMTEuOCUgIOacgOW3riAtMTguNiUgIOS6jz4xMCUgMy4wJSAg5LqPPjE1JSAwLjclICDotZo+MTAlIDE0LjclCiAg5YCZ6YCJIOWJjTQwJcK3MjDlj6rCtzJBVFLmraLmjZ8KICAgIOWNleacn++8iDIw5Liq5Lqk5piT5pel77yJ5pS255uKIG49NDM1ICBwMSAgLTUuNyUgIHA1ICAtNC40JSAgcDEwICAtMy41JSAgcDI1ICAtMS4yJSAg5Lit5L2NICArMS41JSAgcDc1ICArNS42JSAgcDkwICsxMC4wJSAg5pyA5beuICAtNy41JSAg5LqPPjEwJSAwLjAlICDkuo8+MTUlIDAuMCUgIOi1mj4xMCUgMTAuMSUKICDlgJnpgIkg5YmNNDAlwrcyMOWPqsK3M0FUUuatouaNnwogICAg5Y2V5pyf77yIMjDkuKrkuqTmmJPml6XvvInmlLbnm4ogbj00MzUgIHAxICAtNy43JSAgcDUgIC00LjclICBwMTAgIC0zLjclICBwMjUgIC0xLjIlICDkuK3kvY0gICsxLjYlICBwNzUgICs2LjAlICBwOTAgKzEwLjElICDmnIDlt64gIC05LjklICDkuo8+MTAlIDAuMCUgIOS6jz4xNSUgMC4wJSAg6LWaPjEwJSAxMC4xJQogIOeOsOihjCDiiaU2OCDlhajpg6jnrYnmnYMKICAgIOWNleacn++8iDIw5Liq5Lqk5piT5pel77yJ5pS255uKIG49NDM1ICBwMSAtMTQuNSUgIHA1ICAtNy4xJSAgcDEwICAtNC4zJSAgcDI1ICAtMS4yJSAg5Lit5L2NICArMi4xJSAgcDc1ICArNy44JSAgcDkwICsxMS42JSAg5pyA5beuIC0xOC45JSAg5LqPPjEwJSAyLjUlICDkuo8+MTUlIDEuMSUgIOi1mj4xMCUgMTUuOSUKICDnjrDooYwg4omlNjggKyAyQVRS5q2i5o2fCiAgICDljZXmnJ/vvIgyMOS4quS6pOaYk+aXpe+8ieaUtuebiiBuPTQzNSAgcDEgIC03LjclICBwNSAgLTQuOCUgIHAxMCAgLTMuNiUgIHAyNSAgLTEuNiUgIOS4reS9jSAgKzAuOSUgIHA3NSAgKzUuMyUgIHA5MCAgKzkuOCUgIOacgOW3riAgLTkuNCUgIOS6jz4xMCUgMC4wJSAg5LqPPjE1JSAwLjAlICDotZo+MTAlIDkuNCUKCj09PT0gUTMg5Y+q5LmwIDIwIOWPqueahOaZrumAmueUqOaIt++8mjQwMCDmnaHmm7Lnur/nmoTliIbluIMgPT09PQogIOWJjTQwJSDmsaAg5ou/MjDlj6og5LiN5q2i5o2f77yaNDAwIOadoei1hOmHkeabsue6v++8iDIwIOaKveazlSDDlyAyMCDnm7jkvY3vvIkKICAgIOe0r+iuoSDkuK3kvY0gICs4NS4yJSAgcDEwICArNDUuMyUgIHA5MCArMTM3LjglICDmnIDlt64gICArMS4xJSAg5pyA5aW9ICsyMDIuMyUKICAgIOi2heWQjOe9keagvOWkp+ebmCDkuK3kvY0gICsyNC40cHAgIHAxMCAgLTExLjZwcCAg6LWi55qE5qaC546HICA4MCUgICDotoXkubDlhaXmjIHmnInlpKfnm5gg6LWi55qE5qaC546HICA4OCUKICAgIOacgOWkp+WbnuaSpCDkuK3kvY0gLTEyLjUlICBwOTAg5pyA5beuIC0yMS40JSAg5pyA5beuIC0zNS4wJQogIOWJjTQwJSDmsaAg5ou/MjDlj6ogKzMuMMOXQVRS5q2i5o2f77yaNDAwIOadoei1hOmHkeabsue6v++8iDIwIOaKveazlSDDlyAyMCDnm7jkvY3vvIkKICAgIOe0r+iuoSDkuK3kvY0gICs2My42JSAgcDEwICArMzYuMSUgIHA5MCArMTAxLjElICDmnIDlt64gICArMi42JSAg5pyA5aW9ICsxNjIuMSUKICAgIOi2heWQjOe9keagvOWkp+ebmCDkuK3kvY0gICArMS40cHAgIHAxMCAgLTIyLjJwcCAg6LWi55qE5qaC546HICA1MiUgICDotoXkubDlhaXmjIHmnInlpKfnm5gg6LWi55qE5qaC546HICA2OSUKICAgIOacgOWkp+WbnuaSpCDkuK3kvY0gIC03LjUlICBwOTAg5pyA5beuIC0xMC42JSAg5pyA5beuIC0xNi4wJQogIOWJjTQwJSDmsaAg5ou/MjDlj6ogKzIuMMOXQVRS5q2i5o2f77yaNDAwIOadoei1hOmHkeabsue6v++8iDIwIOaKveazlSDDlyAyMCDnm7jkvY3vvIkKICAgIOe0r+iuoSDkuK3kvY0gICs1OC40JSAgcDEwICArMzMuNCUgIHA5MCAgKzk2LjMlICDmnIDlt64gICAtMi40JSAg5pyA5aW9ICsxNDguMyUKICAgIOi2heWQjOe9keagvOWkp+ebmCDkuK3kvY0gICAtMi43cHAgIHAxMCAgLTI1LjdwcCAg6LWi55qE5qaC546HICA0NCUgICDotoXkubDlhaXmjIHmnInlpKfnm5gg6LWi55qE5qaC546HICA2MyUKICAgIOacgOWkp+WbnuaSpCDkuK3kvY0gIC03LjElICBwOTAg5pyA5beuIC0xMC4yJSAg5pyA5beuIC0xNy4yJQogIOWJjTUwJSDmsaAg5ou/MjDlj6og5LiN5q2i5o2f77yaNDAwIOadoei1hOmHkeabsue6v++8iDIwIOaKveazlSDDlyAyMCDnm7jkvY3vvIkKICAgIOe0r+iuoSDkuK3kvY0gICs4NS4zJSAgcDEwICArNDkuMCUgIHA5MCArMTI3LjAlICDmnIDlt64gICArNy45JSAg5pyA5aW9ICsxODYuNSUKICAgIOi2heWQjOe9keagvOWkp+ebmCDkuK3kvY0gICsyMS4xcHAgIHAxMCAgIC05LjNwcCAg6LWi55qE5qaC546HICA4MiUgICDotoXkubDlhaXmjIHmnInlpKfnm5gg6LWi55qE5qaC546HICA5MCUKICAgIOacgOWkp+WbnuaSpCDkuK3kvY0gLTExLjQlICBwOTAg5pyA5beuIC0yMS4yJSAg5pyA5beuIC0zMS4wJQoKPT09PSBRNCDmjaLmiYvmiJDmnKzmlY/mhJ/mgKfvvIjmr48gMjAg5pel5o2i5LuT77yM5bey5ZCr5Y2V6L65IDAuMTIl77yJPT09PQogIOWNlei+ueaIkOacrCAwLjEyJe+8iOWPjOi+uSAwLjI0Je+8iSDml6XlnYfotoXpop0gKzAuNzMzJSAgdF9IQUMgKzEuMjUgIOe0r+iuoSAgKzg5LjglICDotoVCICArMjcuMnBwCiAg5Y2V6L655oiQ5pysIDAuMjAl77yI5Y+M6L65IDAuNDAl77yJIOaXpeWdh+i2heminSArMC43MzMlICB0X0hBQyArMS4yNSAg57Sv6K6hICArODYuNiUgIOi2hUIgICsyNC4wcHAKICDljZXovrnmiJDmnKwgMC4zMCXvvIjlj4zovrkgMC42MCXvvIkg5pel5Z2H6LaF6aKdICswLjczMyUgIHRfSEFDICsxLjI1ICDntK/orqEgICs4Mi43JSAg6LaFQiAgKzIwLjFwcAo=
+/data/backtest/iter27.py:33: RuntimeWarning: Mean of empty slice
+  _BM = np.nanmean(np.where(VALID, R20, np.nan), axis=1)
+/data/backtest/portsim.py:124: RuntimeWarning: Mean of empty slice
+  rr = np.nanmean(ret, axis=1)
+
+基准A 大盘买入持有 +38.9%   基准B 大盘每20日再平衡 +62.6%±10.5%
+
+==== Q1 分季度日均超额 / 该季跑赢大盘天数占比 ====
+/data/backtest/iter25.py:30: RuntimeWarning: Mean of empty slice
+  bench = np.nanmean(np.where(valid, R if stop is None else X.ret_mat(H_), np.nan), axis=1)
+  候选：前40% 池 · 分层 20 只 · 持 20 日 · 不止损
+    2024-Q4 +0.0/  0%  2025-Q1 -0.0/ 40%  2025-Q2 +0.2/ 50%  2025-Q3 +2.2/ 68%  2025-Q4 -0.4/ 40%  2026-Q1 +0.6/ 57%  2026-Q2 +1.5/ 60%  2026-Q3 +0.5/ 60%  2026-Q4 +5.2/100%
+    季度数 9，正超额 6 个（67%）
+  候选：同上 + 3×ATR 止损
+    2024-Q4 +1.2/ 80%  2025-Q1 +0.0/ 39%  2025-Q2 -0.8/ 40%  2025-Q3 -0.1/ 50%  2025-Q4 -1.2/ 37%  2026-Q1 -0.2/ 46%  2026-Q2 +1.4/ 58%  2026-Q3 +1.9/ 63%  2026-Q4 +4.5/100%
+    季度数 9，正超额 5 个（56%）
+  现行：≥68 全部等权
+    2024-Q4 +9.2/100%  2025-Q1 -4.3/ 21%  2025-Q2 +0.4/ 70%  2025-Q3 +2.2/ 83%  2025-Q4 -0.0/ 50%  2026-Q1 +0.3/ 64%  2026-Q2 +1.3/ 60%  2026-Q3 +1.8/ 71%  2026-Q4 +4.2/100%
+    季度数 9，正超额 7 个（78%）
+
+==== Q2 单期（20 个交易日）收益分布：用户真实会看到的数字 ====
+  候选 前40%·20只
+    单期（20个交易日）收益 n=435  p1 -13.3%  p5  -7.4%  p10  -5.1%  p25  -1.4%  中位  +3.0%  p75  +7.4%  p90 +11.8%  最差 -18.6%  亏>10% 3.0%  亏>15% 0.7%  赚>10% 14.7%
+  候选 前40%·20只·2ATR止损
+    单期（20个交易日）收益 n=435  p1  -5.7%  p5  -4.4%  p10  -3.5%  p25  -1.2%  中位  +1.5%  p75  +5.6%  p90 +10.0%  最差  -7.5%  亏>10% 0.0%  亏>15% 0.0%  赚>10% 10.1%
+  候选 前40%·20只·3ATR止损
+    单期（20个交易日）收益 n=435  p1  -7.7%  p5  -4.7%  p10  -3.7%  p25  -1.2%  中位  +1.6%  p75  +6.0%  p90 +10.1%  最差  -9.9%  亏>10% 0.0%  亏>15% 0.0%  赚>10% 10.1%
+  现行 ≥68 全部等权
+    单期（20个交易日）收益 n=435  p1 -14.5%  p5  -7.1%  p10  -4.3%  p25  -1.2%  中位  +2.1%  p75  +7.8%  p90 +11.6%  最差 -18.9%  亏>10% 2.5%  亏>15% 1.1%  赚>10% 15.9%
+  现行 ≥68 + 2ATR止损
+    单期（20个交易日）收益 n=435  p1  -7.7%  p5  -4.8%  p10  -3.6%  p25  -1.6%  中位  +0.9%  p75  +5.3%  p90  +9.8%  最差  -9.4%  亏>10% 0.0%  亏>15% 0.0%  赚>10% 9.4%
+
+==== Q3 只买 20 只的普通用户：400 条曲线的分布 ====
+  前40% 池 拿20只 不止损：400 条资金曲线（20 抽法 × 20 相位）
+    累计 中位  +85.2%  p10  +45.3%  p90 +137.8%  最差   +1.1%  最好 +202.3%
+    超同网格大盘 中位  +24.4pp  p10  -11.6pp  赢的概率  80%   超买入持有大盘 赢的概率  88%
+    最大回撤 中位 -12.5%  p90 最差 -21.4%  最差 -35.0%
+  前40% 池 拿20只 +3.0×ATR止损：400 条资金曲线（20 抽法 × 20 相位）
+    累计 中位  +63.6%  p10  +36.1%  p90 +101.1%  最差   +2.6%  最好 +162.1%
+    超同网格大盘 中位   +1.4pp  p10  -22.2pp  赢的概率  52%   超买入持有大盘 赢的概率  69%
+    最大回撤 中位  -7.5%  p90 最差 -10.6%  最差 -16.0%
+  前40% 池 拿20只 +2.0×ATR止损：400 条资金曲线（20 抽法 × 20 相位）
+    累计 中位  +58.4%  p10  +33.4%  p90  +96.3%  最差   -2.4%  最好 +148.3%
+    超同网格大盘 中位   -2.7pp  p10  -25.7pp  赢的概率  44%   超买入持有大盘 赢的概率  63%
+    最大回撤 中位  -7.1%  p90 最差 -10.2%  最差 -17.2%
+  前50% 池 拿20只 不止损：400 条资金曲线（20 抽法 × 20 相位）
+    累计 中位  +85.3%  p10  +49.0%  p90 +127.0%  最差   +7.9%  最好 +186.5%
+    超同网格大盘 中位  +21.1pp  p10   -9.3pp  赢的概率  82%   超买入持有大盘 赢的概率  90%
+    最大回撤 中位 -11.4%  p90 最差 -21.2%  最差 -31.0%
+
+==== Q4 换手成本敏感性（每 20 日换仓，已含单边 0.12%）====
+  单边成本 0.12%（双边 0.24%） 日均超额 +0.733%  t_HAC +1.25  累计  +89.8%  超B  +27.2pp
+  单边成本 0.20%（双边 0.40%） 日均超额 +0.733%  t_HAC +1.25  累计  +86.6%  超B  +24.0pp
+  单边成本 0.30%（双边 0.60%） 日均超额 +0.733%  t_HAC +1.25  累计  +82.7%  超B  +20.1pp

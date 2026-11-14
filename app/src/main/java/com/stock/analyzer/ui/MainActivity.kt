@@ -1,1 +1,120 @@
-cGFja2FnZSBjb20uc3RvY2suYW5hbHl6ZXIudWkKCmltcG9ydCBhbmRyb2lkLm9zLkJ1bmRsZQppbXBvcnQgYW5kcm9pZHguYWN0aXZpdHkuQ29tcG9uZW50QWN0aXZpdHkKaW1wb3J0IGFuZHJvaWR4LmFjdGl2aXR5LmNvbXBvc2Uuc2V0Q29udGVudAppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5mb3VuZGF0aW9uLmxheW91dC5wYWRkaW5nCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsLmljb25zLkljb25zCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsLmljb25zLmZpbGxlZC5TaG93Q2hhcnQKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwuaWNvbnMuZmlsbGVkLlN0YXIKaW1wb3J0IGFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwuaWNvbnMuZmlsbGVkLkFjY291bnRCYWxhbmNlV2FsbGV0CmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsMy4qCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnJ1bnRpbWUuQ29tcG9zYWJsZQppbXBvcnQgYW5kcm9pZHguY29tcG9zZS5ydW50aW1lLmdldFZhbHVlCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLk1vZGlmaWVyCmltcG9ydCBhbmRyb2lkeC5jb21wb3NlLnVpLmdyYXBoaWNzLnZlY3Rvci5JbWFnZVZlY3RvcgppbXBvcnQgYW5kcm9pZHgubmF2aWdhdGlvbi5OYXZUeXBlCmltcG9ydCBhbmRyb2lkeC5uYXZpZ2F0aW9uLmNvbXBvc2UuKgppbXBvcnQgYW5kcm9pZHgubmF2aWdhdGlvbi5uYXZBcmd1bWVudAppbXBvcnQgY29tLnN0b2NrLmFuYWx5emVyLnVpLm1hcmtldC5NYXJrZXRTY3JlZW4KaW1wb3J0IGNvbS5zdG9jay5hbmFseXplci51aS5wb3J0Zm9saW8uUG9ydGZvbGlvU2NyZWVuCmltcG9ydCBjb20uc3RvY2suYW5hbHl6ZXIudWkubGlzdC5TdG9ja0xpc3RTY3JlZW4KaW1wb3J0IGNvbS5zdG9jay5hbmFseXplci51aS5kZXRhaWwuU3RvY2tEZXRhaWxTY3JlZW4KaW1wb3J0IGNvbS5zdG9jay5hbmFseXplci51aS50aGVtZS5TdG9ja0FuYWx5emVyVGhlbWUKCmNsYXNzIE1haW5BY3Rpdml0eSA6IENvbXBvbmVudEFjdGl2aXR5KCkgewogICAgb3ZlcnJpZGUgZnVuIG9uQ3JlYXRlKHNhdmVkSW5zdGFuY2VTdGF0ZTogQnVuZGxlPykgewogICAgICAgIHN1cGVyLm9uQ3JlYXRlKHNhdmVkSW5zdGFuY2VTdGF0ZSkKICAgICAgICBzZXRDb250ZW50IHsKICAgICAgICAgICAgU3RvY2tBbmFseXplclRoZW1lIHsKICAgICAgICAgICAgICAgIFN0b2NrQW5hbHl6ZXJBcHAoKQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQp9CgpkYXRhIGNsYXNzIEJvdHRvbU5hdkl0ZW0oCiAgICB2YWwgcm91dGU6IFN0cmluZywKICAgIHZhbCBsYWJlbDogU3RyaW5nLAogICAgdmFsIGljb246IEltYWdlVmVjdG9yCikKCnZhbCBib3R0b21OYXZJdGVtcyA9IGxpc3RPZigKICAgIEJvdHRvbU5hdkl0ZW0oIm1hcmtldCIsICLku4rml6XlgJnpgIkiLCBJY29ucy5EZWZhdWx0LlN0YXIpLAogICAgQm90dG9tTmF2SXRlbSgicG9ydGZvbGlvIiwgIuaIkeeahOaMgeS7kyIsIEljb25zLkRlZmF1bHQuQWNjb3VudEJhbGFuY2VXYWxsZXQpLAogICAgQm90dG9tTmF2SXRlbSgic3RvY2tfbGlzdCIsICLooYzmg4UiLCBJY29ucy5EZWZhdWx0LlNob3dDaGFydCkKKQoKQENvbXBvc2FibGUKZnVuIFN0b2NrQW5hbHl6ZXJBcHAoKSB7CiAgICB2YWwgbmF2Q29udHJvbGxlciA9IHJlbWVtYmVyTmF2Q29udHJvbGxlcigpCiAgICB2YWwgbmF2QmFja1N0YWNrRW50cnkgYnkgbmF2Q29udHJvbGxlci5jdXJyZW50QmFja1N0YWNrRW50cnlBc1N0YXRlKCkKICAgIHZhbCBjdXJyZW50Um91dGUgPSBuYXZCYWNrU3RhY2tFbnRyeT8uZGVzdGluYXRpb24/LnJvdXRlCgogICAgdmFsIHNob3dCb3R0b21CYXIgPSBjdXJyZW50Um91dGUgaW4gYm90dG9tTmF2SXRlbXMubWFwIHsgaXQucm91dGUgfQoKICAgIFNjYWZmb2xkKAogICAgICAgIGJvdHRvbUJhciA9IHsKICAgICAgICAgICAgaWYgKHNob3dCb3R0b21CYXIpIHsKICAgICAgICAgICAgICAgIE5hdmlnYXRpb25CYXIgewogICAgICAgICAgICAgICAgICAgIGJvdHRvbU5hdkl0ZW1zLmZvckVhY2ggeyBpdGVtIC0+CiAgICAgICAgICAgICAgICAgICAgICAgIE5hdmlnYXRpb25CYXJJdGVtKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgaWNvbiA9IHsgSWNvbihpdGVtLmljb24sIGNvbnRlbnREZXNjcmlwdGlvbiA9IGl0ZW0ubGFiZWwpIH0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBsYWJlbCA9IHsgVGV4dChpdGVtLmxhYmVsKSB9LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgc2VsZWN0ZWQgPSBjdXJyZW50Um91dGUgPT0gaXRlbS5yb3V0ZSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIG9uQ2xpY2sgPSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKGN1cnJlbnRSb3V0ZSAhPSBpdGVtLnJvdXRlKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG5hdkNvbnRyb2xsZXIubmF2aWdhdGUoaXRlbS5yb3V0ZSkgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcG9wVXBUbyhuYXZDb250cm9sbGVyLmdyYXBoLnN0YXJ0RGVzdGluYXRpb25JZCkgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNhdmVTdGF0ZSA9IHRydWUKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxhdW5jaFNpbmdsZVRvcCA9IHRydWUKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJlc3RvcmVTdGF0ZSA9IHRydWUKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgIH0KICAgICkgeyBpbm5lclBhZGRpbmcgLT4KICAgICAgICBOYXZIb3N0KAogICAgICAgICAgICBuYXZDb250cm9sbGVyID0gbmF2Q29udHJvbGxlciwKICAgICAgICAgICAgc3RhcnREZXN0aW5hdGlvbiA9ICJtYXJrZXQiLAogICAgICAgICAgICBtb2RpZmllciA9IE1vZGlmaWVyLnBhZGRpbmcoaW5uZXJQYWRkaW5nKQogICAgICAgICkgewogICAgICAgICAgICBjb21wb3NhYmxlKCJtYXJrZXQiKSB7CiAgICAgICAgICAgICAgICBNYXJrZXRTY3JlZW4oCiAgICAgICAgICAgICAgICAgICAgb25TdG9ja0NsaWNrID0geyBjb2RlIC0+CiAgICAgICAgICAgICAgICAgICAgICAgIG5hdkNvbnRyb2xsZXIubmF2aWdhdGUoInN0b2NrX2RldGFpbC8kY29kZSIpCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgKQogICAgICAgICAgICB9CiAgICAgICAgICAgIGNvbXBvc2FibGUoInBvcnRmb2xpbyIpIHsKICAgICAgICAgICAgICAgIFBvcnRmb2xpb1NjcmVlbigKICAgICAgICAgICAgICAgICAgICBvblN0b2NrQ2xpY2sgPSB7IGNvZGUgLT4KICAgICAgICAgICAgICAgICAgICAgICAgbmF2Q29udHJvbGxlci5uYXZpZ2F0ZSgic3RvY2tfZGV0YWlsLyRjb2RlIikKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICApCiAgICAgICAgICAgIH0KICAgICAgICAgICAgY29tcG9zYWJsZSgic3RvY2tfbGlzdCIpIHsKICAgICAgICAgICAgICAgIFN0b2NrTGlzdFNjcmVlbigKICAgICAgICAgICAgICAgICAgICBvblN0b2NrQ2xpY2sgPSB7IGNvZGUgLT4KICAgICAgICAgICAgICAgICAgICAgICAgbmF2Q29udHJvbGxlci5uYXZpZ2F0ZSgic3RvY2tfZGV0YWlsLyRjb2RlIikKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICApCiAgICAgICAgICAgIH0KICAgICAgICAgICAgY29tcG9zYWJsZSgKICAgICAgICAgICAgICAgIHJvdXRlID0gInN0b2NrX2RldGFpbC97c3RvY2tDb2RlfSIsCiAgICAgICAgICAgICAgICBhcmd1bWVudHMgPSBsaXN0T2YobmF2QXJndW1lbnQoInN0b2NrQ29kZSIpIHsgdHlwZSA9IE5hdlR5cGUuU3RyaW5nVHlwZSB9KQogICAgICAgICAgICApIHsgYmFja1N0YWNrRW50cnkgLT4KICAgICAgICAgICAgICAgIHZhbCBzdG9ja0NvZGUgPSBiYWNrU3RhY2tFbnRyeS5hcmd1bWVudHM/LmdldFN0cmluZygic3RvY2tDb2RlIikgPzogIiIKICAgICAgICAgICAgICAgIFN0b2NrRGV0YWlsU2NyZWVuKAogICAgICAgICAgICAgICAgICAgIHN0b2NrQ29kZSA9IHN0b2NrQ29kZSwKICAgICAgICAgICAgICAgICAgICBvbkJhY2sgPSB7IG5hdkNvbnRyb2xsZXIucG9wQmFja1N0YWNrKCkgfQogICAgICAgICAgICAgICAgKQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQp9Cg==
+package com.stock.analyzer.ui
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ShowChart
+import androidx.compose.material.icons.filled.Star
+import androidx.compose.material.icons.filled.AccountBalanceWallet
+import androidx.compose.material3.*
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.navigation.NavType
+import androidx.navigation.compose.*
+import androidx.navigation.navArgument
+import com.stock.analyzer.ui.market.MarketScreen
+import com.stock.analyzer.ui.portfolio.PortfolioScreen
+import com.stock.analyzer.ui.list.StockListScreen
+import com.stock.analyzer.ui.detail.StockDetailScreen
+import com.stock.analyzer.ui.theme.StockAnalyzerTheme
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            StockAnalyzerTheme {
+                StockAnalyzerApp()
+            }
+        }
+    }
+}
+
+data class BottomNavItem(
+    val route: String,
+    val label: String,
+    val icon: ImageVector
+)
+
+val bottomNavItems = listOf(
+    BottomNavItem("market", "今日候选", Icons.Default.Star),
+    BottomNavItem("portfolio", "我的持仓", Icons.Default.AccountBalanceWallet),
+    BottomNavItem("stock_list", "行情", Icons.Default.ShowChart)
+)
+
+@Composable
+fun StockAnalyzerApp() {
+    val navController = rememberNavController()
+    val navBackStackEntry by navController.currentBackStackEntryAsState()
+    val currentRoute = navBackStackEntry?.destination?.route
+
+    val showBottomBar = currentRoute in bottomNavItems.map { it.route }
+
+    Scaffold(
+        bottomBar = {
+            if (showBottomBar) {
+                NavigationBar {
+                    bottomNavItems.forEach { item ->
+                        NavigationBarItem(
+                            icon = { Icon(item.icon, contentDescription = item.label) },
+                            label = { Text(item.label) },
+                            selected = currentRoute == item.route,
+                            onClick = {
+                                if (currentRoute != item.route) {
+                                    navController.navigate(item.route) {
+                                        popUpTo(navController.graph.startDestinationId) {
+                                            saveState = true
+                                        }
+                                        launchSingleTop = true
+                                        restoreState = true
+                                    }
+                                }
+                            }
+                        )
+                    }
+                }
+            }
+        }
+    ) { innerPadding ->
+        NavHost(
+            navController = navController,
+            startDestination = "market",
+            modifier = Modifier.padding(innerPadding)
+        ) {
+            composable("market") {
+                MarketScreen(
+                    onStockClick = { code ->
+                        navController.navigate("stock_detail/$code")
+                    }
+                )
+            }
+            composable("portfolio") {
+                PortfolioScreen(
+                    onStockClick = { code ->
+                        navController.navigate("stock_detail/$code")
+                    }
+                )
+            }
+            composable("stock_list") {
+                StockListScreen(
+                    onStockClick = { code ->
+                        navController.navigate("stock_detail/$code")
+                    }
+                )
+            }
+            composable(
+                route = "stock_detail/{stockCode}",
+                arguments = listOf(navArgument("stockCode") { type = NavType.StringType })
+            ) { backStackEntry ->
+                val stockCode = backStackEntry.arguments?.getString("stockCode") ?: ""
+                StockDetailScreen(
+                    stockCode = stockCode,
+                    onBack = { navController.popBackStack() }
+                )
+            }
+        }
+    }
+}

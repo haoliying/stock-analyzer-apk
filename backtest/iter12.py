@@ -1,1 +1,95 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJJdGVyYXRpb24gMTI6IGpvaW50IHN3ZWVwIG9mIHRoZSBzdGFsZS1zdHJlbmd0aCBmaWx0ZXIgYW5kIHRoZSBBVFIgcGVuYWx0eS4KCml0ZXIxMSBzaG93ZWQgcmVxdWlyaW5nIHJlYWwgMjBkIG1vdmVtZW50IGxpZnRzIHRoZSBidXkgYm9vayBhIGxvdCwgYnV0IGxvb3NlbnMKdGhlIHRhaWwgc2xpZ2h0bHkuIGl0ZXIzIHNob3dlZCB0aGUgQVRSIHBlbmFsdHkgaXMgd2hhdCBwcm90ZWN0cyB0aGUgdGFpbC4gRmluZAp0aGUgcGFpciB0aGF0IGlzIGdvb2Qgb24gQk9USCwgb24gb3V0LW9mLXNhbXBsZSBkYXRhLCBub3QganVzdCBvbiB0aGUgbWVhbi4KIiIiCmltcG9ydCBudW1weSBhcyBucApmcm9tIGNvbGxlY3Rpb25zIGltcG9ydCBkZWZhdWx0ZGljdApmcm9tIG1vZGVsIGltcG9ydCByb3dzX2ZvciwgQ1VUT0ZGLCBfbmFuLCBnLCBzdG9ja3MsIE1JTl9ISVNULCBDT1NULCBILCBCQVNFTElORQoKCmRlZiBtYWtlKGtuZWUsIHBlbiwgc3RhbGVfdGgsIHN0YWxlX3Blbik6CiAgICBkZWYgZm4oRiwgdCk6CiAgICAgICAgYyA9IEZbImNsb3NlIl1bdF0KICAgICAgICBtYTEwLCBtYTIwLCBtYTYwLCBzbCA9IGcoRiwgIm1hMTAiLCB0KSwgZyhGLCAibWEyMCIsIHQpLCBnKEYsICJtYTYwIiwgdCksIGcoRiwgIm1hMjBfc2xvcGUiLCB0KQogICAgICAgIGlmIF9uYW4obWEyMCkgb3IgX25hbihtYTYwKSBvciBfbmFuKHNsKSBvciBfbmFuKG1hMTApOgogICAgICAgICAgICByZXR1cm4gMC4wLCBGYWxzZQogICAgICAgIHMgPSA1MC4wCiAgICAgICAgdXAgPSBjID4gbWEyMCA+IG1hNjAKICAgICAgICBkbiA9IGMgPCBtYTIwIDwgbWE2MAogICAgICAgIGlmIHVwOgogICAgICAgICAgICBzICs9IDIyIGlmIHNsID4gMC4wMTUgZWxzZSAoMTQgaWYgc2wgPiAwLjAgZWxzZSA2KQogICAgICAgIGVsaWYgZG46CiAgICAgICAgICAgIHMgLT0gMjIgaWYgc2wgPCAtMC4wMTUgZWxzZSAoMTQgaWYgc2wgPCAwLjAgZWxzZSA2KQogICAgICAgIGVsc2U6CiAgICAgICAgICAgIHMgLT0gMwogICAgICAgIHMgKz0gNCBpZiBjID4gbWExMCA+IG1hMjAgZWxzZSAtMgogICAgICAgIGEgPSBnKEYsICJhdHJfcGN0IiwgdCkKICAgICAgICBpZiBub3QgX25hbihhKToKICAgICAgICAgICAgcyAtPSBtYXgoMC4wLCBhIC0ga25lZSkgKiBwZW4KICAgICAgICByID0gZyhGLCAicmV0MjAiLCB0KQogICAgICAgIGlmIG5vdCBfbmFuKHIpIGFuZCByIDwgc3RhbGVfdGg6CiAgICAgICAgICAgIHMgLT0gc3RhbGVfcGVuCiAgICAgICAgcmV0dXJuIGZsb2F0KG5wLmNsaXAocywgMCwgMTAwKSksIFRydWUKICAgIHJldHVybiBmbgoKCmRlZiBzdGF0cyhmbiwgYnV5X3RoPTcwLjAsIHNlbGxfdGg9NDIuMCk6CiAgICBieV9kYXRlID0gZGVmYXVsdGRpY3QobGFtYmRhOiB7ImIiOiBbXSwgInMiOiBbXX0pCiAgICB0b3QgPSAwCiAgICBmb3IgRiBpbiBzdG9ja3M6CiAgICAgICAgbiA9IGludChGWyJuIl0pCiAgICAgICAgYywgbyA9IEZbImNsb3NlIl0sIEZbIm9wZW4iXQogICAgICAgIGxpbSA9IDAuMDk3IGlmIEZbImNvZGUiXS5zdGFydHN3aXRoKCgiMzAiLCAiNjgiKSkgZWxzZSAwLjA0NwogICAgICAgIGZvciB0IGluIHJhbmdlKE1JTl9ISVNULCBuIC0gMSk6CiAgICAgICAgICAgIHMsIG9rID0gZm4oRiwgdCkKICAgICAgICAgICAgaWYgbm90IG9rOgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgayA9IHQgKyAxICsgSAogICAgICAgICAgICBpZiBrID49IG46CiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICBlbyA9IG9bdCArIDFdCiAgICAgICAgICAgIGlmIGVvIDw9IDA6CiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICB0b3QgKz0gMQogICAgICAgICAgICBkID0gc3RyKEZbImRhdGUiXVt0XSkKICAgICAgICAgICAgYiA9IEJBU0VMSU5FLmdldCgoZCwgSCkpCiAgICAgICAgICAgIGlmIGIgaXMgTm9uZToKICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgIHIgPSAoY1trXSAvIGVvIC0gMS4wKSAtIENPU1QKICAgICAgICAgICAgdW5iID0gRlsicGN0Il1bdF0gPiAwIGFuZCBlbyA+PSBjW3RdICogKDEgKyBsaW0pICogMC45OTUKICAgICAgICAgICAgaWYgcyA+PSBidXlfdGggYW5kIG5vdCB1bmI6CiAgICAgICAgICAgICAgICBieV9kYXRlW2RdWyJiIl0uYXBwZW5kKHIgLSBiKQogICAgICAgICAgICAgICAgYnlfZGF0ZVtkXS5zZXRkZWZhdWx0KCJfcmF3IiwgW10pLmFwcGVuZChyKQogICAgICAgICAgICBlbGlmIHMgPD0gc2VsbF90aDoKICAgICAgICAgICAgICAgIGJ5X2RhdGVbZF1bInMiXS5hcHBlbmQociAtIGIpCiAgICBwZXJfYiwgcGVyX3MsIHJhd19iLCBvb3NfYiA9IFtdLCBbXSwgW10sIFtdCiAgICBmb3IgZCwgdiBpbiBieV9kYXRlLml0ZW1zKCk6CiAgICAgICAgaWYgbGVuKHZbImIiXSkgPj0gMzoKICAgICAgICAgICAgbSA9IGZsb2F0KG5wLm1lYW4odlsiYiJdKSkKICAgICAgICAgICAgcGVyX2IuYXBwZW5kKG0pCiAgICAgICAgICAgIGlmIGQgPj0gQ1VUT0ZGOgogICAgICAgICAgICAgICAgb29zX2IuZXh0ZW5kKHZbImIiXSkKICAgICAgICBpZiBsZW4odlsicyJdKSA+PSAzOgogICAgICAgICAgICBwZXJfcy5hcHBlbmQoZmxvYXQobnAubWVhbih2WyJzIl0pKSkKICAgIHJhdyA9IFtdCiAgICByZXR1cm4gKG5wLm1lYW4ocGVyX2IpIGlmIHBlcl9iIGVsc2UgbnAubmFuLCBucC5tZWFuKHBlcl9zKSBpZiBwZXJfcyBlbHNlIG5wLm5hbiwKICAgICAgICAgICAgbnAubWVhbihvb3NfYikgaWYgb29zX2IgZWxzZSBucC5uYW4sCiAgICAgICAgICAgIG5wLnBlcmNlbnRpbGUob29zX2IsIDUpIGlmIGxlbihvb3NfYikgPiAyMDAgZWxzZSBucC5uYW4sCiAgICAgICAgICAgIG5wLm1lYW4obnAuYXJyYXkob29zX2IpIDwgLTAuMTApICogMTAwIGlmIGxlbihvb3NfYikgPiAyMDAgZWxzZSBucC5uYW4sCiAgICAgICAgICAgIG5wLm1lYW4obnAuYXJyYXkob29zX2IpKSAqIDEwMCBpZiBvb3NfYiBlbHNlIG5wLm5hbiwKICAgICAgICAgICAgbGVuKHBlcl9iKSwgdG90KQoKCnByaW50KGYieydrbmVlJzo+NXN9IHsncGVuJzo+NHN9IHsnc3RhbGUnOj41c30gfCB7J2RfZXhjJzo+N3N9IHsnb29zX2V4Yyc6PjdzfSB7J29vc19hdmcnOj43c30gIgogICAgICBmInsnb29zX3AwNSc6PjdzfSB7J29vcz4xMEwnOj43c30geyflh4/ku5MnOj43c30geydkYXRlcyc6PjVzfSIpCmJhc2UgPSBzdGF0cyhtYWtlKDAuMDIwLCAxNTAuMCwgLTkuOSwgMC4wKSkKcHJpbnQoZiJ7JzAuMDIwJzo+NXN9IHsnMTUwJzo+NHN9IHsnbm9uZSc6PjVzfSB8IHtiYXNlWzBdKjEwMDo+KzYuMmZ9JSB7YmFzZVsyXSoxMDA6Pis2LjJmfSUgIgogICAgICBmIntiYXNlWzVdOj4rNi4yZn0lIHtiYXNlWzNdKjEwMDo+KzYuMWZ9JSB7YmFzZVs0XTo+Ni4xZn0lIHtiYXNlWzFdKjEwMDo+KzYuMmZ9JSB7YmFzZVs2XTo+NWR9IikKZm9yIGtuZWUsIHBlbiBpbiAoKDAuMDE1LCAxNTApLCAoMC4wMjAsIDE1MCksICgwLjAyMCwgMzAwKSwgKDAuMDIwLCA0NTApLCAoMC4wMjUsIDMwMCkpOgogICAgZm9yIHN0IGluICgwLjAsIDAuMTIsIDAuMTYsIDAuMjApOgogICAgICAgIHIgPSBzdGF0cyhtYWtlKGtuZWUsIHBlbiwgc3QsIDguMCkpCiAgICAgICAgcHJpbnQoZiJ7a25lZTo+NS4zZn0ge3Blbjo+NGR9IHtzdDo+NS4yZn0gfCB7clswXSoxMDA6Pis2LjJmfSUge3JbMl0qMTAwOj4rNi4yZn0lICIKICAgICAgICAgICAgICBmIntyWzVdOj4rNi4yZn0lIHtyWzNdKjEwMDo+KzYuMWZ9JSB7cls0XTo+Ni4xZn0lIHtyWzFdKjEwMDo+KzYuMmZ9JSB7cls2XTo+NWR9IikK
+#!/usr/bin/env python3
+"""Iteration 12: joint sweep of the stale-strength filter and the ATR penalty.
+
+iter11 showed requiring real 20d movement lifts the buy book a lot, but loosens
+the tail slightly. iter3 showed the ATR penalty is what protects the tail. Find
+the pair that is good on BOTH, on out-of-sample data, not just on the mean.
+"""
+import numpy as np
+from collections import defaultdict
+from model import rows_for, CUTOFF, _nan, g, stocks, MIN_HIST, COST, H, BASELINE
+
+
+def make(knee, pen, stale_th, stale_pen):
+    def fn(F, t):
+        c = F["close"][t]
+        ma10, ma20, ma60, sl = g(F, "ma10", t), g(F, "ma20", t), g(F, "ma60", t), g(F, "ma20_slope", t)
+        if _nan(ma20) or _nan(ma60) or _nan(sl) or _nan(ma10):
+            return 0.0, False
+        s = 50.0
+        up = c > ma20 > ma60
+        dn = c < ma20 < ma60
+        if up:
+            s += 22 if sl > 0.015 else (14 if sl > 0.0 else 6)
+        elif dn:
+            s -= 22 if sl < -0.015 else (14 if sl < 0.0 else 6)
+        else:
+            s -= 3
+        s += 4 if c > ma10 > ma20 else -2
+        a = g(F, "atr_pct", t)
+        if not _nan(a):
+            s -= max(0.0, a - knee) * pen
+        r = g(F, "ret20", t)
+        if not _nan(r) and r < stale_th:
+            s -= stale_pen
+        return float(np.clip(s, 0, 100)), True
+    return fn
+
+
+def stats(fn, buy_th=70.0, sell_th=42.0):
+    by_date = defaultdict(lambda: {"b": [], "s": []})
+    tot = 0
+    for F in stocks:
+        n = int(F["n"])
+        c, o = F["close"], F["open"]
+        lim = 0.097 if F["code"].startswith(("30", "68")) else 0.047
+        for t in range(MIN_HIST, n - 1):
+            s, ok = fn(F, t)
+            if not ok:
+                continue
+            k = t + 1 + H
+            if k >= n:
+                continue
+            eo = o[t + 1]
+            if eo <= 0:
+                continue
+            tot += 1
+            d = str(F["date"][t])
+            b = BASELINE.get((d, H))
+            if b is None:
+                continue
+            r = (c[k] / eo - 1.0) - COST
+            unb = F["pct"][t] > 0 and eo >= c[t] * (1 + lim) * 0.995
+            if s >= buy_th and not unb:
+                by_date[d]["b"].append(r - b)
+                by_date[d].setdefault("_raw", []).append(r)
+            elif s <= sell_th:
+                by_date[d]["s"].append(r - b)
+    per_b, per_s, raw_b, oos_b = [], [], [], []
+    for d, v in by_date.items():
+        if len(v["b"]) >= 3:
+            m = float(np.mean(v["b"]))
+            per_b.append(m)
+            if d >= CUTOFF:
+                oos_b.extend(v["b"])
+        if len(v["s"]) >= 3:
+            per_s.append(float(np.mean(v["s"])))
+    raw = []
+    return (np.mean(per_b) if per_b else np.nan, np.mean(per_s) if per_s else np.nan,
+            np.mean(oos_b) if oos_b else np.nan,
+            np.percentile(oos_b, 5) if len(oos_b) > 200 else np.nan,
+            np.mean(np.array(oos_b) < -0.10) * 100 if len(oos_b) > 200 else np.nan,
+            np.mean(np.array(oos_b)) * 100 if oos_b else np.nan,
+            len(per_b), tot)
+
+
+print(f"{'knee':>5s} {'pen':>4s} {'stale':>5s} | {'d_exc':>7s} {'oos_exc':>7s} {'oos_avg':>7s} "
+      f"{'oos_p05':>7s} {'oos>10L':>7s} {'减仓':>7s} {'dates':>5s}")
+base = stats(make(0.020, 150.0, -9.9, 0.0))
+print(f"{'0.020':>5s} {'150':>4s} {'none':>5s} | {base[0]*100:>+6.2f}% {base[2]*100:>+6.2f}% "
+      f"{base[5]:>+6.2f}% {base[3]*100:>+6.1f}% {base[4]:>6.1f}% {base[1]*100:>+6.2f}% {base[6]:>5d}")
+for knee, pen in ((0.015, 150), (0.020, 150), (0.020, 300), (0.020, 450), (0.025, 300)):
+    for st in (0.0, 0.12, 0.16, 0.20):
+        r = stats(make(knee, pen, st, 8.0))
+        print(f"{knee:>5.3f} {pen:>4d} {st:>5.2f} | {r[0]*100:>+6.2f}% {r[2]*100:>+6.2f}% "
+              f"{r[5]:>+6.2f}% {r[3]*100:>+6.1f}% {r[4]:>6.1f}% {r[1]*100:>+6.2f}% {r[6]:>5d}")

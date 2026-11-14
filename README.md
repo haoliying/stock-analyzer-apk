@@ -1,1 +1,175 @@
-IyDogqHnpajlrp7ml7bliIbmnpAgQW5kcm9pZCDlupTnlKgKCuWunuaXtuihjOaDhSArIOaKgOacr+WIhuaekCArIOWKoOWHj+S7k+W7uuiuruOAgioqdjQuMS4wIOaKiuivhOWIhuW8leaTjuaVtOS4quaNouaOieS6hioq77yIdjQuMC4xIOS5i+WJjeeahOeul+azleWcqOecn+WunuWOhuWPsuaVsOaNruS4iuaYr+i0n+aUtuebiueahO+8ie+8myoqdjQuMi4wIOWPquaUuemAieaxoOS4jue7n+iuoeWPo+W+hO+8jOivhOWIhuWHveaVsOS4gOWtl+acquWKqCoq44CCCgojIyDkuIvovb0KCi0gKipBUEvvvIh2NC4yLjDvvIzmnIDmlrDvvIkqKjogW1N0b2NrQW5hbHl6ZXItdjQuMi4wLmFwa10oaHR0cHM6Ly9naXRodWIuY29tL2hhb2xpeWluZy9zdG9jay1hbmFseXplci1hcGsvcmVsZWFzZXMvZG93bmxvYWQvdjQuMi4wL1N0b2NrQW5hbHl6ZXItdjQuMi4wLmFwaykKLSDljoblj7LniYjmnKzvvJp2NC4xLjAgLyB2NC4wLjEgLyB2NC4wLjAgLyB2My4wIC8gdjIuMCAvIHYxLjAg6KeBIFJlbGVhc2VzIOmhtemdogoK5a6J6KOF77ya5omL5py65LiK55u05o6l55So5rWP6KeI5Zmo5LiL6L295LiK6Z2i6ZO+5o6l77yM5YWB6K64IuWuieijheacquefpeadpea6kOW6lOeUqCLjgILlt7Loo4Xov4fml6fniYjlj6/nm7TmjqXopobnm5blronoo4XvvIzmjIHku5PmlbDmja7kuI3kuKLjgIIKCiMjIHY0LjEuMO+8muWIhuaekOW8leaTjumHjeWBmu+8iOmHjeimge+8iQoKIyMjIOS4uuS7gOS5iOmHjeWBmgoK55SoIDI4OCDlj6ogQSDogqHvvIjlvZPliY3luILlgLwgPiAyMDAg5Lq/77yJ55qE55yf5a6e5pel57q/5Zue5rWLIOKAlOKAlCAyMDI0LTA2IH4gMjAyNi0xMe+8jOe6piAyLjQg5bm044CBNTYwIOaguUvnur/vvIwK5L+h5Y+35pelIDIwMjQtMTItMjUgfiAyMDI2LTExLTEzIOWFsSA0NTYg5Liq5Lqk5piT5pel77yM5qC35pys5aSW5Li6IDIwMjYtMDQtMjMg5LmL5ZCO55qEIDExNiDkuKrkuqTmmJPml6XjgIIK5oqK6ICB566X5rOV5Y6f5qC36LeR5LiA6YGN77yaCgotIOiAgeeul+azleWcqCAqKjg2JX45MSUg55qE6IKh56WoLeaXpSoq6YO95Zyo5Y+R5aOw77yI6KaB5LmIIuWKoOS7kyLopoHkuYgi5YeP5LuTIu+8ie+8jOWHoOS5juayoeaciSLkuI3nn6XpgZMi55qE5pe25YCZ77ybCi0g5a6D55qE5YiG5pWw5YiG5qGj5LiO5pyq5p2l5pS255uKKirlh6DkuY7ml6DlhbPnlJroh7PlgJLmjIIqKu+8iOmrmOWIhuaho+W5tuS4jeavlOS9juWIhuaho+i1muW+l+Wkmu+8ie+8mwotIOagt+acrOWklu+8iDIwMjYtMDQtMjMg5LmL5ZCO77yJ5Yqg5LuT5L+h5Y+3IDIwIOaXpSoq6LaF6aKd5pS255uKIOKIkjAuMzElKirvvIzljZXnrJTlubPlnYcgKiriiJIxLjI3JSoq77yM6IOc546HIDQzJe+8jAogIDUlIOWIhuS9jSAqKuKIkjI3LjAlKirvvIzkuo/otoUgMjAlIOeahOavlOS+iyAqKjkuNCUqKuOAggoK6L+Z5bCx5piv5oyJ5bu66K6u5pON5L2c5Lya5LqP6ZKx55qE55u05o6l5Y6f5Zug77ya5a6D5LiA55u05Zyo6K+06K+d77yM6ICM6K+055qE6K+d5rKh5pyJ6aKE5rWL5Yqb44CCCgojIyMg5Zue5rWL5Y2P6K6u77yI57uT6K665piv5ZCm5Y+v5aSN546w55qE5YWz6ZSu77yJCgrlhpnlnKggW2BiYWNrdGVzdC9zdHJhdGVneS5weWBdKGJhY2t0ZXN0L3N0cmF0ZWd5LnB5Ke+8mgoKMS4g5L+h5Y+35Y+q55So56ysIHQg5aSp5pS255uY5YmN55qE5pWw5o2u77ybCjIuICoq56ysIHQrMSDlpKnlvIDnm5jku7fkubDlhaUqKu+8iOS4jeeci+aUtuebmOS7t+aIkOS6pO+8jOWboOS4uueci+WIsOS/oeWPt+aXtuaUtuebmOW3sue7j+i/h+S6hu+8ie+8mwozLiDlvIDnm5jljbPmtqjlgZzvvIgzMC82OCDlvIDlpLQg4omlOS43Je+8jOWFtuS9mSDiiaU0Ljcl77yJ55qE5Yik5Li65Lmw5LiN5Yiw77yM5YmU6Zmk77ybCjQuIOaMgeaciSAyMCDkuKrkuqTmmJPml6XvvIzmiaMgMC4xMiUg5b6A6L+U5oiQ5pys77ybCjUuIOaUtuebiuS4gOW+i+WHj+aOiSoq5ZCM5LiA5aSp5YWo5qC35pys55qE5bmz5Z2H5pS255uKKiog4oCU4oCUIOi/meaJjeWPqyLpgInogqHog73lipsi77yM5ZCm5YiZ5Y+q5piv5Zyo57uf6K6h5aSn55uY5rao6LeM77ybCjYuIOe7n+iuoeaXtioq5oyJ5L+h5Y+35pel5pyf562J5p2DKirvvIjmr4/kuKrkuqTmmJPml6XnrpfkuIDnpajvvInjgILov5nmnaHlvojlhbPplK7vvJrnu5PmnoTliIbmmK/nprvmlaPmlbTmlbDvvIzmn5DkupvlpKnkvJrpm4bkuK3niIblj5HkuIrnmb7lj6rvvIzmjInnrJTmlbDliqDmnYPkvJrooqvkuKrliKvml6XlrZDnu5HmnrbvvJsKNy4g5Y+C5pWw5Y+q5Zyo5qC35pys5YaF56Gu5a6a77yMKirmoLfmnKzlpJblj6rpqozor4HkuIDmrKEqKu+8jOS4jeWPjeWkjeiwg+WPguWGjeaLv+agt+acrOWkluW9k+Wuo+S8oOOAggoKIyMjIOaWsOivhOWIhu+8iOWwsei/meS4iemhue+8jOWFtuS9memDvea1i+i/h+W5tuiiq+WQpuaOie+8iQoKYGBgCnNjb3JlID0gNTAKICAgICAgICArIOi2i+WKv+e7k+aehO+8mueOsOS7tyAvIE1BMjAgLyBNQTYwIOaOkuWIl++8jOaMiSBNQTIwIOeahCAxMCDml6XmlpznjofliIbmoaMgIMKxNiAvIMKxMTQgLyDCsTIyCiAgICAgICAgKyDnn63mnJ/mjpLliJfvvJrnjrDku7cgPiBNQTEwID4gTUEyMCDihpIgKzTvvIzlkKbliJkg4oiSMgogICAgICAgIOKIkiDms6Lliqjmg6nnvZrvvJptYXgoMCwgQVRSJS/mr4/ml6Ug4oiSIDIuMCUpIMOXIDIwMCAgICAgICAgICDvvIhBVFIxNCAvIOeOsOS7t++8jFdpbGRlciDlubPmu5HvvIkKYGBgCgrliIbmoaPvvJpg4omlNjgg5bu66K6u5Yqg5LuTYO+9nGA0M342NyDmjIHmnInkuI3mlrDlop5g772cYDMxfjQyIOW7uuiuruWHj+S7k2DvvZxg4omkMzAg5by654OI5YeP5LuTYAoqKuayoeaciSLlvLrng4jkubDlhaUi5qGjKiog4oCU4oCUIOWunua1iyBzY29yZeKJpTc2IOmCo+S4gOahoyAyMCDml6XotoXpop3mmK8gKiriiJIxLjMwJSoq77yI6auY5YiG77yd5L2O5rOi5Yqo77yL5bey5rao5LiA5q6155qE5oul5oyk5Lqk5piT77yJ77yM57uZ5a6D5pyA6auY6K+E5Lu35Y+N6ICM5piv5pyA5beu55qE5Lmw5YWl54K544CCCgojIyMg5a6e5rWL57uT5p6c77yIMjAg5pel5oyB5pyJ77yM55u45a+55ZCM5pel5Z+65YeG55qE6LaF6aKd77yJCgp8IOaMh+aghyB8IOaXp+eul+azlSB2NC4wLjEgfCDmlrDlvJXmk44gdjQuMS4wIHwKfC0tLXwtLS18LS0tfAp8IOWKoOS7k+S/oeWPt+WPkeWjsOmikeeOhyB8IDQ1LjglIHwgMTguNyUgfAp8IOi2heminSDlhajnqIsgfCArMC4yNiUgfCAqKiswLjY5JSoqIHwKfCDotoXpop0g5YmN5Y2KIC8g5ZCO5Y2KIHwgKzAuNDElIC8gKzAuMTMlIHwgKzAuMzUlIC8gKiorMC45OSUqKiB8CnwgKirotoXpop0g5qC35pys5aSWKiogfCAqKuKIkjAuMzElKiogfCAqKisyLjg2JSoqIHwKfCDmoLfmnKzlpJbljZXnrJTlubPlnYcgfCDiiJIxLjI3JSB8ICsxLjU5JSB8Cnwg5qC35pys5aSW6IOc546HIHwgNDMuMCUgfCA1MS4wJSB8CnwgNSUg5YiG5L2N77yI5pyA5oOo55qEIDUl77yJIHwg4oiSMjcuMCUgfCAqKuKIkjE5LjQlKiogfAp8IOS6j+i2hSAxMCUgLyDkuo/otoUgMjAlIHwgMjQuMiUgLyA5LjQlIHwgMTcuMCUgLyAqKjQuNSUqKiB8Cnwg5pyI5bqm6LeR6LWi5Z+65YeGIHwgNTkl77yIMjIg5pyI77yJIHwgKio2NyUqKu+8iDIxIOaciO+8iSB8Cnwg5pyA5beu5pyIIHwg4oiSNS4xNSUgfCDiiJI1LjY3JSB8Cnwg5Lit5L2N5pyIIHwgKzAuNTIlIHwgKiorMS4xMCUqKiB8Cnwg5YeP5LuT5L+h5Y+35pa55ZCR5qOA6aqMIHwg4oiSMC45MyXvvIjmraPnoa7vvIkgfCDiiJIxLjExJe+8iOato+ehru+8iSB8Cgrmr4/ml6XlubPlnYflgJnpgInmlbDku44gMTI2IOWPqumZjeWIsCAqKjUyLjUg5Y+qKiog4oCU4oCUIOWwkeivtOivneaYr+ivtOecn+ivneeahOe7k+aenOOAggoKIyMjIOavj+aXpeWIl+ihqOS4jeWGjeaYr+aOkuihjOamnAoK5ZCM5LiA5om55L+h5Y+35pel5LiK55qE5Y+W5rOV5a+55q+U77yIdjQuMi4wIOmHjea1i++8jGBiYWNrdGVzdC9pdGVyMzEucHlg77yaMjAg5pel5oyB5pyJ44CB5q+P5aSp5LiA56Wo44CBTmV3ZXktV2VzdCBIQUPjgIEyMCDkuKrmjaLku5Pnm7jkvY3vvInvvJoKCnwg5Y+W5rOV77yI5rGgID0g5b2T5pel5YiG5pWw5YmNIDUwJe+8jDIwIOWPqu+8iSB8IOaXpeWdh+i2heminSB8IHRfSEFDIHwg6LeR6LWi5Z+65YeGQiDnmoTnm7jkvY0gfCDlubPlnYfmnIDlpKflm57mkqQgfCDmnIDlt67ljZXmnJ8gfAp8LS0tfC0tLXwtLS18LS0tfC0tLXwtLS18Cnwg5YiG5pWw6auY4oaS5L2O5Y+W5YmNIDIw77yI5o6S6KGM5qac77yJIHwgKiriiJIwLjgwNyUqKiB8IOKIkjEuMTEgfCAyLzIwIHwg4oiSMTUuNCUgfCDiiJIyMS44JSB8Cnwg6ZqP5py65Y+WIDIwIOWPqu+8iOWFqOW4guWcuu+8jOWuieaFsOWJgu+8iSB8ICswLjAyOSUgfCArMC44OSB8IDEyLzIwIHwg4oiSMTAuOCUgfCDiiJIxMS44JSB8Cnwg5ZCOIDUwJSDpmo/mnLrlj5YgMjAg5Y+qIHwgKiriiJIxLjAxMSUqKiB8IOKIkjEuOTkgfCAwLzIwIHwg4oiSMTYuNCUgfCDiiJIxNC4zJSB8CnwgKirmjInliIbkvY3nrYnot53lj5YgMjAg5Y+q77yI5LiK57q/77yJKiogfCAqKiswLjc0NyUqKiB8ICsxLjUyIHwgKioxOC8yMCoqIHwg4oiSMTMuMSUgfCDiiJIxNi40JSB8CgrmiYDku6UqKiLkubDliIbmlbDmnIDpq5jnmoTlh6Dlj6oi5piv5pyA6K+l6YG/5YWN55qE5pON5L2cKirvvJrliIbmlbDnoa7lrp7luKbmjpLluo/kv6Hmga/vvIjlpLTlsL7lt64gMS44IOS4queZvuWIhueCuS8yMCDml6XvvIzpmo/mnLrmir3lj5bnmoTlronmhbDliYLlvZLpm7bvvInvvIzkvYbmnIDlsJbnmoTpgqPkuIDmiKrmmK8i5L2O5rOi5Yqo77yL5bey57uP5rao6L+H5LiA5q61IueahOaLpeaMpOS6pOaYk+OAgummlumhteWboOatpOaUueWQjeS4uiLku4rml6XlgJnpgInmsaAi77yM5YiX6KGo5piv5oqK5YiG5pWj5rGg5oyJ6K+E5YiG5YiG5L2N562J6Led5oq95Ye655qEICoqMjAg5Y+qKirvvIznvJblj7flj6rmmK/luo/lj7fvvIjljrvmjonkuobph5Hpk7bpk5zvvInvvIzlu7rorq7nrYnmnYPphY3nva7vvIzljZXlj6rnuqYgNSXjgIHkuI3otoXov4fmgLvotYTkuqcgMTAl44CCCgrpgqPkuKogKzUuMjElIOeahOmrmOazouWKqOmbhuS4ree7hOWQiOayoeacieS4iue6v++8muW5s+Wdh+aUtuebiuehruWunuacgOmrmO+8jOS9huaciOW6puiDnOeOhyA0OCXjgIEyMCUg55qE5Y2V56yU5Lya5LqP6LaFIDEwJSDigJTigJQg6L+Z5piv6Z2g5oul5oyk5Yqo6YeP6LWa5bmz5Z2H44CB5LqP5Zyo5bC+6YOo77yM5LiA5qyh5Zue5pKk5bCx5oqK5pys6YeR5omT5q6L44CC5ZCM55CG77yMMjAg5pel5Yqo6YeP5Yqg5oiQ44CB6LaF5Lmw6LaF5Y2W5Y+N6L2s44CB5LmW56a7546H5oOp572a44CBIuaWnOeOh+mrmO+8i+Wbnui4qea1hSLvvIgrNC42NyXvvInpg73ooqvlkKbmjonvvIznkIbnlLHpg73kuIDmoLfvvJoqKuW5s+Wdh+aVsOWlveeci++8jOWIhuW4g+mavueci+S6hioq44CCCgojIyMgdjQuMi4w77ya5pS555qE5piv6YCJ5rGg5LiO5Y+j5b6E77yM6K+E5YiG5LiA5YiG5rKh5YqoCgpgZ2l0IGRpZmZgIOmHjCBgU3RvY2tBbmFseXplci5rdGAg55qEIGBzY29yZWAg5Ye95pWw5LiOIDQuMS4wIOWujOWFqOS4gOiHtO+8iGBlbmdpbmVfcGFyaXR5Lmpzb25gIOmAkCBiYXIg5a+56b2Q5LuN5Li6IDAg5aSE5LiN5LiA6Ie077yJ44CC6L+Z5LiA54mI5Y+q5pS55LqG5LiJ5Lu25LqL77yaCgoxLiAqKuWFpeaxoOS4jeWGjeeUqCDiiaU2OCoq77yM5pS55oiQIuW9k+aXpeWPr+ivhOWIhuiCoeelqOaMieWIhuaVsOaOkuWQjeWJjSA1MCXvvIjljbPkuK3kvY3mlbDku6XkuIrvvIki44CC57ud5a+56Zeo5qeb5a6e5rWL5piv6LSf6LSh54yu77ya5YqgIOKJpTY4IOimgeS7mCDiiJIwLjI1NCXjgIHliqAg4omlNTUg5LuYIOKIkjAuMjY0JeOAgeWKoCDiiaU0MyDku5gg4oiSMC4xMTkl44CB5YqgIOKJpTMxIOS7mCDiiJIwLjE0NSXvvIjmr48gMjAg5pel55qE5pel5Z2H6LaF6aKd77yM6YWN5a+55qOA6aqM77yMYGl0ZXIzMi5weWDvvInvvJvogIzliJfooajlnKjlvLHluILkuZ/kuI3kvJrlho3nqbrmjonjgIIKICAg5rGg5a695omr5Y+C5pivIDMwLzM1LzQwLzQ1LzUwLzYwJSA9ICswLjY3MC8rMC42ODYvKzAuNTA3LyoqKzEuMDA2KiovKzAuNzQ3LyswLjMyMyAlLzIwIOaXpSDigJTigJQgNDUlIOaYr+agt+acrOWGheWzsOWAvO+8jOS9huWug+eahOagt+acrOWklu+8iCsxLjEwNCXvvInlj43ogIzkuI3lpoIgMzB+NDAl77yIKzEuMzUl77yJ77yM5omA5Lul5Y+WIuW9k+aXpeS4reS9jeaVsCLov5nkuKrkuI3pnIDopoHmjJHmlbDnmoQgNTAl77yM5LiN6L+95bOw44CCCjIuICoq5ZCN5Y2V5LuOIDEwIOWPquWKoOWIsCAyMCDlj6oqKu+8iOetieadg++8jOWNleWPqiDiiYg1Je+8ieOAguWPquaVsOi2iuWkmuebuOS9jeeos+WBpeaAp+i2iuWlve+8mjIwIOWPqiDCsTI3LjMl44CBMzAg5Y+qIMKxMTkuNiXjgIExMCDlj6ogwrEzOS4xJeOAggozLiAqKuaMgeacieacn+S4jiLot5HotaLlpKfnm5gi55qE6K+05rOV6YeN566XKirvvIhgaXRlcjI3LnB5YCAvIGBkaWFnX3BoYXNlLnB5YO+8ie+8mgogICAtIOWfuuWHhuacieS4pOS4qiDigJTigJQgQe+8mjI4OCDlj6rnrYnmnYPCt+avj+aXpeS5sOWFpeaMgeaciSAqKiszOC45JSoq77ybQu+8muWQjOS4gOevruWtkMK35q+PIDIwIOaXpeWGjeW5s+ihoeetieadgyAqKis2Mi42JcKxMTAuNSUqKuOAguS5i+WJjeeahOWvueeFp+aLv+S6huaNouS7k+e7hOWQiOWOu+avlCBB77yM6YKjIDIzLjcg5Liq55m+5YiG54K55pivKirlho3lubPooaEqKui1mueahO+8jOS4jeaYr+eul+azlei1mueahOOAggogICAtIOe0r+iuoeaUtuebiuWvuSLlk6rlh6DlpKnmjaLku5Mi5p6B5YW25pWP5oSf77ya5ZCM5LiA5p2h6KeE5YiZIDIwIOS4quebuOS9jeS7jiArMjYuMyUg5YiwICsxMzguNyXvvIzmiYDku6XmraTlkI7kuIDlvovmiqUi55u45L2N5Z2H5YC8wrHmoIflh4blt64gKyDlh6DkuKrnm7jkvY3ot5HotaIi44CCCiAgIC0g5q+P5pel5L+h5Y+3ICsgMjAg5pel5oyB5pyJIOKHkiA0NTYg5Liq5Lqk5piT5pel5Y+q5pyJ57qmIDIzIOS4queLrOeri+ingua1i++8jHQg5YC85pS55Li6IE5ld2V5LVdlc3QgSEFD44CBcCDlgLznlKjlvqrnjq/lnZfoh6rliqnvvJvmlLnlrozlvojlpJoi5aW955yL55qE5YCZ6YCJIuaOieWIsCB0PDHjgIIKCuWumueov+eahOWujOaVtOaVsOWtl++8muaXpeWdh+i2heminSAqKiswLjc0NyUqKu+8iHRfSEFDICsxLjUy77yM5Z2X6Ieq5YqpIHAgMC4wNjTvvInvvIzmoLfmnKzlpJYgKzEuMDg4Je+8mzIwIOS4quebuOS9jee0r+iuoSArODguOSXCsTI3LjMl77yMKioxOC8yMCDkuKrnm7jkvY3ot5HotaLln7rlh4ZC44CBMTkvMjAg6LeR6LWi5Z+65YeGQSoq77yb5bmz5Z2H5pyA5aSn5Zue5pKkIOKIkjEzLjEl77yb5YiG5pyIIDIzIOS4qumHjCA3MCUg5Li65q2j77yM5pyA5beu5pyIIOKIkjIuOTgl44CC5qih5ouf55yf5a6e55So5oi377yIMjAg56eN5oq95rOVw5cyMCDkuKrnm7jkvY09NDAwIOadoeabsue6v++8ie+8mui2heWfuuWHhkIg5Lit5L2NICsyMS43cHDjgIFwMTAg4oiSMTEuMnBw44CB6LeR6LWi5qaC546HICoqNzglKirvvJvljZXmnJ/vvIgyMCDkuKrkuqTmmJPml6XvvInog5znjocgNjYl44CB5Lit5L2NICsyLjcwJeOAgTIuOCUg55qE5pyf5qyh5LqP6LaFIDEwJeOAgeacgOW3ruS4gOacnyDiiJIxNi40JeOAggoKKiror5rlrp7nmoTpgqPkuIDlj6UqKu+8muS4jiA0LjEuMCDphY3lr7nmr5TovoPvvIzml6XlnYflt64gKzAuMjU5Je+8jHRfSEFDICswLjU077yMcCAwLjI4MCDigJTigJQg6L+Z5LiA54mIKirmsqHmnInlj6/or4HmmI7nmoTmm7Tpq5jmlLbnm4oqKu+8jOaNouWIsOeahOaYryLmsLjov5zmnIkgMjAg5Y+q44CB5LiN5L6d6LWWIDY4IOi/meS4qumtlOaVsOOAgeebuOS9jeabtOeos+OAgeWwvumDqOeVpeWlvSLjgIIKCioq5q2i5o2fKirvvJrpu5jorqTkuI3lvLrliLbjgIIyw5dBVFIg5py65qKw5q2i5o2f5oqK5bmz5Z2H5pyA5aSn5Zue5pKkIOKIkjEzLjEl4oaS4oiSNi42JeOAgeacgOW3ruWNleacnyDiiJIxNi40JeKGkuKIkjYuNyXjgIHkuo/otoUgMTAlIOeahOacn+asoSAyLjgl4oaSMC4wJe+8jOS7o+S7t+aYr+aXpeWdh+i2heminSArMC43NDcl4oaS4oiSMC4wMjYl44CB57Sv6K6hICs4OC45JeKGkis2My40JeOAguatouaNn+S7t+eFp+aXp+aYvuekuu+8jEFwcCDnmoTpo47pmanmlofmoYjph4zmiorov5nkuKTpnaLpg73lhpnlh7rmnaXkuoYg4oCU4oCUIOWug+S5sOeahOaYr+WwvumDqOWuieWFqO+8jOS4jeaYr+aUtuebiuOAggoKCiMjIyDnlYzpnaLkuI7po47mjqfmlLnliqgKCi0gKirliqDku5PljLrpl7TmlLnkuLoi5Zue6Lip5Z2H57q/5bimIioq77yaYFttaW4oTUExMCxNQTIwKSwgbWluKG1heChNQTEwLE1BMjApLCDnjrDku7fDlzEuMDEpXWDjgILml6fniYjmmK8iMjAg5pel5pyA5L2O5Lu36ZmE6L+R5Yqg5LuTIu+8jOetieS6jum8k+WKsee7meS4i+i3jOi2i+WKv+aRiuW5s++8jOaYr+S6j+mSseeahOS4u+imgeacuuWItuS5i+S4gOOAggotICoq5YeP5LuT5Yy66Ze05pS55Li6IEFUUiDnm67moIfluKYqKu+8mui2i+WKv+WwmuWPr+aXtiBg546w5Lu3ICsxw5dBVFIgfiArMi41w5dBVFJgIOWIhuaJueWFkeeOsO+8m+i2i+WKv+W3suWdj+aXtiLnjrDku7fliLDlj43lvLnkvY3lsLHlh48i44CC5Lik5Liq5Yy66Ze0KirmsLjov5zmmL7npLoqKu+8iOS4jeWGjeWboOS4uuaVsOaNruS4jei2s+iAjOa2iOWkse+8ieOAggotICoq5paw5aKe5q2i5o2f5Lu3KirvvJpg546w5Lu3IOKIkiAyw5dBVFJg77yM5LiU5LiN6auY5LqO546w5Lu3IDk4JeOAgeS4jeS9juS6jueOsOS7tyA4MCXvvIzlubblnKjmlofmoYjph4zmj5DnpLoi5pS255uY6LeM56C0IE1BMjAg5oiW5q2i5o2f5Lu377yM5YWI5Yiw5YWI6LWwIuOAggotICoq5paw5aKe5Y2V56yU5LuT5L2N5LiK6ZmQ5o+Q56S6KirvvJrlj6/kubDogqHmlbAg4omIIOacrOmHkSDDlyAyJSDDt++8iOeOsOS7tyDiiJIg5q2i5o2f5Lu377yJ77yM5oqKIumUmeS4gOasoeWPquS6jyAyJSLlj5jmiJDlj6/miafooYznmoTkuIvljZXmlbDph4/jgIIKLSDmjIfmoIfnrpfms5Xkv67mraPvvJpSU0kg5pS55Li6IFdpbGRlciDpgJLmjqjvvJtNQUNEIOeahCBESUYvREVBL+afsSDmlLnkuLrlr7npvZDnmoTmlbTmnaHluo/liJfvvIjml6fku6PnoIHmr4/mrKHlvqrnjq/ph43nrpfliY3nvIAgRU1B77yMREVBIOS4jiBESUYg6ZSZ5L2N77yJ77ybS0RKIOaUueS4uui/reS7o+W5s+a7kSBgSz0oMksnK1JTVikvMywgRD0oMkQnK0spLzNg77yb5paw5aKeIEFUUjE044CBQURYMTTjgIFNQTYw44CCCi0g6K+m5oOF6aG157u85ZCI6K+E5YiG5Zu65a6a5oyJIDEzMCDmoLnml6Xnur/orqHnrpcg4oCU4oCUIOWIh+aNouWRqOe6vy/mnIjnur8v5YiG5pe25LiN5bqU6K+l5pS55Y+Y6K+E5YiG44CCCi0g5omA5pyJ5oyB5LuTL+WAmemAiemDveaLiSAxMzAg5qC55pel57q/77yI5LiO5Zue5rWL5Y+j5b6E5LiA6Ie077yJ44CCCgojIyMg5L+d6K+BIEtvdGxpbiDlkozlm57mtYvnrpfnmoTmmK/lkIzkuIDku7bkuosKCltgYXBwL3NyYy90ZXN0Ly4uLi9FbmdpbmVQYXJpdHlUZXN0Lmt0YF0oYXBwL3NyYy90ZXN0L2phdmEvY29tL3N0b2NrL2FuYWx5emVyL2FuYWx5c2lzL0VuZ2luZVBhcml0eVRlc3Qua3QpIOivuyBgZW5naW5lX3Bhcml0eS5qc29uYO+8iOecn+WunuaXpee6vyArIFB5dGhvbiDlvJXmk47pgJAgYmFyIOeahOacn+acm+WIhuaVsO+8ie+8jOmAkOagueWvueavlO+8mgoKYGBgCnBhcml0eTogYmFycz01MTU1LCBzY29yZWQ9NDUwNiwgbWlzbWF0Y2hlcz0wCmBgYAoK6LeR5rOV77yaYGdyYWRsZSA6YXBwOnRlc3RSZWxlYXNlVW5pdFRlc3Rg44CC5Zue5rWL6ISa5pys5ZyoIFtgYmFja3Rlc3QvYF0oYmFja3Rlc3QvKe+8jGBweXRob24zIGJhY2t0ZXN0L2ZpbmFsX3ZhbGlkYXRlLnB5YCDkvJrmiZPljbDkuIrpnaLpgqPlvKDooajjgIIKCiMjIyDov5nlpZflvJXmk47mlLnkuI3kuobku4DkuYjvvIjlv4Xpobvor7TmuIXmpZrvvIkKCjEuICoq5qC35pys5aSWICsyLjg2JSDmmK8gMjAg5pel55qE5bmz5Z2H6LaF6aKd77yM5LiN5pivIuavj+asoemDveiDvei1miIqKuOAguagt+acrOWkluWNleeslOiDnOeOh+WPquaciSA1MSXvvIzmnIDlt67kuIDnrJQg4oiSNjEuNiXjgILlroPpmY3kvY7nmoTmmK/ouKnlpKfpm7fnmoTmpoLnjofvvIjmoLfmnKzlpJbkuo/otoUgMTAlIOS7jiAyNC4yJSDpmY3liLAgMTcuMCXvvIzkuo/otoUgMjAlIOS7jiA5LjQlIOmZjeWIsCA0LjUl77yJ77yM5LiN5piv5raI6Zmk5LqP5o2f44CCCjIuIOWAmemAieaxoOaMiSoq5b2T5YmNKirluILlgLwgPiAyMDAg5Lq/5oyR55qE6IKh56Wo77yM5Zue5rWL5a2Y5Zyo5bm45a2Y6ICF5YGP5beuIOKAlOKAlCDov5nlr7nlgY/otovlir/nmoTlm6DlrZDmmK8qKuacieWIqeeahCoq77yM55yf5a6e6KGo546w5aSn5qaC546H5q+U6KGo5LiK5beu5LiA5Lqb44CCCjMuIOaVsOaNruWPquaciSA1NjAg5qC55pel57q/77yI57qmIDIuNCDlubTvvInvvIzmoLfmnKzlpJblj6rmnIkgMTE2IOS4quS6pOaYk+aXpe+8iOe6puWNiuW5tO+8ie+8jOaciOW6pue7n+iuoeWPquaciSAyMSDkuKrmnIjjgIIKICAg57uT6K6655qE5pa55ZCR5Y+v5L+h77yM5YW35L2T5bCP5pWw54K55LiN5Y+v5L+h44CC5ZSv5LiA566X5aW95raI5oGv55qE5piv77ya5qC35pys5aSW6YKj5q615q2j5aW95piv5LiL6LeM5biC77yI5ZCM5pyf5YWo5qC35pysIDIwIOaXpQogICDlubPlnYfmlLbnm4og4oiSMS4xMSXvvIw1NiUg55qE5L+h5Y+35pel5aSn55uY5Zyo6LeM77yJ77yMKzIuODYlIOeahOi2hemineaYr+WcqOi0n86y546v5aKD6YeM5ou/5Yiw55qE44CCCjQuIEEg6IKh55+t5pyf5pa55ZCR5pys6Lqr5LiN5Y+v6aKE5rWL44CC6L+Z5Liq5byV5pOO55qE5a6a5L2N5pivKirliKvlnKjlnY/kvY3nva7kubDlhaUqKu+8jOS4jeaYr+mihOa1i+aYjuWkqea2qOS7gOS5iOOAggoK5Zug5q2k77ya5Lu75L2V5Y2V5Y+q6IKh56Wo5YWI6K6+5q2i5o2f5YaN6LCI5pS255uK77yM5oC75LuT5L2N5Yir5Y6L5Zyo5LiA5om55ZCM57G75Z6L55qE6auY5YiG6IKh5LiK44CCCgojIyDkuLvopoHlip/og70KCiMjIyAxLiDku4rml6XlgJnpgIkKLSDlhajluILlnLrvvIjnuqYgMzAwIOWPqu+8ieaJq+aPj++8jOWPluW9k+aXpeWIhuaVsOWJjSA1MCUg5Li65YiG5pWj5rGg77yM5oyJ5YiG5L2N562J6Led5oq95qC36L6T5Ye6IDIwIOWPqu+8jOagh+azqOWIhuS9jeaxoOinhOaooeS4juWFtuS4reWcqOWKoOS7k+e6v+S7peS4iueahOWPquaVsAotIOavj+WPque7meWHuuWbnui4qeWKoOS7k+WMuumXtOOAgeWHj+S7ky/mraLnm4jljLrpl7TjgIHml6Xms6LluYUKCiMjIyAyLiDmiJHnmoTmjIHku5MKLSDliqDku5Mv5YeP5LuT5Yy66Ze077yI5rC46L+c5pi+56S677yJKyDmraLmjZ/ku7cgKyDpo47pmanmj5DnpLogKyDljZXnrJTogqHmlbDmjaLnrpcKLSDliqDlh4/ku5Plj5jljJbpgJrov4fns7vnu5/mjqjpgIHmj5DphpIKCiMjIyAzLiDooYzmg4XliJfooagKLSDoh6rpgInogqHlrp7ml7booYzmg4XjgIHmt7vliqAv5Yig6ZmkCgojIyMgNC4g5Liq6IKh6K+m5oOFCi0g5pelSy/lkahLL+aciEsv5YiG5pe277yMTUE1L01BMTAvTUEzMCDkuI7ku7fmoLzlr7nlupTlhbPns7vmmL7npLrvvIxLIOe6v+WdkOagh+aYvuekuuaXpeacn+OAgeWIhuaXtuaYvuekuuaXtumXtAotIOe7vOWQiOWIhuaekOWxleekuuivhOWIhuOAgei2i+WKv+e7k+aehOOAgeatouaNn+WPguiAg+OAgeWbnua1i+WPguiAg++8iOWQqyLkuI3mib/or7rmnKrmnaUi55qE6K+05piO77yJCgojIyDmioDmnK/moIgKCktvdGxpbuOAgUpldHBhY2sgQ29tcG9zZeOAgU1hdGVyaWFsIDPjgIFNVlZN44CBUmV0cm9maXQvT2tIdHRw44CBQ29yb3V0aW5lcyAmIEZsb3fjgIFSb29t44CBR3NvbgoKIyMg5pWw5o2u5rqQCgrlrp7ml7booYzmg4XvvJrmlrDmtarotKLnu4/vvIjkuLvvvIkrIOiFvuiur+i0oue7j++8iOWkh++8ie+8m+WOhuWPskvnur/vvJrkuJzmlrnotKLlr4zvvIjliY3lpI3mnYPvvInvvJvmnKzlnLDmlofku7bnvJPlrZjlop7ph4/mm7TmlrDjgIIKCiMjIOS9v+eUqOivtOaYjgoKMS4g5LiL6L29IEFQSyDlronoo4XvvJvpppbmrKHlkK/liqjmjojkuojnvZHnu5zmnYPpmZAKMi4gIuaIkeeahOaMgeS7kyLmt7vliqDogqHnpajvvIjku6PnoIHoh6rliqjloavlhYXlkI3np7DjgIHmi7zpn7PpppblrZfmr43mkJzntKLvvIkKMy4gIuS7iuaXpeWAmemAiSLnnIvlvZPlpKnlkIjmoLzmsaDnmoTliIblsYLmir3moLfliJfooajvvIjnrYnmnYPvvIzkuI3opoHlj6rkubDnrKzkuIDlkI3vvIkKNC4g5q+P5Y+q6IKh56Wo6K+m5oOF6aG155yL5q2i5o2f5Lu35LiO6aOO6Zmp5o+Q56S677yM5YWI5a6a5q2i5o2f5YaN5a6a5LuT5L2NCgojIyDms6jmhI/kuovpobkKCi0g6ZyA6KaBIEFuZHJvaWQgOC4w77yIQVBJIDI277yJ5Y+K5Lul5LiK77yb6ZyA6KaB6IGU572RCi0g5Lqk5piT5pe25q6177yIOTozMC0xNTowMO+8ieWunuaXtuabtOaWsO+8jOmdnuS6pOaYk+aXtuauteaYvuekuuacgOi/keaUtuebmOS7twotIOW7uuiuruivhOWIhuOAgeWMuumXtOWfuuS6juWOhuWPskvnur/kuI7mioDmnK/mjIfmoIfvvIzkvJrmnInmu57lkI4KCiMjIOWFjei0o+WjsOaYjgoK5pys5bqU55So5LuF5L6b5a2m5Lmg5LiO56CU56m277yM5LiN5p6E5oiQ5oqV6LWE5bu66K6u44CC5Y6G5Y+y5Zue5rWL57uT5p6c5LiN5Luj6KGo5pyq5p2l5pS255uK77yM6IKh5biC5pyJ6aOO6Zmp77yM5oqV6LWE6ZyA6LCo5oWO44CCCg==
+# 股票实时分析 Android 应用
+
+实时行情 + 技术分析 + 加减仓建议。**v4.1.0 把评分引擎整个换掉了**（v4.0.1 之前的算法在真实历史数据上是负收益的）；**v4.2.0 只改选池与统计口径，评分函数一字未动**。
+
+## 下载
+
+- **APK（v4.2.0，最新）**: [StockAnalyzer-v4.2.0.apk](https://github.com/haoliying/stock-analyzer-apk/releases/download/v4.2.0/StockAnalyzer-v4.2.0.apk)
+- 历史版本：v4.1.0 / v4.0.1 / v4.0.0 / v3.0 / v2.0 / v1.0 见 Releases 页面
+
+安装：手机上直接用浏览器下载上面链接，允许"安装未知来源应用"。已装过旧版可直接覆盖安装，持仓数据不丢。
+
+## v4.1.0：分析引擎重做（重要）
+
+### 为什么重做
+
+用 288 只 A 股（当前市值 > 200 亿）的真实日线回测 —— 2024-06 ~ 2026-11，约 2.4 年、560 根K线，
+信号日 2024-12-25 ~ 2026-11-13 共 456 个交易日，样本外为 2026-04-23 之后的 116 个交易日。
+把老算法原样跑一遍：
+
+- 老算法在 **86%~91% 的股票-日**都在发声（要么"加仓"要么"减仓"），几乎没有"不知道"的时候；
+- 它的分数分档与未来收益**几乎无关甚至倒挂**（高分档并不比低分档赚得多）；
+- 样本外（2026-04-23 之后）加仓信号 20 日**超额收益 −0.31%**，单笔平均 **−1.27%**，胜率 43%，
+  5% 分位 **−27.0%**，亏超 20% 的比例 **9.4%**。
+
+这就是按建议操作会亏钱的直接原因：它一直在说话，而说的话没有预测力。
+
+### 回测协议（结论是否可复现的关键）
+
+写在 [`backtest/strategy.py`](backtest/strategy.py)：
+
+1. 信号只用第 t 天收盘前的数据；
+2. **第 t+1 天开盘价买入**（不看收盘价成交，因为看到信号时收盘已经过了）；
+3. 开盘即涨停（30/68 开头 ≥9.7%，其余 ≥4.7%）的判为买不到，剔除；
+4. 持有 20 个交易日，扣 0.12% 往返成本；
+5. 收益一律减掉**同一天全样本的平均收益** —— 这才叫"选股能力"，否则只是在统计大盘涨跌；
+6. 统计时**按信号日期等权**（每个交易日算一票）。这条很关键：结构分是离散整数，某些天会集中爆发上百只，按笔数加权会被个别日子绑架；
+7. 参数只在样本内确定，**样本外只验证一次**，不反复调参再拿样本外当宣传。
+
+### 新评分（就这三项，其余都测过并被否掉）
+
+```
+score = 50
+        + 趋势结构：现价 / MA20 / MA60 排列，按 MA20 的 10 日斜率分档  ±6 / ±14 / ±22
+        + 短期排列：现价 > MA10 > MA20 → +4，否则 −2
+        − 波动惩罚：max(0, ATR%/每日 − 2.0%) × 200          （ATR14 / 现价，Wilder 平滑）
+```
+
+分档：`≥68 建议加仓`｜`43~67 持有不新增`｜`31~42 建议减仓`｜`≤30 强烈减仓`
+**没有"强烈买入"档** —— 实测 score≥76 那一档 20 日超额是 **−1.30%**（高分＝低波动＋已涨一段的拥挤交易），给它最高评价反而是最差的买入点。
+
+### 实测结果（20 日持有，相对同日基准的超额）
+
+| 指标 | 旧算法 v4.0.1 | 新引擎 v4.1.0 |
+|---|---|---|
+| 加仓信号发声频率 | 45.8% | 18.7% |
+| 超额 全程 | +0.26% | **+0.69%** |
+| 超额 前半 / 后半 | +0.41% / +0.13% | +0.35% / **+0.99%** |
+| **超额 样本外** | **−0.31%** | **+2.86%** |
+| 样本外单笔平均 | −1.27% | +1.59% |
+| 样本外胜率 | 43.0% | 51.0% |
+| 5% 分位（最惨的 5%） | −27.0% | **−19.4%** |
+| 亏超 10% / 亏超 20% | 24.2% / 9.4% | 17.0% / **4.5%** |
+| 月度跑赢基准 | 59%（22 月） | **67%**（21 月） |
+| 最差月 | −5.15% | −5.67% |
+| 中位月 | +0.52% | **+1.10%** |
+| 减仓信号方向检验 | −0.93%（正确） | −1.11%（正确） |
+
+每日平均候选数从 126 只降到 **52.5 只** —— 少说话是说真话的结果。
+
+### 每日列表不再是排行榜
+
+同一批信号日上的取法对比（v4.2.0 重测，`backtest/iter31.py`：20 日持有、每天一票、Newey-West HAC、20 个换仓相位）：
+
+| 取法（池 = 当日分数前 50%，20 只） | 日均超额 | t_HAC | 跑赢基准B 的相位 | 平均最大回撤 | 最差单期 |
+|---|---|---|---|---|---|
+| 分数高→低取前 20（排行榜） | **−0.807%** | −1.11 | 2/20 | −15.4% | −21.8% |
+| 随机取 20 只（全市场，安慰剂） | +0.029% | +0.89 | 12/20 | −10.8% | −11.8% |
+| 后 50% 随机取 20 只 | **−1.011%** | −1.99 | 0/20 | −16.4% | −14.3% |
+| **按分位等距取 20 只（上线）** | **+0.747%** | +1.52 | **18/20** | −13.1% | −16.4% |
+
+所以**"买分数最高的几只"是最该避免的操作**：分数确实带排序信息（头尾差 1.8 个百分点/20 日，随机抽取的安慰剂归零），但最尖的那一截是"低波动＋已经涨过一段"的拥挤交易。首页因此改名为"今日候选池"，列表是把分散池按评分分位等距抽出的 **20 只**，编号只是序号（去掉了金银铜），建议等权配置，单只约 5%、不超过总资产 10%。
+
+那个 +5.21% 的高波动集中组合没有上线：平均收益确实最高，但月度胜率 48%、20% 的单笔会亏超 10% —— 这是靠拥挤动量赚平均、亏在尾部，一次回撤就把本金打残。同理，20 日动量加成、超买超卖反转、乖离率惩罚、"斜率高＋回踩浅"（+4.67%）都被否掉，理由都一样：**平均数好看，分布难看了**。
+
+### v4.2.0：改的是选池与口径，评分一分没动
+
+`git diff` 里 `StockAnalyzer.kt` 的 `score` 函数与 4.1.0 完全一致（`engine_parity.json` 逐 bar 对齐仍为 0 处不一致）。这一版只改了三件事：
+
+1. **入池不再用 ≥68**，改成"当日可评分股票按分数排名前 50%（即中位数以上）"。绝对门槛实测是负贡献：加 ≥68 要付 −0.254%、加 ≥55 付 −0.264%、加 ≥43 付 −0.119%、加 ≥31 付 −0.145%（每 20 日的日均超额，配对检验，`iter32.py`）；而列表在弱市也不会再空掉。
+   池宽扫参是 30/35/40/45/50/60% = +0.670/+0.686/+0.507/**+1.006**/+0.747/+0.323 %/20 日 —— 45% 是样本内峰值，但它的样本外（+1.104%）反而不如 30~40%（+1.35%），所以取"当日中位数"这个不需要挑数的 50%，不追峰。
+2. **名单从 10 只加到 20 只**（等权，单只 ≈5%）。只数越多相位稳健性越好：20 只 ±27.3%、30 只 ±19.6%、10 只 ±39.1%。
+3. **持有期与"跑赢大盘"的说法重算**（`iter27.py` / `diag_phase.py`）：
+   - 基准有两个 —— A：288 只等权·每日买入持有 **+38.9%**；B：同一篮子·每 20 日再平衡等权 **+62.6%±10.5%**。之前的对照拿了换仓组合去比 A，那 23.7 个百分点是**再平衡**赚的，不是算法赚的。
+   - 累计收益对"哪几天换仓"极其敏感：同一条规则 20 个相位从 +26.3% 到 +138.7%，所以此后一律报"相位均值±标准差 + 几个相位跑赢"。
+   - 每日信号 + 20 日持有 ⇒ 456 个交易日只有约 23 个独立观测，t 值改为 Newey-West HAC、p 值用循环块自助；改完很多"好看的候选"掉到 t<1。
+
+定稿的完整数字：日均超额 **+0.747%**（t_HAC +1.52，块自助 p 0.064），样本外 +1.088%；20 个相位累计 +88.9%±27.3%，**18/20 个相位跑赢基准B、19/20 跑赢基准A**；平均最大回撤 −13.1%；分月 23 个里 70% 为正，最差月 −2.98%。模拟真实用户（20 种抽法×20 个相位=400 条曲线）：超基准B 中位 +21.7pp、p10 −11.2pp、跑赢概率 **78%**；单期（20 个交易日）胜率 66%、中位 +2.70%、2.8% 的期次亏超 10%、最差一期 −16.4%。
+
+**诚实的那一句**：与 4.1.0 配对比较，日均差 +0.259%，t_HAC +0.54，p 0.280 —— 这一版**没有可证明的更高收益**，换到的是"永远有 20 只、不依赖 68 这个魔数、相位更稳、尾部略好"。
+
+**止损**：默认不强制。2×ATR 机械止损把平均最大回撤 −13.1%→−6.6%、最差单期 −16.4%→−6.7%、亏超 10% 的期次 2.8%→0.0%，代价是日均超额 +0.747%→−0.026%、累计 +88.9%→+63.4%。止损价照旧显示，App 的风险文案里把这两面都写出来了 —— 它买的是尾部安全，不是收益。
+
+
+### 界面与风控改动
+
+- **加仓区间改为"回踩均线带"**：`[min(MA10,MA20), min(max(MA10,MA20), 现价×1.01)]`。旧版是"20 日最低价附近加仓"，等于鼓励给下跌趋势摊平，是亏钱的主要机制之一。
+- **减仓区间改为 ATR 目标带**：趋势尚可时 `现价 +1×ATR ~ +2.5×ATR` 分批兑现；趋势已坏时"现价到反弹位就减"。两个区间**永远显示**（不再因为数据不足而消失）。
+- **新增止损价**：`现价 − 2×ATR`，且不高于现价 98%、不低于现价 80%，并在文案里提示"收盘跌破 MA20 或止损价，先到先走"。
+- **新增单笔仓位上限提示**：可买股数 ≈ 本金 × 2% ÷（现价 − 止损价），把"错一次只亏 2%"变成可执行的下单数量。
+- 指标算法修正：RSI 改为 Wilder 递推；MACD 的 DIF/DEA/柱 改为对齐的整条序列（旧代码每次循环重算前缀 EMA，DEA 与 DIF 错位）；KDJ 改为迭代平滑 `K=(2K'+RSV)/3, D=(2D'+K)/3`；新增 ATR14、ADX14、MA60。
+- 详情页综合评分固定按 130 根日线计算 —— 切换周线/月线/分时不应该改变评分。
+- 所有持仓/候选都拉 130 根日线（与回测口径一致）。
+
+### 保证 Kotlin 和回测算的是同一件事
+
+[`app/src/test/.../EngineParityTest.kt`](app/src/test/java/com/stock/analyzer/analysis/EngineParityTest.kt) 读 `engine_parity.json`（真实日线 + Python 引擎逐 bar 的期望分数），逐根对比：
+
+```
+parity: bars=5155, scored=4506, mismatches=0
+```
+
+跑法：`gradle :app:testReleaseUnitTest`。回测脚本在 [`backtest/`](backtest/)，`python3 backtest/final_validate.py` 会打印上面那张表。
+
+### 这套引擎改不了什么（必须说清楚）
+
+1. **样本外 +2.86% 是 20 日的平均超额，不是"每次都能赚"**。样本外单笔胜率只有 51%，最差一笔 −61.6%。它降低的是踩大雷的概率（样本外亏超 10% 从 24.2% 降到 17.0%，亏超 20% 从 9.4% 降到 4.5%），不是消除亏损。
+2. 候选池按**当前**市值 > 200 亿挑的股票，回测存在幸存者偏差 —— 这对偏趋势的因子是**有利的**，真实表现大概率比表上差一些。
+3. 数据只有 560 根日线（约 2.4 年），样本外只有 116 个交易日（约半年），月度统计只有 21 个月。
+   结论的方向可信，具体小数点不可信。唯一算好消息的是：样本外那段正好是下跌市（同期全样本 20 日
+   平均收益 −1.11%，56% 的信号日大盘在跌），+2.86% 的超额是在负β环境里拿到的。
+4. A 股短期方向本身不可预测。这个引擎的定位是**别在坏位置买入**，不是预测明天涨什么。
+
+因此：任何单只股票先设止损再谈收益，总仓位别压在一批同类型的高分股上。
+
+## 主要功能
+
+### 1. 今日候选
+- 全市场（约 300 只）扫描，取当日分数前 50% 为分散池，按分位等距抽样输出 20 只，标注分位池规模与其中在加仓线以上的只数
+- 每只给出回踩加仓区间、减仓/止盈区间、日波幅
+
+### 2. 我的持仓
+- 加仓/减仓区间（永远显示）+ 止损价 + 风险提示 + 单笔股数换算
+- 加减仓变化通过系统推送提醒
+
+### 3. 行情列表
+- 自选股实时行情、添加/删除
+
+### 4. 个股详情
+- 日K/周K/月K/分时，MA5/MA10/MA30 与价格对应关系显示，K 线坐标显示日期、分时显示时间
+- 综合分析展示评分、趋势结构、止损参考、回测参考（含"不承诺未来"的说明）
+
+## 技术栈
+
+Kotlin、Jetpack Compose、Material 3、MVVM、Retrofit/OkHttp、Coroutines & Flow、Room、Gson
+
+## 数据源
+
+实时行情：新浪财经（主）+ 腾讯财经（备）；历史K线：东方财富（前复权）；本地文件缓存增量更新。
+
+## 使用说明
+
+1. 下载 APK 安装；首次启动授予网络权限
+2. "我的持仓"添加股票（代码自动填充名称、拼音首字母搜索）
+3. "今日候选"看当天合格池的分层抽样列表（等权，不要只买第一名）
+4. 每只股票详情页看止损价与风险提示，先定止损再定仓位
+
+## 注意事项
+
+- 需要 Android 8.0（API 26）及以上；需要联网
+- 交易时段（9:30-15:00）实时更新，非交易时段显示最近收盘价
+- 建议评分、区间基于历史K线与技术指标，会有滞后
+
+## 免责声明
+
+本应用仅供学习与研究，不构成投资建议。历史回测结果不代表未来收益，股市有风险，投资需谨慎。

@@ -1,1 +1,127 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJpdGVyMjQg4oCUIOWvueivhOWIhuWHveaVsOacrOi6q+WBmioq6aKE5YWI55m76K6wKirnmoTlh6DlpITkv67mlLnvvIjkuI3lgZrotKrlv4PmkJzntKLvvInjgIIKCuiviuaWreS+neaNru+8muWktCA1JSDmmK/lj43mjIfvvIjotoXpop0g4oiSMS4wNiXvvIxuYWl2ZSB0IOKIkjQuNe+8ie+8jOiAjOWJjSAzMH40MCUg5pyA5aW977yIKzAuOCXvvInvvIwK6K+05piOIuaWnOeOh+i2iumZoeWKoOWIhui2iuWkmiArIOermeS4iuWdh+e6v+WwseWKoOWIhiLmiorliIbmlbDmnIDpq5jnmoTkvY3nva7nlZnnu5nkuobmnIDmi6XmjKTjgIHmnIDotoXkubDnmoTnpajjgIIK5omA5Lul5YCZ6YCJ5pS55Yqo5YWo6YOo5Zu057uVIue7mei/veWktOmZjea4qSLvvIzmr4/kuKrpg73ljZXni6zmtYvvvIzmoLfmnKzlhoUv5qC35pys5aSW6YO96KaB55yL77yMCuW5tuWSjOS4iue6v+eJiOacrOWcqOWQjOS4gOWPo+W+hO+8iOWQjOaxoOWuveW6puOAgeWQjCBL44CB5ZCM5Z+65YeG77yJ5LiL5q+U6L6D44CCCiIiIgppbXBvcnQgb3MKaW1wb3J0IHN5cwoKaW1wb3J0IG51bXB5IGFzIG5wCgpIRVJFID0gb3MucGF0aC5kaXJuYW1lKG9zLnBhdGguYWJzcGF0aChfX2ZpbGVfXykpCnN5cy5wYXRoLmluc2VydCgwLCBIRVJFKQppbXBvcnQgZmFzdCBhcyBYICAjIG5vcWE6IEU0MDIKaW1wb3J0IGl0ZXIyMiBhcyBJICAjIG5vcWE6IEU0MDIKaW1wb3J0IGl0ZXIyMyBhcyBIICAjIG5vcWE6IEU0MDIKaW1wb3J0IHBvcnRzaW0gYXMgUCAgIyBub3FhOiBFNDAyCmZyb20gbW9kZWwgaW1wb3J0IERBVEVTICAjIG5vcWE6IEU0MDIKCkYgPSBsYW1iZGEgazogUC5GQUNba10gaWYgayBpbiBQLkZBQyBlbHNlIFAuTUFUW2tdICAjIG5vcWE6IEU3MzEKQywgTTEwLCBNMjAsIE02MCA9IEYoImNsb3NlIiksIEYoIm1hMTAiKSwgRigibWEyMCIpLCBGKCJtYTYwIikKU0wsIEFUUlAsIFZPTFIgPSBGKCJtYTIwX3Nsb3BlIiksIEYoImF0cl9wY3QiKSwgRigidm9scjUiKQpSRVQ1ID0gRigicmV0NSIpCgoKZGVmIHNjb3JlKGtuZWU9MC4wMjAsIHBlbj0yMDAuMCwgc2xfaGk9MC4wMTUsIGJfbG89Ni4wLCBiX21pZD0xNC4wLCBiX2hpPTIyLjAsCiAgICAgICAgICB1cGRvd249VHJ1ZSwgbWExMF9wPTQuMCwgbWExMF9uPS0yLjAsIGV4dF9rbmVlPTAuMDUsIGV4dF9wZW49MC4wLAogICAgICAgICAgc3RlZXBfY3V0PTAuMCwgdm9scl9ib251cz0wLjAsIHZvbHJfbmVlZF91cD1GYWxzZSwgc2xvcGVfYXRyX25vcm09MC4wKToKICAgICIiIuS4iue6v+aooeWeiyArIOiLpeW5suW8gOWFs++8m+m7mOiupOWPguaVsOW/hemhu+S4jiBmaW5hbF92YWxpZGF0ZS5uZXdfZm4g5a6M5YWo5LiA6Ie044CCIiIiCiAgICB1cCA9IChDID4gTTIwKSAmIChNMjAgPiBNNjApCiAgICBkbiA9IChDIDwgTTIwKSAmIChNMjAgPCBNNjApCiAgICBoaV9iID0gbnAud2hlcmUoU0wgPiBzbF9oaSwgYl9oaSwgbnAud2hlcmUoU0wgPiAwLCBiX21pZCwgYl9sbykpCiAgICBsb19iID0gbnAud2hlcmUoU0wgPCAtc2xfaGksIGJfaGksIG5wLndoZXJlKFNMIDwgMCwgYl9taWQsIGJfbG8pKQogICAgUyA9IDUwLjAgKyBucC5zZWxlY3QoW3VwLCBkbl0sIFtoaV9iLCAtbG9fYiBpZiB1cGRvd24gZWxzZSAtYl9sb10sIC0zLjApCiAgICBpZiBzdGVlcF9jdXQ6ICAgICAgICAgICAgICAgICAgICAgICAjIOaWnOeOh+i/h+eDremZjea4qe+8mui2hei/hyAyKnNsX2hpIOWQjuWlluWKsemAkuWHjwogICAgICAgIFMgPSBTIC0gc3RlZXBfY3V0ICogbnAuY2xpcCgobnAuYWJzKFNMKSAtIDIgKiBzbF9oaSkgLyBzbF9oaSwgMCwgMikgKiBucC5zaWduKFNMKSAqIG5wLndoZXJlKHVwIHwgZG4sIDEsIDApCiAgICBTID0gUyArIG5wLndoZXJlKChDID4gTTEwKSAmIChNMTAgPiBNMjApLCBtYTEwX3AsIG1hMTBfbikKICAgIGEgPSBucC5uYW5fdG9fbnVtKEFUUlApCiAgICBTID0gUyAtIG5wLm1heGltdW0oMC4wLCBhIC0ga25lZSkgKiBwZW4KICAgIGlmIHNsb3BlX2F0cl9ub3JtOiAgICAgICAgICAgICAgICAgICMg5pac546H5oyJ5rOi5Yqo5b2S5LiA77yI6auY5rOi5Yqo55qE6Zmh5pac546H5LiN566X5by677yJCiAgICAgICAgUyA9IFMgLSBzbG9wZV9hdHJfbm9ybSAqIG5wLmNsaXAobnAuYWJzKFNMKSAvIG5wLm1heGltdW0oYSwgMC4wMDUpIC0gMC41LCAwLCAyKSAqIG5wLndoZXJlKHVwIHwgZG4sIDEsIDApCiAgICBpZiBleHRfcGVuOiAgICAgICAgICAgICAgICAgICAgICAgICAjIOemuyBNQTIwIOWkqui/nO+8iOi/vemrmO+8ieaJo+WIhgogICAgICAgIFMgPSBTIC0gZXh0X3BlbiAqIG5wLmNsaXAoKEMgLyBNMjAgLSAxLjAgLSBleHRfa25lZSkgLyAwLjA1LCAwLCAyKQogICAgaWYgdm9scl9ib251czogICAgICAgICAgICAgICAgICAgICAgIyDmlL7ph4/noa7orqQKICAgICAgICBjb25kID0gKFZPTFIgPiAxLjE1KSAmIChSRVQ1ID4gMCkgaWYgdm9scl9uZWVkX3VwIGVsc2UgKFZPTFIgPiAxLjE1KQogICAgICAgIFMgPSBTICsgdm9scl9ib251cyAqIG5wLm5hbl90b19udW0oY29uZC5hc3R5cGUoZmxvYXQpKQogICAgdmFsaWQgPSB+KG5wLmlzbmFuKEMpIHwgbnAuaXNuYW4oTTEwKSB8IG5wLmlzbmFuKE0yMCkgfCBucC5pc25hbihNNjApIHwgbnAuaXNuYW4oU0wpKQogICAgcmV0dXJuIG5wLndoZXJlKHZhbGlkLCBucC5jbGlwKFMsIDAsIDEwMCksIG5wLm5hbikKCgpWQVJJQU5UUyA9IFsKICAgICgi5LiK57q/KOWfuue6vykiLCBkaWN0KCkpLAogICAgKCJBIOi/vemrmOmZjea4qSBleHRfcGVuPTQiLCBkaWN0KGV4dF9wZW49NC4wKSksCiAgICAoIkEg6L+96auY6ZmN5ripIGV4dF9wZW49OCIsIGRpY3QoZXh0X3Blbj04LjApKSwKICAgICgiQSBleHRfa25lZT0zJSBwZW49NiIsIGRpY3QoZXh0X2tuZWU9MC4wMywgZXh0X3Blbj02LjApKSwKICAgICgiQiDmlpznjofov4fng63pgJLlh48gY3V0PTYiLCBkaWN0KHN0ZWVwX2N1dD02LjApKSwKICAgICgiQiDmlpznjofov4fng63pgJLlh48gY3V0PTEyIiwgZGljdChzdGVlcF9jdXQ9MTIuMCkpLAogICAgKCJDIOazouWKqOaWnOeOh+W9kuS4gCAxMCIsIGRpY3Qoc2xvcGVfYXRyX25vcm09MTAuMCkpLAogICAgKCJDIOazouWKqOaWnOeOh+W9kuS4gCAyMCIsIGRpY3Qoc2xvcGVfYXRyX25vcm09MjAuMCkpLAogICAgKCJEIOaUvumHj+ehruiupCArNCIsIGRpY3Qodm9scl9ib251cz00LjApKSwKICAgICgiRCDmlL7ph48r5Lu35raoICs0IiwgZGljdCh2b2xyX2JvbnVzPTQuMCwgdm9scl9uZWVkX3VwPVRydWUpKSwKICAgICgiRCDmlL7ph4/noa7orqQgKzgiLCBkaWN0KHZvbHJfYm9udXM9OC4wKSksCiAgICAoIkUg5rOi5Yqo6ZiI5YC8IDIuNSUiLCBkaWN0KGtuZWU9MC4wMjUpKSwKICAgICgiRSDms6LliqjpmIjlgLwgMy4wJSIsIGRpY3Qoa25lZT0wLjAzMCkpLAogICAgKCJGIOWdh+e6v+e7k+aehOS4jeWvueensCBkbj3iiJI2IiwgZGljdCh1cGRvd249RmFsc2UpKSwKICAgICgiRyDnu4TlkIggQStEIGV4dDYrdm9scjQiLCBkaWN0KGV4dF9wZW49Ni4wLCB2b2xyX2JvbnVzPTQuMCkpLApdCgoKZGVmIHJvd3NfcShTLCBmcSwgSywgdGllPU5vbmUsIEhfPTIwLCBzZWVkPTEpOgogICAgIiIi5LiOIGl0ZXIyMi5yb3dzIOWQjOWPo+W+hO+8jOS9hueUqOe7meWumueahOWIhuaVsOefqemYtSIiIgogICAgdmFsaWQgPSBYLnZhbGlkX21hdChTLCBIXykKICAgIFIgPSBYLnJldF9tYXQoSF8pCiAgICBiZW5jaCA9IG5wLm5hbm1lYW4obnAud2hlcmUodmFsaWQsIFIsIG5wLm5hbiksIGF4aXM9MSkKICAgIGJlbmNoID0gbnAud2hlcmUobnAuaXNuYW4oYmVuY2gpLCAwLjAsIGJlbmNoKQogICAga2YgPSBtYXgoMSwgaW50KHJvdW5kKGZxICogUC5OUykpKQogICAgb3JkZXIgPSBucC5hcmdzb3J0KG5wLndoZXJlKHZhbGlkLCBTLCAtbnAuaW5mKSwgYXhpcz0xKVs6LCA6Oi0xXQogICAgb3V0ID0gW10KICAgIGZvciBpIGluIHJhbmdlKFAuTkQgLSAxIC0gSF8pOgogICAgICAgIHBvb2wgPSBvcmRlcltpLCA6a2ZdCiAgICAgICAgcG9vbCA9IHBvb2xbdmFsaWRbaSwgcG9vbF1dCiAgICAgICAgaWYgbGVuKHBvb2wpIDwgMzoKICAgICAgICAgICAgY29udGludWUKICAgICAgICBpZiB0aWUgaXMgTm9uZToKICAgICAgICAgICAgc2VsID0gbnAucmFuZG9tLmRlZmF1bHRfcm5nKHNlZWQgKiAxMDAwMDMgKyBpKS5jaG9pY2UocG9vbCwgbWluKEssIGxlbihwb29sKSksIHJlcGxhY2U9RmFsc2UpCiAgICAgICAgZWxzZToKICAgICAgICAgICAga2sgPSBJLktFWU1BVFt0aWVdW2ksIHBvb2xdCiAgICAgICAgICAgIHNlbCA9IHBvb2xbbnAuYXJnc29ydCgtbnAubmFuX3RvX251bShraywgbmFuPS0xZTkpKVs6S11dCiAgICAgICAgcnIgPSBSW2ksIHNlbF0KICAgICAgICByciA9IHJyW25wLmlzZmluaXRlKHJyKV0KICAgICAgICBpZiByci5zaXplOgogICAgICAgICAgICBvdXQuYXBwZW5kKChEQVRFU1tpXSwgZmxvYXQobnAubWVhbihycikpLCBmbG9hdChiZW5jaFtpXSksIGxlbihycikpKQogICAgcmV0dXJuIG91dAoKCmRlZiBtYWluKCk6CiAgICBiYXNlID0gc2NvcmUoKQogICAgbG9vcCA9IFAuTUFUWyJfUyJdWyJuZXciXQogICAgbSA9IH5ucC5pc25hbihsb29wKSAmIH5ucC5pc25hbihiYXNlKQogICAgcHJpbnQoZiJcblvlr7npvZDmo4Dmn6VdIOS4jiBmaW5hbF92YWxpZGF0ZS5uZXdfZm4g6YCQIGJhciDmr5TovoPvvJp7bS5zdW0oKX0g5Liq5pyJ5pWIIGJhcu+8jCIKICAgICAgICAgIGYi5pyA5aSn5YGP5beuIHtucC5hYnMobG9vcFttXSAtIGJhc2VbbV0pLm1heCgpOi42Zn0iKQoKICAgIHByaW50KCJcbj09PT0gMS4g5ZCE5Y+Y5L2T5ZyoJ+WJjTQwJeaxoMK36ZqP5py6MjAn5Y+j5b6E5LiL55qE6KGo546w77yISEFDIOe7n+iuoe+8iT09PT0iKQogICAgYmggPSBQLmJlbmNoX2hvbGQoMCwgUC5ORCkKICAgIHJlcyA9IHt9CiAgICBmb3IgbGFiLCBrdyBpbiBWQVJJQU5UUzoKICAgICAgICBTID0gc2NvcmUoKiprdykgaWYga3cgZWxzZSBiYXNlCiAgICAgICAgcjQwID0gSC5zdW1tYXJpemUocm93c19xKFMsIDAuNDAsIDIwKSwgZiJ7bGFiOjwyOH0g5YmNNDAl6ZqP5py6MjAiLCBiaD1iaCkKICAgICAgICByNSA9IEguc3VtbWFyaXplKHJvd3NfcShTLCAwLjA1LCAxNCksIGYie2xhYjo8Mjh9IOWJjTUlKOWktOmDqCkiLCBiaD1iaCkKICAgICAgICByZXNbbGFiXSA9IChyNDBbInRfaGFjIl0sIHI0MFsicCJdLCByNDBbIm9vc19tZWFuIl0sIHI1WyJtZWFuIl0sIHI0MFsiY3VtIl0sIHI0MFsiZGQiXSkKICAgIHByaW50KCJcbj09PT0gMi4g5rGH5oC76KGo77yI5YmNNDAl5rGg6ZqP5py6MjDvvIk9PT09IikKICAgIHByaW50KGYiICB7J+WPmOS9kyc6PDI4fSB7J3RfSEFDJzo+N30geydwJzo+Nn0geydPT1Pml6XlnYfotoXpop0nOj4xMX0geyflpLTpg6g1Jei2heminSc6PjExfSB7J+e0r+iuoSc6Pjh9IHsn5Zue5pKkJzo+N30iKQogICAgZm9yIGxhYiwgKHQsIHAsIG9vcywgaGVhZCwgY3VtLCBkZCkgaW4gcmVzLml0ZW1zKCk6CiAgICAgICAgcHJpbnQoZiIgIHtsYWI6PDI4fSB7dDorNy4yZn0ge3A6Ni4zZn0ge29vcyoxMDA6KzEwLjNmfSUge2hlYWQqMTAwOisxMC4yZn0lIHtjdW0qMTAwOis3LjFmfSUge2RkKjEwMDo2LjFmfSUiKQogICAgcHJpbnQoIlxuPT09PSAzLiDmnIDkvJjkuKTkuKrlj5jkvZPlho3liqAn6YeP5q+U5o6S5bqPJ+S4juatouaNn+WkjeaguCA9PT09IikKICAgIGJlc3QgPSBzb3J0ZWQocmVzLml0ZW1zKCksIGtleT1sYW1iZGEga3Y6IC1rdlsxXVswXSlbOjNdCiAgICBmb3IgbGFiLCBfIGluIGJlc3Q6CiAgICAgICAga3cgPSBkaWN0KFZBUklBTlRTKVtsYWJdIGlmIGxhYiBpbiBkaWN0KFZBUklBTlRTKSBlbHNlIHt9CiAgICAgICAgUyA9IHNjb3JlKCoqa3cpIGlmIGt3IGVsc2UgYmFzZQogICAgICAgIEguc3VtbWFyaXplKHJvd3NfcShTLCAwLjQwLCAyMCwgdGllPSLph4/mr5QiKSwgZiJ7bGFifSDliY00MCXph4/mr5QyMCIsIGJoPWJoKQogICAgICAgIEguc3VtbWFyaXplKHJvd3NfcShTLCAwLjMwLCAyMCwgdGllPSLph4/mr5QiKSwgZiJ7bGFifSDliY0zMCXph4/mr5QyMCIsIGJoPWJoKQoKCmlmIF9fbmFtZV9fID09ICJfX21haW5fXyI6CiAgICBtYWluKCkK
+#!/usr/bin/env python3
+"""iter24 — 对评分函数本身做**预先登记**的几处修改（不做贪心搜索）。
+
+诊断依据：头 5% 是反指（超额 −1.06%，naive t −4.5），而前 30~40% 最好（+0.8%），
+说明"斜率越陡加分越多 + 站上均线就加分"把分数最高的位置留给了最拥挤、最超买的票。
+所以候选改动全部围绕"给追头降温"，每个都单独测，样本内/样本外都要看，
+并和上线版本在同一口径（同池宽度、同 K、同基准）下比较。
+"""
+import os
+import sys
+
+import numpy as np
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+import fast as X  # noqa: E402
+import iter22 as I  # noqa: E402
+import iter23 as H  # noqa: E402
+import portsim as P  # noqa: E402
+from model import DATES  # noqa: E402
+
+F = lambda k: P.FAC[k] if k in P.FAC else P.MAT[k]  # noqa: E731
+C, M10, M20, M60 = F("close"), F("ma10"), F("ma20"), F("ma60")
+SL, ATRP, VOLR = F("ma20_slope"), F("atr_pct"), F("volr5")
+RET5 = F("ret5")
+
+
+def score(knee=0.020, pen=200.0, sl_hi=0.015, b_lo=6.0, b_mid=14.0, b_hi=22.0,
+          updown=True, ma10_p=4.0, ma10_n=-2.0, ext_knee=0.05, ext_pen=0.0,
+          steep_cut=0.0, volr_bonus=0.0, volr_need_up=False, slope_atr_norm=0.0):
+    """上线模型 + 若干开关；默认参数必须与 final_validate.new_fn 完全一致。"""
+    up = (C > M20) & (M20 > M60)
+    dn = (C < M20) & (M20 < M60)
+    hi_b = np.where(SL > sl_hi, b_hi, np.where(SL > 0, b_mid, b_lo))
+    lo_b = np.where(SL < -sl_hi, b_hi, np.where(SL < 0, b_mid, b_lo))
+    S = 50.0 + np.select([up, dn], [hi_b, -lo_b if updown else -b_lo], -3.0)
+    if steep_cut:                       # 斜率过热降温：超过 2*sl_hi 后奖励递减
+        S = S - steep_cut * np.clip((np.abs(SL) - 2 * sl_hi) / sl_hi, 0, 2) * np.sign(SL) * np.where(up | dn, 1, 0)
+    S = S + np.where((C > M10) & (M10 > M20), ma10_p, ma10_n)
+    a = np.nan_to_num(ATRP)
+    S = S - np.maximum(0.0, a - knee) * pen
+    if slope_atr_norm:                  # 斜率按波动归一（高波动的陡斜率不算强）
+        S = S - slope_atr_norm * np.clip(np.abs(SL) / np.maximum(a, 0.005) - 0.5, 0, 2) * np.where(up | dn, 1, 0)
+    if ext_pen:                         # 离 MA20 太远（追高）扣分
+        S = S - ext_pen * np.clip((C / M20 - 1.0 - ext_knee) / 0.05, 0, 2)
+    if volr_bonus:                      # 放量确认
+        cond = (VOLR > 1.15) & (RET5 > 0) if volr_need_up else (VOLR > 1.15)
+        S = S + volr_bonus * np.nan_to_num(cond.astype(float))
+    valid = ~(np.isnan(C) | np.isnan(M10) | np.isnan(M20) | np.isnan(M60) | np.isnan(SL))
+    return np.where(valid, np.clip(S, 0, 100), np.nan)
+
+
+VARIANTS = [
+    ("上线(基线)", dict()),
+    ("A 追高降温 ext_pen=4", dict(ext_pen=4.0)),
+    ("A 追高降温 ext_pen=8", dict(ext_pen=8.0)),
+    ("A ext_knee=3% pen=6", dict(ext_knee=0.03, ext_pen=6.0)),
+    ("B 斜率过热递减 cut=6", dict(steep_cut=6.0)),
+    ("B 斜率过热递减 cut=12", dict(steep_cut=12.0)),
+    ("C 波动斜率归一 10", dict(slope_atr_norm=10.0)),
+    ("C 波动斜率归一 20", dict(slope_atr_norm=20.0)),
+    ("D 放量确认 +4", dict(volr_bonus=4.0)),
+    ("D 放量+价涨 +4", dict(volr_bonus=4.0, volr_need_up=True)),
+    ("D 放量确认 +8", dict(volr_bonus=8.0)),
+    ("E 波动阈值 2.5%", dict(knee=0.025)),
+    ("E 波动阈值 3.0%", dict(knee=0.030)),
+    ("F 均线结构不对称 dn=−6", dict(updown=False)),
+    ("G 组合 A+D ext6+volr4", dict(ext_pen=6.0, volr_bonus=4.0)),
+]
+
+
+def rows_q(S, fq, K, tie=None, H_=20, seed=1):
+    """与 iter22.rows 同口径，但用给定的分数矩阵"""
+    valid = X.valid_mat(S, H_)
+    R = X.ret_mat(H_)
+    bench = np.nanmean(np.where(valid, R, np.nan), axis=1)
+    bench = np.where(np.isnan(bench), 0.0, bench)
+    kf = max(1, int(round(fq * P.NS)))
+    order = np.argsort(np.where(valid, S, -np.inf), axis=1)[:, ::-1]
+    out = []
+    for i in range(P.ND - 1 - H_):
+        pool = order[i, :kf]
+        pool = pool[valid[i, pool]]
+        if len(pool) < 3:
+            continue
+        if tie is None:
+            sel = np.random.default_rng(seed * 100003 + i).choice(pool, min(K, len(pool)), replace=False)
+        else:
+            kk = I.KEYMAT[tie][i, pool]
+            sel = pool[np.argsort(-np.nan_to_num(kk, nan=-1e9))[:K]]
+        rr = R[i, sel]
+        rr = rr[np.isfinite(rr)]
+        if rr.size:
+            out.append((DATES[i], float(np.mean(rr)), float(bench[i]), len(rr)))
+    return out
+
+
+def main():
+    base = score()
+    loop = P.MAT["_S"]["new"]
+    m = ~np.isnan(loop) & ~np.isnan(base)
+    print(f"\n[对齐检查] 与 final_validate.new_fn 逐 bar 比较：{m.sum()} 个有效 bar，"
+          f"最大偏差 {np.abs(loop[m] - base[m]).max():.6f}")
+
+    print("\n==== 1. 各变体在'前40%池·随机20'口径下的表现（HAC 统计）====")
+    bh = P.bench_hold(0, P.ND)
+    res = {}
+    for lab, kw in VARIANTS:
+        S = score(**kw) if kw else base
+        r40 = H.summarize(rows_q(S, 0.40, 20), f"{lab:<28} 前40%随机20", bh=bh)
+        r5 = H.summarize(rows_q(S, 0.05, 14), f"{lab:<28} 前5%(头部)", bh=bh)
+        res[lab] = (r40["t_hac"], r40["p"], r40["oos_mean"], r5["mean"], r40["cum"], r40["dd"])
+    print("\n==== 2. 汇总表（前40%池随机20）====")
+    print(f"  {'变体':<28} {'t_HAC':>7} {'p':>6} {'OOS日均超额':>11} {'头部5%超额':>11} {'累计':>8} {'回撤':>7}")
+    for lab, (t, p, oos, head, cum, dd) in res.items():
+        print(f"  {lab:<28} {t:+7.2f} {p:6.3f} {oos*100:+10.3f}% {head*100:+10.2f}% {cum*100:+7.1f}% {dd*100:6.1f}%")
+    print("\n==== 3. 最优两个变体再加'量比排序'与止损复核 ====")
+    best = sorted(res.items(), key=lambda kv: -kv[1][0])[:3]
+    for lab, _ in best:
+        kw = dict(VARIANTS)[lab] if lab in dict(VARIANTS) else {}
+        S = score(**kw) if kw else base
+        H.summarize(rows_q(S, 0.40, 20, tie="量比"), f"{lab} 前40%量比20", bh=bh)
+        H.summarize(rows_q(S, 0.30, 20, tie="量比"), f"{lab} 前30%量比20", bh=bh)
+
+
+if __name__ == "__main__":
+    main()

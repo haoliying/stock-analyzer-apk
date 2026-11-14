@@ -1,1 +1,183 @@
-cGFja2FnZSBjb20uc3RvY2suYW5hbHl6ZXIudWkubWFya2V0CgppbXBvcnQgYW5kcm9pZC5hcHAuQXBwbGljYXRpb24KaW1wb3J0IGFuZHJvaWR4LmxpZmVjeWNsZS5BbmRyb2lkVmlld01vZGVsCmltcG9ydCBhbmRyb2lkeC5saWZlY3ljbGUudmlld01vZGVsU2NvcGUKaW1wb3J0IGNvbS5zdG9jay5hbmFseXplci5hbmFseXNpcy5TdG9ja0FuYWx5emVyCmltcG9ydCBjb20uc3RvY2suYW5hbHl6ZXIuZGF0YS5tb2RlbC4qCmltcG9ydCBjb20uc3RvY2suYW5hbHl6ZXIuZGF0YS5yZXBvc2l0b3J5LlN0b2NrUmVwb3NpdG9yeQppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLmZsb3cuTXV0YWJsZVN0YXRlRmxvdwppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLmZsb3cuU3RhdGVGbG93CmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMuZmxvdy5hc1N0YXRlRmxvdwppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLmxhdW5jaAoKY2xhc3MgTWFya2V0Vmlld01vZGVsKGFwcGxpY2F0aW9uOiBBcHBsaWNhdGlvbikgOiBBbmRyb2lkVmlld01vZGVsKGFwcGxpY2F0aW9uKSB7CgogICAgcHJpdmF0ZSB2YWwgcmVwb3NpdG9yeSA9IFN0b2NrUmVwb3NpdG9yeShhcHBsaWNhdGlvbikKICAgIHByaXZhdGUgdmFsIGFuYWx5emVyID0gU3RvY2tBbmFseXplcigpCgogICAgcHJpdmF0ZSB2YWwgX3JlY29tbWVuZGF0aW9ucyA9IE11dGFibGVTdGF0ZUZsb3c8TGlzdDxTdG9ja1JlY29tbWVuZGF0aW9uPj4oZW1wdHlMaXN0KCkpCiAgICB2YWwgcmVjb21tZW5kYXRpb25zOiBTdGF0ZUZsb3c8TGlzdDxTdG9ja1JlY29tbWVuZGF0aW9uPj4gPSBfcmVjb21tZW5kYXRpb25zLmFzU3RhdGVGbG93KCkKCiAgICBwcml2YXRlIHZhbCBfaXNMb2FkaW5nID0gTXV0YWJsZVN0YXRlRmxvdyhmYWxzZSkKICAgIHZhbCBpc0xvYWRpbmc6IFN0YXRlRmxvdzxCb29sZWFuPiA9IF9pc0xvYWRpbmcuYXNTdGF0ZUZsb3coKQoKICAgIHByaXZhdGUgdmFsIF9wcm9ncmVzcyA9IE11dGFibGVTdGF0ZUZsb3coIiIpCiAgICB2YWwgcHJvZ3Jlc3M6IFN0YXRlRmxvdzxTdHJpbmc+ID0gX3Byb2dyZXNzLmFzU3RhdGVGbG93KCkKCiAgICBwcml2YXRlIHZhbCBfZXJyb3IgPSBNdXRhYmxlU3RhdGVGbG93PFN0cmluZz8+KG51bGwpCiAgICB2YWwgZXJyb3I6IFN0YXRlRmxvdzxTdHJpbmc/PiA9IF9lcnJvci5hc1N0YXRlRmxvdygpCgogICAgcHJpdmF0ZSB2YWwgX2xhc3RVcGRhdGVUaW1lID0gTXV0YWJsZVN0YXRlRmxvdzxMb25nPz4obnVsbCkKICAgIHZhbCBsYXN0VXBkYXRlVGltZTogU3RhdGVGbG93PExvbmc/PiA9IF9sYXN0VXBkYXRlVGltZS5hc1N0YXRlRmxvdygpCgogICAgLy8g5LuK5pel5YiG5L2N5rGg6KeE5qih77yI6L+b5YWl5YmNIDUwJSDliIbkvY3nmoTogqHnpajmlbDvvInvvIzkvpvpobXpnaLor7TmmI4i5YiX6KGo5piv5LuO5Lit5YiG5bGC5Y+W5qC355qEIgogICAgcHJpdmF0ZSB2YWwgX3Bvb2xJbmZvID0gTXV0YWJsZVN0YXRlRmxvdygiIikKICAgIHZhbCBwb29sSW5mbzogU3RhdGVGbG93PFN0cmluZz4gPSBfcG9vbEluZm8uYXNTdGF0ZUZsb3coKQoKICAgIC8vIOWAmemAieiCoeelqOWIl+ihqO+8iOe6pjIwMOWPqueDremXqOiCoeelqO+8iQogICAgcHJpdmF0ZSB2YWwgY2FuZGlkYXRlcyA9IGxpc3RPZigKICAgICAgICAvLyDmsqrluILkuLvmnb8KICAgICAgICAic2g2MDAwMDAiLCAic2g2MDAwMDkiLCAic2g2MDAwMTYiLCAic2g2MDAwMTkiLCAic2g2MDAwMjgiLAogICAgICAgICJzaDYwMDAyOSIsICJzaDYwMDAzMCIsICJzaDYwMDAzMSIsICJzaDYwMDAzNiIsICJzaDYwMDA0OCIsCiAgICAgICAgInNoNjAwMDUwIiwgInNoNjAwMDg5IiwgInNoNjAwMTA0IiwgInNoNjAwMTExIiwgInNoNjAwMTE1IiwKICAgICAgICAic2g2MDAxNTAiLCAic2g2MDAxNzYiLCAic2g2MDAxODMiLCAic2g2MDAxODgiLCAic2g2MDAxOTYiLAogICAgICAgICJzaDYwMDIxOSIsICJzaDYwMDI3NiIsICJzaDYwMDI5OCIsICJzaDYwMDMwOSIsICJzaDYwMDMxNiIsCiAgICAgICAgInNoNjAwMzMyIiwgInNoNjAwMzQ2IiwgInNoNjAwMzUyIiwgInNoNjAwMzYyIiwgInNoNjAwMzgzIiwKICAgICAgICAic2g2MDAzOTIiLCAic2g2MDAzOTgiLCAic2g2MDA0MDYiLCAic2g2MDA0MjYiLCAic2g2MDA0MzYiLAogICAgICAgICJzaDYwMDQzOCIsICJzaDYwMDQ2MCIsICJzaDYwMDQ4NyIsICJzaDYwMDQ4OSIsICJzaDYwMDQ5OCIsCiAgICAgICAgInNoNjAwNTE2IiwgInNoNjAwNTE5IiwgInNoNjAwNTIxIiwgInNoNjAwNTM2IiwgInNoNjAwNTQ3IiwKICAgICAgICAic2g2MDA1NDkiLCAic2g2MDA1NzAiLCAic2g2MDA1ODMiLCAic2g2MDA1ODUiLCAic2g2MDA1ODgiLAogICAgICAgICJzaDYwMDYwNiIsICJzaDYwMDY1NSIsICJzaDYwMDY2MCIsICJzaDYwMDY3NCIsICJzaDYwMDY4OCIsCiAgICAgICAgInNoNjAwNjkwIiwgInNoNjAwNzAzIiwgInNoNjAwNzQxIiwgInNoNjAwNzQ1IiwgInNoNjAwNzYwIiwKICAgICAgICAic2g2MDA3NjMiLCAic2g2MDA3OTUiLCAic2g2MDA4MDkiLCAic2g2MDA4MzciLCAic2g2MDA4NDUiLAogICAgICAgICJzaDYwMDg0OCIsICJzaDYwMDg2MiIsICJzaDYwMDg2NyIsICJzaDYwMDg4NiIsICJzaDYwMDg4NyIsCiAgICAgICAgInNoNjAwODkzIiwgInNoNjAwOTAwIiwgInNoNjAwOTA1IiwgInNoNjAwOTE4IiwgInNoNjAwOTE5IiwKICAgICAgICAic2g2MDA5NDEiLCAic2g2MDA5NTgiLCAic2g2MDA5NzciLCAic2g2MDA5ODkiLCAic2g2MDA5OTkiLAogICAgICAgICJzaDYwMTAwNiIsICJzaDYwMTAwOSIsICJzaDYwMTAxMiIsICJzaDYwMTAyMSIsICJzaDYwMTA2NiIsCiAgICAgICAgInNoNjAxMDg4IiwgInNoNjAxMTAwIiwgInNoNjAxMTA4IiwgInNoNjAxMTExIiwgInNoNjAxMTE3IiwKICAgICAgICAic2g2MDExMzgiLCAic2g2MDExNTUiLCAic2g2MDExNjIiLCAic2g2MDExNjYiLCAic2g2MDExNjkiLAogICAgICAgICJzaDYwMTE4NiIsICJzaDYwMTIxMSIsICJzaDYwMTIyNSIsICJzaDYwMTIyOCIsICJzaDYwMTIyOSIsCiAgICAgICAgInNoNjAxMjMxIiwgInNoNjAxMjM2IiwgInNoNjAxMjM4IiwgInNoNjAxMjg4IiwgInNoNjAxMjk4IiwKICAgICAgICAic2g2MDEzMTgiLCAic2g2MDEzMTkiLCAic2g2MDEzMjgiLCAic2g2MDEzMzYiLCAic2g2MDEzNjAiLAogICAgICAgICJzaDYwMTM3NyIsICJzaDYwMTM5MCIsICJzaDYwMTM5OCIsICJzaDYwMTYwMCIsICJzaDYwMTYwMSIsCiAgICAgICAgInNoNjAxNjA3IiwgInNoNjAxNjE4IiwgInNoNjAxNjI4IiwgInNoNjAxNjMzIiwgInNoNjAxNjU4IiwKICAgICAgICAic2g2MDE2NjgiLCAic2g2MDE2NjkiLCAic2g2MDE2ODgiLCAic2g2MDE2OTgiLCAic2g2MDE3MjciLAogICAgICAgICJzaDYwMTc2NiIsICJzaDYwMTc4OCIsICJzaDYwMTgwMCIsICJzaDYwMTgwOCIsICJzaDYwMTgxNiIsCiAgICAgICAgInNoNjAxODE4IiwgInNoNjAxODI4IiwgInNoNjAxODM4IiwgInNoNjAxODU3IiwgInNoNjAxODc3IiwKICAgICAgICAic2g2MDE4NzgiLCAic2g2MDE4ODEiLCAic2g2MDE4ODgiLCAic2g2MDE4OTgiLCAic2g2MDE4OTkiLAogICAgICAgICJzaDYwMTkwMSIsICJzaDYwMTkxOSIsICJzaDYwMTkzMyIsICJzaDYwMTkzOSIsICJzaDYwMTk1OCIsCiAgICAgICAgInNoNjAxOTg1IiwgInNoNjAxOTg4IiwgInNoNjAxOTg5IiwgInNoNjAxOTkyIiwgInNoNjAxOTk1IiwKICAgICAgICAic2g2MDE5OTgiLCAic2g2MDMwMDAiLCAic2g2MDMwMTkiLCAic2g2MDMxNTYiLCAic2g2MDMxODUiLAogICAgICAgICJzaDYwMzE5NSIsICJzaDYwMzI1OSIsICJzaDYwMzI2MCIsICJzaDYwMzI4OCIsICJzaDYwMzI5MCIsCiAgICAgICAgInNoNjAzNTAxIiwgInNoNjAzNTE3IiwgInNoNjAzNTY4IiwgInNoNjAzNjEzIiwgInNoNjAzNjU5IiwKICAgICAgICAic2g2MDM3OTkiLCAic2g2MDM4MDYiLCAic2g2MDM4MzMiLCAic2g2MDM4ODIiLCAic2g2MDM4OTkiLAogICAgICAgICJzaDYwMzk4NiIsCiAgICAgICAgLy8g56eR5Yib5p2/CiAgICAgICAgInNoNjg4MDA1IiwgInNoNjg4MDA4IiwgInNoNjg4MDA5IiwgInNoNjg4MDEyIiwgInNoNjg4MDM2IiwKICAgICAgICAic2g2ODgxMTEiLCAic2g2ODgxMjYiLCAic2g2ODgxNjkiLCAic2g2ODgxODAiLCAic2g2ODgxODUiLAogICAgICAgICJzaDY4ODM5MCIsICJzaDY4ODU2MSIsICJzaDY4ODU5OSIsCiAgICAgICAgLy8g5rex5biC5Li75p2/CiAgICAgICAgInN6MDAwMDAxIiwgInN6MDAwMDAyIiwgInN6MDAwMDYzIiwgInN6MDAwMDY2IiwgInN6MDAwMDY5IiwKICAgICAgICAic3owMDAxMDAiLCAic3owMDAxNTciLCAic3owMDAxNjYiLCAic3owMDAzMDEiLCAic3owMDAzMzMiLAogICAgICAgICJzejAwMDMzOCIsICJzejAwMDQwMCIsICJzejAwMDQwMSIsICJzejAwMDQyMyIsICJzejAwMDQyNSIsCiAgICAgICAgInN6MDAwNTM4IiwgInN6MDAwNTY4IiwgInN6MDAwNTk2IiwgInN6MDAwNjI1IiwgInN6MDAwNjUxIiwKICAgICAgICAic3owMDA2NjEiLCAic3owMDA2ODMiLCAic3owMDA3MDMiLCAic3owMDA3MDgiLCAic3owMDA3MDkiLAogICAgICAgICJzejAwMDcyMyIsICJzejAwMDcyNSIsICJzejAwMDczMyIsICJzejAwMDczOCIsICJzejAwMDc2OCIsCiAgICAgICAgInN6MDAwNzc2IiwgInN6MDAwNzc4IiwgInN6MDAwNzgzIiwgInN6MDAwNzg2IiwgInN6MDAwODAwIiwKICAgICAgICAic3owMDA4MDciLCAic3owMDA4NTgiLCAic3owMDA4NjAiLCAic3owMDA4NzYiLCAic3owMDA4OTUiLAogICAgICAgICJzejAwMDkzOCIsICJzejAwMDk2MCIsICJzejAwMDk2MyIsICJzejAwMDk3NSIsICJzejAwMDk3NyIsCiAgICAgICAgInN6MDAwOTk5IiwgInN6MDAyMDAxIiwgInN6MDAyMDA3IiwgInN6MDAyMDA4IiwgInN6MDAyMDI0IiwKICAgICAgICAic3owMDIwMjciLCAic3owMDIwMzIiLCAic3owMDIwNDkiLCAic3owMDIwNTAiLCAic3owMDIwNjQiLAogICAgICAgICJzejAwMjA4MCIsICJzejAwMjEyMCIsICJzejAwMjEyOSIsICJzejAwMjE0MiIsICJzejAwMjE0NiIsCiAgICAgICAgInN6MDAyMTUyIiwgInN6MDAyMTUzIiwgInN6MDAyMTU2IiwgInN6MDAyMTc5IiwgInN6MDAyMTgwIiwKICAgICAgICAic3owMDIyMDIiLCAic3owMDIyMzAiLCAic3owMDIyMzYiLCAic3owMDIyNDEiLCAic3owMDIyNzEiLAogICAgICAgICJzejAwMjMwNCIsICJzejAwMjMxMSIsICJzejAwMjM0MCIsICJzejAwMjM1MiIsICJzejAwMjM3MSIsCiAgICAgICAgInN6MDAyMzg0IiwgInN6MDAyMzg1IiwgInN6MDAyMzg5IiwgInN6MDAyMzk5IiwgInN6MDAyNDEwIiwKICAgICAgICAic3owMDI0MTUiLCAic3owMDI0MjIiLCAic3owMDI0MzAiLCAic3owMDI0NjAiLCAic3owMDI0NjYiLAogICAgICAgICJzejAwMjQ2OCIsICJzejAwMjQ3NSIsICJzejAwMjQ5MyIsICJzejAwMjU1NSIsICJzejAwMjU5NCIsCiAgICAgICAgInN6MDAyNjAwIiwgInN6MDAyNjAxIiwgInN6MDAyNjAyIiwgInN6MDAyNjA3IiwgInN6MDAyNjQ4IiwKICAgICAgICAic3owMDI3MDkiLCAic3owMDI3MTQiLCAic3owMDI3MzYiLCAic3owMDI3MzkiLCAic3owMDI3NTYiLAogICAgICAgICJzejAwMjgxMiIsICJzejAwMjgyMSIsICJzejAwMjgzMSIsICJzejAwMjg0MSIsICJzejAwMjg1MCIsCiAgICAgICAgInN6MDAyOTE2IiwgInN6MDAyOTIwIiwgInN6MDAyOTM4IiwgInN6MDAyOTQ1IiwgInN6MDAyOTY2IiwKICAgICAgICAvLyDliJvkuJrmnb8KICAgICAgICAic3ozMDAwMDMiLCAic3ozMDAwMDkiLCAic3ozMDAwMTQiLCAic3ozMDAwMTUiLCAic3ozMDAwMzMiLAogICAgICAgICJzejMwMDA1OSIsICJzejMwMDEyMiIsICJzejMwMDEyNCIsICJzejMwMDE0MiIsICJzejMwMDE0NCIsCiAgICAgICAgInN6MzAwMTQ2IiwgInN6MzAwMjIzIiwgInN6MzAwMjc0IiwgInN6MzAwMjg1IiwgInN6MzAwMzA4IiwKICAgICAgICAic3ozMDAzMTYiLCAic3ozMDAzNDciLCAic3ozMDAzOTQiLCAic3ozMDA0MDgiLCAic3ozMDA0MTMiLAogICAgICAgICJzejMwMDQzMyIsICJzejMwMDQ1MCIsICJzejMwMDQ5NiIsICJzejMwMDQ5OCIsICJzejMwMDYwMSIsCiAgICAgICAgInN6MzAwNjI4IiwgInN6MzAwNjYxIiwgInN6MzAwNzUwIiwgInN6MzAwNzUxIiwgInN6MzAwNzYwIiwKICAgICAgICAic3ozMDA3ODIiLCAic3ozMDA4MzIiLCAic3ozMDA4NjYiLCAic3ozMDA4OTYiLCAic3ozMDA5NzkiLAogICAgICAgICJzejMwMDk5OSIKICAgICkKCiAgICBpbml0IHsKICAgICAgICByZWZyZXNoKCkKICAgIH0KCiAgICBmdW4gcmVmcmVzaCgpIHsKICAgICAgICB2aWV3TW9kZWxTY29wZS5sYXVuY2ggewogICAgICAgICAgICBfaXNMb2FkaW5nLnZhbHVlID0gdHJ1ZQogICAgICAgICAgICBfZXJyb3IudmFsdWUgPSBudWxsCiAgICAgICAgICAgIF9wcm9ncmVzcy52YWx1ZSA9ICLmraPlnKjojrflj5bogqHnpajmlbDmja4uLi4iCgogICAgICAgICAgICB0cnkgewogICAgICAgICAgICAgICAgLy8g6I635Y+W5omA5pyJ5YCZ6YCJ6IKh56Wo55qE5a6e5pe26KGM5oOFCiAgICAgICAgICAgICAgICBfcHJvZ3Jlc3MudmFsdWUgPSAi5q2j5Zyo6I635Y+W6KGM5oOF5pWw5o2uLi4uIgogICAgICAgICAgICAgICAgdmFsIHF1b3Rlc1Jlc3VsdCA9IHJlcG9zaXRvcnkuZ2V0UmVhbHRpbWVRdW90ZXMoY2FuZGlkYXRlcykKICAgICAgICAgICAgICAgIHZhbCBxdW90ZXMgPSBxdW90ZXNSZXN1bHQuZ2V0T3JFbHNlIHsKICAgICAgICAgICAgICAgICAgICBfZXJyb3IudmFsdWUgPSAi6I635Y+W6KGM5oOF5aSx6LSlOiAke2l0Lm1lc3NhZ2V9IgogICAgICAgICAgICAgICAgICAgIF9pc0xvYWRpbmcudmFsdWUgPSBmYWxzZQogICAgICAgICAgICAgICAgICAgIHJldHVybkBsYXVuY2gKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICBfcHJvZ3Jlc3MudmFsdWUgPSAi5q2j5Zyo5YiG5p6QICR7cXVvdGVzLnNpemV9IOWPquiCoeelqC4uLiIKICAgICAgICAgICAgICAgIHZhbCByZXN1bHRzID0gbXV0YWJsZUxpc3RPZjxTdG9ja1JlY29tbWVuZGF0aW9uPigpCgogICAgICAgICAgICAgICAgcXVvdGVzLmZvckVhY2hJbmRleGVkIHsgaW5kZXgsIHN0b2NrIC0+CiAgICAgICAgICAgICAgICAgICAgX3Byb2dyZXNzLnZhbHVlID0gIuWIhuaekOS4rSAke2luZGV4ICsgMX0vJHtxdW90ZXMuc2l6ZX06ICR7c3RvY2submFtZX0iCgogICAgICAgICAgICAgICAgICAgIHRyeSB7CiAgICAgICAgICAgICAgICAgICAgICAgIC8vIDEzMCDmoLnml6Xnur/vvJpNQTYwICsgMTDml6XmlpznjocgKyBXaWxkZXIg6YCS5o6o6ZyA6KaB6L+Z5q615Y6G5Y+y77yMCiAgICAgICAgICAgICAgICAgICAgICAgIC8vIOS4juWbnua1i++8iGJhY2t0ZXN0L3ByZWNvbXB1dGUucHnvvInnmoTlj6PlvoTkuIDoh7QKICAgICAgICAgICAgICAgICAgICAgICAgdmFsIGtsaW5lUmVzdWx0ID0gcmVwb3NpdG9yeS5nZXRLTGluZURhdGEoc3RvY2suY29kZSwgImRhaWx5IiwgU3RvY2tBbmFseXplci5CQVJTX0ZVTEwpCiAgICAgICAgICAgICAgICAgICAgICAgIGlmIChrbGluZVJlc3VsdC5pc1N1Y2Nlc3MpIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhbCBrbGluZSA9IGtsaW5lUmVzdWx0LmdldE9yRGVmYXVsdChlbXB0eUxpc3QoKSkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhbCByZWMgPSBhbmFseXplci5nZW5lcmF0ZVJlY29tbWVuZGF0aW9uKHN0b2NrLCBrbGluZSkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmIChyZWMgIT0gbnVsbCkgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJlc3VsdHMuYWRkKHJlYykKICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIH0gY2F0Y2ggKGU6IEV4Y2VwdGlvbikgewogICAgICAgICAgICAgICAgICAgICAgICAvLyDot7Pov4fliIbmnpDlpLHotKXnmoTogqHnpagKICAgICAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgICAgIC8vIOaOp+WItuivt+axgumikeeOhwogICAgICAgICAgICAgICAgICAgIGlmIChpbmRleCA8IHF1b3Rlcy5zaXplIC0gMSkgewogICAgICAgICAgICAgICAgICAgICAgICBUaHJlYWQuc2xlZXAoMjAwKQogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAvLyDlhbPplK7vvJrkuI3mjInor4TliIbmjpLluo/lj5bliY3lh6DlkI3jgIIKICAgICAgICAgICAgICAgIC8vIGl0ZXIzMSDlnKjlkIzkuIDmibnkv6Hlj7fml6XkuIrlrp7mtYvvvJrmsaDlhoUi5YiG5pWw5pyA6auY55qEIDIwIOWPqiLml6XlnYfotoXpop0g4oiSMC44MDcl77yIMjAg5Liq5o2i5LuT55u45L2NCiAgICAgICAgICAgICAgICAvLyDlj6rmnIkgMiDkuKrot5HotaLln7rlh4bvvInvvIwi5oyJ5YiG5L2N562J6Led5Y+WIDIwIOWPqiIrMC43NDcl77yIdF9IQUMgKzEuNTLvvIwxOC8yMCDnm7jkvY3ot5HotaLvvInjgIIKICAgICAgICAgICAgICAgIC8vIOWFpeaxoOS4jeWGjeeUqCDiiaU2OCDov5nkuKrnu53lr7npl6jmp5vvvJrpl6jmp5vmnKzouqvmr48gMjAg5pel6KaB5LuY5Ye6IDAuMjYg5Liq55m+5YiG54K555qE6LaF6aKd44CCCiAgICAgICAgICAgICAgICB2YWwgZWxpZ2libGUgPSBhbmFseXplci5lbGlnaWJsZUNvdW50KHJlc3VsdHMpCiAgICAgICAgICAgICAgICB2YWwgcGlja3MgPSBhbmFseXplci5zZWxlY3REYWlseUNhbmRpZGF0ZXMocmVzdWx0cykKICAgICAgICAgICAgICAgICAgICAubWFwSW5kZXhlZCB7IGksIHJlYyAtPiByZWMuY29weShyYW5rID0gaSArIDEpIH0KICAgICAgICAgICAgICAgIHZhbCBuQnV5ID0gcGlja3MuY291bnQgeyBpdC5hbmFseXNpcy5yZWNvbW1lbmRhdGlvbiA9PSBjb20uc3RvY2suYW5hbHl6ZXIuZGF0YS5tb2RlbC5SZWNvbW1lbmRhdGlvbi5CVVkgfQoKICAgICAgICAgICAgICAgIF9yZWNvbW1lbmRhdGlvbnMudmFsdWUgPSBwaWNrcwogICAgICAgICAgICAgICAgX3Bvb2xJbmZvLnZhbHVlID0gIuS7iuaXpSAkZWxpZ2libGUg5Y+q6L+b5YWl5YmNICR7KFN0b2NrQW5hbHl6ZXIuUE9PTF9GUkFDVElPTiAqIDEwMCkudG9JbnQoKX0lIOWIhuS9jeaxoO+8jCIgKwogICAgICAgICAgICAgICAgICAgICLnrYnot53lj5YgJHtwaWNrcy5zaXplfSDlj6rnrYnmnYPvvIjkuI3mmK/mjpLooYzmppzvvInvvJsiICsKICAgICAgICAgICAgICAgICAgICAi5YW25LitICRuQnV5IOWPquWcqOWKoOS7k+e6v+S7peS4iu+8jOWFtuS9meS4uuaMgeacieaho+KAlOKAlOaho+S9jeWPquWbnuetlFwi5omL6YeM6L+Z5Y+q6K+l5LiN6K+l5YaN5YqgXCLvvIwiICsKICAgICAgICAgICAgICAgICAgICAi5Zue5rWL6LWa55qE5piv5pW056+u5a2Q55qE5YiG5L2N5beuIgogICAgICAgICAgICAgICAgX2xhc3RVcGRhdGVUaW1lLnZhbHVlID0gU3lzdGVtLmN1cnJlbnRUaW1lTWlsbGlzKCkKICAgICAgICAgICAgfSBjYXRjaCAoZTogRXhjZXB0aW9uKSB7CiAgICAgICAgICAgICAgICBfZXJyb3IudmFsdWUgPSAi5YiG5p6Q5aSx6LSlOiAke2UubWVzc2FnZX0iCiAgICAgICAgICAgIH0gZmluYWxseSB7CiAgICAgICAgICAgICAgICBfaXNMb2FkaW5nLnZhbHVlID0gZmFsc2UKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KfQo=
+package com.stock.analyzer.ui.market
+
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.viewModelScope
+import com.stock.analyzer.analysis.StockAnalyzer
+import com.stock.analyzer.data.model.*
+import com.stock.analyzer.data.repository.StockRepository
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.launch
+
+class MarketViewModel(application: Application) : AndroidViewModel(application) {
+
+    private val repository = StockRepository(application)
+    private val analyzer = StockAnalyzer()
+
+    private val _recommendations = MutableStateFlow<List<StockRecommendation>>(emptyList())
+    val recommendations: StateFlow<List<StockRecommendation>> = _recommendations.asStateFlow()
+
+    private val _isLoading = MutableStateFlow(false)
+    val isLoading: StateFlow<Boolean> = _isLoading.asStateFlow()
+
+    private val _progress = MutableStateFlow("")
+    val progress: StateFlow<String> = _progress.asStateFlow()
+
+    private val _error = MutableStateFlow<String?>(null)
+    val error: StateFlow<String?> = _error.asStateFlow()
+
+    private val _lastUpdateTime = MutableStateFlow<Long?>(null)
+    val lastUpdateTime: StateFlow<Long?> = _lastUpdateTime.asStateFlow()
+
+    // 今日分位池规模（进入前 50% 分位的股票数），供页面说明"列表是从中分层取样的"
+    private val _poolInfo = MutableStateFlow("")
+    val poolInfo: StateFlow<String> = _poolInfo.asStateFlow()
+
+    // 候选股票列表（约200只热门股票）
+    private val candidates = listOf(
+        // 沪市主板
+        "sh600000", "sh600009", "sh600016", "sh600019", "sh600028",
+        "sh600029", "sh600030", "sh600031", "sh600036", "sh600048",
+        "sh600050", "sh600089", "sh600104", "sh600111", "sh600115",
+        "sh600150", "sh600176", "sh600183", "sh600188", "sh600196",
+        "sh600219", "sh600276", "sh600298", "sh600309", "sh600316",
+        "sh600332", "sh600346", "sh600352", "sh600362", "sh600383",
+        "sh600392", "sh600398", "sh600406", "sh600426", "sh600436",
+        "sh600438", "sh600460", "sh600487", "sh600489", "sh600498",
+        "sh600516", "sh600519", "sh600521", "sh600536", "sh600547",
+        "sh600549", "sh600570", "sh600583", "sh600585", "sh600588",
+        "sh600606", "sh600655", "sh600660", "sh600674", "sh600688",
+        "sh600690", "sh600703", "sh600741", "sh600745", "sh600760",
+        "sh600763", "sh600795", "sh600809", "sh600837", "sh600845",
+        "sh600848", "sh600862", "sh600867", "sh600886", "sh600887",
+        "sh600893", "sh600900", "sh600905", "sh600918", "sh600919",
+        "sh600941", "sh600958", "sh600977", "sh600989", "sh600999",
+        "sh601006", "sh601009", "sh601012", "sh601021", "sh601066",
+        "sh601088", "sh601100", "sh601108", "sh601111", "sh601117",
+        "sh601138", "sh601155", "sh601162", "sh601166", "sh601169",
+        "sh601186", "sh601211", "sh601225", "sh601228", "sh601229",
+        "sh601231", "sh601236", "sh601238", "sh601288", "sh601298",
+        "sh601318", "sh601319", "sh601328", "sh601336", "sh601360",
+        "sh601377", "sh601390", "sh601398", "sh601600", "sh601601",
+        "sh601607", "sh601618", "sh601628", "sh601633", "sh601658",
+        "sh601668", "sh601669", "sh601688", "sh601698", "sh601727",
+        "sh601766", "sh601788", "sh601800", "sh601808", "sh601816",
+        "sh601818", "sh601828", "sh601838", "sh601857", "sh601877",
+        "sh601878", "sh601881", "sh601888", "sh601898", "sh601899",
+        "sh601901", "sh601919", "sh601933", "sh601939", "sh601958",
+        "sh601985", "sh601988", "sh601989", "sh601992", "sh601995",
+        "sh601998", "sh603000", "sh603019", "sh603156", "sh603185",
+        "sh603195", "sh603259", "sh603260", "sh603288", "sh603290",
+        "sh603501", "sh603517", "sh603568", "sh603613", "sh603659",
+        "sh603799", "sh603806", "sh603833", "sh603882", "sh603899",
+        "sh603986",
+        // 科创板
+        "sh688005", "sh688008", "sh688009", "sh688012", "sh688036",
+        "sh688111", "sh688126", "sh688169", "sh688180", "sh688185",
+        "sh688390", "sh688561", "sh688599",
+        // 深市主板
+        "sz000001", "sz000002", "sz000063", "sz000066", "sz000069",
+        "sz000100", "sz000157", "sz000166", "sz000301", "sz000333",
+        "sz000338", "sz000400", "sz000401", "sz000423", "sz000425",
+        "sz000538", "sz000568", "sz000596", "sz000625", "sz000651",
+        "sz000661", "sz000683", "sz000703", "sz000708", "sz000709",
+        "sz000723", "sz000725", "sz000733", "sz000738", "sz000768",
+        "sz000776", "sz000778", "sz000783", "sz000786", "sz000800",
+        "sz000807", "sz000858", "sz000860", "sz000876", "sz000895",
+        "sz000938", "sz000960", "sz000963", "sz000975", "sz000977",
+        "sz000999", "sz002001", "sz002007", "sz002008", "sz002024",
+        "sz002027", "sz002032", "sz002049", "sz002050", "sz002064",
+        "sz002080", "sz002120", "sz002129", "sz002142", "sz002146",
+        "sz002152", "sz002153", "sz002156", "sz002179", "sz002180",
+        "sz002202", "sz002230", "sz002236", "sz002241", "sz002271",
+        "sz002304", "sz002311", "sz002340", "sz002352", "sz002371",
+        "sz002384", "sz002385", "sz002389", "sz002399", "sz002410",
+        "sz002415", "sz002422", "sz002430", "sz002460", "sz002466",
+        "sz002468", "sz002475", "sz002493", "sz002555", "sz002594",
+        "sz002600", "sz002601", "sz002602", "sz002607", "sz002648",
+        "sz002709", "sz002714", "sz002736", "sz002739", "sz002756",
+        "sz002812", "sz002821", "sz002831", "sz002841", "sz002850",
+        "sz002916", "sz002920", "sz002938", "sz002945", "sz002966",
+        // 创业板
+        "sz300003", "sz300009", "sz300014", "sz300015", "sz300033",
+        "sz300059", "sz300122", "sz300124", "sz300142", "sz300144",
+        "sz300146", "sz300223", "sz300274", "sz300285", "sz300308",
+        "sz300316", "sz300347", "sz300394", "sz300408", "sz300413",
+        "sz300433", "sz300450", "sz300496", "sz300498", "sz300601",
+        "sz300628", "sz300661", "sz300750", "sz300751", "sz300760",
+        "sz300782", "sz300832", "sz300866", "sz300896", "sz300979",
+        "sz300999"
+    )
+
+    init {
+        refresh()
+    }
+
+    fun refresh() {
+        viewModelScope.launch {
+            _isLoading.value = true
+            _error.value = null
+            _progress.value = "正在获取股票数据..."
+
+            try {
+                // 获取所有候选股票的实时行情
+                _progress.value = "正在获取行情数据..."
+                val quotesResult = repository.getRealtimeQuotes(candidates)
+                val quotes = quotesResult.getOrElse {
+                    _error.value = "获取行情失败: ${it.message}"
+                    _isLoading.value = false
+                    return@launch
+                }
+
+                _progress.value = "正在分析 ${quotes.size} 只股票..."
+                val results = mutableListOf<StockRecommendation>()
+
+                quotes.forEachIndexed { index, stock ->
+                    _progress.value = "分析中 ${index + 1}/${quotes.size}: ${stock.name}"
+
+                    try {
+                        // 130 根日线：MA60 + 10日斜率 + Wilder 递推需要这段历史，
+                        // 与回测（backtest/precompute.py）的口径一致
+                        val klineResult = repository.getKLineData(stock.code, "daily", StockAnalyzer.BARS_FULL)
+                        if (klineResult.isSuccess) {
+                            val kline = klineResult.getOrDefault(emptyList())
+                            val rec = analyzer.generateRecommendation(stock, kline)
+                            if (rec != null) {
+                                results.add(rec)
+                            }
+                        }
+                    } catch (e: Exception) {
+                        // 跳过分析失败的股票
+                    }
+
+                    // 控制请求频率
+                    if (index < quotes.size - 1) {
+                        Thread.sleep(200)
+                    }
+                }
+
+                // 关键：不按评分排序取前几名。
+                // iter31 在同一批信号日上实测：池内"分数最高的 20 只"日均超额 −0.807%（20 个换仓相位
+                // 只有 2 个跑赢基准），"按分位等距取 20 只"+0.747%（t_HAC +1.52，18/20 相位跑赢）。
+                // 入池不再用 ≥68 这个绝对门槛：门槛本身每 20 日要付出 0.26 个百分点的超额。
+                val eligible = analyzer.eligibleCount(results)
+                val picks = analyzer.selectDailyCandidates(results)
+                    .mapIndexed { i, rec -> rec.copy(rank = i + 1) }
+                val nBuy = picks.count { it.analysis.recommendation == com.stock.analyzer.data.model.Recommendation.BUY }
+
+                _recommendations.value = picks
+                _poolInfo.value = "今日 $eligible 只进入前 ${(StockAnalyzer.POOL_FRACTION * 100).toInt()}% 分位池，" +
+                    "等距取 ${picks.size} 只等权（不是排行榜）；" +
+                    "其中 $nBuy 只在加仓线以上，其余为持有档——档位只回答\"手里这只该不该再加\"，" +
+                    "回测赚的是整篮子的分位差"
+                _lastUpdateTime.value = System.currentTimeMillis()
+            } catch (e: Exception) {
+                _error.value = "分析失败: ${e.message}"
+            } finally {
+                _isLoading.value = false
+            }
+        }
+    }
+}

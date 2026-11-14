@@ -1,1 +1,141 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJJbmRpY2F0b3IgbGlicmFyeTogZmFpdGhmdWwgcG9ydHMgb2YgdGhlIGFwcCdzIGN1cnJlbnQgbWF0aCArIGltcHJvdmVkIHZlcnNpb25zLiIiIgppbXBvcnQgbnVtcHkgYXMgbnAKaW1wb3J0IHBhbmRhcyBhcyBwZAoKCmRlZiBlbWEoeCwgbik6CiAgICAiIiJTdGFuZGFyZCBFTUEgc2VlZGVkIHdpdGggdGhlIGZpcnN0IHZhbHVlIChtYXRjaGVzIEtvdGxpbiBlbWFTZXJpZXMpLiIiIgogICAgcmV0dXJuIHBkLlNlcmllcyh4LCBkdHlwZT0iZmxvYXQ2NCIpLmV3bShzcGFuPW4sIGFkanVzdD1GYWxzZSkubWVhbigpLnRvX251bXB5KCkKCgpkZWYgc21hX2xhc3QoeCwgbik6CiAgICByZXR1cm4gbnAubWVhbih4Wy1uOl0pIGlmIGxlbih4KSA+PSBuIGVsc2UgTm9uZQoKCmRlZiByb2xsaW5nX3NtYSh4LCBuKToKICAgIHJldHVybiBwZC5TZXJpZXMoeCwgZHR5cGU9ImZsb2F0NjQiKS5yb2xsaW5nKG4pLm1lYW4oKS50b19udW1weSgpCgoKZGVmIHJzaV9zaW1wbGUoY2xvc2UsIG49MTQpOgogICAgIiIiUG9ydCBvZiBhcHAgY2FsY3VsYXRlUlNJOiBwbGFpbiBtZWFuIG9mIHRoZSBsYXN0IG4gZ2FpbnMvbG9zc2VzIChubyBzbW9vdGhpbmcpLiIiIgogICAgb3V0ID0gbnAuZnVsbChsZW4oY2xvc2UpLCBucC5uYW4pCiAgICBpZiBsZW4oY2xvc2UpIDw9IG46CiAgICAgICAgcmV0dXJuIG91dAogICAgY2ggPSBucC5kaWZmKGNsb3NlKQogICAgZm9yIGkgaW4gcmFuZ2UobiwgbGVuKGNsb3NlKSk6CiAgICAgICAgdyA9IGNoW2kgLSBuOmldCiAgICAgICAgZyA9IHdbdyA+IDBdLnN1bSgpCiAgICAgICAgbCA9IC13W3cgPCAwXS5zdW0oKQogICAgICAgIG91dFtpXSA9IDEwMC4wIGlmIGwgPT0gMCBlbHNlIDEwMC4wIC0gMTAwLjAgLyAoMS4wICsgKGcgLyBuKSAvIChsIC8gbikpCiAgICByZXR1cm4gb3V0CgoKZGVmIHJzaV93aWxkZXIoY2xvc2UsIG49MTQpOgogICAgY2ggPSBucC5kaWZmKGNsb3NlLCBwcmVwZW5kPWNsb3NlWzBdKQogICAgY2hbMF0gPSAwLjAKICAgIHVwID0gbnAud2hlcmUoY2ggPiAwLCBjaCwgMC4wKQogICAgZG4gPSBucC53aGVyZShjaCA8IDAsIC1jaCwgMC4wKQogICAgaWYgbGVuKGNsb3NlKSA8PSBuOgogICAgICAgIHJldHVybiBucC5mdWxsKGxlbihjbG9zZSksIG5wLm5hbikKICAgIGFnLCBhbCA9IHVwWzE6biArIDFdLm1lYW4oKSwgZG5bMTpuICsgMV0ubWVhbigpCiAgICBvdXQgPSBucC5mdWxsKGxlbihjbG9zZSksIG5wLm5hbikKICAgIG91dFtuXSA9IDEwMC4wIGlmIGFsID09IDAgZWxzZSAxMDAuMCAtIDEwMC4wIC8gKDEuMCArIGFnIC8gYWwpCiAgICBmb3IgaSBpbiByYW5nZShuICsgMSwgbGVuKGNsb3NlKSk6CiAgICAgICAgYWcgPSAoYWcgKiAobiAtIDEpICsgdXBbaV0pIC8gbgogICAgICAgIGFsID0gKGFsICogKG4gLSAxKSArIGRuW2ldKSAvIG4KICAgICAgICBvdXRbaV0gPSAxMDAuMCBpZiBhbCA9PSAwIGVsc2UgMTAwLjAgLSAxMDAuMCAvICgxLjAgKyBhZyAvIGFsKQogICAgcmV0dXJuIG91dAoKCmRlZiBtYWNkX3NlcmllcyhjbG9zZSwgZmFzdD0xMiwgc2xvdz0yNiwgc2lnPTkpOgogICAgZGlmID0gZW1hKGNsb3NlLCBmYXN0KSAtIGVtYShjbG9zZSwgc2xvdykKICAgIGRlYSA9IGVtYShkaWYsIHNpZykKICAgIGhpc3QgPSAoZGlmIC0gZGVhKSAqIDIKICAgIHJldHVybiBkaWYsIGRlYSwgaGlzdAoKCmRlZiBrZGpfYXBwKGhpZ2gsIGxvdywgY2xvc2UsIG49OSk6CiAgICAiIiJQb3J0IG9mIGFwcCBjYWxjdWxhdGVLREo6IHNpbmdsZS1zdGVwIFJTViBzbW9vdGhlZCBvbmNlIGFnYWluc3QgYSA1MCBzZWVkLiIiIgogICAgb3V0X2sgPSBucC5mdWxsKGxlbihjbG9zZSksIG5wLm5hbikKICAgIG91dF9kID0gbnAuZnVsbChsZW4oY2xvc2UpLCBucC5uYW4pCiAgICBvdXRfaiA9IG5wLmZ1bGwobGVuKGNsb3NlKSwgbnAubmFuKQogICAgZm9yIGkgaW4gcmFuZ2UobiAtIDEsIGxlbihjbG9zZSkpOgogICAgICAgIGhoLCBsbCA9IGhpZ2hbaSAtIG4gKyAxOmkgKyAxXS5tYXgoKSwgbG93W2kgLSBuICsgMTppICsgMV0ubWluKCkKICAgICAgICByc3YgPSA1MC4wIGlmIGhoID09IGxsIGVsc2UgKGNsb3NlW2ldIC0gbGwpIC8gKGhoIC0gbGwpICogMTAwCiAgICAgICAgayA9IHJzdiAvIDMgKyA1MCAqIDIgLyAzCiAgICAgICAgZCA9IGsgLyAzICsgNTAgKiAyIC8gMwogICAgICAgIG91dF9rW2ldLCBvdXRfZFtpXSwgb3V0X2pbaV0gPSBrLCBkLCAzICogayAtIDIgKiBkCiAgICByZXR1cm4gb3V0X2ssIG91dF9kLCBvdXRfagoKCmRlZiBrZGpfaXRlcihoaWdoLCBsb3csIGNsb3NlLCBuPTkpOgogICAgIiIiUHJvcGVyIGl0ZXJhdGl2ZSBLREo6IEs9KDJLJytSU1YpLzMsIEQ9KDJEJytLKS8zLiIiIgogICAgbSA9IGxlbihjbG9zZSkKICAgIEsgPSBucC5mdWxsKG0sIG5wLm5hbikKICAgIEQgPSBucC5mdWxsKG0sIG5wLm5hbikKICAgIEogPSBucC5mdWxsKG0sIG5wLm5hbikKICAgIGssIGQgPSA1MC4wLCA1MC4wCiAgICBmb3IgaSBpbiByYW5nZShtKToKICAgICAgICBpZiBpIDwgbiAtIDE6CiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgaGgsIGxsID0gaGlnaFtpIC0gbiArIDE6aSArIDFdLm1heCgpLCBsb3dbaSAtIG4gKyAxOmkgKyAxXS5taW4oKQogICAgICAgIHJzdiA9IDUwLjAgaWYgaGggPT0gbGwgZWxzZSAoY2xvc2VbaV0gLSBsbCkgLyAoaGggLSBsbCkgKiAxMDAKICAgICAgICBrID0gKDIgKiBrICsgcnN2KSAvIDMKICAgICAgICBkID0gKDIgKiBkICsgaykgLyAzCiAgICAgICAgS1tpXSwgRFtpXSwgSltpXSA9IGssIGQsIDMgKiBrIC0gMiAqIGQKICAgIHJldHVybiBLLCBELCBKCgoKZGVmIGF0cl9zZXJpZXMoaGlnaCwgbG93LCBjbG9zZSwgbj0xNCk6CiAgICBtID0gbGVuKGNsb3NlKQogICAgdHIgPSBucC5lbXB0eShtKQogICAgdHJbMF0gPSBoaWdoWzBdIC0gbG93WzBdCiAgICBmb3IgaSBpbiByYW5nZSgxLCBtKToKICAgICAgICB0cltpXSA9IG1heChoaWdoW2ldIC0gbG93W2ldLCBhYnMoaGlnaFtpXSAtIGNsb3NlW2kgLSAxXSksIGFicyhsb3dbaV0gLSBjbG9zZVtpIC0gMV0pKQogICAgcmV0dXJuIHBkLlNlcmllcyh0ciwgZHR5cGU9ImZsb2F0NjQiKS5ld20oYWxwaGE9MSAvIG4sIGFkanVzdD1GYWxzZSkubWVhbigpLnRvX251bXB5KCkKCgpkZWYgYWR4X3NlcmllcyhoaWdoLCBsb3csIGNsb3NlLCBuPTE0KToKICAgICIiIldpbGRlciBBRFggKyBkaXJlY3Rpb25hbCBjb21wb25lbnRzLiIiIgogICAgbSA9IGxlbihjbG9zZSkKICAgIHVwID0gbnAuZGlmZihoaWdoLCBwcmVwZW5kPWhpZ2hbMF0pCiAgICBkbiA9IC1ucC5kaWZmKGxvdywgcHJlcGVuZD1sb3dbMF0pCiAgICBwbHVzX2RtID0gbnAud2hlcmUoKHVwID4gZG4pICYgKHVwID4gMCksIHVwLCAwLjApCiAgICBtaW51c19kbSA9IG5wLndoZXJlKChkbiA+IHVwKSAmIChkbiA+IDApLCBkbiwgMC4wKQogICAgdHIgPSBucC5lbXB0eShtKQogICAgdHJbMF0gPSBoaWdoWzBdIC0gbG93WzBdCiAgICBmb3IgaSBpbiByYW5nZSgxLCBtKToKICAgICAgICB0cltpXSA9IG1heChoaWdoW2ldIC0gbG93W2ldLCBhYnMoaGlnaFtpXSAtIGNsb3NlW2kgLSAxXSksIGFicyhsb3dbaV0gLSBjbG9zZVtpIC0gMV0pKQogICAgYWwgPSBwZC5TZXJpZXModHIpLmV3bShhbHBoYT0xIC8gbiwgYWRqdXN0PUZhbHNlKS5tZWFuKCkudG9fbnVtcHkoKQogICAgYXAgPSBwZC5TZXJpZXMocGx1c19kbSkuZXdtKGFscGhhPTEgLyBuLCBhZGp1c3Q9RmFsc2UpLm1lYW4oKS50b19udW1weSgpCiAgICBhbSA9IHBkLlNlcmllcyhtaW51c19kbSkuZXdtKGFscGhhPTEgLyBuLCBhZGp1c3Q9RmFsc2UpLm1lYW4oKS50b19udW1weSgpCiAgICB3aXRoIG5wLmVycnN0YXRlKGRpdmlkZT0iaWdub3JlIiwgaW52YWxpZD0iaWdub3JlIik6CiAgICAgICAgcGRpID0gbnAud2hlcmUoYWwgPiAwLCAxMDAgKiBhcCAvIGFsLCAwLjApCiAgICAgICAgbWRpID0gbnAud2hlcmUoYWwgPiAwLCAxMDAgKiBhbSAvIGFsLCAwLjApCiAgICAgICAgZHMgPSBwZGkgKyBtZGkKICAgICAgICBkeCA9IG5wLndoZXJlKGRzID4gMCwgMTAwICogbnAuYWJzKHBkaSAtIG1kaSkgLyBkcywgMC4wKQogICAgYWR4ID0gcGQuU2VyaWVzKGR4KS5ld20oYWxwaGE9MSAvIG4sIGFkanVzdD1GYWxzZSkubWVhbigpLnRvX251bXB5KCkKICAgIHJldHVybiBhZHgsIHBkaSwgbWRpCgoKZGVmIGJvbGwoY2xvc2UsIG49MjAsIGs9Mi4wKToKICAgIG1pZCA9IHJvbGxpbmdfc21hKGNsb3NlLCBuKQogICAgc2QgPSBwZC5TZXJpZXMoY2xvc2UsIGR0eXBlPSJmbG9hdDY0Iikucm9sbGluZyhuKS5zdGQoZGRvZj0wKS50b19udW1weSgpCiAgICB1cCwgbG8gPSBtaWQgKyBrICogc2QsIG1pZCAtIGsgKiBzZAogICAgd2l0aCBucC5lcnJzdGF0ZShkaXZpZGU9Imlnbm9yZSIsIGludmFsaWQ9Imlnbm9yZSIpOgogICAgICAgIHdpZHRoID0gbnAud2hlcmUobWlkID4gMCwgKHVwIC0gbG8pIC8gbWlkLCBucC5uYW4pCiAgICAgICAgcG9zID0gbnAud2hlcmUodXAgPiBsbywgKGNsb3NlIC0gbG8pIC8gKHVwIC0gbG8pLCBucC5uYW4pCiAgICByZXR1cm4gbWlkLCB1cCwgbG8sIHdpZHRoLCBwb3MKCgpkZWYgdm9sX3JhdGlvKHZvbCwgbj01KToKICAgICIiIlRvZGF5J3Mgdm9sdW1lIHZzIHRoZSB0cmFpbGluZyBuLWRheSBhdmVyYWdlIChleGNsdWRpbmcgdG9kYXkpLiIiIgogICAgYmFzZSA9IHBkLlNlcmllcyh2b2wsIGR0eXBlPSJmbG9hdDY0Iikuc2hpZnQoMSkucm9sbGluZyhuKS5tZWFuKCkudG9fbnVtcHkoKQogICAgd2l0aCBucC5lcnJzdGF0ZShkaXZpZGU9Imlnbm9yZSIsIGludmFsaWQ9Imlnbm9yZSIpOgogICAgICAgIHJldHVybiBucC53aGVyZShiYXNlID4gMCwgbnAuYXNhcnJheSh2b2wsIGR0eXBlPSJmbG9hdDY0IikgLyBiYXNlLCBucC5uYW4pCgoKZGVmIG9idl9zZXJpZXMoY2xvc2UsIHZvbCk6CiAgICBkaXJfID0gbnAuc2lnbihucC5kaWZmKGNsb3NlLCBwcmVwZW5kPWNsb3NlWzBdKSkKICAgIHJldHVybiBucC5jdW1zdW0oZGlyXyAqIG5wLmFzYXJyYXkodm9sLCBkdHlwZT0iZmxvYXQ2NCIpKQo=
+#!/usr/bin/env python3
+"""Indicator library: faithful ports of the app's current math + improved versions."""
+import numpy as np
+import pandas as pd
+
+
+def ema(x, n):
+    """Standard EMA seeded with the first value (matches Kotlin emaSeries)."""
+    return pd.Series(x, dtype="float64").ewm(span=n, adjust=False).mean().to_numpy()
+
+
+def sma_last(x, n):
+    return np.mean(x[-n:]) if len(x) >= n else None
+
+
+def rolling_sma(x, n):
+    return pd.Series(x, dtype="float64").rolling(n).mean().to_numpy()
+
+
+def rsi_simple(close, n=14):
+    """Port of app calculateRSI: plain mean of the last n gains/losses (no smoothing)."""
+    out = np.full(len(close), np.nan)
+    if len(close) <= n:
+        return out
+    ch = np.diff(close)
+    for i in range(n, len(close)):
+        w = ch[i - n:i]
+        g = w[w > 0].sum()
+        l = -w[w < 0].sum()
+        out[i] = 100.0 if l == 0 else 100.0 - 100.0 / (1.0 + (g / n) / (l / n))
+    return out
+
+
+def rsi_wilder(close, n=14):
+    ch = np.diff(close, prepend=close[0])
+    ch[0] = 0.0
+    up = np.where(ch > 0, ch, 0.0)
+    dn = np.where(ch < 0, -ch, 0.0)
+    if len(close) <= n:
+        return np.full(len(close), np.nan)
+    ag, al = up[1:n + 1].mean(), dn[1:n + 1].mean()
+    out = np.full(len(close), np.nan)
+    out[n] = 100.0 if al == 0 else 100.0 - 100.0 / (1.0 + ag / al)
+    for i in range(n + 1, len(close)):
+        ag = (ag * (n - 1) + up[i]) / n
+        al = (al * (n - 1) + dn[i]) / n
+        out[i] = 100.0 if al == 0 else 100.0 - 100.0 / (1.0 + ag / al)
+    return out
+
+
+def macd_series(close, fast=12, slow=26, sig=9):
+    dif = ema(close, fast) - ema(close, slow)
+    dea = ema(dif, sig)
+    hist = (dif - dea) * 2
+    return dif, dea, hist
+
+
+def kdj_app(high, low, close, n=9):
+    """Port of app calculateKDJ: single-step RSV smoothed once against a 50 seed."""
+    out_k = np.full(len(close), np.nan)
+    out_d = np.full(len(close), np.nan)
+    out_j = np.full(len(close), np.nan)
+    for i in range(n - 1, len(close)):
+        hh, ll = high[i - n + 1:i + 1].max(), low[i - n + 1:i + 1].min()
+        rsv = 50.0 if hh == ll else (close[i] - ll) / (hh - ll) * 100
+        k = rsv / 3 + 50 * 2 / 3
+        d = k / 3 + 50 * 2 / 3
+        out_k[i], out_d[i], out_j[i] = k, d, 3 * k - 2 * d
+    return out_k, out_d, out_j
+
+
+def kdj_iter(high, low, close, n=9):
+    """Proper iterative KDJ: K=(2K'+RSV)/3, D=(2D'+K)/3."""
+    m = len(close)
+    K = np.full(m, np.nan)
+    D = np.full(m, np.nan)
+    J = np.full(m, np.nan)
+    k, d = 50.0, 50.0
+    for i in range(m):
+        if i < n - 1:
+            continue
+        hh, ll = high[i - n + 1:i + 1].max(), low[i - n + 1:i + 1].min()
+        rsv = 50.0 if hh == ll else (close[i] - ll) / (hh - ll) * 100
+        k = (2 * k + rsv) / 3
+        d = (2 * d + k) / 3
+        K[i], D[i], J[i] = k, d, 3 * k - 2 * d
+    return K, D, J
+
+
+def atr_series(high, low, close, n=14):
+    m = len(close)
+    tr = np.empty(m)
+    tr[0] = high[0] - low[0]
+    for i in range(1, m):
+        tr[i] = max(high[i] - low[i], abs(high[i] - close[i - 1]), abs(low[i] - close[i - 1]))
+    return pd.Series(tr, dtype="float64").ewm(alpha=1 / n, adjust=False).mean().to_numpy()
+
+
+def adx_series(high, low, close, n=14):
+    """Wilder ADX + directional components."""
+    m = len(close)
+    up = np.diff(high, prepend=high[0])
+    dn = -np.diff(low, prepend=low[0])
+    plus_dm = np.where((up > dn) & (up > 0), up, 0.0)
+    minus_dm = np.where((dn > up) & (dn > 0), dn, 0.0)
+    tr = np.empty(m)
+    tr[0] = high[0] - low[0]
+    for i in range(1, m):
+        tr[i] = max(high[i] - low[i], abs(high[i] - close[i - 1]), abs(low[i] - close[i - 1]))
+    al = pd.Series(tr).ewm(alpha=1 / n, adjust=False).mean().to_numpy()
+    ap = pd.Series(plus_dm).ewm(alpha=1 / n, adjust=False).mean().to_numpy()
+    am = pd.Series(minus_dm).ewm(alpha=1 / n, adjust=False).mean().to_numpy()
+    with np.errstate(divide="ignore", invalid="ignore"):
+        pdi = np.where(al > 0, 100 * ap / al, 0.0)
+        mdi = np.where(al > 0, 100 * am / al, 0.0)
+        ds = pdi + mdi
+        dx = np.where(ds > 0, 100 * np.abs(pdi - mdi) / ds, 0.0)
+    adx = pd.Series(dx).ewm(alpha=1 / n, adjust=False).mean().to_numpy()
+    return adx, pdi, mdi
+
+
+def boll(close, n=20, k=2.0):
+    mid = rolling_sma(close, n)
+    sd = pd.Series(close, dtype="float64").rolling(n).std(ddof=0).to_numpy()
+    up, lo = mid + k * sd, mid - k * sd
+    with np.errstate(divide="ignore", invalid="ignore"):
+        width = np.where(mid > 0, (up - lo) / mid, np.nan)
+        pos = np.where(up > lo, (close - lo) / (up - lo), np.nan)
+    return mid, up, lo, width, pos
+
+
+def vol_ratio(vol, n=5):
+    """Today's volume vs the trailing n-day average (excluding today)."""
+    base = pd.Series(vol, dtype="float64").shift(1).rolling(n).mean().to_numpy()
+    with np.errstate(divide="ignore", invalid="ignore"):
+        return np.where(base > 0, np.asarray(vol, dtype="float64") / base, np.nan)
+
+
+def obv_series(close, vol):
+    dir_ = np.sign(np.diff(close, prepend=close[0]))
+    return np.cumsum(dir_ * np.asarray(vol, dtype="float64"))

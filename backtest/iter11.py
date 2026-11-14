@@ -1,1 +1,73 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJJdGVyYXRpb24gMTE6IG1vbWVudHVtIE9ORS1TSURFRC4KCml0ZXIxMDogYSBzeW1tZXRyaWMgbW9tZW50dW0gYm9udXMgZml4ZXMgdGhlID49NzQgdHJhcCAoKzEuMjklKSBidXQgd3JlY2tzIHRoZQp0YWlsIChwMDUgLTE1LjIlIC0+IC0xOC43JSwgPjEwJSBsb3NzIDEyLjIlIC0+IDE1LjclKSBiZWNhdXNlIHRoZSBib251cyBidXlzCmludG8gZXh0ZW5kZWQgbmFtZXMuIFRoZSB1c2VyIGxvc3QgbW9uZXkgb24gdGFpbHMsIG5vdCBvbiBhdmVyYWdlcywgc28gdGVzdApwZW5hbGl6aW5nIG9ubHkgU1RBTEUgc3RyZW5ndGggKHN0cnVjdHVyZSBzYXlzIHVwLCBidXQgbm90aGluZyBpcyBhY3R1YWxseQptb3ZpbmcpIHdpdGhvdXQgcmV3YXJkaW5nIGFscmVhZHktcnVuIG5hbWVzLgoiIiIKaW1wb3J0IG51bXB5IGFzIG5wCmZyb20gY29sbGVjdGlvbnMgaW1wb3J0IGRlZmF1bHRkaWN0CmZyb20gbW9kZWwgaW1wb3J0IHByb2QsIHJvd3NfZm9yLCBDVVRPRkYsIF9uYW4sIGcKCgpkZWYgbWFrZSh0aCwgcGVuKToKICAgIGRlZiBmbihGLCB0KToKICAgICAgICBzLCBvayA9IHByb2QoRiwgdCkKICAgICAgICBpZiBub3Qgb2s6CiAgICAgICAgICAgIHJldHVybiBzLCBvawogICAgICAgIHIgPSBnKEYsICJyZXQyMCIsIHQpCiAgICAgICAgaWYgbm90IF9uYW4ocikgYW5kIHIgPCB0aDoKICAgICAgICAgICAgcyAtPSBwZW4KICAgICAgICByZXR1cm4gZmxvYXQobnAuY2xpcChzLCAwLCAxMDApKSwgVHJ1ZQogICAgcmV0dXJuIGZuCgoKZGVmIGV2YWx1YXRlKGZuLCBsYWJlbCwgYmFzZT1Ob25lKToKICAgIHJvd3MgPSByb3dzX2ZvcihmbikKICAgIGJ5X2RhdGUgPSBkZWZhdWx0ZGljdChsaXN0KQogICAgZm9yIHMsIGQsIHIsIGUsIHVuYiBpbiByb3dzOgogICAgICAgIGJ5X2RhdGVbZF0uYXBwZW5kKChzLCByLCBlLCB1bmIpKQogICAgYWxsZGF0ZXMgPSBzb3J0ZWQoYnlfZGF0ZSkKICAgIGgxID0gc2V0KGFsbGRhdGVzWzpsZW4oYWxsZGF0ZXMpIC8vIDJdKQoKICAgIGRlZiBkZXhjKGxvPU5vbmUsIGhpPU5vbmUpOgogICAgICAgIHBlciwgYSwgYiwgb29zID0gW10sIFtdLCBbXSwgW10KICAgICAgICBmb3IgZCwgbHN0IGluIGJ5X2RhdGUuaXRlbXMoKToKICAgICAgICAgICAgc2VsID0gW3hbMl0gZm9yIHggaW4gbHN0IGlmIG5vdCB4WzNdIGFuZAogICAgICAgICAgICAgICAgICAgKGxvIGlzIE5vbmUgb3IgeFswXSA+PSBsbykgYW5kIChoaSBpcyBOb25lIG9yIHhbMF0gPCBoaSldCiAgICAgICAgICAgIGlmIGxlbihzZWwpIDwgMzoKICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgIG0gPSBmbG9hdChucC5uYW5tZWFuKHNlbCkpCiAgICAgICAgICAgIGlmIG5wLmlzZmluaXRlKG0pOgogICAgICAgICAgICAgICAgcGVyLmFwcGVuZChtKQogICAgICAgICAgICAgICAgKGEgaWYgZCBpbiBoMSBlbHNlIGIpLmFwcGVuZChtKQogICAgICAgICAgICAgICAgaWYgZCA+PSBDVVRPRkY6CiAgICAgICAgICAgICAgICAgICAgb29zLmFwcGVuZChtKQogICAgICAgIGlmIGxlbihwZXIpIDwgMjA6CiAgICAgICAgICAgIHJldHVybiBOb25lCiAgICAgICAgcmV0dXJuIG5wLm1lYW4ocGVyKSwgbnAubWVhbihhKSwgbnAubWVhbihiKSwgKG5wLm1lYW4ob29zKSBpZiBvb3MgZWxzZSBucC5uYW4pCgogICAgdG90ID0gc3VtKGxlbihsKSBmb3IgbCBpbiBieV9kYXRlLnZhbHVlcygpKQogICAgbmIgPSBzdW0oMSBmb3IgbCBpbiBieV9kYXRlLnZhbHVlcygpIGZvciB4IGluIGwgaWYgeFswXSA+PSA3MCkKICAgIGJ1eXMgPSBbKGQsIHhbMV0pIGZvciBkLCBsc3QgaW4gYnlfZGF0ZS5pdGVtcygpIGZvciB4IGluIGxzdCBpZiB4WzBdID49IDcwIGFuZCBub3QgeFszXV0KICAgIHYgPSBucC5hcnJheShbciBmb3IgXywgciBpbiBidXlzXSkgaWYgbGVuKGJ1eXMpID4gNTAwIGVsc2UgbnAuYXJyYXkoW25wLm5hbl0pCiAgICB2byA9IG5wLmFycmF5KFtyIGZvciBkLCByIGluIGJ1eXMgaWYgZCA+PSBDVVRPRkZdKQogICAgaWYgdm8uc2l6ZSA8IDIwMDoKICAgICAgICB2byA9IG5wLmFycmF5KFtucC5uYW5dKQogICAgcjcwLCByNzQsIHJzID0gZGV4Yyg3MCksIGRleGMoNzQpLCBkZXhjKE5vbmUsIDQyKQogICAgaWYgbm90IHI3MDoKICAgICAgICBwcmludChmIntsYWJlbDoyMnN9IHRvbyBmZXciKQogICAgICAgIHJldHVybgogICAgcHJpbnQoZiJ7bGFiZWw6MjJzfSA+PTcwIHtyNzBbMF0qMTAwOis1LjJmfSUoaDEge3I3MFsxXSoxMDA6KzUuMmZ9IGgyIHtyNzBbMl0qMTAwOis1LjJmfSAiCiAgICAgICAgICBmIm9vcyB7cjcwWzNdKjEwMDorNS4yZn0pIHwgPj03NCB7KCclKy4yZiUlJyUocjc0WzBdKjEwMCkpIGlmIHI3NCBlbHNlICcgICBuL2EgJ30gIgogICAgICAgICAgZiJ8IOWHj+S7kzw9NDIge3JzWzBdKjEwMDorNS4yZn0lIHwgcDA1PXtucC5wZXJjZW50aWxlKHYsNSkqMTAwOis1LjFmfSUgIgogICAgICAgICAgZiI+MTBMPXsodjwtMC4xMCkubWVhbigpKjEwMDo0LjFmfSUgfCBvb3MgcDA1PXtucC5wZXJjZW50aWxlKHZvLDUpKjEwMDorNS4xZn0lICIKICAgICAgICAgIGYiPjEwTD17KHZvPC0wLjEwKS5tZWFuKCkqMTAwOjQuMWZ9JSB8IGJ1eSB7bmIvdG90KjEwMDo0LjFmfSVkIikKCgpldmFsdWF0ZShwcm9kLCAicHJvZCIpCmZvciB0aCBpbiAoMC4wOCwgMC4xMiwgMC4xNik6CiAgICBmb3IgcGVuIGluICg2LCAxMCwgMTYpOgogICAgICAgIGV2YWx1YXRlKG1ha2UodGgsIHBlbiksIGYic3RhbGU8e2ludCh0aCoxMDApfSUgLXtwZW59IikK
+#!/usr/bin/env python3
+"""Iteration 11: momentum ONE-SIDED.
+
+iter10: a symmetric momentum bonus fixes the >=74 trap (+1.29%) but wrecks the
+tail (p05 -15.2% -> -18.7%, >10% loss 12.2% -> 15.7%) because the bonus buys
+into extended names. The user lost money on tails, not on averages, so test
+penalizing only STALE strength (structure says up, but nothing is actually
+moving) without rewarding already-run names.
+"""
+import numpy as np
+from collections import defaultdict
+from model import prod, rows_for, CUTOFF, _nan, g
+
+
+def make(th, pen):
+    def fn(F, t):
+        s, ok = prod(F, t)
+        if not ok:
+            return s, ok
+        r = g(F, "ret20", t)
+        if not _nan(r) and r < th:
+            s -= pen
+        return float(np.clip(s, 0, 100)), True
+    return fn
+
+
+def evaluate(fn, label, base=None):
+    rows = rows_for(fn)
+    by_date = defaultdict(list)
+    for s, d, r, e, unb in rows:
+        by_date[d].append((s, r, e, unb))
+    alldates = sorted(by_date)
+    h1 = set(alldates[:len(alldates) // 2])
+
+    def dexc(lo=None, hi=None):
+        per, a, b, oos = [], [], [], []
+        for d, lst in by_date.items():
+            sel = [x[2] for x in lst if not x[3] and
+                   (lo is None or x[0] >= lo) and (hi is None or x[0] < hi)]
+            if len(sel) < 3:
+                continue
+            m = float(np.nanmean(sel))
+            if np.isfinite(m):
+                per.append(m)
+                (a if d in h1 else b).append(m)
+                if d >= CUTOFF:
+                    oos.append(m)
+        if len(per) < 20:
+            return None
+        return np.mean(per), np.mean(a), np.mean(b), (np.mean(oos) if oos else np.nan)
+
+    tot = sum(len(l) for l in by_date.values())
+    nb = sum(1 for l in by_date.values() for x in l if x[0] >= 70)
+    buys = [(d, x[1]) for d, lst in by_date.items() for x in lst if x[0] >= 70 and not x[3]]
+    v = np.array([r for _, r in buys]) if len(buys) > 500 else np.array([np.nan])
+    vo = np.array([r for d, r in buys if d >= CUTOFF])
+    if vo.size < 200:
+        vo = np.array([np.nan])
+    r70, r74, rs = dexc(70), dexc(74), dexc(None, 42)
+    if not r70:
+        print(f"{label:22s} too few")
+        return
+    print(f"{label:22s} >=70 {r70[0]*100:+5.2f}%(h1 {r70[1]*100:+5.2f} h2 {r70[2]*100:+5.2f} "
+          f"oos {r70[3]*100:+5.2f}) | >=74 {('%+.2f%%'%(r74[0]*100)) if r74 else '   n/a '} "
+          f"| 减仓<=42 {rs[0]*100:+5.2f}% | p05={np.percentile(v,5)*100:+5.1f}% "
+          f">10L={(v<-0.10).mean()*100:4.1f}% | oos p05={np.percentile(vo,5)*100:+5.1f}% "
+          f">10L={(vo<-0.10).mean()*100:4.1f}% | buy {nb/tot*100:4.1f}%d")
+
+
+evaluate(prod, "prod")
+for th in (0.08, 0.12, 0.16):
+    for pen in (6, 10, 16):
+        evaluate(make(th, pen), f"stale<{int(th*100)}% -{pen}")

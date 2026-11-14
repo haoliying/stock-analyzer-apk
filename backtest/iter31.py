@@ -1,1 +1,194 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJpdGVyMzEg4oCUIHY0LjIuMCDlrprnqL/op4TliJnnmoTmnIDnu4jkvZPmo4DooajvvIjov5nkuIDmnaHlsLHmmK8gS290bGluIOimgeWunueOsOeahO+8ieOAggoK6KeE5YiZ77yI5LiOIEtvdGxpbiBzZWxlY3REYWlseUNhbmRpZGF0ZXMg5LiA5LiA5a+55bqU77yM5LiN55WZ5Lu75L2V5Y+j5b6E5beu77yJ77yaCiAgMS4g5b2T5pel5omA5pyJIkvnur/otrPlpJ/jgIHog73nrpflh7rliIbmlbAi55qE6IKh56Wo5oyJ5YiG5pWw5LuO6auY5Yiw5L2O5o6S5bqP77yM6K6wIG4g5Y+q77ybCiAgMi4g5YiG5pWj5rGgID0g5YmNIDUwJe+8iHRha2UgPSBjZWlsKDAuNTAqbinvvInvvIzkuZ/lsLHmmK8i5YiG5pWw5Zyo5b2T5pel5Lit5L2N5pWw5Lul5LiKIu+8jCoq5LiN6K6+57ud5a+55YiG5pWw6Zeo5qebKirvvJsKICAzLiDku47msaDph4zmjInliIbkvY3nrYnot53mir0gMjAg5Y+q77yacG9vbFtpbnQodCoocS0xKS8yMCldIGZvciB0IGluIDAuLjE577yI5Y676YeN77yJ77ybCiAgNC4g5L+h5Y+35pel5pS255uY5Yaz5a6aIOKGkiDmrKHml6XlvIDnm5jkubDlhaUg4oaSIOetieadg+aMgea7oSAyMCDkuKrkuqTmmJPml6Ug4oaSIOaUtuebmOWNluWHuu+8jOWNlei+ueaIkOacrCAwLjEyJe+8mwogIDUuIOm7mOiupOS4jeWBmuacuuaisOatouaNn++8iOatouaNn+S7t+eFp+aXp+aYvuekuu+8m+atouaNn+eahOS7o+S7t+ingeesrCA0IOiKgu+8ieOAggoK5a6J5oWw5YmC77yI56ysIDIg6IqC77yJ77ya5YWo5biC5Zy66ZqP5py6IDIwIOWPqiAvIOWQjiA2MCUg6ZqP5py6IDIwIOWPqiAvIOaxoOWGheWIhuaVsOacgOmrmOeahCAyMCDlj6rjgIIK5YiG5bGC5LiO5Y2V5rGg5oq95qC35piv56Gu5a6a5oCn55qE77yb5Y+q5pyJIG1vZGU9InJhbmQiIOeUqCBzZWVk77yM5aSaIHNlZWQg5pe26YCQ5pel5Y+W5Z2H5YC844CCCiIiIgppbXBvcnQgb3MKaW1wb3J0IHN5cwpmcm9tIG1hdGggaW1wb3J0IGNlaWwKCmltcG9ydCBudW1weSBhcyBucAoKSEVSRSA9IG9zLnBhdGguZGlybmFtZShvcy5wYXRoLmFic3BhdGgoX19maWxlX18pKQpzeXMucGF0aC5pbnNlcnQoMCwgSEVSRSkKaW1wb3J0IGl0ZXIyMyBhcyBIMjMgICMgbm9xYTogRTQwMgppbXBvcnQgaXRlcjI1IGFzIFEgICMgbm9xYTogRTQwMgppbXBvcnQgaXRlcjI3IGFzIFcgICMgbm9xYTogRTQwMgppbXBvcnQgcG9ydHNpbSBhcyBQICAjIG5vcWE6IEU0MDIKZnJvbSBtb2RlbCBpbXBvcnQgQ1VUT0ZGLCBEQVRFUyAgIyBub3FhOiBFNDAyCgpORCwgSFAgPSBQLk5ELCAyMApTID0gUS5TMCAgICAgICAgICAgICAgICAgICAgICAgIyDnjrDooYzkuIrnur/vvIh2NC4xLjDvvInmiZPliIbnn6npmLUKVkFMSUQgPSBXLlZBTElEClIgPSBXLlIyMApCTSA9IFcuQk0KUkFOSyA9IG5wLmFyZ3NvcnQobnAud2hlcmUoVkFMSUQsIFMsIC1ucC5pbmYpLCBheGlzPTEpWzosIDo6LTFdCgojIOWumueov+WPguaVsO+8muaxoCA9IOW9k+aXpeWPr+ivhOWIhuiCoeelqOeahOWJjSA1MCXvvIg9IOWIhuaVsOWcqOS4reS9jeaVsOS7peS4iu+8ie+8jOWIhuWxguetiei3neWPliAyMCDlj6oKRklOQUxfRlEsIEZJTkFMX0sgPSAwLjUwLCAyMAoKCmRlZiBiYXNrZXQoaSwgZnE9RklOQUxfRlEsIEs9RklOQUxfSywgbW9kZT0ic3RyYXQiLCBzZWVkPTAsIHRhaWw9RmFsc2UsIGZjb3VudD1Ob25lKToKICAgICIiIuS/oeWPt+aXpSBpIOeahOevruWtkOS4i+agh+OAgnRhaWw9VHJ1ZSDml7bku44i5YiG5pWw5ZCOICgxLWZxKSDmrrUi6YeM6ZqP5py65oq977yI5a6J5oWw5YmC77yJ44CCCiAgICBmY291bnQg5LiN5Li6IE5vbmUg5pe25rGgID0g5Zu65a6a5Y+q5pWw77yI5Y+j5b6E5a+554Wn55So77yJ77yM5ZCm5YiZID0gY2VpbChmcSDDlyDlvZPml6Xlj6/or4TliIblj6rmlbAp44CCIiIiCiAgICByYW5rZWQgPSBSQU5LW2ldCiAgICByYW5rZWQgPSByYW5rZWRbVkFMSURbaSwgcmFua2VkXV0KICAgIG4gPSBsZW4ocmFua2VkKQogICAgaWYgbiA9PSAwOgogICAgICAgIHJldHVybiBucC5hcnJheShbXSwgaW50KQogICAgaWYgdGFpbDoKICAgICAgICBwb29sID0gcmFua2VkW2ludChyb3VuZChmcSAqIG4pKTpdCiAgICAgICAgaWYgbGVuKHBvb2wpIDwgSzoKICAgICAgICAgICAgcmV0dXJuIG5wLmFycmF5KFtdLCBpbnQpCiAgICAgICAgcmV0dXJuIG5wLnJhbmRvbS5kZWZhdWx0X3JuZyhzZWVkICogMTAwMDAzICsgaSkuY2hvaWNlKHBvb2wsIEssIHJlcGxhY2U9RmFsc2UpCiAgICB0YWtlID0gbiBpZiAoZnEgaXMgTm9uZSBvciBmcSA+PSAxLjApIGVsc2UgbWluKG4sIGNlaWwoZnEgKiBuKSkKICAgIGlmIGZjb3VudCBpcyBub3QgTm9uZToKICAgICAgICB0YWtlID0gbWluKG4sIGZjb3VudCkKICAgIHBvb2wgPSByYW5rZWRbOnRha2VdCiAgICBxID0gbGVuKHBvb2wpCiAgICBpZiBLIGlzIE5vbmUgb3IgcSA8PSBLOgogICAgICAgIHJldHVybiBwb29sCiAgICBpZiBtb2RlID09ICJ0b3AiOgogICAgICAgIHJldHVybiBwb29sWzpLXQogICAgaWYgbW9kZSA9PSAicmFuZCI6CiAgICAgICAgcmV0dXJuIG5wLnJhbmRvbS5kZWZhdWx0X3JuZyhzZWVkICogMTAwMDAzICsgaSkuY2hvaWNlKHBvb2wsIEssIHJlcGxhY2U9RmFsc2UpCiAgICByZXR1cm4gcG9vbFtucC5hcnJheShzb3J0ZWQoe2ludCh0ICogKHEgLSAxKSAvIEspIGZvciB0IGluIHJhbmdlKEspfSkpXQoKCmRlZiByb3dzKGZxPUZJTkFMX0ZRLCBLPUZJTkFMX0ssIG1vZGU9InN0cmF0Iiwgc2VlZHM9KDAsKSwgc3RvcD1Ob25lLCB0YWlsPUZhbHNlLCBmY291bnQ9Tm9uZSk6CiAgICAiIiLpgJDml6UgKOS/oeWPt+aXpSwg56+u5a2QIDIwIOaXpeaUtuebiiwg5Z+65YeGQiwg5Y+q5pWwKe+8m+WkmiBzZWVkIOaXtumAkOaXpeWPluWdh+WAvOOAgiIiIgogICAgcnIgPSBSIGlmIHN0b3AgaXMgTm9uZSBlbHNlIFEuSS5zdG9wX3JldChIUCwgc3RvcCwgVkFMSUQpCiAgICBvdXQgPSBbXQogICAgZm9yIGkgaW4gcmFuZ2UoTkQgLSAxIC0gSFApOgogICAgICAgIHZhbHMsIG5zZWwgPSBbXSwgMAogICAgICAgIGZvciBzZCBpbiBzZWVkczoKICAgICAgICAgICAgc2VsID0gYmFza2V0KGksIGZxLCBLLCBtb2RlLCBzZCwgdGFpbCwgZmNvdW50KQogICAgICAgICAgICBpZiBzZWwuc2l6ZSA9PSAwOgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgdiA9IHJyW2ksIHNlbF0KICAgICAgICAgICAgdiA9IHZbbnAuaXNmaW5pdGUodildCiAgICAgICAgICAgIGlmIHYuc2l6ZToKICAgICAgICAgICAgICAgIHZhbHMuYXBwZW5kKGZsb2F0KG5wLm1lYW4odikpKQogICAgICAgICAgICAgICAgbnNlbCA9IGludCh2LnNpemUpCiAgICAgICAgb3V0LmFwcGVuZCgoREFURVNbaV0sIGZsb2F0KG5wLm1lYW4odmFscykpIGlmIHZhbHMgZWxzZSAwLjAsIGZsb2F0KEJNW2ldKSwgbnNlbCkpCiAgICByZXR1cm4gb3V0CgoKZGVmIHN0YXQobGFiZWwsIHIsIHF1aWV0PUZhbHNlKToKICAgIGUgPSBucC5hcnJheShbeFsxXSAtIHhbMl0gZm9yIHggaW4gcl0pCiAgICBkcyA9IG5wLmFycmF5KFt4WzBdIGZvciB4IGluIHJdKQogICAgbyA9IGRzID49IENVVE9GRgogICAgcGggPSBXLnBoYXNlcyhyKQogICAgY2EgPSBucC5hcnJheShbeFsiYSJdIGZvciB4IGluIHBoXSk7IGNiID0gbnAuYXJyYXkoW3hbImIiXSBmb3IgeCBpbiBwaF0pCiAgICBiYSA9IG5wLmFycmF5KFtXLmJlbmNoX2EoeFsibG8iXSwgeFsiaGkiXSkgZm9yIHggaW4gcGhdKQogICAgY2QgPSBucC5hcnJheShbeFsiZGQiXSBmb3IgeCBpbiBwaF0pCiAgICBmbGF0ID0gbnAuYXJyYXkoW2Zsb2F0KHYpIGZvciB4IGluIHBoIGZvciB2IGluIHhbInMiXV0pCiAgICBpZiBub3QgcXVpZXQ6CiAgICAgICAgcHJpbnQoZiIgIHtsYWJlbDo8MzB9IOaXpeWdh3tucC5tZWFuKFt4WzNdIGZvciB4IGluIHJdKTo2LjFmfeWPqiDotoXpop17ZS5tZWFuKCkqMTAwOis2LjNmfSUgIgogICAgICAgICAgICAgIGYidF9IQUMge0gyMy5oYWNfdChlLCBIUCk6KzUuMmZ9IHAge0gyMy5ibG9ja19wKGUsIEhQKTouM2Z9IOagt+acrOWklntlW29dLm1lYW4oKSoxMDA6KzYuM2Z9JSB8ICIKICAgICAgICAgICAgICBmIue0r+iuoXtjYS5tZWFuKCkqMTAwOis2LjFmfSXCsXtjYS5zdGQoKSoxMDA6NC4xZn0lIOi2hUJ7KGNhLWNiKS5tZWFuKCkqMTAwOis2LjFmfXBwIgogICAgICAgICAgICAgIGYiKHsoY2EgPiBjYikuc3VtKCl9L3tsZW4oY2EpfeebuOS9jSkg6LaFQXsoY2EtYmEpLm1lYW4oKSoxMDA6KzYuMWZ9cHAiCiAgICAgICAgICAgICAgZiIoeyhjYSA+IGJhKS5zdW0oKX0ve2xlbihjYSl9KSDlm57mkqR7Y2QubWVhbigpKjEwMDo1LjFmfSUgIgogICAgICAgICAgICAgIGYi5Y2V5pyf5Lit5L2Ne25wLm1lZGlhbihmbGF0KSoxMDA6KzUuMmZ9JSDkuo8+MTAleyhmbGF0IDwgLTAuMTApLm1lYW4oKSoxMDA6My4xZn0lICIKICAgICAgICAgICAgICBmIuacgOW3ruWNleacn3tmbGF0Lm1pbigpKjEwMDorNS4xZn0lIikKICAgIHJldHVybiBkaWN0KGU9ZSwgZHM9ZHMsIGNhPWNhLCBjYj1jYiwgYmE9YmEsIGNkPWNkLCBmbGF0PWZsYXQpCgoKZGVmIG1haW4oKToKICAgIGJoID0gUC5iZW5jaF9ob2xkKDAsIE5EKQogICAgY2IgPSBucC5hcnJheShbeFsiYiJdIGZvciB4IGluIFcucGhhc2VzKFsoREFURVNbaV0sIEJNW2ldLCAwLjAsIDEpIGZvciBpIGluIHJhbmdlKE5EIC0gSFAgLSAxKV0pXSkKICAgIHByaW50KGYiXG7ln7rlh4ZBIOWkp+ebmMK35Lmw5YWl5oyB5pyJIHtiaCoxMDA6Ky4xZn0lICAg5Z+65YeGQiDlpKfnm5jCt+avjzIw5pel5YaN5bmz6KGhIHtjYi5tZWFuKCkqMTAwOisuMWZ9JSIKICAgICAgICAgIGYiwrF7Y2Iuc3RkKCkqMTAwOi4xZn0lIFt7Y2IubWluKCkqMTAwOisuMWZ9JSwge2NiLm1heCgpKjEwMDorLjFmfSVdIikKCiAgICBwcmludCgiXG49PT09IDEuIOWumueov+inhOWImSArIOWNleWPguaVsOaVj+aEn+aApyA9PT09IikKICAgIG1haW5fcnVsZSA9IHN0YXQoZiLlrprnqL8g5YmNe0ZJTkFMX0ZRKjEwMDouMGZ9JSDmsaAgwrcg5YiG5bGCe0ZJTkFMX0t9IMK3IOS4jeatouaNnyIsCiAgICAgICAgICAgICAgICAgIHJvd3MoRklOQUxfRlEsIEZJTkFMX0ssICJzdHJhdCIpKQogICAgcHJpbnQoIiAg5rGg5a6977yI5Y+q5pS5IGZx77yJ77yaIikKICAgIGZvciBmcSBpbiAoMC4zMCwgMC4zNSwgMC40MCwgMC40NSwgMC41MCwgMC42MCk6CiAgICAgICAgc3RhdChmIiAgICDliY17ZnEqMTAwOi4wZn0lIOaxoCDCtyDliIblsYJ7RklOQUxfS30iLCByb3dzKGZxLCBGSU5BTF9LLCAic3RyYXQiKSkKICAgIHByaW50KCIgIOWPquaVsO+8iOWPquaUuSBL77yJ77yaIikKICAgIGZvciBLIGluICgxMCwgMTUsIDIwLCAzMCwgNTApOgogICAgICAgIHN0YXQoZiIgICAg5YmNe0ZJTkFMX0ZRKjEwMDouMGZ9JSDmsaAgwrcg5YiG5bGCe0t9Iiwgcm93cyhGSU5BTF9GUSwgSywgInN0cmF0IikpCgogICAgcHJpbnQoZiJcbj09PT0gMi4g5a6J5oWw5YmC77yI5ZCM6KeE5qihIHtGSU5BTF9LfSDlj6rvvIk9PT09IikKICAgIHN0YXQoZiLmsaDlhoXliIbmlbDmnIDpq5jnmoR7RklOQUxfS33lj6rvvIjmjpLooYzmppzvvIkiLCByb3dzKEZJTkFMX0ZRLCBGSU5BTF9LLCAidG9wIikpCiAgICBzdGF0KGYi6ZqP5py6e0ZJTkFMX0t95Y+q77yI5YWo5biC5Zy677yMMjDnp43lrZDlnYflgLzvvIkiLAogICAgICAgICByb3dzKDEuMDAsIEZJTkFMX0ssICJyYW5kIiwgc2VlZHM9dHVwbGUocmFuZ2UoMjApKSkpCiAgICBzdGF0KGYi6ZqP5py6e0ZJTkFMX0t95Y+q77yI5ZCOeygxLUZJTkFMX0ZRKSoxMDA6LjBmfSXvvIwyMOenjeWtkOWdh+WAvO+8iSIsCiAgICAgICAgIHJvd3MoRklOQUxfRlEsIEZJTkFMX0ssICJyYW5kIiwgc2VlZHM9dHVwbGUocmFuZ2UoMjApKSwgdGFpbD1UcnVlKSkKCiAgICBwcmludCgiXG49PT09IDMuIOeOsOihjCB2NC4xLjAg6KeE5YiZ5ZCM6KGo5a+554WnID09PT0iKQogICAgc3RhdCgi546w6KGMIOKJpTY4IOWFqOmDqOetieadgyIsIFEucm93c19ydWxlKHRoPTY4LjAsIGZxPU5vbmUsIEs9Tm9uZSwgSF89SFAsIG1pbl9wb29sPTEpKQogICAgc3RhdCgi546w6KGMIOKJpTY4IOaKvTEw77yI5pen5bGV56S66KeE5qih77yJIiwgUS5yb3dzX3J1bGUodGg9NjguMCwgZnE9Tm9uZSwgSz0xMCwgSF89SFAsIG1pbl9wb29sPTEpKQogICAgYmFzZSA9IHt4WzBdOiB4WzFdIC0geFsyXSBmb3IgeCBpbiBRLnJvd3NfcnVsZSh0aD02OC4wLCBmcT1Ob25lLCBLPU5vbmUsIEhfPUhQLCBtaW5fcG9vbD0xKX0KICAgIHByaW50KCIgIOmFjeWvueajgOmqjO+8iOWAmemAiSDiiJIg546w6KGM77yM6YCQ5pel6LaF6aKd5beu77yb5ZCM5LiA5om55L+h5Y+35pel77yJ77yaIikKICAgIGZvciBsYWIsIHJyIGluICgoZiLlrprnqL8g5YmNe0ZJTkFMX0ZRKjEwMDouMGZ9JSDliIblsYJ7RklOQUxfS30iLCByb3dzKEZJTkFMX0ZRLCBGSU5BTF9LLCAic3RyYXQiKSksCiAgICAgICAgICAgICAgICAgICAgKCLliY01MCUg5YiG5bGCMzAiLCByb3dzKDAuNTAsIDMwLCAic3RyYXQiKSksCiAgICAgICAgICAgICAgICAgICAgKCLliY00MCUg5YiG5bGCMjDvvIjkuIrkuIDniYjlgJnpgInvvIkiLCByb3dzKDAuNDAsIDIwLCAic3RyYXQiKSksCiAgICAgICAgICAgICAgICAgICAgKCLliY01MCUg5rGg5ruh5rGg562J5p2DIiwgcm93cygwLjUwLCBOb25lLCAic3RyYXQiKSksCiAgICAgICAgICAgICAgICAgICAgKCLlrprnqL8gKyAyQVRSIOatouaNnyIsIHJvd3MoRklOQUxfRlEsIEZJTkFMX0ssICJzdHJhdCIsIHN0b3A9Mi4wKSksCiAgICAgICAgICAgICAgICAgICAgKCLlrprnqL8gKyAzQVRSIOatouaNnyIsIHJvd3MoRklOQUxfRlEsIEZJTkFMX0ssICJzdHJhdCIsIHN0b3A9My4wKSkpOgogICAgICAgIGN1ciA9IHt4WzBdOiB4WzFdIC0geFsyXSBmb3IgeCBpbiBycn0KICAgICAgICBjb21tb24gPSBbYyBmb3IgYyBpbiBiYXNlIGlmIGMgaW4gY3VyXQogICAgICAgIGQgPSBucC5hcnJheShbY3VyW2NdIC0gYmFzZVtjXSBmb3IgYyBpbiBjb21tb25dKQogICAgICAgIHByaW50KGYiICAgIHtsYWI6PDE4fSDml6XlnYflt64ge2QubWVhbigpKjEwMDorNi4zZn0lICB0X0hBQyB7SDIzLmhhY190KGQsIEhQKTorNS4yZn0gICIKICAgICAgICAgICAgICBmIuWdl+iHquWKqXAge0gyMy5ibG9ja19wKGQsIEhQKTouM2Z9ICDmm7Tlpb3lpKnmlbAgeyhkID4gMCkubWVhbigpKjEwMDozLjBmfSUiKQoKICAgIHByaW50KCJcbj09PT0gNC4g5q2i5o2f55qE5Luj5Lu377yI5a6a56i/6KeE5YiZ77yJPT09PSIpCiAgICBzdGF0KCLlrprnqL8gwrcgMsOXQVRSIOatouaNnyIsIHJvd3MoRklOQUxfRlEsIEZJTkFMX0ssICJzdHJhdCIsIHN0b3A9Mi4wKSkKICAgIHN0YXQoIuWumueovyDCtyAzw5dBVFIg5q2i5o2fIiwgcm93cyhGSU5BTF9GUSwgRklOQUxfSywgInN0cmF0Iiwgc3RvcD0zLjApKQoKICAgIHByaW50KGYiXG49PT09IDRiLiDmsaDlrr3lj6PlvoTlr7nnhafvvJrnm7jlr7nliIbkvY0gdnMg5Zu65a6a5Y+q5pWw77yI5ZCMIEs9e0ZJTkFMX0t977yJPT09PSIpCiAgICBudmFsaWQgPSBucC5hcnJheShbaW50KFZBTElEW2ldLnN1bSgpKSBmb3IgaSBpbiByYW5nZShORCAtIDEgLSBIUCldKQogICAgcHJpbnQoZiIgIOW9k+aXpeWPr+ivhOWIhuWPquaVsO+8muS4reS9jSB7bnAubWVkaWFuKG52YWxpZCk6LjBmfSAgcDEwIHtucC5wZXJjZW50aWxlKG52YWxpZCwxMCk6LjBmfSAgIgogICAgICAgICAgZiJwOTAge25wLnBlcmNlbnRpbGUobnZhbGlkLDkwKTouMGZ9IikKICAgIHN0YXQoZiIgICAg5YmNe0ZJTkFMX0ZRKjEwMDouMGZ9Je+8iOebuOWvue+8jOWumueov++8iSIsIHJvd3MoRklOQUxfRlEsIEZJTkFMX0ssICJzdHJhdCIpKQogICAgZm9yIGMgaW4gKDExNSwgMTQwLCAxNTAsIDIwMCk6CiAgICAgICAgc3RhdChmIiAgICDlm7rlrpp7Y33lj6rmsaAiLCByb3dzKEZJTkFMX0ZRLCBGSU5BTF9LLCAic3RyYXQiLCBmY291bnQ9YykpCiAgICBzdGF0KCIgICAg5YmNNDAl77yI55u45a+577yM5LiK5LiA54mI5YCZ6YCJ77yJIiwgcm93cygwLjQwLCBGSU5BTF9LLCAic3RyYXQiKSkKCiAgICBwcmludCgiXG49PT09IDUuIOWumueov+eahOWIhuW5tCAvIOWIhuaciCA9PT09IikKICAgIGUsIGRzID0gbWFpbl9ydWxlWyJlIl0sIG1haW5fcnVsZVsiZHMiXQogICAgZm9yIHkgaW4gc29ydGVkKHtkWzo0XSBmb3IgZCBpbiBkc30pOgogICAgICAgIG0gPSBucC5hcnJheShbZC5zdGFydHN3aXRoKHkpIGZvciBkIGluIGRzXSkKICAgICAgICBpZiBtLnN1bSgpIDwgMjA6CiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgcHJpbnQoZiIgIHt5fe+8mntpbnQobS5zdW0oKSk6M2R9IOS4quS/oeWPt+aXpSAg5pel5Z2H6LaF6aKdIHtlW21dLm1lYW4oKSoxMDA6Ky4zZn0lICAiCiAgICAgICAgICAgICAgZiJ0X0hBQyB7SDIzLmhhY190KGVbbV0sIEhQKTorLjJmfSAg6LeR6LWi5aSp5pWwIHsoZVttXSA+IDApLm1lYW4oKSoxMDA6My4wZn0lICAiCiAgICAgICAgICAgICAgZiLljZXnrJTkuK3kvY0ge25wLm1lZGlhbihlW21dKSoxMDA6Ky4yZn0lIikKICAgIG1vID0ge30KICAgIGZvciB4IGluIHJvd3MoRklOQUxfRlEsIEZJTkFMX0ssICJzdHJhdCIpOgogICAgICAgIG1vLnNldGRlZmF1bHQoeFswXVs6N10sIFtdKS5hcHBlbmQoeFsxXSAtIHhbMl0pCiAgICB2ID0gbnAuYXJyYXkoW25wLm1lYW4obW9ba10pIGZvciBrIGluIHNvcnRlZChtbyldKTsga3MgPSBzb3J0ZWQobW8pCiAgICBwcmludChmIiAg5YiG5pyIIHtsZW4oa3MpfSDkuKrvvJrmraPotoXpop0geyh2ID4gMCkubWVhbigpKjEwMDouMGZ9JSAg5Lit5L2NIHtucC5tZWRpYW4odikqMTAwOisuMmZ9JSAgIgogICAgICAgICAgZiLmnIDlt64ge3YubWluKCkqMTAwOisuMmZ9Je+8iHtrc1tpbnQobnAuYXJnbWluKHYpKV1977yJICDmnIDlpb0ge3YubWF4KCkqMTAwOisuMmZ9Je+8iHtrc1tpbnQobnAuYXJnbWF4KHYpKV1977yJIikKCiAgICBwcmludChmIlxuPT09PSA2LiDnnJ/lrp7nlKjmiLfnmoTliIbluIPvvIh7RklOQUxfS30g5Y+qIMK3IDIwIOenjeaKveazlSDDlyAyMCDkuKrmjaLku5Pnm7jkvY0gPSA0MDAg5p2h5puy57q/77yJPT09PSIpCiAgICB2cywgY3MsIGRkcywgd2EgPSBbXSwgW10sIFtdLCBbXQogICAgZm9yIHNkIGluIHJhbmdlKDIwKToKICAgICAgICBzdCA9IHN0YXQoIiIsIHJvd3MoRklOQUxfRlEsIEZJTkFMX0ssICJyYW5kIiwgc2VlZHM9KHNkLCkpLCBxdWlldD1UcnVlKQogICAgICAgIHZzLmFwcGVuZChzdFsiY2EiXSAtIHN0WyJjYiJdKTsgY3MuYXBwZW5kKHN0WyJjYSJdKTsgZGRzLmFwcGVuZChzdFsiY2QiXSkKICAgICAgICB3YS5hcHBlbmQoc3RbImNhIl0gLSBzdFsiYmEiXSkKICAgIHZzID0gbnAuY29uY2F0ZW5hdGUodnMpOyBjcyA9IG5wLmNvbmNhdGVuYXRlKGNzKTsgZGRzID0gbnAuY29uY2F0ZW5hdGUoZGRzKTsgd2EgPSBucC5jb25jYXRlbmF0ZSh3YSkKICAgIHByaW50KGYiICDotoXlkIznvZHmoLzlpKfnm5jvvJrkuK3kvY0ge25wLm1lZGlhbih2cykqMTAwOisuMWZ9cHAgIHAxMCB7bnAucGVyY2VudGlsZSh2cywxMCkqMTAwOisuMWZ9cHAgICIKICAgICAgICAgIGYicDkwIHtucC5wZXJjZW50aWxlKHZzLDkwKSoxMDA6Ky4xZn1wcCAg6LeR6LWi5qaC546HIHsodnMgPiAwKS5tZWFuKCkqMTAwOi4wZn0lIikKICAgIHByaW50KGYiICDotoXkubDlhaXmjIHmnInlpKfnm5jvvJrkuK3kvY0ge25wLm1lZGlhbih3YSkqMTAwOisuMWZ9cHAgIOi3kei1ouamgueOhyB7KHdhID4gMCkubWVhbigpKjEwMDouMGZ9JSIpCiAgICBwcmludChmIiAg57Sv6K6h5pS255uK77ya5Lit5L2NIHtucC5tZWRpYW4oY3MpKjEwMDorLjFmfSUgIHAxMCB7bnAucGVyY2VudGlsZShjcywxMCkqMTAwOisuMWZ9JSAgIgogICAgICAgICAgZiJwOTAge25wLnBlcmNlbnRpbGUoY3MsOTApKjEwMDorLjFmfSUgIOS6j+mSseamgueOhyB7KGNzIDwgMCkubWVhbigpKjEwMDouMGZ9JSIpCiAgICBwcmludChmIiAg5pyA5aSn5Zue5pKk77ya5Lit5L2NIHtucC5tZWRpYW4oZGRzKSoxMDA6LjFmfSUgIHA5MO+8iOWNs+acgOW3riAxMCXvvIl7bnAucGVyY2VudGlsZShkZHMsMTApKjEwMDouMWZ9JSAgIgogICAgICAgICAgZiLmnIDlt64ge2Rkcy5taW4oKSoxMDA6LjFmfSUiKQogICAgcHJpbnQoZiIgIOWNleacn++8iDIwIOS4quS6pOaYk+aXpe+8ie+8muiDnOeOhyB7KG1haW5fcnVsZVsnZmxhdCddID4gMCkubWVhbigpKjEwMDouMGZ9JSAgIgogICAgICAgICAgZiLkuK3kvY0ge25wLm1lZGlhbihtYWluX3J1bGVbJ2ZsYXQnXSkqMTAwOisuMmZ9JSAg5LqPPjEwJSB7KG1haW5fcnVsZVsnZmxhdCddIDwgLTAuMTApLm1lYW4oKSoxMDA6LjFmfSUgICIKICAgICAgICAgIGYi5pyA5beuIHttYWluX3J1bGVbJ2ZsYXQnXS5taW4oKSoxMDA6Ky4xZn0lIikKCgppZiBfX25hbWVfXyA9PSAiX19tYWluX18iOgogICAgbWFpbigpCg==
+#!/usr/bin/env python3
+"""iter31 — v4.2.0 定稿规则的最终体检表（这一条就是 Kotlin 要实现的）。
+
+规则（与 Kotlin selectDailyCandidates 一一对应，不留任何口径差）：
+  1. 当日所有"K线足够、能算出分数"的股票按分数从高到低排序，记 n 只；
+  2. 分散池 = 前 50%（take = ceil(0.50*n)），也就是"分数在当日中位数以上"，**不设绝对分数门槛**；
+  3. 从池里按分位等距抽 20 只：pool[int(t*(q-1)/20)] for t in 0..19（去重）；
+  4. 信号日收盘决定 → 次日开盘买入 → 等权持满 20 个交易日 → 收盘卖出，单边成本 0.12%；
+  5. 默认不做机械止损（止损价照旧显示；止损的代价见第 4 节）。
+
+安慰剂（第 2 节）：全市场随机 20 只 / 后 60% 随机 20 只 / 池内分数最高的 20 只。
+分层与单池抽样是确定性的；只有 mode="rand" 用 seed，多 seed 时逐日取均值。
+"""
+import os
+import sys
+from math import ceil
+
+import numpy as np
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+import iter23 as H23  # noqa: E402
+import iter25 as Q  # noqa: E402
+import iter27 as W  # noqa: E402
+import portsim as P  # noqa: E402
+from model import CUTOFF, DATES  # noqa: E402
+
+ND, HP = P.ND, 20
+S = Q.S0                       # 现行上线（v4.1.0）打分矩阵
+VALID = W.VALID
+R = W.R20
+BM = W.BM
+RANK = np.argsort(np.where(VALID, S, -np.inf), axis=1)[:, ::-1]
+
+# 定稿参数：池 = 当日可评分股票的前 50%（= 分数在中位数以上），分层等距取 20 只
+FINAL_FQ, FINAL_K = 0.50, 20
+
+
+def basket(i, fq=FINAL_FQ, K=FINAL_K, mode="strat", seed=0, tail=False, fcount=None):
+    """信号日 i 的篮子下标。tail=True 时从"分数后 (1-fq) 段"里随机抽（安慰剂）。
+    fcount 不为 None 时池 = 固定只数（口径对照用），否则 = ceil(fq × 当日可评分只数)。"""
+    ranked = RANK[i]
+    ranked = ranked[VALID[i, ranked]]
+    n = len(ranked)
+    if n == 0:
+        return np.array([], int)
+    if tail:
+        pool = ranked[int(round(fq * n)):]
+        if len(pool) < K:
+            return np.array([], int)
+        return np.random.default_rng(seed * 100003 + i).choice(pool, K, replace=False)
+    take = n if (fq is None or fq >= 1.0) else min(n, ceil(fq * n))
+    if fcount is not None:
+        take = min(n, fcount)
+    pool = ranked[:take]
+    q = len(pool)
+    if K is None or q <= K:
+        return pool
+    if mode == "top":
+        return pool[:K]
+    if mode == "rand":
+        return np.random.default_rng(seed * 100003 + i).choice(pool, K, replace=False)
+    return pool[np.array(sorted({int(t * (q - 1) / K) for t in range(K)}))]
+
+
+def rows(fq=FINAL_FQ, K=FINAL_K, mode="strat", seeds=(0,), stop=None, tail=False, fcount=None):
+    """逐日 (信号日, 篮子 20 日收益, 基准B, 只数)；多 seed 时逐日取均值。"""
+    rr = R if stop is None else Q.I.stop_ret(HP, stop, VALID)
+    out = []
+    for i in range(ND - 1 - HP):
+        vals, nsel = [], 0
+        for sd in seeds:
+            sel = basket(i, fq, K, mode, sd, tail, fcount)
+            if sel.size == 0:
+                continue
+            v = rr[i, sel]
+            v = v[np.isfinite(v)]
+            if v.size:
+                vals.append(float(np.mean(v)))
+                nsel = int(v.size)
+        out.append((DATES[i], float(np.mean(vals)) if vals else 0.0, float(BM[i]), nsel))
+    return out
+
+
+def stat(label, r, quiet=False):
+    e = np.array([x[1] - x[2] for x in r])
+    ds = np.array([x[0] for x in r])
+    o = ds >= CUTOFF
+    ph = W.phases(r)
+    ca = np.array([x["a"] for x in ph]); cb = np.array([x["b"] for x in ph])
+    ba = np.array([W.bench_a(x["lo"], x["hi"]) for x in ph])
+    cd = np.array([x["dd"] for x in ph])
+    flat = np.array([float(v) for x in ph for v in x["s"]])
+    if not quiet:
+        print(f"  {label:<30} 日均{np.mean([x[3] for x in r]):6.1f}只 超额{e.mean()*100:+6.3f}% "
+              f"t_HAC {H23.hac_t(e, HP):+5.2f} p {H23.block_p(e, HP):.3f} 样本外{e[o].mean()*100:+6.3f}% | "
+              f"累计{ca.mean()*100:+6.1f}%±{ca.std()*100:4.1f}% 超B{(ca-cb).mean()*100:+6.1f}pp"
+              f"({(ca > cb).sum()}/{len(ca)}相位) 超A{(ca-ba).mean()*100:+6.1f}pp"
+              f"({(ca > ba).sum()}/{len(ca)}) 回撤{cd.mean()*100:5.1f}% "
+              f"单期中位{np.median(flat)*100:+5.2f}% 亏>10%{(flat < -0.10).mean()*100:3.1f}% "
+              f"最差单期{flat.min()*100:+5.1f}%")
+    return dict(e=e, ds=ds, ca=ca, cb=cb, ba=ba, cd=cd, flat=flat)
+
+
+def main():
+    bh = P.bench_hold(0, ND)
+    cb = np.array([x["b"] for x in W.phases([(DATES[i], BM[i], 0.0, 1) for i in range(ND - HP - 1)])])
+    print(f"\n基准A 大盘·买入持有 {bh*100:+.1f}%   基准B 大盘·每20日再平衡 {cb.mean()*100:+.1f}%"
+          f"±{cb.std()*100:.1f}% [{cb.min()*100:+.1f}%, {cb.max()*100:+.1f}%]")
+
+    print("\n==== 1. 定稿规则 + 单参数敏感性 ====")
+    main_rule = stat(f"定稿 前{FINAL_FQ*100:.0f}% 池 · 分层{FINAL_K} · 不止损",
+                  rows(FINAL_FQ, FINAL_K, "strat"))
+    print("  池宽（只改 fq）：")
+    for fq in (0.30, 0.35, 0.40, 0.45, 0.50, 0.60):
+        stat(f"    前{fq*100:.0f}% 池 · 分层{FINAL_K}", rows(fq, FINAL_K, "strat"))
+    print("  只数（只改 K）：")
+    for K in (10, 15, 20, 30, 50):
+        stat(f"    前{FINAL_FQ*100:.0f}% 池 · 分层{K}", rows(FINAL_FQ, K, "strat"))
+
+    print(f"\n==== 2. 安慰剂（同规模 {FINAL_K} 只）====")
+    stat(f"池内分数最高的{FINAL_K}只（排行榜）", rows(FINAL_FQ, FINAL_K, "top"))
+    stat(f"随机{FINAL_K}只（全市场，20种子均值）",
+         rows(1.00, FINAL_K, "rand", seeds=tuple(range(20))))
+    stat(f"随机{FINAL_K}只（后{(1-FINAL_FQ)*100:.0f}%，20种子均值）",
+         rows(FINAL_FQ, FINAL_K, "rand", seeds=tuple(range(20)), tail=True))
+
+    print("\n==== 3. 现行 v4.1.0 规则同表对照 ====")
+    stat("现行 ≥68 全部等权", Q.rows_rule(th=68.0, fq=None, K=None, H_=HP, min_pool=1))
+    stat("现行 ≥68 抽10（旧展示规模）", Q.rows_rule(th=68.0, fq=None, K=10, H_=HP, min_pool=1))
+    base = {x[0]: x[1] - x[2] for x in Q.rows_rule(th=68.0, fq=None, K=None, H_=HP, min_pool=1)}
+    print("  配对检验（候选 − 现行，逐日超额差；同一批信号日）：")
+    for lab, rr in ((f"定稿 前{FINAL_FQ*100:.0f}% 分层{FINAL_K}", rows(FINAL_FQ, FINAL_K, "strat")),
+                    ("前50% 分层30", rows(0.50, 30, "strat")),
+                    ("前40% 分层20（上一版候选）", rows(0.40, 20, "strat")),
+                    ("前50% 池满池等权", rows(0.50, None, "strat")),
+                    ("定稿 + 2ATR 止损", rows(FINAL_FQ, FINAL_K, "strat", stop=2.0)),
+                    ("定稿 + 3ATR 止损", rows(FINAL_FQ, FINAL_K, "strat", stop=3.0))):
+        cur = {x[0]: x[1] - x[2] for x in rr}
+        common = [c for c in base if c in cur]
+        d = np.array([cur[c] - base[c] for c in common])
+        print(f"    {lab:<18} 日均差 {d.mean()*100:+6.3f}%  t_HAC {H23.hac_t(d, HP):+5.2f}  "
+              f"块自助p {H23.block_p(d, HP):.3f}  更好天数 {(d > 0).mean()*100:3.0f}%")
+
+    print("\n==== 4. 止损的代价（定稿规则）====")
+    stat("定稿 · 2×ATR 止损", rows(FINAL_FQ, FINAL_K, "strat", stop=2.0))
+    stat("定稿 · 3×ATR 止损", rows(FINAL_FQ, FINAL_K, "strat", stop=3.0))
+
+    print(f"\n==== 4b. 池宽口径对照：相对分位 vs 固定只数（同 K={FINAL_K}）====")
+    nvalid = np.array([int(VALID[i].sum()) for i in range(ND - 1 - HP)])
+    print(f"  当日可评分只数：中位 {np.median(nvalid):.0f}  p10 {np.percentile(nvalid,10):.0f}  "
+          f"p90 {np.percentile(nvalid,90):.0f}")
+    stat(f"    前{FINAL_FQ*100:.0f}%（相对，定稿）", rows(FINAL_FQ, FINAL_K, "strat"))
+    for c in (115, 140, 150, 200):
+        stat(f"    固定{c}只池", rows(FINAL_FQ, FINAL_K, "strat", fcount=c))
+    stat("    前40%（相对，上一版候选）", rows(0.40, FINAL_K, "strat"))
+
+    print("\n==== 5. 定稿的分年 / 分月 ====")
+    e, ds = main_rule["e"], main_rule["ds"]
+    for y in sorted({d[:4] for d in ds}):
+        m = np.array([d.startswith(y) for d in ds])
+        if m.sum() < 20:
+            continue
+        print(f"  {y}：{int(m.sum()):3d} 个信号日  日均超额 {e[m].mean()*100:+.3f}%  "
+              f"t_HAC {H23.hac_t(e[m], HP):+.2f}  跑赢天数 {(e[m] > 0).mean()*100:3.0f}%  "
+              f"单笔中位 {np.median(e[m])*100:+.2f}%")
+    mo = {}
+    for x in rows(FINAL_FQ, FINAL_K, "strat"):
+        mo.setdefault(x[0][:7], []).append(x[1] - x[2])
+    v = np.array([np.mean(mo[k]) for k in sorted(mo)]); ks = sorted(mo)
+    print(f"  分月 {len(ks)} 个：正超额 {(v > 0).mean()*100:.0f}%  中位 {np.median(v)*100:+.2f}%  "
+          f"最差 {v.min()*100:+.2f}%（{ks[int(np.argmin(v))]}）  最好 {v.max()*100:+.2f}%（{ks[int(np.argmax(v))]}）")
+
+    print(f"\n==== 6. 真实用户的分布（{FINAL_K} 只 · 20 种抽法 × 20 个换仓相位 = 400 条曲线）====")
+    vs, cs, dds, wa = [], [], [], []
+    for sd in range(20):
+        st = stat("", rows(FINAL_FQ, FINAL_K, "rand", seeds=(sd,)), quiet=True)
+        vs.append(st["ca"] - st["cb"]); cs.append(st["ca"]); dds.append(st["cd"])
+        wa.append(st["ca"] - st["ba"])
+    vs = np.concatenate(vs); cs = np.concatenate(cs); dds = np.concatenate(dds); wa = np.concatenate(wa)
+    print(f"  超同网格大盘：中位 {np.median(vs)*100:+.1f}pp  p10 {np.percentile(vs,10)*100:+.1f}pp  "
+          f"p90 {np.percentile(vs,90)*100:+.1f}pp  跑赢概率 {(vs > 0).mean()*100:.0f}%")
+    print(f"  超买入持有大盘：中位 {np.median(wa)*100:+.1f}pp  跑赢概率 {(wa > 0).mean()*100:.0f}%")
+    print(f"  累计收益：中位 {np.median(cs)*100:+.1f}%  p10 {np.percentile(cs,10)*100:+.1f}%  "
+          f"p90 {np.percentile(cs,90)*100:+.1f}%  亏钱概率 {(cs < 0).mean()*100:.0f}%")
+    print(f"  最大回撤：中位 {np.median(dds)*100:.1f}%  p90（即最差 10%）{np.percentile(dds,10)*100:.1f}%  "
+          f"最差 {dds.min()*100:.1f}%")
+    print(f"  单期（20 个交易日）：胜率 {(main_rule['flat'] > 0).mean()*100:.0f}%  "
+          f"中位 {np.median(main_rule['flat'])*100:+.2f}%  亏>10% {(main_rule['flat'] < -0.10).mean()*100:.1f}%  "
+          f"最差 {main_rule['flat'].min()*100:+.1f}%")
+
+
+if __name__ == "__main__":
+    main()

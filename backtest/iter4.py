@@ -1,1 +1,138 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJJdGVyYXRpb24gNDogbG9jayB0aGUgcHJvZHVjdGlvbiBjb25maWcgYW5kIG1lYXN1cmUgaXQgd2l0aCB0aGUgYXBwJ3MgUkVBTAphZHZpY2UgdGhyZXNob2xkcyAoU1RST05HX0JVWT49NzUsIEJVWT49NjAsIFNFTEw8PTI1Li4pLCBub3QgYXJiaXRyYXJ5IG9uZXMuCkFsc28gdGVzdHMgdGhlIHBvc2l0aW9uLWFkdmljZSBwYXRoLCB3aGljaCBpcyB3aGF0IHRoZSB1c2VyIGFjdHVhbGx5IGZvbGxvd3MuIiIiCmltcG9ydCBudW1weSBhcyBucApmcm9tIHN0cmF0ZWd5IGltcG9ydCBsb2FkX2FsbCwgYnVpbGRfYmFzZWxpbmUsIE1JTl9ISVNULCBDT1NULCBfbmFuLCBnLCB2X29sZApmcm9tIGl0ZXIyIGltcG9ydCBWX2NvcmUKCkggPSAyMApzdG9ja3MgPSBsb2FkX2FsbCgpCkRBVEVTID0gc29ydGVkKHtzdHIoZCkgZm9yIEYgaW4gc3RvY2tzIGZvciBkIGluIEZbImRhdGUiXVtNSU5fSElTVDpdfSkKQ1VUT0ZGID0gREFURVNbaW50KGxlbihEQVRFUykgKiAwLjcpXQpCQVNFTElORSA9IGJ1aWxkX2Jhc2VsaW5lKHN0b2NrcykKCiMgLS0tLSBwcm9kdWN0aW9uIG1vZGVsLCBleGFjdGx5IGFzIGl0IHdpbGwgYmUgd3JpdHRlbiBpbiBLb3RsaW4KQVRSX0tORUUsIEFUUl9QRU4gPSAwLjAyMCwgMTUwLjAKCgpkZWYgcHJvZChGLCB0KToKICAgIGMgPSBGWyJjbG9zZSJdW3RdCiAgICBtYTEwLCBtYTIwLCBtYTYwLCBzbCA9IGcoRiwgIm1hMTAiLCB0KSwgZyhGLCAibWEyMCIsIHQpLCBnKEYsICJtYTYwIiwgdCksIGcoRiwgIm1hMjBfc2xvcGUiLCB0KQogICAgaWYgX25hbihtYTIwKSBvciBfbmFuKG1hNjApIG9yIF9uYW4oc2wpIG9yIF9uYW4obWExMCk6CiAgICAgICAgcmV0dXJuIDAuMCwgRmFsc2UKICAgIHMgPSA1MC4wCiAgICB1cCA9IGMgPiBtYTIwID4gbWE2MAogICAgZG4gPSBjIDwgbWEyMCA8IG1hNjAKICAgIGlmIHVwOgogICAgICAgIHMgKz0gMjIgaWYgc2wgPiAwLjAxNSBlbHNlICgxNCBpZiBzbCA+IDAuMCBlbHNlIDYpCiAgICBlbGlmIGRuOgogICAgICAgIHMgLT0gMjIgaWYgc2wgPCAtMC4wMTUgZWxzZSAoMTQgaWYgc2wgPCAwLjAgZWxzZSA2KQogICAgZWxzZToKICAgICAgICBzIC09IDMKICAgIHMgKz0gNCBpZiBjID4gbWExMCA+IG1hMjAgZWxzZSAtMgogICAgYSA9IGcoRiwgImF0cl9wY3QiLCB0KQogICAgaWYgbm90IF9uYW4oYSk6CiAgICAgICAgcyAtPSBtYXgoMC4wLCBhIC0gQVRSX0tORUUpICogQVRSX1BFTgogICAgcmV0dXJuIGZsb2F0KG5wLmNsaXAocywgMCwgMTAwKSksIFRydWUKCgpkZWYgb2xkX2FkdmljZV9zY29yZShGLCB0KToKICAgIHNjLCBvayA9IHZfb2xkKEYsIHQpCiAgICByZXR1cm4gZmxvYXQoc2MpLCBib29sKG9rKQoKCmRlZiBnYXRoZXIoZm4sIG1hcHBpbmcpOgogICAgIiIibWFwcGluZyhzY29yZSktPnNpZGUgKDEgYWRkIC8gLTEgcmVkdWNlIC8gMCBub3RoaW5nKS4iIiIKICAgIHNpZ3MgPSBbXQogICAgZm9yIHNpLCBGIGluIGVudW1lcmF0ZShzdG9ja3MpOgogICAgICAgIG4gPSBpbnQoRlsibiJdKQogICAgICAgIGMsIG8gPSBGWyJjbG9zZSJdLCBGWyJvcGVuIl0KICAgICAgICBsaW0gPSAwLjA5NyBpZiBGWyJjb2RlIl0uc3RhcnRzd2l0aCgoIjMwIiwgIjY4IikpIGVsc2UgMC4wNDcKICAgICAgICBmb3IgdCBpbiByYW5nZShNSU5fSElTVCwgbiAtIDEpOgogICAgICAgICAgICBzYywgb2sgPSBmbihGLCB0KQogICAgICAgICAgICBpZiBub3Qgb2s6CiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICBzaWRlID0gbWFwcGluZyhzYykKICAgICAgICAgICAgaWYgc2lkZSA9PSAwOgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgZW8gPSBvW3QgKyAxXQogICAgICAgICAgICBpZiBlbyA8PSAwOgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgaWYgc2lkZSA+IDAgYW5kIEZbInBjdCJdW3RdID4gMCBhbmQgZW8gPj0gY1t0XSAqICgxICsgbGltKSAqIDAuOTk1OgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgayA9IHQgKyAxICsgSAogICAgICAgICAgICBpZiBrID49IG46CiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICBzaWdzLmFwcGVuZCgoc3RyKEZbImRhdGUiXVt0XSksIHNpZGUsIChjW2tdIC8gZW8gLSAxLjApIC0gQ09TVCkpCiAgICByZXR1cm4gc2lncwoKCk9MRF9NQVAgPSBsYW1iZGEgczogMSBpZiBzID49IDYwIGVsc2UgKC0xIGlmIHMgPD0gNDAgZWxzZSAwKSAgICAgICAgICAjIGFwcCdzIGdlbmVyYXRlUG9zaXRpb25BZHZpY2UKTkVXX01BUCA9IGxhbWJkYSBzOiAxIGlmIHMgPj0gNjggZWxzZSAoLTEgaWYgcyA8PSA0MiBlbHNlIDApICAgICAgICAgICMgcHJvZHVjdGlvbiBtYXBwaW5nCgoKZGVmIGRlc2MobGFiZWwsIHNpZ3MsIHNpZGUpOgogICAgc2VsID0gW3ggZm9yIHggaW4gc2lncyBpZiB4WzFdID09IHNpZGVdCiAgICBpZiBsZW4oc2VsKSA8IDUwOgogICAgICAgIHByaW50KGYiICAgIHtsYWJlbDozNHN9IChuPDUwKSIpCiAgICAgICAgcmV0dXJuCiAgICB2ID0gbnAuYXJyYXkoW3hbMl0gZm9yIHggaW4gc2VsXSkKICAgIGUgPSBucC5hcnJheShbeFsyXSAtIEJBU0VMSU5FLmdldCgoeFswXSwgSCksIG5wLm5hbikgZm9yIHggaW4gc2VsIGlmICh4WzBdLCBIKSBpbiBCQVNFTElORV0pCiAgICBvID0gbnAuYXJyYXkoW3hbMl0gZm9yIHggaW4gc2VsIGlmIHhbMF0gPj0gQ1VUT0ZGXSkKICAgIHdpbnMgPSAodiA+IDApLm1lYW4oKSAqIDEwMAogICAgcHJpbnQoZiIgICAge2xhYmVsOjM0c30gbj17bGVuKHNlbCk6PDZkfSBleGM9e2UubWVhbigpKjEwMDorNS4yZn0lIGF2Zz17di5tZWFuKCkqMTAwOis1LjJmfSUgIgogICAgICAgICAgZiJ3aW49e3dpbnM6NC4xZn0lIHAwNT17bnAucGVyY2VudGlsZSh2LDUpKjEwMDorNS4xZn0lID4xMCVsb3NzPXsodjwtMC4xMCkubWVhbigpKjEwMDo0LjFmfSUiCiAgICAgICAgICArIChmIiB8IE9PUyBhdmc9e28ubWVhbigpKjEwMDorNS4yZn0lIHdpbj17KG8+MCkubWVhbigpKjEwMDo0LjFmfSUgcDA1PXtucC5wZXJjZW50aWxlKG8sNSkqMTAwOis1LjFmfSUiIGlmIG8uc2l6ZSA+IDUwIGVsc2UgIiIpKQoKCm9sZCA9IGdhdGhlcihvbGRfYWR2aWNlX3Njb3JlLCBPTERfTUFQKQpuZXcgPSBnYXRoZXIocHJvZCwgTkVXX01BUCkKdG90X29sZCA9IHN1bSgxIGZvciBGIGluIHN0b2NrcyBmb3IgXyBpbiByYW5nZShNSU5fSElTVCwgaW50KEZbIm4iXSkgLSAxKSkKCnByaW50KCI9PT0gcG9zaXRpb24tYWR2aWNlIHBhdGgsIHVzaW5nIHRoZSBhcHAncyBvd24gc2NvcmUgYmFuZHMgPT09IikKcHJpbnQoZiIgIG9sZCBhcHA6IOWKoOS7kyB7c3VtKDEgZm9yIHggaW4gb2xkIGlmIHhbMV0gPiAwKS90b3Rfb2xkKjEwMDouMWZ9JSBvZiBzdG9jay1kYXlzLCAiCiAgICAgIGYi5YeP5LuTIHtzdW0oMSBmb3IgeCBpbiBvbGQgaWYgeFsxXSA8IDApL3RvdF9vbGQqMTAwOi4xZn0lICAtPiBzcGVha3MgIgogICAgICBmIntzdW0oMSBmb3IgeCBpbiBvbGQpL3RvdF9vbGQqMTAwOi4xZn0lIG9mIHRoZSB0aW1lIikKcHJpbnQoZiIgIG5ldyBhcHA6IOWKoOS7kyB7c3VtKDEgZm9yIHggaW4gbmV3IGlmIHhbMV0gPiAwKS90b3Rfb2xkKjEwMDouMWZ9JSBvZiBzdG9jay1kYXlzLCAiCiAgICAgIGYi5YeP5LuTIHtzdW0oMSBmb3IgeCBpbiBuZXcgaWYgeFsxXSA8IDApL3RvdF9vbGQqMTAwOi4xZn0lICAtPiBzcGVha3MgIgogICAgICBmIntzdW0oMSBmb3IgeCBpbiBuZXcpL3RvdF9vbGQqMTAwOi4xZn0lIG9mIHRoZSB0aW1lIikKcHJpbnQoIlxuICDliqDku5MvQlVZIGFkdmljZSDigJQgd2hhdCBoYXBwZW5lZCBuZXh0IDIwZDoiKQpkZXNjKCJPTEQgIHNjb3JlPj02MCAtPiDliqDku5MiLCBvbGQsIDEpCmRlc2MoIk5FVyAgc2NvcmU+PTY4IC0+IOWKoOS7kyIsIG5ldywgMSkKcHJpbnQoIiAg5YeP5LuTL1NFTEwgYWR2aWNlIOKAlCBzdG9jayBzaG91bGQgdGhlbiB1bmRlcnBlcmZvcm0gKGF2ZzwwIGlzIGNvcnJlY3QpOiIpCmRlc2MoIk9MRCAgc2NvcmU8PTQwIC0+IOWHj+S7kyIsIG9sZCwgLTEpCmRlc2MoIk5FVyAgc2NvcmU8PTQyIC0+IOWHj+S7kyIsIG5ldywgLTEpCgpwcmludCgiXG49PT0gbmV3IG1vZGVsLCBicm9rZW4gb3V0IGJ5IHNjb3JlIGJhbmQgKGlzIHRoZSBvcmRlcmluZyBtb25vdG9uZT8pID09PSIpCmZvciBsbywgaGksIGxhYiBpbiAoKDAsIDMwLCAiPD0yOSDlvLrng4jlh4/ku5MiKSwgKDMwLCA0MiwgIjMwLTQxIOW7uuiuruWHj+S7kyIpLCAoNDIsIDU4LCAiNDItNTcg6KeC5pybIiksCiAgICAgICAgICAgICAgICAgICAgKDU4LCA2OCwgIjU4LTY3IOi9u+S7ky/mjIHmnIkiKSwgKDY4LCA4MCwgIjY4LTc5IOW7uuiuruWKoOS7kyIpLCAoODAsIDEwMSwgIj49ODAg5by654OI5Yqg5LuTIikpOgogICAgc2VsID0gW3ggZm9yIHggaW4gZ2F0aGVyKHByb2QsIGxhbWJkYSBzLCBhPWxvLCBiPWhpOiAxIGlmIGEgPD0gcyA8IGIgZWxzZSAwKSBdCiAgICBpZiBsZW4oc2VsKSA8IDUwOgogICAgICAgIHByaW50KGYiICAgIHtsYWI6MTZzfSAobjw1MCkiKQogICAgICAgIGNvbnRpbnVlCiAgICB2ID0gbnAuYXJyYXkoW3hbMl0gZm9yIHggaW4gc2VsXSkKICAgIGUgPSBucC5hcnJheShbeFsyXSAtIEJBU0VMSU5FLmdldCgoeFswXSwgSCksIG5wLm5hbikgZm9yIHggaW4gc2VsIGlmICh4WzBdLCBIKSBpbiBCQVNFTElORV0pCiAgICBwcmludChmIiAgICB7bGFiOjE2c30gbj17bGVuKHNlbCk6PDZkfSBhdmc9e3YubWVhbigpKjEwMDorNS4yZn0lIGV4Yz17ZS5tZWFuKCkqMTAwOis1LjJmfSUgIgogICAgICAgICAgZiJ3aW49eyh2PjApLm1lYW4oKSoxMDA6NC4xZn0lIHAwNT17bnAucGVyY2VudGlsZSh2LDUpKjEwMDorNS4xZn0lIikKCnByaW50KCJcbj09PSBzYW1lIGJhbmQgdGVzdCBvbiB0aGUgT0xEIG1vZGVsIChkb2VzIElUUyBvcmRlcmluZyB3b3JrPykgPT09IikKZm9yIGxvLCBoaSwgbGFiIGluICgoMCwgMjUsICI8PTI0IiksICgyNSwgNDAsICIyNS0zOSIpLCAoNDAsIDYwLCAiNDAtNTkiKSwKICAgICAgICAgICAgICAgICAgICAoNjAsIDc1LCAiNjAtNzQiKSwgKDc1LCAxMDEsICI+PTc1IikpOgogICAgc2VsID0gZ2F0aGVyKG9sZF9hZHZpY2Vfc2NvcmUsIGxhbWJkYSBzLCBhPWxvLCBiPWhpOiAxIGlmIGEgPD0gcyA8IGIgZWxzZSAwKQogICAgaWYgbGVuKHNlbCkgPCA1MDoKICAgICAgICBwcmludChmIiAgICB7bGFiOjE2c30gKG48NTApIikKICAgICAgICBjb250aW51ZQogICAgdiA9IG5wLmFycmF5KFt4WzJdIGZvciB4IGluIHNlbF0pCiAgICBlID0gbnAuYXJyYXkoW3hbMl0gLSBCQVNFTElORS5nZXQoKHhbMF0sIEgpLCBucC5uYW4pIGZvciB4IGluIHNlbCBpZiAoeFswXSwgSCkgaW4gQkFTRUxJTkVdKQogICAgcHJpbnQoZiIgICAge2xhYjoxNnN9IG49e2xlbihzZWwpOjw2ZH0gYXZnPXt2Lm1lYW4oKSoxMDA6KzUuMmZ9JSBleGM9e2UubWVhbigpKjEwMDorNS4yZn0lICIKICAgICAgICAgIGYid2luPXsodj4wKS5tZWFuKCkqMTAwOjQuMWZ9JSBwMDU9e25wLnBlcmNlbnRpbGUodiw1KSoxMDA6KzUuMWZ9JSIpCgpwcmludCgiXG49PT0gcmVjZW50IHJlZ2ltZSBvbmx5ICg+PSAyMDI2LTA0LTIzKSwgb2xkIHZzIG5ldywg5Yqg5LuTID09PSIpCmZvciBsYWIsIHNpZ3MgaW4gKCgib2xkIiwgb2xkKSwgKCJuZXciLCBuZXcpKToKICAgIHNlbCA9IFt4IGZvciB4IGluIHNpZ3MgaWYgeFsxXSA+IDAgYW5kIHhbMF0gPj0gQ1VUT0ZGXQogICAgaWYgbGVuKHNlbCkgPiA1MDoKICAgICAgICB2ID0gbnAuYXJyYXkoW3hbMl0gZm9yIHggaW4gc2VsXSkKICAgICAgICBwcmludChmIiAge2xhYn06IG49e2xlbihzZWwpfSBhdmc9e3YubWVhbigpKjEwMDorNS4yZn0lIHdpbj17KHY+MCkubWVhbigpKjEwMDo0LjFmfSUgIgogICAgICAgICAgICAgIGYicDA1PXtucC5wZXJjZW50aWxlKHYsNSkqMTAwOis1LjFmfSUgcDI1PXtucC5wZXJjZW50aWxlKHYsMjUpKjEwMDorNS4xZn0lICIKICAgICAgICAgICAgICBmIj4xMCVsb3NzPXsodjwtMC4xMCkubWVhbigpKjEwMDo0LjFmfSUgd29yc3Q9e3YubWluKCkqMTAwOisuMWZ9JSIpCg==
+#!/usr/bin/env python3
+"""Iteration 4: lock the production config and measure it with the app's REAL
+advice thresholds (STRONG_BUY>=75, BUY>=60, SELL<=25..), not arbitrary ones.
+Also tests the position-advice path, which is what the user actually follows."""
+import numpy as np
+from strategy import load_all, build_baseline, MIN_HIST, COST, _nan, g, v_old
+from iter2 import V_core
+
+H = 20
+stocks = load_all()
+DATES = sorted({str(d) for F in stocks for d in F["date"][MIN_HIST:]})
+CUTOFF = DATES[int(len(DATES) * 0.7)]
+BASELINE = build_baseline(stocks)
+
+# ---- production model, exactly as it will be written in Kotlin
+ATR_KNEE, ATR_PEN = 0.020, 150.0
+
+
+def prod(F, t):
+    c = F["close"][t]
+    ma10, ma20, ma60, sl = g(F, "ma10", t), g(F, "ma20", t), g(F, "ma60", t), g(F, "ma20_slope", t)
+    if _nan(ma20) or _nan(ma60) or _nan(sl) or _nan(ma10):
+        return 0.0, False
+    s = 50.0
+    up = c > ma20 > ma60
+    dn = c < ma20 < ma60
+    if up:
+        s += 22 if sl > 0.015 else (14 if sl > 0.0 else 6)
+    elif dn:
+        s -= 22 if sl < -0.015 else (14 if sl < 0.0 else 6)
+    else:
+        s -= 3
+    s += 4 if c > ma10 > ma20 else -2
+    a = g(F, "atr_pct", t)
+    if not _nan(a):
+        s -= max(0.0, a - ATR_KNEE) * ATR_PEN
+    return float(np.clip(s, 0, 100)), True
+
+
+def old_advice_score(F, t):
+    sc, ok = v_old(F, t)
+    return float(sc), bool(ok)
+
+
+def gather(fn, mapping):
+    """mapping(score)->side (1 add / -1 reduce / 0 nothing)."""
+    sigs = []
+    for si, F in enumerate(stocks):
+        n = int(F["n"])
+        c, o = F["close"], F["open"]
+        lim = 0.097 if F["code"].startswith(("30", "68")) else 0.047
+        for t in range(MIN_HIST, n - 1):
+            sc, ok = fn(F, t)
+            if not ok:
+                continue
+            side = mapping(sc)
+            if side == 0:
+                continue
+            eo = o[t + 1]
+            if eo <= 0:
+                continue
+            if side > 0 and F["pct"][t] > 0 and eo >= c[t] * (1 + lim) * 0.995:
+                continue
+            k = t + 1 + H
+            if k >= n:
+                continue
+            sigs.append((str(F["date"][t]), side, (c[k] / eo - 1.0) - COST))
+    return sigs
+
+
+OLD_MAP = lambda s: 1 if s >= 60 else (-1 if s <= 40 else 0)          # app's generatePositionAdvice
+NEW_MAP = lambda s: 1 if s >= 68 else (-1 if s <= 42 else 0)          # production mapping
+
+
+def desc(label, sigs, side):
+    sel = [x for x in sigs if x[1] == side]
+    if len(sel) < 50:
+        print(f"    {label:34s} (n<50)")
+        return
+    v = np.array([x[2] for x in sel])
+    e = np.array([x[2] - BASELINE.get((x[0], H), np.nan) for x in sel if (x[0], H) in BASELINE])
+    o = np.array([x[2] for x in sel if x[0] >= CUTOFF])
+    wins = (v > 0).mean() * 100
+    print(f"    {label:34s} n={len(sel):<6d} exc={e.mean()*100:+5.2f}% avg={v.mean()*100:+5.2f}% "
+          f"win={wins:4.1f}% p05={np.percentile(v,5)*100:+5.1f}% >10%loss={(v<-0.10).mean()*100:4.1f}%"
+          + (f" | OOS avg={o.mean()*100:+5.2f}% win={(o>0).mean()*100:4.1f}% p05={np.percentile(o,5)*100:+5.1f}%" if o.size > 50 else ""))
+
+
+old = gather(old_advice_score, OLD_MAP)
+new = gather(prod, NEW_MAP)
+tot_old = sum(1 for F in stocks for _ in range(MIN_HIST, int(F["n"]) - 1))
+
+print("=== position-advice path, using the app's own score bands ===")
+print(f"  old app: 加仓 {sum(1 for x in old if x[1] > 0)/tot_old*100:.1f}% of stock-days, "
+      f"减仓 {sum(1 for x in old if x[1] < 0)/tot_old*100:.1f}%  -> speaks "
+      f"{sum(1 for x in old)/tot_old*100:.1f}% of the time")
+print(f"  new app: 加仓 {sum(1 for x in new if x[1] > 0)/tot_old*100:.1f}% of stock-days, "
+      f"减仓 {sum(1 for x in new if x[1] < 0)/tot_old*100:.1f}%  -> speaks "
+      f"{sum(1 for x in new)/tot_old*100:.1f}% of the time")
+print("\n  加仓/BUY advice — what happened next 20d:")
+desc("OLD  score>=60 -> 加仓", old, 1)
+desc("NEW  score>=68 -> 加仓", new, 1)
+print("  减仓/SELL advice — stock should then underperform (avg<0 is correct):")
+desc("OLD  score<=40 -> 减仓", old, -1)
+desc("NEW  score<=42 -> 减仓", new, -1)
+
+print("\n=== new model, broken out by score band (is the ordering monotone?) ===")
+for lo, hi, lab in ((0, 30, "<=29 强烈减仓"), (30, 42, "30-41 建议减仓"), (42, 58, "42-57 观望"),
+                    (58, 68, "58-67 轻仓/持有"), (68, 80, "68-79 建议加仓"), (80, 101, ">=80 强烈加仓")):
+    sel = [x for x in gather(prod, lambda s, a=lo, b=hi: 1 if a <= s < b else 0) ]
+    if len(sel) < 50:
+        print(f"    {lab:16s} (n<50)")
+        continue
+    v = np.array([x[2] for x in sel])
+    e = np.array([x[2] - BASELINE.get((x[0], H), np.nan) for x in sel if (x[0], H) in BASELINE])
+    print(f"    {lab:16s} n={len(sel):<6d} avg={v.mean()*100:+5.2f}% exc={e.mean()*100:+5.2f}% "
+          f"win={(v>0).mean()*100:4.1f}% p05={np.percentile(v,5)*100:+5.1f}%")
+
+print("\n=== same band test on the OLD model (does ITS ordering work?) ===")
+for lo, hi, lab in ((0, 25, "<=24"), (25, 40, "25-39"), (40, 60, "40-59"),
+                    (60, 75, "60-74"), (75, 101, ">=75")):
+    sel = gather(old_advice_score, lambda s, a=lo, b=hi: 1 if a <= s < b else 0)
+    if len(sel) < 50:
+        print(f"    {lab:16s} (n<50)")
+        continue
+    v = np.array([x[2] for x in sel])
+    e = np.array([x[2] - BASELINE.get((x[0], H), np.nan) for x in sel if (x[0], H) in BASELINE])
+    print(f"    {lab:16s} n={len(sel):<6d} avg={v.mean()*100:+5.2f}% exc={e.mean()*100:+5.2f}% "
+          f"win={(v>0).mean()*100:4.1f}% p05={np.percentile(v,5)*100:+5.1f}%")
+
+print("\n=== recent regime only (>= 2026-04-23), old vs new, 加仓 ===")
+for lab, sigs in (("old", old), ("new", new)):
+    sel = [x for x in sigs if x[1] > 0 and x[0] >= CUTOFF]
+    if len(sel) > 50:
+        v = np.array([x[2] for x in sel])
+        print(f"  {lab}: n={len(sel)} avg={v.mean()*100:+5.2f}% win={(v>0).mean()*100:4.1f}% "
+              f"p05={np.percentile(v,5)*100:+5.1f}% p25={np.percentile(v,25)*100:+5.1f}% "
+              f">10%loss={(v<-0.10).mean()*100:4.1f}% worst={v.min()*100:+.1f}%")

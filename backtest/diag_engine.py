@@ -1,1 +1,46 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJkaWFnX2VuZ2luZSDigJQg5om+5Ye6IGZhc3QucmV0X21hdO+8iOWQkemHj+WMlu+8ieS4jiBwb3J0c2ltLnRyYWRlX3JldHPvvIjpgJDnrJTvvInlj6PlvoTkuI3kuIDoh7TnmoTpgqPlh6DlpKnjgIIiIiIKaW1wb3J0IG9zCmltcG9ydCBzeXMKCmltcG9ydCBudW1weSBhcyBucAoKSEVSRSA9IG9zLnBhdGguZGlybmFtZShvcy5wYXRoLmFic3BhdGgoX19maWxlX18pKQpzeXMucGF0aC5pbnNlcnQoMCwgSEVSRSkKaW1wb3J0IGZhc3QgYXMgWCAgIyBub3FhOiBFNDAyCmltcG9ydCBpdGVyMjUgYXMgUSAgIyBub3FhOiBFNDAyCmltcG9ydCBwb3J0c2ltIGFzIFAgICMgbm9xYTogRTQwMgpmcm9tIG1vZGVsIGltcG9ydCBEQVRFUyAgIyBub3FhOiBFNDAyCgpIID0gMjAKUyA9IFEuUzAKdmFsaWQgPSBYLnZhbGlkX21hdChTLCBIKQpSID0gWC5yZXRfbWF0KEgpCmEgPSB7eFswXTogeCBmb3IgeCBpbiBQLmRhaWx5KGRpY3Qoc2NvcmU9Im5ldyIsIHRoPTY4LjAsIEs9Tm9uZSwgSD1IKSl9CmIgPSB7eFswXTogeCBmb3IgeCBpbiBRLnJvd3NfcnVsZSh0aD02OC4wLCBmcT1Ob25lLCBLPU5vbmUsIEhfPUgpfQoKCmRlZiBwaWNrX2luZGljZXMoaSk6CiAgICAiIiLlpI3njrAgcm93c19ydWxlIOW9k+WkqemAieWHuueahOiCoeelqOS4i+agh++8iOKJpTY444CB5YWo6YOo562J5p2D77yJ44CCIiIiCiAgICBvcmRlciA9IG5wLmFyZ3NvcnQobnAud2hlcmUodmFsaWRbaV0sIFNbaV0sIC1ucC5pbmYpKVs6Oi0xXQogICAganMgPSBbaiBmb3IgaiBpbiBvcmRlciBpZiB2YWxpZFtpLCBqXSBhbmQgU1tpLCBqXSA+PSA2OC4wXQogICAgcmV0dXJuIG5wLmFycmF5KGpzLCBpbnQpCgoKYmFkID0gW2QgZm9yIGQgaW4gYSBpZiBhYnMoYVtkXVsxXSAtIGJbZF1bMV0pID4gNWUtNF0KcHJpbnQoZiLliIbmrafml6Uge2xlbihiYWQpfSDlpKnvvJp7YmFkfSIpCmZvciBkIGluIGJhZDoKICAgIGkgPSBEQVRFUy5pbmRleChkKQogICAganMgPSBwaWNrX2luZGljZXMoaSkKICAgIHJhID0gUC50cmFkZV9yZXRzKGksIGpzLCBIKQogICAgcmIgPSBSW2ksIGpzXQogICAgbl9hID0gaW50KG5wLmlzZmluaXRlKHJhKS5zdW0oKSkKICAgIG5fYiA9IGludChucC5pc2Zpbml0ZShyYikuc3VtKCkpCiAgICBwcmludChmIlxuICB7ZH0gIGk9e2l9ICDpgInlh7oge2xlbihqcyl9IOWPqiAgUC5kYWlseT17YVtkXVsxXSoxMDA6LjNmfSUoe2FbZF1bM1195Y+qKSAgIgogICAgICAgICAgZiJyZXRfbWF0PXtiW2RdWzFdKjEwMDouM2Z9JSh7YltkXVszXX3lj6opIikKICAgIGRpZiA9IG5wLm5hbl90b19udW0ocmEgLSByYikKICAgIGZvciBrIGluIG5wLmFyZ3NvcnQoLW5wLmFicyhkaWYpKVs6NV06CiAgICAgICAgaiA9IGpzW2tdCiAgICAgICAgcHJpbnQoZiIgICAgIOWQjeensOS4i+aghyBqPXtqfSDlj6rmlbDlt64ge25fYSAtIG5fYn0gIHRyYWRlX3JldHM9e3JhW2tdOisuNGZ9ICByZXRfbWF0PXtyYltrXTorLjRmfSAgIgogICAgICAgICAgICAgIGYic2NvcmU9e1NbaSwgal06LjFmfSAgVU5CPXtib29sKFguVU5CW2ksIGpdKX0gIOasoeaXpeW8gOebmD17UC5NQVRbJ29wZW4nXVtpKzEsIGpdfSAgIgogICAgICAgICAgICAgIGYi5pS255uYPXtQLk1BVFsnY2xvc2UnXVtpLCBqXX0gIOWIsOacn+aUtuebmD17UC5NQVRbJ2Nsb3NlJ11bbWluKGkrMStILCBQLk5ELTEpLCBqXX0iKQo=
+#!/usr/bin/env python3
+"""diag_engine — 找出 fast.ret_mat（向量化）与 portsim.trade_rets（逐笔）口径不一致的那几天。"""
+import os
+import sys
+
+import numpy as np
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+import fast as X  # noqa: E402
+import iter25 as Q  # noqa: E402
+import portsim as P  # noqa: E402
+from model import DATES  # noqa: E402
+
+H = 20
+S = Q.S0
+valid = X.valid_mat(S, H)
+R = X.ret_mat(H)
+a = {x[0]: x for x in P.daily(dict(score="new", th=68.0, K=None, H=H))}
+b = {x[0]: x for x in Q.rows_rule(th=68.0, fq=None, K=None, H_=H)}
+
+
+def pick_indices(i):
+    """复现 rows_rule 当天选出的股票下标（≥68、全部等权）。"""
+    order = np.argsort(np.where(valid[i], S[i], -np.inf))[::-1]
+    js = [j for j in order if valid[i, j] and S[i, j] >= 68.0]
+    return np.array(js, int)
+
+
+bad = [d for d in a if abs(a[d][1] - b[d][1]) > 5e-4]
+print(f"分歧日 {len(bad)} 天：{bad}")
+for d in bad:
+    i = DATES.index(d)
+    js = pick_indices(i)
+    ra = P.trade_rets(i, js, H)
+    rb = R[i, js]
+    n_a = int(np.isfinite(ra).sum())
+    n_b = int(np.isfinite(rb).sum())
+    print(f"\n  {d}  i={i}  选出 {len(js)} 只  P.daily={a[d][1]*100:.3f}%({a[d][3]}只)  "
+          f"ret_mat={b[d][1]*100:.3f}%({b[d][3]}只)")
+    dif = np.nan_to_num(ra - rb)
+    for k in np.argsort(-np.abs(dif))[:5]:
+        j = js[k]
+        print(f"     名称下标 j={j} 只数差 {n_a - n_b}  trade_rets={ra[k]:+.4f}  ret_mat={rb[k]:+.4f}  "
+              f"score={S[i, j]:.1f}  UNB={bool(X.UNB[i, j])}  次日开盘={P.MAT['open'][i+1, j]}  "
+              f"收盘={P.MAT['close'][i, j]}  到期收盘={P.MAT['close'][min(i+1+H, P.ND-1), j]}")

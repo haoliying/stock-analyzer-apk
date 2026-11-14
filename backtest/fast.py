@@ -1,1 +1,123 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiLlv6vpgJ/nu4TlkIjnuqfor4TkvLDvvJrmiooi5o6S5bqP6LSo6YePIuWSjCLotYTph5Hmm7Lnur8i5YiG5byA566X77yM5YWo6YOo5ZCR6YeP5YyW44CCCgpSRVRbSF1baSxqXSA9IOesrCBpIOS4quS/oeWPt+aXpeOAgeesrCBqIOWPquelqO+8jHQrMSDlvIDnm5jkubDjgIHmjIEgSCDml6XlkI7lvIDnm5gv5pS255uY5Y2W55qE5YeA5pS255uK44CCCumAieiCoeelqCA9IOavj+WkqeS7jiLlj6/kuqTmmJMi6YeM5oyJ5YiG5pWw5Y+W5YmNIHEg5q+U5L6L77yI5Zu65a6a5a695bqm77yM6YG/5YWN6ZiI5YC85ZKM5YiG5pWw5Yi75bqm5LqS55u45bmy5omw77yJ44CCCui/meagt+avj+S4qumFjee9ruWPquimgeWHoOavq+enku+8jOWPr+S7peWBmuato+e7j+eahOWPguaVsOaQnOe0ou+8m+aQnOe0ouebruagh+WPqueci+agt+acrOWGhSg8Q1VUT0ZGKe+8jArmoLfmnKzlpJYoPj1DVVRPRkYp5Y+q55So5p2l6aqM6K+B77yM5LiN5Y+C5LiO5oyR5Y+C5pWw44CCCiIiIgppbXBvcnQgc3lzCgppbXBvcnQgbnVtcHkgYXMgbnAKCnN5cy5wYXRoLmluc2VydCgwLCAiL2RhdGEvYmFja3Rlc3QiKQppbXBvcnQgcG9ydHNpbSBhcyBQICAjIG5vcWE6IEU0MDIKZnJvbSBtb2RlbCBpbXBvcnQgQ09TVCwgQ1VUT0ZGLCBEQVRFUyAgIyBub3FhOiBFNDAyCgpORCwgTlMgPSBQLk5ELCBQLk5TCkYgPSBsYW1iZGEgazogUC5GQUNba10gaWYgayBpbiBQLkZBQyBlbHNlIFAuTUFUW2tdICAjIG5vcWE6IEU3MzEKQywgTzEgPSBQLk1BVFsiY2xvc2UiXSwgUC5NQVRbIm9wZW4iXQpQQ1QsIExJTSA9IFAuTUFUWyJwY3QiXSwgUC5NQVRbIl9saW0iXQpVTkIgPSAoUENUID4gMCkgJiAobnAucm9sbChPMSwgLTEsIGF4aXM9MCkgPj0gQyAqICgxICsgTElNKSAqIDAuOTk1KSAgIyDmrKHml6XlvIDnm5jmtqjlgZzkubDkuI3liLAKVU5CWy0xXSA9IFRydWUKX3JldF9jYWNoZSA9IHt9CgoKZGVmIHJldF9tYXQoSCk6CiAgICAiIiLooYwgPSDkv6Hlj7fml6Ugae+8jOWIlyA9IOiCoeelqO+8m+aUtuebiiA9IGNsb3NlW2krMStIXS9vcGVuW2krMV0tMS1jb3N0IiIiCiAgICBpZiBIIG5vdCBpbiBfcmV0X2NhY2hlOgogICAgICAgIGUgPSBucC5yb2xsKE8xLCAtMSwgYXhpcz0wKQogICAgICAgIHggPSBucC5yb2xsKEMsIC0oMSArIEgpLCBheGlzPTApCiAgICAgICAgciA9IHggLyBlIC0gMS4wIC0gQ09TVAogICAgICAgIHdpdGggbnAuZXJyc3RhdGUoYWxsPSJpZ25vcmUiKToKICAgICAgICAgICAgclt+bnAuaXNmaW5pdGUocildID0gbnAubmFuCiAgICAgICAgX3JldF9jYWNoZVtIXSA9IHIKICAgIHJldHVybiBfcmV0X2NhY2hlW0hdCgoKZGVmIHZhbGlkX21hdChTLCBIKToKICAgIHIgPSByZXRfbWF0KEgpCiAgICByZXR1cm4gKH5ucC5pc25hbihTKSkgJiAofm5wLmlzbmFuKHIpKSAmICh+VU5CKSAmIChucC5yb2xsKE8xLCAtMSwgYXhpcz0wKSA+IDApICYgKEMgPiAwKQoKCmRlZiBkYWlseV90b3BxKFMsIHEsIEgsIGJlbmNoPU5vbmUsIHZhbGlkPU5vbmUpOgogICAgIiIi5q+P5pel5Y+W5YiG5pWw5YmNIHEg5q+U5L6L77yM6L+U5ZueIChkYXRlLCDnr67lrZDmlLbnm4osIOWfuuWHhuaUtuebiiwg5Y+q5pWwKSIiIgogICAgUiA9IHJldF9tYXQoSCkKICAgIGlmIHZhbGlkIGlzIE5vbmU6CiAgICAgICAgdmFsaWQgPSB2YWxpZF9tYXQoUywgSCkKICAgIGlmIGJlbmNoIGlzIE5vbmU6CiAgICAgICAgYmVuY2ggPSBucC5uYW5tZWFuKG5wLndoZXJlKHZhbGlkLCBSLCBucC5uYW4pLCBheGlzPTEpICAjIOWQjOaXpeWPr+S6pOaYk+WFqOmbhuetieadgyA9IOWfuuWHhkIKICAgIGsgPSBtYXgoMSwgaW50KHJvdW5kKHEgKiBOUykpKQogICAgcm93cyA9IFtdCiAgICBvcmRlciA9IG5wLmFyZ3NvcnQobnAud2hlcmUodmFsaWQsIFMsIC1ucC5pbmYpLCBheGlzPTEpWzosIDo6LTFdCiAgICBmb3IgaSBpbiByYW5nZShORCAtIDEgLSBIKToKICAgICAgICBiID0gYmVuY2hbaV0KICAgICAgICBpZiBucC5pc25hbihiKToKICAgICAgICAgICAgY29udGludWUKICAgICAgICBzZWwgPSBvcmRlcltpLCA6a10KICAgICAgICBzZWwgPSBzZWxbdmFsaWRbaSwgc2VsXV0KICAgICAgICBpZiBsZW4oc2VsKSA8IDM6CiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgcm93cy5hcHBlbmQoKERBVEVTW2ldLCBmbG9hdChucC5tZWFuKFJbaSwgc2VsXSkpLCBmbG9hdChiKSwgbGVuKHNlbCkpKQogICAgaWYgbm90IHJvd3M6CiAgICAgICAgcmV0dXJuIFtdLCBucC56ZXJvcygoMCwgMykpCiAgICByZXR1cm4gW3JbMF0gZm9yIHIgaW4gcm93c10sIG5wLmFycmF5KFtbclsxXSwgclsyXSwgclszXV0gZm9yIHIgaW4gcm93c10pCgoKZGVmIHNjb3JlX3N0YXRzKFMsIHEsIEgsIGxhYmVsLCBtb250aGx5PUZhbHNlKToKICAgIGRzLCBkID0gZGFpbHlfdG9wcShTLCBxLCBIKQogICAgaWYgbGVuKGQpIDwgMjA6CiAgICAgICAgcHJpbnQoZiIgIHtsYWJlbDo8NDR9IOagt+acrOS4jei2syIpCiAgICAgICAgcmV0dXJuIE5vbmUKICAgIGUgPSBkWzosIDBdIC0gZFs6LCAxXQogICAgaXNtID0gbnAuYXJyYXkoW3ggPCBDVVRPRkYgZm9yIHggaW4gZHNdKQogICAgb3V0ID0ge30KICAgIGZvciB0YWcsIG0gaW4gKCgi5YWo56iLIiwgbnAub25lcyhsZW4oZSksIGJvb2wpKSwgKCLmoLfmnKzlhoUiLCBpc20pLCAoIuagt+acrOWkliIsIH5pc20pKToKICAgICAgICBlZSwgcnIgPSBlW21dLCBkW20sIDBdCiAgICAgICAgdCA9IGVlLm1lYW4oKSAvIChlZS5zdGQoZGRvZj0xKSAvIG5wLnNxcnQobWF4KGludChtLnN1bSgpKSwgMSkpKQogICAgICAgIG91dFt0YWddID0gZGljdChuPWludChtLnN1bSgpKSwgbWVhbj1mbG9hdChyci5tZWFuKCkpLCBleGM9ZmxvYXQoZWUubWVhbigpKSwgdD1mbG9hdCh0KSwKICAgICAgICAgICAgICAgICAgICAgICAgd2luPWZsb2F0KChlZSA+IDApLm1lYW4oKSksIHBvcz1mbG9hdCgocnIgPiAwKS5tZWFuKCkpLAogICAgICAgICAgICAgICAgICAgICAgICB3b3JzdD1mbG9hdChyci5taW4oKSksIG5uPWZsb2F0KG5wLm1lYW4oZFttLCAyXSkpKQogICAgcHJpbnQoZiIgIHtsYWJlbDo8NDR9IOaXpeWdh3tvdXRbJ+WFqOeoiyddWydubiddOjUuMWZ95Y+qICDotoXpop0g5YWo56iLIHtvdXRbJ+WFqOeoiyddWydleGMnXSoxMDA6KzYuM2Z9JSh0PXtvdXRbJ+WFqOeoiyddWyd0J106KzUuMmZ9KSAgIgogICAgICAgICAgZiLmoLfmnKzlhoUge291dFsn5qC35pys5YaFJ11bJ2V4YyddKjEwMDorNi4zZn0lKHQ9e291dFsn5qC35pys5YaFJ11bJ3QnXTorNS4yZn0pICDmoLfmnKzlpJYge291dFsn5qC35pys5aSWJ11bJ2V4YyddKjEwMDorNi4zZn0lKHQ9e291dFsn5qC35pys5aSWJ11bJ3QnXTorNS4yZn0pICAiCiAgICAgICAgICBmInwg6LeR6LWi5pelIHtvdXRbJ+WFqOeoiyddWyd3aW4nXSoxMDA6My4wZn0lIOevruWtkOWdh+WAvCB7b3V0WyflhajnqIsnXVsnbWVhbiddKjEwMDorNS4yZn0lIikKICAgIGlmIG1vbnRobHk6CiAgICAgICAgbW8gPSB7fQogICAgICAgIGZvciB4LCB5LCB6IGluIHppcChkcywgZFs6LCAwXSwgZFs6LCAxXSk6CiAgICAgICAgICAgIG1vLnNldGRlZmF1bHQoeFs6N10sIFtdKS5hcHBlbmQoeSAtIHopCiAgICAgICAgdiA9IG5wLmFycmF5KFtucC5tZWFuKG1vW2tdKSBmb3IgayBpbiBzb3J0ZWQobW8pXSkKICAgICAgICBwcmludChmIiAgICAg5pyI5bqm6LaF6aKdOiB7di5zaXplfSDmnIgg5Z2H5YC8IHt2Lm1lYW4oKSoxMDA6KzUuMmZ9JSAg5q2jIHsodj4wKS5tZWFuKCkqMTAwOjMuMGZ9JSAg5pyA5beuIHt2Lm1pbigpKjEwMDorNS4yZn0lIikKICAgIHJldHVybiBvdXQKCgpkZWYgY29tcG91bmQoUywgcSwgSCwgbGFiZWwsIHZhbGlkPU5vbmUpOgogICAgIiIi5Zu65a6a5a695bqm44CB5aeL57uI5ruh5LuT55qE6LWE6YeR5puy57q/77yI55u45L2N5bmz5Z2H77yJdnMg5aSn55uY562J5p2D5q+P5pel5oyB5pyJIiIiCiAgICBSID0gcmV0X21hdChIKQogICAgaWYgdmFsaWQgaXMgTm9uZToKICAgICAgICB2YWxpZCA9IHZhbGlkX21hdChTLCBIKSBpZiB2YWxpZCBpcyBOb25lIGVsc2UgdmFsaWQKICAgIGsgPSBtYXgoMSwgaW50KHJvdW5kKHEgKiBOUykpKQogICAgb3JkZXIgPSBucC5hcmdzb3J0KG5wLndoZXJlKHZhbGlkLCBTLCAtbnAuaW5mKSwgYXhpcz0xKVs6LCA6Oi0xXQogICAgYnJhdyA9IG5wLm5hbm1lYW4obnAud2hlcmUodmFsaWQsIFIsIG5wLm5hbiksIGF4aXM9MSkKICAgIGN1bXMsIGFscGhhcywgZGRzLCBiZWF0cywgZXhjcyA9IFtdLCBbXSwgW10sIFtdLCBbXQogICAgZm9yIHAgaW4gcmFuZ2UobWluKEgsIDYpKToKICAgICAgICByb3dzID0gW10KICAgICAgICBmb3IgaSBpbiByYW5nZShwLCBORCAtIDEgLSBILCBIKToKICAgICAgICAgICAgc2VsID0gb3JkZXJbaSwgOmtdCiAgICAgICAgICAgIHNlbCA9IHNlbFt2YWxpZFtpLCBzZWxdXQogICAgICAgICAgICBpZiBsZW4oc2VsKSA8IDM6CiAgICAgICAgICAgICAgICByb3dzLmFwcGVuZCgoMC4wLCAwLjApKQogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgcm93cy5hcHBlbmQoKGZsb2F0KG5wLm1lYW4oUltpLCBzZWxdKSksIGZsb2F0KGJyYXdbaV0pIGlmIG5vdCBucC5pc25hbihicmF3W2ldKSBlbHNlIDAuMCkpCiAgICAgICAgaWYgbm90IHJvd3M6CiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgciA9IG5wLmFycmF5KFt4WzBdIGZvciB4IGluIHJvd3NdKTsgYiA9IG5wLmFycmF5KFt4WzFdIGZvciB4IGluIHJvd3NdKQogICAgICAgIGVxID0gbnAuY3VtcHJvZCgxICsgcik7IGJlcSA9IG5wLmN1bXByb2QoMSArIGIpCiAgICAgICAgY3Vtcy5hcHBlbmQoZXFbLTFdIC0gMSk7IGFscGhhcy5hcHBlbmQoZXFbLTFdIC8gYmVxWy0xXSAtIDEpCiAgICAgICAgZGRzLmFwcGVuZCgoZXEgLyBucC5tYXhpbXVtLmFjY3VtdWxhdGUoZXEpIC0gMSkubWluKCkpCiAgICAgICAgYmVhdHMuYXBwZW5kKChyIC0gYiA+IDApLm1lYW4oKSk7IGV4Y3MuYXBwZW5kKChyIC0gYikubWVhbigpKQogICAgYmggPSBQLmJlbmNoX2hvbGQoMCwgTkQpCiAgICBwcmludChmIiAge2xhYmVsOjw0NH0g57Sv6K6hIHtucC5tZWFuKGN1bXMpKjEwMDorNy4xZn0lICDlubTljJYgeyhucC5tZWFuKGN1bXMpKSoxMDAvMS44NzorNi4xZn0lKOeylykgICIKICAgICAgICAgIGYi5Zue5pKkIHtucC5tZWFuKGRkcykqMTAwOjUuMWZ9JSAg5ZCM5qC85YaN5bmz6KGh5Z+65YeGIHtucC5tZWFuKGFscGhhcykqMTAwOis2LjFmfSUgICIKICAgICAgICAgIGYi6LaF5aSn55uYIHsobnAubWVhbihjdW1zKS1iaCkqMTAwOis2LjFmfXBwICDot5HotaLmnJ8ge25wLm1lYW4oYmVhdHMpKjEwMDozLjBmfSUiKQogICAgcmV0dXJuIGRpY3QoY3VtPWZsb2F0KG5wLm1lYW4oY3VtcykpLCBkZD1mbG9hdChucC5tZWFuKGRkcykpLCBhbHBoYT1mbG9hdChucC5tZWFuKGFscGhhcykpLAogICAgICAgICAgICAgICAgdnNfYmg9ZmxvYXQobnAubWVhbihjdW1zKSAtIGJoKSwgYmVhdD1mbG9hdChucC5tZWFuKGJlYXRzKSksIGV4Yz1mbG9hdChucC5tZWFuKGV4Y3MpKSkK
+#!/usr/bin/env python3
+"""快速组合级评估：把"排序质量"和"资金曲线"分开算，全部向量化。
+
+RET[H][i,j] = 第 i 个信号日、第 j 只票，t+1 开盘买、持 H 日后开盘/收盘卖的净收益。
+选股票 = 每天从"可交易"里按分数取前 q 比例（固定宽度，避免阈值和分数刻度互相干扰）。
+这样每个配置只要几毫秒，可以做正经的参数搜索；搜索目标只看样本内(<CUTOFF)，
+样本外(>=CUTOFF)只用来验证，不参与挑参数。
+"""
+import sys
+
+import numpy as np
+
+sys.path.insert(0, "/data/backtest")
+import portsim as P  # noqa: E402
+from model import COST, CUTOFF, DATES  # noqa: E402
+
+ND, NS = P.ND, P.NS
+F = lambda k: P.FAC[k] if k in P.FAC else P.MAT[k]  # noqa: E731
+C, O1 = P.MAT["close"], P.MAT["open"]
+PCT, LIM = P.MAT["pct"], P.MAT["_lim"]
+UNB = (PCT > 0) & (np.roll(O1, -1, axis=0) >= C * (1 + LIM) * 0.995)  # 次日开盘涨停买不到
+UNB[-1] = True
+_ret_cache = {}
+
+
+def ret_mat(H):
+    """行 = 信号日 i，列 = 股票；收益 = close[i+1+H]/open[i+1]-1-cost"""
+    if H not in _ret_cache:
+        e = np.roll(O1, -1, axis=0)
+        x = np.roll(C, -(1 + H), axis=0)
+        r = x / e - 1.0 - COST
+        with np.errstate(all="ignore"):
+            r[~np.isfinite(r)] = np.nan
+        _ret_cache[H] = r
+    return _ret_cache[H]
+
+
+def valid_mat(S, H):
+    r = ret_mat(H)
+    return (~np.isnan(S)) & (~np.isnan(r)) & (~UNB) & (np.roll(O1, -1, axis=0) > 0) & (C > 0)
+
+
+def daily_topq(S, q, H, bench=None, valid=None):
+    """每日取分数前 q 比例，返回 (date, 篮子收益, 基准收益, 只数)"""
+    R = ret_mat(H)
+    if valid is None:
+        valid = valid_mat(S, H)
+    if bench is None:
+        bench = np.nanmean(np.where(valid, R, np.nan), axis=1)  # 同日可交易全集等权 = 基准B
+    k = max(1, int(round(q * NS)))
+    rows = []
+    order = np.argsort(np.where(valid, S, -np.inf), axis=1)[:, ::-1]
+    for i in range(ND - 1 - H):
+        b = bench[i]
+        if np.isnan(b):
+            continue
+        sel = order[i, :k]
+        sel = sel[valid[i, sel]]
+        if len(sel) < 3:
+            continue
+        rows.append((DATES[i], float(np.mean(R[i, sel])), float(b), len(sel)))
+    if not rows:
+        return [], np.zeros((0, 3))
+    return [r[0] for r in rows], np.array([[r[1], r[2], r[3]] for r in rows])
+
+
+def score_stats(S, q, H, label, monthly=False):
+    ds, d = daily_topq(S, q, H)
+    if len(d) < 20:
+        print(f"  {label:<44} 样本不足")
+        return None
+    e = d[:, 0] - d[:, 1]
+    ism = np.array([x < CUTOFF for x in ds])
+    out = {}
+    for tag, m in (("全程", np.ones(len(e), bool)), ("样本内", ism), ("样本外", ~ism)):
+        ee, rr = e[m], d[m, 0]
+        t = ee.mean() / (ee.std(ddof=1) / np.sqrt(max(int(m.sum()), 1)))
+        out[tag] = dict(n=int(m.sum()), mean=float(rr.mean()), exc=float(ee.mean()), t=float(t),
+                        win=float((ee > 0).mean()), pos=float((rr > 0).mean()),
+                        worst=float(rr.min()), nn=float(np.mean(d[m, 2])))
+    print(f"  {label:<44} 日均{out['全程']['nn']:5.1f}只  超额 全程 {out['全程']['exc']*100:+6.3f}%(t={out['全程']['t']:+5.2f})  "
+          f"样本内 {out['样本内']['exc']*100:+6.3f}%(t={out['样本内']['t']:+5.2f})  样本外 {out['样本外']['exc']*100:+6.3f}%(t={out['样本外']['t']:+5.2f})  "
+          f"| 跑赢日 {out['全程']['win']*100:3.0f}% 篮子均值 {out['全程']['mean']*100:+5.2f}%")
+    if monthly:
+        mo = {}
+        for x, y, z in zip(ds, d[:, 0], d[:, 1]):
+            mo.setdefault(x[:7], []).append(y - z)
+        v = np.array([np.mean(mo[k]) for k in sorted(mo)])
+        print(f"     月度超额: {v.size} 月 均值 {v.mean()*100:+5.2f}%  正 {(v>0).mean()*100:3.0f}%  最差 {v.min()*100:+5.2f}%")
+    return out
+
+
+def compound(S, q, H, label, valid=None):
+    """固定宽度、始终满仓的资金曲线（相位平均）vs 大盘等权每日持有"""
+    R = ret_mat(H)
+    if valid is None:
+        valid = valid_mat(S, H) if valid is None else valid
+    k = max(1, int(round(q * NS)))
+    order = np.argsort(np.where(valid, S, -np.inf), axis=1)[:, ::-1]
+    braw = np.nanmean(np.where(valid, R, np.nan), axis=1)
+    cums, alphas, dds, beats, excs = [], [], [], [], []
+    for p in range(min(H, 6)):
+        rows = []
+        for i in range(p, ND - 1 - H, H):
+            sel = order[i, :k]
+            sel = sel[valid[i, sel]]
+            if len(sel) < 3:
+                rows.append((0.0, 0.0))
+                continue
+            rows.append((float(np.mean(R[i, sel])), float(braw[i]) if not np.isnan(braw[i]) else 0.0))
+        if not rows:
+            continue
+        r = np.array([x[0] for x in rows]); b = np.array([x[1] for x in rows])
+        eq = np.cumprod(1 + r); beq = np.cumprod(1 + b)
+        cums.append(eq[-1] - 1); alphas.append(eq[-1] / beq[-1] - 1)
+        dds.append((eq / np.maximum.accumulate(eq) - 1).min())
+        beats.append((r - b > 0).mean()); excs.append((r - b).mean())
+    bh = P.bench_hold(0, ND)
+    print(f"  {label:<44} 累计 {np.mean(cums)*100:+7.1f}%  年化 {(np.mean(cums))*100/1.87:+6.1f}%(粗)  "
+          f"回撤 {np.mean(dds)*100:5.1f}%  同格再平衡基准 {np.mean(alphas)*100:+6.1f}%  "
+          f"超大盘 {(np.mean(cums)-bh)*100:+6.1f}pp  跑赢期 {np.mean(beats)*100:3.0f}%")
+    return dict(cum=float(np.mean(cums)), dd=float(np.mean(dds)), alpha=float(np.mean(alphas)),
+                vs_bh=float(np.mean(cums) - bh), beat=float(np.mean(beats)), exc=float(np.mean(excs)))

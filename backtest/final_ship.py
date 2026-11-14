@@ -1,1 +1,204 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJGSU5BTCBTSElQUEVEIE1PREVMIOKAlCB0aGlzIGZpbGUgaXMgdGhlIHNwZWMgdGhhdCBnZXRzIHBvcnRlZCB0byBLb3RsaW4uCgpzY29yZSA9IDUwCiAgICAgICsgdHJlbmQgc3RydWN0dXJlIChjbG9zZSB2cyBNQTIwIHZzIE1BNjAsIGdyYWRlZCBieSBNQTIwIDEwLWRheSBzbG9wZSkKICAgICAgKyBNQTEwIGFsaWdubWVudAogICAgICAtIHZvbGF0aWxpdHkgcGVuYWx0eSwgY2FwcGVkOiAgbWluKDI0LCBtYXgoMCwgQVRSJS8xNGQgLSAyLjAlKSAqIDMwMCkKYWR2aWNlOiDkubDlhaU+PTY2IOaMgeaciTQzLi42NSDljZblh7o8PTQyIOW8uueDiOWNluWHujw9MzAgICjlvLrng4jkubDlhaUgdGllciBkZWNpZGVkIGJlbG93KQoKVmFsaWRhdGlvbiBwcm90b2NvbDogc2lnbmFsIGF0IGNsb3NlKHQpLCBlbnRyeSBhdCBvcGVuKHQrMSksIDIwIHRyYWRpbmcgc2Vzc2lvbnMsCm5ldCBvZiAwLjEyJSBjb3N0LCBleGNlc3MgdnMgc2FtZS1kYXkgdW5pdmVyc2UgbWVhbiwgZGF0ZS1lcXVhbCB3ZWlnaHRlZCwKb3V0LW9mLXNhbXBsZSA9IGRhdGVzID49IDIwMjYtMDQtMjMuCiIiIgppbXBvcnQgbnVtcHkgYXMgbnAKZnJvbSBjb2xsZWN0aW9ucyBpbXBvcnQgZGVmYXVsdGRpY3QKZnJvbSBtb2RlbCBpbXBvcnQgQ1VUT0ZGLCBfbmFuLCBnLCBzdG9ja3MsIE1JTl9ISVNULCBDT1NULCBILCBCQVNFTElORQpmcm9tIHN0cmF0ZWd5IGltcG9ydCB2X29sZAoKQVRSX0tORUUsIEFUUl9QRU4sIEFUUl9DQVAsIEFUUl9HQVRFID0gMC4wMjAsIDMwMC4wLCAyNC4wLCAwLjA0NQpCVVksIFNUUk9OR19CVVksIFNFTEwsIFNUUk9OR19TRUxMID0gNjYuMCwgNzUuMCwgNDIuMCwgMzAuMAoKCmRlZiBzaGlwKEYsIHQpOgogICAgYyA9IEZbImNsb3NlIl1bdF0KICAgIG1hMTAsIG1hMjAsIG1hNjAgPSBnKEYsICJtYTEwIiwgdCksIGcoRiwgIm1hMjAiLCB0KSwgZyhGLCAibWE2MCIsIHQpCiAgICBzbCA9IGcoRiwgIm1hMjBfc2xvcGUiLCB0KQogICAgaWYgX25hbihtYTIwKSBvciBfbmFuKG1hNjApIG9yIF9uYW4obWExMCkgb3IgX25hbihzbCk6CiAgICAgICAgcmV0dXJuIDAuMCwgRmFsc2UKICAgIHMgPSA1MC4wCiAgICB1cCA9IGMgPiBtYTIwID4gbWE2MAogICAgZG4gPSBjIDwgbWEyMCA8IG1hNjAKICAgIGlmIHVwOgogICAgICAgIHMgKz0gMjIgaWYgc2wgPiAwLjAxNSBlbHNlICgxNCBpZiBzbCA+IDAuMCBlbHNlIDYpCiAgICBlbGlmIGRuOgogICAgICAgIHMgLT0gMjIgaWYgc2wgPCAtMC4wMTUgZWxzZSAoMTQgaWYgc2wgPCAwLjAgZWxzZSA2KQogICAgZWxzZToKICAgICAgICBzIC09IDMKICAgIHMgKz0gNCBpZiBjID4gbWExMCA+IG1hMjAgZWxzZSAtMgogICAgYSA9IGcoRiwgImF0cl9wY3QiLCB0KQogICAgaWYgbm90IF9uYW4oYSk6CiAgICAgICAgcyAtPSBtaW4obWF4KDAuMCwgYSAtIEFUUl9LTkVFKSAqIEFUUl9QRU4sIEFUUl9DQVApCiAgICByZXR1cm4gZmxvYXQobnAuY2xpcChzLCAwLCAxMDApKSwgVHJ1ZQoKCmRlZiBvbGRfZm4oRiwgdCk6CiAgICBzYywgb2sgPSB2X29sZChGLCB0KQogICAgcmV0dXJuIGZsb2F0KHNjKSwgYm9vbChvaykKCgpkZWYgYnVpbGQoZm4pOgogICAgcm93cyA9IFtdCiAgICBmb3IgRiBpbiBzdG9ja3M6CiAgICAgICAgbiA9IGludChGWyJuIl0pCiAgICAgICAgYywgbyA9IEZbImNsb3NlIl0sIEZbIm9wZW4iXQogICAgICAgIGxpbSA9IDAuMDk3IGlmIEZbImNvZGUiXS5zdGFydHN3aXRoKCgiMzAiLCAiNjgiKSkgZWxzZSAwLjA0NwogICAgICAgIGZvciB0IGluIHJhbmdlKE1JTl9ISVNULCBuIC0gMSk6CiAgICAgICAgICAgIHMsIG9rID0gZm4oRiwgdCkKICAgICAgICAgICAgaWYgbm90IG9rOgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgayA9IHQgKyAxICsgSAogICAgICAgICAgICBlbyA9IG9bdCArIDFdCiAgICAgICAgICAgIGlmIGsgPj0gbiBvciBlbyA8PSAwOgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgZCA9IHN0cihGWyJkYXRlIl1bdF0pCiAgICAgICAgICAgIGIgPSBCQVNFTElORS5nZXQoKGQsIEgpKQogICAgICAgICAgICBpZiBiIGlzIE5vbmU6CiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICByYXcgPSAoY1trXSAvIGVvIC0gMS4wKSAtIENPU1QKICAgICAgICAgICAgcm93cy5hcHBlbmQoKHMsIGQsIHJhdywgcmF3IC0gYiwKICAgICAgICAgICAgICAgICAgICAgICAgIEZbInBjdCJdW3RdID4gMCBhbmQgZW8gPj0gY1t0XSAqICgxICsgbGltKSAqIDAuOTk1KSkKICAgIHJldHVybiByb3dzCgoKZGVmIHN1bW1hcml6ZShyb3dzLCBidXlfdGgsIHNlbGxfdGgsIG5hbWUpOgogICAgdG90ID0gbGVuKHJvd3MpCiAgICBuYiA9IHN1bSgxIGZvciB4IGluIHJvd3MgaWYgeFswXSA+PSBidXlfdGgpCiAgICBucyA9IHN1bSgxIGZvciB4IGluIHJvd3MgaWYgeFswXSA8PSBzZWxsX3RoKQogICAgYmQsIHNkID0gZGVmYXVsdGRpY3QobGlzdCksIGRlZmF1bHRkaWN0KGxpc3QpCiAgICBmb3IgcywgZCwgcmF3LCBleGMsIHVuYiBpbiByb3dzOgogICAgICAgIGlmIHMgPj0gYnV5X3RoIGFuZCBub3QgdW5iOgogICAgICAgICAgICBiZFtkXS5hcHBlbmQoKHJhdywgZXhjKSkKICAgICAgICBlbGlmIHMgPD0gc2VsbF90aDoKICAgICAgICAgICAgc2RbZF0uYXBwZW5kKGV4YykKICAgIGRhdGVzID0gc29ydGVkKHt4WzFdIGZvciB4IGluIHJvd3N9KQogICAgaDEgPSBzZXQoZGF0ZXNbOmxlbihkYXRlcykgLy8gMl0pCiAgICBwZXIsIGUxLCBlMiA9IFtdLCBbXSwgW10KICAgIGZvciBkLCB2IGluIGJkLml0ZW1zKCk6CiAgICAgICAgaWYgbGVuKHYpIDwgMzoKICAgICAgICAgICAgY29udGludWUKICAgICAgICBtID0gbnAubWVhbihbeFsxXSBmb3IgeCBpbiB2XSkKICAgICAgICBwZXIuYXBwZW5kKG0pCiAgICAgICAgKGUxIGlmIGQgaW4gaDEgZWxzZSBlMikuYXBwZW5kKG0pCiAgICBvbyA9IFt4IGZvciBkLCB2IGluIGJkLml0ZW1zKCkgaWYgZCA+PSBDVVRPRkYgZm9yIHggaW4gdl0KICAgIFIgPSBucC5hcnJheShbeFswXSBmb3IgeCBpbiBvb10pCiAgICBPRSA9IG5wLmFycmF5KFt4WzFdIGZvciB4IGluIG9vXSkKICAgIG1vID0gZGVmYXVsdGRpY3QobGlzdCkKICAgIGZvciBkLCB2IGluIGJkLml0ZW1zKCk6CiAgICAgICAgaWYgbGVuKHYpID49IDM6CiAgICAgICAgICAgIG1vW2RbOjddXS5hcHBlbmQobnAubWVhbihbeFsxXSBmb3IgeCBpbiB2XSkpCiAgICBtcCA9IG5wLmFycmF5KFtucC5tZWFuKHYpIGZvciB2IGluIG1vLnZhbHVlcygpXSkKICAgIHNlbGxzID0gW25wLm1lYW4odikgZm9yIHYgaW4gc2QudmFsdWVzKCkgaWYgbGVuKHYpID49IDNdCiAgICBwcmludChmIlxuIyMjIHtuYW1lfSAgKOWKoOS7kz49e2J1eV90aDouMGZ9IOWHj+S7kzw9e3NlbGxfdGg6LjBmfSkiKQogICAgcHJpbnQoZiIgIOWPkeWjsOeOhzog5Yqg5LuTIHtuYi90b3QqMTAwOjQuMWZ9JSAvIOWHj+S7kyB7bnMvdG90KjEwMDo0LjFmfSUgLyDlkIjorqEgeyhuYitucykvdG90KjEwMDo0LjFmfSUiCiAgICAgICAgICBmIiAgIOavj+aXpeWAmemAiSB7bnAubWVhbihbbGVuKHYpIGZvciB2IGluIGJkLnZhbHVlcygpIGlmIGxlbih2KT49M10pOi4xZn0g5Y+qIikKICAgIHByaW50KGYiICDliqDku5PotoXpop0o5pel5pyf562J5p2DKTog5YWo56iLIHtucC5tZWFuKHBlcikqMTAwOisuMmZ9JSAg5YmN5Y2KIHtucC5tZWFuKGUxKSoxMDA6Ky4yZn0lICAiCiAgICAgICAgICBmIuWQjuWNiiB7bnAubWVhbihlMikqMTAwOisuMmZ9JSAg5qC35pys5aSWIHtPRS5tZWFuKCkqMTAwOisuMmZ9JSIpCiAgICBwcmludChmIiAg5qC35pys5aSW5Y2V56yUMjDml6U6IOWdh+WAvCB7Ui5tZWFuKCkqMTAwOisuMmZ9JSDog5znjocgeyhSPjApLm1lYW4oKSoxMDA6LjFmfSUgIgogICAgICAgICAgZiJwMDUge25wLnBlcmNlbnRpbGUoUiw1KSoxMDA6Ky4xZn0lIHAyNSB7bnAucGVyY2VudGlsZShSLDI1KSoxMDA6Ky4xZn0lICIKICAgICAgICAgIGYi5LqPPjEwJSB7KFI8LTAuMTApLm1lYW4oKSoxMDA6LjFmfSUg5LqPPjIwJSB7KFI8LTAuMjApLm1lYW4oKSoxMDA6LjFmfSUg5pyA5beuIHtSLm1pbigpKjEwMDorLjFmfSUiKQogICAgcHJpbnQoZiIgIOaciOW6pjoge2xlbihtcCl95pyIIOi3kei1ouWfuuWHhiB7KG1wPjApLm1lYW4oKSoxMDA6LjBmfSUg5Lit5L2NIHtucC5tZWRpYW4obXApKjEwMDorLjJmfSUgIgogICAgICAgICAgZiLmnIDlt64ge21wLm1pbigpKjEwMDorLjJmfSUiKQogICAgaWYgc2VsbHM6CiAgICAgICAgcHJpbnQoZiIgIOWHj+S7k+i2heminSB7bnAubWVhbihzZWxscykqMTAwOisuMmZ9JSAo6LSfPeWIpOaWreato+ehrikiKQoKCm5ld19yb3dzID0gYnVpbGQoc2hpcCkKb2xkX3Jvd3MgPSBidWlsZChvbGRfZm4pCnN1bW1hcml6ZShuZXdfcm93cywgQlVZLCBTRUxMLCAiTkVXIOS4iue6v+aooeWeiyIpCnN1bW1hcml6ZShvbGRfcm93cywgNjAsIDQwLCAiT0xEIHY0LjAuMSDmqKHlnosiKQoKcHJpbnQoIlxuPT09IE5FVyDliIbmoaMgKGRhdGUtZXF1YWwgZXhjZXNzKSA9PT0iKQpmb3IgbG8sIGhpLCBsYWIgaW4gKCgwLCAzMCwgIuW8uueDiOWNluWHuiA8PTI5IiksICgzMCwgNDMsICLljZblh7ogMzAtNDIiKSwgKDQzLCA1OCwgIuaMgeaciSA0My01NyIpLAogICAgICAgICAgICAgICAgICAgICg1OCwgNjYsICLop4LmnJsgNTgtNjUiKSwgKDY2LCA3NSwgIuS5sOWFpSA2Ni03NCIpLCAoNzUsIDEwMSwgIuW8uueDiOS5sOWFpSA+PTc1IikpOgogICAgYmQgPSBkZWZhdWx0ZGljdChsaXN0KQogICAgZm9yIHMsIGQsIHJhdywgZXhjLCB1bmIgaW4gbmV3X3Jvd3M6CiAgICAgICAgaWYgbG8gPD0gcyA8IGhpIGFuZCBub3QgdW5iOgogICAgICAgICAgICBiZFtkXS5hcHBlbmQoZXhjKQogICAgcGVyID0gW25wLm1lYW4odikgZm9yIHYgaW4gYmQudmFsdWVzKCkgaWYgbGVuKHYpID49IDNdCiAgICBuID0gc3VtKGxlbih2KSBmb3IgdiBpbiBiZC52YWx1ZXMoKSkKICAgIGlmIGxlbihwZXIpIDwgMTU6CiAgICAgICAgcHJpbnQoZiIgIHtsYWI6MTZzfSBuPXtuOjw2ZH0g5qC35pys5LiN6LazIikKICAgICAgICBjb250aW51ZQogICAgcHJpbnQoZiIgIHtsYWI6MTZzfSBuPXtuOjw2ZH0gZGF0ZXM9e2xlbihwZXIpOjw0ZH0gZXhjZXNzPXtucC5tZWFuKHBlcikqMTAwOis1LjJmfSUiKQoKcHJpbnQoIlxuPT09IOaYr+WQpuS/neeVmSflvLrng4jkubDlhaUn5qGjPyDnnIsgPj03MCDljLrpl7TlhoXpg6jmjIkgQVRSIOe7huWIhiA9PT0iKQphdHJfYXQgPSB7fQpmb3IgRiBpbiBzdG9ja3M6CiAgICBuID0gaW50KEZbIm4iXSkKICAgIGMsIG8gPSBGWyJjbG9zZSJdLCBGWyJvcGVuIl0KICAgIGxpbSA9IDAuMDk3IGlmIEZbImNvZGUiXS5zdGFydHN3aXRoKCgiMzAiLCAiNjgiKSkgZWxzZSAwLjA0NwogICAgZm9yIHQgaW4gcmFuZ2UoTUlOX0hJU1QsIG4gLSAxKToKICAgICAgICBzLCBvayA9IHNoaXAoRiwgdCkKICAgICAgICBpZiBub3Qgb2s6CiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgayA9IHQgKyAxICsgSAogICAgICAgIGVvID0gb1t0ICsgMV0KICAgICAgICBpZiBrID49IG4gb3IgZW8gPD0gMDoKICAgICAgICAgICAgY29udGludWUKICAgICAgICBkID0gc3RyKEZbImRhdGUiXVt0XSkKICAgICAgICBiID0gQkFTRUxJTkUuZ2V0KChkLCBIKSkKICAgICAgICBpZiBiIGlzIE5vbmU6CiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgcmF3ID0gKGNba10gLyBlbyAtIDEuMCkgLSBDT1NUCiAgICAgICAgaWYgcyA+PSA3MCBhbmQgbm90IChGWyJwY3QiXVt0XSA+IDAgYW5kIGVvID49IGNbdF0gKiAoMSArIGxpbSkgKiAwLjk5NSk6CiAgICAgICAgICAgIGF0cl9hdC5zZXRkZWZhdWx0KGQsIFtdKS5hcHBlbmQoKHMsIHJhdyAtIGIsIGZsb2F0KGcoRiwgImF0cl9wY3QiLCB0KSkpKQpmb3IgbG8sIGhpLCBsYWIgaW4gKCgwLjAsIDAuMDIwLCAiQVRSPD0yLjAlIiksICgwLjAyMCwgMC4wMzAsICIyLjAtMy4wJSIpLAogICAgICAgICAgICAgICAgICAgICgwLjAzMCwgMC4wNDUsICIzLjAtNC41JSIpLCAoMC4wNDUsIDkuOSwgIj40LjUlIikpOgogICAgcGVyID0gW25wLm1lYW4oW2UgZm9yIHMsIGUsIGEgaW4gdiBpZiBsbyA8PSBhIDwgaGldKSBmb3IgZCwgdiBpbiBhdHJfYXQuaXRlbXMoKQogICAgICAgICAgIGlmIGxlbihbMSBmb3IgcywgZSwgYSBpbiB2IGlmIGxvIDw9IGEgPCBoaV0pID49IDNdCiAgICBuID0gc3VtKGxlbihbMSBmb3IgcywgZSwgYSBpbiB2IGlmIGxvIDw9IGEgPCBoaV0pIGZvciB2IGluIGF0cl9hdC52YWx1ZXMoKSkKICAgIGlmIGxlbihwZXIpID49IDIwOgogICAgICAgIHByaW50KGYiICB7bGFiOjEwc30gbj17bjo8NmR9IGRhdGVzPXtsZW4ocGVyKTo8NGR9IGV4Y2Vzcz17bnAubWVhbihwZXIpKjEwMDorNS4yZn0lIikKICAgIGVsc2U6CiAgICAgICAgcHJpbnQoZiIgIHtsYWI6MTBzfSBuPXtuOjw2ZH0g5qC35pys5LiN6LazIikKCnByaW50KCJcbj09PSDmr4/ml6XmjqjojZDmppzljZXmtYvor5U6IOaMiSBzY29yZSDmjpLluo8gdnMg5oyJICfkuI3ov73pq5gnIHJhbmtfc2NvcmUg5o6S5bqPID09PSIpCiMgcmFua19zY29yZSBkZW1vdGVzIHRoZSBvdmVyLWV4dGVuZGVkIHRvcCB6b25lIChtZWFzdXJlZDogPj03NiBsb3NlcywgNjgtNzQgd2lucykKZGVmIHJhbmtfb2YocywgYXRyKToKICAgIHJldHVybiBzIC0gbWF4KDAuMCwgcyAtIDc1LjApICogMS41CgoKZGF5ID0gZGVmYXVsdGRpY3QobGlzdCkKZm9yIEYgaW4gc3RvY2tzOgogICAgbiA9IGludChGWyJuIl0pCiAgICBjLCBvID0gRlsiY2xvc2UiXSwgRlsib3BlbiJdCiAgICBsaW0gPSAwLjA5NyBpZiBGWyJjb2RlIl0uc3RhcnRzd2l0aCgoIjMwIiwgIjY4IikpIGVsc2UgMC4wNDcKICAgIGZvciB0IGluIHJhbmdlKE1JTl9ISVNULCBuIC0gMSk6CiAgICAgICAgcywgb2sgPSBzaGlwKEYsIHQpCiAgICAgICAgaWYgbm90IG9rOgogICAgICAgICAgICBjb250aW51ZQogICAgICAgIGsgPSB0ICsgMSArIEgKICAgICAgICBlbyA9IG9bdCArIDFdCiAgICAgICAgaWYgayA+PSBuIG9yIGVvIDw9IDA6CiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgaWYgRlsicGN0Il1bdF0gPiAwIGFuZCBlbyA+PSBjW3RdICogKDEgKyBsaW0pICogMC45OTU6CiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgZCA9IHN0cihGWyJkYXRlIl1bdF0pCiAgICAgICAgYiA9IEJBU0VMSU5FLmdldCgoZCwgSCkpCiAgICAgICAgaWYgYiBpcyBOb25lOgogICAgICAgICAgICBjb250aW51ZQogICAgICAgIGRheVtkXS5hcHBlbmQoKHMsIHJhbmtfb2YocywgMCksIChjW2tdIC8gZW8gLSAxLjApIC0gQ09TVCAtIGIsIGZsb2F0KGcoRiwgImF0cl9wY3QiLCB0KSkpKQoKZm9yIFRPUE4gaW4gKDEwLCAyMCk6CiAgICBmb3Iga2V5LCBsYWIgaW4gKCgwLCAi5oyJIHNjb3JlIOaOkuW6jyIpLCAoMSwgIuaMiSByYW5rX3Njb3JlIOaOkuW6jyjkuI3ov73pq5gpIikpOgogICAgICAgIHBlciA9IFtdCiAgICAgICAgZm9yIGQsIHYgaW4gZGF5Lml0ZW1zKCk6CiAgICAgICAgICAgIHYgPSBzb3J0ZWQodiwga2V5PWxhbWJkYSB4OiAteFtrZXldKVs6VE9QTl0KICAgICAgICAgICAgaWYgbGVuKHYpID49IDM6CiAgICAgICAgICAgICAgICBwZXIuYXBwZW5kKG5wLm1lYW4oW3hbMl0gZm9yIHggaW4gdl0pKQogICAgICAgIHAgPSBucC5hcnJheShwZXIpCiAgICAgICAgb29zID0gW25wLm1lYW4oW3hbMl0gZm9yIHggaW4gc29ydGVkKHYsIGtleT1sYW1iZGEgeDogLXhba2V5XSlbOlRPUE5dXSkKICAgICAgICAgICAgICAgZm9yIGQsIHYgaW4gZGF5Lml0ZW1zKCkgaWYgZCA+PSBDVVRPRkYgYW5kIGxlbih2KSA+PSAzXQogICAgICAgIHByaW50KGYiICB0b3B7VE9QTjo8M2R9IHtsYWI6MjRzfSBkYXRlcz17bGVuKHApOjRkfSBkX2V4Yz17cC5tZWFuKCkqMTAwOis1LjJmfSUgIgogICAgICAgICAgICAgIGYib29zPXtucC5tZWFuKG9vcykqMTAwOis1LjJmfSUgcG9zJT17KHA+MCkubWVhbigpKjEwMDo0LjBmfSUgd29yc3Q9e3AubWluKCkqMTAwOis1LjFmfSUiKQo=
+#!/usr/bin/env python3
+"""FINAL SHIPPED MODEL — this file is the spec that gets ported to Kotlin.
+
+score = 50
+      + trend structure (close vs MA20 vs MA60, graded by MA20 10-day slope)
+      + MA10 alignment
+      - volatility penalty, capped:  min(24, max(0, ATR%/14d - 2.0%) * 300)
+advice: 买入>=66 持有43..65 卖出<=42 强烈卖出<=30  (强烈买入 tier decided below)
+
+Validation protocol: signal at close(t), entry at open(t+1), 20 trading sessions,
+net of 0.12% cost, excess vs same-day universe mean, date-equal weighted,
+out-of-sample = dates >= 2026-04-23.
+"""
+import numpy as np
+from collections import defaultdict
+from model import CUTOFF, _nan, g, stocks, MIN_HIST, COST, H, BASELINE
+from strategy import v_old
+
+ATR_KNEE, ATR_PEN, ATR_CAP, ATR_GATE = 0.020, 300.0, 24.0, 0.045
+BUY, STRONG_BUY, SELL, STRONG_SELL = 66.0, 75.0, 42.0, 30.0
+
+
+def ship(F, t):
+    c = F["close"][t]
+    ma10, ma20, ma60 = g(F, "ma10", t), g(F, "ma20", t), g(F, "ma60", t)
+    sl = g(F, "ma20_slope", t)
+    if _nan(ma20) or _nan(ma60) or _nan(ma10) or _nan(sl):
+        return 0.0, False
+    s = 50.0
+    up = c > ma20 > ma60
+    dn = c < ma20 < ma60
+    if up:
+        s += 22 if sl > 0.015 else (14 if sl > 0.0 else 6)
+    elif dn:
+        s -= 22 if sl < -0.015 else (14 if sl < 0.0 else 6)
+    else:
+        s -= 3
+    s += 4 if c > ma10 > ma20 else -2
+    a = g(F, "atr_pct", t)
+    if not _nan(a):
+        s -= min(max(0.0, a - ATR_KNEE) * ATR_PEN, ATR_CAP)
+    return float(np.clip(s, 0, 100)), True
+
+
+def old_fn(F, t):
+    sc, ok = v_old(F, t)
+    return float(sc), bool(ok)
+
+
+def build(fn):
+    rows = []
+    for F in stocks:
+        n = int(F["n"])
+        c, o = F["close"], F["open"]
+        lim = 0.097 if F["code"].startswith(("30", "68")) else 0.047
+        for t in range(MIN_HIST, n - 1):
+            s, ok = fn(F, t)
+            if not ok:
+                continue
+            k = t + 1 + H
+            eo = o[t + 1]
+            if k >= n or eo <= 0:
+                continue
+            d = str(F["date"][t])
+            b = BASELINE.get((d, H))
+            if b is None:
+                continue
+            raw = (c[k] / eo - 1.0) - COST
+            rows.append((s, d, raw, raw - b,
+                         F["pct"][t] > 0 and eo >= c[t] * (1 + lim) * 0.995))
+    return rows
+
+
+def summarize(rows, buy_th, sell_th, name):
+    tot = len(rows)
+    nb = sum(1 for x in rows if x[0] >= buy_th)
+    ns = sum(1 for x in rows if x[0] <= sell_th)
+    bd, sd = defaultdict(list), defaultdict(list)
+    for s, d, raw, exc, unb in rows:
+        if s >= buy_th and not unb:
+            bd[d].append((raw, exc))
+        elif s <= sell_th:
+            sd[d].append(exc)
+    dates = sorted({x[1] for x in rows})
+    h1 = set(dates[:len(dates) // 2])
+    per, e1, e2 = [], [], []
+    for d, v in bd.items():
+        if len(v) < 3:
+            continue
+        m = np.mean([x[1] for x in v])
+        per.append(m)
+        (e1 if d in h1 else e2).append(m)
+    oo = [x for d, v in bd.items() if d >= CUTOFF for x in v]
+    R = np.array([x[0] for x in oo])
+    OE = np.array([x[1] for x in oo])
+    mo = defaultdict(list)
+    for d, v in bd.items():
+        if len(v) >= 3:
+            mo[d[:7]].append(np.mean([x[1] for x in v]))
+    mp = np.array([np.mean(v) for v in mo.values()])
+    sells = [np.mean(v) for v in sd.values() if len(v) >= 3]
+    print(f"\n### {name}  (加仓>={buy_th:.0f} 减仓<={sell_th:.0f})")
+    print(f"  发声率: 加仓 {nb/tot*100:4.1f}% / 减仓 {ns/tot*100:4.1f}% / 合计 {(nb+ns)/tot*100:4.1f}%"
+          f"   每日候选 {np.mean([len(v) for v in bd.values() if len(v)>=3]):.1f} 只")
+    print(f"  加仓超额(日期等权): 全程 {np.mean(per)*100:+.2f}%  前半 {np.mean(e1)*100:+.2f}%  "
+          f"后半 {np.mean(e2)*100:+.2f}%  样本外 {OE.mean()*100:+.2f}%")
+    print(f"  样本外单笔20日: 均值 {R.mean()*100:+.2f}% 胜率 {(R>0).mean()*100:.1f}% "
+          f"p05 {np.percentile(R,5)*100:+.1f}% p25 {np.percentile(R,25)*100:+.1f}% "
+          f"亏>10% {(R<-0.10).mean()*100:.1f}% 亏>20% {(R<-0.20).mean()*100:.1f}% 最差 {R.min()*100:+.1f}%")
+    print(f"  月度: {len(mp)}月 跑赢基准 {(mp>0).mean()*100:.0f}% 中位 {np.median(mp)*100:+.2f}% "
+          f"最差 {mp.min()*100:+.2f}%")
+    if sells:
+        print(f"  减仓超额 {np.mean(sells)*100:+.2f}% (负=判断正确)")
+
+
+new_rows = build(ship)
+old_rows = build(old_fn)
+summarize(new_rows, BUY, SELL, "NEW 上线模型")
+summarize(old_rows, 60, 40, "OLD v4.0.1 模型")
+
+print("\n=== NEW 分档 (date-equal excess) ===")
+for lo, hi, lab in ((0, 30, "强烈卖出 <=29"), (30, 43, "卖出 30-42"), (43, 58, "持有 43-57"),
+                    (58, 66, "观望 58-65"), (66, 75, "买入 66-74"), (75, 101, "强烈买入 >=75")):
+    bd = defaultdict(list)
+    for s, d, raw, exc, unb in new_rows:
+        if lo <= s < hi and not unb:
+            bd[d].append(exc)
+    per = [np.mean(v) for v in bd.values() if len(v) >= 3]
+    n = sum(len(v) for v in bd.values())
+    if len(per) < 15:
+        print(f"  {lab:16s} n={n:<6d} 样本不足")
+        continue
+    print(f"  {lab:16s} n={n:<6d} dates={len(per):<4d} excess={np.mean(per)*100:+5.2f}%")
+
+print("\n=== 是否保留'强烈买入'档? 看 >=70 区间内部按 ATR 细分 ===")
+atr_at = {}
+for F in stocks:
+    n = int(F["n"])
+    c, o = F["close"], F["open"]
+    lim = 0.097 if F["code"].startswith(("30", "68")) else 0.047
+    for t in range(MIN_HIST, n - 1):
+        s, ok = ship(F, t)
+        if not ok:
+            continue
+        k = t + 1 + H
+        eo = o[t + 1]
+        if k >= n or eo <= 0:
+            continue
+        d = str(F["date"][t])
+        b = BASELINE.get((d, H))
+        if b is None:
+            continue
+        raw = (c[k] / eo - 1.0) - COST
+        if s >= 70 and not (F["pct"][t] > 0 and eo >= c[t] * (1 + lim) * 0.995):
+            atr_at.setdefault(d, []).append((s, raw - b, float(g(F, "atr_pct", t))))
+for lo, hi, lab in ((0.0, 0.020, "ATR<=2.0%"), (0.020, 0.030, "2.0-3.0%"),
+                    (0.030, 0.045, "3.0-4.5%"), (0.045, 9.9, ">4.5%")):
+    per = [np.mean([e for s, e, a in v if lo <= a < hi]) for d, v in atr_at.items()
+           if len([1 for s, e, a in v if lo <= a < hi]) >= 3]
+    n = sum(len([1 for s, e, a in v if lo <= a < hi]) for v in atr_at.values())
+    if len(per) >= 20:
+        print(f"  {lab:10s} n={n:<6d} dates={len(per):<4d} excess={np.mean(per)*100:+5.2f}%")
+    else:
+        print(f"  {lab:10s} n={n:<6d} 样本不足")
+
+print("\n=== 每日推荐榜单测试: 按 score 排序 vs 按 '不追高' rank_score 排序 ===")
+# rank_score demotes the over-extended top zone (measured: >=76 loses, 68-74 wins)
+def rank_of(s, atr):
+    return s - max(0.0, s - 75.0) * 1.5
+
+
+day = defaultdict(list)
+for F in stocks:
+    n = int(F["n"])
+    c, o = F["close"], F["open"]
+    lim = 0.097 if F["code"].startswith(("30", "68")) else 0.047
+    for t in range(MIN_HIST, n - 1):
+        s, ok = ship(F, t)
+        if not ok:
+            continue
+        k = t + 1 + H
+        eo = o[t + 1]
+        if k >= n or eo <= 0:
+            continue
+        if F["pct"][t] > 0 and eo >= c[t] * (1 + lim) * 0.995:
+            continue
+        d = str(F["date"][t])
+        b = BASELINE.get((d, H))
+        if b is None:
+            continue
+        day[d].append((s, rank_of(s, 0), (c[k] / eo - 1.0) - COST - b, float(g(F, "atr_pct", t))))
+
+for TOPN in (10, 20):
+    for key, lab in ((0, "按 score 排序"), (1, "按 rank_score 排序(不追高)")):
+        per = []
+        for d, v in day.items():
+            v = sorted(v, key=lambda x: -x[key])[:TOPN]
+            if len(v) >= 3:
+                per.append(np.mean([x[2] for x in v]))
+        p = np.array(per)
+        oos = [np.mean([x[2] for x in sorted(v, key=lambda x: -x[key])[:TOPN]])
+               for d, v in day.items() if d >= CUTOFF and len(v) >= 3]
+        print(f"  top{TOPN:<3d} {lab:24s} dates={len(p):4d} d_exc={p.mean()*100:+5.2f}% "
+              f"oos={np.mean(oos)*100:+5.2f}% pos%={(p>0).mean()*100:4.0f}% worst={p.min()*100:+5.1f}%")
