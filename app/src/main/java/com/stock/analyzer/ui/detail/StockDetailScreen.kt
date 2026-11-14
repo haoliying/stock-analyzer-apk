@@ -34,6 +34,7 @@ fun StockDetailScreen(
     val period by viewModel.period.collectAsState()
     val isLoading by viewModel.isLoading.collectAsState()
     val error by viewModel.error.collectAsState()
+    val dataNote by viewModel.dataNote.collectAsState()
 
     LaunchedEffect(stockCode) {
         viewModel.loadStock(stockCode)
@@ -61,9 +62,12 @@ fun StockDetailScreen(
                 .fillMaxSize()
                 .padding(paddingValues)
         ) {
-            if (isLoading && stock == null) {
+            // 只有"行情和K线都没有"才算整页失败；以前 error 一出现就把图表和评分一起藏掉，
+            // 于是停牌/退市/代码变更的股票点进去只有一个"重试"按钮
+            val nothingAtAll = stock == null && klineData.isEmpty() && analysis == null
+            if (isLoading && nothingAtAll) {
                 CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
-            } else if (error != null && stock == null) {
+            } else if (nothingAtAll && error != null) {
                 Column(
                     modifier = Modifier.align(Alignment.Center),
                     horizontalAlignment = Alignment.CenterHorizontally
@@ -82,6 +86,11 @@ fun StockDetailScreen(
                     // 价格卡片
                     stock?.let { PriceCard(stock = it) }
 
+                    error?.let {
+                        Text(it, fontSize = 12.sp, color = MaterialTheme.colorScheme.error)
+                        Spacer(modifier = Modifier.height(12.dp))
+                    }
+
                     Spacer(modifier = Modifier.height(16.dp))
 
                     // 周期选择
@@ -95,11 +104,29 @@ fun StockDetailScreen(
                     // K线图
                     if (klineData.isNotEmpty()) {
                         KLineChartCard(klineData = klineData, period = period)
-                        Spacer(modifier = Modifier.height(16.dp))
+                        Spacer(modifier = Modifier.height(8.dp))
+                    }
+                    dataNote?.let {
+                        Text(
+                            it,
+                            fontSize = 12.sp,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            lineHeight = 17.sp
+                        )
+                        Spacer(modifier = Modifier.height(8.dp))
+                    }
+                    if (klineData.isEmpty() && !isLoading) {
+                        Text(
+                            "这个周期没有可显示的数据",
+                            fontSize = 13.sp,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                        Spacer(modifier = Modifier.height(8.dp))
                     }
 
                     // 分析结果
                     analysis?.let { result ->
+                        Spacer(modifier = Modifier.height(8.dp))
                         AnalysisCard(analysis = result)
                         Spacer(modifier = Modifier.height(16.dp))
 
@@ -212,10 +239,15 @@ fun KLineChartCard(klineData: List<KLineData>, period: StockDetailViewModel.Char
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
-            Text("K线图", fontSize = 16.sp, fontWeight = FontWeight.Bold)
-            Spacer(modifier = Modifier.height(12.dp))
+            // 分时/5日 是分钟粒度，只看最近一段；日线以上维持 30 根
+            val displayData = klineData.takeLast(
+                if (period == StockDetailViewModel.ChartPeriod.TIMELINE ||
+                    period == StockDetailViewModel.ChartPeriod.FIVE_DAY) 60 else 30
+            )
 
-            val displayData = klineData.takeLast(30)
+            Text("${period.label}（最近 ${displayData.size} 个数据点）",
+                fontSize = 16.sp, fontWeight = FontWeight.Bold)
+            Spacer(modifier = Modifier.height(12.dp))
             if (displayData.isNotEmpty()) {
                 Canvas(
                     modifier = Modifier

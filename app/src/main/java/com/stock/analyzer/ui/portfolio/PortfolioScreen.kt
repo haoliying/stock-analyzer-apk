@@ -188,11 +188,12 @@ fun AdviceSection(advice: PositionAdvice) {
             Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     Text("加仓区间", fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                    Text("${String.format("%.2f", advice.addPriceRange.low)} - ${String.format("%.2f", advice.addPriceRange.high)}", fontSize = 14.sp, fontWeight = FontWeight.Medium, color = Color(0xFFE53935))
+                    // 连现价都没有（行情和日线都取不到）时不编造区间，直接写"无法估算"
+                    Text(rangeText(advice.addPriceRange), fontSize = 14.sp, fontWeight = FontWeight.Medium, color = Color(0xFFE53935))
                 }
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     Text("减仓区间", fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                    Text("${String.format("%.2f", advice.reducePriceRange.low)} - ${String.format("%.2f", advice.reducePriceRange.high)}", fontSize = 14.sp, fontWeight = FontWeight.Medium, color = Color(0xFF43A047))
+                    Text(rangeText(advice.reducePriceRange), fontSize = 14.sp, fontWeight = FontWeight.Medium, color = Color(0xFF43A047))
                 }
             }
             // 止损价 + 风险提示（v4.1.0 新增：这套模型的价值主要在尾部风险控制）
@@ -210,6 +211,11 @@ fun AdviceSection(advice: PositionAdvice) {
         }
     }
 }
+
+/** 区间为 0 说明连现价都没取到，这时不印 "0.00 - 0.00" */
+private fun rangeText(range: PriceRange): String =
+    if (range.high <= 0 || range.low <= 0) "无法估算"
+    else "${String.format("%.2f", range.low)} - ${String.format("%.2f", range.high)}"
 
 /**
  * 添加持仓对话框 - 支持拼音搜索和自动填充
@@ -232,13 +238,22 @@ fun AddStockDialog(
     // 搜索逻辑
     LaunchedEffect(searchText) {
         if (searchText.length >= 1) {
-            searchResults = stockInfoRepo.searchByPinyin(searchText)
-            // 如果输入的是完整代码（可能不带前缀），自动选中
+            // 输入完整代码（可不带前缀）时优先精确命中，直接选中
             val normalizedCode = PortfolioViewModel.normalizeStockCode(searchText.trim())
-            val exactMatch = stockInfoRepo.getStockByCode(normalizedCode)
+            val typedCode = searchText.trim().replace(Regex("[^0-9]"), "")
+            val exactMatch = if (typedCode.length == 6) stockInfoRepo.resolveCode(normalizedCode) else null
             if (exactMatch != null) {
                 selectedStock = exactMatch
                 searchResults = emptyList()
+            } else {
+                val local = stockInfoRepo.searchByPinyin(searchText)
+                if (local.isNotEmpty()) {
+                    searchResults = local
+                } else {
+                    // 内置列表查不到就联网搜，别让"添加持仓"只认几千只老股票
+                    kotlinx.coroutines.delay(320)
+                    searchResults = stockInfoRepo.searchOnline(searchText)
+                }
             }
         } else {
             searchResults = emptyList()

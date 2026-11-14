@@ -8,6 +8,8 @@ import com.stock.analyzer.data.model.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.File
+import java.text.SimpleDateFormat
+import java.util.Locale
 
 /**
  * 股票数据仓库 - 带本地缓存
@@ -26,6 +28,50 @@ class StockRepository(private val context: Context) {
         if (!cacheDir.exists()) {
             cacheDir.mkdirs()
         }
+    }
+
+    companion object {
+        /**
+         * 缓存结构版本。
+         *
+         * v4.3.0 及以前：`getKLineData` 把"调用方要的条数"当成了"缓存保留的条数"，
+         * 于是同一个 `kline_{code}_daily.json` 会被分时(1 根)、补价(5 根)、日线(60 根)
+         * 这几个入口反复 `takeLast(count)` 越截越短，分析需要的 130 根永远凑不齐，
+         * 增量下载又只在"有新 K 线"时才合并 —— 用户看到的就是
+         * "有的股票没有日线月线数据，也没被分析"。
+         * 现在缓存按 [storageBars] 保底存储，返回时才按调用方的 count 截断；
+         * 版本号不一致的旧缓存视为不可信，直接全量重下（装上新版本后自动修复）。
+         */
+        private const val CACHE_VERSION = 2
+
+        /** 缓存至少保留多少根 K 线（必须显著大于任何调用方的 count，否则又会互相截断） */
+        private fun storageBars(period: String): Int = when (period) {
+            "daily" -> 260      // 分析口径 130 根（≈1 年），留一倍余量
+            "weekly" -> 150
+            "monthly" -> 120
+            else -> 260         // 分钟线
+        }
+
+        /**
+         * 最后一根 K 线距今多少个日历日。
+         * 停牌、退市、代码换段（北交所 83xxxx→920xxx）时数据源仍会返回一段**很旧**的历史，
+         * 接口"成功"但内容是死的；调用方用它来判断"这不是可用数据，别当现价分析"。
+         * 解析不出来返回 null（当作未知，不做判断）。
+         */
+        fun lagDays(lastDate: String?): Int? {
+            if (lastDate.isNullOrBlank()) return null
+            return try {
+                val d = SimpleDateFormat("yyyy-MM-dd", Locale.US).parse(
+                    if (lastDate.length >= 10) lastDate.substring(0, 10) else lastDate
+                ) ?: return null
+                ((System.currentTimeMillis() - d.time) / (24L * 3600_000L)).toInt()
+            } catch (e: Exception) {
+                null
+            }
+        }
+
+        /** 超过这个天数没有新 K 线，就认为这只股票已经停牌/退市/代码失效 */
+        const val STALE_LAG_DAYS = 20
     }
     
     // ========== 缓存管理 ==========
@@ -74,7 +120,8 @@ class StockRepository(private val context: Context) {
         val period: String,
         val lastUpdate: Long,
         val lastDate: String,  // 最后一条数据的日期
-        val klines: List<KLineData>
+        val klines: List<KLineData>,
+        val version: Int = 0   // 老缓存没这个字段 → 读出 0 → 视为过期重下
     )
     
     // ========== 数据获取（带缓存） ==========
@@ -113,7 +160,10 @@ class StockRepository(private val context: Context) {
     
     /**
      * 获取K线历史数据 - 带缓存支持
-     * 只下载增量数据
+     *
+     * 缓存保留 [storageBars] 根（不随调用方 count 缩小），返回值才截到 count 根；
+     * 每次都用同一份完整序列去合并接口结果，所以分时/补价/日线/分析
+     * 混着调用也不会把数据截断。
      */
     suspend fun getKLineData(
         code: String,
@@ -121,93 +171,54 @@ class StockRepository(private val context: Context) {
         count: Int = 100
     ): Result<List<KLineData>> {
         return withContext(Dispatchers.IO) {
+            val stored = maxOf(count, storageBars(period))
+            val cached = getCachedKlineData(code, period)
+            val inSync = cached?.takeIf {
+                it.version == CACHE_VERSION && it.klines.isNotEmpty() && it.klines.size >= count
+            }
             try {
-                // 1. 检查本地缓存
-                val cached = getCachedKlineData(code, period)
-                
-                if (cached != null && cached.klines.isNotEmpty()) {
-                    // 有缓存数据
-                    val lastDate = cached.lastDate
-                    
-                    // 2. 获取增量数据（从最后缓存日期到现在）
-                    val newKlines = fetchIncrementalKlineData(code, period, lastDate, count)
-                    
-                    if (newKlines != null && newKlines.isNotEmpty()) {
-                        // 3. 合并缓存和新数据
-                        val mergedKlines = mergeKlineData(cached.klines, newKlines)
-                        
-                        // 4. 只保留最新的count条数据
-                        val finalKlines = if (mergedKlines.size > count) {
-                            mergedKlines.takeLast(count)
-                        } else {
-                            mergedKlines
-                        }
-                        
-                        // 5. 更新缓存
-                        val lastDate = finalKlines.lastOrNull()?.date ?: lastDate
-                        val updatedCache = CachedKlineData(
-                            code = code,
-                            period = period,
-                            lastUpdate = System.currentTimeMillis(),
-                            lastDate = lastDate,
-                            klines = finalKlines
-                        )
-                        saveKlineCacheData(code, period, updatedCache)
-                        
-                        Result.success(finalKlines)
+                val fresh: List<KLineData> = sinaApi.getKLineData(code, period, stored)
+
+                if (fresh.isEmpty()) {
+                    // 接口此刻取不到（限流/停牌/退市/代码失效）：有缓存就用缓存，别把页面打成空白
+                    val salvage = inSync?.klines ?: cached?.klines
+                    return@withContext if (!salvage.isNullOrEmpty()) {
+                        Result.success(salvage)
                     } else {
-                        // 没有新数据，返回缓存
-                        Result.success(cached.klines)
-                    }
-                } else {
-                    // 没有缓存，全量下载
-                    val klineData = sinaApi.getKLineData(code, period, count)
-                    if (klineData.isEmpty()) {
-                        Result.failure(Exception("无法获取K线数据"))
-                    } else {
-                        // 保存到缓存
-                        val lastDate = klineData.lastOrNull()?.date ?: ""
-                        val cacheData = CachedKlineData(
-                            code = code,
-                            period = period,
-                            lastUpdate = System.currentTimeMillis(),
-                            lastDate = lastDate,
-                            klines = klineData
-                        )
-                        saveKlineCacheData(code, period, cacheData)
-                        
-                        Result.success(klineData)
+                        Result.failure(Exception("没有取到K线数据（可能停牌、退市，或代码已变更）"))
                     }
                 }
+
+                val merged = if (inSync != null) {
+                    mergeKlineData(inSync.klines, fresh).takeLast(stored)
+                } else {
+                    fresh.takeLast(stored)
+                }
+
+                saveKlineCacheData(
+                    code, period,
+                    CachedKlineData(
+                        code = code,
+                        period = period,
+                        lastUpdate = System.currentTimeMillis(),
+                        lastDate = merged.lastOrNull()?.date ?: "",
+                        klines = merged,
+                        version = CACHE_VERSION
+                    )
+                )
+
+                Result.success(merged.takeLast(count))
             } catch (e: Exception) {
-                Result.failure(e)
+                val salvage = inSync?.klines ?: cached?.klines
+                if (salvage != null && salvage.isNotEmpty()) {
+                    Result.success(salvage.takeLast(count))
+                } else {
+                    Result.failure(e)
+                }
             }
         }
     }
-    
-    /**
-     * 获取增量K线数据
-     */
-    private fun fetchIncrementalKlineData(
-        code: String,
-        period: String,
-        fromDate: String,
-        count: Int
-    ): List<KLineData>? {
-        return try {
-            // 下载更多数据以确保覆盖增量部分
-            val allData = sinaApi.getKLineData(code, period, count * 2)
-            if (allData.isEmpty()) return null
-            
-            // 过滤出fromDate之后的数据
-            val newData = allData.filter { it.date > fromDate }
-            newData
-        } catch (e: Exception) {
-            e.printStackTrace()
-            null
-        }
-    }
-    
+
     /**
      * 合并K线数据（去重）
      */

@@ -15,6 +15,7 @@ import com.stock.analyzer.data.repository.StockRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class PortfolioViewModel(application: Application) : AndroidViewModel(application) {
@@ -24,18 +25,23 @@ class PortfolioViewModel(application: Application) : AndroidViewModel(applicatio
     private val context = application
     
     companion object {
-        /** 给股票代码补全 sh/sz 前缀 */
+        /**
+         * 给股票代码补全 sh/sz/bj 前缀。
+         *
+         * 这里同时会把存错的旧代码改写回来：北交所 2024 年起改用 920xxx 段，
+         * 老版本按"9 开头 = 沪市"把它存成 sh920xxx，行情和 K 线接口就都取不到，
+         * 表现是"我的持仓里这只股票没有日线/月线、也没分析"。
+         */
         fun normalizeStockCode(code: String): String {
             val trimmed = code.trim().lowercase()
-            if (trimmed.startsWith("sh") || trimmed.startsWith("sz")) return trimmed
-            // 纯数字代码，按规则补前缀
             val numCode = trimmed.replace(Regex("[^0-9]"), "")
-            return when {
-                numCode.startsWith("6") || numCode.startsWith("9") -> "sh$numCode"
-                numCode.startsWith("0") || numCode.startsWith("3") || numCode.startsWith("2") -> "sz$numCode"
-                numCode.startsWith("4") || numCode.startsWith("8") -> "bj$numCode" // 北交所
-                else -> "sz$numCode"
+            if (numCode.length != 6) return trimmed
+            val prefix = when {
+                numCode.startsWith("92") || numCode.startsWith("4") || numCode.startsWith("8") -> "bj"
+                numCode.startsWith("6") || numCode.startsWith("9") || numCode.startsWith("5") -> "sh"
+                else -> "sz"
             }
+            return prefix + numCode
         }
 
         /** 去掉前缀，用于显示 */
@@ -166,19 +172,27 @@ class PortfolioViewModel(application: Application) : AndroidViewModel(applicatio
         viewModelScope.launch {
             val adviceList = mutableListOf<PositionAdvice>()
             for (stock in portfolio) {
-                try {
-                    // 130 根：MA60 与它的 10 日斜率必须有足够历史（与回测口径一致）
-                    val klineResult = repository.getKLineData(stock.code, "daily", StockAnalyzer.BARS_FULL)
-                    if (klineResult.isSuccess) {
-                        val kline = klineResult.getOrDefault(emptyList())
-                        // 历史不足也照样给建议：引擎会标记 dataSufficient=false 并降级为"仅持有"，
-                        // 持仓卡片不会因为拿不到K线而消失（v4.0.1 的减仓区间消失就是这个门槛造成的）
-                        if (kline.isNotEmpty()) {
-                            adviceList.add(analyzer.generatePositionAdvice(stock, kline))
-                        }
-                    }
-                    Thread.sleep(300)
-                } catch (e: Exception) { }
+                // 130 根：MA60 与它的 10 日斜率必须有足够历史（与回测口径一致）
+                val klineResult = try {
+                    repository.getKLineData(stock.code, "daily", StockAnalyzer.BARS_FULL)
+                } catch (e: Exception) {
+                    Result.failure<List<KLineData>>(e)
+                }
+                val kline = klineResult.getOrElse { emptyList() }
+
+                // 历史不足或取不到数据也照样出一条建议：引擎会标 dataSufficient=false 降级为"仅持有"，
+                // 持仓卡片不会因为拿不到K线而消失（v4.0.1 的减仓区间消失就是这个门槛造成的，
+                // v4.3.0 之前"有的股票没被分析"是同一个 skip 造成的）
+                val advice = analyzer.generatePositionAdvice(stock, kline)
+                val note = when {
+                    kline.isEmpty() -> "｜没取到日线数据（${klineResult.exceptionOrNull()?.message
+                        ?: "数据源未返回"}），无法评分；区间按现价保守估算"
+                    else -> staleSuffix(kline.last().date)
+                }
+                adviceList.add(if (note == null) advice else advice.copy(reason = advice.reason + note))
+
+                // 控制请求频率（delay 而不是 Thread.sleep：后者会卡住主线程）
+                delay(250)
             }
             
             // 检查是否需要发送通知
@@ -186,6 +200,14 @@ class PortfolioViewModel(application: Application) : AndroidViewModel(applicatio
             previousAdvices = adviceList
             _advices.value = adviceList
         }
+    }
+
+    /** 数据是死的时候别装作在分析现价：明说最后交易日 */
+    private fun staleSuffix(lastDate: String): String? {
+        val lag = StockRepository.lagDays(lastDate) ?: return null
+        return if (lag > StockRepository.STALE_LAG_DAYS)
+            "｜最后交易日 $lastDate（$lag 天前），可能已停牌/退市，评分只反映历史"
+        else null
     }
     
     private fun checkAndNotify(currentAdvices: List<PositionAdvice>) {

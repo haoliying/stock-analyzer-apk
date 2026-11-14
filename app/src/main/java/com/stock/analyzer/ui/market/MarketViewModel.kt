@@ -9,6 +9,7 @@ import com.stock.analyzer.data.repository.StockRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class MarketViewModel(application: Application) : AndroidViewModel(application) {
@@ -133,6 +134,8 @@ class MarketViewModel(application: Application) : AndroidViewModel(application) 
 
                 _progress.value = "正在分析 ${quotes.size} 只股票..."
                 val results = mutableListOf<StockRecommendation>()
+                var noKline = 0      // 一根K线都没取到（停牌/退市/代码变更/接口失败）
+                var shortHistory = 0 // 有K线但不够 71 根（新股、长期停牌复牌）
 
                 quotes.forEachIndexed { index, stock ->
                     _progress.value = "分析中 ${index + 1}/${quotes.size}: ${stock.name}"
@@ -141,20 +144,20 @@ class MarketViewModel(application: Application) : AndroidViewModel(application) 
                         // 130 根日线：MA60 + 10日斜率 + Wilder 递推需要这段历史，
                         // 与回测（backtest/precompute.py）的口径一致
                         val klineResult = repository.getKLineData(stock.code, "daily", StockAnalyzer.BARS_FULL)
-                        if (klineResult.isSuccess) {
-                            val kline = klineResult.getOrDefault(emptyList())
-                            val rec = analyzer.generateRecommendation(stock, kline)
-                            if (rec != null) {
-                                results.add(rec)
-                            }
+                        val kline = klineResult.getOrElse { emptyList() }
+                        when {
+                            kline.isEmpty() -> noKline++
+                            kline.size < StockAnalyzer.BARS_MIN -> shortHistory++
+                            else -> analyzer.generateRecommendation(stock, kline)?.let { results.add(it) }
                         }
                     } catch (e: Exception) {
-                        // 跳过分析失败的股票
+                        // 取数异常按"无数据"计入，不再静默跳过 —— 页面要能说清楚少分析了谁
+                        noKline++
                     }
 
-                    // 控制请求频率
+                    // 控制请求频率（delay 而非 Thread.sleep：后者会冻住主线程）
                     if (index < quotes.size - 1) {
-                        Thread.sleep(200)
+                        delay(120)
                     }
                 }
 
@@ -172,7 +175,8 @@ class MarketViewModel(application: Application) : AndroidViewModel(application) 
                 _poolInfo.value = "今日 $eligible 只进入前 ${(StockAnalyzer.POOL_FRACTION * 100).toInt()}% 分位池，" +
                     "等距取 ${picks.size} 只等权（不是排行榜）；" +
                     "其中 $nBuy 只在加仓线以上，其余为持有档——档位只回答\"手里这只该不该再加\"，" +
-                    "回测赚的是整篮子的分位差"
+                    "回测赚的是整篮子的分位差" +
+                    coverageNote(noKline, shortHistory)
                 _lastUpdateTime.value = System.currentTimeMillis()
             } catch (e: Exception) {
                 _error.value = "分析失败: ${e.message}"
@@ -180,5 +184,11 @@ class MarketViewModel(application: Application) : AndroidViewModel(application) 
                 _isLoading.value = false
             }
         }
+    }
+
+    /** 没被分析的股票要说出来，不能悄悄丢掉：以前它们直接从列表里消失 */
+    private fun coverageNote(noKline: Int, shortHistory: Int): String {
+        if (noKline == 0 && shortHistory == 0) return ""
+        return "；另有 $noKline 只取不到日线、$shortHistory 只历史不足 ${StockAnalyzer.BARS_MIN} 根，未参与今日候选"
     }
 }

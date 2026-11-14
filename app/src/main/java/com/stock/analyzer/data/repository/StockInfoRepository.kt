@@ -1,7 +1,10 @@
 package com.stock.analyzer.data.repository
 
 import android.content.Context
+import com.stock.analyzer.data.api.SinaStockApi
 import com.stock.analyzer.data.model.StockInfo
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 /**
  * 股票信息仓库 - 内置股票列表，支持拼音/名称/代码搜索
@@ -10,6 +13,8 @@ class StockInfoRepository(private val context: Context) {
 
     private val prefs = context.getSharedPreferences("stock_info_cache", Context.MODE_PRIVATE)
     private val stockList: List<StockInfo> = buildStockList()
+    private val api = SinaStockApi()
+    private val remoteCache = mutableMapOf<String, List<StockInfo>>()
 
     fun searchStocks(query: String): List<StockInfo> {
         if (query.isBlank()) return emptyList()
@@ -20,6 +25,33 @@ class StockInfoRepository(private val context: Context) {
             info.pinyin.replace(" ", "").contains(q, ignoreCase = true)
         }.take(20)
     }
+
+    /**
+     * 内置列表命中不了时联网搜（东方财富 suggest）。
+     *
+     * 内置列表是静态的，北交所整段换成 920xxx、新股上市、改名，都会让搜索变成
+     * "未找到匹配的股票" —— 用户看到的正是"这只股票没数据"。
+     */
+    suspend fun searchOnline(query: String, limit: Int = 20): List<StockInfo> =
+        withContext(Dispatchers.IO) {
+            val q = query.trim()
+            if (q.isBlank()) return@withContext emptyList()
+            remoteCache[q]?.let { return@withContext it }
+            val found = try {
+                api.searchStocksRemote(q, limit)
+            } catch (e: Exception) {
+                emptyList()
+            }
+            if (remoteCache.size > 64) remoteCache.clear()   // 一次会话内的按键搜索，够用就行
+            remoteCache[q] = found
+            found
+        }
+
+    /** 已知代码直接补名称（添加持仓时用） */
+    suspend fun resolveCode(code: String): StockInfo? =
+        getStockByCode(code) ?: searchOnline(code, limit = 1).firstOrNull {
+            it.code.equals(code, ignoreCase = true)
+        }
 
     fun searchByPinyin(pinyin: String): List<StockInfo> {
         if (pinyin.isBlank()) return emptyList()
@@ -438,13 +470,13 @@ class StockInfoRepository(private val context: Context) {
             StockInfo("sh688561", "奇安信", "QAX"),
             StockInfo("sh688599", "天合光能", "THGN"),
 
-            // ===== 北交所 (8/4) =====
-            StockInfo("bj830799", "艾融软件", "RRRJ"),
-            StockInfo("bj831305", "海希通讯", "HXTX"),
-            StockInfo("bj831799", "星图测控", "XTCK"),
-            StockInfo("bj835185", "贝特瑞", "BTR"),
-            StockInfo("bj838171", "志晟信息", "ZSXX"),
-            StockInfo("bj839680", "中航泰达", "ZHTD")
+            // ===== 北交所（2024 年起整段换成 920xxx，原 83xxxx 已失效）=====
+            StockInfo("bj920799", "艾融软件", "ARRJ"),
+            StockInfo("bj920405", "海希通讯", "HXTX"),
+            StockInfo("bj920116", "星图测控", "XTCK"),
+            StockInfo("bj920185", "贝特瑞", "BTR"),
+            StockInfo("bj920171", "志晟信息", "ZSXX"),
+            StockInfo("bj920263", "中航泰达", "ZHTD")
         )
     }
 }

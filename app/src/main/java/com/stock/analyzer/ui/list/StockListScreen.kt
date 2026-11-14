@@ -37,6 +37,7 @@ fun StockListScreen(
     val stocks by viewModel.stocks.collectAsState()
     val isLoading by viewModel.isLoading.collectAsState()
     val error by viewModel.error.collectAsState()
+    val insights by viewModel.insights.collectAsState()
     
     // 搜索的股票实时行情
     var searchedStock by remember { mutableStateOf<Stock?>(null) }
@@ -121,6 +122,7 @@ fun StockListScreen(
                             items(stocks) { stock ->
                                 StockItem(
                                     stock = stock,
+                                    insight = insights[stock.code],
                                     onClick = { onStockClick(stock.code) }
                                 )
                             }
@@ -161,10 +163,18 @@ fun StockSearchBar(
     val coroutineScope = rememberCoroutineScope()
     
     LaunchedEffect(searchQuery) {
-        searchResults = if (searchQuery.isBlank()) {
-            emptyList()
+        if (searchQuery.isBlank()) {
+            searchResults = emptyList()
         } else {
-            stockInfoRepo.searchStocks(searchQuery)
+            val local = stockInfoRepo.searchStocks(searchQuery)
+            if (local.isNotEmpty()) {
+                searchResults = local
+            } else {
+                // 内置列表是静态的（新股、改名、北交所换段都不在里面）——
+                // 停一下再联网搜，否则每敲一个字发一次请求
+                kotlinx.coroutines.delay(320)
+                searchResults = stockInfoRepo.searchOnline(searchQuery)
+            }
         }
     }
     
@@ -422,6 +432,7 @@ fun SearchedStockCard(
 @Composable
 fun StockItem(
     stock: Stock,
+    insight: StockListViewModel.Insight? = null,
     onClick: () -> Unit
 ) {
     Card(
@@ -438,7 +449,7 @@ fun StockItem(
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            // 左侧：股票名称和代码
+            // 左侧：股票名称、代码、分析档位
             Column(
                 modifier = Modifier.weight(1f)
             ) {
@@ -452,6 +463,42 @@ fun StockItem(
                     fontSize = 14.sp,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier.padding(top = 4.dp)
+                ) {
+                    val tier = insight?.tier
+                    val tierColor = when (tier) {
+                        "达到加仓线" -> Color(0xFFE53935)
+                        "持有" -> Color(0xFFFFA726)
+                        "减仓", "强烈减仓" -> Color(0xFF43A047)
+                        null -> MaterialTheme.colorScheme.onSurfaceVariant
+                        else -> MaterialTheme.colorScheme.onSurfaceVariant
+                    }
+                    Surface(
+                        shape = MaterialTheme.shapes.small,
+                        color = tierColor.copy(alpha = 0.12f)
+                    ) {
+                        Text(
+                            text = if (insight != null && insight.score > 0)
+                                "$tier ${insight.score}分"
+                            else tier ?: "分析中…",
+                            fontSize = 11.sp,
+                            color = tierColor,
+                            modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
+                        )
+                    }
+                }
+                // 拿不到日线/历史不足/数据陈旧 —— 明写原因，不要只留一个空白
+                insight?.note?.let {
+                    Text(
+                        text = it,
+                        fontSize = 11.sp,
+                        color = MaterialTheme.colorScheme.error.copy(alpha = 0.8f),
+                        lineHeight = 15.sp,
+                        modifier = Modifier.padding(top = 4.dp)
+                    )
+                }
             }
             
             // 中间：当前价格
