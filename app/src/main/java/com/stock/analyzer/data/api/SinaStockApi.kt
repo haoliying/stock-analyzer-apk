@@ -274,7 +274,8 @@ class SinaStockApi {
                         close = parts[2].toDoubleOrNull() ?: 0.0,
                         high = parts[3].toDoubleOrNull() ?: 0.0,
                         low = parts[4].toDoubleOrNull() ?: 0.0,
-                        volume = (parts[5].toDoubleOrNull() ?: 0.0).toLong()
+                        volume = (parts[5].toDoubleOrNull() ?: 0.0).toLong(),
+                        amount = parts.getOrNull(6)?.toDoubleOrNull() ?: 0.0   // f57 成交额（元）
                     )
                     klineList.add(kline)
                 } catch (e: Exception) {
@@ -401,7 +402,12 @@ class SinaStockApi {
                         price = parts[2].toDoubleOrNull() ?: 0.0,
                         avgPrice = parts[7].toDoubleOrNull() ?: 0.0,
                         volume = (parts[5].toDoubleOrNull() ?: 0.0).toLong(),
-                        preClose = preClose
+                        preClose = preClose,
+                        // f52~f55 就是这一分钟自己的开/收/高/低，竖线信息条要显示
+                        open = parts[1].toDoubleOrNull() ?: 0.0,
+                        high = parts[3].toDoubleOrNull() ?: 0.0,
+                        low = parts[4].toDoubleOrNull() ?: 0.0,
+                        amount = parts[6].toDoubleOrNull() ?: 0.0
                     )
                     timelineList.add(timeline)
                 } catch (e: Exception) {

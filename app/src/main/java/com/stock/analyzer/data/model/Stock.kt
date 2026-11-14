@@ -35,7 +35,9 @@ data class KLineData(
     /** 只有分时点会填：截至该分钟的均价。其余周期为 0 */
     val avgPrice: Double = 0.0,
     /** 只有分时点会填：昨收，用来算分时涨跌幅。其余周期为 0 */
-    val preClose: Double = 0.0
+    val preClose: Double = 0.0,
+    /** 成交额（元）；备用源给不出时为 0，界面上就不显示这一行 */
+    val amount: Double = 0.0
 )
 
 /**
@@ -47,7 +49,13 @@ data class TimelineData(
     val price: Double,
     val avgPrice: Double,
     val volume: Long,
-    val preClose: Double
+    val preClose: Double,
+    /** 这一分钟自己的开/高/低，竖线信息要用；老数据可能为 0 */
+    val open: Double = 0.0,
+    val high: Double = 0.0,
+    val low: Double = 0.0,
+    /** 这一分钟的成交额（元） */
+    val amount: Double = 0.0
 )
 
 /**

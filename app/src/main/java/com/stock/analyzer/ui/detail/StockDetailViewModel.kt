@@ -20,7 +20,9 @@ class StockDetailViewModel(application: Application) : AndroidViewModel(applicat
      * @param count      首次进入这个周期时取多少根
      * @param stepBars   竖线拖到最左边时，一次往前多取多少根（动态加载）
      * @param maxBars    这个周期最多保留多少根，避免无限往历史上拉
-     * @param windowBars 一屏画多少根
+     * @param windowBars 默认一屏画多少根（放大缩小按钮改的是界面状态，不动这里）
+     * @param minWindow  一屏最少多少根（放到最大）
+     * @param maxWindow  一屏最多多少根（缩到最小、看得最远）
      */
     enum class ChartPeriod(
         val label: String,
@@ -29,13 +31,15 @@ class StockDetailViewModel(application: Application) : AndroidViewModel(applicat
         val stepBars: Int,
         val maxBars: Int,
         val windowBars: Int,
+        val minWindow: Int,
+        val maxWindow: Int,
         val isMinute: Boolean = false
     ) {
-        TIMELINE("分时", "daily", 1, 0, 0, 60, true),
-        DAILY("日线", "daily", 60, 60, 400, 30),
-        FIVE_DAY("5日", "5min", 240, 240, 720, 60, true),
-        WEEKLY("周线", "weekly", 52, 52, 260, 30),
-        MONTHLY("月线", "monthly", 24, 24, 240, 30)
+        TIMELINE("分时", "daily", 1, 0, 0, 60, 20, 240, true),
+        DAILY("日线", "daily", 60, 60, 400, 30, 10, 200),
+        FIVE_DAY("5日", "5min", 240, 240, 720, 60, 20, 240, true),
+        WEEKLY("周线", "weekly", 52, 52, 260, 30, 10, 160),
+        MONTHLY("月线", "monthly", 24, 24, 240, 30, 10, 120)
     }
 
     private val _stock = MutableStateFlow<Stock?>(null)
@@ -120,7 +124,17 @@ class StockDetailViewModel(application: Application) : AndroidViewModel(applicat
             val tl = repository.getTimelineData(code).getOrNull()
             if (!tl.isNullOrEmpty()) {
                 _klineData.value = tl.map {
-                    KLineData(it.time, it.price, it.price, it.price, it.price, it.volume, it.avgPrice, it.preClose)
+                    KLineData(
+                        date = it.time,
+                        open = if (it.open > 0) it.open else it.price,
+                        close = it.price,
+                        high = if (it.high > 0) it.high else it.price,
+                        low = if (it.low > 0) it.low else it.price,
+                        volume = it.volume,
+                        avgPrice = it.avgPrice,
+                        preClose = it.preClose,
+                        amount = it.amount
+                    )
                 }
                 _dataNote.value = null
                 // 分时只有当天这一段，往左再拖也没有更早的分钟数据
@@ -161,10 +175,22 @@ class StockDetailViewModel(application: Application) : AndroidViewModel(applicat
      */
     fun loadOlderBars() {
         val period = _period.value
-        val code = requestedCode.ifBlank { _stock.value?.code ?: return }
-        if (period == ChartPeriod.TIMELINE || _isLoadingMore.value || _historyAtEnd.value) return
+        if (period == ChartPeriod.TIMELINE) return
+        loadHistory(period, historyCount + period.stepBars)
+    }
 
-        val target = minOf(historyCount + period.stepBars, period.maxBars)
+    /** 一屏要显示的根数超过了已加载的根数（往外缩小）时，按需要补数据 */
+    fun ensureBars(minBars: Int) {
+        val period = _period.value
+        if (historyCount >= minBars) return
+        loadHistory(period, maxOf(historyCount + period.stepBars, minBars))
+    }
+
+    private fun loadHistory(period: ChartPeriod, want: Int) {
+        val code = requestedCode.ifBlank { _stock.value?.code ?: return }
+        if (_isLoadingMore.value) return
+
+        val target = minOf(maxOf(want, historyCount + 1), period.maxBars)
         if (target <= historyCount) {
             _historyAtEnd.value = true
             return
