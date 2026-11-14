@@ -394,9 +394,10 @@ class SinaStockApi {
                 if (parts.size < 8) continue
 
                 try {
-                    val timeStr = parts[0].split(" ").getOrNull(1)?.substring(0, 5) ?: ""
+                    // 保留完整 "yyyy-MM-dd HH:mm"：竖线信息条要显示日期，坐标轴只显示 HH:mm
+                    val dateTimeStr = parts[0].trim()
                     val timeline = TimelineData(
-                        time = timeStr,
+                        time = dateTimeStr,
                         price = parts[2].toDoubleOrNull() ?: 0.0,
                         avgPrice = parts[7].toDoubleOrNull() ?: 0.0,
                         volume = (parts[5].toDoubleOrNull() ?: 0.0).toLong(),

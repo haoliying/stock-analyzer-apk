@@ -31,13 +31,18 @@ data class KLineData(
     val close: Double,
     val high: Double,
     val low: Double,
-    val volume: Long
+    val volume: Long,
+    /** 只有分时点会填：截至该分钟的均价。其余周期为 0 */
+    val avgPrice: Double = 0.0,
+    /** 只有分时点会填：昨收，用来算分时涨跌幅。其余周期为 0 */
+    val preClose: Double = 0.0
 )
 
 /**
  * 分时数据
  */
 data class TimelineData(
+    /** 分钟点时间，格式 "yyyy-MM-dd HH:mm" */
     val time: String,
     val price: Double,
     val avgPrice: Double,
