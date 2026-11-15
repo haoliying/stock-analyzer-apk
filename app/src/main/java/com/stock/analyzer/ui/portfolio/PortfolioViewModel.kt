@@ -191,6 +191,10 @@ class PortfolioViewModel(application: Application) : AndroidViewModel(applicatio
                 }
                 adviceList.add(if (note == null) advice else advice.copy(reason = advice.reason + note))
 
+                // 一只一条地发布：以前整个列表要等最后一只算完才出现，
+                // 切回这一页就会看到卡片整片消失再一次性回来
+                _advices.value = adviceList.toList()
+
                 // 控制请求频率（delay 而不是 Thread.sleep：后者会卡住主线程）
                 delay(250)
             }

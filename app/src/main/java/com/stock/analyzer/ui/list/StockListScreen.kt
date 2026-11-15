@@ -17,6 +17,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.stock.analyzer.analysis.MarketEngine
 import com.stock.analyzer.data.model.Stock
 import com.stock.analyzer.data.repository.StockInfoRepository
 import com.stock.analyzer.data.model.StockInfo
@@ -38,6 +39,7 @@ fun StockListScreen(
     val isLoading by viewModel.isLoading.collectAsState()
     val error by viewModel.error.collectAsState()
     val insights by viewModel.insights.collectAsState()
+    val status by viewModel.status.collectAsState()
     
     // 搜索的股票实时行情
     var searchedStock by remember { mutableStateOf<Stock?>(null) }
@@ -79,6 +81,31 @@ fun StockListScreen(
                     )
                 }
                 
+                // 分数不是这一页算的，是后台那一轮给的 —— 说清楚跑到哪了，
+                // 否则用户只会问"为什么这只没分"
+                Surface(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 16.dp, vertical = 2.dp),
+                    color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.4f),
+                    shape = MaterialTheme.shapes.small
+                ) {
+                    val s = status
+                    Text(
+                        text = if (s.analyzing)
+                            "后台评分进行中：第 ${s.done}/${s.total} 只（已评 ${s.scored} 只）" +
+                                if (s.resumed) "，本轮是接着上一轮往下跑的" else ""
+                        else if (s.paused)
+                            "后台评分暂停在第 ${s.done}/${s.total} 只，回来接着跑，不会从第 1 只重来"
+                        else if (s.total > 0)
+                            "后台本轮已跑完 ${s.scored} 只的评分；下一轮 ${SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(Date(s.nextRunAt))}，切页和解锁都不打断"
+                        else "后台正在准备第一轮评分",
+                        fontSize = 11.sp,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp)
+                    )
+                }
+
                 // 股票列表
                 when {
                     isLoading && stocks.isEmpty() -> {
@@ -432,7 +459,7 @@ fun SearchedStockCard(
 @Composable
 fun StockItem(
     stock: Stock,
-    insight: StockListViewModel.Insight? = null,
+    insight: MarketEngine.Insight? = null,
     onClick: () -> Unit
 ) {
     Card(
@@ -482,7 +509,7 @@ fun StockItem(
                         Text(
                             text = if (insight != null && insight.score > 0)
                                 "$tier ${insight.score}分"
-                            else tier ?: "分析中…",
+                            else tier ?: "等后台分析…",
                             fontSize = 11.sp,
                             color = tierColor,
                             modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)

@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.pm.ApplicationInfo
 import android.os.Build
 import androidx.lifecycle.AndroidViewModel
+import com.stock.analyzer.analysis.MarketEngine
 import com.stock.analyzer.analysis.StockAnalyzer
 import com.stock.analyzer.data.repository.AppSettings
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -28,9 +29,23 @@ class SettingsViewModel(app: Application) : AndroidViewModel(app) {
     private val _availability = MutableStateFlow(AppLock.check(app))
     val availability: StateFlow<AppLock.Availability> = _availability.asStateFlow()
 
+    private val _backgroundAnalysis = MutableStateFlow(settings.backgroundAnalysis)
+    val backgroundAnalysis: StateFlow<Boolean> = _backgroundAnalysis.asStateFlow()
+
+    /** 引擎现在跑到哪了，直接显示在开关下面 —— 开关的后果得看得见 */
+    val engineStatus: StateFlow<MarketEngine.Status> = MarketEngine.status
+
+    /** 切换后台分析后的说明 */
+    private val _backgroundNotice = MutableStateFlow<String?>(null)
+    val backgroundNotice: StateFlow<String?> = _backgroundNotice.asStateFlow()
+
     /** 开关操作的结果：开不了的原因，或开启/关闭后的说明。一直显示到下一次操作 */
     private val _lockNotice = MutableStateFlow<String?>(null)
     val lockNotice: StateFlow<String?> = _lockNotice.asStateFlow()
+
+    init {
+        MarketEngine.start(app)
+    }
 
     val version: VersionInfo = readVersion(app)
 
@@ -54,6 +69,21 @@ class SettingsViewModel(app: Application) : AndroidViewModel(app) {
         _appLockEnabled.value = on
         _lockNotice.value = if (on) "已开启。切出应用再回来就会要求解锁；现在正在看的这一屏不受影响。" else "已关闭。"
     }
+
+    fun setBackgroundAnalysis(on: Boolean) {
+        settings.backgroundAnalysis = on
+        _backgroundAnalysis.value = on
+        _backgroundNotice.value = if (on)
+            "已开启：切页、解锁、界面不可见时那一轮都继续跑，被停下的也会从断点那只接着算，不回第 1 只。" +
+            "代价是盘中每分钟一批行情请求，以及关掉应用后进程可能还活着在跑。"
+        else
+            "已关闭：只有界面可见且已解锁时才分析；被停下的那一轮保留进度，回来接着算。" +
+                "注意这会改变应用锁的行为——开着锁且界面不可见时不再发任何请求。"
+        if (on) MarketEngine.refreshNow()
+    }
+
+    /** 手动催一轮：正在跑的那轮不会被打断回第 1 只 */
+    fun runPassNow() = MarketEngine.refreshNow()
 
     fun refreshAvailability() {
         _availability.value = AppLock.check(getApplication())

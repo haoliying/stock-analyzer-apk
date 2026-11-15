@@ -20,10 +20,11 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 
 /**
- * 「设置」页：版本信息、应用锁开关、应用内操作说明。
+ * 「设置」页：版本信息、后台持续分析、应用锁、应用内操作说明。
  *
- * 三块内容都放这一页，是为了让"我装的是哪一版"和"这一版怎么用"在同一个地方能查到 ——
- * 早期版本界面里没写版本号，反馈时说不清装的是哪包，排查全靠猜。
+ * 都放这一页，是为了让"我装的是哪一版""这版怎么用""分析为什么每次进来都重来一遍"
+ * 这三个问题在同一个地方能查到 —— 早期版本界面里没写版本号，反馈时说不清装的是哪包，
+ * 排查全靠猜。
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -31,6 +32,9 @@ fun SettingsScreen(viewModel: SettingsViewModel = viewModel()) {
     val appLock by viewModel.appLockEnabled.collectAsState()
     val availability by viewModel.availability.collectAsState()
     val notice by viewModel.lockNotice.collectAsState()
+    val background by viewModel.backgroundAnalysis.collectAsState()
+    val engineStatus by viewModel.engineStatus.collectAsState()
+    val backgroundNotice by viewModel.backgroundNotice.collectAsState()
     val info = viewModel.version
     // 分节的展开状态按标题记住，翻页回来不会全部缩回去
     val open: SnapshotStateMap<String, Boolean> = remember { mutableStateMapOf<String, Boolean>() }
@@ -65,6 +69,52 @@ fun SettingsScreen(viewModel: SettingsViewModel = viewModel()) {
                 ) {
                     UsageGuide.history.forEach { Bullet(it, color = MaterialTheme.colorScheme.onSurfaceVariant) }
                 }
+            }
+
+            // ---------------------------------------------------------------- 后台持续分析
+            SectionCard("后台持续分析") {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Column(Modifier.weight(1f)) {
+                        Text("界面不在前台时也继续分析", fontSize = 15.sp)
+                        Text(
+                            "开启后：切页、解锁、界面不可见都不会打断那一轮；被停下的也从断点那只接着算，不会回到第 1 只重数。" +
+                                "关掉就只在界面可见且已解锁时跑",
+                            fontSize = 12.sp,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                    Switch(checked = background, onCheckedChange = { viewModel.setBackgroundAnalysis(it) })
+                }
+
+                Spacer(Modifier.height(6.dp))
+                val s = engineStatus
+                val time = remember { java.text.SimpleDateFormat("HH:mm:ss", java.util.Locale.getDefault()) }
+                Text(
+                    text = when {
+                        s.analyzing -> "当前：第 ${s.done}/${s.total} 只，已评 ${s.scored} 只" +
+                            (if (s.resumed) "（断点续跑）" else "") +
+                            "，本轮起 ${time.format(java.util.Date(s.passStartedAt))}"
+                        s.paused -> "当前：暂停在第 ${s.done}/${s.total} 只，已评 ${s.scored} 只留着"
+                        s.nextRunAt > 0L -> "当前：本轮已收口，下一轮 ${time.format(java.util.Date(s.nextRunAt))}"
+                        else -> "当前：后台准备中"
+                    },
+                    fontSize = 12.sp,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                backgroundNotice?.let {
+                    Text(it, fontSize = 12.sp, color = COLOR_OK)
+                }
+
+                TextButton(onClick = { viewModel.runPassNow() }) {
+                    Icon(Icons.Default.Refresh, contentDescription = null, modifier = Modifier.size(16.dp))
+                    Spacer(Modifier.width(6.dp))
+                    Text("催一轮（不打断当前进度）", fontSize = 13.sp)
+                }
+
+                UsageGuide.sections.first { it.title == "后台持续分析" }.lines.forEach { Bullet(it) }
             }
 
             // ---------------------------------------------------------------- 应用锁
@@ -109,15 +159,17 @@ fun SettingsScreen(viewModel: SettingsViewModel = viewModel()) {
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
                 Spacer(Modifier.height(8.dp))
-                // 「应用锁」那一节的内容直接放在上面的开关卡里了，这里不重复列
-                val guideSections = UsageGuide.sections.filter { it.title != "应用锁" }
+                // 「应用锁」「后台持续分析」两节的内容直接放在各自开关卡里了，这里不重复列
+                val guideSections = UsageGuide.sections.filter {
+                    it.title != "应用锁" && it.title != "后台持续分析"
+                }
                 val allExpanded = guideSections.all { open[it.title] == true }
                 TextButton(onClick = {
                     guideSections.forEach { open[it.title] = !allExpanded }
                 }) {
                     Text(if (allExpanded) "全部收起" else "全部展开", fontSize = 13.sp)
                 }
-                UsageGuide.sections.filter { it.title != "应用锁" }.forEach { section ->
+                guideSections.forEach { section ->
                     Expandable(
                         title = section.title,
                         expanded = open[section.title] == true,

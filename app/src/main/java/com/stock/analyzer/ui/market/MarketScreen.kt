@@ -18,6 +18,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.stock.analyzer.analysis.MarketEngine
 import com.stock.analyzer.data.model.Recommendation
 import com.stock.analyzer.data.model.StockRecommendation
 import com.stock.analyzer.data.repository.StockInfoRepository
@@ -33,12 +34,13 @@ fun MarketScreen(
     viewModel: MarketViewModel = viewModel()
 ) {
     val recommendations by viewModel.recommendations.collectAsState()
-    val isLoading by viewModel.isLoading.collectAsState()
+    val status by viewModel.status.collectAsState()
     val progress by viewModel.progress.collectAsState()
     val error by viewModel.error.collectAsState()
     val lastUpdateTime by viewModel.lastUpdateTime.collectAsState()
     val poolInfo by viewModel.poolInfo.collectAsState()
-    
+    val isLoading = status.analyzing
+
     Scaffold(
         topBar = {
             TopAppBar(
@@ -57,6 +59,9 @@ fun MarketScreen(
                 .padding(paddingValues)
         ) {
             Column(modifier = Modifier.fillMaxSize()) {
+                // 引擎状态条：分析是进程级在跑的，这一行就是它的"心跳"
+                EngineStatusBar(status)
+
                 // 更新时间
                 lastUpdateTime?.let { time ->
                     Surface(
@@ -120,7 +125,11 @@ fun MarketScreen(
                     recommendations.isEmpty() -> {
                         Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                             Text(
-                                text = "今日无股票同时满足趋势结构与波动要求（不勉强买入）",
+                                text = if (lastUpdateTime == null)
+                                    "后台首轮分析进行中（第 ${status.done}/${status.total} 只），跑完自动出名单；" +
+                                        "这一轮不会因为你切页或解锁而从头再来"
+                                else
+                                    "今日无股票同时满足趋势结构与波动要求（不勉强买入）",
                                 style = MaterialTheme.typography.bodyLarge
                             )
                         }
@@ -155,6 +164,43 @@ fun MarketScreen(
                 }
             }
         }
+    }
+}
+
+/**
+ * 引擎状态条。
+ *
+ * 这一行是 v4.7.0 的意义所在：分析不再挂在页面上，所以界面要能说清
+ * "现在跑到哪了、什么时候换名单、切页会不会打断它"。
+ */
+@Composable
+private fun EngineStatusBar(status: MarketEngine.Status) {
+    val time = SimpleDateFormat("HH:mm:ss", Locale.getDefault())
+    val text = when {
+        status.analyzing -> "持续分析：第 ${status.done}/${status.total} 只（已评 ${status.scored} 只）" +
+            "，本轮起 ${time.format(Date(status.passStartedAt))}" +
+            (if (status.resumed) "（接着上一轮断点续跑）" else "") +
+            "；名单等整轮跑完才整体替换——分位池是按当日全样本算的，半轮的池子不是同一个统计量"
+        status.paused -> "分析暂停在第 ${status.done}/${status.total} 只，已评分的 ${status.scored} 只保留着；" +
+            "回来从这一只接着算，不回第 1 只"
+        status.nextRunAt > 0L -> "本轮已收口；下一轮 ${time.format(Date(status.nextRunAt))}" +
+            (if (!status.continuous) "（「后台持续分析」已关，界面不可见时会停住）" else "")
+        else -> "后台准备中"
+    }
+    Surface(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp, vertical = 2.dp),
+        color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.4f),
+        shape = MaterialTheme.shapes.small
+    ) {
+        Text(
+            text = text,
+            fontSize = 11.sp,
+            lineHeight = 15.sp,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp)
+        )
     }
 }
 

@@ -37,6 +37,7 @@ import androidx.fragment.app.FragmentActivity
 import androidx.navigation.NavType
 import androidx.navigation.compose.*
 import androidx.navigation.navArgument
+import com.stock.analyzer.analysis.MarketEngine
 import com.stock.analyzer.data.repository.AppSettings
 import com.stock.analyzer.ui.detail.StockDetailScreen
 import com.stock.analyzer.ui.list.StockListScreen
@@ -68,8 +69,11 @@ class MainActivity : FragmentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // 冷启动：开关是开着的那就锁上，未解锁前不组 NavHost —— 数据请求都不会发出
+        // 冷启动：开关是开着的那就锁上。未解锁前不组 NavHost，界面上一张行情卡、一个持仓、
+        // 一行代码都不显示；但后台那一轮分析照跑（「设置」里可以关掉）——
+        // 这正是"解锁以后不用从第 1 只重新数"的前提。详见 MarketEngine 的类注释。
         locked.value = settings.appLockEnabled
+        MarketEngine.setUiLocked(locked.value)
         setContent {
             StockAnalyzerTheme {
                 if (locked.value) {
@@ -91,6 +95,7 @@ class MainActivity : FragmentActivity() {
             leftBackground = false
             lockHint.value = null
             locked.value = true
+            MarketEngine.setUiLocked(true)
         }
     }
 
@@ -104,6 +109,7 @@ class MainActivity : FragmentActivity() {
             if (ok) {
                 locked.value = false
                 lockHint.value = null
+                MarketEngine.setUiLocked(false)
             } else {
                 lockHint.value = if (message == AppLock.CANCELLED)
                     "已取消：没解锁就什么都不显示。要进来请点「解锁」。"
