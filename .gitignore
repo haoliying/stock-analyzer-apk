@@ -2,3 +2,7 @@
 app/build/
 build/
 local.properties
+__pycache__/
+backtest/metals/metals_data/
+backtest/metals/*.pkl
+backtest/metals/*.err
