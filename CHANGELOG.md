@@ -75,6 +75,7 @@ A 股那一路的评分函数、阈值、选池规则、每日只数、330 只�
 
 - `assembleRelease` 通过；`testReleaseUnitTest` **14 条全绿**（原 7 条 + 新增 `MetalsDataTest` 7 条）。新增测试用的 fixture 是 2026-11-16/17 **从 `hq.sinajs.cn` 原样抓回来的行**（外盘一条、境内一条）与两种日线字段形状，钉在源码里：这一路字段是**按下标**取的，接口挪一位界面就是另一个数，而价格错了没人看得出来。断言含外盘只读核过的下标白名单、XPT 第 1 位空串的容错、境内昨结算/量/持仓/`023000→02:30:00`、升序与垃圾返回不抛、周月聚合 OHLC、单位与币种表、`AssetClass.fromCode/fromKey`、贵金属与 A 股持仓定价链路。
 - 顺带修的一处真实缺陷：日线解析原先用 `org.json`，在单测里是 android.jar 空壳（一调就抛 `Method ... not mocked`），**这条链路当时等于没法测**。改成 Gson（已是依赖，纯 JVM 实现），口径逐字段与原来一致（缺失/null/非正数一律当没有）。
+- 安装包确认：`aapt dump badging` 读出 `versionCode 49` / `versionName 4.8.0`、包名 `com.stock.analyzer`、应用名「股票分析」。`AndroidManifest.xml` 里声明的权限与 v4.7.0 **一字未改**（`INTERNET` / `ACCESS_NETWORK_STATE` / `POST_NOTIFICATIONS` / `USE_BIOMETRIC`；APK 里另外两条 `USE_FINGERPRINT` 与 `DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION` 是 androidx.biometric 与支持库自己合并进来的，v4.7.0 的安装包里同样有）—— 本版没有为贵金属新增任何权限。APK 11,719,460 → **11,793,168 字节**（+72 KB，主要是贵金属那一层的代码与页面）。
 - **没有真机验证**：贵金属四个页面的排版、切换后三页是否同步、境外节假日的实际表现，都只有构建与单元测试层面的证据。报价字段这一轮是活的、核得上的，但那是**我抓数那天**核上的 —— 装了以后请以屏幕上的报价时间与你手里其它软件的价格对一次，不一致就来 Issue 说。
 
 ---
