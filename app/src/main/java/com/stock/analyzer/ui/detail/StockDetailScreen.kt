@@ -679,8 +679,10 @@ private fun CrosshairInfoBox(
             if (ch.text != null) {
                 InfoRow("涨跌", ch.text, "", null, valueColor = ch.color)
             }
+            // 成交量：外盘现货那一类源本来就没有成交量，取到 0 就别印 "0手" 冒充
             InfoRow("振幅", if (base > 0) String.format("%.2f%%", amp) else "—",
-                "量", fmtVolume(point.volume) + "手")
+                if (point.volume > 0) "量" else "",
+                if (point.volume > 0) fmtVolume(point.volume) + "手" else null)
             if (point.amount > 0) {
                 InfoRow("额", fmtMoney(point.amount), "", null)
             }

@@ -20,6 +20,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.stock.analyzer.analysis.MarketEngine
 import com.stock.analyzer.data.model.Stock
 import com.stock.analyzer.data.repository.StockInfoRepository
+import com.stock.analyzer.ui.asset.AssetClassSwitcher
 import com.stock.analyzer.data.model.StockInfo
 import com.stock.analyzer.data.repository.StockRepository
 import kotlinx.coroutines.launch
@@ -62,6 +63,9 @@ fun StockListScreen(
                 .padding(paddingValues)
         ) {
             Column(modifier = Modifier.fillMaxSize()) {
+                // 大类切换：贵金属那一类走另一条数据链路（一次批量报价 + 自己的日线源）
+                AssetClassSwitcher()
+
                 // 搜索栏
                 StockSearchBar(
                     onStockSearched = { stock ->

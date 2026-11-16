@@ -22,6 +22,7 @@ import com.stock.analyzer.analysis.MarketEngine
 import com.stock.analyzer.data.model.Recommendation
 import com.stock.analyzer.data.model.StockRecommendation
 import com.stock.analyzer.data.repository.StockInfoRepository
+import com.stock.analyzer.ui.asset.AssetClassSwitcher
 import com.stock.analyzer.data.model.StockInfo
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
@@ -59,6 +60,10 @@ fun MarketScreen(
                 .padding(paddingValues)
         ) {
             Column(modifier = Modifier.fillMaxSize()) {
+                // 大类切换：这一页是 A 股那一类；切到贵金属换的是"看哪一类的数据"，
+                // 后台那一轮的进度一个都不会少（分析在 MarketEngine 里，与界面无关）
+                AssetClassSwitcher()
+
                 // 引擎状态条：分析是进程级在跑的，这一行就是它的"心跳"
                 EngineStatusBar(status)
 

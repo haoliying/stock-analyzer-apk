@@ -24,6 +24,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -38,10 +39,16 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.*
 import androidx.navigation.navArgument
 import com.stock.analyzer.analysis.MarketEngine
+import com.stock.analyzer.analysis.MetalsEngine
+import com.stock.analyzer.data.model.AssetClass
 import com.stock.analyzer.data.repository.AppSettings
+import com.stock.analyzer.data.repository.AssetClassSelection
 import com.stock.analyzer.ui.detail.StockDetailScreen
 import com.stock.analyzer.ui.list.StockListScreen
 import com.stock.analyzer.ui.market.MarketScreen
+import com.stock.analyzer.ui.metals.MetalDetailScreen
+import com.stock.analyzer.ui.metals.MetalsCandidateScreen
+import com.stock.analyzer.ui.metals.MetalsMarketScreen
 import com.stock.analyzer.ui.portfolio.PortfolioScreen
 import com.stock.analyzer.ui.settings.AppLock
 import com.stock.analyzer.ui.settings.SettingsScreen
@@ -74,6 +81,7 @@ class MainActivity : FragmentActivity() {
         // 这正是"解锁以后不用从第 1 只重新数"的前提。详见 MarketEngine 的类注释。
         locked.value = settings.appLockEnabled
         MarketEngine.setUiLocked(locked.value)
+        MetalsEngine.setUiLocked(locked.value)
         setContent {
             StockAnalyzerTheme {
                 if (locked.value) {
@@ -96,6 +104,7 @@ class MainActivity : FragmentActivity() {
             lockHint.value = null
             locked.value = true
             MarketEngine.setUiLocked(true)
+            MetalsEngine.setUiLocked(true)
         }
     }
 
@@ -110,6 +119,7 @@ class MainActivity : FragmentActivity() {
                 locked.value = false
                 lockHint.value = null
                 MarketEngine.setUiLocked(false)
+                MetalsEngine.setUiLocked(false)
             } else {
                 lockHint.value = if (message == AppLock.CANCELLED)
                     "已取消：没解锁就什么都不显示。要进来请点「解锁」。"
@@ -167,6 +177,17 @@ private fun LockScreen(hint: String?, onUnlock: () -> Unit, onExit: () -> Unit) 
     }
 }
 
+/**
+ * 详情页按代码前缀分流：`hf_` / `nf_` 开头的是贵金属，走 [MetalDetailScreen]，
+ * 其余走 A 股那一套 [com.stock.analyzer.ui.detail.StockDetailScreen]。
+ *
+ * 判据只有 [AssetClass.fromCode] 这一处 —— 持仓、今日候选、行情三页都拿它分类，
+ * 不会出现"列表按前缀分、点进去按另一套规则分"的错位。
+ */
+fun detailRoute(code: String): String =
+    if (AssetClass.fromCode(code) == AssetClass.PRECIOUS_METALS) "metal_detail/$code"
+    else "stock_detail/$code"
+
 data class BottomNavItem(
     val route: String,
     val label: String,
@@ -183,6 +204,7 @@ val bottomNavItems = listOf(
 @Composable
 fun StockAnalyzerApp() {
     val navController = rememberNavController()
+    val context = androidx.compose.ui.platform.LocalContext.current
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
 
@@ -219,26 +241,31 @@ fun StockAnalyzerApp() {
             startDestination = "market",
             modifier = Modifier.padding(innerPadding)
         ) {
+            // 三个页面共用一份「当前是哪一类资产」的状态（AssetClassSelection），
+            // 所以切换条在哪个页点上都会同时影响另外两页，随时可切、切回来还在原进度
             composable("market") {
-                MarketScreen(
-                    onStockClick = { code ->
-                        navController.navigate("stock_detail/$code")
-                    }
-                )
+                val assetClass by AssetClassSelection.current.collectAsState()
+                if (assetClass.supportsAdvice) {
+                    MarketScreen(onStockClick = { code -> navController.navigate(detailRoute(code)) })
+                } else {
+                    MetalsCandidateScreen(
+                        onOpenMarket = { navController.navigate("stock_list") },
+                        onOpenAStock = {
+                            AssetClassSelection.select(context, AssetClass.A_SHARE)
+                        }
+                    )
+                }
             }
             composable("portfolio") {
-                PortfolioScreen(
-                    onStockClick = { code ->
-                        navController.navigate("stock_detail/$code")
-                    }
-                )
+                PortfolioScreen(onStockClick = { code -> navController.navigate(detailRoute(code)) })
             }
             composable("stock_list") {
-                StockListScreen(
-                    onStockClick = { code ->
-                        navController.navigate("stock_detail/$code")
-                    }
-                )
+                val assetClass by AssetClassSelection.current.collectAsState()
+                if (assetClass.supportsAdvice) {
+                    StockListScreen(onStockClick = { code -> navController.navigate(detailRoute(code)) })
+                } else {
+                    MetalsMarketScreen(onMetalClick = { code -> navController.navigate(detailRoute(code)) })
+                }
             }
             composable("settings") {
                 SettingsScreen()
@@ -250,6 +277,15 @@ fun StockAnalyzerApp() {
                 val stockCode = backStackEntry.arguments?.getString("stockCode") ?: ""
                 StockDetailScreen(
                     stockCode = stockCode,
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(
+                route = "metal_detail/{code}",
+                arguments = listOf(navArgument("code") { type = NavType.StringType })
+            ) { backStackEntry ->
+                MetalDetailScreen(
+                    code = backStackEntry.arguments?.getString("code") ?: "",
                     onBack = { navController.popBackStack() }
                 )
             }

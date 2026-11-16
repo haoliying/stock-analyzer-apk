@@ -7,6 +7,8 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -19,8 +21,15 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.stock.analyzer.analysis.MetalsEngine
 import com.stock.analyzer.data.model.*
+import java.util.Locale
+import com.stock.analyzer.data.repository.AssetClassSelection
 import com.stock.analyzer.data.repository.StockInfoRepository
+import com.stock.analyzer.ui.asset.AssetClassSwitcher
+import com.stock.analyzer.ui.metals.MetalsCopy
+import com.stock.analyzer.ui.metals.MetalsNoteCard
+import com.stock.analyzer.ui.metals.shortStamp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -32,11 +41,15 @@ fun PortfolioScreen(
     val advices by viewModel.advices.collectAsState()
     val isLoading by viewModel.isLoading.collectAsState()
     val showAddDialog by viewModel.showAddDialog.collectAsState()
+    val assetClass by AssetClassSelection.current.collectAsState()
+
+    // 一屏只看一类：持仓列表里两类是混着存的（代码前缀区分），切换只影响这里显示谁
+    val visible = portfolio.filter { it.assetClass == assetClass }
     
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("我的持仓") },
+                title = { Text("我的持仓 · ${assetClass.label}") },
                 actions = {
                     IconButton(onClick = { viewModel.refreshPrices() }) {
                         Icon(Icons.Default.Refresh, contentDescription = "刷新")
@@ -51,48 +64,87 @@ fun PortfolioScreen(
         }
     ) { paddingValues ->
         Column(modifier = Modifier.fillMaxSize().padding(paddingValues)) {
-            if (portfolio.isNotEmpty()) {
-                PortfolioSummary(
-                    totalValue = viewModel.getTotalValue(),
-                    totalProfit = viewModel.getTotalProfit(),
-                    totalProfitPercent = viewModel.getTotalProfitPercent()
-                )
+            AssetClassSwitcher()
+
+            if (assetClass.supportsAdvice) {
+                if (visible.isNotEmpty()) {
+                    PortfolioSummary(
+                        totalValue = viewModel.getTotalValue(),
+                        totalProfit = viewModel.getTotalProfit(),
+                        totalProfitPercent = viewModel.getTotalProfitPercent()
+                    )
+                }
+            } else if (visible.isNotEmpty()) {
+                // 贵金属那一类不合成一个总数：币种不同（美元/盎司、元/克、元/千克），
+                // 折到一起需要一个没核过的汇率源，宁可分币种各报各的
+                MetalTotalsCard(totals = viewModel.metalTotals())
             }
-            
-            if (isLoading && portfolio.isEmpty()) {
+
+            if (isLoading && visible.isEmpty()) {
                 Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                     CircularProgressIndicator()
                 }
-            } else if (portfolio.isEmpty()) {
+            } else if (visible.isEmpty()) {
                 Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
                         Icon(Icons.Default.AccountBalanceWallet, null, modifier = Modifier.size(64.dp), tint = MaterialTheme.colorScheme.onSurfaceVariant)
                         Spacer(modifier = Modifier.height(16.dp))
-                        Text("暂无持仓", style = MaterialTheme.typography.bodyLarge)
+                        Text("这一类暂无持仓", style = MaterialTheme.typography.bodyLarge)
                         Spacer(modifier = Modifier.height(8.dp))
-                        Text("点击右下角 + 添加股票", fontSize = 14.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Text(
+                            if (assetClass.supportsAdvice) "点击右下角 + 添加股票"
+                            else "点击右下角 + 添加贵金属持仓（按品种的单位填数量）",
+                            fontSize = 14.sp,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
                     }
                 }
             } else {
                 LazyColumn(modifier = Modifier.fillMaxSize(), contentPadding = PaddingValues(bottom = 80.dp)) {
-                    items(portfolio) { stock ->
-                        val advice = advices.find { it.code == stock.code }
-                        PortfolioStockCard(
-                            stock = stock, advice = advice,
-                            onClick = { onStockClick(stock.code) },
-                            onEdit = { viewModel.updateStock(it) },
-                            onDelete = { viewModel.removeStock(stock.code) }
-                        )
+                    items(visible) { stock ->
+                        if (stock.isMetal) {
+                            MetalHoldCard(
+                                stock = stock,
+                                onClick = { onStockClick(stock.code) },
+                                onEdit = { viewModel.updateStock(it) },
+                                onDelete = { viewModel.removeStock(stock.code) }
+                            )
+                        } else {
+                            val advice = advices.find { it.code == stock.code }
+                            PortfolioStockCard(
+                                stock = stock, advice = advice,
+                                onClick = { onStockClick(stock.code) },
+                                onEdit = { viewModel.updateStock(it) },
+                                onDelete = { viewModel.removeStock(stock.code) }
+                            )
+                        }
+                    }
+                    if (!assetClass.supportsAdvice) {
+                        item {
+                            MetalsNoteCard(
+                                title = "贵金属持仓为什么没有加仓区间、减仓区间和止损价",
+                                lines = MetalsCopy.noAdvice,
+                                accent = MaterialTheme.colorScheme.onSurface
+                            )
+                            Spacer(Modifier.height(24.dp))
+                        }
                     }
                 }
             }
         }
-        
+
         if (showAddDialog) {
-            AddStockDialog(
-                onDismiss = { viewModel.hideAddDialog() },
-                onConfirm = { code, name, price, quantity -> viewModel.addStock(code, name, price, quantity) }
-            )
+            if (assetClass.supportsAdvice) {
+                AddStockDialog(
+                    onDismiss = { viewModel.hideAddDialog() },
+                    onConfirm = { code, name, price, quantity -> viewModel.addStock(code, name, price, quantity) }
+                )
+            } else {
+                AddMetalDialog(
+                    onDismiss = { viewModel.hideAddDialog() },
+                    onConfirm = { code, name, price, quantity -> viewModel.addStock(code, name, price, quantity) }
+                )
+            }
         }
     }
 }
@@ -166,6 +218,203 @@ fun PortfolioStockCard(
     if (showEditDialog) {
         EditStockDialog(stock = stock, onDismiss = { showEditDialog = false }, onConfirm = { onEdit(it); showEditDialog = false })
     }
+}
+
+/**
+ * 贵金属持仓卡：只有成本、现价、数量与盈亏，没有建议区。
+ *
+ * 三个数字都必须带单位。伦敦金 4,000 是美元/盎司、沪金 830 是元/克、沪银 15,000 是元/千克，
+ * 少写单位就等于写错价格；盈亏金额也在自己那个币种里算，不跨币种相加。
+ */
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun MetalHoldCard(
+    stock: PortfolioStock,
+    onClick: () -> Unit,
+    onEdit: (PortfolioStock) -> Unit,
+    onDelete: () -> Unit
+) {
+    val inst = stock.metalInstrument
+    val unit = inst?.unit ?: "每单位"
+    val qtyUnit = inst?.qtyUnit ?: "单位"
+    val symbol = inst?.currencySymbol ?: ""
+    var showMenu by remember { mutableStateOf(false) }
+    var showEditDialog by remember { mutableStateOf(false) }
+    val quotes by MetalsEngine.quotes.collectAsState()
+    val profitColor = when { stock.profit > 0 -> Color(0xFFE53935); stock.profit < 0 -> Color(0xFF43A047); else -> MaterialTheme.colorScheme.onSurface }
+
+    Card(
+        modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 4.dp),
+        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
+        onClick = onClick
+    ) {
+        Column(modifier = Modifier.fillMaxWidth().padding(16.dp)) {
+            Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(text = stock.name, fontSize = 18.sp, fontWeight = FontWeight.Bold)
+                    Text(
+                        text = "${stock.code} · $unit${inst?.let { " · ${it.source}" } ?: ""}",
+                        fontSize = 11.sp,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                Box {
+                    IconButton(onClick = { showMenu = true }) { Icon(Icons.Default.MoreVert, null) }
+                    DropdownMenu(expanded = showMenu, onDismissRequest = { showMenu = false }) {
+                        DropdownMenuItem(text = { Text("编辑持仓") }, onClick = { showMenu = false; showEditDialog = true }, leadingIcon = { Icon(Icons.Default.Edit, null) })
+                        DropdownMenuItem(text = { Text("删除") }, onClick = { showMenu = false; onDelete() }, leadingIcon = { Icon(Icons.Default.Delete, null, tint = Color.Red) })
+                    }
+                }
+            }
+            Spacer(modifier = Modifier.height(8.dp)); Divider(); Spacer(modifier = Modifier.height(8.dp))
+            Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                Column {
+                    Text("买入价（$unit）", fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text(String.format(Locale.US, "%s%,.2f", symbol, stock.buyPrice), fontSize = 15.sp, fontWeight = FontWeight.Medium)
+                }
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text("现价（$unit）", fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text(String.format(Locale.US, "%s%,.2f", symbol, stock.currentPrice), fontSize = 15.sp, fontWeight = FontWeight.Medium, color = profitColor)
+                }
+                Column(horizontalAlignment = Alignment.End) {
+                    Text("盈亏", fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text(String.format(Locale.US, "%s%+,.2f (%+.2f%%)", symbol, stock.profit, stock.profitPercent), fontSize = 15.sp, fontWeight = FontWeight.Bold, color = profitColor)
+                }
+            }
+            Text(
+                text = "持有 $qtyUnit 数 ${String.format(Locale.US, "%,d", stock.quantity)}　$qtyUnit × 现价 = ${String.format(Locale.US, "%s%,.2f", symbol, stock.currentPrice * stock.quantity)}",
+                fontSize = 12.sp,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+            // 报价时间是该市场当地的时间：境外与境内经常差一个交易日，这里只报自己那一条
+            val stamp = quotes[stock.code]?.let { "报价时间 ${it.shortStamp()}（该市场当地）" }
+                ?: "还没有取到这个品种的现价，上面的数字是上一次的结果"
+            Text(stamp, fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(top = 4.dp))
+        }
+    }
+    if (showEditDialog) {
+        EditStockDialog(
+            stock = stock,
+            priceLabel = "买入单价（$unit）",
+            qtyLabel = "持有数量（$qtyUnit）",
+            onDismiss = { showEditDialog = false },
+            onConfirm = { onEdit(it); showEditDialog = false }
+        )
+    }
+}
+
+/** 贵金属持仓的合计：按币种各列一条，不折算成同一个数 */
+@Composable
+fun MetalTotalsCard(totals: List<MetalTotal>) {
+    Card(
+        modifier = Modifier.fillMaxWidth().padding(16.dp),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.3f))
+    ) {
+        Column(modifier = Modifier.fillMaxWidth().padding(16.dp)) {
+            Text("贵金属持仓（按币种分列，不折算）", fontSize = 13.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            totals.forEach { t ->
+                Spacer(modifier = Modifier.height(8.dp))
+                Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                    Column {
+                        Text("${t.currency} 市值（${t.holds} 笔）", fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Text(String.format(Locale.US, "%s%,.2f", t.symbol, t.value), fontSize = 18.sp, fontWeight = FontWeight.Bold)
+                    }
+                    val c = when { t.profit > 0 -> Color(0xFFE53935); t.profit < 0 -> Color(0xFF43A047); else -> MaterialTheme.colorScheme.onSurface }
+                    Column(horizontalAlignment = Alignment.End) {
+                        Text("盈亏", fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Text(String.format(Locale.US, "%s%+,.2f (%+.2f%%)", t.symbol, t.profit, t.profitPercent), fontSize = 18.sp, fontWeight = FontWeight.Bold, color = c)
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**
+ * 添加贵金属持仓：品种从固定表里选，不做搜索。
+ *
+ * 这一类一共就 6 条报价、4 个独立资产，搜索框只会让人以为自己可以搜到别的；
+ * 数量和价格都必须带着单位写，避免"沪银按克填了数量、价格是每千克的"这种错。
+ */
+@Composable
+fun AddMetalDialog(
+    onDismiss: () -> Unit,
+    onConfirm: (code: String, name: String, buyPrice: Double, quantity: Int) -> Unit
+) {
+    var selected by remember { mutableStateOf(MetalInstrument.ALL.first()) }
+    var buyPrice by remember { mutableStateOf("") }
+    var quantity by remember { mutableStateOf("") }
+    var error by remember { mutableStateOf<String?>(null) }
+
+    val quotes by MetalsEngine.quotes.collectAsState()
+
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text("添加贵金属持仓") },
+        text = {
+            Column(
+                modifier = Modifier.verticalScroll(rememberScrollState())
+            ) {
+                MetalInstrument.ALL.forEach { inst ->
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clickable { selected = inst }
+                            .padding(vertical = 6.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        RadioButton(selected = inst.code == selected.code, onClick = { selected = inst })
+                        Column(modifier = Modifier.weight(1f)) {
+                            Text(inst.name, fontSize = 14.sp, fontWeight = if (inst.code == selected.code) FontWeight.Bold else FontWeight.Normal)
+                            Text("${inst.code} · ${inst.unit}", fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        }
+                        Text(
+                            quotes[inst.code]?.let { MetalsCopy.price(it.price) } ?: "",
+                            fontSize = 11.sp,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
+                Spacer(modifier = Modifier.height(8.dp))
+                OutlinedTextField(
+                    value = buyPrice, onValueChange = { buyPrice = it; error = null },
+                    label = { Text("买入单价（${selected.unit}）") },
+                    modifier = Modifier.fillMaxWidth(), singleLine = true,
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal)
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+                OutlinedTextField(
+                    value = quantity, onValueChange = { quantity = it; error = null },
+                    label = { Text("持有数量（${selected.qtyUnit}）") },
+                    modifier = Modifier.fillMaxWidth(), singleLine = true,
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
+                )
+                Spacer(modifier = Modifier.height(6.dp))
+                Text(
+                    "盈亏按「现价 − 买入价 × 数量」自己算，这一类不给加减仓区间与止损价（原因见今日候选那一页的说明）。",
+                    fontSize = 11.sp,
+                    lineHeight = 15.sp,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                error?.let {
+                    Spacer(modifier = Modifier.height(4.dp))
+                    Text(it, color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
+                }
+            }
+        },
+        confirmButton = {
+            TextButton(onClick = {
+                val price = buyPrice.toDoubleOrNull()
+                val qty = quantity.toIntOrNull()
+                when {
+                    price == null || price <= 0 -> error = "请输入有效的买入单价（${selected.unit}）"
+                    qty == null || qty <= 0 -> error = "请输入有效的持有数量（${selected.qtyUnit}）"
+                    else -> onConfirm(selected.code, selected.name, price, qty)
+                }
+            }) { Text("确认") }
+        },
+        dismissButton = { TextButton(onClick = onDismiss) { Text("取消") } }
+    )
 }
 
 @Composable
@@ -367,7 +616,12 @@ fun AddStockDialog(
 
 @Composable
 fun EditStockDialog(
-    stock: PortfolioStock, onDismiss: () -> Unit, onConfirm: (PortfolioStock) -> Unit
+    stock: PortfolioStock,
+    onDismiss: () -> Unit,
+    onConfirm: (PortfolioStock) -> Unit,
+    // 贵金属那一类每单位都不一样（元/克、元/千克、美元/盎司），标签必须跟着品种走
+    priceLabel: String = "买入价格（加仓后修改为均价）",
+    qtyLabel: String = "持有数量（股）"
 ) {
     var buyPrice by remember { mutableStateOf(stock.buyPrice.toString()) }
     var quantity by remember { mutableStateOf(stock.quantity.toString()) }
@@ -380,9 +634,9 @@ fun EditStockDialog(
             Column {
                 Text("股票代码: ${PortfolioViewModel.displayCode(stock.code)}", fontSize = 14.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 Spacer(modifier = Modifier.height(8.dp))
-                OutlinedTextField(value = buyPrice, onValueChange = { buyPrice = it; error = null }, label = { Text("买入价格（加仓后修改为均价）") }, modifier = Modifier.fillMaxWidth(), singleLine = true, keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal))
+                OutlinedTextField(value = buyPrice, onValueChange = { buyPrice = it; error = null }, label = { Text(priceLabel) }, modifier = Modifier.fillMaxWidth(), singleLine = true, keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal))
                 Spacer(modifier = Modifier.height(8.dp))
-                OutlinedTextField(value = quantity, onValueChange = { quantity = it; error = null }, label = { Text("持有数量（股）") }, modifier = Modifier.fillMaxWidth(), singleLine = true, keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number))
+                OutlinedTextField(value = quantity, onValueChange = { quantity = it; error = null }, label = { Text(qtyLabel) }, modifier = Modifier.fillMaxWidth(), singleLine = true, keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number))
                 error?.let { Spacer(modifier = Modifier.height(4.dp)); Text(it, color = MaterialTheme.colorScheme.error, fontSize = 12.sp) }
             }
         },
