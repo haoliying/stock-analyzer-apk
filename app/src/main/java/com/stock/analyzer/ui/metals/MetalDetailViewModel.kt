@@ -4,23 +4,29 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.stock.analyzer.analysis.MetalsEngine
+import com.stock.analyzer.analysis.MetalsRisk
 import com.stock.analyzer.data.model.KLineData
 import com.stock.analyzer.data.model.MetalInstrument
 import com.stock.analyzer.data.repository.MetalsRepository
 import com.stock.analyzer.ui.detail.StockDetailViewModel.ChartPeriod
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
 /**
- * 贵金属详情页的视图模型：一条品种 + 一份日线缓存 + 界面上那个周期标签。
+ * 贵金属详情页的视图模型：一条品种 + 一份日线缓存 + 界面上那个周期标签 + 风险参考那几个数。
  *
  * 只支持日 / 周 / 月三个周期：**没有分时和 5 分钟**。
  * 分时那一路接口（东财 trends2、腾讯分钟线）都不覆盖境外现货期货，
  * 与其在界面上留一个点了报错的标签，不如根本不给。
  * 周线、月线不单独发请求，由 [MetalsRepository.aggregate] 从日线聚合，
  * 所以三个周期天然对得上同一份历史。
+ *
+ * 风险刻度与偏离读数（[MetalsRisk]）要在 Dispatchers.Default 上算：
+ * 波动目标是有状态的全量回放，偏离度要跟整段历史比，两边都是几万到几十万次加法，
+ * 放主线程会卡那一帧。
  */
 class MetalDetailViewModel(application: Application) : AndroidViewModel(application) {
 
@@ -47,6 +53,17 @@ class MetalDetailViewModel(application: Application) : AndroidViewModel(applicat
     /** 数据本身没问题、但界面上必须提醒的一句（周末/隔日/历史到底）*/
     private val _note = MutableStateFlow<String?>(null)
     val note: StateFlow<String?> = _note.asStateFlow()
+
+    /**
+     * 风险刻度（21 日年化波动 + 按 15% 波动目标折算的仓位）。
+     * null = 这一页的日线还不够算（不足 [MetalsRisk.MIN_BARS] 根），界面上就整行不出现。
+     */
+    private val _risk = MutableStateFlow<MetalsRisk.Gauge?>(null)
+    val risk: StateFlow<MetalsRisk.Gauge?> = _risk.asStateFlow()
+
+    /** 相对读数（金银比 / 铂钯比 / 境内外对照），全部是描述性的，不带方向 */
+    private val _readings = MutableStateFlow<List<MetalsRisk.Deviation>>(emptyList())
+    val readings: StateFlow<List<MetalsRisk.Deviation>> = _readings.asStateFlow()
 
     val quotes: StateFlow<Map<String, com.stock.analyzer.data.model.MetalQuote>> = MetalsEngine.quotes
 
@@ -88,9 +105,48 @@ class MetalDetailViewModel(application: Application) : AndroidViewModel(applicat
                     _daily.value = daily
                     _bars.value = MetalsRepository.aggregate(daily, apiPeriod(_period.value))
                     _note.value = noteFor(_bars.value, _period.value)
+                    loadRiskRefs(inst, daily, force)
                 }
                 .onFailure { _error.value = it.message }
             _isLoading.value = false
+        }
+    }
+
+    /**
+     * 风险刻度与相对读数。
+     *
+     * 读数要把参照品种的那份日线也取回来（金看银、境内看境外），所以这里可能再发一次请求；
+     * 拿不到就少显示一行，不拿上一个品种的数顶。
+     * 全部计算都在 [MetalsRisk] 里，是纯算术，没有第二个数据源。
+     */
+    private fun loadRiskRefs(inst: MetalInstrument, daily: List<KLineData>, force: Boolean) {
+        viewModelScope.launch(Dispatchers.Default) {
+            _risk.value = MetalsRisk.gauge(daily.map { it.close })
+            val specs = MetalsRisk.readingsFor(inst.code)
+            if (specs.isEmpty()) {
+                _readings.value = emptyList()
+                return@launch
+            }
+            val need = LinkedHashSet<String>()
+            specs.forEach {
+                need += it.numCode
+                need += it.denCode
+            }
+            need -= inst.code
+            val extra = HashMap<String, List<KLineData>>()
+            for (c in need) {
+                val other = MetalInstrument.of(c) ?: continue
+                // 参照那一页的缓存照常复用，只有本品种被强制刷新时才一起 force
+                extra[c] = repository.bars(other, MetalsRepository.PERIOD_DAILY, force)
+                    .getOrNull() ?: emptyList()
+            }
+            val byCode = HashMap<String, Pair<List<String>, List<Double>>>()
+            (extra + mapOf(inst.code to daily)).forEach { (c, bars) ->
+                if (bars.isNotEmpty()) byCode[c] = bars.map { it.date } to bars.map { it.close }
+            }
+            _readings.value = specs.mapNotNull {
+                MetalsRisk.deviation(it) { code -> byCode[code] }
+            }
         }
     }
 
