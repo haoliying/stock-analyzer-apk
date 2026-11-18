@@ -4,7 +4,7 @@
 
 ## 下载
 
-- **APK（v4.9.0，最新）**: [StockAnalyzer-v4.9.0.apk](https://github.com/haoliying/stock-analyzer-apk/releases/download/v4.9.0/StockAnalyzer-v4.9.0.apk)（11,804,992 字节，比 v4.8.0 大 11,824 字节；随包的源码快照 [StockAnalyzer-v4.9.0-source.zip](https://github.com/haoliying/stock-analyzer-apk/releases/download/v4.9.0/StockAnalyzer-v4.9.0-source.zip)）
+- **APK（v4.9.0，最新）**: [StockAnalyzer-v4.9.0.apk](https://github.com/haoliying/stock-analyzer-apk/releases/download/v4.9.0/StockAnalyzer-v4.9.0.apk)（11,804,628 字节，比 v4.8.0 大 11,460 字节；随包的源码快照 [StockAnalyzer-v4.9.0-source.zip](https://github.com/haoliying/stock-analyzer-apk/releases/download/v4.9.0/StockAnalyzer-v4.9.0-source.zip)）
 - 上一版：[StockAnalyzer-v4.8.0.apk](https://github.com/haoliying/stock-analyzer-apk/releases/download/v4.8.0/StockAnalyzer-v4.8.0.apk)（11,793,168 字节，比 v4.7.0 大 72 KB）
 - 历史版本：v4.7.0（11,719,460 字节）/ v4.6.0 / v4.5.0 / v4.4.0 / v4.3.1 / v4.3.0 / v4.2.0 / v4.1.0 / v4.0.1 / v4.0.0 / v3.x / v2.0 / v1.0 见 Releases 页面
 
@@ -390,7 +390,7 @@ A 股那一路的评分函数、阈值、选池规则、每日只数、330 只�
 - **不让界面与回测算两件事**：[`backtest/metals/export_risk_parity.py`](backtest/metals/export_risk_parity.py) 用与 Kotlin 相同的公式重跑（**故意不用 pandas**，避免补偿求和的浮点差异），一边生成单测夹具一边自核 iter12 §[3] 打印的读数，对不上直接 `exit 1`；`MetalsRiskTest` 逐根比对仓位路径（>1000 次）、**逐字比对卡片将要显示的那几行与回测打印的表**（24 项）、四个偏离读数、取整 half-even、历史不足必须给 null 而不是数。参数一改单测当场红。
 - **实测副产品**：`target/σ` 正好压在 5% 档位中间（half-even 与四舍五入会给不同答案）的情况，6 条序列 23,400 根日线里 **0 次**。写死这条规则只是不让两份实现将来分叉。
 - **A 股那一路一字未改**：评分、68/42/30、130 根、选池、每日只数、330 只名单、后台持续分析全部与 v4.8.0 相同，`EngineParityTest` 仍 `bars=5155, scored=4506, mismatches=0`；`AndroidManifest.xml` 与 v4.8.0 相同，**没有新增权限**。
-- **验证到什么程度**：`assembleRelease` 通过，`testDebugUnitTest` **23 条全绿**（14 → 23，新增 `MetalsRiskTest` 9 条）；APK 11,793,168 → 11,804,992 字节。**没有真机验证**：新卡在折叠屏内外屏的排版、`Dispatchers.Default` 上那段整段回放在低端机的耗时、"130 根不够时整卡不出现"的实际观感，都只有构建与单元测试层面的证据。
+- **验证到什么程度**：`assembleRelease` 通过，`testDebugUnitTest` **23 条全绿**（14 → 23，新增 `MetalsRiskTest` 9 条）；APK 11,793,168 → 11,804,628 字节（数字取自发布用的那个包：在干净检出的 HEAD 上重新 assembleRelease 得到，与增量构建的那一份差 364 字节，包内文件清单逐条相同，只有 classes2.dex 因为增量构建残留差一点。发布的是干净那一版）。**没有真机验证**：新卡在折叠屏内外屏的排版、`Dispatchers.Default` 上那段整段回放在低端机的耗时、"130 根不够时整卡不出现"的实际观感，都只有构建与单元测试层面的证据。
 
 ### 界面与风控改动
 

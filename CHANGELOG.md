@@ -83,7 +83,7 @@ iter12 是唯一有一点东西的一轮，说清它有什么、没有什么：
 **验证到什么程度**
 
 - `assembleRelease` 通过；`testDebugUnitTest` **23 条全绿**（`EngineParityTest` 3 + `MarketEngineTest` 4 + `MetalsDataTest` 7 + `MetalsRiskTest` 9）。A 股口径不变：`EngineParityTest` 仍 `bars=5155, scored=4506, mismatches=0`。
-- `output-metadata.json` 读出 `versionCode 50` / `versionName 4.9.0`，包名 `com.stock.analyzer`。APK 11,793,168 → **11,804,992 字节**（+11,824 字节，全部是那张卡与那一层算法）。
+- `output-metadata.json` 读出 `versionCode 50` / `versionName 4.9.0`，包名 `com.stock.analyzer`。APK 11,793,168 → **11,804,628 字节**（+11,460 字节，全部是那张卡与那一层算法）。这个数取自**发布用的那一个包**：在干净检出的 HEAD 上重新 `assembleRelease`，`testReleaseUnitTest` 23 条全绿；增量构建出的另一份大 364 字节，包内文件清单逐条相同、只 `classes2.dex` 因增量残留略有差异，发布的是干净那版。。
 - 六个品种的当前读数已与我这边抓到的全历史日线对过一遍（`export_risk_parity.py` 的输出即对照表：伦敦金 26.0% → 60%、伦敦银 43.3% → 30%、铂金 36.7% → 45%、钯金 41.0% → 35%、沪金 22.5% → 75%、沪银 43.3% → 45%，均为 15% 目标档）。
 - **没有真机验证**：那张新卡在折叠屏内外屏上的排版、`Dispatchers.Default` 上那段回放在低端机上的耗时、以及"130 根不够时整卡不出现"的实际观感，都只有构建与单元测试层面的证据。界面类反馈对我最有用。
 

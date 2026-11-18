@@ -12,7 +12,7 @@
 
 ## 1. 安装与首次启动
 
-1. 浏览器打开 [Releases](https://github.com/haoliying/stock-analyzer-apk/releases) 下载最新 APK（当前 `StockAnalyzer-v4.9.0.apk`，11,804,992 字节，约 11.3 MiB）。
+1. 浏览器打开 [Releases](https://github.com/haoliying/stock-analyzer-apk/releases) 下载最新 APK（当前 `StockAnalyzer-v4.9.0.apk`，11,804,628 字节，约 11.26 MiB）。
 2. 华为/鸿蒙需先关掉**纯净模式**（设置 → 系统 → 纯净模式），并在弹窗允许「安装未知来源应用」。
 3. 已装过旧版直接覆盖安装即可，**持仓数据不会丢**（持仓存在应用本地文件里，与版本无关）。
 4. **第一次装/第一次启动会慢**：那一轮要把 330 只的日线逐只取一遍（每只间隔 120 毫秒，几分钟量级）。
