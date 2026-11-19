@@ -4,7 +4,7 @@
 
 ## 下载
 
-- **APK（v5.0.0，最新）**: [StockAnalyzer-v5.0.0.apk](https://github.com/haoliying/stock-analyzer-apk/releases/download/v5.0.0/StockAnalyzer-v5.0.0.apk)（随包的源码快照 [StockAnalyzer-v5.0.0-source.zip](https://github.com/haoliying/stock-analyzer-apk/releases/download/v5.0.0/StockAnalyzer-v5.0.0-source.zip)）
+- **APK（v5.0.0，最新）**: [StockAnalyzer-v5.0.0.apk](https://github.com/haoliying/stock-analyzer-apk/releases/download/v5.0.0/StockAnalyzer-v5.0.0.apk)（11,820,188 字节，比 v4.9.0 大 15,560 字节；随包的源码快照 [StockAnalyzer-v5.0.0-source.zip](https://github.com/haoliying/stock-analyzer-apk/releases/download/v5.0.0/StockAnalyzer-v5.0.0-source.zip)）
 - 上一版：[StockAnalyzer-v4.9.0.apk](https://github.com/haoliying/stock-analyzer-apk/releases/download/v4.9.0/StockAnalyzer-v4.9.0.apk)（11,804,628 字节，比 v4.8.0 大 11,460 字节；随包的源码快照 [StockAnalyzer-v4.9.0-source.zip](https://github.com/haoliying/stock-analyzer-apk/releases/download/v4.9.0/StockAnalyzer-v4.9.0-source.zip)）
 - 历史版本：v4.7.0（11,719,460 字节）/ v4.6.0 / v4.5.0 / v4.4.0 / v4.3.1 / v4.3.0 / v4.2.0 / v4.1.0 / v4.0.1 / v4.0.0 / v3.x / v2.0 / v1.0 见 Releases 页面
 
