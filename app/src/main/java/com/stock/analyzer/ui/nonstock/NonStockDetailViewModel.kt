@@ -1,13 +1,14 @@
-package com.stock.analyzer.ui.metals
+package com.stock.analyzer.ui.nonstock
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.stock.analyzer.analysis.MetalsEngine
 import com.stock.analyzer.analysis.MetalsRisk
+import com.stock.analyzer.analysis.NonStockEngine
 import com.stock.analyzer.data.model.KLineData
-import com.stock.analyzer.data.model.MetalInstrument
-import com.stock.analyzer.data.repository.MetalsRepository
+import com.stock.analyzer.data.model.NonStockCatalog
+import com.stock.analyzer.data.model.NonStockInstrument
+import com.stock.analyzer.data.repository.NonStockRepository
 import com.stock.analyzer.ui.detail.StockDetailViewModel.ChartPeriod
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -16,24 +17,28 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
 /**
- * 贵金属详情页的视图模型：一条品种 + 一份日线缓存 + 界面上那个周期标签 + 风险参考那几个数。
+ * 非股票详情页的视图模型：一条品种 + 一份日线缓存 + 界面上那个周期标签 + 风险参考那几个数。
  *
  * 只支持日 / 周 / 月三个周期：**没有分时和 5 分钟**。
- * 分时那一路接口（东财 trends2、腾讯分钟线）都不覆盖境外现货期货，
+ * 分时那一路接口（东财 trends2、腾讯分钟线）都不覆盖期货与现汇，
  * 与其在界面上留一个点了报错的标签，不如根本不给。
- * 周线、月线不单独发请求，由 [MetalsRepository.aggregate] 从日线聚合，
+ * 周线、月线不单独发请求，由 [NonStockRepository.aggregate] 从日线聚合，
  * 所以三个周期天然对得上同一份历史。
  *
  * 风险刻度与偏离读数（[MetalsRisk]）要在 Dispatchers.Default 上算：
  * 波动目标是有状态的全量回放，偏离度要跟整段历史比，两边都是几万到几十万次加法，
  * 放主线程会卡那一帧。
+ *
+ * 风险刻度（波动目标）是**通用算术**，三类非股票资产共用；相对读数（金银比等）
+ * 是贵金属专属，[MetalsRisk.readingsFor] 对非贵金属代码返回空列表，界面上就少那几行，
+ * 不拿别的品种的数顶。
  */
-class MetalDetailViewModel(application: Application) : AndroidViewModel(application) {
+class NonStockDetailViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val repository = MetalsRepository(application)
+    private val repository = NonStockRepository(application)
 
-    private val _instrument = MutableStateFlow<MetalInstrument?>(null)
-    val instrument: StateFlow<MetalInstrument?> = _instrument.asStateFlow()
+    private val _instrument = MutableStateFlow<NonStockInstrument?>(null)
+    val instrument: StateFlow<NonStockInstrument?> = _instrument.asStateFlow()
 
     private val _period = MutableStateFlow(ChartPeriod.DAILY)
     val period: StateFlow<ChartPeriod> = _period.asStateFlow()
@@ -65,23 +70,24 @@ class MetalDetailViewModel(application: Application) : AndroidViewModel(applicat
     private val _readings = MutableStateFlow<List<MetalsRisk.Deviation>>(emptyList())
     val readings: StateFlow<List<MetalsRisk.Deviation>> = _readings.asStateFlow()
 
-    val quotes: StateFlow<Map<String, com.stock.analyzer.data.model.MetalQuote>> = MetalsEngine.quotes
+    val quotes: StateFlow<Map<String, com.stock.analyzer.data.model.NonStockQuote>> =
+        NonStockEngine.quotes
 
     private var code: String = ""
 
     init {
-        MetalsEngine.start(application)
+        NonStockEngine.start(application)
     }
 
     fun load(code: String, force: Boolean = false) {
-        val inst = MetalInstrument.of(code)
+        val inst = NonStockCatalog.of(code)
         _instrument.value = inst
         if (inst == null) {
-            _error.value = "不认识这个贵金属代码：$code"
+            _error.value = "不认识这个非股票资产代码：$code"
             return
         }
         this.code = code
-        MetalsEngine.requestIfStale()
+        NonStockEngine.requestIfStale()
         loadBars(force)
     }
 
@@ -89,7 +95,7 @@ class MetalDetailViewModel(application: Application) : AndroidViewModel(applicat
         if (_period.value == period) return
         _period.value = period
         // 日线已经在手上了，切周期只是换一种聚合方式，不再发请求
-        _bars.value = MetalsRepository.aggregate(_daily.value, apiPeriod(period))
+        _bars.value = NonStockRepository.aggregate(_daily.value, apiPeriod(period))
         _note.value = noteFor(_bars.value, period)
     }
 
@@ -100,10 +106,10 @@ class MetalDetailViewModel(application: Application) : AndroidViewModel(applicat
         viewModelScope.launch {
             _isLoading.value = true
             _error.value = null
-            repository.bars(inst, MetalsRepository.PERIOD_DAILY, force)
+            repository.bars(inst, NonStockRepository.PERIOD_DAILY, force)
                 .onSuccess { daily ->
                     _daily.value = daily
-                    _bars.value = MetalsRepository.aggregate(daily, apiPeriod(_period.value))
+                    _bars.value = NonStockRepository.aggregate(daily, apiPeriod(_period.value))
                     _note.value = noteFor(_bars.value, _period.value)
                     loadRiskRefs(inst, daily, force)
                 }
@@ -119,7 +125,7 @@ class MetalDetailViewModel(application: Application) : AndroidViewModel(applicat
      * 拿不到就少显示一行，不拿上一个品种的数顶。
      * 全部计算都在 [MetalsRisk] 里，是纯算术，没有第二个数据源。
      */
-    private fun loadRiskRefs(inst: MetalInstrument, daily: List<KLineData>, force: Boolean) {
+    private fun loadRiskRefs(inst: NonStockInstrument, daily: List<KLineData>, force: Boolean) {
         viewModelScope.launch(Dispatchers.Default) {
             _risk.value = MetalsRisk.gauge(daily.map { it.close })
             val specs = MetalsRisk.readingsFor(inst.code)
@@ -135,9 +141,9 @@ class MetalDetailViewModel(application: Application) : AndroidViewModel(applicat
             need -= inst.code
             val extra = HashMap<String, List<KLineData>>()
             for (c in need) {
-                val other = MetalInstrument.of(c) ?: continue
+                val other = NonStockCatalog.of(c) ?: continue
                 // 参照那一页的缓存照常复用，只有本品种被强制刷新时才一起 force
-                extra[c] = repository.bars(other, MetalsRepository.PERIOD_DAILY, force)
+                extra[c] = repository.bars(other, NonStockRepository.PERIOD_DAILY, force)
                     .getOrNull() ?: emptyList()
             }
             val byCode = HashMap<String, Pair<List<String>, List<Double>>>()
@@ -152,14 +158,14 @@ class MetalDetailViewModel(application: Application) : AndroidViewModel(applicat
 
     /** 只有日/周/月三个周期，[ChartPeriod] 里那两个分钟级在这里不会被选到 */
     private fun apiPeriod(period: ChartPeriod): String = when (period) {
-        ChartPeriod.WEEKLY -> MetalsRepository.PERIOD_WEEKLY
-        ChartPeriod.MONTHLY -> MetalsRepository.PERIOD_MONTHLY
-        else -> MetalsRepository.PERIOD_DAILY
+        ChartPeriod.WEEKLY -> NonStockRepository.PERIOD_WEEKLY
+        ChartPeriod.MONTHLY -> NonStockRepository.PERIOD_MONTHLY
+        else -> NonStockRepository.PERIOD_DAILY
     }
 
     private fun noteFor(bars: List<KLineData>, period: ChartPeriod): String? {
         if (bars.isEmpty()) return "没有${period.label}数据"
-        val last = MetalsRepository.parseDate(bars.last().date) ?: return null
+        val last = NonStockRepository.parseDate(bars.last().date) ?: return null
         val gap = java.time.temporal.ChronoUnit.DAYS.between(last, java.time.LocalDate.now())
         return when {
             gap <= 4 -> null
@@ -168,3 +174,6 @@ class MetalDetailViewModel(application: Application) : AndroidViewModel(applicat
         }
     }
 }
+
+/** v4.8.0~v4.9.0 的类名，泛化后保留别名 */
+typealias MetalDetailViewModel = NonStockDetailViewModel

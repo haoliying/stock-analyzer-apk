@@ -1,4 +1,4 @@
-package com.stock.analyzer.ui.metals
+package com.stock.analyzer.ui.nonstock
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -39,28 +39,27 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.stock.analyzer.analysis.MetalsRisk
-import com.stock.analyzer.data.model.MetalInstrument
-import com.stock.analyzer.data.model.settleLabel
+import com.stock.analyzer.data.model.NonStockInstrument
 import com.stock.analyzer.ui.detail.KLineChartCard
 import com.stock.analyzer.ui.detail.StockDetailViewModel.ChartPeriod
 import java.util.Locale
 
 /**
- * 贵金属详情页：报价 + 日 / 周 / 月 K 线。
+ * 非股票详情页：报价 + 日 / 周 / 月 K 线。
  *
  * 与 A 股详情页的区别写在界面上，不靠用户自己发现：
- *   · 每个数字都带单位（美元/盎司 vs 元/克 vs 元/千克，差 30 倍）；
+ *   · 每个数字都带单位（美元/盎司、元/吨、CNY/USD 等，数量级差几十到几百倍）；
  *   · 报价时间是**该市场当地**的时间，境外与境内经常差一个交易日；
- *   · 没有分时和 5 分钟 —— 那两路接口不覆盖境外品种，不留点了报错的标签；
- *   · 没有评分、没有加减仓区间、没有指标卡（依据见 [MetalsCopy.noAdvice]）；
+ *   · 没有分时和 5 分钟 —— 那两路接口不覆盖期货与现汇，不留点了报错的标签；
+ *   · 没有评分、没有加减仓区间、没有指标卡（依据见 [NonStockCopy.noAdvice]）；
  *   · 只有一个不带方向的风险刻度与几个相对读数（[MetalsRisk]），下面写着它为什么不算建议。
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MetalDetailScreen(
+fun NonStockDetailScreen(
     code: String,
     onBack: () -> Unit,
-    viewModel: MetalDetailViewModel = viewModel()
+    viewModel: NonStockDetailViewModel = viewModel()
 ) {
     val inst by viewModel.instrument.collectAsState()
     val bars by viewModel.bars.collectAsState()
@@ -76,6 +75,7 @@ fun MetalDetailScreen(
     LaunchedEffect(code) { viewModel.load(code) }
 
     val instrument = inst
+    val assetClass = instrument?.assetClass
     Scaffold(
         topBar = {
             TopAppBar(
@@ -103,19 +103,21 @@ fun MetalDetailScreen(
                     modifier = Modifier.align(Alignment.Center),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    Text(error ?: "不认识的贵金属代码：$code", color = MaterialTheme.colorScheme.error)
+                    Text(error ?: "不认识的非股票资产代码：$code", color = MaterialTheme.colorScheme.error)
                     Spacer(Modifier.height(12.dp))
                     TextButton(onClick = onBack) { Text("返回行情列表") }
                 }
             } else {
                 val quote = quotes[instrument.code]
+                val noAdvice = assetClass?.let { NonStockCopy.noAdvice(it) } ?: emptyList()
+                val riskNote = assetClass?.let { NonStockCopy.riskCardNote(it) } ?: emptyList()
                 Column(
                     modifier = Modifier
                         .fillMaxSize()
                         .verticalScroll(rememberScrollState())
                         .padding(16.dp)
                 ) {
-                    MetalPriceCard(instrument, quote)
+                    NonStockPriceCard(instrument, quote)
 
                     error?.let {
                         Spacer(Modifier.height(8.dp))
@@ -123,7 +125,7 @@ fun MetalDetailScreen(
                     }
 
                     Spacer(Modifier.height(16.dp))
-                    MetalPeriodTabs(period) { viewModel.setPeriod(it) }
+                    NonStockPeriodTabs(period) { viewModel.setPeriod(it) }
                     Spacer(Modifier.height(12.dp))
 
                     if (isLoading && bars.isEmpty()) {
@@ -132,8 +134,6 @@ fun MetalDetailScreen(
                     KLineChartCard(
                         klineData = bars,
                         period = period,
-                        // 一次就把全量日线取回来了（周线/月线由它聚合），
-                        // 所以没有"往前加载更早"这一说：直接告诉图表已经到底了
                         isLoadingMore = false,
                         atHistoryEnd = true,
                         onRetry = { viewModel.refresh() }
@@ -158,19 +158,23 @@ fun MetalDetailScreen(
                     }
 
                     Spacer(Modifier.height(12.dp))
-                    MetalsRiskCard(risk, readings)
-                    Spacer(Modifier.height(8.dp))
-                    MetalsNoteCard(
-                        title = "这一页为什么没有评分和加减仓区间",
-                        lines = MetalsCopy.noAdvice,
-                        accent = MaterialTheme.colorScheme.onSurface
-                    )
-                    Spacer(Modifier.height(8.dp))
-                    MetalsNoteCard(
-                        title = "这些数为什么不算建议",
-                        lines = MetalsCopy.riskCardNote,
-                        accent = MaterialTheme.colorScheme.onSurface
-                    )
+                    NonStockRiskCard(risk, readings)
+                    if (noAdvice.isNotEmpty()) {
+                        Spacer(Modifier.height(8.dp))
+                        NonStockNoteCard(
+                            title = "这一页为什么没有评分和加减仓区间",
+                            lines = noAdvice,
+                            accent = MaterialTheme.colorScheme.onSurface
+                        )
+                    }
+                    if (riskNote.isNotEmpty()) {
+                        Spacer(Modifier.height(8.dp))
+                        NonStockNoteCard(
+                            title = "这些数为什么不算建议",
+                            lines = riskNote,
+                            accent = MaterialTheme.colorScheme.onSurface
+                        )
+                    }
                     Spacer(Modifier.height(24.dp))
                 }
             }
@@ -178,15 +182,24 @@ fun MetalDetailScreen(
     }
 }
 
+/** v4.8.0~v4.9.0 的页面，泛化后保留别名 */
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun MetalDetailScreen(
+    code: String,
+    onBack: () -> Unit,
+    viewModel: NonStockDetailViewModel = viewModel()
+) = NonStockDetailScreen(code, onBack, viewModel)
+
 /**
  * 报价卡。
  *
- * 外盘的"今开"那个下标在不同品种上语义不稳（拿纽约铂金核过：报价里的值和日线 open 差 4.7 美元），
- * 所以取不到就不显示这一格；境内期货那一路字段逐个对过日线，才敢把开高低一起摆出来。
+ * 外盘期货的"今开"那个下标在不同品种上语义不稳（拿纽约铂金核过：报价里的值和日线 open 差 4.7 美元），
+ * 所以取不到就不显示这一格；境内期货与现汇那一路字段逐个对过日线，才敢把开高低一起摆出来。
  */
 @Composable
-private fun MetalPriceCard(inst: MetalInstrument, quote: com.stock.analyzer.data.model.MetalQuote?) {
-    val color = MetalsCopy.upDown(quote?.isRise ?: true)
+private fun NonStockPriceCard(inst: NonStockInstrument, quote: com.stock.analyzer.data.model.NonStockQuote?) {
+    val color = NonStockCopy.upDown(quote?.isRise ?: true)
     Card(
         modifier = Modifier.fillMaxWidth(),
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
@@ -194,7 +207,7 @@ private fun MetalPriceCard(inst: MetalInstrument, quote: com.stock.analyzer.data
         Column(modifier = Modifier.padding(16.dp)) {
             Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.Bottom) {
                 Text(
-                    text = quote?.let { MetalsCopy.price(it.price) } ?: "—",
+                    text = quote?.let { NonStockCopy.price(it.price) } ?: "—",
                     fontSize = 32.sp,
                     fontWeight = FontWeight.Bold,
                     color = if (quote == null) MaterialTheme.colorScheme.onSurfaceVariant else color
@@ -209,8 +222,8 @@ private fun MetalPriceCard(inst: MetalInstrument, quote: com.stock.analyzer.data
             if (quote != null) {
                 Spacer(Modifier.height(4.dp))
                 Text(
-                    text = "${if (quote.isRise) "+" else "−"}${MetalsCopy.price(kotlin.math.abs(quote.change))}　" +
-                        "${MetalsCopy.pct(quote.changePercent)}（对${inst.settleLabel()}）",
+                    text = "${if (quote.isRise) "+" else "−"}${NonStockCopy.price(kotlin.math.abs(quote.change))}　" +
+                        "${NonStockCopy.pct(quote.changePercent)}（对${inst.preCloseLabel}）",
                     fontSize = 16.sp,
                     fontWeight = FontWeight.Medium,
                     color = color
@@ -237,10 +250,10 @@ private fun MetalPriceCard(inst: MetalInstrument, quote: com.stock.analyzer.data
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
-                    Cell(inst.settleLabel(), MetalsCopy.price(quote.preSettle))
-                    if (quote.hasOpen) Cell("今开", MetalsCopy.price(quote.open))
-                    Cell("最高", MetalsCopy.price(quote.high), MetalsCopy.COLOR_UP)
-                    Cell("最低", MetalsCopy.price(quote.low), MetalsCopy.COLOR_DOWN)
+                    Cell(inst.preCloseLabel, NonStockCopy.price(quote.preSettle))
+                    if (quote.hasOpen) Cell("今开", NonStockCopy.price(quote.open))
+                    Cell("最高", NonStockCopy.price(quote.high), NonStockCopy.COLOR_UP)
+                    Cell("最低", NonStockCopy.price(quote.low), NonStockCopy.COLOR_DOWN)
                 }
                 Spacer(Modifier.height(8.dp))
                 Text(
@@ -266,12 +279,12 @@ private fun Cell(label: String, value: String, color: Color = MaterialTheme.colo
 /**
  * 风险参考：一个波动刻度 + 几个相对读数。
  *
- * 这一卡里没有一个字是方向判断 —— 依据在 [MetalsCopy.riskCardNote]，
+ * 这一卡里没有一个字是方向判断 —— 依据在 [NonStockCopy.riskCardNote]，
  * 算法在 [MetalsRisk]（与回测同一个口径，`MetalsRiskTest` 拿 Python 生成的夹具逐根对过）。
  * 数据不够就整卡不出现，不印一个 0 或 "--" 冒充算过。
  */
 @Composable
-private fun MetalsRiskCard(
+private fun NonStockRiskCard(
     risk: MetalsRisk.Gauge?,
     readings: List<MetalsRisk.Deviation>
 ) {
@@ -315,12 +328,19 @@ private fun MetalsRiskCard(
     }
 }
 
+/** v4.8.0~v4.9.0 的卡片，泛化后保留别名 */
 @Composable
-private fun MetalPeriodTabs(
+private fun MetalsRiskCard(
+    risk: MetalsRisk.Gauge?,
+    readings: List<MetalsRisk.Deviation>
+) = NonStockRiskCard(risk, readings)
+
+@Composable
+private fun NonStockPeriodTabs(
     selected: ChartPeriod,
     onSelected: (ChartPeriod) -> Unit
 ) {
-    // 只给日 / 周 / 月：分时和 5 分钟那两路接口不覆盖境外现货期货
+    // 只给日 / 周 / 月：分时和 5 分钟那两路接口不覆盖期货与现汇
     val periods = listOf(ChartPeriod.DAILY, ChartPeriod.WEEKLY, ChartPeriod.MONTHLY)
     Row(
         modifier = Modifier.fillMaxWidth(),

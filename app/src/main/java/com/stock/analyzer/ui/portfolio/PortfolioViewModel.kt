@@ -9,7 +9,7 @@ import androidx.core.app.NotificationCompat
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.stock.analyzer.R
-import com.stock.analyzer.analysis.MetalsEngine
+import com.stock.analyzer.analysis.NonStockEngine
 import com.stock.analyzer.analysis.StockAnalyzer
 import com.stock.analyzer.data.model.*
 import com.stock.analyzer.data.repository.StockRepository
@@ -78,7 +78,7 @@ class PortfolioViewModel(application: Application) : AndroidViewModel(applicatio
         // 贵金属那一类的现价不在这里发请求：引擎那一轮（30 秒一批）本来就在跑，
         // 这里只订阅它的结果，报价一变就重新算一遍市值与盈亏
         viewModelScope.launch {
-            MetalsEngine.quotes.collect { applyMetalPrices(publish = true) }
+            NonStockEngine.quotes.collect { applyNonStockPrices(publish = true) }
         }
     }
     
@@ -107,15 +107,15 @@ class PortfolioViewModel(application: Application) : AndroidViewModel(applicatio
      * 刷新一遍持仓现价。
      *
      * 两类分开取：A 股走 [StockRepository]（一次批量行情 + 取不到价的补一次日线），
-     * 贵金属走 [MetalsEngine] 那一轮批量报价。以前是把所有代码一起丢给 A 股行情接口，
-     * `hf_XAU` 之类拿不到结果，于是又会被"补现价"那段拖去发一次注定失败的日线请求。
+     * 非股票资产走 [NonStockEngine] 那一轮批量报价。以前是把所有代码一起丢给 A 股行情接口，
+     * `hf_XAU` / `fx_USDCNY` 之类拿不到结果，于是又会被"补现价"那段拖去发一次注定失败的日线请求。
      */
     fun refreshPrices() {
         viewModelScope.launch {
             _isLoading.value = true
             val currentPortfolio = _portfolio.value
 
-            val stockHolds = currentPortfolio.filter { !it.isMetal }
+            val stockHolds = currentPortfolio.filter { !it.isNonStock }
             if (stockHolds.isNotEmpty()) {
                 val codes = stockHolds.map { it.code }
                 val quotesResult = repository.getRealtimeQuotes(codes)
@@ -150,7 +150,7 @@ class PortfolioViewModel(application: Application) : AndroidViewModel(applicatio
                         } else ps
                     }
 
-                    val merged = currentPortfolio.filter { it.isMetal } + finalList
+                    val merged = currentPortfolio.filter { it.isNonStock } + finalList
                     _portfolio.value = merged
                     repository.savePortfolio(merged)
                     generateAdvices(finalList)
@@ -161,27 +161,27 @@ class PortfolioViewModel(application: Application) : AndroidViewModel(applicatio
                 }
             }
             // 贵金属那几行：先用手上的报价定一次价，同时催引擎取最新的一批
-            applyMetalPrices(publish = true)
-            MetalsEngine.requestIfStale()
+            applyNonStockPrices(publish = true)
+            NonStockEngine.requestIfStale()
             _isLoading.value = false
         }
     }
 
     /**
-     * 用引擎当前的批量报价给贵金属持仓定价。
+     * 用引擎当前的批量报价给非股票持仓定价。
      *
      * 取不到价就**保持原值**，不会把现价写成 0 —— 写成 0 在盈亏那一栏就是
      * "-100%"，那是假消息。引擎那一轮回来之后这个函数会再跑一次。
      */
-    private fun applyMetalPrices(publish: Boolean): List<PortfolioStock> {
+    private fun applyNonStockPrices(publish: Boolean): List<PortfolioStock> {
         val list = _portfolio.value
-        val metalHolds = list.filter { it.isMetal }
-        if (metalHolds.isEmpty()) return list
-        val quotes = MetalsEngine.quotes.value
+        val nonStockHolds = list.filter { it.isNonStock }
+        if (nonStockHolds.isEmpty()) return list
+        val quotes = NonStockEngine.quotes.value
         if (quotes.isEmpty()) return list
         var changed = false
         val updated = list.map { ps ->
-            val price = if (ps.isMetal) quotes[ps.code]?.price ?: 0.0 else 0.0
+            val price = if (ps.isNonStock) quotes[ps.code]?.price ?: 0.0 else 0.0
             if (price > 0 && price != ps.currentPrice) {
                 changed = true
                 ps.copy().apply { updateCurrentPrice(price) }
@@ -209,7 +209,7 @@ class PortfolioViewModel(application: Application) : AndroidViewModel(applicatio
                 } catch (e: Exception) { ps }
             } else ps
         }
-        _portfolio.value = _portfolio.value.filter { it.isMetal } + updated
+        _portfolio.value = _portfolio.value.filter { it.isNonStock } + updated
         repository.savePortfolio(_portfolio.value)
         generateAdvices(updated)
     }
@@ -224,7 +224,7 @@ class PortfolioViewModel(application: Application) : AndroidViewModel(applicatio
     private fun generateAdvices(portfolio: List<PortfolioStock>) {
         viewModelScope.launch {
             val adviceList = mutableListOf<PositionAdvice>()
-            for (stock in portfolio.filter { !it.isMetal }) {
+            for (stock in portfolio.filter { !it.isNonStock }) {
                 // 130 根：MA60 与它的 10 日斜率必须有足够历史（与回测口径一致）
                 val klineResult = try {
                     repository.getKLineData(stock.code, "daily", StockAnalyzer.BARS_FULL)
@@ -356,19 +356,19 @@ class PortfolioViewModel(application: Application) : AndroidViewModel(applicatio
     /**
      * 合计只统计 A 股那一类。
      *
-     * 贵金属不能和股票加在同一个数里：伦敦金是美元/盎司、沪银是元/千克，
+     * 非股票资产不能和股票加在同一个数里：伦敦金是美元/盎司、沪银是元/千克、外汇是货币对，
      * 币种不同、数量单位不同，硬加出来的"总资产"是假的。
-     * 贵金属那几行的合计在界面上按币种分开列（[metalTotals]）。
+     * 非股票那几行的合计在界面上按币种分开列（[metalTotals]）。
      */
-    fun getTotalValue(): Double = _portfolio.value.filter { !it.isMetal }.sumOf { it.currentPrice * it.quantity }
-    fun getTotalCost(): Double = _portfolio.value.filter { !it.isMetal }.sumOf { it.buyPrice * it.quantity }
+    fun getTotalValue(): Double = _portfolio.value.filter { !it.isNonStock }.sumOf { it.currentPrice * it.quantity }
+    fun getTotalCost(): Double = _portfolio.value.filter { !it.isNonStock }.sumOf { it.buyPrice * it.quantity }
     fun getTotalProfit(): Double = getTotalValue() - getTotalCost()
 
-    /** 贵金属持仓按币种分开的合计：市值、成本、盈亏各自一套，不跨币种相加 */
+    /** 非股票持仓按币种分开的合计：市值、成本、盈亏各自一套，不跨币种相加 */
     fun metalTotals(): List<MetalTotal> {
         val out = LinkedHashMap<String, MetalTotal>()
-        for (ps in _portfolio.value.filter { it.isMetal }) {
-            val cur = ps.metalInstrument?.currency ?: "其他"
+        for (ps in _portfolio.value.filter { it.isNonStock }) {
+            val cur = ps.nonStockInstrument?.currency ?: "其他"
             val prev = out[cur] ?: MetalTotal(cur, 0.0, 0.0, 0)
             out[cur] = prev.copy(
                 value = prev.value + ps.currentPrice * ps.quantity,
@@ -385,11 +385,11 @@ class PortfolioViewModel(application: Application) : AndroidViewModel(applicatio
 }
 
 /**
- * 贵金属持仓的合计，按币种一条。
+ * 非股票持仓的合计，按币种一条。
  *
- * 为什么不合成一个总数：伦敦金按美元/盎司计价、沪银按元/千克计价，
+ * 为什么不合成一个总数：伦敦金按美元/盎司计价、沪银按元/千克计价、外汇按货币对计价，
  * 加起来需要一个实时汇率源，而这一版没有核过任何免 Key 的汇率接口 ——
- * 拿一个没验证过的汇率把两种币种折成一个数，比分开显示更容易让人做错决定。
+ * 拿一个没验证过的汇率把多种币种折成一个数，比分开显示更容易让人做错决定。
  */
 data class MetalTotal(
     val currency: String,

@@ -268,8 +268,10 @@ class MetalsRiskTest {
     @Test
     fun `metals copy never gives a direction`() {
         val banned = listOf("会涨", "会跌", "该买", "该卖", "建议买入", "建议卖出", "目标价", "抄底")
-        val texts = com.stock.analyzer.ui.metals.MetalsCopy.run {
-            noAdvice + readingRules + riskCardNote
+        val texts = com.stock.analyzer.ui.nonstock.NonStockCopy.run {
+            noAdvice(com.stock.analyzer.data.model.AssetClass.PRECIOUS_METALS) +
+                readingRules(com.stock.analyzer.data.model.AssetClass.PRECIOUS_METALS) +
+                riskCardNote(com.stock.analyzer.data.model.AssetClass.PRECIOUS_METALS)
         }
         assertTrue("文案条数不对（noAdvice + readingRules + riskCardNote）", texts.size >= 13)
         for ((i, line) in texts.withIndex()) {

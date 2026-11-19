@@ -2,10 +2,13 @@ package com.stock.analyzer.data.repository
 
 import android.content.Context
 import com.google.gson.Gson
-import com.stock.analyzer.data.api.SinaMetalsApi
+import com.stock.analyzer.data.api.SinaFuturesApi
+import com.stock.analyzer.data.api.TencentForexApi
 import com.stock.analyzer.data.model.KLineData
-import com.stock.analyzer.data.model.MetalInstrument
-import com.stock.analyzer.data.model.MetalQuote
+import com.stock.analyzer.data.model.NonStockCatalog
+import com.stock.analyzer.data.model.NonStockInstrument
+import com.stock.analyzer.data.model.NonStockQuote
+import com.stock.analyzer.data.model.SinaFeed
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.File
@@ -14,27 +17,46 @@ import java.time.LocalDate
 import java.time.temporal.TemporalAdjusters
 
 /**
- * 贵金属数据仓库：一条批量报价 + 每品种一份日线缓存，周线/月线**由日线自己聚合**。
+ * 非股票资产（贵金属 / 大宗商品 / 外汇）数据仓库：一条批量报价 + 每品种一份日线缓存，
+ * 周线/月线**由日线自己聚合**。
  *
- * 为什么不向接口要周线月线：新浪这两个日线接口是贵金属这一路唯一核过的历史源，
- * 没有免 Key 的周线/月线接口。自己聚合的口径写在 [aggregate]，
- * 一根周线 = 周一到周日内最后一个交易日为止的开高低收，日期取这一组里最后一个交易日
- * （图表那一排日期标签因此永远落在真实存在的那一天）。
+ * 为什么不向接口要周线月线：新浪期货与腾讯外汇这两路都没有核过的免 Key 周线/月线接口。
+ * 自己聚合的口径写在 [aggregate]，一根周线 = 周一到周日内最后一个交易日为止的开高低收，
+ * 日期取这一组里最后一个交易日（图表那一排日期标签因此永远落在真实存在的那一天）。
  *
- * 与 A 股那套 [StockRepository] 刻意分开：不同资产大类的代码规则、字段、单位都不一样，
- * 硬塞进同一个仓库只会让两边都长出 if。以后加大宗商品、外汇是再加一个 provider。
+ * 与 A 股那套 [StockRepository] 刻意分开：不同资产大类的代码规则、字段、单位、数据源都不一样，
+ * 硬塞进同一个仓库只会让两边都长出 if。三类非股票资产共用这一个仓库，区别只在
+ * [NonStockInstrument.feed]：期货两路走新浪（[SinaFuturesApi]），外汇走腾讯（[TencentForexApi]）。
  */
-class MetalsRepository(context: Context) {
+class NonStockRepository(context: Context) {
 
-    private val api = SinaMetalsApi()
+    private val futuresApi = SinaFuturesApi()
+    private val forexApi = TencentForexApi()
     private val gson = Gson()
-    private val cacheDir = File(context.applicationContext.filesDir, "metals_cache").apply {
+    private val cacheDir = File(context.applicationContext.filesDir, "nonstock_cache").apply {
         if (!exists()) mkdirs()
     }
 
-    /** 一次批量请求取回全部品种现价。失败返回 null，由引擎保留上一轮数值并标注时间 */
-    suspend fun quotes(instruments: List<MetalInstrument> = MetalInstrument.ALL): Map<String, MetalQuote>? =
-        withContext(Dispatchers.IO) { api.getQuotes(instruments) }
+    /**
+     * 一次批量请求取回全部品种现价。
+     *
+     * 期货与外汇是两个不同的数据源、两条不同的请求，分别取再合并：一次调用对调用方透明，
+     * 内部按 feed 拆开。任一路失败不影响另一路（各自返回自己那部分，合并后可能缺一类，
+     * 由引擎保留上一轮数值并标注时间，不会因为外汇挂了就把期货的报价也清掉）。
+     */
+    suspend fun quotes(instruments: List<NonStockInstrument> = NonStockCatalog.all): Map<String, NonStockQuote>? {
+        return withContext(Dispatchers.IO) {
+            val futures = instruments.filter { it.feed != SinaFeed.FOREX }
+            val forex = instruments.filter { it.feed == SinaFeed.FOREX }
+            val futuresQuotes = if (futures.isEmpty()) emptyMap() else futuresApi.getQuotes(futures)
+            val forexQuotes = if (forex.isEmpty()) emptyMap() else forexApi.getQuotes(forex)
+            if (futuresQuotes == null && forexQuotes == null) null
+            else LinkedHashMap<String, NonStockQuote>().apply {
+                futuresQuotes?.let { putAll(it) }
+                forexQuotes?.let { putAll(it) }
+            }
+        }
+    }
 
     /**
      * 某个周期的 K 线（升序）。
@@ -43,7 +65,7 @@ class MetalsRepository(context: Context) {
      * 周线/月线不单独发请求，永远从日线聚合，所以三个周期天然对得上。
      */
     suspend fun bars(
-        inst: MetalInstrument,
+        inst: NonStockInstrument,
         period: String,
         force: Boolean = false
     ): Result<List<KLineData>> = withContext(Dispatchers.IO) {
@@ -56,16 +78,20 @@ class MetalsRepository(context: Context) {
 
     /**
      * 取日线：缓存没过期就直接给，过期或 force 才联网。
-     * 联网失败时退回旧缓存 —— 贵金属历史是死的，昨天的缓存今天照样能画。
+     * 联网失败时退回旧缓存 —— 非股票资产历史是死的，昨天的缓存今天照样能画。
+     * 按 feed 路由到对应数据源。
      */
-    private fun daily(inst: MetalInstrument, force: Boolean): List<KLineData>? {
+    private fun daily(inst: NonStockInstrument, force: Boolean): List<KLineData>? {
         val cached = readCache(inst.code)
         val freshEnough = cached != null && cached.klines.isNotEmpty() &&
             System.currentTimeMillis() - cached.fetchedAt < DAILY_TTL_MS
         if (freshEnough && !force) return cached!!.klines
 
         val fetched = try {
-            api.getDailyBars(inst)
+            when (inst.feed) {
+                SinaFeed.FOREX -> forexApi.getDailyBars(inst)
+                else -> futuresApi.getDailyBars(inst)
+            }
         } catch (e: Exception) {
             emptyList()
         }
@@ -177,3 +203,6 @@ class MetalsRepository(context: Context) {
         }
     }
 }
+
+/** v4.8.0~v4.9.0 的类名，泛化后保留别名，存量引用继续编译 */
+typealias MetalsRepository = NonStockRepository

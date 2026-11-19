@@ -4,31 +4,34 @@ import com.google.gson.Gson
 import com.google.gson.JsonArray
 import com.google.gson.JsonObject
 import com.stock.analyzer.data.model.KLineData
-import com.stock.analyzer.data.model.MetalInstrument
-import com.stock.analyzer.data.model.MetalQuote
+import com.stock.analyzer.data.model.NonStockInstrument
+import com.stock.analyzer.data.model.NonStockQuote
 import com.stock.analyzer.data.model.SinaFeed
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import java.util.concurrent.TimeUnit
 
 /**
- * 贵金属行情源（免 Key，与 `backtest/metals/fetch_metals.py` 同一批接口）。
+ * 新浪期货行情源（免 Key），承载**贵金属与大宗商品**两类外盘（`hf_`）/境内（`nf_`）品种。
  *
- * 三个接口：
- *  1. 实时报价  https://hq.sinajs.cn/list=hf_XAU,nf_AU0     （GBK 编码，逗号分隔，一次批量拿全部）
- *  2. 外盘日线  GlobalFuturesService.getGlobalFuturesDailyKLine?symbol=XAU
- *  3. 国内日线  InnerFuturesNewService.getDailyKLine?symbol=AU0
+ * 两类品种走的是同一批接口、同一套字段布局，所以这里合并成一个类，不再为大宗商品另起炉灶：
+ *  1. 实时报价  https://hq.sinajs.cn/list=hf_XAU,hf_CL,nf_AU0,nf_RB0     （GBK 编码，逗号分隔，一次批量拿全部）
+ *  2. 外盘日线  GlobalFuturesService.getGlobalFuturesDailyKLine?symbol=XAU / CL
+ *  3. 国内日线  InnerFuturesNewService.getDailyKLine?symbol=AU0 / RB0
  * 必须带 Referer=finance.sina.com.cn，否则返回 403。
  *
- * 字段下标是**对着日线逐只核过的**（2026-11-16）：
+ * 字段下标是**对着日线逐只核过的**（贵金属 2026-11-16、大宗商品 2026-11-19）：
  *   hf_*（外盘）: 0 最新、4 最高、5 最低、7 昨收/昨结、12 日期、6 时间 —— 这四个字段
  *                 与 getGlobalFuturesDailyKLine 最后一根完全一致；1/2/3/8 在不同品种上
  *                 语义不稳（XPT 的 8 与日线 open 差 4.7 美元），所以这里一个都不取。
  *   nf_*（国内）: 2 开、3 高、4 低、6 最新、10 昨结算、13 持仓、14 成交量、17 日期、1 时间
  *                 —— 10 与日线 s（昨结算）逐只对上。
  * 涨跌口径：外盘对昨收，国内期货对昨结算（期货的"昨收"没意义，结算价才是保证金基准）。
+ *
+ * 外汇（[SinaFeed.FOREX]）不走这一路：新浪的外汇日线接口对任何符号都只回 `data is empty`，
+ * 现汇行情与日线改用腾讯（见 [TencentForexApi]），不在这里混用。
  */
-class SinaMetalsApi {
+class SinaFuturesApi {
 
     private val gson = Gson()
 
@@ -38,24 +41,25 @@ class SinaMetalsApi {
         .retryOnConnectionFailure(true)
         .build()
 
-    /** 一次批量请求取回全部贵金属现价；失败返回 null（由引擎保留上一轮数据并标注时间） */
-    fun getQuotes(instruments: List<MetalInstrument>): Map<String, MetalQuote>? {
-        if (instruments.isEmpty()) return emptyMap()
+    /** 一次批量请求取回全部品种现价；失败返回 null（由引擎保留上一轮数据并标注时间） */
+    fun getQuotes(instruments: List<NonStockInstrument>): Map<String, NonStockQuote>? {
+        val futures = instruments.filter { it.feed != SinaFeed.FOREX }
+        if (futures.isEmpty()) return emptyMap()
         return try {
-            val url = "https://hq.sinajs.cn/list=" + instruments.joinToString(",") { it.quoteKey }
+            val url = "https://hq.sinajs.cn/list=" + futures.joinToString(",") { it.quoteKey }
             val body = get(url, GBK) ?: return null
-            parseQuotes(body, instruments)
+            parseQuotes(body, futures)
         } catch (e: Exception) {
-            System.err.println("metals quotes failed: ${e.javaClass.simpleName} ${e.message}")
+            System.err.println("futures quotes failed: ${e.javaClass.simpleName} ${e.message}")
             null
         }
     }
 
     /**
      * 日线（升序，最后一根是最新交易日）。
-     * 外盘一般给到 20 年、国内期货给到 18 年，够周线/月线聚合与 130 根暖机用。
+     * 外盘一般给到 20~30 年、国内期货给到 10~18 年，够周线/月线聚合与 130 根暖机用。
      */
-    fun getDailyBars(inst: MetalInstrument): List<KLineData> {
+    fun getDailyBars(inst: NonStockInstrument): List<KLineData> {
         val svc = if (inst.feed == SinaFeed.GLOBAL_FUTURES)
             "GlobalFuturesService.getGlobalFuturesDailyKLine"
         else
@@ -68,8 +72,8 @@ class SinaMetalsApi {
 
     // ---------------- 解析 ----------------
 
-    internal fun parseQuotes(body: String, instruments: List<MetalInstrument>): Map<String, MetalQuote> {
-        val out = LinkedHashMap<String, MetalQuote>()
+    internal fun parseQuotes(body: String, instruments: List<NonStockInstrument>): Map<String, NonStockQuote> {
+        val out = LinkedHashMap<String, NonStockQuote>()
         for (inst in instruments) {
             val line = Regex("var hq_str_" + Regex.escape(inst.quoteKey) + "=\"([^\"]*)\"")
                 .find(body)?.groupValues?.getOrNull(1) ?: continue
@@ -81,12 +85,12 @@ class SinaMetalsApi {
         return out
     }
 
-    private fun parseOverTheCounter(inst: MetalInstrument, f: List<String>): MetalQuote? {
+    private fun parseOverTheCounter(inst: NonStockInstrument, f: List<String>): NonStockQuote? {
         if (f.size < 14) return null
         val last = d(f, 0) ?: return null
         val high = d(f, 4) ?: last
         val low = d(f, 5) ?: last
-        return MetalQuote(
+        return NonStockQuote(
             code = inst.code, name = inst.name, unit = inst.unit, unitSymbol = inst.unitSymbol,
             source = inst.source,
             price = last, preSettle = d(f, 7) ?: 0.0,
@@ -99,10 +103,10 @@ class SinaMetalsApi {
         )
     }
 
-    private fun parseDomesticFutures(inst: MetalInstrument, f: List<String>): MetalQuote? {
+    private fun parseDomesticFutures(inst: NonStockInstrument, f: List<String>): NonStockQuote? {
         if (f.size < 18) return null
         val last = d(f, 6) ?: return null
-        return MetalQuote(
+        return NonStockQuote(
             code = inst.code, name = inst.name, unit = inst.unit, unitSymbol = inst.unitSymbol,
             source = inst.source,
             price = last, preSettle = d(f, 10) ?: 0.0,
@@ -149,13 +153,13 @@ class SinaMetalsApi {
         client.newCall(req).execute().use { resp ->
             val bytes = resp.body?.bytes() ?: return null
             if (!resp.isSuccessful) {
-                System.err.println("metals http ${resp.code} for $url")
+                System.err.println("futures http ${resp.code} for $url")
                 return null
             }
             String(bytes, charset(charset))
         }
     } catch (e: Exception) {
-        System.err.println("metals fetch error $url: ${e.javaClass.simpleName} ${e.message}")
+        System.err.println("futures fetch error $url: ${e.javaClass.simpleName} ${e.message}")
         null
     }
 
@@ -202,3 +206,6 @@ class SinaMetalsApi {
         const val UTF8 = "UTF-8"
     }
 }
+
+/** v4.8.0~v4.9.0 的类名，泛化到期货两路后保留别名，存量引用继续编译 */
+typealias SinaMetalsApi = SinaFuturesApi

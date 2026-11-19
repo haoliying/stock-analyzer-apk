@@ -3,11 +3,12 @@ package com.stock.analyzer.analysis
 import android.content.Context
 import com.google.gson.Gson
 import com.stock.analyzer.data.model.AssetClass
-import com.stock.analyzer.data.model.MetalInstrument
-import com.stock.analyzer.data.model.MetalQuote
+import com.stock.analyzer.data.model.NonStockCatalog
+import com.stock.analyzer.data.model.NonStockInstrument
+import com.stock.analyzer.data.model.NonStockQuote
 import com.stock.analyzer.data.repository.AppSettings
 import com.stock.analyzer.data.repository.AssetClassSelection
-import com.stock.analyzer.data.repository.MetalsRepository
+import com.stock.analyzer.data.repository.NonStockRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -26,26 +27,26 @@ import java.util.Locale
 import java.util.TimeZone
 
 /**
- * 进程级贵金属报价引擎。和 [MarketEngine] 同构，但**不算分、不出建议**：
- * 这一类只做行情、K 线、单位、涨跌幅。
+ * 进程级非股票资产（贵金属 / 大宗商品 / 外汇）报价引擎。和 [MarketEngine] 同构，
+ * 但**不算分、不出建议**：这几类只做行情、K 线、单位、涨跌幅。
  *
  * 为什么没有评分：同一套 130 根日线口径的分数在贵金属上跑的回测没过
- * （仓库 `backtest/metals/README.md`，iter1~iter8）。要点是
- * 择时每笔超额收益 13 条序列 0 条为正、置信区间整段在零下，
- * 低分档的绝对收益反而是正的，ATR 惩罚项在黄金上几乎不触发 ——
- * 分数量的不是同一件事，所以界面上干脆不给。
+ * （仓库 `backtest/metals/README.md`，iter1~iter12）。要点是择时每笔超额收益 13 条序列
+ * 0 条为正、置信区间整段在零下，低分档的绝对收益反而是正的，ATR 惩罚项在黄金上几乎不触发
+ * —— 分数量的不是同一件事，所以界面上干脆不给。大宗商品与外汇沿用同一条产品口径：
+ * **没有跑过回测的想法不上界面**，宁可只给行情、K 线、单位与一个不带方向的风险刻度。
  * 给一个"验证过的东西都没有"的数字，比什么都不给糟糕得多。
  *
- * 抓取节奏：一次批量请求就拿到全部品种（`list=hf_XAU,...,nf_AG0`），
- * 所以这一路的成本比 A 股那 330 次日线低两个数量级，节奏可以密一些：
- *   · 屏幕上正看着贵金属 → [POLL_ON_PAGE]
- *   · 切回 A 股那一类 → 退到 [POLL_AWAY]，只当后台留个新鲜价（持仓里可能有贵金属）
+ * 抓取节奏：期货两路与外汇各一条批量请求，一次循环里取回全部品种，成本比 A 股那 330 次日线
+ * 低两个数量级，节奏可以密一些：
+ *   · 屏幕上正看着某一非股票大类 → [POLL_ON_PAGE]
+ *   · 切回 A 股那一类 → 退到 [POLL_AWAY]，只当后台留个新鲜价（持仓里可能有非股票资产）
  *   · 境外境内都收市（周日、周六早 6 点后）→ [GAP_OFF_SESSION] 醒来看一眼表，不发请求
  * 失败按 [GAP_ERROR] 起退避，最多 10 分钟。
  *
  * 明确不做：没有前台服务、没有常驻通知，和 MarketEngine 一样不假装能对抗厂商后台管控。
  */
-object MetalsEngine {
+object NonStockEngine {
 
     private const val POLL_ON_PAGE = 30_000L
     private const val POLL_AWAY = 10 * 60_000L
@@ -53,7 +54,7 @@ object MetalsEngine {
     private const val GAP_ERROR = 60_000L
     private const val IDLE_POLL_BG = 60_000L
 
-    private const val SNAPSHOT_NAME = "metals_snapshot.json"
+    private const val SNAPSHOT_NAME = "nonstock_snapshot.json"
     private const val SNAPSHOT_VERSION = 1
 
     /** 界面那行"报价新鲜度"要说的东西 */
@@ -70,7 +71,7 @@ object MetalsEngine {
     private val shanghai: TimeZone = TimeZone.getTimeZone("Asia/Shanghai")
 
     private lateinit var appContext: Context
-    private lateinit var repository: MetalsRepository
+    private lateinit var repository: NonStockRepository
 
     @Volatile
     private var started = false
@@ -94,8 +95,8 @@ object MetalsEngine {
 
     private val wake = Channel<Unit>(1)
 
-    private val _quotes = MutableStateFlow<Map<String, MetalQuote>>(emptyMap())
-    val quotes: StateFlow<Map<String, MetalQuote>> = _quotes.asStateFlow()
+    private val _quotes = MutableStateFlow<Map<String, NonStockQuote>>(emptyMap())
+    val quotes: StateFlow<Map<String, NonStockQuote>> = _quotes.asStateFlow()
 
     private val _fetchedAt = MutableStateFlow<Long?>(null)
     val fetchedAt: StateFlow<Long?> = _fetchedAt.asStateFlow()
@@ -115,7 +116,7 @@ object MetalsEngine {
             if (started) return
             started = true
             appContext = context.applicationContext
-            repository = MetalsRepository(appContext)
+            repository = NonStockRepository(appContext)
         }
         restoreSnapshot()
         scope.launch { loop() }
@@ -137,7 +138,7 @@ object MetalsEngine {
         publishStatus()
     }
 
-    /** 顶部刷新键：立刻发一次批量请求（这一路只有一条请求，不需要"不打断进度"那套） */
+    /** 顶部刷新键：立刻发一次批量请求（这一路只有两条请求，不需要"不打断进度"那套） */
     fun refreshNow() {
         wantImmediate = true
         nextRunAt = 0L
@@ -156,9 +157,9 @@ object MetalsEngine {
      * 本机还没有任何报价（冷启动 + 引擎还没跑到第一轮）才当场取一次，
      * 否则只把过期判断交回循环 —— 持仓页不该和行情页抢着发请求。
      */
-    suspend fun quotesNow(): Map<String, MetalQuote> {
+    suspend fun quotesNow(): Map<String, NonStockQuote> {
         if (_quotes.value.isEmpty()) {
-            val got = withContext(Dispatchers.IO) { repository.quotes(MetalInstrument.ALL) }
+            val got = withContext(Dispatchers.IO) { repository.quotes(NonStockCatalog.all) }
             if (!got.isNullOrEmpty()) merge(got, System.currentTimeMillis())
         } else {
             requestIfStale()
@@ -188,7 +189,7 @@ object MetalsEngine {
             try {
                 runOnce()
             } catch (e: Exception) {
-                _error.value = "贵金属行情异常: ${e.message}"
+                _error.value = "非股票行情异常: ${e.message}"
                 failStreak++
                 nextRunAt = System.currentTimeMillis() + GAP_ERROR
                 fetchingNow = false
@@ -208,14 +209,14 @@ object MetalsEngine {
         fetchingNow = true
         publishStatus()
         val got = try {
-            withContext(Dispatchers.IO) { repository.quotes(MetalInstrument.ALL) }
+            withContext(Dispatchers.IO) { repository.quotes(NonStockCatalog.all) }
         } catch (e: Exception) {
             null
         }
         fetchingNow = false
         val now = System.currentTimeMillis()
         if (got.isNullOrEmpty()) {
-            _error.value = "贵金属报价没取到（接口没返回，或者此刻没网），" +
+            _error.value = "非股票报价没取到（接口没返回，或者此刻没网），" +
                 "界面仍是 ${formatTime(_fetchedAt.value ?: 0L)} 取到的价格"
             failStreak++
             nextRunAt = now + errGap(now)
@@ -235,7 +236,7 @@ object MetalsEngine {
      * 因为界面每行都显示数据源自己那条时间戳，旧价格一眼就能看出来是旧的；
      * 直接从列表里消失反而会被当成"这个品种下架了"。
      */
-    private fun merge(got: Map<String, MetalQuote>, at: Long) {
+    private fun merge(got: Map<String, NonStockQuote>, at: Long) {
         val m = LinkedHashMap(_quotes.value)
         m.putAll(got)
         _quotes.value = m
@@ -243,21 +244,21 @@ object MetalsEngine {
     }
 
     /**
-     * 屏幕上正看着贵金属 → [POLL_ON_PAGE]；切回别的大类 → [POLL_AWAY]，
-     * 因为持仓里可能还留着贵金属，价格还得往下走，只是不必那么勤。
+     * 屏幕上正看着某一非股票大类 → [POLL_ON_PAGE]；切回 A 股那一类 → [POLL_AWAY]，
+     * 因为持仓里可能还留着非股票资产，价格还得往下走，只是不必那么勤。
      */
     private fun pollGap(): Long =
-        if (AssetClassSelection.current.value == AssetClass.PRECIOUS_METALS) POLL_ON_PAGE else POLL_AWAY
+        if (AssetClassSelection.current.value != AssetClass.A_SHARE) POLL_ON_PAGE else POLL_AWAY
 
     private fun errGap(now: Long): Long =
         if (sessionLikely(now)) GAP_ERROR
         else minOf(GAP_OFF_SESSION, GAP_ERROR * minOf(failStreak, 10).coerceAtLeast(2))
 
     /**
-     * 此刻有没有"新价格"可取。贵金属是几个市场拼起来的：
-     * 境外现货/期货几乎全天（周一早到周六凌晨），境内日盘 + 21:00~02:30 夜盘。
+     * 此刻有没有"新价格"可取。非股票资产是几个市场拼起来的：
+     * 外盘期货几乎全天（周一早到周六凌晨），境内期货日盘 + 夜盘，外汇工作日 24 小时。
      * 所以工作日一律算"可能有新价格"，周六早上六点以后和整个周日算收市 ——
-     * 那几天 Sina 返回的就是最后一笔，没必要每分钟去问一次。
+     * 那几天数据源返回的就是最后一笔，没必要每分钟去问一次。
      *
      * 只认星期和钟点，不认识境外的节假日（圣诞、元旦前后会白跑几轮）。
      */
@@ -298,7 +299,7 @@ object MetalsEngine {
     private class Snapshot(
         val version: Int = SNAPSHOT_VERSION,
         val savedAt: Long = 0L,
-        val quotes: Map<String, MetalQuote> = emptyMap()
+        val quotes: Map<String, NonStockQuote> = emptyMap()
     )
 
     private fun snapshotFile(): File = File(appContext.filesDir, SNAPSHOT_NAME)
@@ -357,12 +358,15 @@ object MetalsEngine {
     /** 状态行文案，三页共用这一句，别各写一套口径。参数由界面从 StateFlow 里取，保证会跟着刷新 */
     fun statusLine(s: Status, stamp: Long?): String {
         return when {
-            s.fetching -> "贵金属：正在取批量报价（一次请求取回全部品种）"
-            stamp == null -> "贵金属：还没取到报价" + (if (s.offSession) "，此刻境外与境内都收市" else "")
-            s.offSession -> "贵金属：非交易时段，价格是 ${formatTime(stamp)} 取到的最后一笔，不发请求"
-            else -> "贵金属：报价取于 ${formatTime(stamp)}" +
+            s.fetching -> "非股票：正在取批量报价（期货与外汇各一次请求，取回全部品种）"
+            stamp == null -> "非股票：还没取到报价" + (if (s.offSession) "，此刻境外与境内都收市" else "")
+            s.offSession -> "非股票：非交易时段，价格是 ${formatTime(stamp)} 取到的最后一笔，不发请求"
+            else -> "非股票：报价取于 ${formatTime(stamp)}" +
                 (if (s.nextRunAt > stamp) "，下一次 ${SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(s.nextRunAt)}" else "") +
                 (if (!s.continuous && !s.foreground) "（「后台持续分析」已关，界面不可见时不刷新）" else "")
         }
     }
 }
+
+/** v4.8.0~v4.9.0 的引擎名，泛化到三类非股票资产后保留别名，存量引用继续编译 */
+typealias MetalsEngine = NonStockEngine

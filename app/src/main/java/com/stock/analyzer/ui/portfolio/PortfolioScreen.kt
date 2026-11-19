@@ -21,15 +21,15 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.stock.analyzer.analysis.MetalsEngine
+import com.stock.analyzer.analysis.NonStockEngine
 import com.stock.analyzer.data.model.*
 import java.util.Locale
 import com.stock.analyzer.data.repository.AssetClassSelection
 import com.stock.analyzer.data.repository.StockInfoRepository
 import com.stock.analyzer.ui.asset.AssetClassSwitcher
-import com.stock.analyzer.ui.metals.MetalsCopy
-import com.stock.analyzer.ui.metals.MetalsNoteCard
-import com.stock.analyzer.ui.metals.shortStamp
+import com.stock.analyzer.ui.nonstock.NonStockCopy
+import com.stock.analyzer.ui.nonstock.NonStockNoteCard
+import com.stock.analyzer.ui.nonstock.shortStamp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -77,7 +77,7 @@ fun PortfolioScreen(
             } else if (visible.isNotEmpty()) {
                 // 贵金属那一类不合成一个总数：币种不同（美元/盎司、元/克、元/千克），
                 // 折到一起需要一个没核过的汇率源，宁可分币种各报各的
-                MetalTotalsCard(totals = viewModel.metalTotals())
+                NonStockTotalsCard(totals = viewModel.metalTotals())
             }
 
             if (isLoading && visible.isEmpty()) {
@@ -93,7 +93,7 @@ fun PortfolioScreen(
                         Spacer(modifier = Modifier.height(8.dp))
                         Text(
                             if (assetClass.supportsAdvice) "点击右下角 + 添加股票"
-                            else "点击右下角 + 添加贵金属持仓（按品种的单位填数量）",
+                            else "点击右下角 + 添加非股票资产持仓（按品种的单位填数量）",
                             fontSize = 14.sp,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
@@ -102,8 +102,8 @@ fun PortfolioScreen(
             } else {
                 LazyColumn(modifier = Modifier.fillMaxSize(), contentPadding = PaddingValues(bottom = 80.dp)) {
                     items(visible) { stock ->
-                        if (stock.isMetal) {
-                            MetalHoldCard(
+                        if (stock.isNonStock) {
+                            NonStockHoldCard(
                                 stock = stock,
                                 onClick = { onStockClick(stock.code) },
                                 onEdit = { viewModel.updateStock(it) },
@@ -121,9 +121,9 @@ fun PortfolioScreen(
                     }
                     if (!assetClass.supportsAdvice) {
                         item {
-                            MetalsNoteCard(
-                                title = "贵金属持仓为什么没有加仓区间、减仓区间和止损价",
-                                lines = MetalsCopy.noAdvice,
+                            NonStockNoteCard(
+                                title = "这一类持仓为什么没有加仓区间、减仓区间和止损价",
+                                lines = NonStockCopy.noAdvice(assetClass),
                                 accent = MaterialTheme.colorScheme.onSurface
                             )
                             Spacer(Modifier.height(24.dp))
@@ -140,7 +140,8 @@ fun PortfolioScreen(
                     onConfirm = { code, name, price, quantity -> viewModel.addStock(code, name, price, quantity) }
                 )
             } else {
-                AddMetalDialog(
+                AddNonStockDialog(
+                    assetClass = assetClass,
                     onDismiss = { viewModel.hideAddDialog() },
                     onConfirm = { code, name, price, quantity -> viewModel.addStock(code, name, price, quantity) }
                 )
@@ -228,19 +229,19 @@ fun PortfolioStockCard(
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MetalHoldCard(
+fun NonStockHoldCard(
     stock: PortfolioStock,
     onClick: () -> Unit,
     onEdit: (PortfolioStock) -> Unit,
     onDelete: () -> Unit
 ) {
-    val inst = stock.metalInstrument
+    val inst = stock.nonStockInstrument
     val unit = inst?.unit ?: "每单位"
     val qtyUnit = inst?.qtyUnit ?: "单位"
     val symbol = inst?.currencySymbol ?: ""
     var showMenu by remember { mutableStateOf(false) }
     var showEditDialog by remember { mutableStateOf(false) }
-    val quotes by MetalsEngine.quotes.collectAsState()
+    val quotes by NonStockEngine.quotes.collectAsState()
     val profitColor = when { stock.profit > 0 -> Color(0xFFE53935); stock.profit < 0 -> Color(0xFF43A047); else -> MaterialTheme.colorScheme.onSurface }
 
     Card(
@@ -303,15 +304,15 @@ fun MetalHoldCard(
     }
 }
 
-/** 贵金属持仓的合计：按币种各列一条，不折算成同一个数 */
+/** 非股票持仓的合计：按币种各列一条，不折算成同一个数 */
 @Composable
-fun MetalTotalsCard(totals: List<MetalTotal>) {
+fun NonStockTotalsCard(totals: List<MetalTotal>) {
     Card(
         modifier = Modifier.fillMaxWidth().padding(16.dp),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.3f))
     ) {
         Column(modifier = Modifier.fillMaxWidth().padding(16.dp)) {
-            Text("贵金属持仓（按币种分列，不折算）", fontSize = 13.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Text("非股票持仓（按币种分列，不折算）", fontSize = 13.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
             totals.forEach { t ->
                 Spacer(modifier = Modifier.height(8.dp))
                 Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
@@ -331,31 +332,33 @@ fun MetalTotalsCard(totals: List<MetalTotal>) {
 }
 
 /**
- * 添加贵金属持仓：品种从固定表里选，不做搜索。
+ * 添加非股票资产持仓：品种从该大类的固定表里选，不做搜索。
  *
- * 这一类一共就 6 条报价、4 个独立资产，搜索框只会让人以为自己可以搜到别的；
- * 数量和价格都必须带着单位写，避免"沪银按克填了数量、价格是每千克的"这种错。
+ * 每一类的品种数是固定的（贵金属 6 条、大宗商品 25 条、外汇 8 条），搜索框只会让人以为
+ * 可以搜到别的；数量和价格都必须带着单位写，避免"沪银按克填了数量、价格是每千克的"这种错。
  */
 @Composable
-fun AddMetalDialog(
+fun AddNonStockDialog(
+    assetClass: AssetClass,
     onDismiss: () -> Unit,
     onConfirm: (code: String, name: String, buyPrice: Double, quantity: Int) -> Unit
 ) {
-    var selected by remember { mutableStateOf(MetalInstrument.ALL.first()) }
+    val instruments = NonStockCatalog.forClass(assetClass)
+    var selected by remember { mutableStateOf(instruments.first()) }
     var buyPrice by remember { mutableStateOf("") }
     var quantity by remember { mutableStateOf("") }
     var error by remember { mutableStateOf<String?>(null) }
 
-    val quotes by MetalsEngine.quotes.collectAsState()
+    val quotes by NonStockEngine.quotes.collectAsState()
 
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("添加贵金属持仓") },
+        title = { Text("添加${assetClass.label}持仓") },
         text = {
             Column(
                 modifier = Modifier.verticalScroll(rememberScrollState())
             ) {
-                MetalInstrument.ALL.forEach { inst ->
+                instruments.forEach { inst ->
                     Row(
                         modifier = Modifier
                             .fillMaxWidth()
@@ -369,7 +372,7 @@ fun AddMetalDialog(
                             Text("${inst.code} · ${inst.unit}", fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
                         }
                         Text(
-                            quotes[inst.code]?.let { MetalsCopy.price(it.price) } ?: "",
+                            quotes[inst.code]?.let { NonStockCopy.price(it.price) } ?: "",
                             fontSize = 11.sp,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )

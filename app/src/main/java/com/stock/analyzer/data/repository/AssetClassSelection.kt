@@ -14,7 +14,7 @@ import kotlinx.coroutines.flow.asStateFlow
  * 挂在页面上就会出现"这页切到贵金属、那页还是 A 股"的分裂状态。
  *
  * 为什么不塞进 MarketEngine：引擎只管 A 股那一轮，贵金属有自己那条链路
- * （[com.stock.analyzer.analysis.MetalsEngine]），两边都不该知道对方的内部状态。
+ * （[com.stock.analyzer.analysis.NonStockEngine]），两边都不该知道对方的内部状态。
  * 这一类以后加大宗商品、外汇也只是 AssetClass 多一个条目。
  */
 object AssetClassSelection {
