@@ -191,8 +191,12 @@ class MetalsDataTest {
         assertEquals(AssetClass.A_SHARE, AssetClass.fromCode("sh600519"))
         assertEquals(AssetClass.A_SHARE, AssetClass.fromCode("600519"))
         assertEquals(AssetClass.A_SHARE, AssetClass.fromCode(null))
-        // 认不出来的 key 一律退回 A 股：这一类才是验证过的那套
-        assertEquals(AssetClass.A_SHARE, AssetClass.fromKey("forex"))
+        // 认不出来的 key 一律退回 A 股：这一类才是验证过的那套。
+        // v5.0.0 起 "forex" / "commodities" 成为合法 key（新增两个大类），所以这里的未知 key
+        // 改用 "crypto"，并补上两个新 key 的解析断言 —— 断言的意图（未知 key 退回 A 股）没变
+        assertEquals(AssetClass.A_SHARE, AssetClass.fromKey("crypto"))
+        assertEquals(AssetClass.FOREX, AssetClass.fromKey("forex"))
+        assertEquals(AssetClass.COMMODITIES, AssetClass.fromKey("commodities"))
         assertEquals("metals", AssetClass.PRECIOUS_METALS.key)
 
         // 大小写就是接口参数的一部分：转成小写新浪就查不到了，所以一个字符都不动

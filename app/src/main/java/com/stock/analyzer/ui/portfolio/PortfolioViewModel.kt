@@ -34,9 +34,10 @@ class PortfolioViewModel(application: Application) : AndroidViewModel(applicatio
          * 表现是"我的持仓里这只股票没有日线/月线、也没分析"。
          */
         fun normalizeStockCode(code: String): String {
-            // 贵金属代码（hf_XAU / nf_AU0）的大小写就是接口参数本身，
-            // 转小写会让新浪查不到 —— 这一类一个字符都不动
-            if (AssetClass.fromCode(code) == AssetClass.PRECIOUS_METALS) return code.trim()
+            // 非股票资产代码（hf_XAU / nf_RB0 / fx_USDCNY）的大小写与前缀就是接口参数本身，
+            // 转小写会让数据源查不到（hf_CL 会变成 hf_cl）—— 这一类一个字符都不动。
+            // 判据用 fromCode（不是只认贵金属）：大宗商品与外汇同样不能动
+            if (AssetClass.fromCode(code) != AssetClass.A_SHARE) return code.trim()
             val trimmed = code.trim().lowercase()
             val numCode = trimmed.replace(Regex("[^0-9]"), "")
             if (numCode.length != 6) return trimmed
@@ -48,9 +49,9 @@ class PortfolioViewModel(application: Application) : AndroidViewModel(applicatio
             return prefix + numCode
         }
 
-        /** 去掉前缀，用于显示。贵金属那一类前缀就是要看的（hf_ / nf_ 表示哪个市场），原样返回 */
+        /** 去掉前缀，用于显示。非股票资产那一类前缀就是要看的（hf_ / nf_ / fx_ 表示哪个市场），原样返回 */
         fun displayCode(code: String): String {
-            if (AssetClass.fromCode(code) == AssetClass.PRECIOUS_METALS) return code
+            if (AssetClass.fromCode(code) != AssetClass.A_SHARE) return code
             return code.lowercase().removePrefix("sh").removePrefix("sz").removePrefix("bj")
         }
     }

@@ -9,6 +9,7 @@ import com.stock.analyzer.data.model.NonStockCatalog
 import com.stock.analyzer.data.model.NonStockInstrument
 import com.stock.analyzer.data.model.SinaFeed
 import com.stock.analyzer.data.model.isNonStock
+import com.stock.analyzer.data.model.nonStockInstrument
 import com.stock.analyzer.ui.portfolio.PortfolioViewModel
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse

@@ -70,7 +70,7 @@ class TencentForexApi {
 
     internal fun parseQuotes(body: String, instruments: List<NonStockInstrument>): Map<String, NonStockQuote> {
         val out = LinkedHashMap<String, NonStockQuote>()
-        for (inst in forex) {
+        for (inst in instruments) {
             val line = Regex("v_" + Regex.escape(inst.quoteKey) + "=\"([^\"]*)\"")
                 .find(body)?.groupValues?.getOrNull(1) ?: continue
             val f = line.split("~")
